@@ -1,0 +1,204 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQ from '../components/FAQ.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Testimonials from '../components/Testimonials.astro';
+import { SITE } from '../data/site';
+import { DISCIPLINES } from '../data/disciplines';
+import { LOCATIONS } from '../data/locations';
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url }],
+};
+
+const homeFAQ = [
+  { q: '¿Dónde están ubicados?', a: `Tenemos sede principal en Vilanova i la Geltrú y centro en Sitges. Cubrimos toda la comarca del Garraf: Sant Pere de Ribes, Cubelles, Canyelles y alrededores.` },
+  { q: '¿La primera clase es realmente gratis?', a: 'Sí, sin condiciones. Ven, prueba la disciplina que más te interese y decide sin compromiso. No pedimos ningún dato de pago ni te pediremos que te apuntes ese día.' },
+  { q: '¿Hay clases para principiantes absolutos?', a: 'En todas las disciplinas tenemos grupos de iniciación. No importa que nunca hayas practicado un arte marcial en tu vida: empezamos desde cero contigo.' },
+  { q: '¿Tienen clases para niños?', a: 'Sí. Ofrecemos karate, judo y taekwondo para niños desde los 4 años, con grupos organizados por franjas de edad y metodología pedagógica específica.' },
+  { q: '¿Cuáles son los horarios?', a: `De lunes a viernes de 07:00 a 22:00. Sábados de 09:00 a 14:00. Tenemos clases de mañana, tarde y noche para adaptarnos a cualquier horario laboral.` },
+  { q: '¿Cómo me apunto?', a: 'Llama al teléfono, escríbenos por WhatsApp o rellena el formulario de contacto. Te responderemos en menos de 2 horas para reservar tu primera clase gratis.' },
+];
+---
+
+<Layout
+  title="Academia de Artes Marciales Garraf | Sitges y Vilanova"
+  description="Centro de artes marciales en el Garraf. Boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges y Vilanova i la Geltrú. Primera clase gratis."
+  schema={breadcrumb}
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-brand-dark pt-16 pb-24 px-4">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-red/10 via-transparent to-transparent pointer-events-none" />
+    <div class="max-w-7xl mx-auto relative">
+      <div class="max-w-3xl">
+        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-wider border border-brand-red/30">
+          Centro oficial · Comarca del Garraf
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          Artes Marciales<br />
+          <span class="text-brand-red">en el Garraf</span>
+        </h1>
+        <p class="text-lg text-brand-muted mb-8 max-w-xl leading-relaxed">
+          La academia de artes marciales de referencia en Sitges y Vilanova i la Geltrú. Boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal para todas las edades.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contacto/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg transition-colors text-center text-lg">
+            Primera clase gratis
+          </a>
+          <a href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener noreferrer"
+             class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-lg transition-colors border border-white/20">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+        <!-- Trust signals -->
+        <div class="flex flex-wrap gap-6 mt-10 text-sm text-brand-muted">
+          <span class="flex items-center gap-2"><span class="text-yellow-400">★</span> 4.9 en Google (120+ reseñas)</span>
+          <span class="flex items-center gap-2"><span class="text-brand-red">●</span> +15 años de experiencia</span>
+          <span class="flex items-center gap-2"><span class="text-brand-red">●</span> Instructores certificados</span>
+          <span class="flex items-center gap-2"><span class="text-green-400">●</span> Primera clase gratis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disciplinas grid -->
+  <section class="py-16 px-4 bg-brand-gray/30">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-white mb-2">Nuestras disciplinas</h2>
+        <p class="text-brand-muted">10 artes marciales · Todos los niveles · Todas las edades</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {DISCIPLINES.map(d => (
+          <a
+            href={`/${d.slug}/`}
+            class="group bg-brand-gray border border-brand-border hover:border-brand-red/50 rounded-xl p-4 text-center transition-all hover:-translate-y-0.5"
+          >
+            <span class="text-2xl mb-2 block">{d.emoji}</span>
+            <span class="text-sm font-semibold text-white group-hover:text-brand-red transition-colors">{d.nameEs}</span>
+            <p class="text-xs text-brand-muted mt-1 leading-tight hidden sm:block line-clamp-2">{d.shortDesc.split('.')[0]}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Municipios -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-white mb-2">Toda la comarca del Garraf</h2>
+        <p class="text-brand-muted">Sedes en Sitges y Vilanova. Servimos a toda la comarca.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {LOCATIONS.filter(l => l.priority <= 2).map(l => (
+          <a href={`/${l.slug}/`} class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-6 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-white group-hover:text-brand-red transition-colors">{l.name}</h3>
+              {l.priority === 1 && <span class="text-xs bg-brand-red/20 text-brand-red px-2 py-0.5 rounded-full">Sede principal</span>}
+            </div>
+            <p class="text-sm text-brand-muted line-clamp-3">{l.desc}</p>
+            <span class="text-xs text-brand-red mt-3 block group-hover:underline">Ver disciplinas →</span>
+          </a>
+        ))}
+        <div class="bg-brand-gray/50 border border-brand-border rounded-xl p-6">
+          <h3 class="font-bold text-white mb-3">También cerca de ti</h3>
+          <div class="flex flex-wrap gap-2">
+            {['Sant Pere de Ribes', 'Cubelles', 'Canyelles', 'Olivella', 'Castelldefels'].map(t => (
+              <span class="text-xs bg-brand-border text-brand-muted px-3 py-1 rounded-full">{t}</span>
+            ))}
+          </div>
+          <p class="text-sm text-brand-muted mt-3">Consulta la sede más cercana a tu municipio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué nosotros -->
+  <section class="py-16 px-4 bg-brand-gray/30">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-white mb-2">Por qué elegir la Academia Garraf</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { icon: '🎓', title: 'Instructores certificados', desc: 'Todos nuestros instructores tienen titulación oficial y experiencia en competición o enseñanza de alto nivel.' },
+          { icon: '👨‍👩‍👧', title: 'Grupos reducidos', desc: 'Máximo 12 alumnos por grupo. El instructor te conoce por tu nombre y adapta la clase a tu nivel real.' },
+          { icon: '🏆', title: '+15 años de experiencia', desc: 'Llevamos más de una década formando alumnos en el Garraf. Miles de horas de experiencia acumulada.' },
+          { icon: '📅', title: 'Horario amplio', desc: 'De 07:00 a 22:00 de lunes a viernes. Sábados de mañana. Siempre hay un horario que se adapta a tu vida.' },
+          { icon: '🎁', title: 'Primera clase gratis', desc: 'Sin compromiso, sin pago previo. Ven, prueba y decide. Si no es lo que buscabas, sin problema.' },
+          { icon: '🌍', title: 'Toda la comarca', desc: 'Con sedes en Sitges y Vilanova, y alumnos de toda la comarca, somos el centro de artes marciales más accesible del Garraf.' },
+        ].map(item => (
+          <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
+            <span class="text-2xl mb-3 block">{item.icon}</span>
+            <h3 class="font-bold text-white mb-2">{item.title}</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructores -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-white mb-2">Nuestro equipo de instructores</h2>
+        <p class="text-brand-muted">Experiencia real, resultados reales</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {SITE.instructors.map(inst => (
+          <div class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center">
+            <div class="w-16 h-16 rounded-full bg-brand-red/20 border-2 border-brand-red/50 flex items-center justify-center text-2xl mx-auto mb-4">
+              {inst.name.charAt(0)}
+            </div>
+            <h3 class="font-bold text-white mb-1">{inst.name}</h3>
+            <p class="text-xs text-brand-red mb-3">{inst.role}</p>
+            <p class="text-sm text-brand-muted leading-relaxed">{inst.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Testimonials />
+
+  <!-- Precios -->
+  <section class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-white mb-2">Precios y tarifas</h2>
+        <p class="text-brand-muted">Sin permanencia · Sin matrícula · Primer mes con descuento</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {SITE.prices.map((p, i) => (
+          <div class:list={[
+            "rounded-xl p-6 border",
+            i === 2
+              ? "bg-brand-red/10 border-brand-red/50 relative"
+              : "bg-brand-gray border-brand-border"
+          ]}>
+            {i === 2 && <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">Más popular</span>}
+            <h3 class="font-bold text-white mb-1">{p.plan}</h3>
+            <p class="text-3xl font-black text-white my-3">{p.price}</p>
+            <p class="text-sm text-brand-muted">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-center text-xs text-brand-muted mt-6">Consulta tarifas especiales para familias y grupos. Primer mes con 20% de descuento.</p>
+    </div>
+  </section>
+
+  <FAQ items={homeFAQ} />
+  <ContactCTA />
+  <Footer />
+</Layout>

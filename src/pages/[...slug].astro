@@ -1,0 +1,321 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQ from '../components/FAQ.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Testimonials from '../components/Testimonials.astro';
+import { ALL_PAGES, type PageDef } from '../data/pages';
+import { getDisciplineBySlug } from '../data/disciplines';
+import { getLocationBySlug } from '../data/locations';
+import { SITE } from '../data/site';
+import { DISCIPLINES } from '../data/disciplines';
+import { LOCATIONS } from '../data/locations';
+
+export async function getStaticPaths() {
+  return ALL_PAGES.map(page => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+interface Props { page: PageDef }
+const { page } = Astro.props;
+
+const discipline = page.disciplina ? getDisciplineBySlug(page.disciplina) : null;
+const location   = page.municipio  ? getLocationBySlug(page.municipio)   : null;
+
+// Schema
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "SportsActivityLocation"],
+  "name": SITE.name,
+  "description": page.meta.description,
+  "url": `${SITE.url}/${page.slug}/`,
+  "telephone": SITE.phone,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": SITE.address.street,
+    "addressLocality": location?.name ?? SITE.address.city,
+    "addressRegion": SITE.address.province,
+    "postalCode": SITE.address.zip,
+    "addressCountry": "ES",
+  },
+  "areaServed": location?.name ?? "Comarca del Garraf",
+  "hasOfferCatalog": discipline ? {
+    "@type": "OfferCatalog",
+    "name": `Clases de ${discipline.nameEs}`,
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": `Clases de ${discipline.nameEs} en ${location?.name ?? 'el Garraf'}`,
+        }
+      }
+    ]
+  } : undefined,
+};
+
+const breadcrumbItems = [
+  { "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url },
+];
+if (location) {
+  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": location.name, "item": `${SITE.url}/${location.slug}/` });
+}
+if (discipline && location) {
+  breadcrumbItems.push({ "@type": "ListItem", "position": 3, "name": discipline.nameEs, "item": `${SITE.url}/${page.slug}/` });
+} else if (discipline) {
+  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": discipline.nameEs, "item": `${SITE.url}/${page.slug}/` });
+}
+
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": breadcrumbItems };
+
+// Related money pages for internal linking
+const relatedByMunicipio = discipline && location
+  ? ALL_PAGES.filter(p => p.municipio === location.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 6)
+  : [];
+const relatedByDisciplina = discipline && location
+  ? ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 4)
+  : [];
+
+// FAQ to show
+const faqItems = discipline?.faq ?? [
+  { q: '¿La primera clase es gratis?', a: 'Sí. Todas nuestras disciplinas incluyen una primera clase completamente gratuita y sin compromiso.' },
+  { q: '¿Hay grupos para principiantes?', a: 'En todas las disciplinas tenemos grupos de iniciación. Empezamos desde cero contigo.' },
+  { q: '¿Cuáles son los horarios?', a: 'De lunes a viernes de 07:00 a 22:00 y sábados de 09:00 a 14:00.' },
+  { q: '¿Dónde están ubicados?', a: `Tenemos sedes en Sitges y Vilanova i la Geltrú, cubriendo toda la comarca del Garraf.` },
+];
+
+// Related disciplines for hub pages
+const allDisciplinesForLocation = location
+  ? ALL_PAGES.filter(p => p.municipio === location.slug && p.type === 'money-page')
+  : [];
+---
+
+<Layout
+  title={page.meta.title}
+  description={page.meta.description}
+  canonical={`/${page.slug}/`}
+  schema={[localBusinessSchema, breadcrumbSchema]}
+>
+  <Header />
+
+  <!-- Breadcrumbs -->
+  <nav aria-label="Migas de pan" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-0">
+    <ol class="flex items-center gap-2 text-xs text-brand-muted">
+      <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+      {location && (
+        <>
+          <li class="text-brand-border">/</li>
+          <li><a href={`/${location.slug}/`} class="hover:text-white transition-colors">{location.name}</a></li>
+        </>
+      )}
+      {discipline && (
+        <>
+          <li class="text-brand-border">/</li>
+          <li class="text-white">{discipline.nameEs}</li>
+        </>
+      )}
+      {!discipline && !location && (
+        <>
+          <li class="text-brand-border">/</li>
+          <li class="text-white">{page.h1}</li>
+        </>
+      )}
+    </ol>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="relative overflow-hidden bg-brand-dark pt-10 pb-16 px-4">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-red/8 via-transparent to-transparent pointer-events-none" />
+    <div class="max-w-7xl mx-auto relative">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          {discipline && (
+            <span class="inline-flex items-center gap-2 bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-brand-red/30">
+              <span>{discipline.emoji}</span>
+              <span>{discipline.nameEs} · {location?.name ?? 'Comarca del Garraf'}</span>
+            </span>
+          )}
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
+            {page.h1}
+          </h1>
+          <p class="text-brand-muted leading-relaxed mb-8 text-lg">
+            {page.intro}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contacto/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors text-center">
+              Reservar clase gratis
+            </a>
+            <a
+              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hola, me interesa ${discipline?.nameEs ?? 'información'} ${location ? 'en ' + location.name : 'en el Garraf'}`)}`}
+              target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg border border-white/20 transition-colors"
+            >
+              <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <!-- Info card -->
+        <div class="bg-brand-gray border border-brand-border rounded-2xl p-6 space-y-4">
+          <h2 class="font-bold text-white text-lg mb-2">Información de las clases</h2>
+          {[
+            { label: 'Ubicación', value: location?.name ?? 'Sitges + Vilanova i la Geltrú' },
+            { label: 'Niveles', value: 'Iniciación · Intermedio · Avanzado' },
+            { label: 'Grupos', value: 'Reducidos (máx. 12 personas)' },
+            { label: 'Horarios', value: 'Mañana · Tarde · Noche' },
+            { label: 'Edad mínima', value: 'Desde 4 años (grupos infantiles)' },
+            { label: 'Primera clase', value: '✓ Gratis y sin compromiso' },
+          ].map(row => (
+            <div class="flex justify-between text-sm border-b border-brand-border pb-3 last:border-0 last:pb-0">
+              <span class="text-brand-muted">{row.label}</span>
+              <span class="text-white font-medium text-right max-w-[55%]">{row.value}</span>
+            </div>
+          ))}
+          <a href="/contacto/" class="block w-full bg-brand-red hover:bg-red-700 text-white text-center font-bold py-3 rounded-lg transition-colors mt-2">
+            Reservar ahora →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  {discipline && (
+    <section class="py-14 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8 text-center">
+          Qué obtendrás con las clases de {discipline.nameEs}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {discipline.benefits.map((b, i) => (
+            <div class="bg-brand-gray border border-brand-border rounded-xl p-5">
+              <div class="w-8 h-8 rounded-lg bg-brand-red/20 text-brand-red text-sm font-bold flex items-center justify-center mb-3">
+                {i + 1}
+              </div>
+              <p class="text-sm text-white font-medium">{b}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hub municipio: list all disciplines available -->
+  {page.type === 'hub-municipio' && location && (
+    <section class="py-14 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8">
+          Disciplinas disponibles en {location.name}
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {allDisciplinesForLocation.map(p => {
+            const d = getDisciplineBySlug(p.disciplina!);
+            return d ? (
+              <a
+                href={`/${p.slug}/`}
+                class="group bg-brand-gray border border-brand-border hover:border-brand-red/50 rounded-xl p-4 text-center transition-all"
+              >
+                <span class="text-2xl mb-2 block">{d.emoji}</span>
+                <span class="text-sm font-semibold text-white group-hover:text-brand-red transition-colors">{d.nameEs}</span>
+              </a>
+            ) : null;
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hub disciplina: list all locations -->
+  {page.type === 'hub-disciplina' && discipline && (
+    <section class="py-14 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8">
+          Clases de {discipline.nameEs} en toda la comarca
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {LOCATIONS.map(loc => {
+            const moneyPage = ALL_PAGES.find(p => p.disciplina === discipline.slug && p.municipio === loc.slug);
+            return moneyPage ? (
+              <a
+                href={`/${moneyPage.slug}/`}
+                class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-6 transition-all"
+              >
+                <h3 class="font-bold text-white group-hover:text-brand-red transition-colors mb-1">
+                  {discipline.nameEs} en {loc.name}
+                </h3>
+                <p class="text-sm text-brand-muted">{loc.desc.split('.')[0]}.</p>
+                <span class="text-xs text-brand-red mt-3 block">Ver clases →</span>
+              </a>
+            ) : (
+              <div class="bg-brand-gray/50 border border-brand-border rounded-xl p-6">
+                <h3 class="font-bold text-white mb-1">{discipline.nameEs} en {loc.name}</h3>
+                <p class="text-sm text-brand-muted">Consultar disponibilidad.</p>
+                <a href="/contacto/" class="text-xs text-brand-red mt-3 block">Consultar →</a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <Testimonials count={3} />
+
+  <!-- Internal links: otras disciplinas en el mismo municipio -->
+  {relatedByMunicipio.length > 0 && (
+    <section class="py-12 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-lg font-bold text-white mb-6">
+          Más disciplinas en {location?.name}
+        </h2>
+        <div class="flex flex-wrap gap-3">
+          {relatedByMunicipio.map(p => {
+            const d = getDisciplineBySlug(p.disciplina!);
+            return (
+              <a
+                href={`/${p.slug}/`}
+                class="flex items-center gap-2 bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
+              >
+                {d && <span>{d.emoji}</span>}
+                {p.h1.replace('Clases de ', '')}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Internal links: misma disciplina en otros municipios -->
+  {relatedByDisciplina.length > 0 && (
+    <section class="py-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-lg font-bold text-white mb-6">
+          {discipline?.nameEs} en otros municipios del Garraf
+        </h2>
+        <div class="flex flex-wrap gap-3">
+          {relatedByDisciplina.map(p => {
+            const l = getLocationBySlug(p.municipio!);
+            return (
+              <a
+                href={`/${p.slug}/`}
+                class="bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
+              >
+                {discipline?.nameEs} en {l?.name ?? p.municipio}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <FAQ items={faqItems} title={`Preguntas frecuentes sobre ${discipline?.nameEs ?? 'artes marciales'} en ${location?.name ?? 'el Garraf'}`} />
+  <ContactCTA disciplina={discipline?.nameEs} municipio={location?.name} />
+  <Footer />
+</Layout>
