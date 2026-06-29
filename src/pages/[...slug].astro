@@ -79,12 +79,16 @@ const relatedByDisciplina = discipline && location
   ? ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 4)
   : [];
 
-// FAQ to show
-const faqItems = discipline?.faq ?? [
+const genericFaq = [
   { q: '¿La primera clase es gratis?', a: 'Sí. Todas nuestras disciplinas incluyen una primera clase completamente gratuita y sin compromiso.' },
   { q: '¿Hay grupos para principiantes?', a: 'En todas las disciplinas tenemos grupos de iniciación. Empezamos desde cero contigo.' },
   { q: '¿Cuáles son los horarios?', a: 'De lunes a viernes de 07:00 a 22:00 y sábados de 09:00 a 14:00.' },
   { q: '¿Dónde están ubicados?', a: `Tenemos sedes en Sitges y Vilanova i la Geltrú, cubriendo toda la comarca del Garraf.` },
+];
+// Local FAQ first (location-specific), then discipline FAQ or generic fallback
+const faqItems = [
+  ...(page.localFaq ?? []),
+  ...(discipline?.faq ?? genericFaq),
 ];
 
 // Related disciplines for hub pages
@@ -312,6 +316,13 @@ const allDisciplinesForLocation = location
           })}
         </div>
       </div>
+    </section>
+  )}
+
+  <!-- Blog body content -->
+  {page.type === 'blog' && page.body && (
+    <section class="py-12 px-4">
+      <div class="max-w-3xl mx-auto prose prose-invert prose-sm text-brand-muted leading-relaxed" set:html={page.body} />
     </section>
   )}
 

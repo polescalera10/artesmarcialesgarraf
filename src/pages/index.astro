@@ -61,9 +61,9 @@ const homeFAQ = [
         </div>
         <!-- Trust signals -->
         <div class="flex flex-wrap gap-6 mt-10 text-sm text-brand-muted">
-          <span class="flex items-center gap-2"><span class="text-yellow-400">★</span> 4.9 en Google (120+ reseñas)</span>
-          <span class="flex items-center gap-2"><span class="text-brand-red">●</span> +15 años de experiencia</span>
           <span class="flex items-center gap-2"><span class="text-brand-red">●</span> Instructores certificados</span>
+          <span class="flex items-center gap-2"><span class="text-brand-red">●</span> Grupos reducidos</span>
+          <span class="flex items-center gap-2"><span class="text-brand-red">●</span> Toda la comarca del Garraf</span>
           <span class="flex items-center gap-2"><span class="text-green-400">●</span> Primera clase gratis</span>
         </div>
       </div>
@@ -142,28 +142,6 @@ const homeFAQ = [
             <span class="text-2xl mb-3 block">{item.icon}</span>
             <h3 class="font-bold text-white mb-2">{item.title}</h3>
             <p class="text-sm text-brand-muted leading-relaxed">{item.desc}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Instructores -->
-  <section class="py-16 px-4">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-10">
-        <h2 class="text-2xl font-bold text-white mb-2">Nuestro equipo de instructores</h2>
-        <p class="text-brand-muted">Experiencia real, resultados reales</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {SITE.instructors.map(inst => (
-          <div class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center">
-            <div class="w-16 h-16 rounded-full bg-brand-red/20 border-2 border-brand-red/50 flex items-center justify-center text-2xl mx-auto mb-4">
-              {inst.name.charAt(0)}
-            </div>
-            <h3 class="font-bold text-white mb-1">{inst.name}</h3>
-            <p class="text-xs text-brand-red mb-3">{inst.role}</p>
-            <p class="text-sm text-brand-muted leading-relaxed">{inst.bio}</p>
           </div>
         ))}
       </div>

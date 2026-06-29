@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <!-- Red accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#DC2626"/>
+  <!-- Red glow top-left -->
+  <radialGradient id="glow" cx="20%" cy="20%" r="60%">
+    <stop offset="0%" stop-color="#DC2626" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- AM Logo -->
+  <text x="80" y="180" font-family="Arial Black, sans-serif" font-size="96" font-weight="900" fill="#DC2626">AM</text>
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">Artes Marciales</text>
+  <text x="80" y="380" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#DC2626">en el Garraf</text>
+  <!-- Subtitle -->
+  <text x="80" y="460" font-family="Arial, sans-serif" font-size="28" fill="#6B7280">Sitges · Vilanova i la Geltrú · Toda la comarca</text>
+  <!-- Disciplines -->
+  <text x="80" y="530" font-family="Arial, sans-serif" font-size="22" fill="#6B7280">Boxeo · Karate · MMA · Muay Thai · BJJ · Judo · Taekwondo · Defensa Personal</text>
+  <!-- Domain -->
+  <text x="1120" y="590" font-family="Arial, sans-serif" font-size="20" fill="#374151" text-anchor="end">artesmarcialesgarraf.es</text>
+</svg>

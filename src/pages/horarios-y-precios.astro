@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import { SITE } from '../data/site';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url },
+    { "@type": "ListItem", "position": 2, "name": "Horarios y Precios", "item": `${SITE.url}/horarios-y-precios/` },
+  ],
+};
+---
+
+<Layout
+  title="Horarios y Precios | Academia de Artes Marciales Garraf"
+  description="Consulta los horarios y tarifas de la Academia de Artes Marciales Garraf. Clases en Sitges y Vilanova i la Geltrú. Sin permanencia. Primera clase gratis."
+  canonical="/horarios-y-precios/"
+  schema={breadcrumbSchema}
+>
+  <Header />
+
+  <section class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="mb-12">
+        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">Sin permanencia</span>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-4">Horarios y Precios</h1>
+        <p class="text-brand-muted max-w-xl leading-relaxed">
+          Sin matrícula, sin permanencia, sin sorpresas. La primera clase siempre es gratuita. Consulta disponibilidad para tu disciplina y sede.
+        </p>
+      </div>
+
+      <!-- Horarios -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-white mb-6">Horario de atención</h2>
+        <div class="bg-brand-gray border border-brand-border rounded-xl overflow-hidden max-w-md">
+          {SITE.hours.map((h, i) => (
+            <div class:list={[
+              "flex justify-between px-6 py-4 text-sm",
+              i < SITE.hours.length - 1 ? "border-b border-brand-border" : ""
+            ]}>
+              <span class="text-brand-muted">{h.day}</span>
+              <span class:list={["font-semibold", h.time === 'Cerrado' ? 'text-brand-muted' : 'text-white']}>{h.time}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-sm text-brand-muted mt-4">
+          Los horarios exactos de cada clase varían según la disciplina y la sede. Contáctanos para consultar disponibilidad concreta.
+        </p>
+      </div>
+
+      <!-- Precios -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-white mb-6">Tarifas</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {SITE.prices.map((p, i) => (
+            <div class:list={[
+              "rounded-xl p-6 border",
+              i === 2
+                ? "bg-brand-red/10 border-brand-red/50 relative"
+                : "bg-brand-gray border-brand-border"
+            ]}>
+              {i === 2 && <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">Más popular</span>}
+              <h3 class="font-bold text-white mb-1">{p.plan}</h3>
+              <p class="text-3xl font-black text-white my-3">{p.price}</p>
+              <p class="text-sm text-brand-muted">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div class="mt-6 bg-brand-gray border border-brand-border rounded-xl p-6">
+          <h3 class="font-semibold text-white mb-3">Lo que incluye cualquier tarifa</h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {[
+              'Primera clase completamente gratuita',
+              'Sin matrícula de inscripción',
+              'Sin permanencia mínima',
+              'Acceso a clases ilimitadas en tu disciplina',
+              'Seguimiento personalizado por el instructor',
+              'Descuento familiar disponible',
+            ].map(item => (
+              <li class="flex items-center gap-2 text-sm text-brand-muted">
+                <span class="text-brand-red shrink-0">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p class="text-xs text-brand-muted mt-4">
+          Las tarifas indicadas son orientativas. Consulta tarifas especiales para familias, grupos y convenios. Primer mes con descuento.
+        </p>
+      </div>
+
+      <!-- Sedes -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-white mb-6">Sedes</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
+            <span class="text-xs bg-brand-red/20 text-brand-red px-2 py-0.5 rounded-full font-semibold">Sede principal</span>
+            <h3 class="font-bold text-white mt-3 mb-1">Vilanova i la Geltrú</h3>
+            <p class="text-sm text-brand-muted">Horario más amplio. Todas las disciplinas disponibles.</p>
+          </div>
+          <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
+            <span class="text-xs bg-brand-border text-brand-muted px-2 py-0.5 rounded-full font-semibold">Centro</span>
+            <h3 class="font-bold text-white mt-3 mb-1">Sitges</h3>
+            <p class="text-sm text-brand-muted">Disciplinas principales. Accesible desde Sant Pere de Ribes.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <ContactCTA />
+  <Footer />
+</Layout>

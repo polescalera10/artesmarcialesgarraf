@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import { SITE } from '../data/site';
 import { DISCIPLINES } from '../data/disciplines';
 ---
 
@@ -20,44 +19,24 @@ import { DISCIPLINES } from '../data/disciplines';
         <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">Quiénes somos</span>
         <h1 class="text-3xl sm:text-4xl font-black text-white mb-6">La academia de artes marciales del Garraf</h1>
         <div class="prose prose-invert max-w-none space-y-4 text-brand-muted leading-relaxed">
-          <p>La Academia de Artes Marciales Garraf nació de una convicción simple: que las artes marciales deberían ser accesibles para todos los vecinos de la comarca, sin importar la edad, el nivel físico o la experiencia previa. Empezamos con una sala pequeña en Vilanova i la Geltrú y un puñado de alumnos. Hoy, más de 300 alumnos activos en Sitges y Vilanova son la prueba de que esa convicción tenía sentido.</p>
+          <p>La Academia de Artes Marciales Garraf nació de una convicción simple: que las artes marciales deberían ser accesibles para todos los vecinos de la comarca, sin importar la edad, el nivel físico o la experiencia previa. Lo que empezó como un proyecto local en Vilanova i la Geltrú se ha convertido en el directorio de referencia de artes marciales en el Garraf, cubriendo Sitges, Vilanova, Sant Pere de Ribes y toda la comarca.</p>
           <p>Lo que nos diferencia no es el número de disciplinas que ofrecemos, aunque son diez. No es el número de sedes, aunque cubrimos toda la comarca. Lo que nos diferencia es el nivel de nuestros instructores y el compromiso con cada alumno individualmente. En un grupo de 12 personas, el instructor sabe tu nombre, conoce tu progresión y adapta la clase a tu nivel real.</p>
           <p>Somos el centro de referencia de artes marciales en el Garraf no porque nos lo hayamos autoproclamado, sino porque nuestros alumnos vienen de Sitges, Vilanova, Sant Pere de Ribes, Cubelles, Canyelles y hasta de municipios fuera de la comarca. Eso no sucede por casualidad.</p>
         </div>
       </div>
 
       <!-- Stats -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-16">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-16">
         {[
-          { num: '+15', label: 'Años de experiencia' },
-          { num: '+300', label: 'Alumnos activos' },
           { num: '10', label: 'Disciplinas' },
-          { num: '4.9★', label: 'Valoración Google' },
+          { num: '5', label: 'Municipios cubiertos' },
+          { num: '100%', label: 'Primera clase gratis' },
         ].map(s => (
           <div class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center">
             <p class="text-3xl font-black text-brand-red mb-1">{s.num}</p>
             <p class="text-sm text-brand-muted">{s.label}</p>
           </div>
         ))}
-      </div>
-
-      <!-- Team -->
-      <div class="mb-16">
-        <h2 class="text-2xl font-bold text-white mb-8">Nuestro equipo de instructores</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {SITE.instructors.map(inst => (
-            <div class="bg-brand-gray border border-brand-border rounded-xl p-6 flex gap-5">
-              <div class="w-14 h-14 rounded-full bg-brand-red/20 border-2 border-brand-red/50 flex items-center justify-center text-xl font-black text-brand-red shrink-0">
-                {inst.name.charAt(0)}
-              </div>
-              <div>
-                <h3 class="font-bold text-white mb-0.5">{inst.name}</h3>
-                <p class="text-xs text-brand-red mb-2">{inst.role}</p>
-                <p class="text-sm text-brand-muted leading-relaxed">{inst.bio}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
 
       <!-- Metodología -->

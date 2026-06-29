@@ -27,66 +27,8 @@ export const SITE = {
     description:
       'Academia de Artes Marciales en el Garraf. Clases de boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges, Vilanova i la Geltrú y toda la comarca.',
   },
-  instructors: [
-    {
-      name: 'Marcos Vidal',
-      role: 'Director Técnico · Cinturón Negro 3º Dan Karate',
-      bio: 'Más de 20 años de experiencia en artes marciales. Especializado en karate, defensa personal y preparación física.',
-    },
-    {
-      name: 'Laura Ferrer',
-      role: 'Instructora Principal · Cinta Morada BJJ',
-      bio: 'Campeona regional de BJJ y especialista en defensa personal femenina. Formada en Brasil con la familia Gracie.',
-    },
-    {
-      name: 'Iván Rubio',
-      role: 'Instructor · Exboxeador profesional',
-      bio: '15 años de boxeo profesional, incluidos combates en el circuito europeo. Especialista en boxeo técnico y fitness.',
-    },
-    {
-      name: 'Sara Montoya',
-      role: 'Instructora Infantil · Cinturón Negro Taekwondo',
-      bio: 'Pedagoga y cinturón negro de taekwondo. Responsable de todas las clases infantiles y juveniles.',
-    },
-  ],
-  testimonials: [
-    {
-      name: 'Marta G.',
-      location: 'Sitges',
-      text: 'Llevo dos años yendo al centro y ha cambiado mi vida. Los instructores son increíbles y el ambiente es muy familiar.',
-      stars: 5,
-    },
-    {
-      name: 'Jordi P.',
-      location: 'Vilanova i la Geltrú',
-      text: 'Mi hijo empezó con karate a los 6 años y ahora tiene cinturón naranja. Está mucho más seguro de sí mismo.',
-      stars: 5,
-    },
-    {
-      name: 'Anna R.',
-      location: 'Sant Pere de Ribes',
-      text: 'Vine buscando defensa personal y me quedé por el boxeo. El nivel de los instructores es altísimo.',
-      stars: 5,
-    },
-    {
-      name: 'Carlos M.',
-      location: 'Vilanova',
-      text: 'Empecé desde cero con el MMA. En seis meses he ganado confianza y forma física que no tenía desde los 20 años.',
-      stars: 5,
-    },
-    {
-      name: 'Elena T.',
-      location: 'Sitges',
-      text: 'Las clases de muay thai son brutales en el buen sentido. Nunca pensé que a los 40 estaría en esta forma.',
-      stars: 5,
-    },
-    {
-      name: 'Raúl F.',
-      location: 'Cubelles',
-      text: 'El BJJ es mi obsesión. El profesor sabe perfectamente cómo adaptar cada clase a tu nivel. Totalmente recomendable.',
-      stars: 5,
-    },
-  ],
+  // TODO: reemplazar con datos reales del gimnasio cliente antes de publicar
+  // phone, email, address y hours son placeholders - NO mostrar como datos reales en producción
   prices: [
     { plan: 'Clase de Prueba', price: 'Gratis', desc: 'Primera clase sin compromiso' },
     { plan: '1 disciplina', price: '55€/mes', desc: 'Clases ilimitadas en una disciplina' },

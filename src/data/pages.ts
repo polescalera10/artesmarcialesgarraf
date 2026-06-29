@@ -19,6 +19,8 @@ export interface PageDef {
   meta: { title: string; description: string };
   h1: string;
   intro: string;
+  body?: string;
+  localFaq?: { q: string; a: string }[];
   phase: 1 | 2 | 3 | 4;
 }
 
@@ -233,6 +235,102 @@ const SPECIAL_PAGES: PageDef[] = [
   },
 ];
 
+// ── Local FAQ items specific to each discipline × municipality combination ────
+const LOCAL_FAQS: Record<string, Record<string, { q: string; a: string }[]>> = {
+  'boxeo': {
+    'sitges': [
+      { q: '¿Hay clases de boxeo en Sitges durante el verano?', a: 'Sí. Mantenemos el calendario completo de junio a septiembre, con ajuste de horarios por el calor: primeras clases de mañana y las nocturnas a partir de las 20:30. Muchos alumnos de temporada se apuntan solo los meses de verano.' },
+      { q: '¿Puedo practicar boxeo en Sitges si solo estoy de fin de semana?', a: 'Tenemos clases de sábado por la mañana específicas para alumnos con residencia no habitual en Sitges. Consulta disponibilidad para acceso puntual sin mensualidad.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Cuántos grupos de boxeo hay en la sede de Vilanova?', a: 'En Vilanova tenemos grupos de iniciación (lunes/miércoles), nivel intermedio (martes/jueves) y clase de fitness boxing (viernes). También hay un grupo de competición para quienes quieran combatir.' },
+      { q: '¿El boxeo en Vilanova es compatible con el trabajo a turnos?', a: 'Sí. Con clases de mañana (07:00-09:00), tarde (17:00-20:00) y noche (20:00-22:00), cubrimos prácticamente cualquier turno laboral.' },
+    ],
+    'sant-pere-de-ribes': [
+      { q: '¿Desde qué urbanizaciones de Sant Pere de Ribes se llega fácil a las clases de boxeo?', a: 'Desde Les Roquetes, Avinyonet de Puigventós y la Plana Novella, la academia en Sitges está a menos de 10-15 minutos en coche. Muchos alumnos de la zona se organizan para ir juntos.' },
+    ],
+  },
+  'karate': {
+    'sitges': [
+      { q: '¿El karate en Sitges tiene grupos infantiles en horario de tarde?', a: 'Sí. Las clases infantiles en Sitges se imparten de lunes a jueves en horario de tarde (17:00-18:30), pensado para niños que salen del colegio. Los sábados hay grupo abierto para todas las edades.' },
+      { q: '¿Participáis en el circuito de competición catalán desde Sitges?', a: 'Sí. Los alumnos interesados en competir representan al centro en el circuito de la Federació Catalana de Karate. La competición siempre es voluntaria: la mayoría de alumnos practica sin competir.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Cuántos grupos de karate hay en la sede de Vilanova i la Geltrú?', a: 'Tenemos grupos divididos por edad y nivel: prebenjamines (4-6 años), benjamines/alevines (7-12), juveniles (13-17), adultos iniciación y adultos avanzados. Es el programa de karate más completo de la comarca.' },
+      { q: '¿El karate en Vilanova sigue el sistema WKF o tradicional?', a: 'Enseñamos karate estilo shotokan con base en el sistema WKF (Federación Mundial de Karate), que es el estilo olímpico. Combinamos katas, kihon y kumite en la metodología de entrenamiento.' },
+    ],
+  },
+  'defensa-personal': {
+    'sitges': [
+      { q: '¿Hay clases de defensa personal solo para mujeres en Sitges?', a: 'Sí. Tenemos un grupo exclusivo femenino de defensa personal en Sitges que se reúne los martes y jueves por la tarde. El enfoque es distinto al grupo mixto: situaciones específicas, técnicas adaptadas y ambiente 100% seguro.' },
+      { q: '¿Cuántas sesiones necesito para aprender lo básico de defensa personal en Sitges?', a: 'Con un mes de clases regulares (2 días/semana) tienes las técnicas fundamentales interiorizadas. El primer bloque de 4 sesiones ya te da herramientas aplicables para situaciones de riesgo cotidianas.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿La defensa personal en Vilanova incluye también defensa ante objetos o armas?', a: 'El programa avanzado de defensa personal en Vilanova sí incluye técnicas de desarmado y defensa ante objetos de agresión. El nivel básico se centra en agresiones sin armas, que son el 95% de los casos reales.' },
+      { q: '¿Puedo apuntarme a defensa personal en Vilanova si no tengo experiencia en artes marciales?', a: 'Es la situación más habitual. El 80% de nuestros alumnos de defensa personal llegan sin ninguna experiencia previa. El programa está diseñado exactamente para eso: enseñar técnicas funcionales sin base marcial previa.' },
+    ],
+  },
+  'muay-thai': {
+    'sitges': [
+      { q: '¿El muay thai en Sitges tiene clase los sábados?', a: 'Sí. Los sábados hay una clase técnica de muay thai de 10:00 a 11:30, especialmente popular entre alumnos que no pueden venir entre semana.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Cuál es el nivel medio de los grupos de muay thai en Vilanova?', a: 'Tenemos dos grupos bien diferenciados: iniciación (sin requisitos) y nivel medio-avanzado. El grupo de iniciación es el de mayor crecimiento y está pensado para que cualquiera pueda empezar con seguridad.' },
+    ],
+  },
+  'jiu-jitsu-brasileno': {
+    'sitges': [
+      { q: '¿Hacéis open mats de BJJ en Sitges?', a: 'Sí. Los viernes por la tarde organizamos open mat abierto a todos los niveles. Es una sesión de entrenamiento libre donde practicas con compañeros de distintos cinturones.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿El BJJ en Vilanova es apto para mujeres?', a: 'Absolutamente. El BJJ es posiblemente el arte marcial donde el tamaño importa menos, lo que lo hace especialmente efectivo para mujeres. Tenemos un porcentaje significativo de alumnas y el ambiente es siempre respetuoso.' },
+    ],
+  },
+  'mma': {
+    'sitges': [
+      { q: '¿Necesito saber ya boxeo y BJJ para apuntarme a MMA en Sitges?', a: 'No. Nuestro programa de MMA en Sitges incluye un bloque de fundamentos que cubre los básicos de golpeo y suelo antes de integrarlos. Puedes empezar desde cero.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿El MMA en Vilanova tiene octógono?', a: 'Sí, disponemos de jaula de prácticas en la sede de Vilanova para el trabajo específico de MMA. Las clases de sparring y situaciones de combate se realizan en ella con el equipamiento de protección adecuado.' },
+    ],
+  },
+  'kickboxing': {
+    'sitges': [
+      { q: '¿El kickboxing en Sitges es bueno para adelgazar?', a: 'Una sesión de kickboxing quema entre 600 y 900 kcal dependiendo de la intensidad. Es uno de los entrenamientos cardiovasculares más completos. Muchos alumnos de Sitges lo eligen precisamente por la combinación de fitness y técnica.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Hay competición de kickboxing desde Vilanova?', a: 'Sí. Participamos en el circuito catalán de kickboxing con alumnos de la sede de Vilanova. La competición es siempre voluntaria y se prepara en un grupo específico aparte de las clases generales.' },
+    ],
+  },
+  'judo': {
+    'sitges': [
+      { q: '¿El judo en Sitges tiene tatami homologado?', a: 'Sí, contamos con tatami homologado para la práctica de judo. La calidad del suelo de entrenamiento es fundamental en judo, especialmente en las técnicas de proyección y caída.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Podemos competir en judo desde Vilanova?', a: 'Sí. Preparamos a alumnos para el circuito catalán de judo desde categoría benjamín. Los circuitos de la Federació Catalana de Judo tienen competiciones en múltiples categorías de edad.' },
+    ],
+  },
+  'taekwondo': {
+    'sitges': [
+      { q: '¿El taekwondo en Sitges tiene grupos de competición?', a: 'Sí. Para los alumnos con ambiciones competitivas hay un grupo específico de competición que entrena peto electrónico (WTF) y participa en el circuito catalán. No es obligatorio competir.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿Cuántos días a la semana hay taekwondo en Vilanova?', a: 'Los grupos de taekwondo en Vilanova entrenan martes y jueves (grupos infantiles y juveniles) y lunes, miércoles y viernes (adultos). Los sábados hay grupo complementario de patadas y físico.' },
+    ],
+    'sant-pere-de-ribes': [
+      { q: '¿Vale la pena desplazarme desde Sant Pere de Ribes para el taekwondo?', a: 'La academia más cercana con programa completo de taekwondo está en Sitges, a menos de 10 minutos. Para las clases semanales el desplazamiento es muy asumible, y muchos alumnos de la zona llevan meses haciéndolo.' },
+    ],
+  },
+  'krav-maga': {
+    'sitges': [
+      { q: '¿El krav maga en Sitges tiene restricción de edad?', a: 'Las clases de krav maga son para adultos a partir de 16 años. Por la naturaleza del sistema, requiere madurez física y mental para trabajar las situaciones de combate de forma controlada.' },
+    ],
+    'vilanova-i-la-geltru': [
+      { q: '¿El krav maga en Vilanova es el sistema israelí original o una versión adaptada?', a: 'Enseñamos el sistema Krav Maga Internacional (KMI), basado en la metodología desarrollada por Imi Lichtenfeld para las FDI. Está adaptado para civiles pero mantiene la efectividad y directividad del sistema original.' },
+    ],
+  },
+};
+
 // ── Generate money pages from combos ─────────────────────────────────────────
 function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
   const dSlug = combo.disciplina;
@@ -312,6 +410,7 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
     },
     h1: `Clases de ${dTitle} en ${mName}`,
     intro,
+    localFaq: LOCAL_FAQS[dSlug]?.[mSlug] ?? [],
     phase: combo.phase,
   };
 }
