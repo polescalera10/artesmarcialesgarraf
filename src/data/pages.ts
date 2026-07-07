@@ -30,6 +30,9 @@ export interface PageDef {
   body?: string;
   fecha?: string; // fecha de publicación (blog) — ISO yyyy-mm-dd
   localFaq?: { q: string; a: string }[];
+  // Enlaces explícitos entre páginas de intención cercana (anti-canibalización):
+  // cada anchor describe la intención de la página destino para diferenciar clusters.
+  relacionadas?: { slug: string; label: string; nota: string }[];
   phase: 1 | 2 | 3 | 4;
 }
 
@@ -101,6 +104,11 @@ const SPECIAL_PAGES: PageDef[] = [
     },
     h1: 'Artes Marciales y Defensa Personal para Mujeres en Sitges',
     intro: 'Cada vez más mujeres del Garraf entrenan artes marciales, y Sitges no es una excepción. Boxeo y kickboxing para ponerse en forma, BJJ por su eficacia técnica independiente de la fuerza, y defensa personal orientada a situaciones reales son las opciones más demandadas. En esta guía te contamos qué valorar al elegir centro —grupos femeninos o mixtos, ambiente, enfoque— y cómo dar el primer paso aunque nunca hayas entrenado.',
+    relacionadas: [
+      { slug: 'defensa-personal-femenina-en-sitges', label: 'Defensa personal femenina en Sitges', nota: 'Si tu objetivo concreto es la autodefensa: qué debe incluir un programa serio.' },
+      { slug: 'blog/defensa-personal-para-mujeres-garraf', label: 'Qué funciona de verdad en defensa personal para mujeres', nota: 'Guía larga: mitos, técnicas que funcionan y cómo reconocer un programa serio.' },
+      { slug: 'clases-para-mujeres', label: 'Artes marciales para mujeres en el Garraf', nota: 'La visión de toda la comarca, si te da igual desplazarte de municipio.' },
+    ],
     phase: 1,
   },
   {
@@ -114,6 +122,16 @@ const SPECIAL_PAGES: PageDef[] = [
     },
     h1: 'Defensa Personal para Mujeres en Sitges',
     intro: 'La defensa personal femenina bien enseñada se centra en herramientas reales: gestión de la distancia, reacción ante agarres, uso del entorno y, sobre todo, prevención y conciencia situacional. En esta guía te explicamos qué debe incluir un buen programa de defensa personal para mujeres, qué señales indican seriedad en un centro de Sitges o alrededores, y qué esperar de las primeras sesiones.',
+    localFaq: [
+      { q: '¿En qué se diferencia la defensa personal femenina de la general?', a: 'En el enfoque, no en la seriedad: se priorizan los escenarios que más preocupan a las mujeres (agarres, tirones, acoso en espacios públicos), el trabajo de voz y límites, y la progresión del contacto se adapta al grupo. La base técnica es la misma que en cualquier buen programa.' },
+      { q: '¿Necesito fuerza física para que funcione?', a: 'No. Un programa serio se construye sobre técnicas gruesas que no dependen de la fuerza: crear distancia, salir de agarres con palanca y no con músculo, y usar la voz y el entorno. Si un programa solo funciona siendo fuerte, es mal programa.' },
+      { q: '¿Hay grupos solo de mujeres en Sitges?', a: 'No en todos los centros ni en todas las temporadas. Si es tu prioridad, pregúntalo directamente antes de apuntarte o escríbenos y te ayudamos a localizar opciones en Sitges o a pocos minutos.' },
+    ],
+    relacionadas: [
+      { slug: 'clases-para-mujeres-en-sitges', label: 'Artes marciales para mujeres en Sitges', nota: 'Si además de autodefensa te interesa la forma física o una práctica continua: comparativa de disciplinas.' },
+      { slug: 'defensa-personal-en-sitges', label: 'Defensa personal en Sitges (guía general)', nota: 'La guía de defensa personal sin enfoque de género: programas, criterios y oferta local.' },
+      { slug: 'blog/defensa-personal-para-mujeres-garraf', label: 'Qué funciona de verdad en defensa personal para mujeres', nota: 'La guía larga con los mitos, las capas de la autodefensa y los errores al elegir programa.' },
+    ],
     phase: 1,
   },
   {
@@ -151,6 +169,11 @@ const SPECIAL_PAGES: PageDef[] = [
     },
     h1: 'Artes Marciales y Defensa Personal para Mujeres en Vilanova',
     intro: 'Si eres mujer y quieres empezar a entrenar en Vilanova i la Geltrú, tienes opciones para todos los objetivos: boxeo y kickboxing para forma física y descarga de estrés, BJJ para técnica pura, defensa personal para seguridad práctica. En esta guía te contamos qué valorar al elegir —existencia de grupos femeninos, enfoque del centro, ambiente— y cómo probar sin comprometerte desde el primer día.',
+    relacionadas: [
+      { slug: 'defensa-personal-femenina-en-vilanova', label: 'Defensa personal femenina en Vilanova i la Geltrú', nota: 'Si tu objetivo concreto es la autodefensa: qué debe incluir un programa serio.' },
+      { slug: 'blog/defensa-personal-para-mujeres-garraf', label: 'Qué funciona de verdad en defensa personal para mujeres', nota: 'Guía larga: mitos, técnicas que funcionan y cómo reconocer un programa serio.' },
+      { slug: 'clases-para-mujeres', label: 'Artes marciales para mujeres en el Garraf', nota: 'La visión de toda la comarca, si te da igual desplazarte de municipio.' },
+    ],
     phase: 1,
   },
   {
@@ -164,6 +187,16 @@ const SPECIAL_PAGES: PageDef[] = [
     },
     h1: 'Defensa Personal para Mujeres en Vilanova i la Geltrú',
     intro: 'Un buen programa de defensa personal femenina no vende movimientos espectaculares: enseña a reaccionar ante un agarre, a crear distancia, a usar la voz y el entorno, y a evitar el peligro antes de que ocurra. En esta guía te explicamos qué debe incluir un programa serio, cómo evaluar las opciones en Vilanova i la Geltrú y qué esperar de las primeras sesiones si nunca has entrenado nada parecido.',
+    localFaq: [
+      { q: '¿En qué se diferencia la defensa personal femenina de la general?', a: 'En el enfoque, no en la seriedad: se priorizan los escenarios que más preocupan a las mujeres (agarres, tirones, acoso en espacios públicos), el trabajo de voz y límites, y la progresión del contacto se adapta al grupo. La base técnica es la misma que en cualquier buen programa.' },
+      { q: '¿Vilanova es el mejor sitio de la comarca para buscar este tipo de clases?', a: 'Es donde más oferta general hay, al ser la capital de la comarca, así que la probabilidad de encontrar grupo —femenino o mixto— es mayor. Aun así, la existencia de grupos exclusivamente femeninos cambia por temporadas: confírmalo siempre con el centro.' },
+      { q: '¿Puedo empezar sin ninguna experiencia ni forma física?', a: 'Sí, es el caso más habitual. Un buen programa está diseñado para personas sin base marcial: técnicas simples que no dependen de la fuerza, progresión gradual del contacto y trabajo adaptado al nivel de cada alumna.' },
+    ],
+    relacionadas: [
+      { slug: 'clases-para-mujeres-en-vilanova', label: 'Artes marciales para mujeres en Vilanova', nota: 'Si además de autodefensa te interesa la forma física o una práctica continua: comparativa de disciplinas.' },
+      { slug: 'defensa-personal-en-vilanova-i-la-geltru', label: 'Defensa personal en Vilanova i la Geltrú (guía general)', nota: 'La guía de defensa personal sin enfoque de género: programas, criterios y oferta local.' },
+      { slug: 'blog/defensa-personal-para-mujeres-garraf', label: 'Qué funciona de verdad en defensa personal para mujeres', nota: 'La guía larga con los mitos, las capas de la autodefensa y los errores al elegir programa.' },
+    ],
     phase: 1,
   },
   {
@@ -411,6 +444,24 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
   const dTitle = dName;
   const mTitle = mName === 'Vilanova i la Geltrú' ? 'Vilanova' : mName;
 
+  // Anti-canibalización: la guía general de defensa personal enlaza a su
+  // variante femenina (donde existe) con anchor que diferencia la intención.
+  const relacionadas =
+    dSlug === 'defensa-personal' && (mSlug === 'sitges' || mSlug === 'vilanova-i-la-geltru')
+      ? [
+          {
+            slug: `defensa-personal-femenina-en-${mSlug === 'sitges' ? 'sitges' : 'vilanova'}`,
+            label: `Defensa personal femenina en ${mTitle}`,
+            nota: 'Guía específica: escenarios, trabajo de voz y límites, y grupos femeninos o mixtos.',
+          },
+          {
+            slug: 'krav-maga',
+            label: 'Krav maga en el Garraf',
+            nota: 'Si buscas un sistema de autodefensa con metodología propia y sin componente deportivo.',
+          },
+        ]
+      : undefined;
+
   return {
     slug: `${dSlug}-en-${mSlug}`,
     type: 'money-page',
@@ -423,6 +474,7 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
     h1: `Clases de ${dTitle} en ${mName}`,
     intro,
     localFaq: LOCAL_FAQS[dSlug]?.[mSlug] ?? [],
+    ...(relacionadas ? { relacionadas } : {}),
     phase: combo.phase,
   };
 }

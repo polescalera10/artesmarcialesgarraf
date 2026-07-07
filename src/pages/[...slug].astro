@@ -491,6 +491,26 @@ const otrosArticulos =
     </section>
   )}
 
+  <!-- Guías relacionadas (anti-canibalización: anchors que diferencian la intención) -->
+  {page.relacionadas && page.relacionadas.length > 0 && (
+    <section class="py-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-lg font-bold text-white mb-6">Guías relacionadas: elige la que encaja con lo que buscas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {page.relacionadas.map(r => (
+            <a
+              href={`/${r.slug}/`}
+              class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-5 transition-all"
+            >
+              <span class="font-semibold text-brand-red group-hover:text-red-400 transition-colors">{r.label} →</span>
+              <p class="text-sm text-brand-muted mt-2 leading-relaxed">{r.nota}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
   <!-- Otras guías del blog -->
   {otrosArticulos.length > 0 && (
     <section class="py-10 px-4 bg-brand-gray/30">
