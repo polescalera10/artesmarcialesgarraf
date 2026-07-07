@@ -29,6 +29,12 @@ const {
 
 const canonicalUrl = `${SITE.url}${canonical.endsWith('/') ? canonical : canonical + '/'}`;
 const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+
+// Analítica Plausible (B1): solo se emite si Pol define PUBLIC_PLAUSIBLE_DOMAIN
+// en Vercel (p. ej. "artesmarcialesgarraf.vercel.app"). Plausible no usa
+// cookies ni identifica usuarios → no requiere banner de consentimiento (B2);
+// la política de privacidad ya recoge este caso condicionalmente.
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 ---
 
 <!DOCTYPE html>
@@ -64,6 +70,10 @@ const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  {plausibleDomain && (
+    <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.js"></script>
+  )}
 
   <!-- Schema JSON-LD -->
   {schemaArray.map(s => (

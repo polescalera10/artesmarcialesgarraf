@@ -85,10 +85,15 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <div>
-          <h2 class="text-xl font-bold text-white mb-4">6. Cookies</h2>
+          <h2 class="text-xl font-bold text-white mb-4">6. Cookies y medición de audiencia</h2>
           <p class="text-brand-muted leading-relaxed">
             Este sitio web no utiliza cookies propias de seguimiento ni de publicidad. Únicamente utilizamos cookies técnicas estrictamente necesarias para el funcionamiento del sitio. No se requiere tu consentimiento para este tipo de cookies.
           </p>
+          {import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
+            <p class="text-brand-muted leading-relaxed mt-3">
+              Para conocer el uso agregado del sitio utilizamos <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:text-red-400">Plausible Analytics</a>, una herramienta de medición que no usa cookies, no identifica a personas y no cede datos a terceros con fines publicitarios. Las estadísticas son agregadas y anónimas, por lo que no requieren tu consentimiento.
+            </p>
+          )}
         </div>
 
         <div>
