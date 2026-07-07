@@ -6,7 +6,6 @@ const staticPages = [
   { slug: '', priority: '1.0', changefreq: 'weekly' },
   { slug: 'contacto', priority: '0.9', changefreq: 'monthly' },
   { slug: 'sobre-nosotros', priority: '0.8', changefreq: 'monthly' },
-  { slug: 'horarios-y-precios', priority: '0.8', changefreq: 'monthly' },
 ];
 
 const now = new Date().toISOString().split('T')[0];
