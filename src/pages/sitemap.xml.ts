@@ -4,6 +4,7 @@ const SITE = 'https://artesmarcialesgarraf.es';
 
 const staticPages = [
   { slug: '', priority: '1.0', changefreq: 'weekly' },
+  { slug: 'centros', priority: '0.9', changefreq: 'weekly' },
   { slug: 'contacto', priority: '0.9', changefreq: 'monthly' },
   { slug: 'sobre-nosotros', priority: '0.8', changefreq: 'monthly' },
 ];
