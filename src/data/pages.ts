@@ -1,6 +1,13 @@
 import { DISCIPLINES, getDisciplineBySlug } from './disciplines';
 import { LOCATIONS, getLocationBySlug } from './locations';
 
+// ────────────────────────────────────────────────────────────────────────────
+// Marca neutra honesta: todo el copy de este archivo está escrito desde la
+// posición de GUÍA LOCAL INDEPENDIENTE, no de academia. Prohibido reintroducir
+// datos de negocio inventados (instructores, alumnos, horarios de clase,
+// precios, reseñas). Ver MEMORY.md del proyecto.
+// ────────────────────────────────────────────────────────────────────────────
+
 export type PageType =
   | 'home'
   | 'hub-municipio'
@@ -75,11 +82,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'money-page',
     municipio: 'sitges',
     meta: {
-      title: 'Artes Marciales para Niños en Sitges | Desde 4 Años',
-      description: 'Clases de artes marciales infantiles en Sitges. Karate, judo y taekwondo para niños desde 4 años. Metodología adaptada por edades. Primera clase gratis.',
+      title: 'Artes Marciales para Niños en Sitges | Guía para Padres',
+      description: 'Artes marciales infantiles en Sitges: qué disciplina elegir según la edad de tu hijo, qué preguntar al centro y cómo empezar. Guía local del Garraf.',
     },
     h1: 'Artes Marciales para Niños en Sitges',
-    intro: 'En la Academia de Artes Marciales Garraf ofrecemos clases infantiles en Sitges para niños y niñas desde los 4 años. Nuestro programa infantil combina karate, judo y taekwondo con metodología pedagógica específica para cada franja de edad. Los niños aprenden disciplina, respeto y coordinación en un entorno seguro y motivador, con instructores especializados en formación infantil.',
+    intro: 'Si buscas clases de artes marciales para tu hijo o hija en Sitges, esta guía te ayuda a decidir. Karate, judo y taekwondo son las disciplinas más habituales para empezar desde los 4-6 años: desarrollan coordinación, disciplina y confianza con metodologías adaptadas por edades. Aquí te explicamos qué aporta cada una, qué preguntar al centro antes de apuntarle y qué esperar de las primeras semanas. Y si tienes dudas, escríbenos y te orientamos sin coste.',
     phase: 1,
   },
   {
@@ -87,11 +94,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'money-page',
     municipio: 'sitges',
     meta: {
-      title: 'Artes Marciales para Mujeres en Sitges | Defensa Personal',
-      description: 'Clases de artes marciales y defensa personal para mujeres en Sitges. Ambiente seguro, instructoras especializadas. Boxeo, BJJ y defensa personal femenina.',
+      title: 'Artes Marciales para Mujeres en Sitges | Guía Local',
+      description: 'Artes marciales y defensa personal para mujeres en Sitges: qué disciplinas encajan mejor, qué buscar en un centro y cómo empezar con confianza.',
     },
     h1: 'Artes Marciales y Defensa Personal para Mujeres en Sitges',
-    intro: 'Nuestro programa para mujeres en Sitges combina técnicas de defensa personal real con el aprendizaje de artes marciales en un entorno diseñado específicamente para ellas. Contamos con instructoras especializadas y grupos reducidos donde la confianza y el respeto son la base de cada clase. Muchas de nuestras alumnas llegan sin experiencia previa y en pocas semanas ganan una seguridad que va mucho más allá del tatami.',
+    intro: 'Cada vez más mujeres del Garraf entrenan artes marciales, y Sitges no es una excepción. Boxeo y kickboxing para ponerse en forma, BJJ por su eficacia técnica independiente de la fuerza, y defensa personal orientada a situaciones reales son las opciones más demandadas. En esta guía te contamos qué valorar al elegir centro —grupos femeninos o mixtos, ambiente, enfoque— y cómo dar el primer paso aunque nunca hayas entrenado.',
     phase: 1,
   },
   {
@@ -100,11 +107,11 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'sitges',
     disciplina: 'defensa-personal',
     meta: {
-      title: 'Defensa Personal Femenina en Sitges | Técnicas Reales',
-      description: 'Clases de defensa personal para mujeres en Sitges. Técnicas efectivas y reales. Instructoras especializadas. Primera clase gratuita. Academia Garraf.',
+      title: 'Defensa Personal Femenina en Sitges | Qué Debes Saber',
+      description: 'Defensa personal para mujeres en Sitges: qué técnicas funcionan de verdad, cómo distinguir un programa serio y cómo empezar. Guía local del Garraf.',
     },
     h1: 'Defensa Personal para Mujeres en Sitges',
-    intro: 'Las clases de defensa personal femenina en Sitges están diseñadas para dotarte de herramientas reales ante situaciones de riesgo. No enseñamos katas ni movimientos estéticos: enseñamos técnicas verificadas en situaciones reales, adaptadas a la complexión y la realidad cotidiana de la mujer. En pocas sesiones aprendes a protegerte con eficacia y, lo más importante, a confiar en tu propia capacidad de reacción.',
+    intro: 'La defensa personal femenina bien enseñada se centra en herramientas reales: gestión de la distancia, reacción ante agarres, uso del entorno y, sobre todo, prevención y conciencia situacional. En esta guía te explicamos qué debe incluir un buen programa de defensa personal para mujeres, qué señales indican seriedad en un centro de Sitges o alrededores, y qué esperar de las primeras sesiones.',
     phase: 1,
   },
   {
@@ -112,11 +119,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'money-page',
     municipio: 'sitges',
     meta: {
-      title: 'Artes Marciales para Adultos en Sitges | Todos los Niveles',
-      description: 'Clases de artes marciales para adultos en Sitges. Empieza desde cero o retoma si tienes experiencia. Boxeo, karate, MMA, BJJ. Primera clase gratis.',
+      title: 'Artes Marciales para Adultos en Sitges | Empezar de Cero',
+      description: 'Cómo empezar artes marciales siendo adulto en Sitges: qué disciplina elegir según tu objetivo, qué esperar y cómo dar el primer paso sin experiencia.',
     },
     h1: 'Artes Marciales para Adultos en Sitges',
-    intro: 'Nunca es tarde para empezar artes marciales. En nuestra academia en Sitges tenemos adultos que empezaron con 20 años y otros que comenzaron con 55. Lo que importa es la actitud, no la edad. Ofrecemos grupos de adultos en todas las disciplinas, con instructores que saben cómo adaptar la intensidad y la técnica a cada persona. Si tienes experiencia previa, te integramos en el grupo adecuado a tu nivel.',
+    intro: 'Nunca es tarde para empezar artes marciales: hay quien empieza a los 20 y quien empieza a los 55. Lo que importa es elegir bien la disciplina según tu objetivo —forma física, técnica, autodefensa o comunidad— y un grupo de nivel adecuado. En esta guía repasamos las opciones para adultos en Sitges y su entorno, con consejos para elegir centro y evitar los errores típicos del principiante.',
     phase: 1,
   },
   // Perfil pages - Vilanova
@@ -125,11 +132,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'money-page',
     municipio: 'vilanova-i-la-geltru',
     meta: {
-      title: 'Artes Marciales Niños Vilanova i la Geltrú | Desde 4 Años',
-      description: 'Clases infantiles de artes marciales en Vilanova. Karate, judo y taekwondo para niños desde 4 años. Instructores especializados. Primera clase gratis.',
+      title: 'Artes Marciales Niños Vilanova i la Geltrú | Guía Padres',
+      description: 'Artes marciales infantiles en Vilanova i la Geltrú: karate, judo o taekwondo según la edad, qué preguntar al centro y cómo empezar. Guía del Garraf.',
     },
     h1: 'Artes Marciales para Niños en Vilanova i la Geltrú',
-    intro: 'Nuestra academia en Vilanova i la Geltrú tiene el programa infantil más completo de la comarca del Garraf. Ofrecemos clases de karate, judo, taekwondo y defensa personal adaptadas a niños desde los 4 años hasta los 15. Con grupos reducidos por franjas de edad, nuestros instructores especializados en pedagogía infantil garantizan un aprendizaje seguro, progresivo y divertido que refuerza la confianza y la disciplina del niño.',
+    intro: 'Vilanova i la Geltrú, como capital de la comarca, concentra la mayor oferta de actividades infantiles del Garraf, y las artes marciales están entre las más valoradas por los padres. Karate, judo y taekwondo son las puertas de entrada clásicas desde los 4-6 años. En esta guía te explicamos qué aporta cada disciplina según la edad y el carácter de tu hijo, y qué criterios usar para elegir un buen centro en Vilanova.',
     phase: 1,
   },
   {
@@ -137,11 +144,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'money-page',
     municipio: 'vilanova-i-la-geltru',
     meta: {
-      title: 'Artes Marciales para Mujeres en Vilanova | Defensa Personal',
-      description: 'Clases de artes marciales y defensa personal para mujeres en Vilanova i la Geltrú. Grupos reducidos, ambiente seguro. Boxeo, BJJ, defensa personal femenina.',
+      title: 'Artes Marciales para Mujeres en Vilanova | Guía Local',
+      description: 'Artes marciales y defensa personal para mujeres en Vilanova i la Geltrú: disciplinas recomendadas, qué buscar en un centro y cómo empezar.',
     },
     h1: 'Artes Marciales y Defensa Personal para Mujeres en Vilanova',
-    intro: 'En nuestra sede de Vilanova i la Geltrú hemos creado un espacio donde las mujeres pueden practicar artes marciales y defensa personal sin barreras. Contamos con grupos exclusivos para mujeres en boxeo, kickboxing y defensa personal, impartidos por instructoras con formación específica. También tienes acceso a todos los grupos mixtos de la academia. El primer paso es tuyo: la primera clase es completamente gratuita y sin compromiso.',
+    intro: 'Si eres mujer y quieres empezar a entrenar en Vilanova i la Geltrú, tienes opciones para todos los objetivos: boxeo y kickboxing para forma física y descarga de estrés, BJJ para técnica pura, defensa personal para seguridad práctica. En esta guía te contamos qué valorar al elegir —existencia de grupos femeninos, enfoque del centro, ambiente— y cómo probar sin comprometerte desde el primer día.',
     phase: 1,
   },
   {
@@ -150,11 +157,11 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'vilanova-i-la-geltru',
     disciplina: 'defensa-personal',
     meta: {
-      title: 'Defensa Personal Femenina en Vilanova i la Geltrú',
-      description: 'Clases de defensa personal para mujeres en Vilanova. Técnicas reales, instructoras especializadas. Aprende a protegerte. Primera clase gratuita.',
+      title: 'Defensa Personal Femenina en Vilanova i la Geltrú | Guía',
+      description: 'Defensa personal para mujeres en Vilanova: qué técnicas funcionan, cómo reconocer un programa serio y cómo dar el primer paso. Guía del Garraf.',
     },
     h1: 'Defensa Personal para Mujeres en Vilanova i la Geltrú',
-    intro: 'Nuestras clases de defensa personal femenina en Vilanova i la Geltrú son el programa más demandado de la academia. Enseñamos técnicas verificadas en situaciones reales: cómo reaccionar ante un agarre, cómo crear distancia, cómo usar el entorno. Sin mitos, sin movimientos imposibles. Solo lo que funciona cuando más importa. Las clases se imparten en grupos reducidos de máximo 8 personas para garantizar atención individualizada.',
+    intro: 'Un buen programa de defensa personal femenina no vende movimientos espectaculares: enseña a reaccionar ante un agarre, a crear distancia, a usar la voz y el entorno, y a evitar el peligro antes de que ocurra. En esta guía te explicamos qué debe incluir un programa serio, cómo evaluar las opciones en Vilanova i la Geltrú y qué esperar de las primeras sesiones si nunca has entrenado nada parecido.',
     phase: 1,
   },
   {
@@ -163,10 +170,10 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'vilanova-i-la-geltru',
     meta: {
       title: 'Artes Marciales para Adultos en Vilanova i la Geltrú',
-      description: 'Artes marciales para adultos en Vilanova. Empieza desde cero o con experiencia. Boxeo, karate, MMA, BJJ, muay thai. Primera clase gratis.',
+      description: 'Cómo empezar artes marciales siendo adulto en Vilanova: qué disciplina va contigo, cómo elegir centro y qué esperar de las primeras semanas.',
     },
     h1: 'Artes Marciales para Adultos en Vilanova i la Geltrú',
-    intro: 'La Academia de Artes Marciales Garraf en Vilanova i la Geltrú tiene el horario más amplio de la comarca, con clases de tarde y noche que se adaptan a la vida laboral del adulto. Ofrecemos todas las disciplinas en grupos de adultos organizados por nivel, desde iniciación absoluta hasta avanzado. No hace falta experiencia previa ni estar en forma para empezar: el entrenamiento te pone en forma mientras aprendes.',
+    intro: 'Empezar artes marciales de adulto en Vilanova i la Geltrú es más fácil de lo que parece: al ser la ciudad con más oferta de la comarca, es donde más probabilidades tienes de encontrar grupos de iniciación y horarios compatibles con el trabajo. No hace falta estar en forma para empezar —el entrenamiento te pone en forma— ni tener experiencia previa. Esta guía te ayuda a elegir disciplina y centro con criterio.',
     phase: 1,
   },
   // Karate infantil
@@ -176,11 +183,11 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'sitges',
     disciplina: 'karate',
     meta: {
-      title: 'Karate Infantil en Sitges | Clases Desde 4 Años',
-      description: 'Karate para niños en Sitges desde los 4 años. Instructores especializados en enseñanza infantil. Grupos por edades. Primera clase gratis.',
+      title: 'Karate Infantil en Sitges | Guía para Padres',
+      description: 'Karate para niños en Sitges: desde qué edad empezar, qué aporta el karate infantil, qué preguntar al centro y cómo elegir bien. Guía del Garraf.',
     },
     h1: 'Karate Infantil en Sitges',
-    intro: 'Las clases de karate infantil en Sitges son el programa estrella de nuestra academia. Formamos a niños desde los 4 años con una metodología progresiva que desarrolla coordinación, disciplina y autoconfianza en cada sesión. Los grupos están organizados por franjas de edad para garantizar que cada niño aprende a su ritmo, rodeado de compañeros en el mismo nivel. Nuestros instructores combinan experiencia marcial con formación pedagógica específica para la infancia.',
+    intro: 'El karate es una de las actividades extraescolares más completas para niños: trabaja coordinación, disciplina, respeto y confianza con una progresión clara de cinturones que motiva sin presionar. En esta guía para padres de Sitges te explicamos desde qué edad tiene sentido empezar, cómo es una clase de karate infantil típica y qué criterios usar para elegir centro: titulación del instructor, grupos por edades y metodología pedagógica.',
     phase: 1,
   },
   {
@@ -189,11 +196,11 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'vilanova-i-la-geltru',
     disciplina: 'karate',
     meta: {
-      title: 'Karate Infantil en Vilanova i la Geltrú | Desde 4 Años',
-      description: 'Karate para niños en Vilanova. Clases desde los 4 años con instructores especializados. El programa infantil más completo del Garraf. Primera clase gratis.',
+      title: 'Karate Infantil en Vilanova i la Geltrú | Guía Padres',
+      description: 'Karate para niños en Vilanova: desde qué edad, qué beneficios reales aporta y cómo elegir un buen centro. Guía local de la comarca del Garraf.',
     },
     h1: 'Karate Infantil en Vilanova i la Geltrú',
-    intro: 'El programa de karate infantil en nuestra sede de Vilanova i la Geltrú es el más consolidado de la comarca. Llevamos más de una década formando niños del Garraf con una metodología que prioriza el desarrollo personal por encima de la competición. Los niños aprenden a caer, a levantarse, a respetar y a superarse. Nuestros grupos van de los 4 a los 15 años, con instructores especializados en cada franja de edad.',
+    intro: 'El karate infantil enseña mucho más que técnica: los niños aprenden a caer y levantarse, a respetar normas y compañeros, y a ganar confianza a través del esfuerzo. Vilanova i la Geltrú, por tamaño y tradición deportiva, es el municipio del Garraf donde más fácil resulta encontrar grupos de karate por franjas de edad. Esta guía te ayuda a valorar las opciones y a preparar la primera clase de tu hijo.',
     phase: 1,
   },
   // Cerca de pages
@@ -203,10 +210,10 @@ const SPECIAL_PAGES: PageDef[] = [
     municipio: 'sant-pere-de-ribes',
     meta: {
       title: 'Artes Marciales cerca de Sant Pere de Ribes | Garraf',
-      description: 'Clases de artes marciales cerca de Sant Pere de Ribes. Academia Garraf en Sitges a menos de 10 min. Todas las disciplinas. Primera clase gratis.',
+      description: 'Dónde entrenar artes marciales si vives en Sant Pere de Ribes: opciones locales y municipios cercanos con más oferta. Guía de la comarca del Garraf.',
     },
     h1: 'Artes Marciales cerca de Sant Pere de Ribes',
-    intro: 'Si buscas clases de artes marciales cerca de Sant Pere de Ribes, nuestra academia en Sitges es tu opción más cercana: menos de 10 minutos en coche. Ofrecemos todas las disciplinas con horarios de mañana, tarde y noche. Muchos de nuestros alumnos vienen desde Les Roquetes, Avinyonet y la Plana Novella. La primera clase es gratuita y sin compromiso.',
+    intro: 'Si vives en Sant Pere de Ribes, Les Roquetes o Ribes y quieres entrenar artes marciales, tienes dos vías: la oferta local del municipio, más limitada, o desplazarte a Sitges y Vilanova i la Geltrú, que están a 10-15 minutos en coche y concentran la mayor parte de la oferta de la comarca. En esta guía te contamos cómo valorar cada opción según tu disciplina, horario y disponibilidad para desplazarte.',
     phase: 2,
   },
   {
@@ -214,11 +221,11 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'cerca-de',
     municipio: 'cubelles',
     meta: {
-      title: 'Artes Marciales cerca de Cubelles | Academia Garraf',
-      description: 'Clases de artes marciales cerca de Cubelles. Nuestra academia en Vilanova a menos de 8 min. Boxeo, karate, MMA y más. Primera clase gratis.',
+      title: 'Artes Marciales cerca de Cubelles | Guía del Garraf',
+      description: 'Dónde entrenar artes marciales si vives en Cubelles: opciones en el municipio y en Vilanova i la Geltrú, a menos de 10 minutos. Guía local.',
     },
     h1: 'Artes Marciales cerca de Cubelles',
-    intro: 'Desde Cubelles, nuestra academia principal en Vilanova i la Geltrú está a menos de 8 minutos en coche por la N-340. Ofrecemos todas las disciplinas con el horario más amplio de la comarca. Muchos vecinos de Cubelles son alumnos habituales de nuestra sede de Vilanova. Si prefieres no desplazarte, consulta nuestras clases en la propia Cubelles.',
+    intro: 'Desde Cubelles, la referencia natural para entrenar artes marciales es Vilanova i la Geltrú: está a menos de 10 minutos en coche por la C-31 y concentra la mayor oferta deportiva de la comarca. También hay opciones en dirección Cunit y Calafell, ya en el Baix Penedès. En esta guía te ayudamos a decidir dónde buscar según la disciplina que te interese y tu disponibilidad.',
     phase: 3,
   },
   {
@@ -226,107 +233,109 @@ const SPECIAL_PAGES: PageDef[] = [
     type: 'cerca-de',
     municipio: 'canyelles',
     meta: {
-      title: 'Artes Marciales cerca de Canyelles | Garraf',
-      description: 'Clases de artes marciales cerca de Canyelles. Academia en Vilanova a 15 min por la C-15. Boxeo, karate, BJJ y más. Primera clase gratis.',
+      title: 'Artes Marciales cerca de Canyelles | Guía del Garraf',
+      description: 'Dónde entrenar artes marciales si vives en Canyelles u Olivella: opciones en Vilanova i la Geltrú a 15 minutos por la C-15. Guía local del Garraf.',
     },
     h1: 'Artes Marciales cerca de Canyelles',
-    intro: 'Desde Canyelles, la opción más próxima para practicar artes marciales es nuestra academia en Vilanova i la Geltrú, accesible en menos de 15 minutos por la C-15. Nuestros alumnos de Canyelles y Olivella se desplazan regularmente y forman parte de una comunidad cada vez más grande. Si el desplazamiento es un obstáculo, contáctanos: organizamos grupos y carpooling entre alumnos de la misma zona.',
+    intro: 'Canyelles es un municipio pequeño del interior del Garraf, así que para entrenar artes marciales lo habitual es desplazarse. La opción más práctica es Vilanova i la Geltrú, a unos 15 minutos por la C-15, con la mayor variedad de disciplinas de la comarca. En esta guía te explicamos qué puedes encontrar y cómo organizarte si el desplazamiento es un obstáculo, especialmente con niños.',
     phase: 4,
   },
 ];
 
 // ── Local FAQ items specific to each discipline × municipality combination ────
+// Preguntas informacionales honestas: geografía real, criterios de elección y
+// contexto local verificable. Nada de horarios, grupos o instalaciones inventadas.
 const LOCAL_FAQS: Record<string, Record<string, { q: string; a: string }[]>> = {
   'boxeo': {
     'sitges': [
-      { q: '¿Hay clases de boxeo en Sitges durante el verano?', a: 'Sí. Mantenemos el calendario completo de junio a septiembre, con ajuste de horarios por el calor: primeras clases de mañana y las nocturnas a partir de las 20:30. Muchos alumnos de temporada se apuntan solo los meses de verano.' },
-      { q: '¿Puedo practicar boxeo en Sitges si solo estoy de fin de semana?', a: 'Tenemos clases de sábado por la mañana específicas para alumnos con residencia no habitual en Sitges. Consulta disponibilidad para acceso puntual sin mensualidad.' },
+      { q: '¿Es fácil encontrar clases de boxeo en Sitges?', a: 'Sitges tiene una vida deportiva activa y orientada también al público internacional, aunque su oferta es menor que la de Vilanova i la Geltrú, a 10-15 minutos. Si buscas boxeo en la zona, valora ambos municipios antes de decidir.' },
+      { q: '¿Qué debo preguntar antes de apuntarme a boxeo en Sitges?', a: 'Tres cosas: si hay grupo específico de iniciación, si el sparring es opcional (en un buen gimnasio siempre lo es) y si puedes hacer una clase de prueba antes de comprometerte con una cuota.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Cuántos grupos de boxeo hay en la sede de Vilanova?', a: 'En Vilanova tenemos grupos de iniciación (lunes/miércoles), nivel intermedio (martes/jueves) y clase de fitness boxing (viernes). También hay un grupo de competición para quienes quieran combatir.' },
-      { q: '¿El boxeo en Vilanova es compatible con el trabajo a turnos?', a: 'Sí. Con clases de mañana (07:00-09:00), tarde (17:00-20:00) y noche (20:00-22:00), cubrimos prácticamente cualquier turno laboral.' },
+      { q: '¿Por qué Vilanova es buena opción para empezar boxeo?', a: 'Como capital de la comarca, Vilanova i la Geltrú concentra la mayor oferta deportiva del Garraf, lo que se traduce en más grupos, más franjas horarias y más probabilidad de encontrar un nivel de iniciación real.' },
+      { q: '¿El boxeo es compatible con el trabajo a turnos?', a: 'Depende del centro, pero en municipios grandes como Vilanova es más habitual encontrar clases en varias franjas del día. Pregunta siempre por el horario completo antes de apuntarte.' },
     ],
     'sant-pere-de-ribes': [
-      { q: '¿Desde qué urbanizaciones de Sant Pere de Ribes se llega fácil a las clases de boxeo?', a: 'Desde Les Roquetes, Avinyonet de Puigventós y la Plana Novella, la academia en Sitges está a menos de 10-15 minutos en coche. Muchos alumnos de la zona se organizan para ir juntos.' },
+      { q: '¿Dónde entrenan boxeo los vecinos de Sant Pere de Ribes?', a: 'La oferta dentro del municipio es limitada, así que lo más habitual es desplazarse a Sitges o Vilanova i la Geltrú, ambas a 10-15 minutos en coche desde Ribes o Les Roquetes.' },
     ],
   },
   'karate': {
     'sitges': [
-      { q: '¿El karate en Sitges tiene grupos infantiles en horario de tarde?', a: 'Sí. Las clases infantiles en Sitges se imparten de lunes a jueves en horario de tarde (17:00-18:30), pensado para niños que salen del colegio. Los sábados hay grupo abierto para todas las edades.' },
-      { q: '¿Participáis en el circuito de competición catalán desde Sitges?', a: 'Sí. Los alumnos interesados en competir representan al centro en el circuito de la Federació Catalana de Karate. La competición siempre es voluntaria: la mayoría de alumnos practica sin competir.' },
+      { q: '¿Desde qué edad puede empezar karate un niño en Sitges?', a: 'La mayoría de escuelas de karate aceptan niños desde los 4-6 años, con grupos separados por franjas de edad. A los 4-5 años el trabajo es sobre todo psicomotriz; el karate como disciplina completa llega más adelante.' },
+      { q: '¿Cómo reconozco una buena escuela de karate en Sitges?', a: 'Fíjate en la titulación del instructor (cinturón negro con grado federativo), en que los grupos infantiles estén separados por edades y en que te dejen ver una clase antes de apuntarte.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Cuántos grupos de karate hay en la sede de Vilanova i la Geltrú?', a: 'Tenemos grupos divididos por edad y nivel: prebenjamines (4-6 años), benjamines/alevines (7-12), juveniles (13-17), adultos iniciación y adultos avanzados. Es el programa de karate más completo de la comarca.' },
-      { q: '¿El karate en Vilanova sigue el sistema WKF o tradicional?', a: 'Enseñamos karate estilo shotokan con base en el sistema WKF (Federación Mundial de Karate), que es el estilo olímpico. Combinamos katas, kihon y kumite en la metodología de entrenamiento.' },
+      { q: '¿Hay tradición de karate en Vilanova i la Geltrú?', a: 'El karate es una de las artes marciales con más implantación en Cataluña y los municipios grandes como Vilanova suelen tener escuelas consolidadas con grupos por edad y nivel. Es de las disciplinas más fáciles de encontrar en la comarca.' },
+      { q: '¿Karate WKF o tradicional: qué me conviene?', a: 'El estilo WKF (olímpico) orienta más a la competición deportiva; los enfoques tradicionales priorizan kata y defensa personal. Para un niño o un principiante, importa más la calidad del instructor que el estilo.' },
     ],
   },
   'defensa-personal': {
     'sitges': [
-      { q: '¿Hay clases de defensa personal solo para mujeres en Sitges?', a: 'Sí. Tenemos un grupo exclusivo femenino de defensa personal en Sitges que se reúne los martes y jueves por la tarde. El enfoque es distinto al grupo mixto: situaciones específicas, técnicas adaptadas y ambiente 100% seguro.' },
-      { q: '¿Cuántas sesiones necesito para aprender lo básico de defensa personal en Sitges?', a: 'Con un mes de clases regulares (2 días/semana) tienes las técnicas fundamentales interiorizadas. El primer bloque de 4 sesiones ya te da herramientas aplicables para situaciones de riesgo cotidianas.' },
+      { q: '¿Hay defensa personal solo para mujeres en Sitges?', a: 'Los grupos exclusivamente femeninos existen pero no en todos los centros ni en todos los municipios. Si es tu prioridad, pregúntalo directamente antes de apuntarte, o escríbenos y te ayudamos a localizar opciones en la zona.' },
+      { q: '¿Cuántas sesiones necesito para aprender lo básico?', a: 'Con 4-8 sesiones bien planteadas ya interiorizas las respuestas fundamentales ante los escenarios más comunes. La continuidad después marca la diferencia entre "haber hecho un curso" y saber reaccionar bajo estrés.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿La defensa personal en Vilanova incluye también defensa ante objetos o armas?', a: 'El programa avanzado de defensa personal en Vilanova sí incluye técnicas de desarmado y defensa ante objetos de agresión. El nivel básico se centra en agresiones sin armas, que son el 95% de los casos reales.' },
-      { q: '¿Puedo apuntarme a defensa personal en Vilanova si no tengo experiencia en artes marciales?', a: 'Es la situación más habitual. El 80% de nuestros alumnos de defensa personal llegan sin ninguna experiencia previa. El programa está diseñado exactamente para eso: enseñar técnicas funcionales sin base marcial previa.' },
+      { q: '¿La defensa personal incluye defensa ante armas?', a: 'Los programas básicos se centran en agresiones sin armas, que son la gran mayoría de los casos reales. El trabajo ante objetos peligrosos es materia de niveles avanzados y no todos los centros lo imparten: pregúntalo si te interesa.' },
+      { q: '¿Puedo empezar defensa personal sin experiencia marcial?', a: 'Sí, es el caso más habitual. Un buen programa de defensa personal está diseñado precisamente para personas sin base marcial: técnicas simples, funcionales y entrenadas bajo presión progresiva.' },
     ],
   },
   'muay-thai': {
     'sitges': [
-      { q: '¿El muay thai en Sitges tiene clase los sábados?', a: 'Sí. Los sábados hay una clase técnica de muay thai de 10:00 a 11:30, especialmente popular entre alumnos que no pueden venir entre semana.' },
+      { q: '¿Puedo entrenar muay thai en Sitges si solo vengo en verano?', a: 'Sitges tiene mucha población estacional y algunos centros lo tienen en cuenta con fórmulas flexibles. Pregunta por bonos o mensualidades sin permanencia antes de apuntarte si tu estancia es temporal.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Cuál es el nivel medio de los grupos de muay thai en Vilanova?', a: 'Tenemos dos grupos bien diferenciados: iniciación (sin requisitos) y nivel medio-avanzado. El grupo de iniciación es el de mayor crecimiento y está pensado para que cualquiera pueda empezar con seguridad.' },
+      { q: '¿Cómo sé si un gimnasio de muay thai en Vilanova es serio?', a: 'Busca que separe claramente iniciación de niveles avanzados, que el contacto sea progresivo y opcional, y que el instructor tenga trayectoria verificable en la disciplina, sea competitiva o docente.' },
     ],
   },
   'jiu-jitsu-brasileno': {
     'sitges': [
-      { q: '¿Hacéis open mats de BJJ en Sitges?', a: 'Sí. Los viernes por la tarde organizamos open mat abierto a todos los niveles. Es una sesión de entrenamiento libre donde practicas con compañeros de distintos cinturones.' },
+      { q: '¿Qué debo buscar en una academia de BJJ en Sitges?', a: 'El linaje del instructor (quién le dio sus grados), la proporción entre técnica y sparring (rolling) en las clases, y el ambiente: el BJJ se aprende con compañeros, y una sala respetuosa acelera muchísimo el progreso.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿El BJJ en Vilanova es apto para mujeres?', a: 'Absolutamente. El BJJ es posiblemente el arte marcial donde el tamaño importa menos, lo que lo hace especialmente efectivo para mujeres. Tenemos un porcentaje significativo de alumnas y el ambiente es siempre respetuoso.' },
+      { q: '¿El BJJ es apto para mujeres?', a: 'Es posiblemente el arte marcial donde el tamaño y la fuerza importan menos, porque se basa en palancas y posiciones. Cada vez hay más practicantes femeninas en Cataluña, también en la comarca del Garraf.' },
     ],
   },
   'mma': {
     'sitges': [
-      { q: '¿Necesito saber ya boxeo y BJJ para apuntarme a MMA en Sitges?', a: 'No. Nuestro programa de MMA en Sitges incluye un bloque de fundamentos que cubre los básicos de golpeo y suelo antes de integrarlos. Puedes empezar desde cero.' },
+      { q: '¿Necesito base de boxeo o BJJ para empezar MMA en Sitges?', a: 'No. Un buen programa de MMA para principiantes cubre los fundamentos de golpeo, derribo y suelo desde cero. Si el centro exige experiencia previa para entrar, busca otro para empezar.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿El MMA en Vilanova tiene octógono?', a: 'Sí, disponemos de jaula de prácticas en la sede de Vilanova para el trabajo específico de MMA. Las clases de sparring y situaciones de combate se realizan en ella con el equipamiento de protección adecuado.' },
+      { q: '¿Qué instalaciones necesita un buen gimnasio de MMA?', a: 'Como mínimo, tatami o zona acolchada para el trabajo de suelo y material de golpeo (sacos, manoplas). La jaula u octógono es un plus para simular competición, pero no es imprescindible para aprender.' },
     ],
   },
   'kickboxing': {
     'sitges': [
-      { q: '¿El kickboxing en Sitges es bueno para adelgazar?', a: 'Una sesión de kickboxing quema entre 600 y 900 kcal dependiendo de la intensidad. Es uno de los entrenamientos cardiovasculares más completos. Muchos alumnos de Sitges lo eligen precisamente por la combinación de fitness y técnica.' },
+      { q: '¿El kickboxing en Sitges sirve para ponerse en forma?', a: 'Es uno de los entrenamientos cardiovasculares más completos que existen: una sesión intensa puede quemar entre 600 y 900 kcal. Muchas personas lo eligen exactamente por eso, sin interés en competir.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Hay competición de kickboxing desde Vilanova?', a: 'Sí. Participamos en el circuito catalán de kickboxing con alumnos de la sede de Vilanova. La competición es siempre voluntaria y se prepara en un grupo específico aparte de las clases generales.' },
+      { q: '¿Se puede competir en kickboxing desde la comarca?', a: 'Cataluña tiene circuito activo de kickboxing con competiciones regulares. Si te interesa competir, busca un centro cuyo instructor tenga experiencia llevando competidores; si no, cualquier buen grupo recreativo te vale.' },
     ],
   },
   'judo': {
     'sitges': [
-      { q: '¿El judo en Sitges tiene tatami homologado?', a: 'Sí, contamos con tatami homologado para la práctica de judo. La calidad del suelo de entrenamiento es fundamental en judo, especialmente en las técnicas de proyección y caída.' },
+      { q: '¿Por qué es importante el tatami en judo?', a: 'Porque el judo se basa en proyecciones y caídas: un tatami homologado y en buen estado es una cuestión de seguridad, no de comodidad. Al visitar un centro en Sitges o alrededores, fíjate en el estado del suelo antes que en cualquier otra cosa.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Podemos competir en judo desde Vilanova?', a: 'Sí. Preparamos a alumnos para el circuito catalán de judo desde categoría benjamín. Los circuitos de la Federació Catalana de Judo tienen competiciones en múltiples categorías de edad.' },
+      { q: '¿Hay competición de judo infantil en Cataluña?', a: 'Sí, la Federació Catalana de Judo organiza circuito desde categorías tempranas. La competición es siempre voluntaria: la mayoría de niños practica judo por los valores y la actividad física, sin competir.' },
     ],
   },
   'taekwondo': {
     'sitges': [
-      { q: '¿El taekwondo en Sitges tiene grupos de competición?', a: 'Sí. Para los alumnos con ambiciones competitivas hay un grupo específico de competición que entrena peto electrónico (WTF) y participa en el circuito catalán. No es obligatorio competir.' },
+      { q: '¿Taekwondo o karate para mi hijo en Sitges?', a: 'Ambos son excelentes para niños. El taekwondo destaca por el trabajo de piernas, flexibilidad y velocidad; el karate por el equilibrio entre técnica de brazos y piernas y su enfoque en la disciplina. Lo decisivo es la calidad del instructor que tengas cerca.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿Cuántos días a la semana hay taekwondo en Vilanova?', a: 'Los grupos de taekwondo en Vilanova entrenan martes y jueves (grupos infantiles y juveniles) y lunes, miércoles y viernes (adultos). Los sábados hay grupo complementario de patadas y físico.' },
+      { q: '¿Cuántos días a la semana se entrena taekwondo?', a: 'Para niños, dos días semanales es el estándar razonable. Para adultos con objetivos de progresión o competición, tres sesiones semanales aceleran claramente el avance.' },
     ],
     'sant-pere-de-ribes': [
-      { q: '¿Vale la pena desplazarme desde Sant Pere de Ribes para el taekwondo?', a: 'La academia más cercana con programa completo de taekwondo está en Sitges, a menos de 10 minutos. Para las clases semanales el desplazamiento es muy asumible, y muchos alumnos de la zona llevan meses haciéndolo.' },
+      { q: '¿Vale la pena desplazarse desde Sant Pere de Ribes para entrenar taekwondo?', a: 'Sitges y Vilanova están a 10-15 minutos en coche, una distancia muy asumible para dos entrenamientos semanales. Si el desplazamiento es un problema, pregunta también por actividades en polideportivos municipales de Ribes.' },
     ],
   },
   'krav-maga': {
     'sitges': [
-      { q: '¿El krav maga en Sitges tiene restricción de edad?', a: 'Las clases de krav maga son para adultos a partir de 16 años. Por la naturaleza del sistema, requiere madurez física y mental para trabajar las situaciones de combate de forma controlada.' },
+      { q: '¿El krav maga tiene edad mínima?', a: 'La mayoría de escuelas de krav maga trabajan con adultos a partir de 16 años, por la naturaleza del sistema: requiere madurez para entrenar escenarios de agresión de forma controlada.' },
     ],
     'vilanova-i-la-geltru': [
-      { q: '¿El krav maga en Vilanova es el sistema israelí original o una versión adaptada?', a: 'Enseñamos el sistema Krav Maga Internacional (KMI), basado en la metodología desarrollada por Imi Lichtenfeld para las FDI. Está adaptado para civiles pero mantiene la efectividad y directividad del sistema original.' },
+      { q: '¿Cómo distingo un instructor serio de krav maga?', a: 'Pregunta por su certificación y la organización que la emite (hay varias federaciones internacionales de krav maga), cuántos años lleva impartiendo y cómo estructura la progresión. Desconfía de quien promete resultados inmediatos sin trabajo.' },
     ],
   },
 };
@@ -337,62 +346,63 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
   const mSlug = combo.municipio;
   const dName = disc(dSlug);
   const mName = loc(mSlug);
-  const mShort = getLocationBySlug(mSlug)?.nameShort ?? mName;
   const discipline = getDisciplineBySlug(dSlug);
 
+  // Intros honestos por combinación: guía local, contexto geográfico real,
+  // criterios de elección. Sin identidad de academia.
   const intros: Record<string, Record<string, string>> = {
     'boxeo': {
-      'sitges': `¿Buscas clases de boxeo en Sitges? En la Academia de Artes Marciales Garraf ofrecemos entrenamiento de boxeo para todos los niveles, desde iniciación absoluta hasta sparring técnico. Nuestro instructor principal es exboxeador profesional con 15 años de experiencia en el ring y en la enseñanza. Las clases combinan técnica de golpeo, trabajo de saco, manoplas y una preparación física que transformará tu condición en pocas semanas.`,
-      'vilanova-i-la-geltru': `El boxeo en Vilanova i la Geltrú tiene un nuevo referente. En la Academia Garraf entrenamos a alumnos de todos los perfiles: los que quieren competir, los que buscan ponerse en forma y los que simplemente quieren aprender el arte del puñetazo bien hecho. Las clases son dinámicas, progresivas y con grupos reducidos para garantizar que el instructor corrija tu técnica desde el primer día.`,
-      'sant-pere-de-ribes': `Si buscas boxeo en Sant Pere de Ribes, nuestra academia en Sitges está a menos de 10 minutos. Contamos con clases de boxeo para todos los niveles con horarios de tarde que se adaptan a cualquier rutina. Primera clase completamente gratuita.`,
-      'cubelles': `Desde Cubelles, nuestra sede de Vilanova está a menos de 8 minutos para que puedas entrenar boxeo sin excusas. Clases para todos los niveles, grupos reducidos y el mejor equipo de la comarca del Garraf.`,
+      'sitges': `¿Buscas clases de boxeo en Sitges? Esta guía te cuenta lo que debes saber antes de empezar: cómo son las clases de iniciación (técnica sobre saco y manoplas, sin contacto obligatorio), qué material necesitas y qué preguntar en cada gimnasio antes de apuntarte. Sitges tiene una vida deportiva activa, y a 10-15 minutos tienes también toda la oferta de Vilanova i la Geltrú. Si quieres, escríbenos y te orientamos sin coste.`,
+      'vilanova-i-la-geltru': `El boxeo es una de las formas más completas de ponerse en forma: cardio, coordinación, descarga de estrés y técnica real. Vilanova i la Geltrú, como capital de la comarca del Garraf, es el municipio donde más fácil resulta encontrar clases de boxeo con grupos de iniciación de verdad. En esta guía te explicamos cómo funciona una clase típica, qué material hace falta y con qué criterios elegir gimnasio.`,
+      'sant-pere-de-ribes': `Si buscas boxeo y vives en Sant Pere de Ribes, lo más práctico suele ser desplazarse: Sitges y Vilanova i la Geltrú están a 10-15 minutos en coche desde Ribes o Les Roquetes y concentran la mayor parte de la oferta de la comarca. En esta guía te contamos cómo empezar en el boxeo desde cero y qué valorar al elegir gimnasio en la zona.`,
+      'cubelles': `Desde Cubelles, la referencia más cercana para entrenar boxeo es Vilanova i la Geltrú, a menos de 10 minutos por la C-31. En esta guía te explicamos cómo son las clases de boxeo para principiantes, qué necesitas para empezar y qué preguntar antes de apuntarte a cualquier gimnasio de la zona.`,
     },
     'karate': {
-      'sitges': `El karate en Sitges tiene una larga tradición y en la Academia Garraf somos su continuación natural. Ofrecemos clases de karate para adultos, niños y grupos de competición, con un cuerpo técnico formado por cinturones negros con décadas de experiencia y docencia. Nuestro método combina la tradición del karate con una pedagogía moderna que garantiza progresión real en cada alumno.`,
-      'vilanova-i-la-geltru': `Nuestra academia en Vilanova i la Geltrú ofrece el programa de karate más completo de la comarca del Garraf. Con grupos desde los 4 años hasta adultos senior, el karate que enseñamos combina técnica tradicional con aplicaciones reales de defensa personal. Más de 150 alumnos activos avalan un método que lleva años dando resultados.`,
-      'sant-pere-de-ribes': `Para los vecinos de Sant Pere de Ribes que buscan karate, nuestra academia en Sitges es la opción más cercana y completa. Grupos para niños y adultos, instructores con cinturón negro y primera clase gratis para que compruebes la diferencia.`,
-      'cubelles': `Los vecinos de Cubelles que buscan clases de karate tienen en nuestra academia de Vilanova la mejor opción de la zona. Grupos por niveles, instructores certificados y el programa infantil más completo del Garraf.`,
+      'sitges': `El karate es el arte marcial más practicado del mundo y una de las mejores puertas de entrada a las artes marciales, tanto para niños como para adultos. Si buscas karate en Sitges, esta guía te explica qué estilos existen, cómo es la progresión de cinturones, desde qué edad pueden empezar los niños y qué criterios usar para elegir una buena escuela en el municipio o en la vecina Vilanova.`,
+      'vilanova-i-la-geltru': `¿Karate en Vilanova i la Geltrú? Buena elección: es una de las disciplinas con más tradición e implantación en Cataluña, y en la capital del Garraf es donde más probabilidades tienes de encontrar escuelas con grupos por edad y nivel. En esta guía repasamos qué aporta el karate a niños y adultos, cómo funciona el sistema de grados y qué preguntar antes de apuntarte.`,
+      'sant-pere-de-ribes': `Para los vecinos de Sant Pere de Ribes que buscan karate, las opciones más completas de la zona están en Sitges y Vilanova i la Geltrú, a 10-15 minutos en coche. También vale la pena consultar la oferta deportiva municipal de Ribes y Les Roquetes. En esta guía te contamos desde qué edad empezar, qué beneficios reales aporta el karate y cómo reconocer una buena escuela.`,
+      'cubelles': `Si vives en Cubelles y te interesa el karate —para ti o para tus hijos—, la oferta más amplia de la zona está en Vilanova i la Geltrú, a menos de 10 minutos. En esta guía te explicamos qué aporta el karate según la edad, cómo es la progresión de cinturones y qué criterios usar para elegir escuela.`,
     },
     'mma': {
-      'sitges': `El MMA en Sitges está creciendo y en la Academia Garraf lideramos esa tendencia. Nuestro programa de artes marciales mixtas integra striking (boxeo y kickboxing), derribo (lucha y judo) y suelo (BJJ y grappling) en un sistema de entrenamiento completo y progresivo. Puedes empezar desde cero: las primeras semanas son de fundamentos técnicos sin contacto.`,
-      'vilanova-i-la-geltru': `El MMA en Vilanova i la Geltrú tiene su casa en la Academia Garraf. Con instalaciones diseñadas para el entrenamiento de artes marciales mixtas, octógono de prácticas y un cuerpo técnico especializado, ofrecemos el programa de MMA más serio de la comarca. Iniciación, nivel intermedio y avanzado. Grupos reducidos y supervisión constante.`,
+      'sitges': `El MMA (artes marciales mixtas) integra golpeo, derribo y suelo en el sistema de combate más completo que existe. Si te interesa empezar MMA en Sitges o alrededores, esta guía te explica qué debe incluir un buen programa de iniciación —fundamentos técnicos antes que sparring—, qué instalaciones importan de verdad y cómo evaluar la seriedad de un gimnasio.`,
+      'vilanova-i-la-geltru': `El MMA ha pasado de nicho a fenómeno global, y cada vez más gente del Garraf quiere probarlo. En Vilanova i la Geltrú, el municipio con más oferta deportiva de la comarca, es donde más sentido tiene buscar. Esta guía te explica cómo se estructura el entrenamiento de MMA (striking, lucha, suelo), si se puede empezar desde cero —sí— y qué preguntar antes de apuntarte.`,
     },
     'kickboxing': {
-      'sitges': `El kickboxing en Sitges combina la elegancia técnica del boxeo con la potencia y diversidad de las patadas. En la Academia Garraf, nuestras clases de kickboxing son perfectas tanto para quienes quieren aprender a defenderse como para quienes buscan el mejor entrenamiento cardiovascular posible. Grupos de todos los niveles de lunes a viernes.`,
-      'vilanova-i-la-geltru': `Vilanova i la Geltrú tiene una comunidad de kickboxing activa y nuestra academia es el centro de esa comunidad. Desde clases de iniciación hasta grupos de competición, el kickboxing en la Academia Garraf se enseña con rigor técnico y en un ambiente que engancha desde el primer día.`,
+      'sitges': `El kickboxing combina la técnica de puños del boxeo con las patadas, y es una de las opciones favoritas de quienes quieren ponerse en forma aprendiendo algo útil. Si buscas kickboxing en Sitges, esta guía te cuenta cómo son las clases, qué material necesitas, y cómo valorar la oferta del municipio y de Vilanova, a pocos minutos.`,
+      'vilanova-i-la-geltru': `¿Kickboxing en Vilanova i la Geltrú? Es una disciplina en pleno crecimiento y la capital del Garraf es el mejor sitio de la comarca para buscar grupo. En esta guía te explicamos la diferencia entre kickboxing y muay thai, qué esperar de una clase de iniciación y qué señales indican que un gimnasio es serio.`,
     },
     'muay-thai': {
-      'sitges': `El muay thai en Sitges tiene un hogar en la Academia Garraf. Enseñamos el arte de las ocho extremidades con la misma seriedad técnica con la que se entrena en Tailandia, adaptado a los diferentes niveles y objetivos de nuestros alumnos. Desde quien quiere aprender para la autodefensa hasta quien tiene ambiciones competitivas, tenemos el programa adecuado para ti.`,
-      'vilanova-i-la-geltru': `En Vilanova i la Geltrú, el muay thai es una de las disciplinas más demandadas de nuestra academia. Con más de 50 alumnos activos en esta disciplina, el nivel técnico de nuestros grupos es el más alto de la comarca. Si buscas muay thai serio en el Garraf, estás en el lugar correcto.`,
-      'sant-pere-de-ribes': `Para los vecinos de Sant Pere de Ribes interesados en muay thai, nuestra academia en Sitges ofrece las mejores clases de la zona a menos de 10 minutos. Instructores con experiencia en el circuito de combate y grupos para todos los niveles.`,
+      'sitges': `El muay thai, el arte de las ocho extremidades, añade codos, rodillas y clinch al repertorio del kickboxing. Si buscas muay thai en Sitges, esta guía te explica cómo es el entrenamiento real —mucha técnica, contacto siempre progresivo y opcional—, qué material necesitas y cómo valorar las opciones de la zona, incluida Vilanova a pocos minutos.`,
+      'vilanova-i-la-geltru': `El muay thai es una de las disciplinas de striking más completas y exigentes, y su popularidad en Cataluña no deja de crecer. Si quieres empezar en Vilanova i la Geltrú, esta guía te cuenta qué esperar de las primeras semanas, la diferencia con el kickboxing y qué criterios usar para elegir un buen gimnasio en la capital del Garraf.`,
+      'sant-pere-de-ribes': `Para entrenar muay thai desde Sant Pere de Ribes, lo habitual es desplazarse a Sitges o Vilanova i la Geltrú, a 10-15 minutos en coche. Esta guía te explica cómo empezar en el muay thai desde cero, qué material hace falta y qué preguntar en cualquier gimnasio de la zona antes de apuntarte.`,
     },
     'jiu-jitsu-brasileno': {
-      'sitges': `El BJJ en Sitges crece cada año y nuestra academia lleva ese crecimiento. Ofrecemos clases de Brazilian Jiu Jitsu para todos los niveles, con instructores formados en Brasil y una comunidad de practicantes que hace de cada clase un entrenamiento exigente y divertido. El suelo es nuestra especialidad y el progreso de nuestros alumnos, nuestro orgullo.`,
-      'vilanova-i-la-geltru': `El BJJ en Vilanova i la Geltrú tiene en la Academia Garraf a su referente. Con uno de los instructores con mayor pedigrí de la comarca —cinta morada formada con la metodología Gracie— y una comunidad activa de practicantes, nuestras clases de Brazilian Jiu Jitsu son las más técnicas y exigentes del Garraf.`,
+      'sitges': `El Brazilian Jiu Jitsu (BJJ) es el arte del suelo: control, palancas y estrangulamientos donde la técnica vence a la fuerza. Su comunidad crece cada año en Cataluña, también en el Garraf. Si buscas BJJ en Sitges, esta guía te explica cómo es una clase típica, qué significa "rollar", cuánto se tarda de verdad en progresar y cómo evaluar una academia.`,
+      'vilanova-i-la-geltru': `El BJJ es posiblemente el arte marcial con la comunidad más fiel: quien lo prueba en serio, suele quedarse años. Si quieres empezar en Vilanova i la Geltrú, esta guía te cuenta qué esperar del primer mes, por qué el linaje del instructor importa y qué señales distinguen una buena academia de BJJ en la comarca del Garraf.`,
     },
     'judo': {
-      'sitges': `Las clases de judo en Sitges en la Academia Garraf combinan la tradición olímpica del judo con una enseñanza moderna y adaptada a todos los niveles. Contamos con tatami homologado y grupos tanto para niños —desde los 5 años— como para adultos de todas las edades. El judo es el arte de caer sin hacerse daño y de proyectar con técnica, no con fuerza.`,
-      'vilanova-i-la-geltru': `El judo en Vilanova i la Geltrú tiene en la Academia Garraf a uno de sus centros más consolidados. Con un tatami de alta calidad, grupos organizados por niveles y competición opcional en el circuito catalán, ofrecemos el programa de judo más completo de la comarca del Garraf.`,
+      'sitges': `El judo es deporte olímpico, escuela de valores y una de las artes marciales más seguras y completas para niños. Si buscas judo en Sitges, esta guía te explica desde qué edad empezar, por qué las caídas (ukemi) son la primera y más útil habilidad que se aprende, y qué debe tener una buena sala de judo, empezando por el tatami.`,
+      'vilanova-i-la-geltru': `¿Judo en Vilanova i la Geltrú? Es una disciplina con fuerte tradición federativa en Cataluña y una elección excelente tanto para niños como para adultos. En esta guía repasamos los beneficios reales del judo, cómo funciona el sistema de cinturones, qué papel juega la competición (siempre opcional) y cómo elegir club en la capital del Garraf.`,
     },
     'taekwondo': {
-      'sitges': `Las clases de taekwondo en Sitges en la Academia Garraf se imparten con el rigor del deporte olímpico y la accesibilidad que necesita un principiante. Grupos para niños desde los 4 años y adultos de todos los niveles, con instructores cinturón negro y un sistema de grados que recompensa el esfuerzo y la constancia.`,
-      'vilanova-i-la-geltru': `El taekwondo en Vilanova i la Geltrú tiene una comunidad activa en nuestra academia. Ofrecemos clases para niños, jóvenes y adultos con participación opcional en el circuito de la Federació Catalana de Taekwondo. Nuestros cinturones negros tienen experiencia tanto en competición como en enseñanza.`,
-      'sant-pere-de-ribes': `Para los vecinos de Sant Pere de Ribes que buscan taekwondo, nuestra academia en Sitges es la opción más completa de la zona, a menos de 10 minutos. Grupos de niños y adultos, instructor cinturón negro y primera clase gratis.`,
-      'cubelles': `Los vecinos de Cubelles pueden acceder a nuestras clases de taekwondo en Vilanova en menos de 8 minutos. Grupos para niños y adultos con participación opcional en competiciones federadas.`,
+      'sitges': `El taekwondo, deporte olímpico desde Seúl 1988, es el arte de las patadas: velocidad, flexibilidad y precisión. Si lo buscas en Sitges —para ti o para tus hijos—, esta guía te explica desde qué edad empezar, la diferencia entre los enfoques olímpico (WT) y tradicional (ITF), y qué criterios usar para elegir escuela en la zona.`,
+      'vilanova-i-la-geltru': `El taekwondo es una de las artes marciales más practicadas por niños en España, y Vilanova i la Geltrú, como capital de la comarca, es donde más fácil resulta encontrar grupos por edad y nivel. En esta guía te contamos qué aporta el taekwondo, cómo es la progresión de cinturones y qué preguntar antes de apuntarte o apuntar a tu hijo.`,
+      'sant-pere-de-ribes': `Si buscas taekwondo desde Sant Pere de Ribes, valora tanto la oferta deportiva municipal como los centros de Sitges y Vilanova, a 10-15 minutos en coche. Esta guía te explica los beneficios del taekwondo por edades y cómo reconocer una buena escuela, para que el desplazamiento —si lo hay— valga la pena.`,
+      'cubelles': `Para practicar taekwondo desde Cubelles, la referencia más cercana con oferta amplia es Vilanova i la Geltrú, a menos de 10 minutos. En esta guía te contamos desde qué edad tiene sentido empezar, qué aporta el taekwondo a niños y adultos y qué criterios usar al elegir escuela en la zona.`,
     },
     'defensa-personal': {
-      'sitges': `La defensa personal en Sitges en la Academia Garraf no es el típico cursillo de fin de semana. Ofrecemos un programa continuo basado en técnicas reales de boxeo, BJJ y krav maga, enseñadas de forma progresiva para que las interiorizas de verdad. No aprenderás movimientos bonitos: aprenderás lo que funciona.`,
-      'vilanova-i-la-geltru': `Las clases de defensa personal en Vilanova i la Geltrú en la Academia Garraf son las más demandadas de la comarca. Tanto el programa mixto como el específico para mujeres están diseñados por instructores con experiencia real en situaciones de riesgo. La metodología integra lo mejor del boxeo, BJJ y krav maga en un sistema directo y funcional.`,
-      'sant-pere-de-ribes': `Para los vecinos de Sant Pere de Ribes que buscan defensa personal, nuestra academia en Sitges ofrece el programa más completo de la zona a menos de 10 minutos. Técnicas reales, grupos reducidos y instructores especializados.`,
-      'cubelles': `Desde Cubelles, nuestra academia de Vilanova está a menos de 8 minutos para que puedas acceder al mejor programa de defensa personal de la comarca del Garraf.`,
+      'sitges': `La defensa personal seria no es un cursillo de trucos: es un entrenamiento continuo de técnicas simples y funcionales, prevención y gestión del estrés. Si buscas defensa personal en Sitges, esta guía te explica qué debe incluir un buen programa, qué diferencias hay con disciplinas como el krav maga y qué preguntar antes de apuntarte en cualquier centro de la zona.`,
+      'vilanova-i-la-geltru': `¿Defensa personal en Vilanova i la Geltrú? Antes de apuntarte a cualquier curso, conviene saber qué funciona de verdad: técnicas simples entrenadas bajo presión progresiva, trabajo de prevención y conciencia situacional, y un instructor con metodología clara. Esta guía te da los criterios para evaluar la oferta de la capital del Garraf con ojo crítico.`,
+      'sant-pere-de-ribes': `Si buscas defensa personal desde Sant Pere de Ribes, tienes a 10-15 minutos la oferta de Sitges y Vilanova. Esta guía te explica qué debe incluir un programa serio de defensa personal, cuántas sesiones hacen falta para interiorizar lo básico y qué señales distinguen la formación útil del marketing.`,
+      'cubelles': `Para formarte en defensa personal desde Cubelles, la opción más práctica es Vilanova i la Geltrú, a menos de 10 minutos. En esta guía te contamos qué técnicas funcionan en situaciones reales, qué esperar de las primeras sesiones y cómo evaluar la seriedad de cualquier programa antes de pagar una cuota.`,
     },
     'krav-maga': {
-      'sitges': `El krav maga en Sitges es una de las disciplinas más buscadas y menos ofertadas de la comarca. En la Academia Garraf llenamos ese vacío con un programa de krav maga serio, basado en el sistema israelí original y adaptado a la realidad del ciudadano que quiere saber defenderse de verdad.`,
-      'vilanova-i-la-geltru': `Las clases de krav maga en Vilanova i la Geltrú en la Academia Garraf son para quienes quieren ir más allá de la defensa personal estándar. El krav maga no tiene reglas, no tiene competición y no tiene movimientos bonitos: solo técnicas que funcionan cuando más importa.`,
+      'sitges': `El krav maga es el sistema de defensa desarrollado para el ejército israelí: directo, sin reglas deportivas, orientado a neutralizar amenazas reales. Es una de las disciplinas más buscadas y con menos oferta de la comarca. Si te interesa practicarlo en Sitges o alrededores, esta guía te explica qué es exactamente, en qué se diferencia de la defensa personal genérica y cómo verificar la certificación de un instructor.`,
+      'vilanova-i-la-geltru': `¿Krav maga en Vilanova i la Geltrú? Antes de buscar dónde, conviene entender qué es: un sistema de combate sin componente deportivo, pensado para resolver agresiones reales con técnicas simples y contundentes. En esta guía te contamos para quién es adecuado, qué exige el entrenamiento y cómo distinguir instructores certificados de imitaciones.`,
     },
   };
 
-  const defaultIntro = `En la Academia de Artes Marciales Garraf ofrecemos las mejores clases de ${dName} en ${mName}. Con instructores especializados, grupos reducidos y metodología progresiva, somos el centro de referencia para ${dName.toLowerCase()} en la comarca del Garraf. Tanto si empiezas desde cero como si tienes experiencia previa, tenemos el grupo y el nivel adecuados para ti. La primera clase es completamente gratuita y sin compromiso.`;
+  const defaultIntro = `¿Buscas clases de ${dName.toLowerCase()} en ${mName}? Esta guía local te explica qué debes saber antes de empezar: cómo son las clases para principiantes, qué beneficios reales aporta la disciplina y con qué criterios elegir un buen centro en la comarca del Garraf. Si tienes dudas, escríbenos y te orientamos sin coste.`;
 
   const intro = intros[dSlug]?.[mSlug] ?? defaultIntro;
 
@@ -405,8 +415,8 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
     municipio: mSlug,
     disciplina: dSlug,
     meta: {
-      title: `${dTitle} en ${mTitle} | Clases para Todos los Niveles`,
-      description: `Clases de ${dName.toLowerCase()} en ${mName}. ${discipline?.shortDesc ?? ''} Grupos por niveles, instructores certificados. Primera clase gratis. Academia Garraf.`,
+      title: `${dTitle} en ${mTitle} | Guía para Empezar a Entrenar`,
+      description: `Clases de ${dName.toLowerCase()} en ${mName}: qué saber antes de empezar, cómo elegir centro y cómo dar el primer paso. ${discipline?.shortDesc ?? ''} Guía local del Garraf.`,
     },
     h1: `Clases de ${dTitle} en ${mName}`,
     intro,
@@ -421,8 +431,8 @@ const HUB_MUNICIPIO_PAGES: PageDef[] = LOCATIONS.map(loc => ({
   type: 'hub-municipio' as PageType,
   municipio: loc.slug,
   meta: {
-    title: `Artes Marciales en ${loc.name} | Academia Garraf`,
-    description: `Clases de artes marciales en ${loc.name}. Boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal. Todas las disciplinas en ${loc.comarca}. Primera clase gratis.`,
+    title: `Artes Marciales en ${loc.name} | Guía del Garraf`,
+    description: `Artes marciales en ${loc.name}: boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal. Guía local para empezar a entrenar en ${loc.comarca}.`,
   },
   h1: `Clases de Artes Marciales en ${loc.name}`,
   intro: loc.desc,
@@ -434,11 +444,11 @@ const HUB_DISCIPLINA_PAGES: PageDef[] = DISCIPLINES.map(d => ({
   type: 'hub-disciplina' as PageType,
   disciplina: d.slug,
   meta: {
-    title: `${d.nameEs} en el Garraf | Academia de Artes Marciales`,
-    description: `Clases de ${d.nameEs.toLowerCase()} en la comarca del Garraf. ${d.shortDesc} Sitges, Vilanova i la Geltrú y toda la comarca. Primera clase gratis.`,
+    title: `${d.nameEs} en el Garraf | Guía para Empezar`,
+    description: `${d.nameEs} en la comarca del Garraf. ${d.shortDesc} Qué saber antes de empezar y cómo encontrar clase en Sitges, Vilanova i la Geltrú y alrededores.`,
   },
   h1: `${d.nameEs} en el Garraf`,
-  intro: `${d.shortDesc} En la Academia de Artes Marciales Garraf ofrecemos clases de ${d.nameEs.toLowerCase()} en Sitges y Vilanova i la Geltrú con grupos para todos los niveles, desde iniciación absoluta hasta avanzado. Nuestros instructores especializados te guiarán desde el primer día con una metodología progresiva que garantiza resultados reales.`,
+  intro: `${d.shortDesc} En esta guía te explicamos qué aporta ${d.nameEs.toLowerCase() === 'artes marciales mixtas' ? 'el MMA' : `el ${d.nameEs.toLowerCase()}`}, para quién es adecuado, cómo son las clases de iniciación y con qué criterios elegir centro en Sitges, Vilanova i la Geltrú o el resto de la comarca del Garraf. Si tienes dudas sobre por dónde empezar, escríbenos y te orientamos sin coste.`,
   phase: 1,
 }));
 
@@ -447,33 +457,33 @@ const HUB_PERFIL_PAGES: PageDef[] = [
     slug: 'clases-para-ninos',
     type: 'hub-perfil',
     meta: {
-      title: 'Artes Marciales para Niños en el Garraf | Desde 4 Años',
-      description: 'Clases de artes marciales infantiles en el Garraf. Karate, judo, taekwondo desde los 4 años. Grupos por edades, instructores especializados. Primera clase gratis.',
+      title: 'Artes Marciales para Niños en el Garraf | Guía Padres',
+      description: 'Artes marciales infantiles en el Garraf: karate, judo o taekwondo según la edad, beneficios reales y cómo elegir centro. Guía para padres de la comarca.',
     },
     h1: 'Artes Marciales para Niños en el Garraf',
-    intro: 'El programa infantil de la Academia de Artes Marciales Garraf es el más completo de la comarca. Ofrecemos karate, judo y taekwondo para niños desde los 4 años, con grupos organizados por franjas de edad y una metodología pedagógica que desarrolla disciplina, coordinación y autoconfianza. Nuestros instructores infantiles combinan la excelencia marcial con la vocación educativa.',
+    intro: 'Las artes marciales son de las actividades extraescolares más completas: disciplina, coordinación, respeto y confianza, con una progresión que motiva sin necesidad de pantallas ni competición obligatoria. En esta guía para padres del Garraf te explicamos qué disciplina encaja según la edad y el carácter de tu hijo —karate, judo o taekwondo son las puertas de entrada clásicas desde los 4-6 años— y qué preguntar en cualquier centro antes de apuntarle.',
     phase: 1,
   },
   {
     slug: 'clases-para-mujeres',
     type: 'hub-perfil',
     meta: {
-      title: 'Artes Marciales para Mujeres en el Garraf | Defensa Personal',
-      description: 'Artes marciales y defensa personal para mujeres en el Garraf. Ambiente seguro, instructoras especializadas. Boxeo, BJJ, defensa personal femenina. Primera clase gratis.',
+      title: 'Artes Marciales para Mujeres en el Garraf | Guía Local',
+      description: 'Artes marciales y defensa personal para mujeres en el Garraf: qué disciplinas encajan según tu objetivo y cómo elegir centro con buen ambiente.',
     },
     h1: 'Artes Marciales y Defensa Personal para Mujeres en el Garraf',
-    intro: 'En la Academia Garraf creemos que las artes marciales son especialmente importantes para las mujeres. Por eso hemos diseñado un programa específico que incluye clases mixtas y grupos exclusivamente femeninos en boxeo, kickboxing y defensa personal. Contamos con instructoras especializadas y un entorno donde la seguridad y el respeto son la base de todo. Más de 80 mujeres de la comarca ya entrenan con nosotras.',
+    intro: 'Cada vez más mujeres entrenan artes marciales, y por buenas razones: forma física real, confianza, comunidad y herramientas de autodefensa. En esta guía te explicamos qué disciplinas encajan mejor según tu objetivo —boxeo y kickboxing para fitness, BJJ para técnica, defensa personal para seguridad práctica—, qué valorar en un centro (grupos femeninos, ambiente, enfoque) y cómo dar el primer paso en la comarca del Garraf.',
     phase: 1,
   },
   {
     slug: 'clases-para-adultos',
     type: 'hub-perfil',
     meta: {
-      title: 'Artes Marciales para Adultos en el Garraf | Todos los Niveles',
-      description: 'Clases de artes marciales para adultos en el Garraf. Empieza desde cero o con experiencia. Boxeo, karate, MMA, BJJ, muay thai. Primera clase gratis.',
+      title: 'Artes Marciales para Adultos en el Garraf | Empezar de Cero',
+      description: 'Cómo empezar artes marciales siendo adulto en el Garraf: qué disciplina elegir según tu objetivo, qué esperar y cómo dar el primer paso sin experiencia.',
     },
     h1: 'Artes Marciales para Adultos en el Garraf',
-    intro: 'Las artes marciales no tienen límite de edad. En la Academia Garraf tenemos alumnos que empezaron a los 20 y alumnos que comenzaron a los 55. Lo que todos comparten es la decisión de empezar. Nuestros grupos de adultos están diseñados para que progreses desde tu nivel actual, con la intensidad que tú elijas y en la disciplina que más te motive.',
+    intro: 'Las artes marciales no tienen fecha de caducidad: hay quien empieza a los 20 y quien empieza a los 55. Lo importante es elegir la disciplina adecuada a tu objetivo y un grupo de iniciación de verdad. En esta guía te ayudamos a decidir entre las opciones disponibles en la comarca del Garraf, te contamos qué esperar de las primeras semanas y desmontamos los miedos típicos del principiante adulto.',
     phase: 2,
   },
   {
@@ -481,10 +491,10 @@ const HUB_PERFIL_PAGES: PageDef[] = [
     type: 'hub-perfil',
     meta: {
       title: 'Iniciación a las Artes Marciales en el Garraf | Empieza Aquí',
-      description: 'Clases de iniciación a las artes marciales en el Garraf. Sin experiencia previa. Te ayudamos a elegir la disciplina correcta. Primera clase completamente gratis.',
+      description: 'No sabes qué arte marcial elegir. Normal. Esta guía te ayuda a decidir según tu objetivo, edad y carácter, y te orientamos gratis si sigues con dudas.',
     },
     h1: 'Iniciación a las Artes Marciales en el Garraf',
-    intro: '¿No sabes por dónde empezar? Es lo más normal. En la Academia Garraf ofrecemos una primera clase de orientación completamente gratuita donde pruebas diferentes disciplinas y nuestros instructores te aconsejan cuál se adapta mejor a tus objetivos, tu condición física y tu carácter. Sin compromiso, sin presión.',
+    intro: '¿No sabes por dónde empezar? Es lo más normal del mundo: hay muchas disciplinas y cada una promete algo distinto. Esta guía te ayuda a decidir con una lógica simple: qué buscas (forma física, autodefensa, disciplina para tus hijos, comunidad), cuánto contacto quieres y qué hay cerca de ti en la comarca del Garraf. Y si después de leer sigues con dudas, escríbenos: te orientamos sin coste y sin compromiso.',
     phase: 2,
   },
 ];
@@ -495,33 +505,33 @@ const BLOG_PAGES: PageDef[] = [
     slug: 'blog/donde-aprender-boxeo-en-el-garraf',
     type: 'blog',
     meta: {
-      title: 'Dónde Aprender Boxeo en el Garraf [Guía 2025]',
-      description: 'Guía completa sobre dónde aprender boxeo en la comarca del Garraf. Sitges, Vilanova i la Geltrú y alrededores. Clases para todos los niveles.',
+      title: 'Dónde Aprender Boxeo en el Garraf [Guía 2026]',
+      description: 'Guía completa sobre dónde aprender boxeo en la comarca del Garraf. Sitges, Vilanova i la Geltrú y alrededores. Cómo elegir gimnasio y empezar bien.',
     },
     h1: 'Dónde Aprender Boxeo en el Garraf',
-    intro: 'El boxeo en la comarca del Garraf ha crecido enormemente en los últimos años. Si estás buscando dónde aprender boxeo en Sitges, Vilanova o cualquier municipio del Garraf, esta guía te da toda la información que necesitas para tomar la mejor decisión.',
+    intro: 'El interés por el boxeo no deja de crecer, también en la comarca del Garraf. Si estás buscando dónde aprender boxeo en Sitges, Vilanova o cualquier municipio de la comarca, esta guía te explica qué opciones tienes, cómo evaluar un gimnasio y qué esperar de tus primeras clases.',
     phase: 2,
   },
   {
     slug: 'blog/mejor-arte-marcial-para-ninos-garraf',
     type: 'blog',
     meta: {
-      title: 'Mejor Arte Marcial para Niños en el Garraf [Guía 2025]',
+      title: 'Mejor Arte Marcial para Niños en el Garraf [Guía 2026]',
       description: 'Cuál es la mejor arte marcial para niños en el Garraf. Comparativa de karate, judo y taekwondo. Recomendaciones por edad. Guía para padres.',
     },
     h1: 'Cuál es la Mejor Arte Marcial para Niños en el Garraf',
-    intro: 'Como padre o madre, elegir la arte marcial adecuada para tu hijo puede ser confuso. Hay muchas opciones y cada una tiene sus ventajas. En esta guía te explicamos qué disciplina se adapta mejor a cada edad, carácter y objetivo, basándonos en nuestra experiencia con más de 200 alumnos infantiles en la comarca del Garraf.',
+    intro: 'Como padre o madre, elegir la arte marcial adecuada para tu hijo puede ser confuso: hay muchas opciones y cada una tiene sus ventajas. En esta guía comparamos las disciplinas más habituales para niños —karate, judo y taekwondo— y te damos criterios claros por edad, carácter y objetivo para decidir con fundamento.',
     phase: 2,
   },
   {
     slug: 'blog/defensa-personal-para-mujeres-garraf',
     type: 'blog',
     meta: {
-      title: 'Defensa Personal para Mujeres en el Garraf [Guía 2025]',
+      title: 'Defensa Personal para Mujeres en el Garraf [Guía 2026]',
       description: 'Guía completa de defensa personal para mujeres en el Garraf. Qué aprender, dónde, qué funciona de verdad. Técnicas reales para situaciones reales.',
     },
     h1: 'Defensa Personal para Mujeres en el Garraf: Guía Completa',
-    intro: 'La defensa personal para mujeres es uno de los temas más importantes y más mal abordados del mundo de las artes marciales. Hay mucho mito, mucho marketing y poca sustancia. En esta guía te contamos qué técnicas funcionan realmente, cómo elegir un centro serio y qué esperar de las primeras semanas de entrenamiento.',
+    intro: 'La defensa personal para mujeres es uno de los temas más importantes y peor abordados del mundo de las artes marciales: mucho mito, mucho marketing y poca sustancia. En esta guía te contamos qué técnicas funcionan realmente, cómo elegir un centro serio en la comarca del Garraf y qué esperar de las primeras semanas de entrenamiento.',
     phase: 2,
   },
   {
@@ -532,7 +542,7 @@ const BLOG_PAGES: PageDef[] = [
       description: 'Cómo empezar las artes marciales siendo adulto en el Garraf. Qué disciplina elegir, qué esperar, cómo progresar. Guía para principiantes sin experiencia.',
     },
     h1: 'Cómo Empezar las Artes Marciales en el Garraf Siendo Adulto',
-    intro: '¿Tienes 30, 40 o 50 años y quieres empezar artes marciales pero no sabes por dónde? Eres exactamente la persona para quien está escrita esta guía. Vamos a desmontar los miedos más comunes y a darte un plan claro para empezar hoy mismo.',
+    intro: '¿Tienes 30, 40 o 50 años y quieres empezar artes marciales pero no sabes por dónde? Eres exactamente la persona para quien está escrita esta guía. Vamos a desmontar los miedos más comunes y a darte un plan claro para empezar, con las opciones reales que tienes en la comarca del Garraf.',
     phase: 2,
   },
   {
@@ -543,7 +553,7 @@ const BLOG_PAGES: PageDef[] = [
       description: 'Comparativa entre karate y taekwondo para niños en el Garraf. Diferencias, ventajas de cada uno y cómo elegir según la edad y el carácter de tu hijo.',
     },
     h1: 'Karate o Taekwondo para Niños en el Garraf: Cuál Elegir',
-    intro: 'La pregunta más frecuente de los padres que nos llaman: ¿karate o taekwondo para mi hijo? Ambas son disciplinas excelentes, pero tienen diferencias importantes. Te explicamos cuáles son y cómo decidir en función de la edad, el carácter y los objetivos de tu hijo.',
+    intro: 'Es una de las dudas más frecuentes entre padres: ¿karate o taekwondo para mi hijo? Ambas son disciplinas excelentes, pero tienen diferencias importantes. Te explicamos cuáles son y cómo decidir en función de la edad, el carácter y los objetivos de tu hijo, con el contexto de la oferta disponible en el Garraf.',
     phase: 3,
   },
 ];

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://artesmarcialesgarraf.es/sitemap-index.xml
+Sitemap: https://artesmarcialesgarraf.es/sitemap.xml

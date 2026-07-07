@@ -4,12 +4,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import Testimonials from '../components/Testimonials.astro';
 import { ALL_PAGES, type PageDef } from '../data/pages';
 import { getDisciplineBySlug } from '../data/disciplines';
 import { getLocationBySlug } from '../data/locations';
 import { SITE } from '../data/site';
-import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
 
 export async function getStaticPaths() {
@@ -25,36 +23,22 @@ const { page } = Astro.props;
 const discipline = page.disciplina ? getDisciplineBySlug(page.disciplina) : null;
 const location   = page.municipio  ? getLocationBySlug(page.municipio)   : null;
 
-// Schema
-const localBusinessSchema = {
+// Schema honesto: la web es una guía (WebPage/Article), no un negocio local.
+// No usar LocalBusiness hasta tener un centro cliente real con NAP verificable.
+const webPageSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "SportsActivityLocation"],
-  "name": SITE.name,
+  "@type": page.type === 'blog' ? 'Article' : 'WebPage',
+  "name": page.meta.title,
+  "headline": page.h1,
   "description": page.meta.description,
   "url": `${SITE.url}/${page.slug}/`,
-  "telephone": SITE.phone,
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": SITE.address.street,
-    "addressLocality": location?.name ?? SITE.address.city,
-    "addressRegion": SITE.address.province,
-    "postalCode": SITE.address.zip,
-    "addressCountry": "ES",
+  "inLanguage": "es",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": SITE.name,
+    "url": SITE.url,
   },
-  "areaServed": location?.name ?? "Comarca del Garraf",
-  "hasOfferCatalog": discipline ? {
-    "@type": "OfferCatalog",
-    "name": `Clases de ${discipline.nameEs}`,
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": `Clases de ${discipline.nameEs} en ${location?.name ?? 'el Garraf'}`,
-        }
-      }
-    ]
-  } : undefined,
+  ...(location ? { "about": { "@type": "Place", "name": `${location.name}, ${location.province}` } } : {}),
 };
 
 const breadcrumbItems = [
@@ -79,11 +63,12 @@ const relatedByDisciplina = discipline && location
   ? ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 4)
   : [];
 
+// FAQ genérico honesto (sin horarios, sedes ni ofertas inventadas)
 const genericFaq = [
-  { q: '¿La primera clase es gratis?', a: 'Sí. Todas nuestras disciplinas incluyen una primera clase completamente gratuita y sin compromiso.' },
-  { q: '¿Hay grupos para principiantes?', a: 'En todas las disciplinas tenemos grupos de iniciación. Empezamos desde cero contigo.' },
-  { q: '¿Cuáles son los horarios?', a: 'De lunes a viernes de 07:00 a 22:00 y sábados de 09:00 a 14:00.' },
-  { q: '¿Dónde están ubicados?', a: `Tenemos sedes en Sitges y Vilanova i la Geltrú, cubriendo toda la comarca del Garraf.` },
+  { q: '¿Necesito experiencia previa para empezar?', a: 'No. Todas las disciplinas tienen niveles de iniciación pensados para empezar desde cero. Lo importante es elegir un grupo adecuado a tu nivel.' },
+  { q: '¿Cómo elijo un buen centro?', a: 'Fíjate en la titulación del instructor, en que los grupos estén separados por nivel (y por edad en el caso de los niños) y en que puedas ver o probar una clase antes de comprometerte con una cuota.' },
+  { q: '¿Cuánto cuesta entrenar artes marciales?', a: 'Cada centro fija sus tarifas y cambian con el tiempo, por eso no publicamos precios. Pregunta siempre por matrícula, permanencia y clase de prueba antes de apuntarte.' },
+  { q: '¿Podéis ayudarme a encontrar clase?', a: 'Sí. Escríbenos por el formulario contándonos qué disciplina te interesa, en qué municipio y para quién, y te orientamos sin coste.' },
 ];
 // Local FAQ first (location-specific), then discipline FAQ or generic fallback
 const faqItems = [
@@ -101,7 +86,7 @@ const allDisciplinesForLocation = location
   title={page.meta.title}
   description={page.meta.description}
   canonical={`/${page.slug}/`}
-  schema={[localBusinessSchema, breadcrumbSchema]}
+  schema={[webPageSchema, breadcrumbSchema]}
 >
   <Header />
 
@@ -150,30 +135,26 @@ const allDisciplinesForLocation = location
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a href="/contacto/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors text-center">
-              Reservar clase gratis
+              Pedir orientación gratuita
             </a>
-            <a
-              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hola, me interesa ${discipline?.nameEs ?? 'información'} ${location ? 'en ' + location.name : 'en el Garraf'}`)}`}
-              target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg border border-white/20 transition-colors"
-            >
-              <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              WhatsApp
+            <a href="/iniciacion/" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg border border-white/20 transition-colors">
+              ¿Por dónde empiezo?
             </a>
           </div>
         </div>
-        <!-- Info card -->
+        <!-- Info card: datos genéricos de la disciplina, sin inventar oferta local -->
         <div class="bg-brand-gray border border-brand-border rounded-2xl p-6 space-y-4">
-          <h2 class="font-bold text-white text-lg mb-2">Información de las clases</h2>
+          <h2 class="font-bold text-white text-lg mb-2">Resumen rápido</h2>
           {[
-            { label: 'Ubicación', value: location?.name ?? 'Sitges + Vilanova i la Geltrú' },
-            { label: 'Niveles', value: 'Iniciación · Intermedio · Avanzado' },
-            { label: 'Grupos', value: 'Reducidos (máx. 12 personas)' },
-            { label: 'Horarios', value: 'Mañana · Tarde · Noche' },
-            { label: 'Edad mínima', value: 'Desde 4 años (grupos infantiles)' },
-            { label: 'Primera clase', value: '✓ Gratis y sin compromiso' },
+            { label: 'Zona', value: location?.name ?? 'Comarca del Garraf' },
+            ...(discipline ? [
+              { label: 'Disciplina', value: discipline.nameEs },
+              { label: 'Ideal para', value: discipline.suitable.slice(0, 3).join(' · ') },
+            ] : [
+              { label: 'Disciplinas', value: 'Boxeo · Karate · MMA · BJJ y más' },
+            ]),
+            { label: 'Niveles', value: 'Desde iniciación absoluta' },
+            { label: 'Orientación', value: '✓ Gratuita vía formulario' },
           ].map(row => (
             <div class="flex justify-between text-sm border-b border-brand-border pb-3 last:border-0 last:pb-0">
               <span class="text-brand-muted">{row.label}</span>
@@ -181,7 +162,7 @@ const allDisciplinesForLocation = location
             </div>
           ))}
           <a href="/contacto/" class="block w-full bg-brand-red hover:bg-red-700 text-white text-center font-bold py-3 rounded-lg transition-colors mt-2">
-            Reservar ahora →
+            Contactar →
           </a>
         </div>
       </div>
@@ -193,7 +174,7 @@ const allDisciplinesForLocation = location
     <section class="py-14 px-4 bg-brand-gray/30">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-2xl font-bold text-white mb-8 text-center">
-          Qué obtendrás con las clases de {discipline.nameEs}
+          Qué aporta entrenar {discipline.nameEs}
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {discipline.benefits.map((b, i) => (
@@ -214,7 +195,7 @@ const allDisciplinesForLocation = location
     <section class="py-14 px-4">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-2xl font-bold text-white mb-8">
-          Disciplinas disponibles en {location.name}
+          Guías de disciplinas en {location.name}
         </h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {allDisciplinesForLocation.map(p => {
@@ -239,7 +220,7 @@ const allDisciplinesForLocation = location
     <section class="py-14 px-4">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-2xl font-bold text-white mb-8">
-          Clases de {discipline.nameEs} en toda la comarca
+          {discipline.nameEs} por municipios del Garraf
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {LOCATIONS.map(loc => {
@@ -253,12 +234,12 @@ const allDisciplinesForLocation = location
                   {discipline.nameEs} en {loc.name}
                 </h3>
                 <p class="text-sm text-brand-muted">{loc.desc.split('.')[0]}.</p>
-                <span class="text-xs text-brand-red mt-3 block">Ver clases →</span>
+                <span class="text-xs text-brand-red mt-3 block">Ver guía →</span>
               </a>
             ) : (
               <div class="bg-brand-gray/50 border border-brand-border rounded-xl p-6">
                 <h3 class="font-bold text-white mb-1">{discipline.nameEs} en {loc.name}</h3>
-                <p class="text-sm text-brand-muted">Consultar disponibilidad.</p>
+                <p class="text-sm text-brand-muted">Pregúntanos por las opciones en esta zona.</p>
                 <a href="/contacto/" class="text-xs text-brand-red mt-3 block">Consultar →</a>
               </div>
             );
@@ -267,8 +248,6 @@ const allDisciplinesForLocation = location
       </div>
     </section>
   )}
-
-  <Testimonials count={3} />
 
   <!-- Internal links: otras disciplinas en el mismo municipio -->
   {relatedByMunicipio.length > 0 && (

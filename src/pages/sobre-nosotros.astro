@@ -7,8 +7,8 @@ import { DISCIPLINES } from '../data/disciplines';
 ---
 
 <Layout
-  title="Sobre Nosotros | Academia de Artes Marciales Garraf"
-  description="Conoce la Academia de Artes Marciales Garraf. Más de 15 años formando alumnos en Sitges y Vilanova. Nuestro equipo, metodología y filosofía de enseñanza."
+  title="Sobre el Proyecto | Artes Marciales Garraf"
+  description="Qué es Artes Marciales Garraf: una guía independiente de artes marciales en la comarca del Garraf. Información por disciplina y municipio, sin humo."
   canonical="/sobre-nosotros/"
 >
   <Header />
@@ -16,37 +16,23 @@ import { DISCIPLINES } from '../data/disciplines';
   <section class="py-16 px-4">
     <div class="max-w-5xl mx-auto">
       <div class="mb-12">
-        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">Quiénes somos</span>
-        <h1 class="text-3xl sm:text-4xl font-black text-white mb-6">La academia de artes marciales del Garraf</h1>
+        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">Sobre el proyecto</span>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-6">La guía de artes marciales del Garraf</h1>
         <div class="prose prose-invert max-w-none space-y-4 text-brand-muted leading-relaxed">
-          <p>La Academia de Artes Marciales Garraf nació de una convicción simple: que las artes marciales deberían ser accesibles para todos los vecinos de la comarca, sin importar la edad, el nivel físico o la experiencia previa. Lo que empezó como un proyecto local en Vilanova i la Geltrú se ha convertido en el directorio de referencia de artes marciales en el Garraf, cubriendo Sitges, Vilanova, Sant Pere de Ribes y toda la comarca.</p>
-          <p>Lo que nos diferencia no es el número de disciplinas que ofrecemos, aunque son diez. No es el número de sedes, aunque cubrimos toda la comarca. Lo que nos diferencia es el nivel de nuestros instructores y el compromiso con cada alumno individualmente. En un grupo de 12 personas, el instructor sabe tu nombre, conoce tu progresión y adapta la clase a tu nivel real.</p>
-          <p>Somos el centro de referencia de artes marciales en el Garraf no porque nos lo hayamos autoproclamado, sino porque nuestros alumnos vienen de Sitges, Vilanova, Sant Pere de Ribes, Cubelles, Canyelles y hasta de municipios fuera de la comarca. Eso no sucede por casualidad.</p>
+          <p>Artes Marciales Garraf es una guía online independiente sobre artes marciales en la comarca del Garraf (Barcelona). Nació de una convicción simple: quien quiere empezar a entrenar en Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles o Canyelles merece información clara y honesta para decidir qué disciplina practicar y cómo dar el primer paso.</p>
+          <p>Aquí no encontrarás reseñas infladas ni promesas de marketing. Encontrarás guías por disciplina —qué es cada arte marcial, para quién es adecuada, qué esperar de las primeras clases— y guías por municipio con el contexto local de la comarca. Y si después de leer sigues con dudas, puedes escribirnos: te orientamos sin coste.</p>
+          <p>Este proyecto no es un gimnasio ni una academia. Es un recurso editorial local. Si gestionas un centro de artes marciales en el Garraf y quieres colaborar con la guía, escríbenos a través del formulario de contacto.</p>
         </div>
       </div>
 
-      <!-- Stats -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-16">
-        {[
-          { num: '10', label: 'Disciplinas' },
-          { num: '5', label: 'Municipios cubiertos' },
-          { num: '100%', label: 'Primera clase gratis' },
-        ].map(s => (
-          <div class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center">
-            <p class="text-3xl font-black text-brand-red mb-1">{s.num}</p>
-            <p class="text-sm text-brand-muted">{s.label}</p>
-          </div>
-        ))}
-      </div>
-
-      <!-- Metodología -->
+      <!-- Qué ofrece la guía -->
       <div class="mb-16">
-        <h2 class="text-2xl font-bold text-white mb-8">Nuestra metodología</h2>
+        <h2 class="text-2xl font-bold text-white mb-8">Cómo funciona esta guía</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { title: 'Progresión real', desc: 'Cada alumno avanza a su ritmo. No hay presión para pasar de nivel antes de estar listo. El progreso técnico real es el único indicador que nos importa.' },
-            { title: 'Grupos pequeños', desc: 'Máximo 12 alumnos por clase. No somos un gimnasio de masas. Somos un centro donde el instructor te conoce y puede darte feedback específico en cada sesión.' },
-            { title: 'Aprendizaje práctico', desc: 'Menos teoría, más práctica. Aplicamos los principios técnicos en situaciones reales desde el primer día, adaptando la intensidad al nivel de cada alumno.' },
+            { title: 'Información útil', desc: 'Explicamos cada disciplina sin tecnicismos: beneficios reales, perfil de practicante y cómo son las primeras semanas de entrenamiento.' },
+            { title: 'Contexto local', desc: 'Cada guía está pensada para la comarca del Garraf: distancias entre municipios, dónde hay más oferta y qué opciones tiene cada perfil.' },
+            { title: 'Orientación gratuita', desc: 'Si nos escribes contándonos qué buscas, te respondemos con orientación personalizada para empezar a entrenar. Sin coste y sin compromiso.' },
           ].map(m => (
             <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
               <h3 class="font-bold text-white mb-3">{m.title}</h3>
@@ -56,9 +42,9 @@ import { DISCIPLINES } from '../data/disciplines';
         </div>
       </div>
 
-      <!-- Disciplinas ofertadas -->
+      <!-- Disciplinas cubiertas -->
       <div>
-        <h2 class="text-2xl font-bold text-white mb-8">Las 10 disciplinas que enseñamos</h2>
+        <h2 class="text-2xl font-bold text-white mb-8">Las 10 disciplinas de la guía</h2>
         <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
           {DISCIPLINES.map(d => (
             <a href={`/${d.slug}/`} class="group bg-brand-gray border border-brand-border hover:border-brand-red/50 rounded-xl p-4 text-center transition-all">

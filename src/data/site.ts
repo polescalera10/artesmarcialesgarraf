@@ -1,39 +1,23 @@
+// Marca neutra honesta: Artes Marciales Garraf es una guía/portal independiente
+// de artes marciales de la comarca del Garraf. NO es un gimnasio ni una academia.
+// Regla innegociable: cero datos de negocio inventados (reseñas, direcciones,
+// teléfonos, precios, instructores). Cuando haya un centro cliente real, su
+// identidad verificada sustituirá a la marca neutra.
 export const SITE = {
-  name: 'Academia de Artes Marciales Garraf',
+  name: 'Artes Marciales Garraf',
   shortName: 'AM Garraf',
+  tagline: 'La guía de artes marciales de la comarca del Garraf',
   domain: 'artesmarcialesgarraf.es',
   url: 'https://artesmarcialesgarraf.es',
-  phone: '+34 938 000 000',
-  whatsapp: '34938000000',
+  // TODO: activar el buzón de este email en el dominio antes del deploy
   email: 'contacto@artesmarcialesgarraf.es',
-  address: {
-    street: 'Avinguda de Ribes, 12',
-    city: 'Vilanova i la Geltrú',
+  region: {
+    comarca: 'Comarca del Garraf',
     province: 'Barcelona',
-    zip: '08800',
     country: 'España',
-    region: 'Comarca del Garraf',
-  },
-  hours: [
-    { day: 'Lunes – Viernes', time: '07:00 – 22:00' },
-    { day: 'Sábados', time: '09:00 – 14:00' },
-    { day: 'Domingos', time: 'Cerrado' },
-  ],
-  social: {
-    instagram: 'https://instagram.com/artesmarcialesgarraf',
-    facebook: 'https://facebook.com/artesmarcialesgarraf',
   },
   defaultMeta: {
     description:
-      'Academia de Artes Marciales en el Garraf. Clases de boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges, Vilanova i la Geltrú y toda la comarca.',
+      'Guía de artes marciales en la comarca del Garraf: boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles y Canyelles.',
   },
-  // TODO: reemplazar con datos reales del gimnasio cliente antes de publicar
-  // phone, email, address y hours son placeholders - NO mostrar como datos reales en producción
-  prices: [
-    { plan: 'Clase de Prueba', price: 'Gratis', desc: 'Primera clase sin compromiso' },
-    { plan: '1 disciplina', price: '55€/mes', desc: 'Clases ilimitadas en una disciplina' },
-    { plan: '2 disciplinas', price: '80€/mes', desc: 'Acceso a dos disciplinas' },
-    { plan: 'Pack completo', price: '100€/mes', desc: 'Todas las disciplinas sin límite' },
-    { plan: 'Infantil', price: '45€/mes', desc: 'Para niños de 4 a 15 años' },
-  ],
 };
