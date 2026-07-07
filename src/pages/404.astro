@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
+import LineIcon from '../components/LineIcon.astro';
 ---
 
 <Layout
@@ -45,7 +46,7 @@ import { LOCATIONS } from '../data/locations';
               href={`/${d.slug}/`}
               class="flex items-center gap-2 bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-3 py-2 text-sm text-brand-muted hover:text-white transition-all"
             >
-              <span aria-hidden="true">{d.emoji}</span>{d.nameEs}
+              <LineIcon name={d.slug} class="w-4 h-4 text-brand-red shrink-0" />{d.nameEs}
             </a>
           ))}
         </div>

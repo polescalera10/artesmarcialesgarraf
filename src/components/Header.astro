@@ -1,6 +1,7 @@
 ---
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
+import LineIcon from './LineIcon.astro';
 
 const currentPath = Astro.url.pathname;
 
@@ -73,7 +74,7 @@ const linkIdle = 'text-brand-muted hover:text-white hover:bg-brand-gray/50';
                   isActive(`/${d.slug}/`) ? 'text-white bg-brand-border' : 'text-brand-muted hover:text-white hover:bg-brand-border/60',
                 ]}
               >
-                <span aria-hidden="true">{d.emoji}</span>{d.nameEs}
+                <LineIcon name={d.slug} class="w-4 h-4 text-brand-red shrink-0" />{d.nameEs}
               </a>
             ))}
           </div>
@@ -183,7 +184,7 @@ const linkIdle = 'text-brand-muted hover:text-white hover:bg-brand-gray/50';
         <div class="grid grid-cols-2 gap-1">
           {DISCIPLINES.map(d => (
             <a href={`/${d.slug}/`} class="flex items-center gap-2 px-3 py-2 text-sm text-brand-muted hover:text-white hover:bg-brand-border rounded-md transition-colors">
-              <span aria-hidden="true">{d.emoji}</span>{d.nameEs}
+              <LineIcon name={d.slug} class="w-4 h-4 text-brand-red shrink-0" />{d.nameEs}
             </a>
           ))}
         </div>

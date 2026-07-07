@@ -7,6 +7,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import { SITE } from '../data/site';
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
+import LineIcon from '../components/LineIcon.astro';
 
 const breadcrumb = {
   "@context": "https://schema.org",
@@ -77,7 +78,7 @@ const homeFAQ = [
             href={`/${d.slug}/`}
             class="group bg-brand-gray border border-brand-border hover:border-brand-red/50 rounded-xl p-4 text-center transition-all hover:-translate-y-0.5"
           >
-            <span class="text-2xl mb-2 block">{d.emoji}</span>
+            <LineIcon name={d.slug} class="w-8 h-8 text-brand-red mx-auto mb-2" />
             <span class="text-sm font-semibold text-white group-hover:text-brand-red transition-colors">{d.nameEs}</span>
             <p class="text-xs text-brand-muted mt-1 leading-tight hidden sm:block line-clamp-2">{d.shortDesc.split('.')[0]}</p>
           </a>
@@ -124,15 +125,15 @@ const homeFAQ = [
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
-          { icon: '🧭', title: 'Orientación por disciplina', desc: 'Qué es cada arte marcial, qué beneficios tiene, para quién es adecuada y qué esperar de las primeras clases.' },
-          { icon: '📍', title: 'Información por municipio', desc: 'Guías locales para Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles y Canyelles.' },
-          { icon: '👶', title: 'Guías por perfil', desc: 'Contenido específico para niños, mujeres, adultos principiantes y quienes buscan defensa personal.' },
-          { icon: '✅', title: 'Criterios para elegir centro', desc: 'Qué preguntar antes de apuntarte: titulación de instructores, tamaño de grupos, permanencia, clase de prueba.' },
-          { icon: '✉️', title: 'Orientación personalizada', desc: 'Escríbenos qué buscas y te ayudamos a dar el primer paso, sin coste y sin compromiso.' },
-          { icon: '⚖️', title: 'Sin humo', desc: 'Guía independiente: no publicamos reseñas infladas ni datos que no podamos sostener. Solo información útil.' },
+          { icon: 'brujula', title: 'Orientación por disciplina', desc: 'Qué es cada arte marcial, qué beneficios tiene, para quién es adecuada y qué esperar de las primeras clases.' },
+          { icon: 'mapa-pin', title: 'Información por municipio', desc: 'Guías locales para Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles y Canyelles.' },
+          { icon: 'personas', title: 'Guías por perfil', desc: 'Contenido específico para niños, mujeres, adultos principiantes y quienes buscan defensa personal.' },
+          { icon: 'check-circulo', title: 'Criterios para elegir centro', desc: 'Qué preguntar antes de apuntarte: titulación de instructores, tamaño de grupos, permanencia, clase de prueba.' },
+          { icon: 'sobre', title: 'Orientación personalizada', desc: 'Escríbenos qué buscas y te ayudamos a dar el primer paso, sin coste y sin compromiso.' },
+          { icon: 'balanza', title: 'Sin humo', desc: 'Guía independiente: no publicamos reseñas infladas ni datos que no podamos sostener. Solo información útil.' },
         ].map(item => (
           <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
-            <span class="text-2xl mb-3 block">{item.icon}</span>
+            <LineIcon name={item.icon} class="w-8 h-8 text-brand-red mb-3" />
             <h3 class="font-bold text-white mb-2">{item.title}</h3>
             <p class="text-sm text-brand-muted leading-relaxed">{item.desc}</p>
           </div>

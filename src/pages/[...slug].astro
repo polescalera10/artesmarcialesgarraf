@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import CentroCard from '../components/CentroCard.astro';
+import LineIcon from '../components/LineIcon.astro';
 import { ALL_PAGES, type PageDef } from '../data/pages';
 import { getDisciplineBySlug } from '../data/disciplines';
 import { getLocationBySlug } from '../data/locations';
@@ -160,7 +161,7 @@ const otrosArticulos =
         <div>
           {discipline && (
             <span class="inline-flex items-center gap-2 bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-brand-red/30">
-              <span>{discipline.emoji}</span>
+              <LineIcon name={discipline.slug} class="w-4 h-4 shrink-0" />
               <span>{discipline.nameEs} · {location?.name ?? 'Comarca del Garraf'}</span>
             </span>
           )}
@@ -331,7 +332,7 @@ const otrosArticulos =
                 href={`/${p.slug}/`}
                 class="group bg-brand-gray border border-brand-border hover:border-brand-red/50 rounded-xl p-4 text-center transition-all"
               >
-                <span class="text-2xl mb-2 block">{d.emoji}</span>
+                <LineIcon name={d.slug} class="w-8 h-8 text-brand-red mx-auto mb-2" />
                 <span class="text-sm font-semibold text-white group-hover:text-brand-red transition-colors">{d.nameEs}</span>
               </a>
             ) : null;
@@ -442,7 +443,7 @@ const otrosArticulos =
                 href={`/${p.slug}/`}
                 class="flex items-center gap-2 bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
               >
-                {d && <span>{d.emoji}</span>}
+                {d && <LineIcon name={d.slug} class="w-4 h-4 text-brand-red shrink-0" />}
                 {p.h1.replace('Clases de ', '')}
               </a>
             );

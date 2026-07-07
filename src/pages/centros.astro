@@ -7,6 +7,7 @@ import { CENTROS, FUENTE_LABELS, getCentrosByMunicipio } from '../data/centros';
 import { DISCIPLINES, getDisciplineBySlug } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
 import { SITE } from '../data/site';
+import LineIcon from '../components/LineIcon.astro';
 
 const title = 'Centros de Artes Marciales en el Garraf | Directorio Verificado';
 const description =
@@ -126,7 +127,7 @@ const listSchema = {
                           href={`/${d.slug}/`}
                           class="inline-flex items-center gap-1 bg-brand-dark border border-brand-border hover:border-brand-red/40 rounded-full px-2.5 py-0.5 text-xs text-brand-muted hover:text-white transition-colors"
                         >
-                          <span>{d.emoji}</span>{d.nameEs}
+                          <LineIcon name={d.slug} class="w-3.5 h-3.5 text-brand-red shrink-0" />{d.nameEs}
                         </a>
                       ) : null;
                     })}
@@ -181,7 +182,7 @@ const listSchema = {
             href={`/${d.slug}/`}
             class="flex items-center gap-2 bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
           >
-            <span>{d.emoji}</span>{d.nameEs}
+            <LineIcon name={d.slug} class="w-4 h-4 text-brand-red shrink-0" />{d.nameEs}
           </a>
         ))}
       </div>

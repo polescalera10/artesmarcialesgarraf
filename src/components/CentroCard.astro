@@ -2,6 +2,7 @@
 import { FUENTE_LABELS, type Centro } from '../data/centros';
 import { getDisciplineBySlug } from '../data/disciplines';
 import { getLocationBySlug } from '../data/locations';
+import LineIcon from './LineIcon.astro';
 
 interface Props {
   centro: Centro;
@@ -23,7 +24,7 @@ const municipio = showMunicipio ? getLocationBySlug(c.municipio) : null;
       const d = getDisciplineBySlug(slug);
       return d ? (
         <span class="inline-flex items-center gap-1 bg-brand-dark border border-brand-border rounded-full px-2.5 py-0.5 text-xs text-brand-muted">
-          <span>{d.emoji}</span>{d.nameEs}
+          <LineIcon name={d.slug} class="w-3.5 h-3.5 text-brand-red shrink-0" />{d.nameEs}
         </span>
       ) : null;
     })}
