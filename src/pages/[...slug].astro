@@ -45,12 +45,17 @@ const webPageSchema = {
     "name": SITE.name,
     "url": SITE.url,
   },
+  ...(page.fecha ? { "datePublished": page.fecha, "dateModified": page.fecha } : {}),
   ...(location ? { "about": { "@type": "Place", "name": `${location.name}, ${location.province}` } } : {}),
 };
 
 const breadcrumbItems = [
   { "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url },
 ];
+if (page.type === 'blog') {
+  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": "Blog", "item": `${SITE.url}/blog/` });
+  breadcrumbItems.push({ "@type": "ListItem", "position": 3, "name": page.h1, "item": `${SITE.url}/${page.slug}/` });
+}
 if (location) {
   breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": location.name, "item": `${SITE.url}/${location.slug}/` });
 }
@@ -100,6 +105,12 @@ const centrosDeMunicipio =
   page.type === 'hub-municipio' && location ? getCentrosByMunicipio(location.slug).sort(ordenar) : [];
 const centrosDeDisciplina =
   page.type === 'hub-disciplina' && discipline ? getCentrosByDisciplina(discipline.slug).sort(ordenar) : [];
+
+// Otros artículos del blog, para interenlazarlos entre sí
+const otrosArticulos =
+  page.type === 'blog'
+    ? ALL_PAGES.filter(p => p.type === 'blog' && p.slug !== page.slug)
+    : [];
 ---
 
 <Layout
@@ -114,6 +125,12 @@ const centrosDeDisciplina =
   <nav aria-label="Migas de pan" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-0">
     <ol class="flex items-center gap-2 text-xs text-brand-muted">
       <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+      {page.type === 'blog' && (
+        <>
+          <li class="text-brand-border">/</li>
+          <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+        </>
+      )}
       {location && (
         <>
           <li class="text-brand-border">/</li>
@@ -462,7 +479,34 @@ const centrosDeDisciplina =
   <!-- Blog body content -->
   {page.type === 'blog' && page.body && (
     <section class="py-12 px-4">
-      <div class="max-w-3xl mx-auto prose prose-invert prose-sm text-brand-muted leading-relaxed" set:html={page.body} />
+      <article class="max-w-3xl mx-auto">
+        {page.fecha && (
+          <p class="text-xs text-brand-muted mb-8">
+            Publicado el <time datetime={page.fecha}>{new Date(page.fecha).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+            {' '}· Guía independiente — sin publicidad de centros
+          </p>
+        )}
+        <div class="articulo" set:html={page.body} />
+      </article>
+    </section>
+  )}
+
+  <!-- Otras guías del blog -->
+  {otrosArticulos.length > 0 && (
+    <section class="py-10 px-4 bg-brand-gray/30">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-lg font-bold text-white mb-6">Más guías del blog</h2>
+        <ul class="space-y-3">
+          {otrosArticulos.map(p => (
+            <li>
+              <a href={`/${p.slug}/`} class="text-brand-red hover:text-red-400 transition-colors font-semibold">
+                {p.h1}
+              </a>
+              <p class="text-sm text-brand-muted mt-0.5">{p.meta.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )}
 
@@ -470,3 +514,38 @@ const centrosDeDisciplina =
   <ContactCTA disciplina={discipline?.nameEs} municipio={location?.name} />
   <Footer />
 </Layout>
+
+<!-- Estilos del cuerpo de artículo: el HTML entra por set:html, así que los
+     estilos con ámbito de Astro no lo alcanzan; se acotan con .articulo. -->
+<style is:global>
+  .articulo { color: #9CA3AF; line-height: 1.75; }
+  .articulo h2 {
+    color: #fff; font-weight: 800; font-size: 1.5rem; line-height: 1.3;
+    margin: 2.25rem 0 1rem;
+  }
+  .articulo h3 {
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .articulo > h2:first-child { margin-top: 0; }
+  .articulo p { margin: 0 0 1.1rem; }
+  .articulo ul, .articulo ol { margin: 0 0 1.25rem; padding-left: 1.4rem; }
+  .articulo ul { list-style: disc; }
+  .articulo ol { list-style: decimal; }
+  .articulo li { margin-bottom: 0.6rem; }
+  .articulo li::marker { color: #DC2626; }
+  .articulo strong { color: #E5E7EB; }
+  .articulo a { color: #DC2626; text-decoration: underline; text-underline-offset: 3px; }
+  .articulo a:hover { color: #F87171; }
+  .articulo table {
+    width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+    font-size: 0.875rem; display: block; overflow-x: auto;
+  }
+  .articulo th, .articulo td {
+    border: 1px solid #1F1F1F; padding: 0.6rem 0.8rem; text-align: left;
+    vertical-align: top; min-width: 8rem;
+  }
+  .articulo th:first-child, .articulo td:first-child { min-width: 6rem; }
+  .articulo thead th { background: #141414; color: #fff; font-weight: 700; }
+  .articulo tbody tr:nth-child(even) { background: #101010; }
+</style>

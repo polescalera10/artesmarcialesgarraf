@@ -1,5 +1,6 @@
 import { DISCIPLINES, getDisciplineBySlug } from './disciplines';
 import { LOCATIONS, getLocationBySlug } from './locations';
+import { BLOG_BODIES } from './blog-posts';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Marca neutra honesta: todo el copy de este archivo está escrito desde la
@@ -27,6 +28,7 @@ export interface PageDef {
   h1: string;
   intro: string;
   body?: string;
+  fecha?: string; // fecha de publicación (blog) — ISO yyyy-mm-dd
   localFaq?: { q: string; a: string }[];
   phase: 1 | 2 | 3 | 4;
 }
@@ -510,6 +512,8 @@ const BLOG_PAGES: PageDef[] = [
     },
     h1: 'Dónde Aprender Boxeo en el Garraf',
     intro: 'El interés por el boxeo no deja de crecer, también en la comarca del Garraf. Si estás buscando dónde aprender boxeo en Sitges, Vilanova o cualquier municipio de la comarca, esta guía te explica qué opciones tienes, cómo evaluar un gimnasio y qué esperar de tus primeras clases.',
+    body: BLOG_BODIES['blog/donde-aprender-boxeo-en-el-garraf'],
+    fecha: '2026-07-07',
     phase: 2,
   },
   {
@@ -521,6 +525,8 @@ const BLOG_PAGES: PageDef[] = [
     },
     h1: 'Cuál es la Mejor Arte Marcial para Niños en el Garraf',
     intro: 'Como padre o madre, elegir la arte marcial adecuada para tu hijo puede ser confuso: hay muchas opciones y cada una tiene sus ventajas. En esta guía comparamos las disciplinas más habituales para niños —karate, judo y taekwondo— y te damos criterios claros por edad, carácter y objetivo para decidir con fundamento.',
+    body: BLOG_BODIES['blog/mejor-arte-marcial-para-ninos-garraf'],
+    fecha: '2026-07-07',
     phase: 2,
   },
   {
@@ -532,6 +538,8 @@ const BLOG_PAGES: PageDef[] = [
     },
     h1: 'Defensa Personal para Mujeres en el Garraf: Guía Completa',
     intro: 'La defensa personal para mujeres es uno de los temas más importantes y peor abordados del mundo de las artes marciales: mucho mito, mucho marketing y poca sustancia. En esta guía te contamos qué técnicas funcionan realmente, cómo elegir un centro serio en la comarca del Garraf y qué esperar de las primeras semanas de entrenamiento.',
+    body: BLOG_BODIES['blog/defensa-personal-para-mujeres-garraf'],
+    fecha: '2026-07-07',
     phase: 2,
   },
   {
@@ -543,6 +551,8 @@ const BLOG_PAGES: PageDef[] = [
     },
     h1: 'Cómo Empezar las Artes Marciales en el Garraf Siendo Adulto',
     intro: '¿Tienes 30, 40 o 50 años y quieres empezar artes marciales pero no sabes por dónde? Eres exactamente la persona para quien está escrita esta guía. Vamos a desmontar los miedos más comunes y a darte un plan claro para empezar, con las opciones reales que tienes en la comarca del Garraf.',
+    body: BLOG_BODIES['blog/artes-marciales-adultos-principiantes-garraf'],
+    fecha: '2026-07-07',
     phase: 2,
   },
   {
@@ -554,6 +564,8 @@ const BLOG_PAGES: PageDef[] = [
     },
     h1: 'Karate o Taekwondo para Niños en el Garraf: Cuál Elegir',
     intro: 'Es una de las dudas más frecuentes entre padres: ¿karate o taekwondo para mi hijo? Ambas son disciplinas excelentes, pero tienen diferencias importantes. Te explicamos cuáles son y cómo decidir en función de la edad, el carácter y los objetivos de tu hijo, con el contexto de la oferta disponible en el Garraf.',
+    body: BLOG_BODIES['blog/karate-vs-taekwondo-ninos-garraf'],
+    fecha: '2026-07-07',
     phase: 3,
   },
 ];
