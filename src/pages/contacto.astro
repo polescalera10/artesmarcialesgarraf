@@ -3,6 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../data/site';
+
+// TODO (requiere a Pol): crear cuenta en Formspree y definir PUBLIC_FORMSPREE_ID
+// en las variables de entorno (.env local / Vercel). Sin la variable, el
+// formulario no se renderiza y se muestra el email de contacto en su lugar.
+const FORMSPREE_ID = import.meta.env.PUBLIC_FORMSPREE_ID as string | undefined;
+const formEnabled = Boolean(FORMSPREE_ID);
 ---
 
 <Layout
@@ -21,12 +27,29 @@ import { SITE } from '../data/site';
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Form -->
+        <!-- Form (solo si PUBLIC_FORMSPREE_ID está configurada) -->
         <div>
+          {!formEnabled && (
+            <div class="bg-brand-gray border border-brand-border rounded-xl p-8 text-center space-y-4">
+              <span class="text-3xl block">✉️</span>
+              <h2 class="text-lg font-bold text-white">Escríbenos por email</h2>
+              <p class="text-sm text-brand-muted leading-relaxed max-w-sm mx-auto">
+                Cuéntanos qué disciplina te interesa, en qué municipio y para quién, y te respondemos con orientación concreta para tu caso.
+              </p>
+              <a
+                href={`mailto:${SITE.email}?subject=${encodeURIComponent('Orientación artes marciales en el Garraf')}`}
+                class="inline-block bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors"
+              >
+                Escribir a {SITE.email}
+              </a>
+              <p class="text-xs text-brand-muted">Al escribirnos aceptas nuestra <a href="/politica-privacidad/" class="underline">política de privacidad</a>.</p>
+            </div>
+          )}
+          {formEnabled && (
           <form
             id="contact-form"
             class="space-y-5"
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action={`https://formspree.io/f/${FORMSPREE_ID}`}
             method="POST"
           >
             <div>
@@ -85,6 +108,7 @@ import { SITE } from '../data/site';
             </button>
             <p class="text-xs text-brand-muted text-center">Al enviar aceptas nuestra <a href="/politica-privacidad/" class="underline">política de privacidad</a>. Sin spam.</p>
           </form>
+          )}
         </div>
 
         <!-- Contact info -->
