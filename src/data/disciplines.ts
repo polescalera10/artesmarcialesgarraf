@@ -7,6 +7,10 @@ export interface Discipline {
   shortDesc: string;
   benefits: string[];
   suitable: string[];
+  /** Cómo suele ser una primera clase típica (genérico de la disciplina, no de ningún centro) */
+  primeraClase: string[];
+  /** Equipación habitual para empezar; sin marcas ni precios */
+  equipacion: string[];
   faq: { q: string; a: string }[];
 }
 
@@ -20,6 +24,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'El arte del puñetazo. Técnica, potencia y condición física de élite.',
     benefits: ['Mejora cardiovascular extrema', 'Coordinación y reflejos', 'Descarga de estrés', 'Tonificación muscular completa'],
     suitable: ['Principiantes', 'Adultos', 'Mujeres', 'Deportistas'],
+    primeraClase: [
+      'Calentamiento con cuerda, movilidad y sombra para soltar el cuerpo',
+      'Posición de guardia, desplazamientos y los dos golpes básicos: jab y directo',
+      'Trabajo en saco o manoplas aplicando lo aprendido, por rondas',
+      'Abdominales y estiramientos para cerrar; el sparring nunca es el primer día',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva, agua y toalla; muchos gimnasios prestan guantes',
+      'Vendas de 3-4 metros para proteger las manos (lo primero que conviene comprar)',
+      'Guantes propios de 12-14 oz cuando decidas continuar',
+      'Protector bucal solo cuando empieces trabajo por parejas',
+    ],
     faq: [
       { q: '¿Necesito equipación para empezar boxeo?', a: 'Para las primeras clases, en muchos gimnasios basta con ropa deportiva: es habitual que presten guantes y material básico al principio. Si decides continuar, el material propio esencial son guantes y vendas.' },
       { q: '¿El boxeo es peligroso para principiantes?', a: 'No. Las clases de iniciación son técnicas: aprendes a golpear correctamente sobre sacos y manoplas. El sparring libre es opcional y solo cuando el instructor lo considera apropiado según tu nivel.' },
@@ -37,6 +53,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'Disciplina, respeto y técnica. El arte marcial más practicado del mundo.',
     benefits: ['Disciplina y concentración', 'Valores y respeto', 'Flexibilidad y coordinación', 'Defensa personal básica'],
     suitable: ['Niños desde 4 años', 'Adultos', 'Mayores', 'Principiantes'],
+    primeraClase: [
+      'Saludo y normas básicas de etiqueta del dojo (parte esencial del karate)',
+      'Calentamiento y movilidad articular',
+      'Kihon: posiciones, bloqueos y golpes básicos repetidos con corrección técnica',
+      'En niños, juegos de coordinación; en adultos, primera toma de contacto con un kata sencillo',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva cómoda y pies descalzos',
+      'Karategi (kimono de karate) cuando confirmes que sigues; la escuela suele orientarte con la talla',
+      'El cinturón blanco inicial suele venir con el karategi',
+      'Protecciones (guantillas, bucal) solo al iniciar kumite, más adelante',
+    ],
     faq: [
       { q: '¿Desde qué edad pueden empezar karate los niños?', a: 'Desde los 4 años. Las escuelas suelen organizar grupos por edades —prebenjamines (4-6 años), benjamines (7-9), alevines (10-12) y juveniles (13-15)— con metodología adaptada a cada franja.' },
       { q: '¿Cuánto tiempo se tarda en obtener el cinturón negro?', a: 'Depende del alumno, pero entre 5 y 8 años de entrenamiento regular es la media. El camino hasta el negro pasa por blanco, amarillo, naranja, verde, azul, marrón y negro.' },
@@ -54,6 +82,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'La evolución de las artes marciales. Golpeo + lucha en el sistema más completo.',
     benefits: ['Sistema de combate completo', 'Máxima condición física', 'Autoconfianza real', 'Adaptable a todos los niveles'],
     suitable: ['Adultos', 'Deportistas', 'Avanzados', 'Principiantes motivados'],
+    primeraClase: [
+      'Calentamiento intenso con movilidad y desplazamientos',
+      'Técnica de striking básica: guardia, jab-directo y una patada baja',
+      'Introducción al suelo: una posición de control y cómo levantarse con seguridad',
+      'Trabajo por parejas con intensidad controlada; el sparring llega semanas después',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva sin cremalleras ni bolsillos',
+      'Protector bucal y coquilla en cuanto empiece el trabajo por parejas',
+      'Guantillas de MMA y espinilleras cuando decidas continuar',
+      'Rashguard (camiseta técnica ajustada) recomendable para el trabajo de suelo',
+    ],
     faq: [
       { q: '¿Se puede empezar MMA desde cero?', a: 'Absolutamente. Un buen programa de iniciación al MMA empieza por los fundamentos de golpeo, derribo y suelo, sin exigir experiencia previa. Si un centro pide base marcial para entrar, busca otro para empezar.' },
       { q: '¿El MMA es peligroso?', a: 'El entrenamiento de MMA está muy controlado. Las técnicas se aprenden de forma progresiva y el sparring libre solo se realiza con protecciones y cuando el instructor lo autoriza.' },
@@ -71,6 +111,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'Puños y patadas. La fusión perfecta entre boxeo y karate para ponerte en forma.',
     benefits: ['Quema calórica máxima', 'Técnica de piernas', 'Coordinación completa', 'Tono muscular global'],
     suitable: ['Todos los niveles', 'Adultos', 'Adolescentes', 'Mujeres'],
+    primeraClase: [
+      'Calentamiento cardio (cuerda o circuito) y movilidad de cadera',
+      'Guardia, desplazamientos y golpes de puño básicos',
+      'Primera patada: la circular baja o media, paso a paso',
+      'Rondas de saco o paos y abdominales para terminar',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva y agua; pregunta si prestan guantes',
+      'Vendas y guantes de 10-12 oz al continuar',
+      'Espinilleras para el trabajo por parejas',
+      'Protector bucal cuando empiece el contacto controlado',
+    ],
     faq: [
       { q: '¿El kickboxing es lo mismo que el muay thai?', a: 'Son similares pero diferentes. El kickboxing permite golpes de puño y patada. El muay thai añade codazos, rodillazos y clinch. Para iniciarse, el kickboxing suele ser más accesible.' },
       { q: '¿Qué equipación necesito para kickboxing?', a: 'Guantes de 10-12 oz, vendas, espinilleras y protector bucal. Para las primeras clases, muchos gimnasios prestan el material básico: pregúntalo antes de comprar nada.' },
@@ -88,6 +140,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'El arte de las ocho extremidades. Codos, rodillas, puños y patadas.',
     benefits: ['Potencia de golpeo máxima', 'Condición física de élite', 'Técnica de clinch', 'Confianza real'],
     suitable: ['Adultos', 'Deportistas', 'Todos los niveles'],
+    primeraClase: [
+      'Calentamiento con cuerda y movilidad específica de cadera',
+      'Guardia tailandesa, desplazamientos y golpes de puño',
+      'Patada circular y rodilla básica sobre paos, con técnica antes que potencia',
+      'El clinch y los codos llegan más adelante, cuando hay base',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva; muchos gimnasios prestan material básico',
+      'Vendas y guantes de 12-16 oz al continuar',
+      'Espinilleras y protector bucal para el trabajo por parejas',
+      'Coquilla y pantalón corto de muay thai cuando ya entrenes en serio',
+    ],
     faq: [
       { q: '¿El muay thai es demasiado duro para principiantes?', a: 'No. Las clases de iniciación son técnicas y se realizan con control. El contacto duro es progresivo y siempre opcional. Mucha gente practica muay thai exclusivamente por la técnica y el fitness.' },
       { q: '¿En qué se diferencia el muay thai del kickboxing?', a: 'El muay thai añade codazos, rodillazos y trabajo de clinch (agarre) al repertorio del kickboxing. Es considerado el arte de las ocho extremidades frente a las cuatro del kickboxing.' },
@@ -105,6 +169,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'El arte del suelo. Domina a cualquier rival con técnica, sin fuerza bruta.',
     benefits: ['Defensa en el suelo', 'Resolución de problemas', 'Técnica sobre fuerza', 'Comunidad muy unida'],
     suitable: ['Todos los niveles', 'Adultos', 'Adolescentes'],
+    primeraClase: [
+      'Calentamiento con desplazamientos de suelo (el famoso "shrimping")',
+      'Técnica del día explicada por pasos y practicada en parejas sin resistencia',
+      'Repetición con resistencia progresiva para entender cuándo funciona',
+      'Rolling suave y opcional al final; nadie te exige "sobrevivir" el primer día',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva sin cremalleras, botones ni bolsillos',
+      'Gi (kimono) cuando confirmes; pregunta al centro qué colores admite',
+      'Rashguard y pantalón corto sin bolsillos para las clases de no-gi',
+      'Protector bucal recomendable para el rolling',
+    ],
     faq: [
       { q: '¿El BJJ es efectivo para la autodefensa?', a: 'Es posiblemente el arte marcial más validado en situaciones reales. El 90% de las peleas acaban en el suelo, y el BJJ es el sistema más completo para dominar esa posición.' },
       { q: '¿Necesito estar en forma para empezar BJJ?', a: 'No. El BJJ te pone en forma mientras lo practicas. La técnica permite que alguien más pequeño y menos fuerte controle a un rival mayor. El primer mes es de aprendizaje puro.' },
@@ -122,6 +198,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'El arte suave del derribo. Usa la fuerza del rival para lanzarle al suelo.',
     benefits: ['Equilibrio y coordinación', 'Fuerza funcional', 'Caídas seguras', 'Valores olímpicos'],
     suitable: ['Niños desde 5 años', 'Adultos', 'Competidores', 'Principiantes'],
+    primeraClase: [
+      'Saludo (rei) y normas del tatami',
+      'Ukemi: aprender a caer sin hacerse daño, la primera y más útil habilidad del judo',
+      'Desplazamientos y primera técnica de proyección explicada por pasos (uchikomi)',
+      'En niños, juegos de agarre y equilibrio; el randori (combate suave) llega con la base',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva resistente; muchos clubes prestan judogi al inicio',
+      'Judogi propio adecuado a tu talla cuando confirmes que sigues',
+      'Zoris o chanclas para desplazarte fuera del tatami',
+      'No se usan protecciones: la seguridad la da la técnica de caída',
+    ],
     faq: [
       { q: '¿Es el judo seguro para los niños?', a: 'Es uno de los deportes más seguros para niños. La primera habilidad que se aprende es caer correctamente (ukemi), lo que evita lesiones dentro y fuera del tatami.' },
       { q: '¿Cuántos grados hay en judo antes del cinturón negro?', a: 'Los grados son: blanco, amarillo, naranja, verde, azul, marrón y negro. Para niños hay un sistema de grading más progresivo con cinturones intermedios.' },
@@ -139,6 +227,18 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'El arte de los pies. Patadas altas, velocidad y precisión. Deporte olímpico.',
     benefits: ['Flexibilidad extrema', 'Velocidad y reflejos', 'Disciplina mental', 'Deporte olímpico federado'],
     suitable: ['Niños desde 4 años', 'Adultos', 'Competidores'],
+    primeraClase: [
+      'Saludo y normas del dojang',
+      'Calentamiento con mucho trabajo de flexibilidad y cadera',
+      'Posiciones básicas y primeras patadas sobre paos, por pasos',
+      'Según la escuela (WT u ITF), introducción a un poomsae/tul sencillo',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva cómoda',
+      'Dobok (uniforme) cuando confirmes; la escuela te orienta con talla y estilo',
+      'Protecciones de combate (peto, casco, espinilleras) solo al iniciar el combate; muchas escuelas las prestan',
+      'Protector bucal cuando empiece el contacto',
+    ],
     faq: [
       { q: '¿El taekwondo es un deporte olímpico?', a: 'Sí, desde los Juegos de Seúl 1988. Es uno de los deportes de combate más practicados del mundo con presencia en más de 200 países.' },
       { q: '¿Qué diferencia hay entre WT e ITF?', a: 'WT (World Taekwondo) es el estilo olímpico, con petos electrónicos y competición de puntos. ITF (International Taekwondo Federation) tiene un enfoque más tradicional con patrones (tul). Pregunta a cada escuela qué estilo imparte antes de apuntarte.' },
@@ -156,6 +256,17 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'Técnicas reales para situaciones reales. Sin florituras, sin mitos.',
     benefits: ['Conciencia situacional', 'Técnicas aplicables inmediatamente', 'Confianza en situaciones de riesgo', 'Sin requisitos previos'],
     suitable: ['Mujeres', 'Todos los adultos', 'Adolescentes', 'Principiantes'],
+    primeraClase: [
+      'Breve parte teórica: prevención, distancia de seguridad y conciencia situacional',
+      'Técnica ante las situaciones más comunes: agarres de muñeca, brazo o ropa',
+      'Práctica por parejas con presión progresiva y roles alternos',
+      'Puesta en común: qué hacer antes, durante y después de un incidente real',
+    ],
+    equipacion: [
+      'Ropa cómoda tipo calle o deportiva: se entrena como vas vestido en tu día a día',
+      'Sin material propio al principio; el centro aporta lo necesario para las simulaciones',
+      'Protector bucal si el programa incluye trabajo con contacto',
+    ],
     faq: [
       { q: '¿Cuánto tiempo se tarda en aprender defensa personal básica?', a: 'Con un curso intensivo de 8 horas tienes las técnicas fundamentales. Con un mes de clases regulares, las tienes interiorizadas. La defensa personal no requiere años de práctica para ser funcional.' },
       { q: '¿Es diferente la defensa personal para mujeres?', a: 'Los buenos programas femeninos abordan las situaciones de riesgo más comunes para mujeres —agresiones por detrás, agarres, situaciones de acoso— con un enfoque distinto al genérico. Si esto es lo que buscas, pregunta específicamente por ello al elegir centro.' },
@@ -173,6 +284,17 @@ export const DISCIPLINES: Discipline[] = [
     shortDesc: 'Sistema de combate israelí. Brutalidad técnica para el mundo real.',
     benefits: ['Eficacia máxima en situación real', 'Sin reglas artificiales', 'Adrenalina y autocontrol', 'Técnicas de neutralización rápida'],
     suitable: ['Adultos', 'Deportistas', 'Seguridad privada'],
+    primeraClase: [
+      'Calentamiento intenso: el krav maga entrena también bajo fatiga',
+      'Posición de guardia y golpes directos a puntos vulnerables',
+      'Defensa ante un agarre o empujón común, con técnica simple y repetible',
+      'Simulación con presión ligera para entender el enfoque del sistema',
+    ],
+    equipacion: [
+      'Primeras clases: ropa deportiva resistente',
+      'Coquilla y protector bucal en cuanto empiecen las simulaciones con contacto',
+      'Guantillas cuando el programa incluya golpeo por parejas',
+    ],
     faq: [
       { q: '¿Qué es el krav maga?', a: 'Es el sistema de combate cuerpo a cuerpo desarrollado por las Fuerzas de Defensa de Israel. A diferencia de las artes marciales deportivas, no tiene reglas: su único objetivo es neutralizar una amenaza de forma rápida y eficaz.' },
       { q: '¿El krav maga es demasiado violento?', a: 'El krav maga es directo y eficaz. En clase se trabaja de forma controlada, con el énfasis en la técnica y en entender las situaciones de riesgo. No es más violento que el MMA como deporte.' },
