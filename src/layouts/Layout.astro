@@ -1,5 +1,13 @@
 ---
 import { SITE } from '../data/site';
+// Inter self-hosted (@fontsource): sin peticiones a Google Fonts — mejor
+// rendimiento y sin cesión de IPs a terceros (RGPD post-Schrems II).
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
 
 interface Props {
   title: string;
@@ -56,11 +64,6 @@ const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Schema JSON-LD -->
   {schemaArray.map(s => (
