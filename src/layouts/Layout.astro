@@ -86,5 +86,10 @@ const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 </head>
 <body class="bg-brand-dark text-white font-sans antialiased">
   <slot />
+  <style is:global>
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+  </style>
 </body>
 </html>
