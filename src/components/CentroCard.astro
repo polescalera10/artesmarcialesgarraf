@@ -1,0 +1,51 @@
+---
+import { FUENTE_LABELS, type Centro } from '../data/centros';
+import { getDisciplineBySlug } from '../data/disciplines';
+import { getLocationBySlug } from '../data/locations';
+
+interface Props {
+  centro: Centro;
+  /** Mostrar el municipio en la ficha (útil fuera de su página de municipio) */
+  showMunicipio?: boolean;
+}
+const { centro: c, showMunicipio = false } = Astro.props;
+const municipio = showMunicipio ? getLocationBySlug(c.municipio) : null;
+---
+
+<div class="bg-brand-gray border border-brand-border rounded-xl p-5 flex flex-col gap-3">
+  <div>
+    <h3 class="font-bold text-white leading-snug">{c.nombre}</h3>
+    {municipio && <p class="text-xs text-brand-muted mt-0.5">{municipio.name}</p>}
+  </div>
+
+  <div class="flex flex-wrap gap-1.5">
+    {c.disciplinas.map(slug => {
+      const d = getDisciplineBySlug(slug);
+      return d ? (
+        <span class="inline-flex items-center gap-1 bg-brand-dark border border-brand-border rounded-full px-2.5 py-0.5 text-xs text-brand-muted">
+          <span>{d.emoji}</span>{d.nameEs}
+        </span>
+      ) : null;
+    })}
+  </div>
+
+  {c.direccion && <p class="text-xs text-brand-muted">{c.direccion}</p>}
+
+  <div class="mt-auto pt-2 border-t border-brand-border flex items-center justify-between gap-2">
+    {c.web ? (
+      <a
+        href={c.web}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="text-xs font-semibold text-brand-red hover:text-red-400 transition-colors"
+      >
+        Ver web del centro ↗
+      </a>
+    ) : (
+      <span class="text-xs text-brand-muted/70">Sin web propia conocida</span>
+    )}
+    <span class="text-[11px] text-brand-muted/70" title={`Verificado ${c.verificado}`}>
+      {FUENTE_LABELS[c.fuenteTipo]}
+    </span>
+  </div>
+</div>

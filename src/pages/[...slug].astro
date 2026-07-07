@@ -4,11 +4,18 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactCTA from '../components/ContactCTA.astro';
+import CentroCard from '../components/CentroCard.astro';
 import { ALL_PAGES, type PageDef } from '../data/pages';
 import { getDisciplineBySlug } from '../data/disciplines';
 import { getLocationBySlug } from '../data/locations';
 import { SITE } from '../data/site';
 import { LOCATIONS } from '../data/locations';
+import {
+  getCentros,
+  getCentrosCercanos,
+  getCentrosByMunicipio,
+  getCentrosByDisciplina,
+} from '../data/centros';
 
 export async function getStaticPaths() {
   return ALL_PAGES.map(page => ({
@@ -80,6 +87,19 @@ const faqItems = [
 const allDisciplinesForLocation = location
   ? ALL_PAGES.filter(p => p.municipio === location.slug && p.type === 'money-page')
   : [];
+
+// Centros reales del directorio (fuentes públicas verificadas, ver data/centros.ts)
+const ordenar = (a: { nombre: string }, b: { nombre: string }) => a.nombre.localeCompare(b.nombre, 'es');
+const centrosLocalDisciplina =
+  discipline && location ? getCentros(location.slug, discipline.slug).sort(ordenar) : [];
+const centrosCercanosDisciplina =
+  discipline && location && centrosLocalDisciplina.length === 0
+    ? getCentrosCercanos(location.slug, discipline.slug).sort(ordenar)
+    : [];
+const centrosDeMunicipio =
+  page.type === 'hub-municipio' && location ? getCentrosByMunicipio(location.slug).sort(ordenar) : [];
+const centrosDeDisciplina =
+  page.type === 'hub-disciplina' && discipline ? getCentrosByDisciplina(discipline.slug).sort(ordenar) : [];
 ---
 
 <Layout
@@ -153,6 +173,14 @@ const allDisciplinesForLocation = location
             ] : [
               { label: 'Disciplinas', value: 'Boxeo · Karate · MMA · BJJ y más' },
             ]),
+            ...(discipline && location ? [
+              {
+                label: 'Centros en el directorio',
+                value: centrosLocalDisciplina.length > 0
+                  ? `${centrosLocalDisciplina.length} en ${location.nameShort}`
+                  : `${centrosCercanosDisciplina.length} en municipios cercanos`,
+              },
+            ] : []),
             { label: 'Niveles', value: 'Desde iniciación absoluta' },
             { label: 'Orientación', value: '✓ Gratuita vía formulario' },
           ].map(row => (
@@ -186,6 +214,45 @@ const allDisciplinesForLocation = location
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Money page: centros reales que ofrecen la disciplina en el municipio -->
+  {page.type === 'money-page' && discipline && location && (centrosLocalDisciplina.length > 0 || centrosCercanosDisciplina.length > 0) && (
+    <section class="py-14 px-4">
+      <div class="max-w-7xl mx-auto">
+        {centrosLocalDisciplina.length > 0 ? (
+          <>
+            <h2 class="text-2xl font-bold text-white mb-2">
+              Dónde practicar {discipline.nameEs} en {location.name}
+            </h2>
+            <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+              Centros de {location.name} que anuncian {discipline.nameEs} según fuentes públicas verificadas.
+              Orden alfabético, sin valoraciones: comprueba horarios y condiciones directamente con cada centro.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {centrosLocalDisciplina.map(c => <CentroCard centro={c} />)}
+            </div>
+          </>
+        ) : (
+          <>
+            <h2 class="text-2xl font-bold text-white mb-2">
+              {discipline.nameEs} cerca de {location.name}
+            </h2>
+            <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+              En nuestro directorio no consta por ahora ningún centro de {discipline.nameEs} con fuente pública
+              verificable en {location.name}. Estas son las opciones más cercanas de la comarca:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {centrosCercanosDisciplina.map(c => <CentroCard centro={c} showMunicipio />)}
+            </div>
+          </>
+        )}
+        <p class="mt-6 text-xs text-brand-muted">
+          Ver el <a href="/centros/" class="text-brand-red hover:text-red-400">directorio completo de centros del Garraf</a> —
+          si un dato ha cambiado o falta un centro, <a href="/contacto/" class="text-brand-red hover:text-red-400">avísanos</a>.
+        </p>
       </div>
     </section>
   )}
@@ -245,6 +312,58 @@ const allDisciplinesForLocation = location
             );
           })}
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hub municipio: centros reales del municipio -->
+  {page.type === 'hub-municipio' && location && (
+    <section class="py-14 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-2">
+          Centros de artes marciales en {location.name}
+        </h2>
+        {centrosDeMunicipio.length > 0 ? (
+          <>
+            <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+              Centros del municipio con presencia pública verificable. Orden alfabético, sin valoraciones.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {centrosDeMunicipio.map(c => <CentroCard centro={c} />)}
+            </div>
+          </>
+        ) : (
+          <p class="text-sm text-brand-muted mb-2 max-w-3xl">
+            A fecha de la última verificación no nos consta ningún centro con fuente pública verificable en{' '}
+            {location.name}. Los municipios vecinos ({(location.nearbyTowns ?? []).join(', ')}) y el resto de la
+            comarca concentran la oferta más cercana.
+          </p>
+        )}
+        <p class="mt-6 text-xs text-brand-muted">
+          Ver el <a href="/centros/" class="text-brand-red hover:text-red-400">directorio completo del Garraf</a> —
+          ¿falta un centro o hay un dato desactualizado? <a href="/contacto/" class="text-brand-red hover:text-red-400">Escríbenos</a>.
+        </p>
+      </div>
+    </section>
+  )}
+
+  <!-- Hub disciplina: centros reales de la comarca que la ofrecen -->
+  {page.type === 'hub-disciplina' && discipline && centrosDeDisciplina.length > 0 && (
+    <section class="py-14 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-2">
+          Dónde se practica {discipline.nameEs} en el Garraf
+        </h2>
+        <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+          Centros de la comarca que anuncian {discipline.nameEs} según fuentes públicas verificadas.
+          Orden alfabético, sin valoraciones.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {centrosDeDisciplina.map(c => <CentroCard centro={c} showMunicipio />)}
+        </div>
+        <p class="mt-6 text-xs text-brand-muted">
+          Ver el <a href="/centros/" class="text-brand-red hover:text-red-400">directorio completo del Garraf</a>.
+        </p>
       </div>
     </section>
   )}
