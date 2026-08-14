@@ -18,9 +18,29 @@
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "artesmarcialesgarraf.vercel.app" }],
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
     }
   ],
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    {
+      "source": "/artes-marciales-cerca-de-sant-pere-de-ribes",
+      "destination": "/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-cubelles",
+      "destination": "/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-canyelles",
+      "destination": "/canyelles/",
+      "permanent": true
+    }
   ]
 }

@@ -1,6 +1,14 @@
 import { DISCIPLINES, getDisciplineBySlug } from './disciplines';
 import { LOCATIONS, getLocationBySlug } from './locations';
 import { BLOG_BODIES } from './blog-posts';
+import {
+  MUNICIPIO_BODIES,
+  MUNICIPIO_FAQS,
+  MONEY_BODIES,
+  MONEY_FAQS,
+  PERFIL_BODIES,
+  PERFIL_FAQS,
+} from './local-content';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Marca neutra honesta: todo el copy de este archivo está escrito desde la
@@ -15,7 +23,6 @@ export type PageType =
   | 'hub-disciplina'
   | 'hub-perfil'
   | 'money-page'
-  | 'cerca-de'
   | 'blog'
   | 'static';
 
@@ -41,6 +48,38 @@ function loc(slug: string) {
 }
 function disc(slug: string) {
   return getDisciplineBySlug(slug)?.nameEs ?? slug;
+}
+
+// ── Longitudes de metadatos ──────────────────────────────────────────────────
+// Google recorta los títulos alrededor de los 60 caracteres y las descripciones
+// alrededor de los 155-160. La auditoría de 2026-08-14 encontró 41 descripciones
+// por encima de 160 (hasta 234) y 7 títulos por encima de 60, todos por culpa de
+// plantillas que concatenaban texto de longitud variable. Estos límites se
+// aplican a TODAS las páginas al compilar ALL_PAGES, así que ninguna plantilla
+// nueva puede volver a pasarse sin que se note.
+const MAX_TITLE = 60;
+const MAX_DESC = 155;
+
+/** Recorta a `max` sin partir palabras y sin dejar puntuación colgando. */
+function clamp(text: string, max: number): string {
+  const t = text.replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max);
+  const lastSpace = cut.lastIndexOf(' ');
+  return cut.slice(0, lastSpace > 0 ? lastSpace : max).replace(/[\s,;:·—–-]+$/, '');
+}
+
+/**
+ * Construye un título con el sufijo de marca más largo que quepa en MAX_TITLE.
+ * Así los municipios de nombre largo (Sant Pere de Ribes) no pierden el sufijo
+ * a medias: se les da uno más corto.
+ */
+function titleWithSuffix(base: string, suffixes: string[]): string {
+  for (const suffix of suffixes) {
+    const candidate = `${base} | ${suffix}`;
+    if (candidate.length <= MAX_TITLE) return candidate;
+  }
+  return clamp(base, MAX_TITLE);
 }
 
 // ── Generates all money page slugs: [disciplina]-en-[municipio] ────────────
@@ -238,43 +277,13 @@ const SPECIAL_PAGES: PageDef[] = [
     intro: 'El karate infantil enseña mucho más que técnica: los niños aprenden a caer y levantarse, a respetar normas y compañeros, y a ganar confianza a través del esfuerzo. Vilanova i la Geltrú, por tamaño y tradición deportiva, es el municipio del Garraf donde más fácil resulta encontrar grupos de karate por franjas de edad. Esta guía te ayuda a valorar las opciones y a preparar la primera clase de tu hijo.',
     phase: 1,
   },
-  // Cerca de pages
-  {
-    slug: 'artes-marciales-cerca-de-sant-pere-de-ribes',
-    type: 'cerca-de',
-    municipio: 'sant-pere-de-ribes',
-    meta: {
-      title: 'Artes Marciales cerca de Sant Pere de Ribes | Garraf',
-      description: 'Dónde entrenar artes marciales si vives en Sant Pere de Ribes: opciones locales y municipios cercanos con más oferta. Guía de la comarca del Garraf.',
-    },
-    h1: 'Artes Marciales cerca de Sant Pere de Ribes',
-    intro: 'Si vives en Sant Pere de Ribes, Les Roquetes o Ribes y quieres entrenar artes marciales, tienes dos vías: la oferta local del municipio, más limitada, o desplazarte a Sitges y Vilanova i la Geltrú, que están a 10-15 minutos en coche y concentran la mayor parte de la oferta de la comarca. En esta guía te contamos cómo valorar cada opción según tu disciplina, horario y disponibilidad para desplazarte.',
-    phase: 2,
-  },
-  {
-    slug: 'artes-marciales-cerca-de-cubelles',
-    type: 'cerca-de',
-    municipio: 'cubelles',
-    meta: {
-      title: 'Artes Marciales cerca de Cubelles | Guía del Garraf',
-      description: 'Dónde entrenar artes marciales si vives en Cubelles: opciones en el municipio y en Vilanova i la Geltrú, a menos de 10 minutos. Guía local.',
-    },
-    h1: 'Artes Marciales cerca de Cubelles',
-    intro: 'Desde Cubelles, la referencia natural para entrenar artes marciales es Vilanova i la Geltrú: está a menos de 10 minutos en coche por la C-31 y concentra la mayor oferta deportiva de la comarca. También hay opciones en dirección Cunit y Calafell, ya en el Baix Penedès. En esta guía te ayudamos a decidir dónde buscar según la disciplina que te interese y tu disponibilidad.',
-    phase: 3,
-  },
-  {
-    slug: 'artes-marciales-cerca-de-canyelles',
-    type: 'cerca-de',
-    municipio: 'canyelles',
-    meta: {
-      title: 'Artes Marciales cerca de Canyelles | Guía del Garraf',
-      description: 'Dónde entrenar artes marciales si vives en Canyelles u Olivella: opciones en Vilanova i la Geltrú a 15 minutos por la C-15. Guía local del Garraf.',
-    },
-    h1: 'Artes Marciales cerca de Canyelles',
-    intro: 'Canyelles es un municipio pequeño del interior del Garraf, así que para entrenar artes marciales lo habitual es desplazarse. La opción más práctica es Vilanova i la Geltrú, a unos 15 minutos por la C-15, con la mayor variedad de disciplinas de la comarca. En esta guía te explicamos qué puedes encontrar y cómo organizarte si el desplazamiento es un obstáculo, especialmente con niños.',
-    phase: 4,
-  },
+  // NOTA (2026-08-14): las tres páginas `artes-marciales-cerca-de-X` se
+  // eliminaron tras la auditoría SEO. Duplicaban el hub de su propio municipio
+  // (similitud de texto del 0,66-0,67) con la misma intención de búsqueda, y
+  // además eran huérfanas: ningún enlace interno apuntaba a ellas. Su contenido
+  // —cómo desplazarse desde el municipio— vive ahora en el cuerpo del hub
+  // correspondiente (src/data/local-content.ts) y sus URLs redirigen con 301
+  // desde vercel.json.
 ];
 
 // ── Local FAQ items specific to each discipline × municipality combination ────
@@ -468,8 +477,13 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
     municipio: mSlug,
     disciplina: dSlug,
     meta: {
-      title: `${dTitle} en ${mTitle} | Guía para Empezar a Entrenar`,
-      description: `Clases de ${dName.toLowerCase()} en ${mName}: qué saber antes de empezar, cómo elegir centro y cómo dar el primer paso. ${discipline?.shortDesc ?? ''} Guía local del Garraf.`,
+      title: titleWithSuffix(`${dTitle} en ${mTitle}`, [
+        'Guía para Empezar a Entrenar',
+        'Guía para Empezar',
+        'Guía del Garraf',
+        'Garraf',
+      ]),
+      description: `Clases de ${dName.toLowerCase()} en ${mName}: cómo es la iniciación, con qué criterios elegir centro y dónde se practica. Guía del Garraf.`,
     },
     h1: `Clases de ${dTitle} en ${mName}`,
     intro,
@@ -485,11 +499,20 @@ const HUB_MUNICIPIO_PAGES: PageDef[] = LOCATIONS.map(loc => ({
   type: 'hub-municipio' as PageType,
   municipio: loc.slug,
   meta: {
-    title: `Artes Marciales en ${loc.name} | Guía del Garraf`,
-    description: `Artes marciales en ${loc.name}: boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal. Guía local para empezar a entrenar en ${loc.comarca}.`,
+    title: titleWithSuffix(`Artes Marciales en ${loc.name}`, [
+      'Guía Local del Garraf',
+      'Guía del Garraf',
+      'Garraf',
+    ]),
+    description: `Artes marciales en ${loc.name}: qué disciplinas constan de verdad en el municipio, dónde entrenar cerca y cómo elegir centro. Guía del Garraf.`,
   },
   h1: `Clases de Artes Marciales en ${loc.name}`,
   intro: loc.desc,
+  // Cuerpo propio por municipio: es lo que diferencia estos cinco hubs entre sí
+  // (antes compartían plantilla y solo cambiaba el topónimo). Absorbe además el
+  // contenido de las antiguas páginas `artes-marciales-cerca-de-X`.
+  body: MUNICIPIO_BODIES[loc.slug],
+  localFaq: MUNICIPIO_FAQS[loc.slug],
   phase: loc.priority as 1 | 2 | 3 | 4,
 }));
 
@@ -498,8 +521,12 @@ const HUB_DISCIPLINA_PAGES: PageDef[] = DISCIPLINES.map(d => ({
   type: 'hub-disciplina' as PageType,
   disciplina: d.slug,
   meta: {
-    title: `${d.nameEs} en el Garraf | Guía para Empezar`,
-    description: `${d.nameEs} en la comarca del Garraf. ${d.shortDesc} Qué saber antes de empezar y cómo encontrar clase en Sitges, Vilanova i la Geltrú y alrededores.`,
+    title: titleWithSuffix(`${d.nameEs} en el Garraf`, [
+      'Guía para Empezar a Entrenar',
+      'Guía para Empezar',
+      'Guía Local',
+    ]),
+    description: `${d.nameEs} en la comarca del Garraf: qué es, para quién encaja y en qué municipios se practica según nuestro directorio verificado.`,
   },
   h1: `${d.nameEs} en el Garraf`,
   intro: `${d.shortDesc} En esta guía te explicamos qué aporta ${d.nameEs.toLowerCase() === 'artes marciales mixtas' ? 'el MMA' : `el ${d.nameEs.toLowerCase()}`}, para quién es adecuado, cómo son las clases de iniciación y con qué criterios elegir centro en Sitges, Vilanova i la Geltrú o el resto de la comarca del Garraf. Si tienes dudas sobre por dónde empezar, escríbenos y te orientamos sin coste.`,
@@ -623,6 +650,30 @@ const BLOG_PAGES: PageDef[] = [
 ];
 
 // ── Compile all pages ─────────────────────────────────────────────────────────
+
+/**
+ * Últimos retoques comunes a todas las páginas:
+ *  1. Enchufa el cuerpo y las FAQ locales de las páginas de perfil y de karate
+ *     infantil, que viven en `local-content.ts` para no engordar este archivo.
+ *  2. Garantiza que ningún título ni descripción supere el límite que Google
+ *     recorta en la SERP, pase lo que pase en las plantillas de arriba.
+ */
+function finalize(p: PageDef): PageDef {
+  const body = p.body ?? PERFIL_BODIES[p.slug] ?? MONEY_BODIES[p.slug];
+  const extraFaq = PERFIL_FAQS[p.slug] ?? MONEY_FAQS[p.slug];
+  const localFaq = extraFaq ? [...(p.localFaq ?? []), ...extraFaq] : p.localFaq;
+
+  return {
+    ...p,
+    ...(body ? { body } : {}),
+    ...(localFaq ? { localFaq } : {}),
+    meta: {
+      title: clamp(p.meta.title, MAX_TITLE),
+      description: clamp(p.meta.description, MAX_DESC),
+    },
+  };
+}
+
 export const ALL_PAGES: PageDef[] = [
   ...MONEY_COMBOS.map(generateMoneyPage),
   ...SPECIAL_PAGES,
@@ -630,7 +681,7 @@ export const ALL_PAGES: PageDef[] = [
   ...HUB_DISCIPLINA_PAGES,
   ...HUB_PERFIL_PAGES,
   ...BLOG_PAGES,
-];
+].map(finalize);
 
 export function getPageBySlug(slug: string): PageDef | undefined {
   return ALL_PAGES.find(p => p.slug === slug);

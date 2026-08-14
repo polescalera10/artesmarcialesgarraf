@@ -17,7 +17,6 @@ function getPriority(type: string): string {
   if (type === 'hub-municipio') return '0.85';
   if (type === 'hub-disciplina') return '0.8';
   if (type === 'hub-perfil') return '0.75';
-  if (type === 'cerca-de') return '0.7';
   if (type === 'blog') return '0.65';
   return '0.5';
 }

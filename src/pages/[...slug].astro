@@ -112,6 +112,40 @@ const otrosArticulos =
   page.type === 'blog'
     ? ALL_PAGES.filter(p => p.type === 'blog' && p.slug !== page.slug)
     : [];
+
+// ── Anti-duplicación (auditoría 2026-08-14) ─────────────────────────────────
+// Los bloques genéricos de la disciplina (beneficios, primera clase, equipación)
+// son idénticos en todas las páginas que comparten disciplina, y eran la causa
+// principal del solapamiento entre `karate-en-X` y `karate-infantil-en-X`. Las
+// páginas que traen cuerpo propio ya aportan ese contenido de forma específica,
+// así que en ellas se omiten los bloques de plantilla.
+const tieneCuerpoPropio = Boolean(page.body) && page.type !== 'blog';
+const mostrarBloquesGenericos = Boolean(discipline) && !tieneCuerpoPropio;
+
+// Páginas de perfil del municipio (niños / mujeres / adultos). Antes no las
+// enlazaba nadie: eran huérfanas pese a estar en el sitemap.
+const perfilesDelMunicipio = location
+  ? ALL_PAGES.filter(
+      p =>
+        p.municipio === location.slug &&
+        p.slug !== page.slug &&
+        !p.disciplina &&
+        p.type === 'money-page',
+    )
+  : [];
+
+// En los hubs de perfil comarcales, sus variantes por municipio.
+const PERFIL_VARIANTES: Record<string, string[]> = {
+  'clases-para-ninos': ['clases-infantiles-en-sitges', 'clases-infantiles-en-vilanova'],
+  'clases-para-mujeres': ['clases-para-mujeres-en-sitges', 'clases-para-mujeres-en-vilanova'],
+  'clases-para-adultos': ['clases-para-adultos-en-sitges', 'clases-para-adultos-en-vilanova'],
+};
+const variantesDePerfil =
+  page.type === 'hub-perfil'
+    ? (PERFIL_VARIANTES[page.slug] ?? [])
+        .map(s => ALL_PAGES.find(p => p.slug === s))
+        .filter((p): p is PageDef => Boolean(p))
+    : [];
 ---
 
 <Layout
@@ -216,7 +250,7 @@ const otrosArticulos =
   </section>
 
   <!-- Benefits -->
-  {discipline && (
+  {mostrarBloquesGenericos && discipline && (
     <section class="py-14 px-4 bg-brand-gray/30">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-2xl font-bold text-white mb-8 text-center">
@@ -237,7 +271,7 @@ const otrosArticulos =
   )}
 
   <!-- Cómo es la primera clase + equipación (contenido genérico honesto de la disciplina) -->
-  {discipline && (page.type === 'money-page' || page.type === 'hub-disciplina') && (
+  {mostrarBloquesGenericos && discipline && (page.type === 'money-page' || page.type === 'hub-disciplina') && (
     <section class="py-14 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-8">
@@ -472,6 +506,65 @@ const otrosArticulos =
               </a>
             );
           })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Cuerpo propio de hubs de municipio y páginas de perfil -->
+  {tieneCuerpoPropio && (
+    <section class="py-12 px-4">
+      <article class="max-w-3xl mx-auto articulo" set:html={page.body} />
+    </section>
+  )}
+
+  <!-- Guías por perfil del municipio (evita que queden huérfanas) -->
+  {perfilesDelMunicipio.length > 0 && location && (
+    <section class="py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-2">Guías por perfil en {location.name}</h2>
+        <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+          Si buscas para alguien concreto —tu hijo, tú misma, tú empezando de cero— estas guías
+          entran en el detalle que cambia según el perfil.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {perfilesDelMunicipio.map(p => (
+            <a
+              href={`/${p.slug}/`}
+              class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-5 transition-all"
+            >
+              <span class="font-semibold text-brand-red group-hover:text-red-400 transition-colors">
+                {p.h1} →
+              </span>
+              <p class="text-sm text-brand-muted mt-2 leading-relaxed">{p.meta.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hub de perfil: sus variantes por municipio -->
+  {variantesDePerfil.length > 0 && (
+    <section class="py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-2">La misma guía, por municipio</h2>
+        <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+          La oferta real cambia mucho de un municipio a otro del Garraf. Estas versiones
+          concretan qué consta en cada sitio y qué implica para ti.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {variantesDePerfil.map(p => (
+            <a
+              href={`/${p.slug}/`}
+              class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-5 transition-all"
+            >
+              <span class="font-semibold text-brand-red group-hover:text-red-400 transition-colors">
+                {p.h1} →
+              </span>
+              <p class="text-sm text-brand-muted mt-2 leading-relaxed">{p.meta.description}</p>
+            </a>
+          ))}
         </div>
       </div>
     </section>

@@ -2,12 +2,23 @@
 import { SITE } from '../data/site';
 // Inter self-hosted (@fontsource): sin peticiones a Google Fonts — mejor
 // rendimiento y sin cesión de IPs a terceros (RGPD post-Schrems II).
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/600.css';
-import '@fontsource/inter/700.css';
-import '@fontsource/inter/800.css';
-import '@fontsource/inter/900.css';
+//
+// Solo los subsets latin y latin-ext: el sitio está en español y catalán, y los
+// imports genéricos (`400.css`) arrastraban además cirílico, cirílico extendido,
+// griego, griego extendido y vietnamita — 42 archivos woff2 y un CSS de 33 KB
+// para siete alfabetos, seis de ellos inútiles aquí (auditoría 2026-08-14).
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-ext-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-ext-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-ext-600.css';
+import '@fontsource/inter/latin-700.css';
+import '@fontsource/inter/latin-ext-700.css';
+import '@fontsource/inter/latin-800.css';
+import '@fontsource/inter/latin-ext-800.css';
+import '@fontsource/inter/latin-900.css';
+import '@fontsource/inter/latin-ext-900.css';
 
 interface Props {
   title: string;

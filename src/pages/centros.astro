@@ -9,9 +9,9 @@ import { LOCATIONS } from '../data/locations';
 import { SITE } from '../data/site';
 import LineIcon from '../components/LineIcon.astro';
 
-const title = 'Centros de Artes Marciales en el Garraf | Directorio Verificado';
+const title = 'Centros de Artes Marciales del Garraf | Directorio';
 const description =
-  'Directorio de centros reales de artes marciales en el Garraf: Sitges, Vilanova i la Geltrú, Sant Pere de Ribes y Cubelles. Datos de fuentes públicas verificadas, sin valoraciones ni publicidad.';
+  'Directorio de centros reales de artes marciales del Garraf, con la fuente pública de cada ficha y su fecha de verificación. Sin valoraciones.';
 
 const totalCentros = CENTROS.length;
 const fechaVerificacion = CENTROS.reduce((max, c) => (c.verificado > max ? c.verificado : max), '');
