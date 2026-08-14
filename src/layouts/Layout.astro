@@ -1,5 +1,5 @@
 ---
-import { SITE } from '../data/site';
+import { SITE, ORGANIZATION_SCHEMA, WEBSITE_SCHEMA } from '../data/site';
 import CookieConsent from '../components/CookieConsent.astro';
 // Inter self-hosted (@fontsource): sin peticiones a Google Fonts — mejor
 // rendimiento y sin cesión de IPs a terceros (RGPD post-Schrems II).
@@ -92,18 +92,12 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
     <script type="application/ld+json" set:html={JSON.stringify(s)} />
   ))}
 
-  <!-- Global WebSite schema (marca neutra: guía local, sin NAP de negocio) -->
+  <!-- Grafo base del sitio: editor + sitio web, con @id estable para que el
+       resto de páginas los referencien en lugar de repetirlos. Marca neutra:
+       Organization describe la guía como editorial, nunca como gimnasio. -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": SITE.name,
-    "alternateName": SITE.tagline,
-    "url": SITE.url,
-    "inLanguage": "es",
-    "about": {
-      "@type": "Thing",
-      "name": "Artes marciales en la comarca del Garraf (Barcelona)",
-    },
+    "@graph": [ORGANIZATION_SCHEMA, WEBSITE_SCHEMA],
   })} />
 </head>
 <body class="bg-brand-dark text-white font-sans antialiased">

@@ -1,7 +1,15 @@
 import { ALL_PAGES } from '../data/pages';
 import { SITE as SITE_DATA } from '../data/site';
 
-const SITE = 'https://artesmarcialesgarraf.es';
+const SITE = SITE_DATA.url;
+
+// <lastmod> honesto: los artículos del blog llevan su fecha de publicación y el
+// resto lleva la fecha de la última revisión editorial (SITE.ultimaRevision).
+// Antes se emitía la fecha del build en las 66 URLs, lo que afirmaba que todo el
+// sitio cambiaba cada vez que se desplegaba cualquier cosa. Google desconfía de
+// los sitemaps cuyo lastmod es siempre "hoy" y acaba ignorando el campo entero,
+// que es justo la señal que aquí interesa conservar.
+const REVISION = SITE_DATA.ultimaRevision;
 
 const staticPages = [
   { slug: '', priority: '1.0', changefreq: 'weekly' },
@@ -15,8 +23,6 @@ const staticPages = [
   { slug: 'sobre-nosotros', priority: '0.8', changefreq: 'monthly' },
 ];
 
-const now = new Date().toISOString().split('T')[0];
-
 function getPriority(type: string): string {
   if (type === 'money-page') return '0.9';
   if (type === 'hub-municipio') return '0.85';
@@ -26,26 +32,33 @@ function getPriority(type: string): string {
   return '0.5';
 }
 
+function url(loc: string, lastmod: string, changefreq: string, priority: string): string {
+  return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}
+
 export async function GET() {
-  const dynamicUrls = ALL_PAGES.map(p => ({
-    url: `${SITE}/${p.slug}/`,
-    priority: getPriority(p.type),
-  }));
+  const staticUrls = staticPages.map(p =>
+    url(`${SITE}/${p.slug ? p.slug + '/' : ''}`, REVISION, p.changefreq, p.priority),
+  );
+
+  const dynamicUrls = ALL_PAGES.map(p =>
+    url(
+      `${SITE}/${p.slug}/`,
+      // Un artículo publicado en julio no debe decir que se modificó hoy.
+      p.type === 'blog' ? (p.fecha ?? REVISION) : REVISION,
+      p.type === 'blog' ? 'yearly' : 'monthly',
+      getPriority(p.type),
+    ),
+  );
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${staticPages.map(p => `  <url>
-    <loc>${SITE}/${p.slug ? p.slug + '/' : ''}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>${p.changefreq}</changefreq>
-    <priority>${p.priority}</priority>
-  </url>`).join('\n')}
-${dynamicUrls.map(u => `  <url>
-    <loc>${u.url}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`).join('\n')}
+${[...staticUrls, ...dynamicUrls].join('\n')}
 </urlset>`;
 
   return new Response(xml, {

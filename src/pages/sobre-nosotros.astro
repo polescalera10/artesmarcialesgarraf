@@ -4,14 +4,39 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import { DISCIPLINES } from '../data/disciplines';
-import { SITE } from '../data/site';
+import { SITE, SCHEMA_IDS } from '../data/site';
 import LineIcon from '../components/LineIcon.astro';
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': `${SITE.url}/sobre-nosotros/`,
+  name: 'Sobre el Proyecto | Artes Marciales Garraf',
+  description:
+    'Qué es Artes Marciales Garraf: una guía independiente de artes marciales en la comarca del Garraf, y cómo se verifica la información del directorio.',
+  url: `${SITE.url}/sobre-nosotros/`,
+  inLanguage: 'es',
+  isPartOf: { '@id': SCHEMA_IDS.website },
+  publisher: { '@id': SCHEMA_IDS.organization },
+  mainEntity: { '@id': SCHEMA_IDS.organization },
+  dateModified: SITE.ultimaRevision,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE.url}/` },
+    { '@type': 'ListItem', position: 2, name: 'Sobre el proyecto', item: `${SITE.url}/sobre-nosotros/` },
+  ],
+};
 ---
 
 <Layout
   title="Sobre el Proyecto | Artes Marciales Garraf"
   description="Qué es Artes Marciales Garraf: una guía independiente de artes marciales en la comarca del Garraf. Información por disciplina y municipio, sin humo."
   canonical="/sobre-nosotros/"
+  schema={[aboutSchema, breadcrumbSchema]}
 >
   <Header />
 

@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import { SITE } from '../data/site';
+import { SITE, SCHEMA_IDS } from '../data/site';
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
 import LineIcon from '../components/LineIcon.astro';
@@ -12,7 +12,27 @@ import LineIcon from '../components/LineIcon.astro';
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url }],
+  "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": `${SITE.url}/` }],
+};
+
+// La portada no declaraba WebPage: solo tenía migas de pan. Sin esto, la página
+// más importante del sitio era la única sin nodo propio en el grafo.
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE.url}/`,
+  "name": "Artes Marciales en el Garraf | Guía de Sitges y Vilanova",
+  "description": SITE.defaultMeta.description,
+  "url": `${SITE.url}/`,
+  "inLanguage": "es",
+  "isPartOf": { "@id": SCHEMA_IDS.website },
+  "publisher": { "@id": SCHEMA_IDS.organization },
+  "dateModified": SITE.ultimaRevision,
+  "about": {
+    "@type": "AdministrativeArea",
+    "name": "Comarca del Garraf",
+    "containedInPlace": { "@type": "AdministrativeArea", "name": "Barcelona, España" },
+  },
 };
 
 const homeFAQ = [
@@ -28,7 +48,7 @@ const homeFAQ = [
 <Layout
   title="Artes Marciales en el Garraf | Guía de Sitges y Vilanova"
   description="Guía independiente de artes marciales del Garraf: qué disciplinas hay en cada municipio y cómo elegir centro. Sitges, Vilanova y comarca."
-  schema={breadcrumb}
+  schema={[homeSchema, breadcrumb]}
 >
   <Header />
 

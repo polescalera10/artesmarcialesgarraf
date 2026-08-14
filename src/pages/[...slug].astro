@@ -9,7 +9,7 @@ import LineIcon from '../components/LineIcon.astro';
 import { ALL_PAGES, type PageDef } from '../data/pages';
 import { getDisciplineBySlug } from '../data/disciplines';
 import { getLocationBySlug } from '../data/locations';
-import { SITE } from '../data/site';
+import { SITE, SCHEMA_IDS } from '../data/site';
 import { LOCATIONS } from '../data/locations';
 import {
   getCentros,
@@ -33,40 +33,88 @@ const location   = page.municipio  ? getLocationBySlug(page.municipio)   : null;
 
 // Schema honesto: la web es una guía (WebPage/Article), no un negocio local.
 // No usar LocalBusiness hasta tener un centro cliente real con NAP verificable.
+const pageUrl = `${SITE.url}/${page.slug}/`;
+
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": page.type === 'blog' ? 'Article' : 'WebPage',
+  "@id": pageUrl,
   "name": page.meta.title,
   "headline": page.h1,
   "description": page.meta.description,
-  "url": `${SITE.url}/${page.slug}/`,
+  "url": pageUrl,
   "inLanguage": "es",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": SITE.name,
-    "url": SITE.url,
-  },
-  ...(page.fecha ? { "datePublished": page.fecha, "dateModified": page.fecha } : {}),
-  ...(location ? { "about": { "@type": "Place", "name": `${location.name}, ${location.province}` } } : {}),
+  // Referencias por @id al grafo declarado en Layout: un solo sitio, un solo
+  // editor, en lugar de decenas de entidades sueltas repetidas página a página.
+  "isPartOf": { "@id": SCHEMA_IDS.website },
+  "publisher": { "@id": SCHEMA_IDS.organization },
+  ...(page.type === 'blog' ? { "author": { "@id": SCHEMA_IDS.organization } } : {}),
+  "dateModified": page.fecha ?? SITE.ultimaRevision,
+  ...(page.fecha ? { "datePublished": page.fecha } : {}),
+  ...(location
+    ? {
+        "about": {
+          "@type": "Place",
+          "name": location.name,
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": `Comarca del ${location.comarca}`,
+            "containedInPlace": { "@type": "AdministrativeArea", "name": location.province },
+          },
+        },
+      }
+    : {}),
 };
 
-const breadcrumbItems = [
-  { "@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE.url },
-];
-if (page.type === 'blog') {
-  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": "Blog", "item": `${SITE.url}/blog/` });
-  breadcrumbItems.push({ "@type": "ListItem", "position": 3, "name": page.h1, "item": `${SITE.url}/${page.slug}/` });
-}
-if (location) {
-  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": location.name, "item": `${SITE.url}/${location.slug}/` });
-}
-if (discipline && location) {
-  breadcrumbItems.push({ "@type": "ListItem", "position": 3, "name": discipline.nameEs, "item": `${SITE.url}/${page.slug}/` });
-} else if (discipline) {
-  breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": discipline.nameEs, "item": `${SITE.url}/${page.slug}/` });
-}
+// Migas de pan: se construyen acumulando niveles para que las posiciones sean
+// siempre correlativas. Antes, las páginas sin municipio ni disciplina (los
+// hubs de perfil) se quedaban con un único nivel y la página actual no
+// aparecía, aunque la miga visible sí la mostraba.
+const breadcrumbItems: { "@type": string; position: number; name: string; item: string }[] = [];
+const pushCrumb = (name: string, item: string) =>
+  breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name, item });
 
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": breadcrumbItems };
+pushCrumb('Inicio', `${SITE.url}/`);
+if (page.type === 'blog') pushCrumb('Blog', `${SITE.url}/blog/`);
+if (location && page.type !== 'hub-municipio') pushCrumb(location.name, `${SITE.url}/${location.slug}/`);
+if (discipline && page.type !== 'hub-disciplina' && !location) {
+  pushCrumb(discipline.nameEs, `${SITE.url}/${discipline.slug}/`);
+}
+pushCrumb(discipline && location ? discipline.nameEs : page.h1, pageUrl);
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems,
+};
+
+// Los hubs son páginas índice, pero su schema no lo decía: describían una
+// WebPage suelta sin declarar qué agrupan. Un ItemList con las guías que
+// enlazan hace explícita la estructura del sitio.
+const guiasDelHub =
+  page.type === 'hub-municipio'
+    ? ALL_PAGES.filter(p => p.municipio === page.municipio && p.slug !== page.slug)
+    : page.type === 'hub-disciplina'
+      ? ALL_PAGES.filter(p => p.disciplina === page.disciplina && p.slug !== page.slug)
+      : [];
+
+const hubListSchema =
+  guiasDelHub.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": `Guías de ${page.h1}`,
+        "numberOfItems": guiasDelHub.length,
+        "itemListElement": guiasDelHub.map((p, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "url": `${SITE.url}/${p.slug}/`,
+          "name": p.h1,
+        })),
+      }
+    : null;
+
+const pageSchemas = [webPageSchema, breadcrumbSchema, ...(hubListSchema ? [hubListSchema] : [])];
 
 // Related money pages for internal linking
 const relatedByMunicipio = discipline && location
@@ -152,7 +200,7 @@ const variantesDePerfil =
   title={page.meta.title}
   description={page.meta.description}
   canonical={`/${page.slug}/`}
-  schema={[webPageSchema, breadcrumbSchema]}
+  schema={pageSchemas}
 >
   <Header />
 

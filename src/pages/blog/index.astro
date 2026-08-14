@@ -4,7 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
 import { ALL_PAGES } from '../../data/pages';
-import { SITE } from '../../data/site';
+import { SITE, SCHEMA_IDS } from '../../data/site';
 
 const title = 'Blog de Artes Marciales del Garraf | Guías y Comparativas';
 const description =
@@ -17,6 +17,11 @@ const posts = ALL_PAGES
 const listSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
+  '@id': `${SITE.url}/blog/`,
+  isPartOf: { '@id': SCHEMA_IDS.website },
+  publisher: { '@id': SCHEMA_IDS.organization },
+  // La fecha del índice es la del artículo más reciente, no la del build.
+  dateModified: posts[0]?.fecha ?? SITE.ultimaRevision,
   name: title,
   description,
   url: `${SITE.url}/blog/`,
@@ -33,11 +38,20 @@ const listSchema = {
   },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE.url}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE.url}/blog/` },
+  ],
+};
+
 const formatearFecha = (iso?: string) =>
   iso ? new Date(iso).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
 ---
 
-<Layout title={title} description={description} canonical="/blog/" schema={[listSchema]}>
+<Layout title={title} description={description} canonical="/blog/" schema={[listSchema, breadcrumbSchema]}>
   <Header />
 
   <section class="relative overflow-hidden bg-brand-dark pt-12 pb-10 px-4">

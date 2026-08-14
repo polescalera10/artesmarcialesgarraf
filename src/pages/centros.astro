@@ -6,7 +6,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import { CENTROS, FUENTE_LABELS, getCentrosByMunicipio } from '../data/centros';
 import { DISCIPLINES, getDisciplineBySlug } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
-import { SITE } from '../data/site';
+import { SITE, SCHEMA_IDS } from '../data/site';
 import LineIcon from '../components/LineIcon.astro';
 
 const title = 'Centros de Artes Marciales del Garraf | Directorio';
@@ -20,10 +20,15 @@ const fechaVerificacion = CENTROS.reduce((max, c) => (c.verificado > max ? c.ver
 const listSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
+  '@id': `${SITE.url}/centros/`,
   name: title,
   description,
   url: `${SITE.url}/centros/`,
   inLanguage: 'es',
+  isPartOf: { '@id': SCHEMA_IDS.website },
+  publisher: { '@id': SCHEMA_IDS.organization },
+  // La fecha real es la de la última verificación de fichas, no la del build.
+  dateModified: fechaVerificacion || SITE.ultimaRevision,
   mainEntity: {
     '@type': 'ItemList',
     numberOfItems: totalCentros,
@@ -34,14 +39,39 @@ const listSchema = {
         '@type': 'SportsClub',
         name: c.nombre,
         ...(c.web ? { url: c.web } : {}),
-        ...(c.direccion ? { address: c.direccion } : {}),
+        // PostalAddress estructurada en lugar de una cadena suelta: solo se
+        // emite si la dirección consta en la fuente pública verificada.
+        ...(c.direccion
+          ? {
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: c.direccion,
+                addressLocality: LOCATIONS.find(l => l.slug === c.municipio)?.name ?? c.municipio,
+                addressRegion: 'Barcelona',
+                addressCountry: 'ES',
+              },
+            }
+          : {}),
+        areaServed: {
+          '@type': 'AdministrativeArea',
+          name: LOCATIONS.find(l => l.slug === c.municipio)?.name ?? c.municipio,
+        },
       },
     })),
   },
 };
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE.url}/` },
+    { '@type': 'ListItem', position: 2, name: 'Centros del Garraf', item: `${SITE.url}/centros/` },
+  ],
+};
 ---
 
-<Layout title={title} description={description} canonical="/centros/" schema={[listSchema]}>
+<Layout title={title} description={description} canonical="/centros/" schema={[listSchema, breadcrumbSchema]}>
   <Header />
 
   <section class="relative overflow-hidden bg-brand-dark pt-12 pb-10 px-4">
