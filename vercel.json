@@ -41,6 +41,21 @@
       "source": "/artes-marciales-cerca-de-canyelles",
       "destination": "/canyelles/",
       "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-sant-pere-de-ribes/",
+      "destination": "/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-cubelles/",
+      "destination": "/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-canyelles/",
+      "destination": "/canyelles/",
+      "permanent": true
     }
   ]
 }
