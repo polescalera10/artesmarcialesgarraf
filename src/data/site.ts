@@ -16,6 +16,17 @@ export const SITE = {
     province: 'Barcelona',
     country: 'España',
   },
+  // Analítica. El ID de medición de GA4 es público por diseño (aparece en el
+  // código fuente de cualquier página), así que va aquí y no en una variable de
+  // entorno: una cosa menos que configurar en Vercel.
+  //
+  // IMPORTANTE: GA4 usa cookies y transfiere datos a Google, así que en España
+  // requiere consentimiento previo (AEPD). El script NO se carga hasta que el
+  // visitante acepta en el banner (src/components/CookieConsent.astro). Si algún
+  // día se quita el banner, hay que quitar también esta línea.
+  analytics: {
+    gaId: 'G-B9YBBT41MM',
+  },
   defaultMeta: {
     description:
       'Guía de artes marciales en la comarca del Garraf: boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles y Canyelles.',

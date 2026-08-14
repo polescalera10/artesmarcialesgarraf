@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE } from '../data/site';
 ---
 
 <Layout
@@ -87,11 +88,73 @@ import Footer from '../components/Footer.astro';
         <div>
           <h2 class="text-xl font-bold text-white mb-4">6. Cookies y medición de audiencia</h2>
           <p class="text-brand-muted leading-relaxed">
-            Este sitio web no utiliza cookies propias de seguimiento ni de publicidad. Únicamente utilizamos cookies técnicas estrictamente necesarias para el funcionamiento del sitio. No se requiere tu consentimiento para este tipo de cookies.
+            Este sitio no utiliza cookies de publicidad ni de perfilado comercial, y no vende ni cede datos de navegación a terceros con fines publicitarios.
           </p>
+
+          {SITE.analytics?.gaId && (
+            <>
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.1. Cookies analíticas (Google Analytics 4)</h3>
+              <p class="text-brand-muted leading-relaxed">
+                Para saber qué guías se leen y mejorar el contenido utilizamos <strong class="text-white">Google Analytics 4</strong>, un servicio de medición de audiencia de Google Ireland Limited. Esta herramienta instala cookies en tu dispositivo y trata datos como tu dirección IP (de forma anonimizada), el navegador, el dispositivo, las páginas que visitas y el tiempo que pasas en ellas.
+              </p>
+              <p class="text-brand-muted leading-relaxed mt-3">
+                <strong class="text-white">Estas cookies no se instalan hasta que tú las aceptas.</strong> Al entrar por primera vez verás un aviso con dos opciones igual de accesibles: aceptar o rechazar. Si rechazas o no eliges nada, el sitio no carga Google Analytics y el navegador no recibe ninguna de sus cookies. La web funciona con normalidad en ambos casos.
+              </p>
+
+              <div class="overflow-x-auto mt-5">
+                <table class="w-full text-sm border-collapse">
+                  <thead>
+                    <tr class="bg-brand-gray">
+                      <th class="border border-brand-border p-3 text-left text-white font-semibold">Cookie</th>
+                      <th class="border border-brand-border p-3 text-left text-white font-semibold">Finalidad</th>
+                      <th class="border border-brand-border p-3 text-left text-white font-semibold">Duración</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-brand-muted">
+                    <tr>
+                      <td class="border border-brand-border p-3"><code>_ga</code></td>
+                      <td class="border border-brand-border p-3">Distinguir visitantes para el recuento agregado de visitas</td>
+                      <td class="border border-brand-border p-3">2 años</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-brand-border p-3"><code>_ga_{SITE.analytics.gaId.replace('G-', '')}</code></td>
+                      <td class="border border-brand-border p-3">Mantener el estado de la sesión de medición</td>
+                      <td class="border border-brand-border p-3">2 años</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.2. Base legal y transferencias internacionales</h3>
+              <p class="text-brand-muted leading-relaxed">
+                La base legal es tu <strong class="text-white">consentimiento</strong> (art. 6.1.a RGPD y art. 22.2 LSSI-CE). Google puede tratar estos datos fuera del Espacio Económico Europeo; dichas transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. y en las cláusulas contractuales tipo de la Comisión Europea. Puedes consultar el detalle en la <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:underline">política de privacidad de Google</a>.
+              </p>
+
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.3. Cómo cambiar o retirar tu decisión</h3>
+              <p class="text-brand-muted leading-relaxed">
+                Puedes cambiar de opinión cuando quieras, con la misma facilidad con la que aceptaste:
+              </p>
+              <ul class="text-brand-muted mt-3 space-y-1 list-disc list-inside">
+                <li>Pulsando <strong class="text-white">«Cookies»</strong> en el pie de cualquier página de este sitio. Si rechazas, borramos las cookies analíticas que ya se hubieran instalado.</li>
+                <li>Borrando las cookies desde la configuración de tu navegador.</li>
+                <li>Instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:underline">complemento de inhabilitación de Google Analytics</a>.</li>
+              </ul>
+              <p class="text-brand-muted leading-relaxed mt-3">
+                Tu decisión se guarda en el almacenamiento local de tu navegador y se te vuelve a preguntar pasado un año.
+              </p>
+            </>
+          )}
+
+          <h3 class="text-lg font-semibold text-white mt-6 mb-3">
+            {SITE.analytics?.gaId ? '6.4. Cookies técnicas' : '6.1. Cookies técnicas'}
+          </h3>
+          <p class="text-brand-muted leading-relaxed">
+            El sitio utiliza almacenamiento estrictamente necesario para recordar tu decisión sobre las cookies analíticas. Al ser imprescindible para prestarte el servicio que has solicitado, no requiere consentimiento.
+          </p>
+
           {import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
             <p class="text-brand-muted leading-relaxed mt-3">
-              Para conocer el uso agregado del sitio utilizamos <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:text-red-400">Plausible Analytics</a>, una herramienta de medición que no usa cookies, no identifica a personas y no cede datos a terceros con fines publicitarios. Las estadísticas son agregadas y anónimas, por lo que no requieren tu consentimiento.
+              Adicionalmente utilizamos <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:text-red-400">Plausible Analytics</a>, una herramienta de medición que no usa cookies, no identifica a personas y no cede datos a terceros con fines publicitarios. Las estadísticas son agregadas y anónimas, por lo que no requieren tu consentimiento.
             </p>
           )}
         </div>
@@ -106,7 +169,7 @@ import Footer from '../components/Footer.astro';
       </div>
 
       <p class="text-brand-muted text-xs mt-10">
-        Última actualización: julio de 2026
+        Última actualización: agosto de 2026
       </p>
     </div>
   </section>

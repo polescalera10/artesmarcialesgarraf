@@ -1,0 +1,158 @@
+---
+// ────────────────────────────────────────────────────────────────────────────
+// Banner de consentimiento de cookies (RGPD + LSSI-CE art. 22.2).
+//
+// Google Analytics 4 instala cookies propias (_ga, _ga_<id>) y transfiere datos
+// a Google, así que según la guía de la AEPD necesita consentimiento PREVIO,
+// informado e inequívoco. Por eso aquí el script de GA no se carga en absoluto
+// hasta que el visitante pulsa "Aceptar": no basta con cargarlo en modo
+// "consent denied", porque la propia carga ya comunica la IP a Google.
+//
+// Requisitos que cumple esta implementación:
+//   · Rechazar es tan fácil como aceptar (mismo nivel, mismo número de clics).
+//   · Se puede cambiar de opinión en cualquier momento (enlace "Cookies" del
+//     pie), y al rechazar se borran las cookies de GA que hubiera.
+//   · Se guarda la fecha de la decisión y se vuelve a preguntar al cabo de un
+//     año, como recomienda la AEPD.
+//   · Sin consentimiento, la web no carga ningún tercero.
+// ────────────────────────────────────────────────────────────────────────────
+import { SITE } from '../data/site';
+
+const gaId = SITE.analytics?.gaId;
+---
+
+{gaId && (
+  <div
+    id="cookie-consent"
+    data-ga-id={gaId}
+    class="hidden fixed bottom-0 inset-x-0 z-50 p-4 sm:p-5"
+    role="dialog"
+    aria-live="polite"
+    aria-label="Aviso sobre cookies"
+  >
+    <div class="max-w-4xl mx-auto bg-brand-gray border border-brand-border rounded-2xl shadow-2xl p-5 sm:p-6">
+      <h2 class="text-white font-bold mb-2">Cookies de medición</h2>
+      <p class="text-sm text-brand-muted leading-relaxed mb-5">
+        Usamos Google Analytics para saber qué guías se leen y mejorar la web. Instala cookies
+        y envía datos a Google, así que solo lo activamos si nos das permiso. Si prefieres que no,
+        la web funciona exactamente igual.{' '}
+        <a href="/politica-privacidad/" class="text-brand-red hover:text-red-400 underline underline-offset-2">Más detalle en la política de privacidad</a>.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button
+          type="button"
+          data-consent="granted"
+          class="flex-1 bg-brand-red hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors"
+        >
+          Aceptar
+        </button>
+        <button
+          type="button"
+          data-consent="denied"
+          class="flex-1 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-lg border border-white/20 transition-colors"
+        >
+          Rechazar
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
+<script>
+  const banner = document.getElementById('cookie-consent');
+  if (banner) {
+    const GA_ID = banner.dataset.gaId;
+    const KEY = 'amg-consent';
+    // La AEPD recomienda renovar el consentimiento como máximo cada 24 meses.
+    // Un año es más conservador y evita arrastrar decisiones muy antiguas.
+    const MAX_EDAD_MS = 365 * 24 * 60 * 60 * 1000;
+
+    function leerDecision() {
+      try {
+        const raw = localStorage.getItem(KEY);
+        if (!raw) return null;
+        const { valor, fecha } = JSON.parse(raw);
+        if (!fecha || Date.now() - fecha > MAX_EDAD_MS) return null;
+        return valor;
+      } catch {
+        return null;
+      }
+    }
+
+    function guardarDecision(valor: string) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify({ valor, fecha: Date.now() }));
+      } catch {
+        // Navegación privada o almacenamiento bloqueado: se preguntará de nuevo.
+      }
+    }
+
+    function cargarGA() {
+      if ((window as any).__amgGaCargado || !GA_ID) return;
+      (window as any).__amgGaCargado = true;
+
+      const dataLayer = ((window as any).dataLayer = (window as any).dataLayer || []);
+      // gtag.js espera recibir el objeto `arguments`, no un array: si se le pasa
+      // un array normal deja de interpretar los comandos ('js', 'config', …) y
+      // la medición no llega a arrancar. Por eso esta función no usa rest args.
+      function gtag() {
+        // eslint-disable-next-line prefer-rest-params
+        dataLayer.push(arguments);
+      }
+      (window as any).gtag = gtag;
+
+      // Consent Mode v2: analítica concedida (es lo que acaba de aceptar el
+      // usuario), publicidad denegada — esta web no hace publicidad.
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'granted',
+      });
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(s);
+    }
+
+    /** Borra las cookies de GA si el usuario cambia de opinión y rechaza. */
+    function borrarCookiesGA() {
+      const dominio = location.hostname.replace(/^www\./, '');
+      for (const cookie of document.cookie.split(';')) {
+        const nombre = cookie.split('=')[0].trim();
+        if (!/^_ga/.test(nombre)) continue;
+        for (const d of ['', `; domain=${dominio}`, `; domain=.${dominio}`]) {
+          document.cookie = `${nombre}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${d}`;
+        }
+      }
+    }
+
+    function mostrar() { banner.classList.remove('hidden'); }
+    function ocultar() { banner.classList.add('hidden'); }
+
+    function aplicar(valor: string) {
+      if (valor === 'granted') cargarGA();
+      else borrarCookiesGA();
+    }
+
+    for (const boton of banner.querySelectorAll<HTMLButtonElement>('[data-consent]')) {
+      boton.addEventListener('click', () => {
+        const valor = boton.dataset.consent!;
+        guardarDecision(valor);
+        aplicar(valor);
+        ocultar();
+      });
+    }
+
+    // Permite reabrir el banner desde el enlace "Cookies" del pie: retirar el
+    // consentimiento tiene que ser tan fácil como darlo.
+    (window as any).amgPreferenciasCookies = mostrar;
+
+    const decision = leerDecision();
+    if (decision) aplicar(decision);
+    else mostrar();
+  }
+</script>

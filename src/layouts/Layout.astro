@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../data/site';
+import CookieConsent from '../components/CookieConsent.astro';
 // Inter self-hosted (@fontsource): sin peticiones a Google Fonts — mejor
 // rendimiento y sin cesión de IPs a terceros (RGPD post-Schrems II).
 //
@@ -107,6 +108,7 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 </head>
 <body class="bg-brand-dark text-white font-sans antialiased">
   <slot />
+  <CookieConsent />
   <style is:global>
     @media (prefers-reduced-motion: no-preference) {
       html { scroll-behavior: smooth; }

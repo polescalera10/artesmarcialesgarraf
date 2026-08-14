@@ -88,8 +88,29 @@ const year = new Date().getFullYear();
       <div class="flex gap-4">
         <a href="/aviso-legal/" class="text-xs text-brand-muted hover:text-white transition-colors">Aviso legal</a>
         <a href="/politica-privacidad/" class="text-xs text-brand-muted hover:text-white transition-colors">Privacidad</a>
+        {/* Retirar el consentimiento debe ser tan fácil como darlo (RGPD art. 7.3). */}
+        <button
+          type="button"
+          id="abrir-preferencias-cookies"
+          class="text-xs text-brand-muted hover:text-white transition-colors"
+        >
+          Cookies
+        </button>
         <a href="/sitemap.xml" class="text-xs text-brand-muted hover:text-white transition-colors">Sitemap</a>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  // Reabre el banner de cookies. Si no hay banner (no hay analítica configurada),
+  // el botón no tiene nada que hacer y se oculta para no dejar un enlace muerto.
+  const boton = document.getElementById('abrir-preferencias-cookies');
+  if (boton) {
+    if (document.getElementById('cookie-consent')) {
+      boton.addEventListener('click', () => (window as any).amgPreferenciasCookies?.());
+    } else {
+      boton.hidden = true;
+    }
+  }
+</script>
