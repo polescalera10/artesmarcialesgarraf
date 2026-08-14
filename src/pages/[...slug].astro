@@ -206,9 +206,15 @@ const variantesDePerfil =
             {page.intro}
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/contacto/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors text-center">
-              Pedir orientación gratuita
-            </a>
+            {SITE.contactoActivo ? (
+              <a href="/contacto/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors text-center">
+                Pedir orientación gratuita
+              </a>
+            ) : (
+              <a href="/centros/" class="bg-brand-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition-colors text-center">
+                Ver centros del Garraf
+              </a>
+            )}
             <a href="/iniciacion/" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg border border-white/20 transition-colors">
               ¿Por dónde empiezo?
             </a>
@@ -234,15 +240,20 @@ const variantesDePerfil =
               },
             ] : []),
             { label: 'Niveles', value: 'Desde iniciación absoluta' },
-            { label: 'Orientación', value: '✓ Gratuita vía formulario' },
+            SITE.contactoActivo
+              ? { label: 'Orientación', value: '✓ Gratuita vía formulario' }
+              : { label: 'Directorio', value: '✓ Con fuente y fecha' },
           ].map(row => (
             <div class="flex justify-between text-sm border-b border-brand-border pb-3 last:border-0 last:pb-0">
               <span class="text-brand-muted">{row.label}</span>
               <span class="text-white font-medium text-right max-w-[55%]">{row.value}</span>
             </div>
           ))}
-          <a href="/contacto/" class="block w-full bg-brand-red hover:bg-red-700 text-white text-center font-bold py-3 rounded-lg transition-colors mt-2">
-            Contactar →
+          <a
+            href={SITE.contactoActivo ? '/contacto/' : '/centros/'}
+            class="block w-full bg-brand-red hover:bg-red-700 text-white text-center font-bold py-3 rounded-lg transition-colors mt-2"
+          >
+            {SITE.contactoActivo ? 'Contactar →' : 'Ver el directorio →'}
           </a>
         </div>
       </div>

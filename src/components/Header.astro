@@ -1,6 +1,7 @@
 ---
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
+import { SITE } from '../data/site';
 import LineIcon from './LineIcon.astro';
 
 const currentPath = Astro.url.pathname;
@@ -148,10 +149,10 @@ const linkIdle = 'text-brand-muted hover:text-white hover:bg-brand-gray/50';
       <!-- CTA -->
       <div class="flex items-center gap-3">
         <a
-          href="/contacto/"
+          href={SITE.contactoActivo ? '/contacto/' : '/centros/'}
           class="bg-brand-red hover:bg-red-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors"
         >
-          Pedir orientación
+          {SITE.contactoActivo ? 'Pedir orientación' : 'Ver centros'}
         </a>
         <!-- Mobile menu button -->
         <button
@@ -216,8 +217,11 @@ const linkIdle = 'text-brand-muted hover:text-white hover:bg-brand-gray/50';
         <a href="/sobre-nosotros/" class="px-3 py-2 text-sm text-brand-muted hover:text-white rounded-md transition-colors">
           Sobre el proyecto
         </a>
-        <a href="/contacto/" class="px-3 py-2 text-sm text-brand-red hover:text-red-400 transition-colors">
-          Pedir orientación gratuita →
+        <a
+          href={SITE.contactoActivo ? '/contacto/' : '/centros/'}
+          class="px-3 py-2 text-sm text-brand-red hover:text-red-400 transition-colors"
+        >
+          {SITE.contactoActivo ? 'Pedir orientación gratuita →' : 'Ver centros del Garraf →'}
         </a>
       </div>
     </nav>

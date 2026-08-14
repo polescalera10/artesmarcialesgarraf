@@ -5,27 +5,87 @@ import Footer from '../components/Footer.astro';
 import { SITE } from '../data/site';
 
 // TODO (requiere a Pol): crear cuenta en Formspree y definir PUBLIC_FORMSPREE_ID
-// en las variables de entorno (.env local / Vercel). Sin la variable, el
-// formulario no se renderiza y se muestra el email de contacto en su lugar.
+// en las variables de entorno (.env local / Vercel).
 const FORMSPREE_ID = import.meta.env.PUBLIC_FORMSPREE_ID as string | undefined;
-const formEnabled = Boolean(FORMSPREE_ID);
+
+// El canal solo se ofrece si está activado a mano Y el formulario tiene destino.
+// Mientras tanto no se enseña ni formulario ni email: prometer una respuesta que
+// nadie va a leer es peor que decir claramente que aún no está disponible.
+const canalActivo = SITE.contactoActivo && Boolean(FORMSPREE_ID);
+const formEnabled = canalActivo;
 ---
 
 <Layout
-  title="Contacto | Orientación Gratuita · Artes Marciales Garraf"
-  description="¿Quieres empezar a entrenar artes marciales en el Garraf? Cuéntanos qué buscas y te orientamos sin coste. Formulario de contacto y email."
+  title={canalActivo ? 'Contacto | Orientación Gratuita · Artes Marciales Garraf' : 'Contacto | Artes Marciales Garraf'}
+  description={canalActivo
+    ? '¿Quieres empezar a entrenar artes marciales en el Garraf? Cuéntanos qué buscas y te orientamos sin coste. Formulario de contacto y email.'
+    : 'Estamos activando el canal de contacto de la guía de artes marciales del Garraf. Estará disponible en unos días.'}
   canonical="/contacto/"
+  noindex={!canalActivo}
 >
   <Header />
 
   <section class="py-16 px-4">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-12">
-        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">Orientación gratuita</span>
-        <h1 class="text-3xl sm:text-4xl font-black text-white mb-4">Cuéntanos qué buscas</h1>
-        <p class="text-brand-muted max-w-lg mx-auto">Dinos qué disciplina te interesa, en qué municipio y para quién, y te orientamos sin coste sobre cómo empezar. Sin compromiso y sin spam.</p>
+        <span class="inline-block bg-brand-red/15 text-brand-red text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider border border-brand-red/30">
+          {canalActivo ? 'Orientación gratuita' : 'Canal en preparación'}
+        </span>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-4">
+          {canalActivo ? 'Cuéntanos qué buscas' : 'El contacto estará disponible en unos días'}
+        </h1>
+        <p class="text-brand-muted max-w-lg mx-auto">
+          {canalActivo
+            ? 'Dinos qué disciplina te interesa, en qué municipio y para quién, y te orientamos sin coste sobre cómo empezar. Sin compromiso y sin spam.'
+            : 'Estamos terminando de montar el buzón de la guía. Preferimos decírtelo así antes que darte una dirección que ahora mismo no leería nadie.'}
+        </p>
       </div>
 
+      <!-- Canal aún no disponible: aviso honesto en lugar de un contacto roto -->
+      {!canalActivo && (
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-brand-gray border border-brand-border rounded-2xl p-8 space-y-5">
+            <h2 class="text-lg font-bold text-white">Mientras tanto, la guía funciona entera</h2>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              No necesitas escribirnos para sacarle partido. Todo lo que te diríamos por email está
+              publicado y es gratis:
+            </p>
+            <ul class="space-y-3 text-sm text-brand-muted">
+              <li class="flex gap-3">
+                <span class="text-brand-red shrink-0">→</span>
+                <span>
+                  Si no sabes qué disciplina elegir, empieza por la
+                  <a href="/iniciacion/" class="text-brand-red hover:text-red-400"> guía de iniciación</a>:
+                  ordena las opciones por objetivo en lugar de por nombre.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-brand-red shrink-0">→</span>
+                <span>
+                  Si buscas dónde entrenar, el
+                  <a href="/centros/" class="text-brand-red hover:text-red-400"> directorio de centros del Garraf</a>
+                  lista los que tienen presencia pública verificable, con su fuente y su fecha de comprobación.
+                  Puedes contactar con ellos directamente.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-brand-red shrink-0">→</span>
+                <span>
+                  Si decides para un hijo o hija, la
+                  <a href="/clases-para-ninos/" class="text-brand-red hover:text-red-400"> guía para padres</a>
+                  compara karate, judo y taekwondo por edad y carácter.
+                </span>
+              </li>
+            </ul>
+            <p class="text-xs text-brand-muted border-t border-brand-border pt-5">
+              ¿Gestionas un centro del Garraf y quieres corregir o añadir tu ficha? Vuelve a esta página
+              en unos días: el canal estará operativo y atenderemos cualquier corrección.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {canalActivo && (
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Form (solo si PUBLIC_FORMSPREE_ID está configurada) -->
         <div>
@@ -155,6 +215,7 @@ const formEnabled = Boolean(FORMSPREE_ID);
           </div>
         </div>
       </div>
+      )}
     </div>
   </section>
 

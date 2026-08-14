@@ -1,4 +1,5 @@
 import { ALL_PAGES } from '../data/pages';
+import { SITE as SITE_DATA } from '../data/site';
 
 const SITE = 'https://artesmarcialesgarraf.es';
 
@@ -6,7 +7,11 @@ const staticPages = [
   { slug: '', priority: '1.0', changefreq: 'weekly' },
   { slug: 'centros', priority: '0.9', changefreq: 'weekly' },
   { slug: 'blog', priority: '0.7', changefreq: 'monthly' },
-  { slug: 'contacto', priority: '0.9', changefreq: 'monthly' },
+  // Mientras el canal de contacto está desactivado, /contacto/ es un aviso en
+  // noindex: incluirlo aquí sería mandarle a Google una señal contradictoria.
+  ...(SITE_DATA.contactoActivo
+    ? [{ slug: 'contacto', priority: '0.9', changefreq: 'monthly' }]
+    : []),
   { slug: 'sobre-nosotros', priority: '0.8', changefreq: 'monthly' },
 ];
 

@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import { DISCIPLINES } from '../data/disciplines';
+import { SITE } from '../data/site';
 import LineIcon from '../components/LineIcon.astro';
 ---
 
@@ -33,7 +34,9 @@ import LineIcon from '../components/LineIcon.astro';
           {[
             { title: 'Información útil', desc: 'Explicamos cada disciplina sin tecnicismos: beneficios reales, perfil de practicante y cómo son las primeras semanas de entrenamiento.' },
             { title: 'Contexto local', desc: 'Cada guía está pensada para la comarca del Garraf: distancias entre municipios, dónde hay más oferta y qué opciones tiene cada perfil.' },
-            { title: 'Orientación gratuita', desc: 'Si nos escribes contándonos qué buscas, te respondemos con orientación personalizada para empezar a entrenar. Sin coste y sin compromiso.' },
+            SITE.contactoActivo
+              ? { title: 'Orientación gratuita', desc: 'Si nos escribes contándonos qué buscas, te respondemos con orientación personalizada para empezar a entrenar. Sin coste y sin compromiso.' }
+              : { title: 'Directorio verificado', desc: 'Cada centro del directorio procede de una fuente pública comprobable, con su origen y su fecha de verificación a la vista. Sin valoraciones ni publicidad.' },
           ].map(m => (
             <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
               <h3 class="font-bold text-white mb-3">{m.title}</h3>

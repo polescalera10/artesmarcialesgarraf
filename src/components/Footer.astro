@@ -68,14 +68,20 @@ const year = new Date().getFullYear();
       <div>
         <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contacto</h3>
         <ul class="space-y-3">
-          <li class="flex gap-2">
-            <svg class="w-4 h-4 text-brand-red mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-            <a href={`mailto:${SITE.email}`} class="text-sm text-brand-muted hover:text-white transition-colors">{SITE.email}</a>
-          </li>
+          {/* El email solo se muestra cuando el buzón está operativo: publicar una
+              dirección que nadie lee es peor que no publicarla. Ver SITE.contactoActivo. */}
+          {SITE.contactoActivo && (
+            <li class="flex gap-2">
+              <svg class="w-4 h-4 text-brand-red mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <a href={`mailto:${SITE.email}`} class="text-sm text-brand-muted hover:text-white transition-colors">{SITE.email}</a>
+            </li>
+          )}
           <li>
-            <a href="/contacto/" class="text-sm text-brand-red hover:text-red-400 transition-colors">Formulario de contacto →</a>
+            <a href="/contacto/" class="text-sm text-brand-red hover:text-red-400 transition-colors">
+              {SITE.contactoActivo ? 'Formulario de contacto →' : 'Contacto →'}
+            </a>
           </li>
         </ul>
       </div>
