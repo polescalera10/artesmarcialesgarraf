@@ -56,6 +56,47 @@ El estándar es el de los artículos ya publicados. Antes de escribir, **abre `s
 
 ---
 
+## 3-bis. Pasada de humanización (obligatoria, antes de guardar)
+
+Un texto que huele a IA le cuesta credibilidad a una guía que se vende como editorial independiente. Todo artículo pasa por esta revisión **antes** de escribirlo en `blog-posts.ts`.
+
+**Primero, intenta usar la skill.** Invoca la skill `humanizer` sobre el borrador completo. Si el entorno la tiene disponible, es la versión canónica y manda sobre el resumen de abajo. Si no está disponible, no pasa nada: aplica esta lista, que es su destilado.
+
+**El método:** escribe el borrador, luego pregúntate en frío *"¿qué delata que esto lo ha escrito una máquina?"*, y reescribe atacando lo que encuentres. Una sola pasada de revisión no basta si el borrador salió plano.
+
+### Corta siempre
+
+- **Guiones largos (—) y medios (–): cero, sin excepción.** Es el tell más fiable que existe. Sustituye por punto, coma, dos puntos o paréntesis, o reestructura la frase. Antes de guardar, busca `—` y `–` en tu texto: si hay uno, el borrador no está terminado. (Los artículos publicados antes del 15-08-2026 los usan; no son el modelo a seguir en esto.)
+- **Vocabulario de IA:** crucial, clave (adjetivo), fundamental, pivotal, sumergirse, explorar, fomentar, potenciar, destacar (verbo), panorama, tapiz, testimonio de, subrayar, enriquecedor, vibrante, robusto, integral.
+- **Inflar significados:** "marca un antes y un después", "juega un papel crucial", "refleja una tendencia más amplia", "deja una huella imborrable". Si una frase solo dice que algo es importante, se borra.
+- **Participios de relleno** que fingen profundidad al final de una frase: "…, destacando su importancia", "…, reflejando la conexión con", "…, garantizando que", "…, fomentando la".
+- **Lenguaje promocional:** "enclavado en", "en pleno corazón de", "impresionante", "de visita obligada", "cuenta con una amplia oferta".
+- **Paralelismos negativos:** "no es solo X, es Y", "no se trata únicamente de…". Y las negaciones colgando al final: "sin sorpresas", "sin perder el tiempo".
+- **Regla de tres automática.** Si cada enumeración tiene exactamente tres elementos, es una máquina. Que tengan dos, cuatro o cinco cuando toque.
+- **Variación elegante:** no cicles sinónimos por miedo a repetir ("el practicante… el alumno… el deportista… el aprendiz"). Repite la palabra normal.
+- **Rangos falsos:** "desde X hasta Y" cuando X e Y no están en la misma escala.
+- **Atribuciones vagas:** "los expertos coinciden", "según diversos estudios", "está demostrado que". O hay fuente concreta o no se dice.
+- **Negritas mecánicas** y listas con encabezado en negrita seguido de dos puntos. Negrita solo para la idea que el lector debe llevarse si lee en diagonal.
+- **Señalizar en vez de hacer:** "vamos a ver", "aquí tienes lo que necesitas saber", "sin más preámbulos", "profundicemos en".
+- **Aperturas de falsa confidencia:** "¿Honestamente?", "Mira", "La cosa es que", "Seamos sinceros", "La verdadera pregunta es", "en el fondo".
+- **Cierres positivos genéricos:** "el futuro es prometedor", "un paso en la dirección correcta", "solo queda dar el primer paso".
+- **Frases-eslogan y drama entrecortado.** Una frase corta para rematar está bien. Cuatro seguidas, no.
+- **Encabezado seguido de una frase que repite el encabezado.** Entra directo en el contenido.
+- **Comillas tipográficas** (" "): usa las rectas.
+- **Hedging apilado:** "podría potencialmente llegar a ser". Dilo o no lo digas.
+
+### Conserva y busca
+
+- **Ritmo variado.** Frases cortas. Y frases más largas que se toman su tiempo para llegar a donde van. La cadencia uniforme de longitud media es lo que suena a máquina.
+- **Criterio propio.** Mojarse: "esto es marketing", "si ves esto, vete", "nuestra recomendación es". Un texto sin opinión es un texto sin autor.
+- **El matiz incómodo.** Lo que no funciona, lo que no se puede prometer, la duda que queda. La IA tiende a resolverlo todo limpiamente.
+- **Detalle concreto y difícil de fabricar.** Los 10-15 minutos entre Sitges y Vilanova, la R2 Sud, el martes de noviembre con lluvia. Los detalles específicos son la firma de que hay alguien detrás.
+- **Alguna aparte o autocorrección.** Un inciso entre paréntesis, un "aunque aquí conviene matizar". La prosa perfectamente ordenada se lee como generada.
+
+**No te pases.** Humanizar no es meter coloquialismos ni chistes. El objetivo es que suene a la persona que escribió los artículos de referencia: alguien con criterio, con prisa y sin ganas de vender nada.
+
+---
+
 ## 4. Mecánica: cómo se añade una entrada
 
 Cuatro archivos, en este orden. Todos bajo `src/`.
@@ -121,6 +162,7 @@ Después, ejecutar `npm run images`. Regenera todo y actualiza `src/data/imagene
    - **Estacionalidad:** si estamos en agosto o septiembre, adelantar las entradas con `"estacionalidad": "septiembre"`. En diciembre y enero, las de `"enero"`.
    - **Entradas con `requiere_datos`:** leer ese campo y cumplirlo. Si el dato no existe, **saltar la entrada, dejarla pendiente** y coger la siguiente. No inventar nunca para desbloquearla.
 3. Escribir los 4 artículos siguiendo las secciones 2, 3 y 4.
+3-bis. **Pasar cada artículo por la humanización de la sección 3-bis** antes de guardarlo. Incluye la comprobación mecánica: `grep -c '—' ` sobre el texto nuevo tiene que dar 0.
 4. `npm run images` y `npm run build`. **El build tiene que quedar en verde.**
 5. Verificar sobre `dist/`, y no dar por bueno nada que falle:
    - las 4 páginas nuevas existen en `dist/blog/<slug>/index.html`;
@@ -128,7 +170,8 @@ Después, ejecutar `npm run images`. Regenera todo y actualiza `src/data/imagene
    - exactamente un `<h1>` por página;
    - el `og:image` de cada una apunta a `/og/blog-<slug>.png` y ese archivo existe;
    - todos los enlaces internos del cuerpo resuelven a una página que existe en `dist/`;
-   - `sitemap.xml` incluye las 4 URLs nuevas.
+   - `sitemap.xml` incluye las 4 URLs nuevas;
+   - **cero guiones largos o medios** en el cuerpo de los 4 artículos nuevos (`grep -c '—\|–'` sobre las claves nuevas de `BLOG_BODIES` debe dar 0).
 6. Marcar en `content/cola-blog.json` cada entrada publicada: `"estado": "publicado"` y `"publicado_en": "YYYY-MM-DD"`. Añadir su slug al array `publicados`.
 7. Actualizar `SITE.ultimaRevision` en `src/data/site.ts` a la fecha de hoy.
 8. Un solo commit con los 4 artículos y `git push origin main`. Vercel despliega solo.

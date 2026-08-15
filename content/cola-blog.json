@@ -1,6 +1,8 @@
 {
   "_nota": "Cola editorial del blog. La mantiene el agente programado; ver PLAYBOOK-BLOG.md antes de escribir nada.",
   "generado": "2026-08-15",
+  "ultima_revision_cola": "2026-08-15",
+  "_revision_cada_dias": 20,
   "metodologia": "Keyword research informacional. El research previo (keyword-research-artesmarcialesgarraf.xlsx, 85 keywords) es casi todo transaccional/local y ya está cubierto por las 62 money pages y hubs. Sin ficha de Google Business no se puede entrar en el Map Pack, así que las head terms transaccionales tienen techo: el tráfico realista de este activo es informacional de cola larga con intención de conversión (padre buscando dónde apuntar al hijo, adulto que quiere empezar). Estas 50 entradas atacan esa capa sin canibalizar ninguna página existente.",
   "cadencia": {
     "posts_por_tanda": 4,
