@@ -59,7 +59,18 @@ const year = new Date().getFullYear();
             <a href="/clases-para-mujeres/" class="text-sm text-brand-muted hover:text-white transition-colors">Clases para Mujeres</a>
           </li>
           <li>
+            <!-- Antes solo se enlazaba desde el desplegable "Para ti" del
+                 header: en móvil, tras un toque; en desktop, tras hover.
+                 Auditoría del 15-08-2026 la encontró con 1 enlace de cuerpo
+                 entrante en toda la web. -->
+            <a href="/clases-para-adultos/" class="text-sm text-brand-muted hover:text-white transition-colors">Clases para Adultos</a>
+          </li>
+          <li>
             <a href="/blog/" class="text-sm text-brand-muted hover:text-white transition-colors">Blog: guías y comparativas</a>
+          </li>
+          <li>
+            <!-- Mismo motivo: solo vivía en el desplegable del header. -->
+            <a href="/sobre-nosotros/" class="text-sm text-brand-muted hover:text-white transition-colors">Sobre el proyecto</a>
           </li>
         </ul>
       </div>
