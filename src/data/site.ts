@@ -9,17 +9,13 @@ export const SITE = {
   tagline: 'La guía de artes marciales de la comarca del Garraf',
   domain: 'artesmarcialesgarraf.es',
   url: 'https://artesmarcialesgarraf.es',
-  // TODO: activar el buzón de este email en el dominio
+  // Buzón operativo desde 2026-08-15.
   email: 'contacto@artesmarcialesgarraf.es',
-  // Interruptor del canal de contacto (2026-08-14). Mientras el buzón no esté
-  // activo, la web no ofrece ninguna vía de contacto que no funcione: /contacto/
-  // muestra un aviso honesto y desaparecen los enlaces de email de las zonas
-  // comerciales. Las páginas legales sí conservan la dirección, porque la
-  // LSSI-CE exige publicar un canal de contacto y esa es la dirección designada.
-  //
-  // PARA REACTIVAR: poner esto en true y tener PUBLIC_FORMSPREE_ID definida en
-  // Vercel. No hace falta tocar nada más — el copy del sitio sigue intacto.
-  contactoActivo: false,
+  // Interruptor del canal de contacto. En false, la web no ofrece ninguna vía
+  // de contacto: /contacto/ muestra un aviso, desaparecen los enlaces de email
+  // y los CTA dejan de prometer orientación. Se usó entre el 14 y el 15 de
+  // agosto de 2026, mientras el buzón no existía.
+  contactoActivo: true,
   region: {
     comarca: 'Comarca del Garraf',
     province: 'Barcelona',

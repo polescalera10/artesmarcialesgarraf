@@ -53,19 +53,36 @@ import { SITE } from '../data/site';
         <div>
           <h2 class="text-xl font-bold text-white mb-4">3. Base legal del tratamiento</h2>
           <p class="text-brand-muted leading-relaxed">
-            La base legal para el tratamiento de tus datos es tu consentimiento expreso, que prestas al enviar el formulario de contacto. Puedes retirar tu consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento previo.
+            La base legal para el tratamiento de tus datos es tu consentimiento expreso, que prestas marcando la casilla correspondiente antes de enviar el formulario de contacto. Puedes retirar tu consentimiento en cualquier momento escribiéndonos, sin que ello afecte a la licitud del tratamiento previo.
           </p>
         </div>
 
         <div>
-          <h2 class="text-xl font-bold text-white mb-4">4. Plazo de conservación</h2>
+          <h2 class="text-xl font-bold text-white mb-4">4. Destinatarios y encargados del tratamiento</h2>
+          <p class="text-brand-muted leading-relaxed">
+            No vendemos ni cedemos tus datos. Para prestarte el servicio intervienen únicamente estos proveedores:
+          </p>
+          <ul class="text-brand-muted mt-3 space-y-2 list-disc list-inside">
+            <li><strong class="text-white">Vercel Inc.</strong> — alojamiento del sitio web.</li>
+            {import.meta.env.PUBLIC_FORMSPREE_ID && (
+              <li><strong class="text-white">Formspree Inc.</strong> — recepción y entrega de los mensajes enviados desde el formulario de contacto.</li>
+            )}
+            <li><strong class="text-white">Proveedor de correo electrónico</strong> — recepción y conservación de tu mensaje en nuestro buzón.</li>
+          </ul>
+          <p class="text-brand-muted leading-relaxed mt-3">
+            Solo compartiremos tus datos con un centro deportivo concreto si nos autorizas expresamente a hacerlo, y te diremos con quién antes de hacerlo.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-4">5. Plazo de conservación</h2>
           <p class="text-brand-muted leading-relaxed">
             Conservamos tus datos durante el tiempo necesario para gestionar tu solicitud. Una vez resuelta, los eliminamos salvo que hayas solicitado mantenerte informado sobre nuestras actividades.
           </p>
         </div>
 
         <div>
-          <h2 class="text-xl font-bold text-white mb-4">5. Tus derechos</h2>
+          <h2 class="text-xl font-bold text-white mb-4">6. Tus derechos</h2>
           <p class="text-brand-muted leading-relaxed">
             De acuerdo con el RGPD, tienes derecho a:
           </p>
@@ -86,14 +103,14 @@ import { SITE } from '../data/site';
         </div>
 
         <div>
-          <h2 class="text-xl font-bold text-white mb-4">6. Cookies y medición de audiencia</h2>
+          <h2 class="text-xl font-bold text-white mb-4">7. Cookies y medición de audiencia</h2>
           <p class="text-brand-muted leading-relaxed">
             Este sitio no utiliza cookies de publicidad ni de perfilado comercial, y no vende ni cede datos de navegación a terceros con fines publicitarios.
           </p>
 
           {SITE.analytics?.gaId && (
             <>
-              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.1. Cookies analíticas (Google Analytics 4)</h3>
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">7.1. Cookies analíticas (Google Analytics 4)</h3>
               <p class="text-brand-muted leading-relaxed">
                 Para saber qué guías se leen y mejorar el contenido utilizamos <strong class="text-white">Google Analytics 4</strong>, un servicio de medición de audiencia de Google Ireland Limited. Esta herramienta instala cookies en tu dispositivo y trata datos como tu dirección IP (de forma anonimizada), el navegador, el dispositivo, las páginas que visitas y el tiempo que pasas en ellas.
               </p>
@@ -125,12 +142,12 @@ import { SITE } from '../data/site';
                 </table>
               </div>
 
-              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.2. Base legal y transferencias internacionales</h3>
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">7.2. Base legal y transferencias internacionales</h3>
               <p class="text-brand-muted leading-relaxed">
                 La base legal es tu <strong class="text-white">consentimiento</strong> (art. 6.1.a RGPD y art. 22.2 LSSI-CE). Google puede tratar estos datos fuera del Espacio Económico Europeo; dichas transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. y en las cláusulas contractuales tipo de la Comisión Europea. Puedes consultar el detalle en la <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer" class="text-brand-red hover:underline">política de privacidad de Google</a>.
               </p>
 
-              <h3 class="text-lg font-semibold text-white mt-6 mb-3">6.3. Cómo cambiar o retirar tu decisión</h3>
+              <h3 class="text-lg font-semibold text-white mt-6 mb-3">7.3. Cómo cambiar o retirar tu decisión</h3>
               <p class="text-brand-muted leading-relaxed">
                 Puedes cambiar de opinión cuando quieras, con la misma facilidad con la que aceptaste:
               </p>
@@ -146,7 +163,7 @@ import { SITE } from '../data/site';
           )}
 
           <h3 class="text-lg font-semibold text-white mt-6 mb-3">
-            {SITE.analytics?.gaId ? '6.4. Cookies técnicas' : '6.1. Cookies técnicas'}
+            {SITE.analytics?.gaId ? '7.4. Cookies técnicas' : '7.1. Cookies técnicas'}
           </h3>
           <p class="text-brand-muted leading-relaxed">
             El sitio utiliza almacenamiento estrictamente necesario para recordar tu decisión sobre las cookies analíticas. Al ser imprescindible para prestarte el servicio que has solicitado, no requiere consentimiento.
@@ -160,7 +177,7 @@ import { SITE } from '../data/site';
         </div>
 
         <div>
-          <h2 class="text-xl font-bold text-white mb-4">7. Seguridad</h2>
+          <h2 class="text-xl font-bold text-white mb-4">8. Seguridad</h2>
           <p class="text-brand-muted leading-relaxed">
             Adoptamos las medidas técnicas y organizativas apropiadas para proteger tus datos personales contra el acceso no autorizado, la pérdida o la destrucción accidental.
           </p>
