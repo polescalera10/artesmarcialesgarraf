@@ -6,20 +6,17 @@ import { SITE, SCHEMA_IDS } from '../data/site';
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
 
-// El formulario tiene dos modos de envío y siempre se muestra:
+// Envío por el cliente de correo del visitante (decisión de 2026-08-15: no se
+// usa ningún servicio de formularios). El formulario recoge los datos, compone
+// un mensaje ya ordenado y lo abre en el programa de correo de quien escribe.
 //
-//  1. Con PUBLIC_FORMSPREE_ID definida (Vercel), envía por Formspree en segundo
-//     plano y el visitante no sale de la página. Es el modo bueno y el objetivo.
-//  2. Sin esa variable, el mismo formulario compone un correo con los datos ya
-//     ordenados y lo abre en el cliente de correo del visitante. Funciona desde
-//     el primer día, sin cuentas de terceros y sin que ningún intermediario
-//     trate datos personales — a cambio de un clic más y de perder a quien no
-//     tenga cliente de correo configurado.
+// Ventajas: cero dependencias, cero coste, y ningún intermediario llega a tratar
+// datos personales — la información va del visitante a nuestro buzón y nada más.
 //
-// El modo 2 es un puente, no un destino: en cuanto exista la cuenta de
-// Formspree, definir la variable y el formulario pasa solo al modo 1.
-const FORMSPREE_ID = import.meta.env.PUBLIC_FORMSPREE_ID as string | undefined;
-const envioDirecto = Boolean(FORMSPREE_ID);
+// Inconveniente conocido: quien no tenga cliente de correo configurado (habitual
+// en móviles con solo webmail) no ve abrirse nada. Por eso, tras enviar, la
+// página muestra el mensaje ya redactado con un botón para copiarlo y la
+// dirección a la que pegarlo: nadie se queda sin poder escribir.
 
 const contactSchema = {
   '@context': 'https://schema.org',
@@ -71,15 +68,7 @@ const inputClass =
 
       <div class="grid lg:grid-cols-2 gap-12">
         <div>
-          <form
-            id="contact-form"
-            class="space-y-5"
-            data-modo={envioDirecto ? 'formspree' : 'correo'}
-            data-destino={SITE.email}
-            action={envioDirecto ? `https://formspree.io/f/${FORMSPREE_ID}` : undefined}
-            method="POST"
-            novalidate={false}
-          >
+          <form id="contact-form" class="space-y-5" data-destino={SITE.email}>
             <div>
               <label for="nombre" class="block text-sm font-medium text-white mb-1.5">Nombre *</label>
               <input type="text" id="nombre" name="nombre" required autocomplete="name"
@@ -132,54 +121,50 @@ const inputClass =
             <!-- Trampa antispam: los bots rellenan todos los campos, las personas
                  no ven este. Si llega con contenido, el envío se descarta. -->
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
-            <input type="hidden" name="_subject" value="Nueva solicitud de orientación - Artes Marciales Garraf" />
 
             <button type="submit" id="contact-submit"
-              class="w-full bg-brand-red hover:bg-red-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold py-4 rounded-lg transition-colors text-lg">
+              class="w-full bg-brand-red hover:bg-red-700 text-white font-bold py-4 rounded-lg transition-colors text-lg">
               Pedir orientación gratuita →
             </button>
 
-            {!envioDirecto && (
-              <p class="text-xs text-brand-muted text-center">
-                Al enviar se abrirá tu programa de correo con el mensaje ya redactado, para que solo
-                tengas que darle a enviar.
-              </p>
-            )}
+            <p class="text-xs text-brand-muted text-center">
+              Al enviar se abre tu programa de correo con el mensaje ya redactado, para que solo
+              tengas que darle a enviar. Si no se abre, te lo damos para copiar y pegar.
+            </p>
           </form>
 
-          <!-- Estados de respuesta: se muestran sin recargar la página -->
-          <div id="contact-ok" hidden
-            class="bg-brand-gray border border-brand-red/40 rounded-xl p-6 text-center space-y-3">
-            <h2 class="text-lg font-bold text-white">Mensaje enviado</h2>
-            <p class="text-sm text-brand-muted leading-relaxed">
-              Gracias por escribirnos. Te respondemos al correo que nos has dejado, normalmente en
-              menos de 48 horas.
-            </p>
-            <p class="text-sm text-brand-muted leading-relaxed">
+          <!-- Resultado del envío. Se muestra sin recargar la página e incluye el
+               mensaje redactado: es la red de seguridad para quien no tenga
+               cliente de correo y no vería abrirse nada. -->
+          <div id="contact-resultado" hidden
+            class="bg-brand-gray border border-brand-red/40 rounded-xl p-6 space-y-5">
+            <div class="space-y-3">
+              <h2 class="text-lg font-bold text-white">Revisa tu programa de correo</h2>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Hemos abierto un mensaje dirigido a
+                <strong class="text-white">{SITE.email}</strong> con tus datos ya redactados. Solo
+                tienes que darle a enviar y te respondemos, normalmente en menos de 48 horas.
+              </p>
+            </div>
+
+            <div class="border-t border-brand-border pt-5 space-y-3">
+              <h3 class="text-sm font-semibold text-white">¿No se ha abierto nada?</h3>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Pasa si no tienes un programa de correo configurado. Copia este mensaje y envíalo a
+                <a href={`mailto:${SITE.email}`} class="text-brand-red hover:text-red-400">{SITE.email}</a>
+                desde donde uses el correo:
+              </p>
+              <pre id="contact-texto"
+                class="bg-brand-dark border border-brand-border rounded-lg p-4 text-xs text-brand-muted whitespace-pre-wrap break-words max-h-56 overflow-y-auto"></pre>
+              <button type="button" id="contact-copiar"
+                class="w-full bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg border border-white/20 transition-colors">
+                Copiar el mensaje
+              </button>
+            </div>
+
+            <p class="text-sm text-brand-muted leading-relaxed border-t border-brand-border pt-5">
               Mientras tanto, échale un ojo al
               <a href="/centros/" class="text-brand-red hover:text-red-400">directorio de centros del Garraf</a>.
-            </p>
-          </div>
-
-          <div id="contact-correo" hidden
-            class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center space-y-3">
-            <h2 class="text-lg font-bold text-white">Revisa tu programa de correo</h2>
-            <p class="text-sm text-brand-muted leading-relaxed">
-              Hemos abierto un mensaje con tus datos ya redactados. Solo tienes que darle a enviar.
-            </p>
-            <p class="text-sm text-brand-muted leading-relaxed">
-              ¿No se ha abierto nada? Escríbenos directamente a
-              <a href={`mailto:${SITE.email}`} class="text-brand-red hover:text-red-400">{SITE.email}</a>.
-            </p>
-          </div>
-
-          <div id="contact-error" hidden
-            class="bg-brand-gray border border-brand-border rounded-xl p-6 text-center space-y-3">
-            <h2 class="text-lg font-bold text-white">No hemos podido enviarlo</h2>
-            <p class="text-sm text-brand-muted leading-relaxed">
-              Ha fallado algo por nuestro lado. Escríbenos directamente a
-              <a href={`mailto:${SITE.email}`} class="text-brand-red hover:text-red-400">{SITE.email}</a>
-              y lo resolvemos igual.
             </p>
           </div>
         </div>
@@ -239,22 +224,17 @@ const inputClass =
   const form = document.getElementById('contact-form') as HTMLFormElement | null;
 
   if (form) {
-    const boton = document.getElementById('contact-submit') as HTMLButtonElement;
-    const panelOk = document.getElementById('contact-ok')!;
-    const panelCorreo = document.getElementById('contact-correo')!;
-    const panelError = document.getElementById('contact-error')!;
+    const destino = form.dataset.destino!;
+    const asunto = 'Solicitud de orientación — Artes Marciales Garraf';
+    const panel = document.getElementById('contact-resultado')!;
+    const bloqueTexto = document.getElementById('contact-texto')!;
+    const botonCopiar = document.getElementById('contact-copiar') as HTMLButtonElement;
 
-    const mostrar = (panel: HTMLElement) => {
-      form.hidden = true;
-      panel.hidden = false;
-      panel.scrollIntoView({ block: 'center' });
-    };
-
-    /** Redacta el correo con los campos ya ordenados, para no obligar a nadie a
-     *  escribir de cero cuando el envío va por el cliente de correo. */
-    const componerCorreo = (datos: FormData) => {
+    /** Redacta el mensaje con los campos ya ordenados, para que nadie tenga que
+     *  escribir de cero ni recordar qué datos hacen falta. */
+    const redactar = (datos: FormData) => {
       const campo = (clave: string) => String(datos.get(clave) ?? '').trim();
-      const lineas = [
+      return [
         `Nombre: ${campo('nombre')}`,
         `Email: ${campo('email')}`,
         campo('telefono') ? `Teléfono: ${campo('telefono')}` : null,
@@ -262,52 +242,55 @@ const inputClass =
         campo('municipio') ? `Municipio: ${campo('municipio')}` : null,
         '',
         campo('mensaje') || '(sin mensaje adicional)',
-      ].filter(l => l !== null);
-
-      const destino = form.dataset.destino!;
-      const asunto = 'Solicitud de orientación — Artes Marciales Garraf';
-      return `mailto:${destino}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(lineas.join('\n'))}`;
+      ]
+        .filter(linea => linea !== null)
+        .join('\n');
     };
 
-    form.addEventListener('submit', async event => {
-      // La validación nativa del navegador ya ha pasado en este punto: el campo
-      // obligatorio de consentimiento incluido.
+    form.addEventListener('submit', event => {
+      // La validación nativa ya ha pasado aquí, incluida la casilla obligatoria
+      // de consentimiento.
       event.preventDefault();
 
       const datos = new FormData(form);
+      const cuerpo = redactar(datos);
 
-      // Honeypot: si viene relleno es un bot. Se finge éxito para no darle pistas.
+      // Honeypot: si viene relleno es un bot. Se corta sin abrir nada y sin
+      // decirle por qué.
       if (String(datos.get('_gotcha') ?? '').trim() !== '') {
-        mostrar(panelOk);
+        form.hidden = true;
+        panel.hidden = false;
         return;
       }
 
-      if (form.dataset.modo === 'correo') {
-        window.location.href = componerCorreo(datos);
-        mostrar(panelCorreo);
-        return;
-      }
+      bloqueTexto.textContent = cuerpo;
+      form.hidden = true;
+      panel.hidden = false;
+      panel.scrollIntoView({ block: 'center' });
 
-      boton.disabled = true;
-      const textoOriginal = boton.textContent;
-      boton.textContent = 'Enviando…';
+      // Se abre el cliente de correo después de pintar el panel: si el navegador
+      // no tiene ninguno asociado, el visitante ya tiene delante el texto para
+      // copiar en lugar de quedarse mirando una página que no reacciona.
+      window.location.href =
+        `mailto:${destino}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+    });
 
+    botonCopiar.addEventListener('click', async () => {
+      const original = botonCopiar.textContent;
       try {
-        const respuesta = await fetch(form.action, {
-          method: 'POST',
-          body: datos,
-          headers: { Accept: 'application/json' },
-        });
-        if (!respuesta.ok) throw new Error(`Formspree respondió ${respuesta.status}`);
-        mostrar(panelOk);
+        await navigator.clipboard.writeText(bloqueTexto.textContent ?? '');
+        botonCopiar.textContent = 'Mensaje copiado ✓';
       } catch {
-        // Sin conexión o error del proveedor: se ofrece el correo directo en
-        // lugar de perder el mensaje.
-        mostrar(panelError);
-      } finally {
-        boton.disabled = false;
-        boton.textContent = textoOriginal;
+        // Sin permiso de portapapeles: se selecciona el texto para que baste
+        // con copiar a mano.
+        const rango = document.createRange();
+        rango.selectNodeContents(bloqueTexto);
+        const seleccion = window.getSelection();
+        seleccion?.removeAllRanges();
+        seleccion?.addRange(rango);
+        botonCopiar.textContent = 'Selecciónalo y cópialo';
       }
+      setTimeout(() => { botonCopiar.textContent = original; }, 3000);
     });
   }
 </script>
