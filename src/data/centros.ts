@@ -43,12 +43,15 @@ export const CENTROS: Centro[] = [
   {
     nombre: 'Aranha VNG',
     municipio: 'vilanova-i-la-geltru',
-    disciplinas: ['jiu-jitsu-brasileno', 'kickboxing', 'mma'],
-    // TODO Pol: cuando el dominio definitivo del club esté activo, sustituir la URL.
-    web: 'https://aranha-vng.vercel.app',
-    fuente: 'https://aranha-vng.vercel.app',
+    // Reverificado el 2026-08-15 sobre el dominio definitivo: la web anuncia
+    // estas cinco disciplinas en su sección "Disciplinas" y en el pie.
+    disciplinas: ['jiu-jitsu-brasileno', 'kickboxing', 'mma', 'boxeo', 'defensa-personal'],
+    otras: ['Clases infantiles y juveniles', 'Grupo femenino de jiu-jitsu'],
+    direccion: 'Rambla del Garraf, 32, 08800 Vilanova i la Geltrú',
+    web: 'https://www.aranhavng.es',
+    fuente: 'https://www.aranhavng.es',
     fuenteTipo: 'web-oficial',
-    verificado: '2026-07-07',
+    verificado: '2026-08-15',
   },
   {
     nombre: 'Centros DYM — Escuela de Vilanova',
