@@ -583,6 +583,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/a-que-edad-empezar-artes-marciales',
+    type: 'blog',
+    meta: {
+      title: 'A Qué Edad Empezar Artes Marciales | Guía por Edades',
+      description: 'Desde qué edad se empieza en cada arte marcial y qué esperar en cada tramo: de los 4 años a los 60. Guía por edades para el Garraf.',
+    },
+    h1: 'A Qué Edad Empezar Artes Marciales: Guía por Tramos',
+    intro: 'Es la primera pregunta de casi todo el mundo, y tiene dos versiones: la del padre que no sabe si su hijo de cuatro años aprovechará algo, y la del adulto que teme haber llegado tarde. Esta guía recorre los tramos de edad uno a uno —qué aporta cada uno, qué disciplinas están abiertas y qué hay que mirar en el centro— con el contexto de la oferta del Garraf.',
+    body: BLOG_BODIES['blog/a-que-edad-empezar-artes-marciales'],
+    fecha: '2026-08-15',
+    phase: 2,
+  },
+  {
+    slug: 'blog/como-elegir-centro-artes-marciales-garraf',
+    type: 'blog',
+    meta: {
+      title: 'Cómo Elegir un Centro de Artes Marciales | Checklist',
+      description: 'Las 8 preguntas que hay que hacer antes de apuntarse a un gimnasio de artes marciales: grupos, contacto, condiciones, seguro y señales de alarma.',
+    },
+    h1: 'Cómo Elegir un Centro de Artes Marciales en el Garraf',
+    intro: 'Elegir bien el centro pesa más que elegir bien la disciplina: casi nadie abandona porque se equivocara de estilo, sino porque acabó en el grupo que no le tocaba o atado a unas condiciones que no entendió. Esta es la lista de ocho comprobaciones que se responden en una visita y una llamada, válida para cualquier disciplina y cualquier municipio de la comarca.',
+    body: BLOG_BODIES['blog/como-elegir-centro-artes-marciales-garraf'],
+    fecha: '2026-08-15',
+    phase: 2,
+  },
+  {
     slug: 'blog/donde-aprender-boxeo-en-el-garraf',
     type: 'blog',
     meta: {

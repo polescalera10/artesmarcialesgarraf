@@ -51,7 +51,9 @@ const formatearFecha = (iso?: string) =>
   iso ? new Date(iso).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
 ---
 
-<Layout title={title} description={description} canonical="/blog/" schema={[listSchema, breadcrumbSchema]}>
+<Layout title={title} description={description} canonical="/blog/" ogImage={`${SITE.url}/og/blog.png`}
+  ogImageAlt="Ilustración de la guía: símbolo de balanza sobre una trama, guías y comparativas"
+  schema={[listSchema, breadcrumbSchema]}>
   <Header />
 
   <section class="relative overflow-hidden bg-brand-dark pt-12 pb-10 px-4">
@@ -65,6 +67,16 @@ const formatearFecha = (iso?: string) =>
         cómo empezar de adulto, qué funciona de verdad en defensa personal. Sin publicidad de centros y
         con la misma regla que el resto de la web: solo información honesta.
       </p>
+
+      <img
+        src="/img/blog.webp"
+        alt="Ilustración de la guía: símbolo de balanza sobre una trama, sección de guías y comparativas"
+        width="1600"
+        height="400"
+        loading="lazy"
+        decoding="async"
+        class="mt-10 w-full object-cover rounded-2xl border border-brand-border"
+      />
     </div>
   </section>
 

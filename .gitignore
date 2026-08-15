@@ -8,3 +8,6 @@ node_modules/
 .vercel
 .astro/
 
+
+# Configuración local del entorno de previsualización, no del proyecto.
+.claude/

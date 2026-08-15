@@ -8,6 +8,117 @@
 // ────────────────────────────────────────────────────────────────────────────
 
 export const BLOG_BODIES: Record<string, string> = {
+
+  'blog/a-que-edad-empezar-artes-marciales': `
+<h2>La respuesta corta, y por qué la larga importa más</h2>
+<p>La mayoría de clubs de la comarca abren grupo infantil a partir de los <strong>4 o 5 años</strong>, y para un adulto la edad de empezar es literalmente cualquiera: en los grupos de iniciación del Garraf hay gente que se ha puesto un kimono por primera vez a los 52. Esa es la respuesta corta y no le sirve a casi nadie, porque la pregunta real que hay detrás casi nunca es "¿a qué edad se puede?", sino una de estas tres:</p>
+<ul>
+<li>"¿Mi hijo de 4 años va a aprovechar algo, o es tirar el dinero?"</li>
+<li>"¿No es tarde para empezar a los 40?"</li>
+<li>"¿Le viene grande esta disciplina a esta edad?"</li>
+</ul>
+<p>Vamos por partes, porque la respuesta cambia mucho según la edad y según la disciplina.</p>
+
+<h2>De 4 a 6 años: psicomotricidad disfrazada de arte marcial</h2>
+<p>A esta edad, lo que ocurre en un buen grupo infantil no es entrenamiento marcial: es <strong>psicomotricidad, equilibrio, lateralidad y atención por turnos</strong>, envuelto en juego reglado con un uniforme que al niño le encanta ponerse. Y eso es exactamente lo que debe ser. Un club que a los cinco años ya esté corrigiendo la rotación de cadera en un mawashi está confundiendo a los niños con adultos pequeños.</p>
+<p>Qué aporta de verdad a esta edad: saber esperar su turno, aprender que hay una norma y se cumple, caerse y levantarse sin drama, y una hora a la semana de movimiento estructurado que no es una pantalla. Las disciplinas con la entrada infantil más rodada son el <a href="/karate/">karate</a>, el <a href="/judo/">judo</a> y el <a href="/taekwondo/">taekwondo</a>; algunos clubs de <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> también tienen grupo desde los 4-5 años.</p>
+<p>Qué NO esperar: progresión técnica visible, ni que "canalice" un carácter difícil en tres meses. Eso llega, pero más tarde.</p>
+
+<h2>De 7 a 10 años: la edad de oro para empezar</h2>
+<p>Si tuviéramos que señalar una ventana ideal, es esta. El niño ya tiene coordinación suficiente para que la técnica signifique algo, capacidad de atención para una clase de una hora, y todavía la plasticidad y la falta de vergüenza que hacen que aprender sea rápido y divertido. Es también la edad en la que el sistema de cinturones funciona mejor como motor de motivación.</p>
+<p>Aquí ya tiene sentido elegir según el carácter del niño, y no solo por logística. Lo desarrollamos en la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a> y en la comparativa directa de <a href="/blog/karate-vs-taekwondo-ninos-garraf/">karate o taekwondo</a>, pero el resumen es: niño que necesita foco y calma, karate; niño con energía a raudales, taekwondo; niño al que le va el contacto y el cuerpo a cuerpo, judo.</p>
+
+<h2>De 11 a 15 años: que elija él, y ojo con el abandono</h2>
+<p>A partir de los once, el predictor número uno de que un adolescente siga entrenando dentro de dos años no es la disciplina ni el club: es <strong>si la decisión fue suya</strong>. Es la edad en la que muchos dejan la actividad que hacían desde pequeños, y también la edad en la que muchos empiezan una nueva por su cuenta y se enganchan de verdad.</p>
+<p>Se abren además disciplinas que antes no estaban disponibles: el <a href="/kickboxing/">kickboxing</a> y el <a href="/muay-thai/">muay thai</a> suelen tener grupo juvenil a partir de los 10-12, el <a href="/boxeo/">boxeo</a> a partir de los 8-10 en formato técnico, y las <a href="/mma/">artes marciales mixtas</a> normalmente esperan a los 14-16 o piden base previa. Si tu hijo adolescente te pide MMA y el club lo mete directo en el grupo de adultos sin más, pregunta cómo separan niveles antes de firmar nada.</p>
+
+<h2>De 16 a 35 años: sin excusas y sin prisa</h2>
+<p>Es el tramo en el que cualquier disciplina está abierta y la única pregunta relevante es qué te apetece hacer dos veces por semana durante un año. Un aviso útil: a esta edad el problema no suele ser la capacidad, sino el exceso de entusiasmo inicial. Empezar con cinco sesiones semanales es la forma más rápida de lesionarse o quemarse en seis semanas. Dos o tres, y consolidar el hábito.</p>
+
+<h2>De 35 a 55: el grupo que más crece, y el que mejor progresa</h2>
+<p>Si te ronda la idea de que a los 45 es tarde, esto te va a interesar: es el tramo de edad que más ha crecido en los grupos de iniciación de adultos, y es también el que mejor perfil de alumno tiene. La gente de 40 va a clase con regularidad, escucha las correcciones, no se pica en los ejercicios por parejas y entiende para qué está ahí. Los entrenadores lo saben.</p>
+<p>Lo que sí cambia respecto a los 20: la recuperación es más lenta y las lesiones antiguas pasan factura. Eso no se resuelve entrenando menos, sino eligiendo bien:</p>
+<ul>
+<li><strong>Si tienes problemas de rodilla o espalda</strong>, díselo al instructor el primer día. Un buen técnico adapta el trabajo de suelo o las caídas sin que tengas que dejar de entrenar.</li>
+<li><strong>Si vienes de años de sedentarismo</strong>, el <a href="/boxeo/">boxeo</a>, el <a href="/kickboxing/">kickboxing</a> y la <a href="/defensa-personal/">defensa personal</a> permiten regular la intensidad con facilidad desde el primer día.</li>
+<li><strong>Si te preocupa el impacto</strong>, el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> es de las opciones más agradecidas: no hay golpes, y el ritmo lo marcas tú.</li>
+</ul>
+<p>Tienes el recorrido completo en la guía de <a href="/blog/artes-marciales-adultos-principiantes-garraf/">artes marciales para adultos principiantes</a>.</p>
+
+<h2>Más de 55: sí, con la disciplina y el grupo adecuados</h2>
+<p>La pregunta deja de ser la edad y pasa a ser el grupo. Entrenar a los 60 en una clase de iniciación con veinteañeros compitiendo entre ellos es una mala idea; hacerlo en un grupo de adultos con niveles separados y un instructor que adapta, es una de las mejores decisiones de salud posibles: equilibrio, fuerza, coordinación y vida social en la misma hora. Pregunta directamente si hay grupo de adultos no competitivo, y si puedes observar una clase antes de decidir.</p>
+
+<h2>La pregunta que importa más que la edad</h2>
+<p>Después de todo esto, la conclusión incómoda: <strong>la edad es de los factores menos determinantes</strong>. Pesa mucho más si el centro tiene un grupo adecuado para ti o para tu hijo, si el instructor tiene experiencia con ese perfil, y si podéis probar antes de comprometeros con una cuota. Un club excelente con un grupo que no encaja con tu edad y tu nivel te servirá menos que un club normal con el grupo correcto.</p>
+<p>Antes de decidir, repasa la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>: son ocho preguntas que se hacen en cinco minutos y evitan el 90 % de los abandonos del primer trimestre.</p>
+
+<h2>Empezar en el Garraf</h2>
+<p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> puedes ver qué clubs constan en cada municipio y qué disciplinas anuncia cada uno, con la fuente pública y la fecha de verificación de cada ficha. Si prefieres ir por zona, tienes las guías de <a href="/sitges/">Sitges</a>, <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, <a href="/cubelles/">Cubelles</a> y <a href="/canyelles/">Canyelles</a>.</p>
+<p>¿Dudas con un caso concreto —una edad, una lesión antigua, un niño al que no le gusta competir? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+`,
+
+  'blog/como-elegir-centro-artes-marciales-garraf': `
+<h2>Por qué esta decisión importa más que la disciplina</h2>
+<p>Lo hemos repetido en casi todas nuestras guías y aquí va con todas las letras: <strong>un buen instructor de la disciplina "equivocada" te aportará más que un mal instructor de la disciplina perfecta</strong>. La gente abandona las artes marciales casi siempre por el mismo motivo, y no es que eligiera mal el estilo: es que acabó en un grupo que no le correspondía, con un profesor que no le corregía, atado a una permanencia que no entendía.</p>
+<p>Esta guía es la lista de comprobación que usamos nosotros para valorar un centro. Sirve para cualquier disciplina y cualquier municipio del Garraf, y se responde entera en una visita y una llamada.</p>
+
+<h2>1. Quién da la clase, y con qué titulación</h2>
+<p>La pregunta se hace sin rodeos: quién imparte el grupo al que te vas a apuntar, qué formación tiene y cuántos años lleva enseñando a ese perfil concreto. En España conviven la titulación federativa (cinturones y grados de cada federación) y la titulación deportiva oficial (técnico deportivo, TAFAD, CAFyD). Ninguna de las dos garantiza por sí sola un buen profesor, pero la reacción a la pregunta sí dice mucho: un técnico solvente lo explica con naturalidad y hasta con orgullo. Si la respuesta es evasiva, ya tienes información.</p>
+<p>Un matiz importante: el que aparece en la web no siempre es el que da tu clase. Pregunta por <em>tu</em> grupo, no por el director técnico.</p>
+
+<h2>2. Grupos separados por nivel y por edad</h2>
+<p>Es el punto que más determina si vas a seguir dentro de seis meses. Un principiante absoluto haciendo los mismos ejercicios que gente que compite no aprende: sobrevive. Y en infantil, mezclar a un niño de 5 con uno de 11 no es "aprovechar la mezcla", es no tener alumnos suficientes para separar.</p>
+<p>Pregunta cuántos grupos hay, cómo se reparten y qué pasa cuando alguien progresa. Si solo hay un grupo para todo, no es descartable —en municipios pequeños es lo normal—, pero entonces fíjate especialmente en cómo el instructor adapta los ejercicios dentro de la misma clase.</p>
+
+<h2>3. Que se pueda ver o probar una clase</h2>
+<p>Prácticamente todos los centros serios lo permiten, y es la fuente de información más valiosa que vas a tener. Si un centro se niega a que veas una clase antes de pagar, esa es la respuesta a todas las demás preguntas.</p>
+<p>Y cuando estés allí, mira menos las técnicas y más estas cuatro cosas:</p>
+<ul>
+<li><strong>Si el instructor corrige individualmente</strong> o solo dirige desde delante. Corregir por el nombre es la señal de un grupo bien llevado.</li>
+<li><strong>Cómo tratan al que peor lo hace.</strong> Es el mejor indicador de la cultura del club.</li>
+<li><strong>Cómo salen los alumnos.</strong> Cansados y hablando entre ellos, bien. En silencio y con prisa, mal.</li>
+<li><strong>El estado del material y del tatami.</strong> No hace falta un local nuevo; sí limpieza y colchoneta en condiciones.</li>
+</ul>
+
+<h2>4. Cómo se introduce el contacto</h2>
+<p>Aquí se separan los centros serios de los que no lo son. En cualquier disciplina de golpeo, el sparring debe ser <strong>progresivo, opcional y supervisado</strong>: nadie intercambia golpes de verdad en sus primeras semanas, y cuando llega, es suave, con protecciones y con el instructor encima. En las disciplinas de agarre, lo mismo con el trabajo de sumisiones y las caídas.</p>
+<p>Si en tu clase de prueba te ponen a pelear con alguien con experiencia "para ver qué tal", vete. No es una prueba de carácter: es negligencia, y además es la vía rápida a una lesión que te aparte seis meses.</p>
+
+<h2>5. Condiciones económicas por escrito</h2>
+<p>Nosotros no publicamos precios —cada club fija los suyos y cambian con el tiempo—, pero sí podemos decirte qué tienes que preguntar antes de firmar:</p>
+<ul>
+<li><strong>Matrícula:</strong> si existe, cuánto es y qué incluye.</li>
+<li><strong>Permanencia:</strong> cuántos meses te comprometes y qué pasa si te lesionas o te mudas.</li>
+<li><strong>Qué incluye la cuota:</strong> número de sesiones semanales, acceso a otras disciplinas, uso de sala.</li>
+<li><strong>Exámenes de grado:</strong> si se pagan aparte y cuánto.</li>
+<li><strong>Licencia federativa y seguro deportivo:</strong> si es obligatoria, quién la tramita y qué cubre.</li>
+<li><strong>Meses de verano:</strong> si se cobran, si hay actividad reducida o si se para.</li>
+<li><strong>Cómo se da uno de baja:</strong> con cuánta antelación y por qué vía.</li>
+</ul>
+<p>Todo esto debe poder dártelo por escrito antes de pagar nada. Un centro que no quiere poner sus condiciones en un papel te está diciendo algo.</p>
+
+<h2>6. Seguro y cobertura</h2>
+<p>Practicar un deporte de contacto sin seguro deportivo es un riesgo que no compensa. Pregunta si la licencia federativa lo incluye, o si el club tiene una póliza propia que te cubra en clase. Es una pregunta de treinta segundos que casi nadie hace.</p>
+
+<h2>7. Horarios que aguanten tu vida real, no la ideal</h2>
+<p>El error clásico: apuntarse al grupo de las 20:30 dos días entre semana cuando sales de trabajar a las 20:00 en el municipio de al lado. En el Garraf, los desplazamientos entre <a href="/sitges/">Sitges</a> y <a href="/vilanova-i-la-geltru/">Vilanova</a> son de 10-15 minutos en coche, y el tren de la R2 Sud conecta bien los núcleos principales, pero eso solo funciona si el horario deja margen. Elige el horario que puedas cumplir un martes de noviembre con lluvia, no el que te gustaría cumplir.</p>
+
+<h2>8. Que no te vendan lo que no es</h2>
+<p>Tres señales de alarma que se detectan sin saber nada de artes marciales:</p>
+<ul>
+<li><strong>Cinturones cada pocos meses.</strong> El sistema de grados es progresión, no fidelización. Un ritmo sano es de uno o dos exámenes al año.</li>
+<li><strong>Promesas de resultado.</strong> "Cinturón negro en dos años", "defensa personal garantizada en un fin de semana". Nadie serio garantiza eso.</li>
+<li><strong>Presión para comprar material caro el primer día.</strong> Lo normal es empezar con ropa deportiva y comprar poco a poco.</li>
+</ul>
+
+<h2>Cómo usar esta lista sin volverte loco</h2>
+<p>No hace falta que un centro cumpla los ocho puntos con sobresaliente. Nuestra recomendación práctica es priorizar así: los puntos <strong>2, 3 y 4</strong> (grupos, clase de prueba y manejo del contacto) son innegociables, porque afectan a si aprendes y a si te haces daño. El <strong>5</strong> y el <strong>6</strong> son de sentido común administrativo. El <strong>7</strong> es el que en la práctica decide, y el <strong>1</strong> y el <strong>8</strong> son los que te dicen con quién estás tratando.</p>
+
+<h2>Y en el Garraf, ¿por dónde miro?</h2>
+<p>Nuestro <a href="/centros/">directorio de centros del Garraf</a> reúne los clubs de la comarca con presencia pública verificable: qué disciplinas anuncia cada uno, en qué municipio está, con la fuente pública de cada dato y la fecha en que lo comprobamos. Sin valoraciones, sin ranking y en orden alfabético — no ordenamos por quién nos paga, porque nadie nos paga.</p>
+<p>A partir de ahí, las guías por municipio de <a href="/sitges/">Sitges</a>, <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, <a href="/cubelles/">Cubelles</a> y <a href="/canyelles/">Canyelles</a> te dan el contexto de la oferta de cada zona. Y si aún no tienes claro qué disciplina buscar, empieza por la guía de <a href="/iniciacion/">iniciación a las artes marciales</a>, que compara las diez.</p>
+<p>¿Prefieres que te lo resumamos para tu caso? <a href="/contacto/">Cuéntanos</a> qué buscas, para quién y en qué municipio, y te orientamos sin coste.</p>
+`,
   'blog/donde-aprender-boxeo-en-el-garraf': `
 <h2>Dónde se concentra la oferta de boxeo en la comarca</h2>
 <p>El Garraf no es una comarca grande, y eso simplifica la búsqueda: la oferta deportiva se concentra en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, la capital, seguida de <a href="/sitges/">Sitges</a>. Si vives en Sant Pere de Ribes, Cubelles o Canyelles, lo habitual es desplazarse a uno de estos dos municipios: en coche hablamos de trayectos de 10-15 minutos, y tanto el tren (línea R2 Sud) como los autobuses comarcales conectan bien los núcleos principales.</p>
@@ -275,3 +386,43 @@ export const BLOG_BODIES: Record<string, string> = {
 <p>¿Dudas con vuestro caso concreto? <a href="/contacto/">Escríbenos</a> con la edad y el carácter de tu hijo y vuestro municipio, y te damos una recomendación sin coste.</p>
 `,
 };
+
+// ────────────────────────────────────────────────────────────────────────────
+// Qué artículo del blog corresponde a cada tema (disciplina o perfil).
+//
+// Los cinco artículos solo los enlazaban el índice del blog y ellos entre sí:
+// entre 5 y 8 enlaces internos entrantes, frente a los 67 de un hub. Como el
+// blog es la vía de tráfico informacional del sitio, conviene que las páginas
+// de disciplina y de perfil le pasen autoridad, no al revés.
+//
+// Clave: slug de disciplina, de municipio o de página de perfil.
+// ────────────────────────────────────────────────────────────────────────────
+export const BLOG_POR_TEMA: Record<string, string[]> = {
+  // Disciplinas
+  'boxeo': ['blog/donde-aprender-boxeo-en-el-garraf'],
+  'kickboxing': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'muay-thai': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'judo': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf'],
+  'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'jiu-jitsu-brasileno': ['blog/artes-marciales-adultos-principiantes-garraf'],
+  'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  // Perfiles y páginas de entrada
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'clases-para-mujeres': ['blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+};
+
+/** Artículos relacionados con una página, sin repetir la propia página. */
+export function blogRelacionado(claves: (string | undefined)[], slugActual: string): string[] {
+  const vistos = new Set<string>();
+  for (const clave of claves) {
+    for (const slug of (clave && BLOG_POR_TEMA[clave]) || []) {
+      if (slug !== slugActual) vistos.add(slug);
+    }
+  }
+  return [...vistos].slice(0, 2);
+}

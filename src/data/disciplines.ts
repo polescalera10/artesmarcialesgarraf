@@ -308,3 +308,118 @@ export const DISCIPLINES: Discipline[] = [
 export function getDisciplineBySlug(slug: string): Discipline | undefined {
   return DISCIPLINES.find(d => d.slug === slug);
 }
+
+// ────────────────────────────────────────────────────────────────────────────
+// Ficha comparativa por disciplina.
+//
+// Existe para resolver la canibalización que detectó la auditoría del
+// 15-08-2026: `/judo/` y `/judo-en-sitges/` compartían el 48 % de su texto,
+// porque el hub de disciplina y sus páginas de municipio contaban lo mismo con
+// distinto topónimo. La solución no es vaciar las locales, sino darle al hub un
+// trabajo que las locales no pueden hacer: comparar las diez disciplinas entre
+// sí. Esta tabla solo se renderiza en los hubs.
+//
+// Todo son rasgos genéricos y verificables de cada disciplina —nada de datos
+// de centros, precios ni horarios—, redactados para el criterio de alguien que
+// aún no sabe cuál elegir.
+// ────────────────────────────────────────────────────────────────────────────
+export interface PerfilComparativo {
+  /** Qué se hace, en una línea */
+  enfoque: string;
+  /** Contacto real en los grupos de iniciación */
+  contacto: 'Bajo' | 'Medio' | 'Alto';
+  /** Edad a la que suele haber grupo de entrada */
+  edad: string;
+  /** Lo primero que hay que comprar, si hay que comprar algo */
+  equipacion: string;
+  /** Papel de la competición en la práctica habitual */
+  competicion: string;
+}
+
+export const PERFIL_COMPARATIVO: Record<string, PerfilComparativo> = {
+  'boxeo': {
+    enfoque: 'Solo puños: distancia, defensa y juego de piernas',
+    contacto: 'Bajo',
+    edad: 'Desde 8-10 años; grupos adultos de iniciación todo el año',
+    equipacion: 'Vendas primero; guantes propios si continúas',
+    competicion: 'Opcional. La mayoría entrena sin competir nunca',
+  },
+  'kickboxing': {
+    enfoque: 'Puños y patadas, con más variedad técnica que el boxeo',
+    contacto: 'Bajo',
+    edad: 'Desde 8-10 años; muy habitual empezar de adulto',
+    equipacion: 'Vendas, guantes y espinilleras cuando haya parejas',
+    competicion: 'Opcional. Hay circuito amateur si se busca',
+  },
+  'muay-thai': {
+    enfoque: 'Ocho superficies: puños, patadas, codos, rodillas y clinch',
+    contacto: 'Medio',
+    edad: 'Desde 10-12 años; exigente físicamente desde el principio',
+    equipacion: 'Vendas, guantes, espinilleras y bucal',
+    competicion: 'Opcional, aunque la cultura del gimnasio la valora',
+  },
+  'mma': {
+    enfoque: 'Combina golpeo, lucha y suelo en un mismo formato',
+    contacto: 'Medio',
+    edad: 'Desde 14-16 años; suele pedir base previa o grupo específico',
+    equipacion: 'Guantillas, bucal y rashguard',
+    competicion: 'Presente en la cultura del deporte, pero no obligatoria',
+  },
+  'jiu-jitsu-brasileno': {
+    enfoque: 'Suelo y sumisiones: control, palancas y estrangulaciones',
+    contacto: 'Medio',
+    edad: 'Desde 4-6 años en grupos infantiles; entrada de adulto muy común',
+    equipacion: 'Kimono (gi); rashguard si el grupo entrena sin gi',
+    competicion: 'Circuito muy activo, pero participar es decisión tuya',
+  },
+  'judo': {
+    enfoque: 'Proyecciones y control en el suelo, con reglamento olímpico',
+    contacto: 'Bajo',
+    edad: 'Desde 4-5 años; es de las puertas de entrada infantiles clásicas',
+    equipacion: 'Judogi. Nada más para empezar',
+    competicion: 'Federada y estructurada; en infantil es opcional',
+  },
+  'karate': {
+    enfoque: 'Golpeo con técnica formal, kata y combate controlado',
+    contacto: 'Bajo',
+    edad: 'Desde 4-5 años; la entrada infantil más extendida',
+    equipacion: 'Karategi; protecciones cuando llega el combate',
+    competicion: 'Opcional, con circuito federado si interesa',
+  },
+  'taekwondo': {
+    enfoque: 'Piernas y velocidad: patadas altas, agilidad y formas',
+    contacto: 'Bajo',
+    edad: 'Desde 4-5 años; muy rodado en grupos infantiles',
+    equipacion: 'Dobok; peto y casco al empezar el combate',
+    competicion: 'Deporte olímpico con circuito claro; participar es opcional',
+  },
+  'defensa-personal': {
+    enfoque: 'Prevención, distancia y respuesta a agresiones reales',
+    contacto: 'Bajo',
+    edad: 'Adultos y adolescentes; hay programas específicos para mujeres',
+    equipacion: 'Ropa deportiva; el material lo pone el centro',
+    competicion: 'No compite: no es un deporte reglado',
+  },
+  'krav-maga': {
+    enfoque: 'Sistema sin reglas orientado a neutralizar una amenaza',
+    contacto: 'Medio',
+    edad: 'Adultos, sobre todo; algunos centros tienen grupo juvenil',
+    equipacion: 'Ropa resistente; coquilla y bucal en las simulaciones',
+    competicion: 'No compite: su marco es la certificación, no el podio',
+  },
+};
+
+// Las tres disciplinas con las que de verdad se duda al elegir esta. Se usan
+// para que cada hub muestre una comparativa distinta (ver TablaComparativa).
+export const ALTERNATIVAS: Record<string, string[]> = {
+  'boxeo': ['kickboxing', 'muay-thai', 'mma'],
+  'kickboxing': ['boxeo', 'muay-thai', 'taekwondo'],
+  'muay-thai': ['kickboxing', 'boxeo', 'mma'],
+  'mma': ['jiu-jitsu-brasileno', 'muay-thai', 'boxeo'],
+  'jiu-jitsu-brasileno': ['judo', 'mma', 'defensa-personal'],
+  'judo': ['jiu-jitsu-brasileno', 'karate', 'taekwondo'],
+  'karate': ['taekwondo', 'judo', 'kickboxing'],
+  'taekwondo': ['karate', 'kickboxing', 'judo'],
+  'defensa-personal': ['krav-maga', 'jiu-jitsu-brasileno', 'boxeo'],
+  'krav-maga': ['defensa-personal', 'mma', 'muay-thai'],
+};

@@ -36,6 +36,8 @@ const breadcrumbSchema = {
   title="Sobre el Proyecto | Artes Marciales Garraf"
   description="Qué es Artes Marciales Garraf: una guía independiente de artes marciales en la comarca del Garraf. Información por disciplina y municipio, sin humo."
   canonical="/sobre-nosotros/"
+  ogImage={`${SITE.url}/og/sobre-nosotros.png`}
+  ogImageAlt="Ilustración de la guía: símbolo de verificación sobre una trama, sobre el proyecto"
   schema={[aboutSchema, breadcrumbSchema]}
 >
   <Header />
@@ -50,7 +52,17 @@ const breadcrumbSchema = {
           <p>Aquí no encontrarás reseñas infladas ni promesas de marketing. Encontrarás guías por disciplina —qué es cada arte marcial, para quién es adecuada, qué esperar de las primeras clases— y guías por municipio con el contexto local de la comarca. Y si después de leer sigues con dudas, puedes escribirnos: te orientamos sin coste.</p>
           <p>Este proyecto no es un gimnasio ni una academia. Es un recurso editorial local. Si gestionas un centro de artes marciales en el Garraf y quieres colaborar con la guía, escríbenos a través del formulario de contacto.</p>
         </div>
-      </div>
+      
+      <img
+        src="/img/sobre-nosotros.webp"
+        alt="Ilustración de la guía: símbolo de verificación sobre una trama, sección sobre el proyecto"
+        width="1600"
+        height="400"
+        loading="lazy"
+        decoding="async"
+        class="mt-10 w-full object-cover rounded-2xl border border-brand-border"
+      />
+</div>
 
       <!-- Qué ofrece la guía -->
       <div class="mb-16">

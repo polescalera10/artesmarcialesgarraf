@@ -7,10 +7,13 @@ import ContactCTA from '../components/ContactCTA.astro';
 import CentroCard from '../components/CentroCard.astro';
 import LineIcon from '../components/LineIcon.astro';
 import { ALL_PAGES, type PageDef } from '../data/pages';
-import { getDisciplineBySlug } from '../data/disciplines';
+import { getDisciplineBySlug, DISCIPLINES, ALTERNATIVAS, type Discipline } from '../data/disciplines';
+import TablaComparativa from '../components/TablaComparativa.astro';
 import { getLocationBySlug } from '../data/locations';
 import { SITE, SCHEMA_IDS } from '../data/site';
 import { LOCATIONS } from '../data/locations';
+import { imagenesDe } from '../data/imagenes';
+import { blogRelacionado } from '../data/blog-posts';
 import {
   getCentros,
   getCentrosCercanos,
@@ -34,6 +37,7 @@ const location   = page.municipio  ? getLocationBySlug(page.municipio)   : null;
 // Schema honesto: la web es una guía (WebPage/Article), no un negocio local.
 // No usar LocalBusiness hasta tener un centro cliente real con NAP verificable.
 const pageUrl = `${SITE.url}/${page.slug}/`;
+const imagenes = imagenesDe(page, SITE.url);
 
 const webPageSchema = {
   "@context": "https://schema.org",
@@ -48,6 +52,14 @@ const webPageSchema = {
   // editor, en lugar de decenas de entidades sueltas repetidas página a página.
   "isPartOf": { "@id": SCHEMA_IDS.website },
   "publisher": { "@id": SCHEMA_IDS.organization },
+  // Article exige `image` para optar a resultados enriquecidos, y en WebPage
+  // ayuda a que las superficies que citan la guía tengan algo que mostrar.
+  "image": {
+    "@type": "ImageObject",
+    "url": imagenes.og,
+    "width": 1200,
+    "height": 630,
+  },
   ...(page.type === 'blog' ? { "author": { "@id": SCHEMA_IDS.organization } } : {}),
   "dateModified": page.fecha ?? SITE.ultimaRevision,
   ...(page.fecha ? { "datePublished": page.fecha } : {}),
@@ -116,12 +128,36 @@ const hubListSchema =
 
 const pageSchemas = [webPageSchema, breadcrumbSchema, ...(hubListSchema ? [hubListSchema] : [])];
 
-// Related money pages for internal linking
+// Enlazado interno entre money pages.
+//
+// Antes se cortaba con `.slice(0, n)` sobre una lista con orden fijo, así que
+// las mismas páginas salían enlazadas una y otra vez y las últimas de la lista
+// (krav maga, taekwondo) no las enlazaba nadie: la auditoría del 15-08-2026
+// las encontró con 3 enlaces internos entrantes frente a los 9-12 de las
+// primeras. Rotando la ventana según la posición de la página actual, el
+// reparto de enlaces —y por tanto de autoridad interna— se iguala sin añadir
+// ni un enlace más por página.
+function ventanaRotada<T>(lista: T[], indice: number, n: number): T[] {
+  if (lista.length <= n) return lista;
+  const desde = ((indice % lista.length) + lista.length) % lista.length;
+  return Array.from({ length: n }, (_, i) => lista[(desde + i) % lista.length]);
+}
+
+const indicePagina = ALL_PAGES.findIndex(p => p.slug === page.slug);
+
 const relatedByMunicipio = discipline && location
-  ? ALL_PAGES.filter(p => p.municipio === location.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 6)
+  ? ventanaRotada(
+      ALL_PAGES.filter(p => p.municipio === location.slug && p.slug !== page.slug && p.type === 'money-page'),
+      indicePagina,
+      6,
+    )
   : [];
 const relatedByDisciplina = discipline && location
-  ? ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page').slice(0, 4)
+  ? ventanaRotada(
+      ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page'),
+      indicePagina,
+      4,
+    )
   : [];
 
 // FAQ genérico honesto (sin horarios, sedes ni ofertas inventadas)
@@ -161,6 +197,15 @@ const otrosArticulos =
     ? ALL_PAGES.filter(p => p.type === 'blog' && p.slug !== page.slug)
     : [];
 
+// Artículos del blog que amplían el tema de esta página (disciplina o perfil).
+// Enlazarlos desde aquí es lo que saca al blog de sus 5-8 enlaces entrantes.
+const articulosDelTema =
+  page.type === 'blog'
+    ? []
+    : blogRelacionado([page.disciplina, page.slug], page.slug)
+        .map(slug => ALL_PAGES.find(p => p.slug === slug))
+        .filter((p): p is PageDef => Boolean(p));
+
 // ── Anti-duplicación (auditoría 2026-08-14) ─────────────────────────────────
 // Los bloques genéricos de la disciplina (beneficios, primera clase, equipación)
 // son idénticos en todas las páginas que comparten disciplina, y eran la causa
@@ -169,6 +214,31 @@ const otrosArticulos =
 // así que en ellas se omiten los bloques de plantilla.
 const tieneCuerpoPropio = Boolean(page.body) && page.type !== 'blog';
 const mostrarBloquesGenericos = Boolean(discipline) && !tieneCuerpoPropio;
+
+// ── Reparto de contenido entre hub de disciplina y páginas de municipio ─────
+// (auditoría 2026-08-15: `/judo/` y `/judo-en-sitges/` compartían el 48 % del
+// texto). Cada tipo de página se queda con lo que solo ella puede aportar:
+//
+//   · hub de disciplina → la comparativa con las otras nueve y la equipación.
+//     Es la pregunta "¿me pega a mí el judo?", que no depende del municipio.
+//   · página de municipio → cómo es la primera clase, qué centros constan allí
+//     y la FAQ local. Es la pregunta "¿dónde y cómo empiezo aquí?".
+//
+// El bloque de equipación era idéntico en las 4-5 páginas de cada disciplina,
+// así que sale de las locales y se queda solo en el hub, enlazado desde ellas.
+const esHubDisciplina = page.type === 'hub-disciplina' && Boolean(discipline);
+const mostrarEquipacion = mostrarBloquesGenericos && esHubDisciplina;
+const mostrarPrimeraClase = mostrarBloquesGenericos && (page.type === 'money-page' || esHubDisciplina);
+
+// Comparativa. La tabla de las diez disciplinas es de `/iniciacion/` y de
+// nadie más: repetirla en los diez hubs subía el solapamiento entre ellos del
+// 47 % al 53 %. Cada hub muestra su propia disciplina frente a las tres con
+// las que realmente se duda, que son distintas en cada caso.
+const comparativa: Discipline[] = esHubDisciplina && discipline
+  ? [discipline, ...(ALTERNATIVAS[discipline.slug] ?? []).map(s => getDisciplineBySlug(s)).filter((d): d is Discipline => Boolean(d))]
+  : page.slug === 'iniciacion'
+    ? DISCIPLINES
+    : [];
 
 // Páginas de perfil del municipio (niños / mujeres / adultos). Antes no las
 // enlazaba nadie: eran huérfanas pese a estar en el sitemap.
@@ -200,6 +270,8 @@ const variantesDePerfil =
   title={page.meta.title}
   description={page.meta.description}
   canonical={`/${page.slug}/`}
+  ogImage={imagenes.og}
+  ogImageAlt={imagenes.alt}
   schema={pageSchemas}
 >
   <Header />
@@ -305,6 +377,22 @@ const variantesDePerfil =
           </a>
         </div>
       </div>
+
+      <!-- Ilustración de sección. Va después del titular a propósito: no
+           empuja el H1 hacia abajo y sirve de separación entre la cabecera y
+           el contenido. `width`/`height` explícitos para que no haya salto de
+           maquetación (CLS) mientras carga. -->
+      {imagenes.hero && (
+        <img
+          src={imagenes.hero}
+          alt={imagenes.alt}
+          width="1600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+          class="mt-12 w-full object-cover rounded-2xl border border-brand-border"
+        />
+      )}
     </div>
   </section>
 
@@ -330,10 +418,10 @@ const variantesDePerfil =
   )}
 
   <!-- Cómo es la primera clase + equipación (contenido genérico honesto de la disciplina) -->
-  {mostrarBloquesGenericos && discipline && (page.type === 'money-page' || page.type === 'hub-disciplina') && (
+  {mostrarPrimeraClase && discipline && (
     <section class="py-14 px-4">
       <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-8">
+        <div class:list={['grid gap-8', mostrarEquipacion && 'lg:grid-cols-2']}>
           <div class="bg-brand-gray border border-brand-border rounded-2xl p-6">
             <h2 class="text-xl font-bold text-white mb-2">
               Cómo suele ser una primera clase de {discipline.nameEs}
@@ -351,22 +439,68 @@ const variantesDePerfil =
                 </li>
               ))}
             </ol>
+            {!mostrarEquipacion && (
+              <p class="mt-5 pt-4 border-t border-brand-border text-sm text-brand-muted">
+                Qué material necesitas y cuánto puedes esperar antes de comprarlo, en la{' '}
+                <a href={`/${discipline.slug}/`} class="text-brand-red hover:text-red-400">
+                  guía de {discipline.nameEs} del Garraf
+                </a>.
+              </p>
+            )}
           </div>
-          <div class="bg-brand-gray border border-brand-border rounded-2xl p-6">
-            <h2 class="text-xl font-bold text-white mb-2">Equipación para empezar</h2>
-            <p class="text-xs text-brand-muted mb-5">
-              Sin marcas ni prisas: pregunta siempre en el centro antes de comprar nada.
-            </p>
-            <ul class="space-y-3">
-              {discipline.equipacion.map(item => (
-                <li class="flex gap-3 text-sm text-brand-muted leading-relaxed">
-                  <span class="text-brand-red mt-0.5">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {mostrarEquipacion && (
+            <div class="bg-brand-gray border border-brand-border rounded-2xl p-6">
+              <h2 class="text-xl font-bold text-white mb-2">Equipación para empezar</h2>
+              <p class="text-xs text-brand-muted mb-5">
+                Sin marcas ni prisas: pregunta siempre en el centro antes de comprar nada.
+              </p>
+              <ul class="space-y-3">
+                {discipline.equipacion.map(item => (
+                  <li class="flex gap-3 text-sm text-brand-muted leading-relaxed">
+                    <span class="text-brand-red mt-0.5">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Comparativa entre disciplinas. En los hubs, esta disciplina frente a sus
+       tres alternativas reales; en /iniciacion/, las diez. -->
+  {comparativa.length > 0 && (
+    <section class="py-14 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-2">
+          {discipline
+            ? `${discipline.nameEs} frente a las disciplinas con las que se confunde`
+            : 'Las diez disciplinas del Garraf, una al lado de otra'}
+        </h2>
+        <p class="text-sm text-brand-muted mb-8 max-w-3xl">
+          {discipline
+            ? `Casi nadie duda entre ${discipline.nameEs} y las nueve restantes: se duda entre tres o cuatro parecidas. Estas son las que de verdad compiten con ella, y en qué se separan.`
+            : 'Qué se hace en cada una, cuánto contacto hay de verdad en los grupos de iniciación, desde qué edad suele haber grupo, qué material necesitas y qué papel tiene la competición.'}
+        </p>
+        <TablaComparativa disciplinas={comparativa} actual={discipline?.slug} />
+        <p class="mt-5 text-xs text-brand-muted">
+          {discipline ? (
+            <>
+              ¿Ninguna te convence del todo? La guía de{' '}
+              <a href="/iniciacion/" class="text-brand-red hover:text-red-400">iniciación a las artes marciales</a>{' '}
+              compara las diez y te lleva a una recomendación según tu objetivo, tu edad y tu carácter.
+            </>
+          ) : (
+            <>
+              Cada disciplina tiene su guía con el detalle de la primera clase, la equipación y dónde
+              se practica en la comarca — empieza por el{' '}
+              <a href="/centros/" class="text-brand-red hover:text-red-400">directorio de centros</a>{' '}
+              si ya lo tienes claro.
+            </>
+          )}
+        </p>
       </div>
     </section>
   )}
@@ -657,6 +791,26 @@ const variantesDePerfil =
             >
               <span class="font-semibold text-brand-red group-hover:text-red-400 transition-colors">{r.label} →</span>
               <p class="text-sm text-brand-muted mt-2 leading-relaxed">{r.nota}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Artículos del blog que amplían el tema de esta página -->
+  {articulosDelTema.length > 0 && (
+    <section class="py-10 px-4 bg-brand-gray/30">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-lg font-bold text-white mb-6">Para leer con más calma</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {articulosDelTema.map(p => (
+            <a
+              href={`/${p.slug}/`}
+              class="group bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-xl p-5 transition-all"
+            >
+              <span class="font-semibold text-brand-red group-hover:text-red-400 transition-colors">{p.h1} →</span>
+              <p class="text-sm text-brand-muted mt-2 leading-relaxed">{p.meta.description}</p>
             </a>
           ))}
         </div>
