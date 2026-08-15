@@ -1,0 +1,1039 @@
+{
+  "_nota": "Cola editorial del blog. La mantiene el agente programado; ver PLAYBOOK-BLOG.md antes de escribir nada.",
+  "generado": "2026-08-15",
+  "metodologia": "Keyword research informacional. El research previo (keyword-research-artesmarcialesgarraf.xlsx, 85 keywords) es casi todo transaccional/local y ya está cubierto por las 62 money pages y hubs. Sin ficha de Google Business no se puede entrar en el Map Pack, así que las head terms transaccionales tienen techo: el tráfico realista de este activo es informacional de cola larga con intención de conversión (padre buscando dónde apuntar al hijo, adulto que quiere empezar). Estas 50 entradas atacan esa capa sin canibalizar ninguna página existente.",
+  "cadencia": {
+    "posts_por_tanda": 4,
+    "cada_dias": 4,
+    "nota": "A este ritmo la cola de 50 se agota en unos 50 días. La rutina de revisión (cada 20 días) repone 20."
+  },
+  "publicados": [
+    "blog/donde-aprender-boxeo-en-el-garraf",
+    "blog/mejor-arte-marcial-para-ninos-garraf",
+    "blog/defensa-personal-para-mujeres-garraf",
+    "blog/artes-marciales-adultos-principiantes-garraf",
+    "blog/karate-vs-taekwondo-ninos-garraf",
+    "blog/a-que-edad-empezar-artes-marciales",
+    "blog/como-elegir-centro-artes-marciales-garraf"
+  ],
+  "cola": [
+    {
+      "id": 1,
+      "slug": "judo-o-jiu-jitsu-brasileno",
+      "h1": "Judo o Jiu-Jitsu Brasileño: en Qué se Diferencian de Verdad",
+      "keyword_principal": "diferencia judo y jiu jitsu",
+      "keywords_secundarias": [
+        "judo o bjj",
+        "judo vs jiu jitsu brasileño",
+        "cuál es mejor judo o jiu jitsu"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "Las dos disciplinas de agarre que más se confunden. De pie contra suelo, kimono, reglamento y qué tipo de persona encaja en cada una. Ambas existen en el Garraf, así que la comparativa es accionable aquí.",
+      "enlaces_internos": [
+        "/judo/",
+        "/jiu-jitsu-brasileno/",
+        "/centros/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 2,
+      "slug": "boxeo-o-kickboxing",
+      "h1": "Boxeo o Kickboxing: Cuál Elegir si Empiezas de Cero",
+      "keyword_principal": "boxeo o kickboxing",
+      "keywords_secundarias": [
+        "diferencia boxeo kickboxing",
+        "kickboxing vs boxeo cuál es mejor"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "La duda más repetida de quien quiere golpear algo. Solo puños contra puños y piernas: curva de aprendizaje, exigencia física y qué pide cada una del cuerpo.",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/kickboxing/",
+        "/blog/donde-aprender-boxeo-en-el-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 3,
+      "slug": "muay-thai-o-kickboxing",
+      "h1": "Muay Thai o Kickboxing: Qué Cambia Realmente",
+      "keyword_principal": "diferencia muay thai kickboxing",
+      "keywords_secundarias": [
+        "muay thai o kickboxing",
+        "muay thai vs kickboxing"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "Codos, rodillas y clinch: lo que el muay thai añade y lo que eso implica en intensidad y en material. Ambas disponibles en la comarca.",
+      "enlaces_internos": [
+        "/muay-thai/",
+        "/kickboxing/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 4,
+      "slug": "krav-maga-o-defensa-personal",
+      "h1": "Krav Maga o Defensa Personal: No Son lo Mismo",
+      "keyword_principal": "krav maga o defensa personal",
+      "keywords_secundarias": [
+        "diferencia krav maga defensa personal",
+        "qué es mejor krav maga"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "Un sistema concreto con certificación propia frente a un paraguas de técnicas. Aclara una confusión que lleva a gente a apuntarse a lo que no buscaba.",
+      "enlaces_internos": [
+        "/krav-maga/",
+        "/defensa-personal/",
+        "/blog/defensa-personal-para-mujeres-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 5,
+      "slug": "mma-o-artes-marciales-tradicionales",
+      "h1": "MMA o Arte Marcial Tradicional: Qué Buscas Realmente",
+      "keyword_principal": "mma o artes marciales tradicionales",
+      "keywords_secundarias": [
+        "diferencia mma karate",
+        "mma vs artes marciales tradicionales"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 2,
+      "angulo": "Deporte de combate completo frente a escuela con forma, grado y linaje. Sirve para que quien llega pidiendo MMA por la tele entienda si es eso lo que quiere.",
+      "enlaces_internos": [
+        "/mma/",
+        "/karate/",
+        "/judo/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 6,
+      "slug": "karate-o-judo-para-ninos",
+      "h1": "Karate o Judo para Niños: la Comparativa que Falta",
+      "keyword_principal": "karate o judo para niños",
+      "keywords_secundarias": [
+        "judo o karate niño",
+        "qué es mejor judo o karate"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "Completa el triángulo infantil que ya cubre karate vs taekwondo. Golpeo contra agarre a los 6 años: qué trabaja cada uno y qué carácter encaja.",
+      "enlaces_internos": [
+        "/karate/",
+        "/judo/",
+        "/blog/karate-vs-taekwondo-ninos-garraf/",
+        "/clases-para-ninos/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "septiembre"
+    },
+    {
+      "id": 7,
+      "slug": "taekwondo-o-kickboxing-patadas",
+      "h1": "Taekwondo o Kickboxing: Dos Formas Distintas de Patear",
+      "keyword_principal": "diferencia taekwondo kickboxing",
+      "keywords_secundarias": [
+        "taekwondo o kickboxing",
+        "taekwondo vs kickboxing"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 2,
+      "angulo": "Ambas viven de la pierna pero no se parecen: deporte olímpico con forma y puntuación frente a combate de contacto continuo.",
+      "enlaces_internos": [
+        "/taekwondo/",
+        "/kickboxing/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 8,
+      "slug": "jiu-jitsu-con-kimono-o-sin-kimono",
+      "h1": "Jiu-Jitsu con Kimono o Sin Kimono: por Dónde Empezar",
+      "keyword_principal": "bjj gi o no gi",
+      "keywords_secundarias": [
+        "jiu jitsu con o sin kimono",
+        "no gi qué es"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 2,
+      "angulo": "La primera decisión práctica de quien entra en BJJ, y la que determina qué material compra. Vocabulario de gimnasio explicado sin jerga.",
+      "enlaces_internos": [
+        "/jiu-jitsu-brasileno/",
+        "/mma/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 9,
+      "slug": "golpeo-o-agarre-por-donde-empezar",
+      "h1": "¿Golpeo o Agarre? La Primera Bifurcación de las Artes Marciales",
+      "keyword_principal": "striking o grappling",
+      "keywords_secundarias": [
+        "golpeo o agarre artes marciales",
+        "qué arte marcial elegir según tipo"
+      ],
+      "cluster": "comparativas",
+      "prioridad": 1,
+      "angulo": "El corte que de verdad organiza las diez disciplinas. Antes de elegir estilo, elige familia: es el marco que hace útil el resto de comparativas.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/boxeo/",
+        "/judo/",
+        "/jiu-jitsu-brasileno/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 10,
+      "slug": "beneficios-artes-marciales-ninos",
+      "h1": "Beneficios Reales de las Artes Marciales para Niños",
+      "keyword_principal": "beneficios artes marciales niños",
+      "keywords_secundarias": [
+        "para qué sirven las artes marciales en niños",
+        "artes marciales beneficios infantiles"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "Separar lo demostrable (coordinación, autorregulación, hábito) del marketing de escuela ('disciplina', 'valores'). Tono honesto, sin promesas.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/mejor-arte-marcial-para-ninos-garraf/",
+        "/blog/a-que-edad-empezar-artes-marciales/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "septiembre"
+    },
+    {
+      "id": 11,
+      "slug": "arte-marcial-para-nino-timido",
+      "h1": "Mi Hijo es Tímido: Qué Arte Marcial le Encaja",
+      "keyword_principal": "arte marcial para niño tímido",
+      "keywords_secundarias": [
+        "deporte para niño tímido",
+        "artes marciales timidez niños"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "Búsqueda con angustia detrás. Qué formatos protegen a un niño reservado (grupo pequeño, trabajo individual antes que por parejas) y qué señales mirar en la clase de prueba.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/karate/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 12,
+      "slug": "arte-marcial-para-nino-muy-nervioso",
+      "h1": "Mi Hijo No Para Quieto: Qué Disciplina Canaliza Mejor",
+      "keyword_principal": "artes marciales para niños nerviosos",
+      "keywords_secundarias": [
+        "deporte para niño hiperactivo",
+        "canalizar energía niño artes marciales"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "La otra mitad de la duda de los padres. Disciplinas con más gasto físico y estructura de turnos, y por qué la estructura importa más que el desgaste.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/taekwondo/",
+        "/judo/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 13,
+      "slug": "artes-marciales-ninos-tdah",
+      "h1": "Artes Marciales y TDAH: Qué se Puede Esperar y Qué No",
+      "keyword_principal": "artes marciales tdah niños",
+      "keywords_secundarias": [
+        "deporte para niños con tdah",
+        "karate tdah"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "Tema con mucha desinformación. Nada de afirmaciones terapéuticas: qué aporta el formato (rutina, turnos, objetivos cortos) y la advertencia de que no sustituye tratamiento.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/mejor-arte-marcial-para-ninos-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 14,
+      "slug": "cuantos-dias-semana-entrena-un-nino",
+      "h1": "Cuántos Días a la Semana Debería Entrenar un Niño",
+      "keyword_principal": "cuántos días a la semana artes marciales niños",
+      "keywords_secundarias": [
+        "frecuencia entrenamiento infantil",
+        "cuántas clases semana karate niño"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "Pregunta logística y económica a la vez. Dos días como estándar, cuándo tiene sentido subir y la señal de alarma de saturación de extraescolares.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/a-que-edad-empezar-artes-marciales/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 15,
+      "slug": "primer-dia-clase-artes-marciales-nino",
+      "h1": "El Primer Día de Clase: Qué Llevar y Qué Va a Pasar",
+      "keyword_principal": "qué llevar primer día artes marciales",
+      "keywords_secundarias": [
+        "primera clase karate niño qué llevar",
+        "primer día judo niño"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "Guía práctica anti-nervios para padre e hijo. Qué ropa, qué pasa en los primeros 20 minutos y qué NO hay que comprar todavía.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/centros/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "septiembre"
+    },
+    {
+      "id": 16,
+      "slug": "cinturones-infantiles-como-funcionan",
+      "h1": "Los Cinturones Infantiles: Cómo Funcionan y Cuándo Desconfiar",
+      "keyword_principal": "cinturones artes marciales niños",
+      "keywords_secundarias": [
+        "orden cinturones karate niños",
+        "cuánto tarda cinturón negro niño"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "El sistema de grados como motivación y como herramienta de fidelización. Ritmo sano frente a 'cinturón cada trimestre', y por qué el negro infantil no existe.",
+      "enlaces_internos": [
+        "/karate/",
+        "/taekwondo/",
+        "/judo/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 17,
+      "slug": "artes-marciales-o-futbol-extraescolar",
+      "h1": "Artes Marciales o Fútbol: Elegir Extraescolar sin Arrepentirse",
+      "keyword_principal": "artes marciales o fútbol para niños",
+      "keywords_secundarias": [
+        "mejor extraescolar deportiva niños",
+        "qué deporte apuntar a mi hijo"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "Deporte individual dentro de un grupo frente a deporte de equipo. Qué gana un niño en cada uno y para qué perfil funciona mejor cada formato.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/mejor-arte-marcial-para-ninos-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "septiembre"
+    },
+    {
+      "id": 18,
+      "slug": "mi-hijo-quiere-dejar-las-clases",
+      "h1": "Mi Hijo Quiere Dejarlo: Qué Hacer (y Qué No)",
+      "keyword_principal": "mi hijo quiere dejar el karate",
+      "keywords_secundarias": [
+        "niño quiere dejar deporte",
+        "abandono extraescolar deportiva"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "Distinguir el bajón normal del problema real (grupo que no encaja, conflicto, aburrimiento estructural). Preguntas concretas antes de decidir.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 19,
+      "slug": "se-hacen-dano-los-ninos-artes-marciales",
+      "h1": "¿Se Hacen Daño los Niños en Artes Marciales?",
+      "keyword_principal": "son peligrosas las artes marciales para niños",
+      "keywords_secundarias": [
+        "riesgo lesiones artes marciales infantil",
+        "es peligroso el karate para niños"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "La objeción número uno de las familias. Cómo se introduce el contacto por edades, qué protecciones existen y qué señales indican un club imprudente.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/judo/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 20,
+      "slug": "extraescolar-artes-marciales-vuelta-al-cole",
+      "h1": "Vuelta al Cole: Cómo Elegir Extraescolar de Artes Marciales",
+      "keyword_principal": "extraescolares artes marciales garraf",
+      "keywords_secundarias": [
+        "apuntar niño artes marciales septiembre",
+        "extraescolar deportiva vilanova sitges"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "Pieza de temporada para el pico de septiembre: plazos de inscripción, cómo cuadrar horarios con el curso y qué preguntar en la primera llamada.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/centros/",
+        "/sitges/",
+        "/vilanova-i-la-geltru/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "septiembre"
+    },
+    {
+      "id": 21,
+      "slug": "empezar-artes-marciales-siendo-mujer",
+      "h1": "Empezar Artes Marciales Siendo Mujer: Qué Esperar de Verdad",
+      "keyword_principal": "empezar artes marciales mujer",
+      "keywords_secundarias": [
+        "artes marciales para mujeres principiantes",
+        "primera clase mujer gimnasio combate"
+      ],
+      "cluster": "mujeres",
+      "prioridad": 1,
+      "angulo": "Lo que nadie cuenta del primer mes: composición real de los grupos hoy, cómo se gestiona el trabajo por parejas y qué preguntar si es tu primera vez.",
+      "enlaces_internos": [
+        "/clases-para-mujeres/",
+        "/blog/defensa-personal-para-mujeres-garraf/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 22,
+      "slug": "clases-mixtas-o-solo-mujeres",
+      "h1": "¿Grupo Mixto o Solo Mujeres? Ventajas de Cada Uno",
+      "keyword_principal": "clases artes marciales solo mujeres",
+      "keywords_secundarias": [
+        "grupo mixto o femenino defensa personal",
+        "clases femeninas artes marciales"
+      ],
+      "cluster": "mujeres",
+      "prioridad": 2,
+      "angulo": "Decisión real que condiciona la elección de centro. Qué aporta cada formato y por qué muchas acaban combinando los dos.",
+      "enlaces_internos": [
+        "/clases-para-mujeres/",
+        "/defensa-personal/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 23,
+      "slug": "cursos-defensa-personal-fin-de-semana",
+      "h1": "Cursos de Defensa Personal de un Fin de Semana: Qué Dan y Qué No",
+      "keyword_principal": "curso defensa personal fin de semana",
+      "keywords_secundarias": [
+        "seminario defensa personal sirve",
+        "cursos intensivos defensa personal"
+      ],
+      "cluster": "mujeres",
+      "prioridad": 2,
+      "angulo": "Complementa la guía larga de defensa personal femenina sin repetirla: aquí el foco es el formato intensivo, qué se retiene y qué exige práctica continuada.",
+      "enlaces_internos": [
+        "/blog/defensa-personal-para-mujeres-garraf/",
+        "/defensa-personal/",
+        "/krav-maga/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 24,
+      "slug": "volver-a-entrenar-despues-del-embarazo",
+      "h1": "Volver a Entrenar Después del Embarazo",
+      "keyword_principal": "artes marciales después del embarazo",
+      "keywords_secundarias": [
+        "volver al deporte postparto",
+        "entrenar postparto artes marciales"
+      ],
+      "cluster": "mujeres",
+      "prioridad": 3,
+      "angulo": "Con la advertencia explícita de que la pauta la marca el profesional sanitario. Qué disciplinas permiten regular mejor la intensidad al reincorporarse.",
+      "enlaces_internos": [
+        "/clases-para-mujeres/",
+        "/jiu-jitsu-brasileno/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 25,
+      "slug": "empezar-artes-marciales-a-los-40",
+      "h1": "Empezar Artes Marciales a los 40",
+      "keyword_principal": "empezar artes marciales a los 40",
+      "keywords_secundarias": [
+        "es tarde para empezar artes marciales",
+        "artes marciales cuarenta años"
+      ],
+      "cluster": "adultos",
+      "prioridad": 1,
+      "angulo": "Concreta el tramo que la guía por edades solo esboza: recuperación, lesiones antiguas, cómo hablar con el instructor y qué disciplinas perdonan más.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/blog/artes-marciales-adultos-principiantes-garraf/",
+        "/blog/a-que-edad-empezar-artes-marciales/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 26,
+      "slug": "empezar-artes-marciales-a-los-50",
+      "h1": "Empezar a los 50 o Más: Sí, con el Grupo Adecuado",
+      "keyword_principal": "artes marciales a los 50 años",
+      "keywords_secundarias": [
+        "deporte de contacto mayores 50",
+        "empezar artes marciales tarde"
+      ],
+      "cluster": "adultos",
+      "prioridad": 2,
+      "angulo": "El factor decisivo deja de ser la edad y pasa a ser el grupo. Qué preguntar para no acabar en una clase de iniciación llena de veinteañeros compitiendo.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/blog/a-que-edad-empezar-artes-marciales/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 27,
+      "slug": "artes-marciales-con-sobrepeso",
+      "h1": "Empezar con Sobrepeso: Qué Disciplina y Cómo Plantearlo",
+      "keyword_principal": "artes marciales con sobrepeso",
+      "keywords_secundarias": [
+        "deporte de combate sobrepeso",
+        "empezar a entrenar con kilos de más"
+      ],
+      "cluster": "adultos",
+      "prioridad": 2,
+      "angulo": "Tema tratado con respeto y sin promesas de resultado. Impacto articular, regulación de intensidad y qué formatos permiten ir a tu ritmo desde el día uno.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/boxeo/",
+        "/jiu-jitsu-brasileno/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 28,
+      "slug": "volver-a-entrenar-despues-de-anos",
+      "h1": "Volver a Entrenar Después de Años Parado",
+      "keyword_principal": "volver a entrenar artes marciales después de años",
+      "keywords_secundarias": [
+        "retomar karate de adulto",
+        "volver al tatami"
+      ],
+      "cluster": "adultos",
+      "prioridad": 2,
+      "angulo": "El que ya tuvo cinturón y lo dejó. Qué se conserva, qué no, y por qué empezar en el grupo de iniciación no es un paso atrás.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/iniciacion/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 29,
+      "slug": "cuanto-tardas-en-ver-resultados",
+      "h1": "Cuánto Tardas en Notar Resultados: Mes a Mes",
+      "keyword_principal": "cuánto tardas en ver resultados artes marciales",
+      "keywords_secundarias": [
+        "cuándo se notan los progresos",
+        "primer año de artes marciales"
+      ],
+      "cluster": "adultos",
+      "prioridad": 1,
+      "angulo": "Cronología honesta del primer año: semanas 1-4, mes 3, mes 6, año 1. Baja las expectativas irreales que provocan la mayoría de abandonos.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/blog/artes-marciales-adultos-principiantes-garraf/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 30,
+      "slug": "compaginar-trabajo-y-entrenamiento",
+      "h1": "Compaginar Trabajo y Entrenamiento sin Abandonar en Noviembre",
+      "keyword_principal": "cómo compaginar trabajo y deporte",
+      "keywords_secundarias": [
+        "entrenar después de trabajar",
+        "horarios entrenamiento adultos"
+      ],
+      "cluster": "adultos",
+      "prioridad": 2,
+      "angulo": "Elegir el horario que aguanta un martes de lluvia, no el ideal. Con el contexto real de desplazamientos entre municipios del Garraf.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/centros/",
+        "/sitges/",
+        "/vilanova-i-la-geltru/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 31,
+      "slug": "entrenar-sin-querer-competir",
+      "h1": "Entrenar sin Querer Competir Nunca: Es lo Normal",
+      "keyword_principal": "artes marciales sin competir",
+      "keywords_secundarias": [
+        "se puede practicar sin competir",
+        "hay que competir en artes marciales"
+      ],
+      "cluster": "adultos",
+      "prioridad": 1,
+      "angulo": "Miedo silencioso de mucha gente que no se apunta. La gran mayoría nunca compite; cómo detectar un club donde la competición es opcional de verdad.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/clases-para-adultos/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 32,
+      "slug": "cuanto-cuestan-las-clases-en-el-garraf",
+      "h1": "Cuánto Cuestan las Clases de Artes Marciales en el Garraf",
+      "keyword_principal": "cuánto cuestan las clases de artes marciales",
+      "keywords_secundarias": [
+        "precio artes marciales vilanova",
+        "cuota mensual karate garraf"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "La intención más transaccional que se puede capturar sin ficha de Google Business. Estructura de costes (cuota, matrícula, licencia, material) y rangos SOLO con tarifas públicas citadas.",
+      "enlaces_internos": [
+        "/centros/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente."
+    },
+    {
+      "id": 33,
+      "slug": "horarios-tipicos-de-las-clases",
+      "h1": "Horarios Típicos de las Clases en el Garraf",
+      "keyword_principal": "horarios clases artes marciales",
+      "keywords_secundarias": [
+        "a qué hora son las clases de karate",
+        "horario entrenamiento adultos tarde"
+      ],
+      "cluster": "logistica",
+      "prioridad": 2,
+      "angulo": "Franjas habituales (infantil a media tarde, adultos a partir de las 20h) y cómo cuadran con el transporte de la comarca.",
+      "enlaces_internos": [
+        "/centros/",
+        "/sitges/",
+        "/vilanova-i-la-geltru/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "requiere_datos": "Solo con horarios publicados en fuentes públicas de los centros del directorio. Nada de franjas inventadas. Si no hay fuentes suficientes, escribir en clave de 'qué preguntar' y no de 'estos son los horarios'."
+    },
+    {
+      "id": 34,
+      "slug": "que-material-comprar-y-en-que-orden",
+      "h1": "Qué Material Comprar y en Qué Orden (sin Gastar de Más)",
+      "keyword_principal": "qué material necesito para artes marciales",
+      "keywords_secundarias": [
+        "qué comprar para empezar boxeo",
+        "equipación principiante artes marciales"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "Orden de compra por prioridad real y el aviso de no comprar nada el primer día. Transversal a las diez disciplinas.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/boxeo/",
+        "/jiu-jitsu-brasileno/",
+        "/karate/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 35,
+      "slug": "cuidar-kimono-y-equipacion",
+      "h1": "Cómo Cuidar el Kimono y el Material (y por Qué Importa)",
+      "keyword_principal": "cómo lavar el kimono de judo",
+      "keywords_secundarias": [
+        "cuidado karategi",
+        "lavar guantes de boxeo olor"
+      ],
+      "cluster": "logistica",
+      "prioridad": 3,
+      "angulo": "Práctico y muy buscado. Higiene del tatami, lavado, secado y vida útil. Cola larga sin competencia local.",
+      "enlaces_internos": [
+        "/judo/",
+        "/jiu-jitsu-brasileno/",
+        "/karate/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 36,
+      "slug": "licencia-federativa-y-seguro-deportivo",
+      "h1": "Licencia Federativa y Seguro Deportivo: Qué Cubren",
+      "keyword_principal": "licencia federativa artes marciales",
+      "keywords_secundarias": [
+        "seguro deportivo obligatorio karate",
+        "para qué sirve la licencia federativa"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "Pregunta de treinta segundos que casi nadie hace y que puede salir cara. Qué es cada cosa, quién la tramita y qué cubre en el Garraf.",
+      "enlaces_internos": [
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/centros/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 37,
+      "slug": "clase-de-prueba-que-preguntar",
+      "h1": "La Clase de Prueba: Qué Mirar y Qué Preguntar",
+      "keyword_principal": "clase de prueba artes marciales",
+      "keywords_secundarias": [
+        "qué preguntar en un gimnasio de artes marciales",
+        "primera visita dojo"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "Profundiza el punto 3 de la checklist de elección de centro: guion concreto de la visita, minuto a minuto.",
+      "enlaces_internos": [
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/centros/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 38,
+      "slug": "cuantos-dias-a-la-semana-entrenar",
+      "h1": "Cuántos Días a la Semana Entrenar Siendo Adulto",
+      "keyword_principal": "cuántos días a la semana entrenar artes marciales",
+      "keywords_secundarias": [
+        "frecuencia entrenamiento adulto",
+        "dos o tres días semana boxeo"
+      ],
+      "cluster": "logistica",
+      "prioridad": 2,
+      "angulo": "Dos o tres sesiones y por qué cinco la primera semana es la vía rápida al abandono. Con criterio de recuperación por edad.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/blog/artes-marciales-adultos-principiantes-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 39,
+      "slug": "no-abandonar-los-primeros-tres-meses",
+      "h1": "Los Primeros Tres Meses: Cómo No Abandonar",
+      "keyword_principal": "cómo no abandonar el gimnasio",
+      "keywords_secundarias": [
+        "dejar artes marciales primeros meses",
+        "mantener la constancia entrenando"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "El trimestre en el que se cae la mayoría. Los cuatro momentos críticos y qué hacer en cada uno.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/clases-para-adultos/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 40,
+      "slug": "lesiones-mas-comunes-y-como-evitarlas",
+      "h1": "Lesiones Más Comunes en Artes Marciales y Cómo Evitarlas",
+      "keyword_principal": "lesiones más comunes artes marciales",
+      "keywords_secundarias": [
+        "lesiones boxeo principiantes",
+        "lesiones jiu jitsu cómo evitar"
+      ],
+      "cluster": "salud",
+      "prioridad": 1,
+      "angulo": "Por disciplina y por parte del cuerpo, con la prevención que sí depende de ti. Sin consejo médico: cuándo hay que ir al profesional.",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/jiu-jitsu-brasileno/",
+        "/judo/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 41,
+      "slug": "agujetas-de-las-primeras-semanas",
+      "h1": "Las Agujetas de las Primeras Semanas: Qué es Normal",
+      "keyword_principal": "agujetas al empezar a entrenar",
+      "keywords_secundarias": [
+        "dolor muscular primeras clases",
+        "agujetas boxeo principiante"
+      ],
+      "cluster": "salud",
+      "prioridad": 2,
+      "angulo": "Distinguir molestia normal de señal de alarma, y cómo dosificar las dos primeras semanas para no dejarlo por dolor.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/blog/artes-marciales-adultos-principiantes-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 42,
+      "slug": "artes-marciales-y-estres",
+      "h1": "Artes Marciales y Estrés: por Qué Funciona Tan Bien",
+      "keyword_principal": "artes marciales para el estrés",
+      "keywords_secundarias": [
+        "deporte para la ansiedad",
+        "boxeo para descargar estrés"
+      ],
+      "cluster": "salud",
+      "prioridad": 1,
+      "angulo": "El motivo real por el que muchos adultos se enganchan. Sin afirmaciones clínicas: qué tiene el formato (atención plena forzada, esfuerzo, grupo).",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/clases-para-adultos/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 43,
+      "slug": "es-peligroso-el-sparring",
+      "h1": "¿Es Peligroso el Sparring? Cómo Debe Introducirse",
+      "keyword_principal": "es peligroso el sparring",
+      "keywords_secundarias": [
+        "cuándo empezar sparring",
+        "sparring principiantes boxeo"
+      ],
+      "cluster": "salud",
+      "prioridad": 1,
+      "angulo": "Donde se separan los clubs serios de los que no lo son. Progresión correcta, protecciones y las señales de que hay que irse de ese gimnasio.",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/muay-thai/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 44,
+      "slug": "artes-marciales-para-perder-peso",
+      "h1": "Artes Marciales para Perder Peso: Qué Esperar",
+      "keyword_principal": "artes marciales para adelgazar",
+      "keywords_secundarias": [
+        "boxeo para perder peso",
+        "qué deporte quema más calorías combate"
+      ],
+      "cluster": "salud",
+      "prioridad": 2,
+      "angulo": "Sin promesas ni cifras infladas. Gasto real, por qué la adherencia importa más que las calorías y qué disciplinas encajan mejor con ese objetivo.",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/kickboxing/",
+        "/clases-para-adultos/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 45,
+      "slug": "calentamiento-y-movilidad-basica",
+      "h1": "Calentamiento y Movilidad: los Diez Minutos que Nadie Hace",
+      "keyword_principal": "calentamiento artes marciales",
+      "keywords_secundarias": [
+        "estiramientos antes de entrenar combate",
+        "movilidad para artes marciales"
+      ],
+      "cluster": "salud",
+      "prioridad": 3,
+      "angulo": "Rutina básica transversal y por qué el calentamiento del club a veces no basta si vienes de estar sentado ocho horas.",
+      "enlaces_internos": [
+        "/clases-para-adultos/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 46,
+      "slug": "que-significan-los-cinturones",
+      "h1": "Qué Significan los Cinturones en Cada Arte Marcial",
+      "keyword_principal": "orden de los cinturones artes marciales",
+      "keywords_secundarias": [
+        "colores cinturones karate",
+        "cinturones jiu jitsu orden"
+      ],
+      "cluster": "cultura",
+      "prioridad": 1,
+      "angulo": "Comparativa de sistemas de grado entre karate, judo, taekwondo y BJJ. Muy buscado y con potencial de fragmento destacado.",
+      "enlaces_internos": [
+        "/karate/",
+        "/judo/",
+        "/taekwondo/",
+        "/jiu-jitsu-brasileno/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 47,
+      "slug": "etiqueta-del-tatami",
+      "h1": "La Etiqueta del Tatami: Reglas No Escritas que Sí Importan",
+      "keyword_principal": "normas de comportamiento en un dojo",
+      "keywords_secundarias": [
+        "etiqueta tatami",
+        "saludo en artes marciales"
+      ],
+      "cluster": "cultura",
+      "prioridad": 2,
+      "angulo": "Reduce la barrera de entrada de quien teme hacer el ridículo el primer día: saludos, calzado, higiene, cómo dirigirse al instructor.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/centros/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 48,
+      "slug": "glosario-de-artes-marciales",
+      "h1": "Glosario de Artes Marciales: Entender lo que Dicen en Clase",
+      "keyword_principal": "términos de artes marciales",
+      "keywords_secundarias": [
+        "glosario karate",
+        "qué significa kata sparring randori"
+      ],
+      "cluster": "cultura",
+      "prioridad": 2,
+      "angulo": "Pieza de referencia y buen imán de enlaces internos: cada término enlaza a la guía de su disciplina. Alta probabilidad de citación por asistentes de IA.",
+      "enlaces_internos": [
+        "/karate/",
+        "/judo/",
+        "/jiu-jitsu-brasileno/",
+        "/muay-thai/",
+        "/iniciacion/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 49,
+      "slug": "artes-marciales-olimpicas",
+      "h1": "Qué Artes Marciales Son Olímpicas (y Cuáles No)",
+      "keyword_principal": "artes marciales olímpicas",
+      "keywords_secundarias": [
+        "judo taekwondo boxeo juegos olímpicos",
+        "es el karate olímpico"
+      ],
+      "cluster": "cultura",
+      "prioridad": 3,
+      "angulo": "Curiosidad muy buscada que además explica por qué unas disciplinas tienen estructura federativa fuerte y otras no.",
+      "enlaces_internos": [
+        "/judo/",
+        "/taekwondo/",
+        "/boxeo/",
+        "/karate/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    },
+    {
+      "id": 50,
+      "slug": "federaciones-catalanas-para-que-sirven",
+      "h1": "Las Federaciones Catalanas: para Qué Sirven de Verdad",
+      "keyword_principal": "federación catalana de karate",
+      "keywords_secundarias": [
+        "federación catalana judo taekwondo",
+        "para qué sirve federarse"
+      ],
+      "cluster": "cultura",
+      "prioridad": 2,
+      "angulo": "Qué aporta federarse (licencia, seguro, competición, grados reconocidos) y cómo comprobar si un club está federado. Conecta con las fuentes del directorio.",
+      "enlaces_internos": [
+        "/centros/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/taekwondo/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null
+    }
+  ]
+}
