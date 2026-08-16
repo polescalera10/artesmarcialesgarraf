@@ -54,7 +54,7 @@ export const BLOG_BODIES: Record<string, string> = {
 
 <h2>Empezar en el Garraf</h2>
 <p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> puedes ver qué clubs constan en cada municipio y qué disciplinas anuncia cada uno, con la fuente pública y la fecha de verificación de cada ficha. Si prefieres ir por zona, tienes las guías de <a href="/sitges/">Sitges</a>, <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, <a href="/cubelles/">Cubelles</a> y <a href="/canyelles/">Canyelles</a>.</p>
-<p>¿Dudas con un caso concreto —una edad, una lesión antigua, un niño al que no le gusta competir? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+<p>¿Dudas con un caso concreto: una edad, una lesión antigua, un niño al que no le gusta competir? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
 `,
 
   'blog/como-elegir-centro-artes-marciales-garraf': `
@@ -68,7 +68,7 @@ export const BLOG_BODIES: Record<string, string> = {
 
 <h2>2. Grupos separados por nivel y por edad</h2>
 <p>Es el punto que más determina si vas a seguir dentro de seis meses. Un principiante absoluto haciendo los mismos ejercicios que gente que compite no aprende: sobrevive. Y en infantil, mezclar a un niño de 5 con uno de 11 no es "aprovechar la mezcla", es no tener alumnos suficientes para separar.</p>
-<p>Pregunta cuántos grupos hay, cómo se reparten y qué pasa cuando alguien progresa. Si solo hay un grupo para todo, no es descartable —en municipios pequeños es lo normal—, pero entonces fíjate especialmente en cómo el instructor adapta los ejercicios dentro de la misma clase.</p>
+<p>Pregunta cuántos grupos hay, cómo se reparten y qué pasa cuando alguien progresa. Si solo hay un grupo para todo, no es descartable (en municipios pequeños es lo normal), pero entonces fíjate especialmente en cómo el instructor adapta los ejercicios dentro de la misma clase.</p>
 
 <h2>3. Que se pueda ver o probar una clase</h2>
 <p>Prácticamente todos los centros serios lo permiten, y es la fuente de información más valiosa que vas a tener. Si un centro se niega a que veas una clase antes de pagar, esa es la respuesta a todas las demás preguntas.</p>
@@ -85,7 +85,7 @@ export const BLOG_BODIES: Record<string, string> = {
 <p>Si en tu clase de prueba te ponen a pelear con alguien con experiencia "para ver qué tal", vete. No es una prueba de carácter: es negligencia, y además es la vía rápida a una lesión que te aparte seis meses.</p>
 
 <h2>5. Condiciones económicas por escrito</h2>
-<p>Nosotros no publicamos precios —cada club fija los suyos y cambian con el tiempo—, pero sí podemos decirte qué tienes que preguntar antes de firmar:</p>
+<p>Nosotros no publicamos precios (cada club fija los suyos y cambian con el tiempo), pero sí podemos decirte qué tienes que preguntar antes de firmar:</p>
 <ul>
 <li><strong>Matrícula:</strong> si existe, cuánto es y qué incluye.</li>
 <li><strong>Permanencia:</strong> cuántos meses te comprometes y qué pasa si te lesionas o te mudas.</li>
@@ -115,7 +115,7 @@ export const BLOG_BODIES: Record<string, string> = {
 <p>No hace falta que un centro cumpla los ocho puntos con sobresaliente. Nuestra recomendación práctica es priorizar así: los puntos <strong>2, 3 y 4</strong> (grupos, clase de prueba y manejo del contacto) son innegociables, porque afectan a si aprendes y a si te haces daño. El <strong>5</strong> y el <strong>6</strong> son de sentido común administrativo. El <strong>7</strong> es el que en la práctica decide, y el <strong>1</strong> y el <strong>8</strong> son los que te dicen con quién estás tratando.</p>
 
 <h2>Y en el Garraf, ¿por dónde miro?</h2>
-<p>Nuestro <a href="/centros/">directorio de centros del Garraf</a> reúne los clubs de la comarca con presencia pública verificable: qué disciplinas anuncia cada uno, en qué municipio está, con la fuente pública de cada dato y la fecha en que lo comprobamos. Sin valoraciones, sin ranking y en orden alfabético — no ordenamos por quién nos paga, porque nadie nos paga.</p>
+<p>Nuestro <a href="/centros/">directorio de centros del Garraf</a> reúne los clubs de la comarca con presencia pública verificable: qué disciplinas anuncia cada uno, en qué municipio está, con la fuente pública de cada dato y la fecha en que lo comprobamos. Sin valoraciones, sin ranking y en orden alfabético. No ordenamos por quién nos paga, porque nadie nos paga.</p>
 <p>A partir de ahí, las guías por municipio de <a href="/sitges/">Sitges</a>, <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, <a href="/cubelles/">Cubelles</a> y <a href="/canyelles/">Canyelles</a> te dan el contexto de la oferta de cada zona. Y si aún no tienes claro qué disciplina buscar, empieza por la guía de <a href="/iniciacion/">iniciación a las artes marciales</a>, que compara las diez.</p>
 <p>¿Prefieres que te lo resumamos para tu caso? <a href="/contacto/">Cuéntanos</a> qué buscas, para quién y en qué municipio, y te orientamos sin coste.</p>
 `,
@@ -139,30 +139,30 @@ export const BLOG_BODIES: Record<string, string> = {
 <li><strong>Grupos separados por nivel.</strong> Si un principiante absoluto comparte todos los ejercicios con gente que compite, el gimnasio no está pensando en ti. Busca grupos o franjas de iniciación.</li>
 <li><strong>El sparring es opcional y progresivo.</strong> En un gimnasio serio nadie te mete a intercambiar golpes las primeras semanas, y cuando llegue el momento será suave, con protecciones y supervisado. Si ves otra cosa, vete.</li>
 <li><strong>Clase de prueba.</strong> La mayoría de centros permiten probar antes de pagar. Aprovéchalo: una sesión te dice más que cualquier web.</li>
-<li><strong>Condiciones claras.</strong> Matrícula, permanencia, qué incluye la cuota. Cada centro fija las suyas y cambian con el tiempo — por eso no publicamos precios —, pero deben poder explicártelas por escrito antes de apuntarte.</li>
+<li><strong>Condiciones claras.</strong> Matrícula, permanencia, qué incluye la cuota. Cada centro fija las suyas y cambian con el tiempo (por eso no publicamos precios), pero deben poder explicártelas por escrito antes de apuntarte.</li>
 </ol>
 
 <h2>Qué esperar de tus primeras semanas</h2>
-<p>El primer mes de boxeo es técnica y acondicionamiento, no combate. Lo normal es trabajar la guardia y la posición de piernas, el jab y el directo, los desplazamientos básicos y mucha comba, saco y ejercicios por parejas sin contacto real. Las agujetas de los primeros días son considerables — el boxeo usa músculos que no sabías que tenías —, pero la curva de progreso inicial es muy motivadora: en cuatro a seis semanas notarás cambios reales en coordinación, resistencia y soltura.</p>
+<p>El primer mes de boxeo es técnica y acondicionamiento, no combate. Lo normal es trabajar la guardia y la posición de piernas, el jab y el directo, los desplazamientos básicos y mucha comba, saco y ejercicios por parejas sin contacto real. Las agujetas de los primeros días son considerables (el boxeo usa músculos que no sabías que tenías), pero la curva de progreso inicial es muy motivadora: en cuatro a seis semanas notarás cambios reales en coordinación, resistencia y soltura.</p>
 <p>No necesitas estar en forma para empezar. Esta es probablemente la duda más repetida y la respuesta es siempre la misma: el boxeo te pone en forma, no al revés. Los grupos de iniciación están llenos de gente normal que empezó desde cero.</p>
 
 <h2>Equipación: qué necesitas de verdad para empezar</h2>
 <p>Para la primera clase, ropa deportiva y agua. A partir de ahí, la inversión inicial razonable es pequeña y conviene hacerla por este orden:</p>
 <ul>
-<li><strong>Vendas de boxeo</strong> — lo primero que deberías comprar; protegen muñecas y nudillos y son de uso personal.</li>
-<li><strong>Guantes</strong> — muchos gimnasios prestan al principio, pero tener los tuyos es cuestión de higiene y de ajuste. Para clases y saco se suele empezar con 12-14 oz; pide consejo a tu entrenador antes de comprar.</li>
-<li><strong>Bucal</strong> — imprescindible antes de cualquier trabajo con contacto, aunque sea suave.</li>
-<li><strong>Calzado</strong> — al principio vale una zapatilla deportiva de suela plana; las botas de boxeo pueden esperar meses.</li>
+<li><strong>Vendas de boxeo.</strong> Lo primero que deberías comprar; protegen muñecas y nudillos y son de uso personal.</li>
+<li><strong>Guantes.</strong> Muchos gimnasios prestan al principio, pero tener los tuyos es cuestión de higiene y de ajuste. Para clases y saco se suele empezar con 12-14 oz; pide consejo a tu entrenador antes de comprar.</li>
+<li><strong>Bucal.</strong> Imprescindible antes de cualquier trabajo con contacto, aunque sea suave.</li>
+<li><strong>Calzado.</strong> Al principio vale una zapatilla deportiva de suela plana; las botas de boxeo pueden esperar meses.</li>
 </ul>
 <p>Desconfía de cualquier centro que te exija comprar mucho material de golpe el primer día.</p>
 
 <h2>¿Y si soy mujer, o quiero apuntar a mi hijo?</h2>
 <p>El boxeo hace años que dejó de ser un deporte de hombres jóvenes. En los grupos de iniciación de cualquier gimnasio actual hay una proporción creciente de mujeres, y la razón es simple: pocas actividades combinan tan bien trabajo cardiovascular, fuerza y descarga de estrés. Si te interesa el enfoque, en nuestra guía de <a href="/clases-para-mujeres/">artes marciales para mujeres en el Garraf</a> comparamos el boxeo con otras opciones según el objetivo.</p>
-<p>Para niños, el boxeo infantil bien planteado es técnica, juego y saco — sin contacto real hasta edades y niveles en los que el propio niño y la familia lo decidan. Aun así, para menores de 10-11 años las puertas de entrada más rodadas siguen siendo el karate, el judo y el taekwondo; lo explicamos en la guía de <a href="/clases-para-ninos/">artes marciales para niños</a>.</p>
+<p>Para niños, el boxeo infantil bien planteado es técnica, juego y saco, sin contacto real hasta edades y niveles en los que el propio niño y la familia lo decidan. Aun así, para menores de 10-11 años las puertas de entrada más rodadas siguen siendo el karate, el judo y el taekwondo; lo explicamos en la guía de <a href="/clases-para-ninos/">artes marciales para niños</a>.</p>
 
 <h2>Errores típicos del principiante (y cómo evitarlos)</h2>
 <ul>
-<li><strong>Querer pegar fuerte desde el primer día.</strong> La potencia sale de la técnica — cadera, pies, relajación —, no del brazo. Los primeros meses, prioriza hacer el gesto bien y lento antes que fuerte.</li>
+<li><strong>Querer pegar fuerte desde el primer día.</strong> La potencia sale de la técnica (cadera, pies, relajación), no del brazo. Los primeros meses, prioriza hacer el gesto bien y lento antes que fuerte.</li>
 <li><strong>Compararte con los veteranos.</strong> La persona que hace la comba con naturalidad lleva años. Tu única comparación útil es contigo mismo hace un mes.</li>
 <li><strong>Entrenar cinco días la primera semana.</strong> El entusiasmo inicial acaba en sobrecarga. Empieza con dos o tres sesiones y consolida el hábito antes de subir.</li>
 <li><strong>Saltarse la comba y la sombra.</strong> Son la base del juego de piernas y del control de la distancia. Aburren al principio y lo cambian todo a los tres meses.</li>
@@ -172,10 +172,10 @@ export const BLOG_BODIES: Record<string, string> = {
 <h2>Boxeo por municipio: nuestras guías locales</h2>
 <p>Hemos preparado una guía específica para cada municipio de la comarca, con el contexto local y los centros del directorio que anuncian boxeo:</p>
 <ul>
-<li><a href="/boxeo-en-vilanova-i-la-geltru/">Boxeo en Vilanova i la Geltrú</a> — la mayor concentración de oferta de la comarca.</li>
-<li><a href="/boxeo-en-sitges/">Boxeo en Sitges</a> — oferta más orientada al fitness y al striking mixto.</li>
-<li><a href="/boxeo-en-sant-pere-de-ribes/">Boxeo desde Sant Pere de Ribes</a> — opciones locales y desplazamiento corto a Vilanova o Sitges.</li>
-<li><a href="/boxeo-en-cubelles/">Boxeo desde Cubelles</a> — con Vilanova a menos de 10 minutos por la C-31.</li>
+<li><a href="/boxeo-en-vilanova-i-la-geltru/">Boxeo en Vilanova i la Geltrú</a>: la mayor concentración de oferta de la comarca.</li>
+<li><a href="/boxeo-en-sitges/">Boxeo en Sitges</a>: oferta más orientada al fitness y al striking mixto.</li>
+<li><a href="/boxeo-en-sant-pere-de-ribes/">Boxeo desde Sant Pere de Ribes</a>: opciones locales y desplazamiento corto a Vilanova o Sitges.</li>
+<li><a href="/boxeo-en-cubelles/">Boxeo desde Cubelles</a>: con Vilanova a menos de 10 minutos por la C-31.</li>
 </ul>
 
 <h2>¿Sigues con dudas?</h2>
@@ -184,26 +184,26 @@ export const BLOG_BODIES: Record<string, string> = {
 
   'blog/mejor-arte-marcial-para-ninos-garraf': `
 <h2>Lo primero: cualquiera de las tres grandes es una buena elección</h2>
-<p>Karate, judo y taekwondo son las tres disciplinas con más tradición infantil en España, y las tres tienen metodologías consolidadas para trabajar con niños desde los 4-6 años: grupos por edades, progresión por cinturones y un equilibrio entre juego y técnica que evoluciona a medida que crecen. Ninguna es objetivamente "la mejor" — la diferencia real la marcan el instructor y el centro, no la disciplina. Dicho esto, sí hay diferencias de enfoque que conviene conocer para acertar con tu hijo.</p>
+<p>Karate, judo y taekwondo son las tres disciplinas con más tradición infantil en España, y las tres tienen metodologías consolidadas para trabajar con niños desde los 4-6 años: grupos por edades, progresión por cinturones y un equilibrio entre juego y técnica que evoluciona a medida que crecen. Ninguna es objetivamente "la mejor". La diferencia real la marcan el instructor y el centro, no la disciplina. Dicho esto, sí hay diferencias de enfoque que conviene conocer para acertar con tu hijo.</p>
 
 <h2>Qué aporta cada disciplina</h2>
 <h3>Karate: estructura, control y respeto</h3>
 <p>El <a href="/karate/">karate</a> combina golpeo controlado (sin contacto real en las etapas infantiles) con un fuerte componente de formalidad: saludos, katas, respeto al tatami. Es especialmente bueno para niños que necesitan estructura y para familias que valoran la parte de disciplina y concentración tanto como la física. La progresión por cinturones es clara y motivadora.</p>
 <h3>Judo: contacto, caídas y nobleza</h3>
-<p>El <a href="/judo/">judo</a> es lucha con agarre: proyecciones, control en el suelo y, sobre todo, aprender a caer sin hacerse daño — una habilidad que un niño usará toda su vida, dentro y fuera del tatami. No hay golpes, lo que tranquiliza a muchos padres, y el contacto físico constante lo hace ideal para niños con mucha energía que necesitan "gastarse" jugando a luchar de forma reglada. Es deporte olímpico y la UNESCO lo ha destacado como formación física para edades tempranas.</p>
+<p>El <a href="/judo/">judo</a> es lucha con agarre: proyecciones, control en el suelo y, sobre todo, aprender a caer sin hacerse daño, una habilidad que un niño usará toda su vida, dentro y fuera del tatami. No hay golpes, lo que tranquiliza a muchos padres, y el contacto físico constante lo hace ideal para niños con mucha energía que necesitan "gastarse" jugando a luchar de forma reglada. Es deporte olímpico y la UNESCO lo ha destacado como formación física para edades tempranas.</p>
 <h3>Taekwondo: dinamismo, piernas y deporte olímpico</h3>
 <p>El <a href="/taekwondo/">taekwondo</a> es la más dinámica de las tres: patadas espectaculares, mucho trabajo de flexibilidad, agilidad y equilibrio. A los niños les suele enganchar rápido porque es vistoso y muy físico. Como deporte olímpico, tiene además un circuito de competición bien organizado por edades para quien quiera dar ese paso (siempre opcional).</p>
 
 <h2>La elección según la edad</h2>
 <ul>
-<li><strong>4-6 años:</strong> a esta edad todas las disciplinas trabajan casi lo mismo — psicomotricidad, atención, juego reglado — con envoltorio marcial. Elige por cercanía y por la calidad del grupo infantil del centro. Que la primera experiencia sea buena importa más que la disciplina.</li>
+<li><strong>4-6 años:</strong> a esta edad todas las disciplinas trabajan casi lo mismo (psicomotricidad, atención, juego reglado) con envoltorio marcial. Elige por cercanía y por la calidad del grupo infantil del centro. Que la primera experiencia sea buena importa más que la disciplina.</li>
 <li><strong>7-10 años:</strong> empieza la técnica de verdad. Aquí ya tiene sentido elegir por el carácter del niño (ver siguiente apartado) y por lo que la familia valore: formalidad (karate), contacto sin golpes (judo) o dinamismo (taekwondo).</li>
-<li><strong>11 años en adelante:</strong> el niño ya puede — y debe — opinar. A esta edad también se abren opciones como el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> o la iniciación al <a href="/boxeo/">boxeo</a> sin contacto, si le atraen más.</li>
+<li><strong>11 años en adelante:</strong> el niño ya puede, y debe, opinar. A esta edad también se abren opciones como el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> o la iniciación al <a href="/boxeo/">boxeo</a> sin contacto, si le atraen más.</li>
 </ul>
 
 <h2>La elección según el carácter</h2>
 <ul>
-<li><strong>Niño tímido o inseguro:</strong> el judo suele funcionar muy bien — el contacto constante y cooperativo genera confianza corporal — y el karate le da un marco predecible y seguro.</li>
+<li><strong>Niño tímido o inseguro:</strong> el judo suele funcionar muy bien (el contacto constante y cooperativo genera confianza corporal) y el karate le da un marco predecible y seguro.</li>
 <li><strong>Niño muy movido:</strong> taekwondo o judo. Necesita una actividad que le canse de verdad y le enseñe autocontrol a la vez.</li>
 <li><strong>Niño competitivo:</strong> taekwondo y judo tienen circuitos de competición infantil muy rodados; el karate también, especialmente en la vertiente deportiva.</li>
 <li><strong>Niño que se distrae con facilidad:</strong> karate, por su estructura de clase muy pautada y sus objetivos de cinturón a corto plazo.</li>
@@ -211,11 +211,11 @@ export const BLOG_BODIES: Record<string, string> = {
 <p>Si dudas específicamente entre las dos disciplinas de golpeo, tenemos una comparativa dedicada: <a href="/blog/karate-vs-taekwondo-ninos-garraf/">karate o taekwondo para niños</a>.</p>
 
 <h2>Los beneficios reales (y un mito que conviene aclarar)</h2>
-<p>Lo que las artes marciales infantiles aportan de forma consistente, según la experiencia de cualquier club con años de trabajo con niños: coordinación y control corporal, capacidad de atención (las clases exigen escuchar y ejecutar), tolerancia a la frustración (los cinturones se ganan, no se regalan), respeto por normas y compañeros, y confianza — la que da saber que tu cuerpo responde. Todo ello con una actividad física completa en una edad en la que moverse es fundamental.</p>
-<p>El mito a aclarar: <strong>las artes marciales no vuelven agresivos a los niños — más bien al contrario</strong>. Un dojo serio canaliza la energía dentro de un marco de reglas estricto, y los niños aprenden pronto que la técnica se usa en el tatami y solo en el tatami. Si en algún centro ves otra cosa (niños golpeándose sin control, instructores que jalean la dureza), no es un problema de la disciplina: es un mal centro. Vete.</p>
+<p>Lo que las artes marciales infantiles aportan de forma consistente, según la experiencia de cualquier club con años de trabajo con niños: coordinación y control corporal, capacidad de atención (las clases exigen escuchar y ejecutar), tolerancia a la frustración (los cinturones se ganan, no se regalan), respeto por normas y compañeros, y confianza, la que da saber que tu cuerpo responde. Todo ello con una actividad física completa en una edad en la que moverse es fundamental.</p>
+<p>El mito a aclarar: <strong>las artes marciales no vuelven agresivos a los niños, más bien al contrario</strong>. Un dojo serio canaliza la energía dentro de un marco de reglas estricto, y los niños aprenden pronto que la técnica se usa en el tatami y solo en el tatami. Si en algún centro ves otra cosa (niños golpeándose sin control, instructores que jalean la dureza), no es un problema de la disciplina: es un mal centro. Vete.</p>
 
 <h2>¿Cuánto tarda en notarse?</h2>
-<p>Sé realista con los plazos: el primer mes es adaptación — que el niño quiera volver ya es éxito —, hacia el tercer mes suelen notarse cambios en coordinación y soltura, y los efectos en concentración, confianza y disciplina son cosa de una temporada completa, no de semanas. La señal de alarma no es que progrese lento: es que deje de querer ir. Si pasa, habla con el instructor antes de decidir nada; a veces es el grupo, no la disciplina.</p>
+<p>Sé realista con los plazos: el primer mes es adaptación (que el niño quiera volver ya es éxito), hacia el tercer mes suelen notarse cambios en coordinación y soltura, y los efectos en concentración, confianza y disciplina son cosa de una temporada completa, no de semanas. La señal de alarma no es que progrese lento: es que deje de querer ir. Si pasa, habla con el instructor antes de decidir nada; a veces es el grupo, no la disciplina.</p>
 
 <h2>Cómo evaluar el centro: la checklist para padres</h2>
 <ol>
@@ -227,7 +227,7 @@ export const BLOG_BODIES: Record<string, string> = {
 </ol>
 
 <h2>Dónde buscar en el Garraf</h2>
-<p>Nuestro <a href="/centros/">directorio de centros</a> recoge los clubs y gimnasios de la comarca con fuente pública verificada e indica qué disciplinas anuncia cada uno — varios imparten karate, judo o taekwondo infantil en Vilanova, Sitges, Sant Pere de Ribes y Cubelles. Tienes además guías locales específicas: <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>, <a href="/karate-infantil-en-vilanova/">karate infantil en Vilanova</a> y <a href="/karate-infantil-en-sitges/">karate infantil en Sitges</a>.</p>
+<p>Nuestro <a href="/centros/">directorio de centros</a> recoge los clubs y gimnasios de la comarca con fuente pública verificada e indica qué disciplinas anuncia cada uno. Varios imparten karate, judo o taekwondo infantil en Vilanova, Sitges, Sant Pere de Ribes y Cubelles. Tienes además guías locales específicas: <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>, <a href="/karate-infantil-en-vilanova/">karate infantil en Vilanova</a> y <a href="/karate-infantil-en-sitges/">karate infantil en Sitges</a>.</p>
 <p>¿Quieres una recomendación para tu caso concreto? <a href="/contacto/">Escríbenos</a> contándonos la edad de tu hijo, su carácter y vuestro municipio, y te orientamos sin coste.</p>
 `,
 
@@ -246,7 +246,7 @@ export const BLOG_BODIES: Record<string, string> = {
 <li><strong>Prevención y conciencia situacional.</strong> Detectar situaciones y comportamientos de riesgo antes de que escalen. Es la capa que más incidentes evita y la que menos se vende, porque no es espectacular.</li>
 <li><strong>Actitud, voz y límites.</strong> Marcar distancia verbalmente, con firmeza y sin escalar. Se entrena, igual que un golpe.</li>
 <li><strong>Gestión de la distancia y salidas de agarre.</strong> Reaccionar a que te cojan de la muñeca, del pelo o del cuello, crear espacio y salir. Este es el núcleo técnico de un buen programa.</li>
-<li><strong>Herramientas de golpeo simples.</strong> Pocas, gruesas y dirigidas a crear la oportunidad de irte — el objetivo siempre es salir, no ganar.</li>
+<li><strong>Herramientas de golpeo simples.</strong> Pocas, gruesas y dirigidas a crear la oportunidad de irte: el objetivo siempre es salir, no ganar.</li>
 <li><strong>Trabajo bajo presión progresiva.</strong> Sin simulación de estrés (progresiva, controlada y consentida), nada de lo anterior se consolida. Es lo que separa un programa serio de una tabla de gimnasia.</li>
 </ol>
 
@@ -264,14 +264,14 @@ export const BLOG_BODIES: Record<string, string> = {
 <ol>
 <li>El instructor explica <strong>qué método imparte y cuál es su formación</strong> sin evasivas.</li>
 <li>El programa dedica tiempo a <strong>prevención y voz</strong>, no solo a técnica física.</li>
-<li>Las técnicas son <strong>pocas y simples</strong>, y se repiten hasta automatizarlas — desconfía de un temario infinito.</li>
+<li>Las técnicas son <strong>pocas y simples</strong>, y se repiten hasta automatizarlas. Desconfía de un temario infinito.</li>
 <li>Hay <strong>trabajo bajo presión progresivo</strong> y consentido, adaptado al nivel de cada alumna.</li>
 <li>Puedes <strong>probar una clase</strong> y el ambiente del grupo te resulta respetuoso y acogedor.</li>
 </ol>
 
 <h2>Cómo suelen ser las primeras semanas</h2>
-<p>Si nunca has entrenado nada parecido, esto es lo que te vas a encontrar en un programa serio: las primeras sesiones se dedican a la base — posición, distancia, voz, cómo caer y levantarte — con ejercicios por parejas a intensidad muy baja. Nadie te va a agarrar de golpe ni a ponerte en situaciones incómodas sin avisar: el trabajo con contacto se introduce de forma gradual y siempre explicando antes qué se va a hacer y por qué. La incomodidad inicial de invadir y que te invadan el espacio personal es normal y desaparece sorprendentemente rápido; de hecho, perderle el miedo al contacto físico es en sí mismo una de las herramientas que más seguridad da en el día a día.</p>
-<p>A partir del primer mes, las técnicas se repiten hasta que salen sin pensar y se empieza a añadir presión de forma progresiva: más velocidad, más resistencia del compañero, algo de estrés simulado. Es el punto en el que la mayoría nota el cambio — no solo en lo físico, sino en cómo caminan por la calle.</p>
+<p>Si nunca has entrenado nada parecido, esto es lo que te vas a encontrar en un programa serio: las primeras sesiones se dedican a la base (posición, distancia, voz, cómo caer y levantarte) con ejercicios por parejas a intensidad muy baja. Nadie te va a agarrar de golpe ni a ponerte en situaciones incómodas sin avisar: el trabajo con contacto se introduce de forma gradual y siempre explicando antes qué se va a hacer y por qué. La incomodidad inicial de invadir y que te invadan el espacio personal es normal y desaparece sorprendentemente rápido; de hecho, perderle el miedo al contacto físico es en sí mismo una de las herramientas que más seguridad da en el día a día.</p>
+<p>A partir del primer mes, las técnicas se repiten hasta que salen sin pensar y se empieza a añadir presión de forma progresiva: más velocidad, más resistencia del compañero, algo de estrés simulado. Es el punto en el que la mayoría nota el cambio, no solo en lo físico, sino en cómo caminan por la calle.</p>
 
 <h2>¿Grupo femenino o grupo mixto?</h2>
 <p>Es una preferencia personal y ambas opciones son válidas. Los grupos exclusivamente femeninos facilitan empezar con más comodidad, especialmente si hay experiencias previas difíciles; los mixtos tienen la ventaja de entrenar con físicos más variados, que es lo realista. Muchas mujeres empiezan en grupo femenino y pasan a mixto con el tiempo. En el Garraf no todos los centros ofrecen grupos femeninos: si es tu prioridad, pregúntalo directamente antes de apuntarte.</p>
@@ -284,8 +284,8 @@ export const BLOG_BODIES: Record<string, string> = {
 </ul>
 
 <h2>Dónde entrenar en el Garraf</h2>
-<p>Consulta el <a href="/centros/">directorio de centros de la comarca</a> para ver qué gimnasios anuncian defensa personal, krav maga o BJJ cerca de ti — cada ficha indica su fuente pública y la fecha de verificación. Tenemos además guías locales específicas: <a href="/defensa-personal-femenina-en-sitges/">defensa personal femenina en Sitges</a>, <a href="/defensa-personal-femenina-en-vilanova/">defensa personal femenina en Vilanova i la Geltrú</a> y la guía general de <a href="/clases-para-mujeres/">artes marciales para mujeres en el Garraf</a>.</p>
-<p>Si quieres que te ayudemos a localizar un grupo que encaje contigo — femenino o mixto, en tu municipio —, <a href="/contacto/">escríbenos</a> y te orientamos sin coste.</p>
+<p>Consulta el <a href="/centros/">directorio de centros de la comarca</a> para ver qué gimnasios anuncian defensa personal, krav maga o BJJ cerca de ti. Cada ficha indica su fuente pública y la fecha de verificación. Tenemos además guías locales específicas: <a href="/defensa-personal-femenina-en-sitges/">defensa personal femenina en Sitges</a>, <a href="/defensa-personal-femenina-en-vilanova/">defensa personal femenina en Vilanova i la Geltrú</a> y la guía general de <a href="/clases-para-mujeres/">artes marciales para mujeres en el Garraf</a>.</p>
+<p>Si quieres que te ayudemos a localizar un grupo que encaje contigo (femenino o mixto, en tu municipio), <a href="/contacto/">escríbenos</a> y te orientamos sin coste.</p>
 `,
 
   'blog/artes-marciales-adultos-principiantes-garraf': `
@@ -304,18 +304,18 @@ export const BLOG_BODIES: Record<string, string> = {
 <h3>Si te atrae la técnica y la estrategia</h3>
 <p><a href="/jiu-jitsu-brasileno/">Jiu-jitsu brasileño</a> o <a href="/judo/">judo</a>. La lucha con agarre es un ajedrez físico: la fuerza importa menos que la posición y la palanca, y la profundidad técnica es infinita. Son las disciplinas donde más adultos "cerebrales" acaban encontrando su sitio.</p>
 <h3>Si tu prioridad es la autodefensa</h3>
-<p>Un programa de <a href="/defensa-personal/">defensa personal</a> o <a href="/krav-maga/">krav maga</a>, centrados en situaciones reales más que en deporte. Si es tu caso, lee también nuestra guía sobre <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal</a> — los criterios de seriedad aplican igual para cualquier persona.</p>
+<p>Un programa de <a href="/defensa-personal/">defensa personal</a> o <a href="/krav-maga/">krav maga</a>, centrados en situaciones reales más que en deporte. Si es tu caso, lee también nuestra guía sobre <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal</a>. Los criterios de seriedad aplican igual para cualquier persona.</p>
 <h3>Si valoras la tradición y la disciplina</h3>
 <p><a href="/karate/">Karate</a> o <a href="/taekwondo/">taekwondo</a>. Estructura, progresión por cinturones, trabajo técnico pausado y un componente formal que a muchos adultos les aporta justo el orden mental que buscan.</p>
 <h3>Si no lo tienes claro</h3>
 <p>Empieza por nuestra <a href="/iniciacion/">guía de iniciación</a>, o directamente prueba: la mayoría de centros ofrecen clase de prueba, y probar dos disciplinas distintas en una semana te enseña más que un mes de leer comparativas.</p>
 
 <h2>Qué esperar del primer mes, siendo realistas</h2>
-<p>Las dos primeras semanas son las más duras: agujetas serias, sensación de descoordinación y la incomodidad natural de ser el nuevo. Es exactamente igual para todos y pasa rápido. Entre la tercera y la sexta semana llega el primer salto visible — los movimientos empiezan a salir sin pensarlos, la resistencia mejora, duermes mejor — y con él la motivación real, la que ya no depende de la fuerza de voluntad.</p>
+<p>Las dos primeras semanas son las más duras: agujetas serias, sensación de descoordinación y la incomodidad natural de ser el nuevo. Es exactamente igual para todos y pasa rápido. Entre la tercera y la sexta semana llega el primer salto visible (los movimientos empiezan a salir sin pensarlos, la resistencia mejora, duermes mejor) y con él la motivación real, la que ya no depende de la fuerza de voluntad.</p>
 <p>La frecuencia realista para un adulto que trabaja es <strong>dos o tres sesiones semanales</strong>. Dos es el mínimo para progresar; tres es el punto dulce. Más de tres, las primeras semanas, suele acabar en sobrecarga y abandono. La constancia gana a la intensidad, siempre.</p>
 
 <h2>Entrenar sin romperte: la guía del adulto sensato</h2>
-<p>La diferencia real de empezar a los 40 en lugar de a los 20 no es la capacidad de aprender — esa está intacta —, es la recuperación. Reglas prácticas que los veteranos aplican y los novatos ignoran:</p>
+<p>La diferencia real de empezar a los 40 en lugar de a los 20 no es la capacidad de aprender (esa está intacta), es la recuperación. Reglas prácticas que los veteranos aplican y los novatos ignoran:</p>
 <ul>
 <li><strong>Calienta de verdad.</strong> Diez minutos de movilidad antes de la clase no son opcionales a partir de cierta edad. La mayoría de lesiones de principiante adulto son musculares y evitables.</li>
 <li><strong>Deja el ego en la puerta.</strong> Es la frase más repetida en cualquier tatami y la más cierta: las lesiones llegan cuando intentas "ganar" un ejercicio que era cooperativo.</li>
@@ -331,7 +331,7 @@ export const BLOG_BODIES: Record<string, string> = {
 <li><strong>Horarios compatibles con tu vida.</strong> El mejor gimnasio del mundo no sirve si sus clases son a las 18:00 y sales de trabajar a las 19:00. Es el filtro más práctico y el que más abandonos evita.</li>
 <li><strong>Grupos de iniciación reales</strong>, no "todos juntos y que el nuevo se apañe".</li>
 <li><strong>Ambiente.</strong> Ve a ver una clase: ¿la gente se ayuda? ¿El veterano cuida al nuevo? El ambiente predice tu permanencia mejor que las instalaciones.</li>
-<li><strong>Clase de prueba y condiciones claras</strong> — matrícula, permanencia, qué incluye la cuota — antes de comprometerte.</li>
+<li><strong>Clase de prueba y condiciones claras</strong> (matrícula, permanencia, qué incluye la cuota) antes de comprometerte.</li>
 </ol>
 
 <h2>Empezar en el Garraf</h2>
@@ -357,32 +357,32 @@ export const BLOG_BODIES: Record<string, string> = {
 <tr><td><strong>Le suele encajar a…</strong></td><td>Niños que necesitan estructura y concentración</td><td>Niños muy activos a los que engancha lo dinámico</td></tr>
 </tbody>
 </table>
-<p>Matiz importante: dentro del karate hay enfoques más deportivos (orientados a la competición WKF) y más tradicionales (más kata y defensa personal), y dentro del taekwondo convive la vertiente olímpica (combate) con la técnica (poomsae). El enfoque concreto del centro puede pesar tanto como la disciplina en sí — pregúntalo.</p>
+<p>Matiz importante: dentro del karate hay enfoques más deportivos (orientados a la competición WKF) y más tradicionales (más kata y defensa personal), y dentro del taekwondo convive la vertiente olímpica (combate) con la técnica (poomsae). El enfoque concreto del centro puede pesar tanto como la disciplina en sí. Pregúntalo.</p>
 
 <h2>La decisión por edad</h2>
 <ul>
-<li><strong>4-6 años:</strong> honestamente, casi da igual. A esta edad ambas trabajan psicomotricidad y atención con juego reglado. Elige el centro con mejor grupo infantil que te quede cómodo — la logística semanal importa más que la disciplina.</li>
+<li><strong>4-6 años:</strong> honestamente, casi da igual. A esta edad ambas trabajan psicomotricidad y atención con juego reglado. Elige el centro con mejor grupo infantil que te quede cómodo: la logística semanal importa más que la disciplina.</li>
 <li><strong>7-10 años:</strong> aquí ya se nota la diferencia de énfasis. Niño que necesita calma y foco → karate. Niño puro nervio al que hay que cansar → taekwondo. Niño flexible y ágil al que le encanta patear → taekwondo. Niño al que le motivan la precisión y el detalle → karate.</li>
 <li><strong>11+ años:</strong> que decida él o ella. A esta edad la motivación propia es el predictor número uno de continuidad, y una clase de prueba de cada una zanja el debate mejor que cualquier comparativa.</li>
 </ul>
 
 <h2>Cinturones y progresión: qué esperar en cada una</h2>
-<p>Ambas disciplinas usan cinturones de colores como sistema de progresión infantil, y en ambas el ritmo típico es de uno o dos exámenes al año — desconfía de los centros que "regalan" cinturones cada pocos meses para retener alumnos; la motivación que construyen es frágil. La diferencia práctica: en taekwondo la progresión suele estar muy estandarizada por la estructura federativa y olímpica, mientras que en karate varía algo más según el estilo (shotokan, kyokushin, etc.) y la escuela. En los dos casos, el cinturón negro infantil no existe como tal: lo que hay son grados junior que se convalidan al crecer. Si un centro le promete a tu hijo de 8 años un cinturón negro "de verdad" en dos años, es marketing.</p>
+<p>Ambas disciplinas usan cinturones de colores como sistema de progresión infantil, y en ambas el ritmo típico es de uno o dos exámenes al año. Desconfía de los centros que "regalan" cinturones cada pocos meses para retener alumnos; la motivación que construyen es frágil. La diferencia práctica: en taekwondo la progresión suele estar muy estandarizada por la estructura federativa y olímpica, mientras que en karate varía algo más según el estilo (shotokan, kyokushin, etc.) y la escuela. En los dos casos, el cinturón negro infantil no existe como tal: lo que hay son grados junior que se convalidan al crecer. Si un centro le promete a tu hijo de 8 años un cinturón negro "de verdad" en dos años, es marketing.</p>
 
 <h2>Equipación y logística: prácticamente empatados</h2>
-<p>En ambas disciplinas la compra inicial es una: el uniforme (karategi o dobok), que el propio club suele ayudarte a conseguir. Las protecciones (bucal, espinilleras, peto o guantillas según la disciplina y la edad) llegan más adelante, cuando se introduce el trabajo de combate controlado, y el centro te dirá exactamente qué hace falta en cada momento. Como con las cuotas — que cada club fija y cambian con el tiempo, por eso no las publicamos —, la regla es simple: todo por escrito y nada de compras grandes el primer día.</p>
+<p>En ambas disciplinas la compra inicial es una: el uniforme (karategi o dobok), que el propio club suele ayudarte a conseguir. Las protecciones (bucal, espinilleras, peto o guantillas según la disciplina y la edad) llegan más adelante, cuando se introduce el trabajo de combate controlado, y el centro te dirá exactamente qué hace falta en cada momento. Como con las cuotas (que cada club fija y cambian con el tiempo, por eso no las publicamos), la regla es simple: todo por escrito y nada de compras grandes el primer día.</p>
 
 <h2>¿Se puede cambiar más adelante?</h2>
-<p>Sí, y pasa constantemente: la base que da cualquiera de las dos — coordinación, disciplina de entrenamiento, cultura de tatami — se transfiere muy bien a la otra y a cualquier arte marcial que el niño explore de adolescente, del <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> al <a href="/boxeo/">boxeo</a>. Elegir "mal" a los 6 años no existe: ninguna puerta se cierra. Así que baja la presión de la decisión — el objetivo a esta edad es que se mueva, disfrute y aprenda, no acertar la disciplina definitiva.</p>
+<p>Sí, y pasa constantemente: la base que da cualquiera de las dos (coordinación, disciplina de entrenamiento, cultura de tatami) se transfiere muy bien a la otra y a cualquier arte marcial que el niño explore de adolescente, del <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> al <a href="/boxeo/">boxeo</a>. Elegir "mal" a los 6 años no existe: ninguna puerta se cierra. Así que baja la presión de la decisión: el objetivo a esta edad es que se mueva, disfrute y aprenda, no acertar la disciplina definitiva.</p>
 
 <h2>El factor que pesa más que la disciplina</h2>
 <p>Lo repetimos en todas nuestras guías porque es la verdad más útil de todas: <strong>un buen instructor de taekwondo aporta más a tu hijo que un mal instructor de karate, y viceversa</strong>. Antes de decidir por disciplina, evalúa el centro: grupos separados por edad, instructor titulado con experiencia infantil, posibilidad de ver o probar una clase, contacto adaptado y condiciones claras. Tienes la checklist completa para padres en nuestra guía sobre <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">la mejor arte marcial para niños</a>, que amplía esta comparativa incluyendo el judo.</p>
 
 <h2>Cómo zanjar la duda en dos semanas</h2>
-<p>Si después de leer todo esto sigues al cincuenta por ciento, haz lo que hacen las familias con más acierto: <strong>una clase de prueba de cada disciplina, en semanas consecutivas</strong>. La mayoría de clubs de la comarca lo permiten, y la reacción del niño al salir — de cuál habla en el coche, a cuál quiere volver — vale más que cualquier tabla comparativa, incluida la nuestra. Mientras observas la clase, fíjate menos en las patadas y más en tres cosas: si el instructor se sabe los nombres de los niños, si el grupo es de la edad de tu hijo y si los niños salen contentos y ordenados. Eso es lo que predice cómo le irá.</p>
+<p>Si después de leer todo esto sigues al cincuenta por ciento, haz lo que hacen las familias con más acierto: <strong>una clase de prueba de cada disciplina, en semanas consecutivas</strong>. La mayoría de clubs de la comarca lo permiten, y la reacción del niño al salir (de cuál habla en el coche, a cuál quiere volver) vale más que cualquier tabla comparativa, incluida la nuestra. Mientras observas la clase, fíjate menos en las patadas y más en tres cosas: si el instructor se sabe los nombres de los niños, si el grupo es de la edad de tu hijo y si los niños salen contentos y ordenados. Eso es lo que predice cómo le irá.</p>
 
 <h2>Karate y taekwondo en el Garraf</h2>
-<p>En la comarca hay clubs con sección infantil de ambas disciplinas — puedes ver cuáles en nuestro <a href="/centros/">directorio de centros verificado</a>, con la fuente pública de cada ficha. Para el contexto local por municipio, consulta las guías de <a href="/karate-infantil-en-vilanova/">karate infantil en Vilanova</a>, <a href="/karate-infantil-en-sitges/">karate infantil en Sitges</a>, <a href="/taekwondo-en-vilanova-i-la-geltru/">taekwondo en Vilanova i la Geltrú</a>, <a href="/taekwondo-en-sitges/">taekwondo en Sitges</a> y <a href="/taekwondo-en-cubelles/">taekwondo en Cubelles</a>, o la guía general de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>.</p>
+<p>En la comarca hay clubs con sección infantil de ambas disciplinas. Puedes ver cuáles en nuestro <a href="/centros/">directorio de centros verificado</a>, con la fuente pública de cada ficha. Para el contexto local por municipio, consulta las guías de <a href="/karate-infantil-en-vilanova/">karate infantil en Vilanova</a>, <a href="/karate-infantil-en-sitges/">karate infantil en Sitges</a>, <a href="/taekwondo-en-vilanova-i-la-geltru/">taekwondo en Vilanova i la Geltrú</a>, <a href="/taekwondo-en-sitges/">taekwondo en Sitges</a> y <a href="/taekwondo-en-cubelles/">taekwondo en Cubelles</a>, o la guía general de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>.</p>
 <p>¿Dudas con vuestro caso concreto? <a href="/contacto/">Escríbenos</a> con la edad y el carácter de tu hijo y vuestro municipio, y te damos una recomendación sin coste.</p>
 `,
 };

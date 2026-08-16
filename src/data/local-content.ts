@@ -20,7 +20,7 @@ export const MUNICIPIO_BODIES: Record<string, string> = {
   'sitges': `
 <h2>Qué se puede entrenar de verdad en Sitges</h2>
 <p>Conviene separar lo que se anuncia de lo que consta. En nuestro <a href="/centros/">directorio de centros del Garraf</a>, Sitges aparece con tres centros con presencia pública verificable, y entre los tres cubren un abanico concreto: <a href="/kickboxing-en-sitges/">kickboxing</a>, <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a>, <a href="/karate-en-sitges/">karate</a>, <a href="/mma-en-sitges/">MMA</a>, <a href="/boxeo-en-sitges/">boxeo</a> y <a href="/defensa-personal-en-sitges/">defensa personal</a>. También aparecen actividades afines como el grappling, el K-1 y los grupos infantiles.</p>
-<p>Lo que <strong>no</strong> nos consta en Sitges, a fecha de la última verificación, es oferta de <a href="/judo-en-sitges/">judo</a>, <a href="/taekwondo-en-sitges/">taekwondo</a>, <a href="/muay-thai-en-sitges/">muay thai</a> o <a href="/krav-maga-en-sitges/">krav maga</a> con fuente pública comprobable. Eso no significa que no exista —puede haber actividad en clubes, entidades o centros cívicos sin web—, significa que nosotros no la hemos podido verificar y por eso no la publicamos como si estuviera confirmada. Si buscas alguna de esas cuatro, lo lógico es mirar hacia <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>.</p>
+<p>Lo que <strong>no</strong> nos consta en Sitges, a fecha de la última verificación, es oferta de <a href="/judo-en-sitges/">judo</a>, <a href="/taekwondo-en-sitges/">taekwondo</a>, <a href="/muay-thai-en-sitges/">muay thai</a> o <a href="/krav-maga-en-sitges/">krav maga</a> con fuente pública comprobable. Eso no significa que no exista (puede haber actividad en clubes, entidades o centros cívicos sin web), significa que nosotros no la hemos podido verificar y por eso no la publicamos como si estuviera confirmada. Si buscas alguna de esas cuatro, lo lógico es mirar hacia <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>.</p>
 
 <h2>Sitges tiene un problema de calendario que otros municipios no tienen</h2>
 <p>Es el municipio más estacional de la comarca. Buena parte de su población es flotante o internacional, y eso se nota en las condiciones de contratación de las actividades deportivas: hay centros que trabajan con bonos y mensualidades sin permanencia porque saben que su público entra y sale. Si vas a estar unos meses, pregunta explícitamente por esa fórmula antes de firmar nada; si vives todo el año, pregunta lo contrario, porque las tarifas pensadas para estancias cortas suelen salir caras a largo plazo.</p>
@@ -38,7 +38,7 @@ export const MUNICIPIO_BODIES: Record<string, string> = {
 
   'vilanova-i-la-geltru': `
 <h2>Por qué Vilanova concentra la oferta de la comarca</h2>
-<p>Vilanova i la Geltrú es la capital del Garraf y el municipio más poblado, y eso tiene una traducción práctica: en nuestro <a href="/centros/">directorio</a> es el municipio con más centros verificados de toda la comarca, siete, frente a los tres de <a href="/sitges/">Sitges</a> y los dos de <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>. Más centros significan más grupos, más franjas horarias y —lo más importante para quien empieza— más probabilidad de encontrar un grupo de iniciación de verdad en lugar de tener que colarse en uno mixto.</p>
+<p>Vilanova i la Geltrú es la capital del Garraf y el municipio más poblado, y eso tiene una traducción práctica: en nuestro <a href="/centros/">directorio</a> es el municipio con más centros verificados de toda la comarca, siete, frente a los tres de <a href="/sitges/">Sitges</a> y los dos de <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>. Más centros significan más grupos, más franjas horarias y, lo más importante para quien empieza, más probabilidad de encontrar un grupo de iniciación de verdad en lugar de tener que colarse en uno mixto.</p>
 
 <h2>Qué disciplinas cubre realmente Vilanova</h2>
 <p>El abanico verificado es el más amplio de la comarca. Consta oferta de <a href="/boxeo-en-vilanova-i-la-geltru/">boxeo</a>, <a href="/kickboxing-en-vilanova-i-la-geltru/">kickboxing</a>, <a href="/mma-en-vilanova-i-la-geltru/">MMA</a>, <a href="/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/">jiu jitsu brasileño</a>, <a href="/karate-en-vilanova-i-la-geltru/">karate</a>, <a href="/judo-en-vilanova-i-la-geltru/">judo</a>, <a href="/taekwondo-en-vilanova-i-la-geltru/">taekwondo</a> y <a href="/defensa-personal-en-vilanova-i-la-geltru/">defensa personal</a>.</p>
@@ -53,20 +53,20 @@ export const MUNICIPIO_BODIES: Record<string, string> = {
 <p>Si vives en <a href="/cubelles/">Cubelles</a>, <a href="/canyelles/">Canyelles</a> o <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, Vilanova es casi siempre la respuesta: está a menos de 10 minutos por la C-31 desde Cubelles, a unos 15 por la C-15 desde Canyelles y a 10-15 desde los núcleos de Ribes y Les Roquetes. Para dos sesiones semanales, esos trayectos son perfectamente sostenibles. Para tres o más, empieza a pesar: valóralo antes de comprometerte con una cuota anual.</p>
 
 <h2>Por dónde empezar</h2>
-<p>Si tienes claro qué quieres entrenar, ve directo a la guía de la disciplina desde el listado de arriba. Si no lo tienes claro, la <a href="/iniciacion/">guía de iniciación</a> ordena las opciones por objetivo —forma física, autodefensa, técnica, actividad para niños— en lugar de por nombre. Y si prefieres preguntar, <a href="/contacto/">escríbenos</a>: te orientamos sin coste.</p>
+<p>Si tienes claro qué quieres entrenar, ve directo a la guía de la disciplina desde el listado de arriba. Si no lo tienes claro, la <a href="/iniciacion/">guía de iniciación</a> ordena las opciones por objetivo (forma física, autodefensa, técnica, actividad para niños) en lugar de por nombre. Y si prefieres preguntar, <a href="/contacto/">escríbenos</a>: te orientamos sin coste.</p>
 `,
 
   'sant-pere-de-ribes': `
 <h2>La situación real de Sant Pere de Ribes</h2>
 <p>Conviene decirlo sin rodeos: en nuestro <a href="/centros/">directorio de centros del Garraf</a>, Sant Pere de Ribes aparece con dos centros con fuente pública verificable, y los dos son de <a href="/taekwondo-en-sant-pere-de-ribes/">taekwondo</a>. Es un municipio con tradición en esa disciplina y prácticamente sin oferta verificable en el resto.</p>
-<p>Si lo que buscas es taekwondo —para ti o para tus hijos—, estás en uno de los mejores sitios de la comarca y no necesitas moverte. Si buscas <a href="/boxeo-en-sant-pere-de-ribes/">boxeo</a>, <a href="/karate-en-sant-pere-de-ribes/">karate</a>, <a href="/muay-thai-en-sant-pere-de-ribes/">muay thai</a>, <a href="/defensa-personal-en-sant-pere-de-ribes/">defensa personal</a> o cualquier disciplina de suelo, la respuesta honesta es que tendrás que desplazarte.</p>
+<p>Si lo que buscas es taekwondo, para ti o para tus hijos, estás en uno de los mejores sitios de la comarca y no necesitas moverte. Si buscas <a href="/boxeo-en-sant-pere-de-ribes/">boxeo</a>, <a href="/karate-en-sant-pere-de-ribes/">karate</a>, <a href="/muay-thai-en-sant-pere-de-ribes/">muay thai</a>, <a href="/defensa-personal-en-sant-pere-de-ribes/">defensa personal</a> o cualquier disciplina de suelo, la respuesta honesta es que tendrás que desplazarte.</p>
 
 <h2>Un municipio con dos núcleos, y eso cambia el cálculo</h2>
 <p>Sant Pere de Ribes no es un núcleo compacto: Ribes y Les Roquetes están separados, y a efectos prácticos no es lo mismo salir de uno que del otro. Desde Les Roquetes, Sitges queda muy a mano; desde Ribes, la salida hacia Vilanova i la Geltrú es igual de cómoda. Antes de descartar un centro por lejano, mira la distancia desde tu núcleo concreto y no desde "Sant Pere de Ribes" como punto genérico en el mapa: la diferencia puede ser de cinco o seis minutos, que es exactamente lo que decide si un horario de 18:00 es viable o no.</p>
-<p>En coche, tanto <a href="/sitges/">Sitges</a> como <a href="/vilanova-i-la-geltru/">Vilanova</a> están a 10-15 minutos. Vilanova concentra más oferta —siete centros verificados frente a tres— pero Sitges puede quedarte más cerca según el núcleo. Merece la pena comparar las dos antes de decidir.</p>
+<p>En coche, tanto <a href="/sitges/">Sitges</a> como <a href="/vilanova-i-la-geltru/">Vilanova</a> están a 10-15 minutos. Vilanova concentra más oferta (siete centros verificados frente a tres), pero Sitges puede quedarte más cerca según el núcleo. Merece la pena comparar las dos antes de decidir.</p>
 
 <h2>Antes de descartar la opción municipal</h2>
-<p>Este directorio recoge centros con presencia pública verificable: web propia, registro federativo o directorio municipal de entidades. Hay actividad deportiva que no deja ese rastro —secciones de clubes, actividades de temporada en equipamientos municipales, grupos de entidades vecinales— y que puede existir perfectamente en Ribes o Les Roquetes sin que nosotros podamos confirmarla.</p>
+<p>Este directorio recoge centros con presencia pública verificable: web propia, registro federativo o directorio municipal de entidades. Hay actividad deportiva que no deja ese rastro (secciones de clubes, actividades de temporada en equipamientos municipales, grupos de entidades vecinales) y que puede existir perfectamente en Ribes o Les Roquetes sin que nosotros podamos confirmarla.</p>
 <p>Por eso, si te importa entrenar en el municipio, vale la pena que preguntes directamente en el servicio de deportes del ayuntamiento o mires la programación de actividades de temporada antes de asumir que no hay nada. Y si encuentras algo que no está en nuestro directorio, <a href="/contacto/">dínoslo</a>: lo verificamos y lo añadimos.</p>
 
 <h2>Cómo organizar el desplazamiento si hay niños de por medio</h2>
@@ -94,7 +94,7 @@ export const MUNICIPIO_BODIES: Record<string, string> = {
   'canyelles': `
 <h2>Canyelles: sin oferta local verificable, y conviene saberlo antes</h2>
 <p>Somos una guía, no una agencia de publicidad, así que empezamos por el dato incómodo: en nuestro <a href="/centros/">directorio de centros del Garraf</a>, Canyelles es el único municipio de la comarca sin ningún centro de artes marciales con fuente pública verificable. Entrenar aquí significa, hoy por hoy, desplazarse.</p>
-<p>Como en el resto de municipios pequeños, puede existir actividad que no deja rastro público —grupos de temporada, actividades de entidades locales— y que no podemos confirmar. Si conoces alguna, <a href="/contacto/">avísanos</a> y la verificamos.</p>
+<p>Como en el resto de municipios pequeños, puede existir actividad que no deja rastro público (grupos de temporada, actividades de entidades locales) y que no podemos confirmar. Si conoces alguna, <a href="/contacto/">avísanos</a> y la verificamos.</p>
 
 <h2>Vilanova, a un cuarto de hora por la C-15</h2>
 <p>La referencia natural es <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>: unos 15 minutos por la C-15 y siete centros verificados que cubren prácticamente todas las disciplinas de la comarca, desde <a href="/boxeo-en-vilanova-i-la-geltru/">boxeo</a> y <a href="/kickboxing-en-vilanova-i-la-geltru/">kickboxing</a> hasta <a href="/judo-en-vilanova-i-la-geltru/">judo</a>, <a href="/karate-en-vilanova-i-la-geltru/">karate</a> o <a href="/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/">jiu jitsu brasileño</a>. <a href="/sitges/">Sitges</a> queda algo más lejos y con menos oferta, así que salvo motivo concreto, Vilanova gana casi siempre desde Canyelles.</p>
@@ -109,7 +109,7 @@ export const MUNICIPIO_BODIES: Record<string, string> = {
 </ul>
 
 <h2>Antes de decidir</h2>
-<p>Si aún no sabes qué disciplina buscas, la <a href="/iniciacion/">guía de iniciación</a> las ordena por objetivo. Y si prefieres que te ayudemos a encontrar algo compatible con vivir en Canyelles —horarios, distancias y qué centros suelen tener alumnos de la zona—, <a href="/contacto/">escríbenos</a> y te orientamos sin coste.</p>
+<p>Si aún no sabes qué disciplina buscas, la <a href="/iniciacion/">guía de iniciación</a> las ordena por objetivo. Y si prefieres que te ayudemos a encontrar algo compatible con vivir en Canyelles (horarios, distancias y qué centros suelen tener alumnos de la zona), <a href="/contacto/">escríbenos</a> y te orientamos sin coste.</p>
 `,
 };
 
@@ -151,7 +151,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 
 <h2>Cómo elegir mirando a tu hijo, no a la disciplina</h2>
 <ul>
-<li><strong>Niño disperso, que necesita marco:</strong> karate. Es el más estructurado — etiqueta, formas, progresión pautada.</li>
+<li><strong>Niño disperso, que necesita marco:</strong> karate. Es el más estructurado: etiqueta, formas y progresión pautada.</li>
 <li><strong>Niño muy físico, que necesita descargar:</strong> judo. Contacto y caídas desde el primer día, muchísima actividad por sesión.</li>
 <li><strong>Niño con mucha energía, flexible:</strong> taekwondo. Piernas, velocidad y movimiento rápido.</li>
 <li><strong>Niño tímido o al que le cuesta el contacto:</strong> empieza por karate o taekwondo; el judo, más adelante.</li>
@@ -159,7 +159,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 <p>Y por encima de las cuatro: la calidad del monitor de infantil pesa más que la disciplina. Un buen instructor de taekwondo hará más por tu hijo que uno mediocre de la disciplina "ideal" sobre el papel.</p>
 
 <h2>Qué aporta de verdad, y qué no</h2>
-<p>Aporta capacidad de sostener la atención en una tarea repetitiva, tolerancia a la frustración, respeto por normas explícitas y una progresión —los cinturones— que da sensación de avance sin necesidad de ganar a nadie.</p>
+<p>Aporta capacidad de sostener la atención en una tarea repetitiva, tolerancia a la frustración, respeto por normas explícitas y una progresión (los cinturones) que da sensación de avance sin necesidad de ganar a nadie.</p>
 <p>No convierte a un niño tímido en extrovertido, no arregla problemas de conducta por sí solo y no garantiza que sepa defenderse en el patio. Si un centro te vende estas tres cosas, desconfía: te está vendiendo lo que quieres oír.</p>
 
 <h2>Las cinco preguntas de la visita</h2>
@@ -178,7 +178,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 
   'clases-para-mujeres': `
 <h2>Qué disciplinas encajan con qué objetivo</h2>
-<p>La pregunta útil no es "cuál es mejor para mujeres" —ninguna lo es en abstracto—, sino qué buscas exactamente:</p>
+<p>La pregunta útil no es "cuál es mejor para mujeres" (ninguna lo es en abstracto), sino qué buscas exactamente:</p>
 <ul>
 <li><strong>Forma física y descargar la semana:</strong> <a href="/kickboxing/">kickboxing</a> o <a href="/boxeo/">boxeo</a>. Curva de aprendizaje rápida, sesiones intensas, y en iniciación el contacto es siempre opcional. Son las que más gente engancha el primer mes.</li>
 <li><strong>Técnica donde el tamaño importa poco:</strong> <a href="/jiu-jitsu-brasileno/">jiu jitsu brasileño</a>. Es la disciplina donde una persona más pequeña puede controlar de forma más fiable a una más grande, porque todo se resuelve con palanca y posición.</li>
@@ -242,7 +242,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 <p>En cualquier centro serio, el sparring es opcional, progresivo y nunca el primer día. Si en tu clase de prueba ves otra cosa, el problema es el centro, no la disciplina.</p>
 
 <h2>Tercera pregunta: qué tienes cerca de verdad</h2>
-<p>Aquí es donde muchos planes se rompen. Según nuestro <a href="/centros/">directorio verificado</a>, la oferta del Garraf está muy concentrada: <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> reúne siete centros y cubre casi todas las disciplinas; <a href="/sitges/">Sitges</a> tiene tres, sin judo ni taekwondo verificados; <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> y <a href="/cubelles/">Cubelles</a> solo tienen taekwondo; en <a href="/canyelles/">Canyelles</a> no consta ningún centro. Y hay dos disciplinas muy buscadas —<a href="/muay-thai/">muay thai</a> y <a href="/krav-maga/">krav maga</a>— que no nos constan en ningún centro de la comarca.</p>
+<p>Aquí es donde muchos planes se rompen. Según nuestro <a href="/centros/">directorio verificado</a>, la oferta del Garraf está muy concentrada: <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> reúne siete centros y cubre casi todas las disciplinas; <a href="/sitges/">Sitges</a> tiene tres, sin judo ni taekwondo verificados; <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> y <a href="/cubelles/">Cubelles</a> solo tienen taekwondo; en <a href="/canyelles/">Canyelles</a> no consta ningún centro. Y hay dos disciplinas muy buscadas (<a href="/muay-thai/">muay thai</a> y <a href="/krav-maga/">krav maga</a>) que no nos constan en ningún centro de la comarca.</p>
 <p>Conviene cruzarlo con tu objetivo antes de ilusionarte con una disciplina concreta. Si vives en Canyelles y quieres muay thai, el plan realista pasa por kickboxing en Vilanova, no por buscar diez webs más.</p>
 
 <h2>Y la regla que vale más que todas</h2>
@@ -253,11 +253,11 @@ export const PERFIL_BODIES: Record<string, string> = {
   'clases-infantiles-en-sitges': `
 <h2>Qué puede empezar un niño en Sitges sin salir del municipio</h2>
 <p>De los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a>, dos anuncian explícitamente grupos infantiles, y las disciplinas que cubren entre todos son <a href="/karate-en-sitges/">karate</a>, <a href="/kickboxing-en-sitges/">kickboxing</a>, <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a>, <a href="/mma-en-sitges/">MMA</a>, <a href="/boxeo-en-sitges/">boxeo</a> y <a href="/defensa-personal-en-sitges/">defensa personal</a>.</p>
-<p>Aquí hay un detalle que a muchos padres les sorprende: las dos disciplinas más clásicas para niños pequeños en España —<a href="/judo/">judo</a> y <a href="/taekwondo/">taekwondo</a>— no nos constan con fuente verificable en Sitges. Si tenías el judo en la cabeza como primera opción, que es una elección excelente para los 4-7 años, tendrás que mirar hacia <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>.</p>
+<p>Aquí hay un detalle que a muchos padres les sorprende: las dos disciplinas más clásicas para niños pequeños en España (<a href="/judo/">judo</a> y <a href="/taekwondo/">taekwondo</a>) no nos constan con fuente verificable en Sitges. Si tenías el judo en la cabeza como primera opción, que es una elección excelente para los 4-7 años, tendrás que mirar hacia <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>.</p>
 
 <h2>La edad manda más que la disciplina</h2>
 <p>Entre los 4 y los 6 años, lo que se trabaja realmente no es un arte marcial: es psicomotricidad, atención, seguir instrucciones y esperar el turno, envuelto en la estética de la disciplina. A esa edad, elegir entre karate y judo importa poco; importa muchísimo el monitor y el tamaño del grupo.</p>
-<p>A partir de los 7-8 años sí empieza a haber diferencias reales que notarás en casa. El karate es más ordenado y estructurado, con progresión de cinturones muy pautada. El judo implica contacto y caídas desde el primer día, y suele encajar mejor con niños muy físicos. Las disciplinas de golpeo con contacto —kickboxing, boxeo— tienen sentido algo más tarde, y en cualquier centro serio el contacto real llega de forma muy progresiva.</p>
+<p>A partir de los 7-8 años sí empieza a haber diferencias reales que notarás en casa. El karate es más ordenado y estructurado, con progresión de cinturones muy pautada. El judo implica contacto y caídas desde el primer día, y suele encajar mejor con niños muy físicos. Las disciplinas de golpeo con contacto (kickboxing, boxeo) tienen sentido algo más tarde, y en cualquier centro serio el contacto real llega de forma muy progresiva.</p>
 
 <h2>Las cinco preguntas que deberías hacer en la visita</h2>
 <ol>
@@ -299,8 +299,8 @@ export const PERFIL_BODIES: Record<string, string> = {
 
   'clases-para-adultos-en-sitges': `
 <h2>Empezar de adulto en Sitges: el mapa realista</h2>
-<p>Los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a> se concentran en un perfil bastante definido: disciplinas de golpeo y de suelo modernas —<a href="/kickboxing-en-sitges/">kickboxing</a>, <a href="/boxeo-en-sitges/">boxeo</a>, <a href="/mma-en-sitges/">MMA</a>, <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a>—, más <a href="/karate-en-sitges/">karate</a> y <a href="/defensa-personal-en-sitges/">defensa personal</a>. Es una oferta orientada al adulto que quiere entrenar fuerte, más que a la práctica tradicional.</p>
-<p>Si lo que buscas es precisamente lo contrario —una disciplina tradicional, de progresión lenta, tipo judo o taekwondo—, no nos consta oferta verificable en Sitges y tendrás que mirar <a href="/vilanova-i-la-geltru/">Vilanova</a>.</p>
+<p>Los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a> se concentran en un perfil bastante definido: disciplinas de golpeo y de suelo modernas (<a href="/kickboxing-en-sitges/">kickboxing</a>, <a href="/boxeo-en-sitges/">boxeo</a>, <a href="/mma-en-sitges/">MMA</a>, <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a>), más <a href="/karate-en-sitges/">karate</a> y <a href="/defensa-personal-en-sitges/">defensa personal</a>. Es una oferta orientada al adulto que quiere entrenar fuerte, más que a la práctica tradicional.</p>
+<p>Si lo que buscas es precisamente lo contrario (una disciplina tradicional, de progresión lenta, tipo judo o taekwondo), no nos consta oferta verificable en Sitges y tendrás que mirar <a href="/vilanova-i-la-geltru/">Vilanova</a>.</p>
 
 <h2>Los tres miedos del adulto que empieza, y qué hay de cierto</h2>
 <p><strong>"Estoy mayor para esto."</strong> Es el más común y el menos fundado. En cualquier grupo de adultos de la comarca hay gente de 35, 45 y 55 años. Lo que cambia con la edad no es la capacidad de aprender, es el tiempo de recuperación: entrenarás igual, pero necesitarás más descanso entre sesiones y menos tolerancia a la estupidez de intentar seguir el ritmo del chaval de 22 años que tienes al lado.</p>
@@ -311,7 +311,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 <ul>
 <li><strong>Ponerte en forma y descargar estrés:</strong> boxeo o kickboxing. Sesiones intensas, resultados visibles rápido, curva de aprendizaje amable.</li>
 <li><strong>Técnica y progresión a largo plazo, con poco impacto articular:</strong> jiu jitsu brasileño. Es el que más engancha de todos y el que menos depende de la potencia física.</li>
-<li><strong>Autodefensa práctica:</strong> <a href="/defensa-personal-en-sitges/">defensa personal</a>, y si quieres un sistema completo mira también <a href="/krav-maga/">krav maga</a> —aunque no nos consta en el municipio—.</li>
+<li><strong>Autodefensa práctica:</strong> <a href="/defensa-personal-en-sitges/">defensa personal</a>, y si quieres un sistema completo mira también <a href="/krav-maga/">krav maga</a>, aunque no nos consta en el municipio. </li>
 <li><strong>Disciplina, estructura y práctica tradicional:</strong> karate.</li>
 </ul>
 
@@ -336,17 +336,17 @@ export const PERFIL_BODIES: Record<string, string> = {
 <p>Tres semanas es poco tiempo comparado con el año que vas a pasar entrenando, y evita el error caro: pagar doce meses de algo que no te encaja.</p>
 
 <h2>Qué mirar en la clase de prueba siendo principiante</h2>
-<p>No sabrás juzgar la técnica —es normal, acabas de llegar—, pero sí puedes juzgar cuatro cosas que no requieren experiencia: si el entrenador corrige individualmente o solo dirige, si existe un grupo o franja de iniciación real o te meten directamente con los veteranos, si el contacto con gente nueva es progresivo y opcional, y cómo tratan los alumnos veteranos al que acaba de entrar. Esa última señal es la que mejor predice si seguirás ahí dentro de un año.</p>
+<p>No sabrás juzgar la técnica (es normal, acabas de llegar), pero sí puedes juzgar cuatro cosas que no requieren experiencia: si el entrenador corrige individualmente o solo dirige, si existe un grupo o franja de iniciación real o te meten directamente con los veteranos, si el contacto con gente nueva es progresivo y opcional, y cómo tratan los alumnos veteranos al que acaba de entrar. Esa última señal es la que mejor predice si seguirás ahí dentro de un año.</p>
 
 <h2>Combinar disciplinas: solo aquí es fácil</h2>
-<p>Varios de los centros verificados de Vilanova cubren golpeo y suelo bajo el mismo techo, algo poco habitual en el resto de la comarca. Si te tienta entrenar dos cosas —por ejemplo kickboxing dos días y jiu jitsu uno—, pregúntalo en la primera visita y consulta si existe cuota conjunta. Eso sí: espera unos meses antes de hacerlo. Empezar dos disciplinas a la vez desde cero suele acabar en avanzar poco en ambas.</p>
+<p>Varios de los centros verificados de Vilanova cubren golpeo y suelo bajo el mismo techo, algo poco habitual en el resto de la comarca. Si te tienta entrenar dos cosas (por ejemplo kickboxing dos días y jiu jitsu uno), pregúntalo en la primera visita y consulta si existe cuota conjunta. Eso sí: espera unos meses antes de hacerlo. Empezar dos disciplinas a la vez desde cero suele acabar en avanzar poco en ambas.</p>
 <p>Para profundizar, tienes la <a href="/clases-para-adultos/">guía comarcal para adultos</a>, la <a href="/iniciacion/">guía de iniciación</a> y el artículo <a href="/blog/artes-marciales-adultos-principiantes-garraf/">cómo empezar artes marciales siendo adulto</a>. Y si quieres que te orientemos, <a href="/contacto/">escríbenos</a>.</p>
 `,
 
   'clases-para-mujeres-en-sitges': `
 <h2>Qué hay en Sitges y qué implica para ti</h2>
 <p>De los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a>, las disciplinas que más demandan las mujeres que empiezan están todas cubiertas: <a href="/kickboxing-en-sitges/">kickboxing</a> y <a href="/boxeo-en-sitges/">boxeo</a> para forma física, <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a> para técnica pura, y <a href="/defensa-personal-en-sitges/">defensa personal</a> para seguridad práctica.</p>
-<p>Lo que no podemos decirte —y ningún directorio honesto puede— es si en este momento hay grupos exclusivamente femeninos. Es un dato que cambia por temporadas y que depende de que se junte suficiente gente. Es la primera pregunta que deberías hacer si te importa, y merece una respuesta concreta: "sí, los martes y jueves a las 19 h" es una respuesta; "sí, claro, tenemos muchas chicas" no lo es.</p>
+<p>Lo que no podemos decirte (y ningún directorio honesto puede) es si en este momento hay grupos exclusivamente femeninos. Es un dato que cambia por temporadas y que depende de que se junte suficiente gente. Es la primera pregunta que deberías hacer si te importa, y merece una respuesta concreta: "sí, los martes y jueves a las 19 h" es una respuesta; "sí, claro, tenemos muchas chicas" no lo es.</p>
 
 <h2>Grupo mixto o grupo femenino: no hay respuesta única</h2>
 <p>Depende de qué te frene. Si lo que te da pereza es el ambiente de vestuario o sentirte observada mientras aprendes, un grupo femenino elimina esa barrera de golpe y es una razón perfectamente válida. Si lo que buscas es defensa personal aplicable, entrenar tarde o temprano con personas más grandes y más fuertes que tú forma parte del aprendizaje: un programa que nunca te expone a esa diferencia te está dando una falsa sensación de competencia.</p>
@@ -410,7 +410,7 @@ export const PERFIL_BODIES: Record<string, string> = {
 <li><strong>Grado y federación del instructor.</strong> Pregunta el grado y la federación que lo emite. Un cinturón negro reconocido es información verificable, y quien lo tiene lo dice sin problema.</li>
 <li><strong>Quién imparte el grupo infantil.</strong> No siempre es el mismo que da adultos. Pregunta específicamente por esa persona: en infantil, la pedagogía pesa tanto como el grado.</li>
 <li><strong>Separación por edades reales.</strong> Un grupo de 4 a 12 años no funciona. Busca franjas cerradas.</li>
-<li><strong>Ver una clase entera.</strong> No cinco minutos: una clase completa, en la franja real. Fíjate en cómo se corrige a un niño que lo hace mal — ahí se ve todo.</li>
+<li><strong>Ver una clase entera.</strong> No cinco minutos: una clase completa, en la franja real. Fíjate en cómo se corrige a un niño que lo hace mal. Ahí se ve todo.</li>
 <li><strong>Competición voluntaria.</strong> Debe presentarse como opción, nunca como expectativa.</li>
 </ol>
 
@@ -461,11 +461,11 @@ export const PERFIL_BODIES: Record<string, string> = {
 export const MONEY_BODIES: Record<string, string> = {
   'boxeo-en-sant-pere-de-ribes': `
 <h2>Lo primero: en Sant Pere de Ribes no nos consta boxeo</h2>
-<p>En nuestro <a href="/centros/">directorio del Garraf</a>, los dos centros verificados del municipio son de taekwondo. Ningún centro de Sant Pere de Ribes con fuente pública comprobable anuncia boxeo. Puede existir actividad que no deje rastro público —un grupo de temporada, una sección de club—, pero si buscas boxeo con garantías, la respuesta realista es desplazarte.</p>
+<p>En nuestro <a href="/centros/">directorio del Garraf</a>, los dos centros verificados del municipio son de taekwondo. Ningún centro de Sant Pere de Ribes con fuente pública comprobable anuncia boxeo. Puede existir actividad que no deje rastro público (un grupo de temporada, una sección de club), pero si buscas boxeo con garantías, la respuesta realista es desplazarte.</p>
 
 <h2>Sitges o Vilanova: elige por núcleo, no por municipio</h2>
 <p>Aquí Sant Pere de Ribes tiene una particularidad útil. Al ser un municipio de dos núcleos, desde Les Roquetes suele salir mejor tirar hacia <a href="/sitges/">Sitges</a>, y desde Ribes hacia <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>. Ambos están en la horquilla de 10-15 minutos en coche, así que la decisión la marcan dos cosas: dónde vives exactamente y qué horarios encajan con tu tarde.</p>
-<p>En oferta de boxeo, los dos municipios tienen centros verificados. Vilanova reúne más centros en total —siete frente a tres—, lo que se traduce en más franjas horarias donde elegir. Si trabajas a turnos, esa diferencia importa más que los cinco minutos de coche.</p>
+<p>En oferta de boxeo, los dos municipios tienen centros verificados. Vilanova reúne más centros en total, siete frente a tres, lo que se traduce en más franjas horarias donde elegir. Si trabajas a turnos, esa diferencia importa más que los cinco minutos de coche.</p>
 
 <h2>Qué preguntar cuando llames desde fuera del municipio</h2>
 <p>Si vas a desplazarte, hay tres preguntas que conviene resolver por teléfono antes de perder un viaje: si hay grupo de iniciación real o te meten con los veteranos, el horario completo de esa franja (no solo el día que te interesa), y si puedes hacer una clase de prueba. Con esas tres respuestas ya sabes si merece la pena el trayecto.</p>
@@ -474,7 +474,7 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'karate-en-sant-pere-de-ribes': `
 <h2>Qué consta en Sant Pere de Ribes y qué implica</h2>
-<p>En nuestro <a href="/centros/">directorio</a>, los dos centros verificados del municipio son de taekwondo. No nos consta ningún centro de karate en Sant Pere de Ribes con fuente pública comprobable, así que si el karate es tu objetivo —o el de tu hijo— tendrás que mirar hacia <a href="/sitges/">Sitges</a> o <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, donde el karate sí aparece con centros verificados.</p>
+<p>En nuestro <a href="/centros/">directorio</a>, los dos centros verificados del municipio son de taekwondo. No nos consta ningún centro de karate en Sant Pere de Ribes con fuente pública comprobable, así que si el karate es tu objetivo, o el de tu hijo, tendrás que mirar hacia <a href="/sitges/">Sitges</a> o <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, donde el karate sí aparece con centros verificados.</p>
 
 <h2>Antes de descartarlo: taekwondo está aquí mismo</h2>
 <p>Si lo que buscas es una disciplina tradicional para tu hijo, con cinturones, etiqueta y progresión pautada, merece la pena que consideres el <a href="/taekwondo-en-sant-pere-de-ribes/">taekwondo del propio municipio</a> antes de comprometerte a desplazarte dos veces por semana durante todo el curso.</p>
@@ -486,11 +486,11 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'muay-thai-en-sant-pere-de-ribes': `
 <h2>El muay thai es el gran hueco del Garraf</h2>
-<p>Conviene decirlo abiertamente porque es información útil: en nuestro <a href="/centros/">directorio de la comarca</a> no nos consta <strong>ningún</strong> centro —ni en Sant Pere de Ribes ni en el resto del Garraf— que anuncie muay thai con fuente pública verificable. No es una laguna de este municipio: es un hueco de toda la comarca.</p>
+<p>Conviene decirlo abiertamente porque es información útil: en nuestro <a href="/centros/">directorio de la comarca</a> no nos consta <strong>ningún</strong> centro (ni en Sant Pere de Ribes ni en el resto del Garraf) que anuncie muay thai con fuente pública verificable. No es una laguna de este municipio: es un hueco de toda la comarca.</p>
 <p>Eso no significa que no exista. Significa que, si lo hay, no deja rastro público comprobable, y nosotros no publicamos como verificado lo que no podemos verificar. Si conoces un centro que lo imparta, <a href="/contacto/">escríbenos</a> y lo comprobamos.</p>
 
 <h2>Qué hacer mientras tanto: kickboxing es el pariente cercano</h2>
-<p>El <a href="/kickboxing/">kickboxing</a> sí tiene oferta verificada en la comarca, en varios centros de Sitges y Vilanova. Comparte con el muay thai el trabajo de puños y patadas, el formato de clase y buena parte del acondicionamiento. Lo que no incluye son codos, rodillas y clinch —el agarre de pie característico del muay thai—.</p>
+<p>El <a href="/kickboxing/">kickboxing</a> sí tiene oferta verificada en la comarca, en varios centros de Sitges y Vilanova. Comparte con el muay thai el trabajo de puños y patadas, el formato de clase y buena parte del acondicionamiento. Lo que no incluye son codos, rodillas y clinch (el agarre de pie característico del muay thai). </p>
 <p>Para el 80 % de quien busca muay thai por forma física y descarga de estrés, el kickboxing cubre el objetivo perfectamente. Si lo que te atrae es específicamente el clinch y el trabajo de rodillas, entonces sí tendrás que salir de la comarca: Barcelona y el Baix Penedès tienen más oferta.</p>
 
 <h2>Cómo preguntar en un centro de kickboxing</h2>
@@ -531,11 +531,11 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'taekwondo-en-cubelles': `
 <h2>La disciplina que sí tienes en Cubelles</h2>
-<p>El taekwondo es, según nuestro <a href="/centros/">directorio del Garraf</a>, la única disciplina con centro verificado dentro de Cubelles. Para un municipio de este tamaño no es poca cosa: significa que puedes entrenar —o apuntar a tus hijos— sin sumar veinte minutos de coche a cada sesión.</p>
+<p>El taekwondo es, según nuestro <a href="/centros/">directorio del Garraf</a>, la única disciplina con centro verificado dentro de Cubelles. Para un municipio de este tamaño no es poca cosa: significa que puedes entrenar, o apuntar a tus hijos, sin sumar veinte minutos de coche a cada sesión.</p>
 <p>Si tenías otra disciplina en mente pero no una preferencia muy marcada, merece la pena que valores esto con calma. La cercanía es, con diferencia, el factor que mejor predice si alguien sigue entrenando dentro de un año. Un taekwondo a cinco minutos de casa gana casi siempre a un karate excelente a veinte.</p>
 
 <h2>Qué es realmente el taekwondo, sin el tópico de las patadas</h2>
-<p>Sí, es el arte de las piernas: patadas altas, velocidad, flexibilidad. Pero lo que se lleva un niño a casa no son las patadas, sino tres cosas menos vistosas: capacidad de sostener la atención en una tarea repetitiva, tolerancia a la frustración, y un sistema de progreso —los cinturones— que da sensación de avance sin necesidad de ganar a nadie.</p>
+<p>Sí, es el arte de las piernas: patadas altas, velocidad, flexibilidad. Pero lo que se lleva un niño a casa no son las patadas, sino tres cosas menos vistosas: capacidad de sostener la atención en una tarea repetitiva, tolerancia a la frustración, y un sistema de progreso (los cinturones) que da sensación de avance sin necesidad de ganar a nadie.</p>
 <p>Es deporte olímpico desde Seúl 1988 y una de las artes marciales más practicadas por niños en España, lo que tiene una ventaja práctica: hay metodología muy rodada para las edades tempranas.</p>
 
 <h2>Antes de matricularte, dos preguntas concretas</h2>
@@ -553,7 +553,7 @@ export const MONEY_BODIES: Record<string, string> = {
 <p>Cubelles está en el límite del Garraf, y hacia el suroeste tiene Cunit y Calafell a pocos minutos, ya en el Baix Penedès. Nuestro directorio cubre solo los cinco municipios de la comarca, así que esa oferta no está verificada aquí, pero si vives en la zona oeste del municipio puede quedarte igual de cerca. Vale la pena mirar las dos direcciones antes de decidir.</p>
 
 <h2>Qué necesitas para la primera clase (menos de lo que crees)</h2>
-<p>Ropa deportiva, agua y toalla. En la mayoría de gimnasios prestan guantes las primeras sesiones, así que no compres nada hasta haber probado. Cuando decidas continuar, lo primero que conviene comprar son las vendas —protegen las manos y son baratas—; los guantes propios vienen después.</p>
+<p>Ropa deportiva, agua y toalla. En la mayoría de gimnasios prestan guantes las primeras sesiones, así que no compres nada hasta haber probado. Cuando decidas continuar, lo primero que conviene comprar son las vendas, protegen las manos y son baratas; los guantes propios vienen después.</p>
 <p>Y el miedo más común: no, no te van a poner a pegarte con nadie el primer día. En un gimnasio serio las clases de iniciación son técnicas, sobre saco y manoplas, y el sparring llega mucho más tarde, es progresivo y siempre opcional. Si en tu clase de prueba ves lo contrario, cambia de gimnasio.</p>
 `,
 
@@ -562,7 +562,7 @@ export const MONEY_BODIES: Record<string, string> = {
 <p>El único centro de Cubelles verificado en nuestro <a href="/centros/">directorio</a> es de taekwondo, y no nos consta ningún programa específico de defensa personal en el municipio con fuente pública comprobable. La oferta verificada más cercana está en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, a unos diez minutos por la C-31.</p>
 
 <h2>Un arte marcial no es lo mismo que defensa personal (y a veces basta igual)</h2>
-<p>Es una confusión habitual y merece la pena aclararla. Un arte marcial te da control corporal, distancia, capacidad de reaccionar bajo contacto y confianza física: todo eso transfiere a una situación real. Lo que no te da es lo específico de la autodefensa —prevención, gestión verbal, escenarios sin reglas, respuesta ante agarres inesperados—.</p>
+<p>Es una confusión habitual y merece la pena aclararla. Un arte marcial te da control corporal, distancia, capacidad de reaccionar bajo contacto y confianza física: todo eso transfiere a una situación real. Lo que no te da es lo específico de la autodefensa (prevención, gestión verbal, escenarios sin reglas, respuesta ante agarres inesperados). </p>
 <p>En la práctica, para muchas personas entrenar una disciplina de forma continuada aporta más seguridad real que un curso de defensa personal de fin de semana, simplemente porque la repetición durante meses construye respuestas automáticas y el curso puntual no. Si en Cubelles la opción cómoda es el taekwondo del municipio, no es un mal punto de partida.</p>
 
 <h2>Si buscas un programa específico, cómo evaluarlo</h2>
@@ -578,12 +578,12 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'muay-thai-en-sitges': `
 <h2>Antes de buscar: el muay thai no consta en el Garraf</h2>
-<p>Empezamos por lo importante. En nuestro <a href="/centros/">directorio de la comarca</a> no nos consta ningún centro —ni en Sitges ni en ningún otro municipio del Garraf— que anuncie muay thai con fuente pública verificable. Es un hueco de toda la comarca, no una carencia de Sitges.</p>
+<p>Empezamos por lo importante. En nuestro <a href="/centros/">directorio de la comarca</a> no nos consta ningún centro (ni en Sitges ni en ningún otro municipio del Garraf) que anuncie muay thai con fuente pública verificable. Es un hueco de toda la comarca, no una carencia de Sitges.</p>
 <p>Puede existir sin dejar rastro público comprobable, y por eso no afirmamos que no exista: afirmamos que no lo hemos podido verificar, que no es lo mismo. Si conoces un centro que lo imparta, <a href="/contacto/">dínoslo</a> y lo comprobamos.</p>
 
 <h2>Qué sí tienes en Sitges dentro del mismo terreno</h2>
 <p>De los tres centros de Sitges verificados en el directorio, varios anuncian <a href="/kickboxing-en-sitges/">kickboxing</a>, que es el pariente cercano del muay thai: mismo formato de clase, mismo trabajo de puños y patadas, mismo acondicionamiento. Lo que no incluye son codos, rodillas y clinch.</p>
-<p>Para la mayoría de quien busca muay thai por forma física, técnica de golpeo y descarga de estrés, el kickboxing cubre el objetivo. Si lo que te atrae es específicamente el clinch —el agarre de pie con rodillas, que es la firma del muay thai—, ahí sí notarás la diferencia y probablemente tendrás que salir de la comarca.</p>
+<p>Para la mayoría de quien busca muay thai por forma física, técnica de golpeo y descarga de estrés, el kickboxing cubre el objetivo. Si lo que te atrae es específicamente el clinch (el agarre de pie con rodillas, que es la firma del muay thai), ahí sí notarás la diferencia y probablemente tendrás que salir de la comarca.</p>
 
 <h2>Cómo saber qué imparte realmente un gimnasio</h2>
 <p>Las etiquetas se usan con bastante alegría en el mundo del striking, así que pregunta cosas concretas en lugar de fiarte del nombre de la clase: si se trabaja clinch, si se permiten rodillas y codos en el trabajo por parejas, con qué protecciones, y qué trayectoria tiene el instructor en muay thai específicamente. Con esas cuatro respuestas sabes dónde estás, se llame como se llame la actividad.</p>
@@ -613,7 +613,7 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'krav-maga-en-sitges': `
 <h2>El krav maga no consta en el Garraf, y conviene saberlo</h2>
-<p>Es una de las disciplinas más buscadas de la comarca y una de las que menos existe en ella. En nuestro <a href="/centros/">directorio</a> no nos consta ningún centro —ni en Sitges ni en el resto del Garraf— que imparta krav maga con fuente pública verificable.</p>
+<p>Es una de las disciplinas más buscadas de la comarca y una de las que menos existe en ella. En nuestro <a href="/centros/">directorio</a> no nos consta ningún centro (ni en Sitges ni en el resto del Garraf) que imparta krav maga con fuente pública verificable.</p>
 <p>Esto tiene una consecuencia práctica importante: si te encuentras una oferta de krav maga en la zona, verifícala con más cuidado del habitual. Es un terreno donde la etiqueta se usa como reclamo comercial con bastante frecuencia.</p>
 
 <h2>Qué es realmente el krav maga</h2>
@@ -628,7 +628,7 @@ export const MONEY_BODIES: Record<string, string> = {
 </ol>
 
 <h2>Qué hacer mientras tanto en Sitges</h2>
-<p>De los tres centros verificados del municipio, varios anuncian <a href="/defensa-personal-en-sitges/">defensa personal</a>, que persigue el mismo objetivo con un enfoque menos sistematizado pero perfectamente válido. Y si tu prioridad es la eficacia bajo presión con alguien más grande que tú, el <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a> —que sí tiene centros verificados en Sitges— entrena exactamente eso todos los días, aunque no se venda como autodefensa.</p>
+<p>De los tres centros verificados del municipio, varios anuncian <a href="/defensa-personal-en-sitges/">defensa personal</a>, que persigue el mismo objetivo con un enfoque menos sistematizado pero perfectamente válido. Y si tu prioridad es la eficacia bajo presión con alguien más grande que tú, el <a href="/jiu-jitsu-brasileno-en-sitges/">jiu jitsu brasileño</a>, que sí tiene centros verificados en Sitges, entrena exactamente eso todos los días, aunque no se venda como autodefensa.</p>
 `,
 
   'krav-maga-en-vilanova-i-la-geltru': `
@@ -654,7 +654,7 @@ export const MONEY_BODIES: Record<string, string> = {
 
   'defensa-personal-femenina-en-sitges': `
 <h2>Por qué esta guía existe aparte de la general</h2>
-<p>No porque las mujeres necesiten técnicas distintas —la base es la misma—, sino porque los escenarios que más preocupan son otros y porque hay barreras de entrada que un hombre no se plantea: si habrá grupo femenino, si te sentirás observada aprendiendo, si te van a tocar sin avisar para corregirte. Todo eso condiciona qué centro elegir, y por eso merece una guía propia. La versión sin enfoque de género está en <a href="/defensa-personal-en-sitges/">defensa personal en Sitges</a>.</p>
+<p>No porque las mujeres necesiten técnicas distintas (la base es la misma), sino porque los escenarios que más preocupan son otros y porque hay barreras de entrada que un hombre no se plantea: si habrá grupo femenino, si te sentirás observada aprendiendo, si te van a tocar sin avisar para corregirte. Todo eso condiciona qué centro elegir, y por eso merece una guía propia. La versión sin enfoque de género está en <a href="/defensa-personal-en-sitges/">defensa personal en Sitges</a>.</p>
 
 <h2>Las cuatro capas de la autodefensa, por orden de utilidad real</h2>
 <ol>
@@ -666,12 +666,12 @@ export const MONEY_BODIES: Record<string, string> = {
 <p>Un programa que dedica todo el tiempo a la capa cuatro y ninguno a la uno está mal ordenado, por espectacular que resulte.</p>
 
 <h2>Qué preguntar en Sitges concretamente</h2>
-<p>De los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a>, varios anuncian defensa personal. Lo que ninguna web te va a decir —y cambia por temporadas— es si ahora mismo hay grupo exclusivamente femenino. Pregúntalo pidiendo día y hora concretos: "los martes y jueves a las 19 h" es una respuesta; "sí, tenemos muchas chicas" no lo es.</p>
+<p>De los tres centros de Sitges verificados en nuestro <a href="/centros/">directorio</a>, varios anuncian defensa personal. Lo que ninguna web te va a decir (y cambia por temporadas) es si ahora mismo hay grupo exclusivamente femenino. Pregúntalo pidiendo día y hora concretos: "los martes y jueves a las 19 h" es una respuesta; "sí, tenemos muchas chicas" no lo es.</p>
 <p>Si no hay grupo femenino, pregunta en qué franja horaria entrenan más mujeres. Un grupo mixto con ocho mujeres a las 19 h es una experiencia muy distinta de uno con una sola a las 21:30.</p>
 
 <h2>Señales de un centro que te va a tratar bien</h2>
 <p>Se detectan en una sola clase de prueba y no requieren saber nada de artes marciales: el instructor avisa antes de corregir con contacto, el trabajo por parejas sube de intensidad de forma graduada y se puede parar en cualquier momento, nadie comenta tu forma física, y hay más de una mujer entrenando de forma habitual.</p>
-<p>Para ampliar, tienes <a href="/clases-para-mujeres-en-sitges/">artes marciales para mujeres en Sitges</a> —si además de autodefensa te interesa la forma física— y el artículo <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal para mujeres</a>.</p>
+<p>Para ampliar, tienes <a href="/clases-para-mujeres-en-sitges/">artes marciales para mujeres en Sitges</a> (si además de autodefensa te interesa la forma física) y el artículo <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal para mujeres</a>.</p>
 `,
 
   'defensa-personal-femenina-en-vilanova': `
@@ -708,7 +708,7 @@ export const MONEY_FAQS: Record<string, { q: string; a: string }[]> = {
     { q: '¿Es muy distinto el taekwondo del municipio para un niño?', a: 'Menos de lo que parece: ambos son artes marciales de golpeo con cinturones, formas y fuerte carga de disciplina. El karate equilibra brazos y piernas; el taekwondo carga en piernas, velocidad y flexibilidad. A los 6 años pesa mucho más el monitor y el horario.' },
   ],
   'muay-thai-en-sant-pere-de-ribes': [
-    { q: '¿Hay muay thai en el Garraf?', a: 'A fecha de la última verificación, no nos consta ningún centro de la comarca —tampoco en Sant Pere de Ribes— que anuncie muay thai con fuente pública comprobable. Es un hueco de todo el Garraf, no solo de este municipio.' },
+    { q: '¿Hay muay thai en el Garraf?', a: 'A fecha de la última verificación, no nos consta ningún centro de la comarca (tampoco en Sant Pere de Ribes) que anuncie muay thai con fuente pública comprobable. Es un hueco de todo el Garraf, no solo de este municipio.' },
     { q: '¿El kickboxing me sirve si buscaba muay thai?', a: 'Para la mayoría de objetivos, sí: comparten puños, patadas, formato de clase y acondicionamiento. Lo que no incluye son codos, rodillas y clinch. Si te interesa específicamente eso, tendrás que salir de la comarca.' },
   ],
   'taekwondo-en-sant-pere-de-ribes': [
@@ -728,7 +728,7 @@ export const MONEY_FAQS: Record<string, { q: string; a: string }[]> = {
     { q: '¿Qué necesito comprar para empezar?', a: 'Nada al principio. Ropa deportiva, agua y toalla; en la mayoría de gimnasios prestan guantes las primeras sesiones. Cuando decidas continuar, lo primero son las vendas; los guantes propios vienen después.' },
   ],
   'muay-thai-en-sitges': [
-    { q: '¿Hay muay thai en Sitges?', a: 'No nos consta ningún centro de Sitges —ni del resto del Garraf— que lo anuncie con fuente pública verificable. Es un hueco de toda la comarca. Lo más cercano disponible en el municipio es el kickboxing.' },
+    { q: '¿Hay muay thai en Sitges?', a: 'No nos consta ningún centro de Sitges (ni del resto del Garraf) que lo anuncie con fuente pública verificable. Es un hueco de toda la comarca. Lo más cercano disponible en el municipio es el kickboxing.' },
     { q: '¿Cómo sé si una clase es muay thai o kickboxing en realidad?', a: 'Pregunta si se trabaja clinch, si se permiten rodillas y codos en el trabajo por parejas y con qué protecciones, y qué trayectoria tiene el instructor en muay thai concretamente. Las etiquetas de las clases dicen poco.' },
   ],
   'muay-thai-en-vilanova-i-la-geltru': [
@@ -745,7 +745,7 @@ export const MONEY_FAQS: Record<string, { q: string; a: string }[]> = {
   ],
   'defensa-personal-en-cubelles': [
     { q: '¿Hay defensa personal en Cubelles?', a: 'No nos consta ningún programa específico en el municipio con fuente pública verificable. El único centro verificado es de taekwondo. La oferta más cercana está en Vilanova i la Geltrú, a unos diez minutos por la C-31.' },
-    { q: '¿Un arte marcial me sirve como defensa personal?', a: 'Parcialmente, y a veces basta: aporta control corporal, distancia, reacción bajo contacto y confianza. Lo que no cubre es lo específico —prevención, gestión verbal, escenarios sin reglas—. Entrenar de forma continuada suele dar más seguridad real que un curso puntual.' },
+    { q: '¿Un arte marcial me sirve como defensa personal?', a: 'Parcialmente, y a veces basta: aporta control corporal, distancia, reacción bajo contacto y confianza. Lo que no cubre es lo específico (prevención, gestión verbal, escenarios sin reglas). Entrenar de forma continuada suele dar más seguridad real que un curso puntual.' },
   ],
 };
 

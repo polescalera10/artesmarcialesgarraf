@@ -66,7 +66,7 @@ export const DISCIPLINES: Discipline[] = [
       'Protecciones (guantillas, bucal) solo al iniciar kumite, más adelante',
     ],
     faq: [
-      { q: '¿Desde qué edad pueden empezar karate los niños?', a: 'Desde los 4 años. Las escuelas suelen organizar grupos por edades —prebenjamines (4-6 años), benjamines (7-9), alevines (10-12) y juveniles (13-15)— con metodología adaptada a cada franja.' },
+      { q: '¿Desde qué edad pueden empezar karate los niños?', a: 'Desde los 4 años. Las escuelas suelen organizar grupos por edades (prebenjamines (4-6 años), benjamines (7-9), alevines (10-12) y juveniles (13-15)) con metodología adaptada a cada franja.' },
       { q: '¿Cuánto tiempo se tarda en obtener el cinturón negro?', a: 'Depende del alumno, pero entre 5 y 8 años de entrenamiento regular es la media. El camino hasta el negro pasa por blanco, amarillo, naranja, verde, azul, marrón y negro.' },
       { q: '¿El karate sirve para la autodefensa real?', a: 'Sí. Las técnicas de karate son directamente aplicables en situaciones reales. Además, la conciencia situacional que desarrollas con el entrenamiento es igualmente valiosa.' },
       { q: '¿Cuántas veces a la semana se entrena karate?', a: 'Para niños, dos días semanales es el estándar. Para adultos que quieren progresar rápido, tres sesiones semanales.' },
@@ -269,7 +269,7 @@ export const DISCIPLINES: Discipline[] = [
     ],
     faq: [
       { q: '¿Cuánto tiempo se tarda en aprender defensa personal básica?', a: 'Con un curso intensivo de 8 horas tienes las técnicas fundamentales. Con un mes de clases regulares, las tienes interiorizadas. La defensa personal no requiere años de práctica para ser funcional.' },
-      { q: '¿Es diferente la defensa personal para mujeres?', a: 'Los buenos programas femeninos abordan las situaciones de riesgo más comunes para mujeres —agresiones por detrás, agarres, situaciones de acoso— con un enfoque distinto al genérico. Si esto es lo que buscas, pregunta específicamente por ello al elegir centro.' },
+      { q: '¿Es diferente la defensa personal para mujeres?', a: 'Los buenos programas femeninos abordan las situaciones de riesgo más comunes para mujeres (agresiones por detrás, agarres, situaciones de acoso) con un enfoque distinto al genérico. Si esto es lo que buscas, pregunta específicamente por ello al elegir centro.' },
       { q: '¿Necesito condición física para aprender defensa personal?', a: 'No. La defensa personal efectiva se basa en técnica y posicionamiento, no en fuerza. Una persona de 55 kg puede neutralizar a alguien de 100 kg con la técnica correcta.' },
       { q: '¿En qué artes marciales se basa la buena defensa personal?', a: 'Los programas serios integran técnicas de boxeo, BJJ, judo y krav maga, seleccionadas por efectividad demostrada y no por tradición. Desconfía de sistemas que prometen resultados sin contacto ni presión progresiva.' },
       { q: '¿Hay clases solo de defensa personal o hay que hacer un arte marcial completo?', a: 'Existen cursos específicos de defensa personal que no requieren practicar otro arte marcial. También puedes combinarla con una disciplina de base como boxeo o BJJ para consolidar lo aprendido.' },
