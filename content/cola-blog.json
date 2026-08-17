@@ -16,7 +16,11 @@
     "blog/artes-marciales-adultos-principiantes-garraf",
     "blog/karate-vs-taekwondo-ninos-garraf",
     "blog/a-que-edad-empezar-artes-marciales",
-    "blog/como-elegir-centro-artes-marciales-garraf"
+    "blog/como-elegir-centro-artes-marciales-garraf",
+    "blog/karate-o-judo-para-ninos",
+    "blog/beneficios-artes-marciales-ninos",
+    "blog/artes-marciales-o-futbol-extraescolar",
+    "blog/extraescolar-artes-marciales-vuelta-al-cole"
   ],
   "cola": [
     {
@@ -140,8 +144,8 @@
         "/blog/karate-vs-taekwondo-ninos-garraf/",
         "/clases-para-ninos/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-17",
       "estacionalidad": "septiembre"
     },
     {
@@ -221,8 +225,8 @@
         "/blog/mejor-arte-marcial-para-ninos-garraf/",
         "/blog/a-que-edad-empezar-artes-marciales/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-17",
       "estacionalidad": "septiembre"
     },
     {
@@ -361,8 +365,8 @@
         "/clases-para-ninos/",
         "/blog/mejor-arte-marcial-para-ninos-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-17",
       "estacionalidad": "septiembre"
     },
     {
@@ -423,8 +427,8 @@
         "/sitges/",
         "/vilanova-i-la-geltru/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-17",
       "estacionalidad": "septiembre"
     },
     {

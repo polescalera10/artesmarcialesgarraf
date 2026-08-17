@@ -583,6 +583,58 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/karate-o-judo-para-ninos',
+    type: 'blog',
+    meta: {
+      title: 'Karate o Judo para Niños | Comparativa para Padres',
+      description: 'Karate o judo para tu hijo: cuánto contacto hay en cada uno, cómo es la clase, qué carácter encaja y qué mirar antes de apuntarle en el Garraf.',
+    },
+    h1: 'Karate o Judo para Niños: la Comparativa que Falta',
+    intro: 'Golpeo controlado a distancia contra agarre y contacto continuo. La diferencia técnica se cuenta en diez segundos, pero lo que decide a los seis o siete años es cómo está montada la clase y qué tipo de niño sale contento de ella. Comparamos las dos entradas infantiles más habituales sin quedarnos en el folleto.',
+    body: BLOG_BODIES['blog/karate-o-judo-para-ninos'],
+    fecha: '2026-08-17',
+    phase: 2,
+  },
+  {
+    slug: 'blog/beneficios-artes-marciales-ninos',
+    type: 'blog',
+    meta: {
+      title: 'Beneficios Reales de las Artes Marciales para Niños',
+      description: 'Qué aportan de verdad las artes marciales a un niño y qué es marketing de escuela: coordinación, turnos, frustración y lo que no hay que esperar.',
+    },
+    h1: 'Beneficios Reales de las Artes Marciales para Niños',
+    intro: 'Disciplina, valores, respeto, seguridad en uno mismo: la lista de siempre no ayuda a decidir nada. Aquí separamos lo que aporta el formato de una clase infantil, que es concreto y se ve en unos meses, de lo que se promete y depende del niño, de la familia y del grupo que le toque.',
+    body: BLOG_BODIES['blog/beneficios-artes-marciales-ninos'],
+    fecha: '2026-08-17',
+    phase: 2,
+  },
+  {
+    slug: 'blog/artes-marciales-o-futbol-extraescolar',
+    type: 'blog',
+    meta: {
+      title: 'Artes Marciales o Fútbol: Qué Extraescolar Elegir',
+      description: 'Deporte de equipo o deporte individual en grupo: qué gana un niño en cada uno, cómo pesa el calendario familiar y qué perfil encaja en cada formato.',
+    },
+    h1: 'Artes Marciales o Fútbol: Elegir Extraescolar sin Arrepentirse',
+    intro: 'La comparación útil no es fútbol contra artes marciales por sus virtudes, sino deporte de equipo contra deporte individual practicado en grupo. Cambia lo que el niño se lleva, cambia el compromiso de la familia y cambia qué pasa cuando no destaca. Aquí está la diferencia, con el contexto de la comarca.',
+    body: BLOG_BODIES['blog/artes-marciales-o-futbol-extraescolar'],
+    fecha: '2026-08-17',
+    phase: 2,
+  },
+  {
+    slug: 'blog/extraescolar-artes-marciales-vuelta-al-cole',
+    type: 'blog',
+    meta: {
+      title: 'Vuelta al Cole: Extraescolar de Artes Marciales',
+      description: 'Cómo elegir extraescolar de artes marciales en septiembre: cuadrar horarios con el curso, qué preguntar en la primera llamada y qué mirar al probar.',
+    },
+    h1: 'Vuelta al Cole: Cómo Elegir Extraescolar de Artes Marciales',
+    intro: 'Los grupos infantiles se organizan a la vez que arranca el curso, y lo que se decide en esas dos semanas condiciona el año entero: la franja horaria, los compañeros y el instructor. Esta guía ordena la decisión, con las preguntas que conviene hacer por teléfono antes de pagar nada.',
+    body: BLOG_BODIES['blog/extraescolar-artes-marciales-vuelta-al-cole'],
+    fecha: '2026-08-17',
+    phase: 2,
+  },
+  {
     slug: 'blog/a-que-edad-empezar-artes-marciales',
     type: 'blog',
     meta: {

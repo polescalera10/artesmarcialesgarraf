@@ -252,6 +252,10 @@ const BLOG = [
   ['karate-vs-taekwondo-ninos-garraf', 'Karate o taekwondo', 'balanza', 'La comparativa para padres, sin marketing de escuela'],
   ['a-que-edad-empezar-artes-marciales', 'A qué edad empezar', 'personas', 'De los 4 a los 60: qué aporta cada tramo de edad'],
   ['como-elegir-centro-artes-marciales-garraf', 'Cómo elegir centro', 'check-circulo', 'Las ocho comprobaciones antes de apuntarte'],
+  ['karate-o-judo-para-ninos', 'Karate o judo', 'balanza', 'Golpeo o agarre a los siete años: qué cambia'],
+  ['beneficios-artes-marciales-ninos', 'Beneficios reales', 'personas', 'Lo que aporta a un niño y lo que es marketing'],
+  ['artes-marciales-o-futbol-extraescolar', 'Artes marciales o fútbol', 'balanza', 'Qué extraescolar encaja con cada niño'],
+  ['extraescolar-artes-marciales-vuelta-al-cole', 'Vuelta al cole', 'brujula', 'Cuadrar la extraescolar con el curso escolar'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

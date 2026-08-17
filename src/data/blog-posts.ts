@@ -9,6 +9,186 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/karate-o-judo-para-ninos': `
+<h2>La respuesta en una frase, y por qué no decide nada</h2>
+<p>El karate es golpeo a distancia, controlado y sin contacto real en las etapas infantiles. El judo es agarre: coger al otro, desequilibrarlo, proyectarlo y seguir trabajando en el suelo. La diferencia técnica se explica en diez segundos y no le resuelve nada a un padre que tiene que decidir en septiembre dónde apunta a su hijo de siete años.</p>
+<p>Lo que separa de verdad a las dos disciplinas a esa edad es otra cosa: cuánto contacto físico hay, cómo está montada la clase y qué tipo de niño sale contento de ella un martes cualquiera de noviembre.</p>
+
+<h2>Qué hace un niño en una clase de karate</h2>
+<p>La sesión infantil de <a href="/karate/">karate</a> tiene una estructura muy pautada que se repite semana tras semana: saludo, calentamiento, desplazamientos en línea, técnica de brazo y de pierna al aire, algo de kata y juegos de reacción. El niño trabaja casi todo el rato en su propio espacio, mirando al frente, con el instructor corrigiendo posiciones alumno por alumno.</p>
+<p>Eso tiene una consecuencia práctica que a muchas familias les importa más de lo que creen: <strong>un niño puede pasar sus primeros meses de karate sin tocar a nadie</strong>. Para un crío al que le incomoda el contacto físico, o que llega con vergüenza a un sitio nuevo, la entrada es mucho más amable de lo que sugiere la palabra "golpeo".</p>
+<p>La contrapartida existe. La repetición que construye la base del karate puede apagar a un niño de siete años con mucha energía, sobre todo si el grupo es grande y el instructor tira de formación cerrada todo el rato.</p>
+
+<h2>Qué hace un niño en una clase de judo</h2>
+<p>El <a href="/judo/">judo</a> funciona al revés en casi todo. Se trabaja por parejas desde el primer día y el contacto es continuo: agarrar la solapa, romper el equilibrio del otro, caer, levantarse, volver a empezar. Buena parte de una sesión infantil se parece más a un juego de lucha con reglas estrictas que a una clase en el sentido escolar.</p>
+<p>La primera habilidad que se enseña, y la única que el niño usará seguro fuera del tatami, es caer bien. El ukemi se practica desde el minuto uno y se practica siempre, en todos los niveles. Un niño con dos temporadas de judo se cae en el patio y se levanta sin darle importancia.</p>
+<p>Lo que no se suele contar: el judo cansa bastante más, y a algunos niños el forcejeo cuerpo a cuerpo les resulta incómodo las primeras semanas. Casi siempre se pasa rápido, pero conviene saberlo antes de pagar un trimestre.</p>
+
+<h2>El contacto, que es lo que de verdad preocupa</h2>
+<p>Aquí hay un malentendido que conviene deshacer. Muchos padres dan por hecho que el karate, por ser una disciplina de golpeo, es "la de pegarse", y que el judo, al no tener golpes, es la opción suave. En infantil ocurre lo contrario: en karate el contacto es mínimo y llega tarde, con protecciones y a intensidad muy baja; en judo hay contacto físico intenso desde el primer día, aunque nadie golpee a nadie.</p>
+<p>Ninguna de las dos es peligrosa en un grupo bien llevado. El riesgo no lo pone la disciplina, lo pone un club que mezcla a un niño de cinco con uno de once, o un instructor que deja a los críos competir a su aire mientras mira el móvil. Eso se ve en veinte minutos de clase de prueba, y está desarrollado en nuestra <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Qué carácter encaja mejor en cada una</h2>
+<ul>
+<li><strong>Niño disperso, que necesita un marco claro.</strong> Karate. La clase es predecible, los objetivos son cortos y la corrección es individual, que es justo lo que sostiene la atención de un niño que se va por las ramas.</li>
+<li><strong>Niño con energía que no sabe dónde meter.</strong> Judo. El gasto físico es mayor y el formato de turnos por parejas le obliga a parar y escuchar entre serie y serie.</li>
+<li><strong>Niño al que le incomoda que le toquen.</strong> Karate para entrar sin sobresaltos. Aunque aquí conviene matizar: si la incomodidad es corporal y no social, el judo suele ser justo lo que la disuelve, porque el contacto es constante, cooperativo y sin nada que ganar.</li>
+<li><strong>Niño al que le va el cuerpo a cuerpo y la fuerza bruta.</strong> Judo, sin dudarlo. Es el sitio donde esa tendencia se convierte en técnica en lugar de en problemas en el patio.</li>
+</ul>
+<p>Son tendencias, no diagnósticos. Cualquier instructor con años de grupos infantiles te dirá que se ha equivocado más de una vez prediciendo a qué niño le iba a gustar qué.</p>
+
+<h2>Cinturones, exámenes y competición</h2>
+<p>Las dos disciplinas usan cinturones de colores y en las dos el ritmo sano es de uno o dos exámenes al año. Si en un centro los niños cambian de color cada trimestre, eso no es progresión, es fidelización, y la motivación que construye se cae sola en cuanto el niño se da cuenta. El cinturón negro infantil no existe como tal en ninguna de las dos: lo que hay son grados junior que se convalidan al llegar a la edad mínima.</p>
+<p>En competición sí hay una diferencia práctica. El judo tiene un circuito federado muy rodado por edades y pesos, y en muchos clubs es una parte natural de la temporada, siempre voluntaria. El karate deportivo separa kata y kumite, y hay escuelas con enfoque más tradicional donde la competición es casi anecdótica. Si tu hijo no quiere competir nunca, pregúntalo directamente: hay clubs donde no competir es lo normal y otros donde el que no compite se queda fuera del grupo bueno.</p>
+
+<h2>Material y logística: prácticamente iguales</h2>
+<p>La compra inicial es una en los dos casos, el uniforme (karategi o judogi), y el propio club suele indicarte dónde conseguirlo. El judogi es más grueso y más caro porque tiene que aguantar tirones, y a un niño en pleno estirón le durará una o dos temporadas. Las protecciones del karate llegan más tarde, cuando se introduce el combate controlado. Ninguna de las dos exige comprar nada el primer día, y un centro que te presione para hacerlo te está enseñando cómo trabaja.</p>
+
+<h2>Lo que pesa más que la elección</h2>
+<p>Después de todo lo anterior, la conclusión incómoda: <strong>elegir bien el grupo importa más que elegir bien la disciplina</strong>. Un buen instructor de judo con un grupo de la edad de tu hijo le aportará más que un mal instructor de karate, y al revés. Y a los seis o siete años ninguna puerta se cierra: la base de cualquiera de las dos (cultura de tatami, hábito de entrenar, coordinación) se transfiere sin problema a la otra o a cualquier cosa que le apetezca probar de adolescente.</p>
+<p>Si dudas entre las dos disciplinas de golpeo en lugar de entre golpeo y agarre, tenemos la comparativa de <a href="/blog/karate-vs-taekwondo-ninos-garraf/">karate o taekwondo para niños</a>. Y si quieres el mapa completo con las tres opciones infantiles clásicas, está en la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a>.</p>
+
+<h2>Karate y judo en el Garraf</h2>
+<p>En la comarca hay clubs con sección infantil de las dos disciplinas, concentrados sobre todo en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>. Desde Sant Pere de Ribes, Cubelles o Canyelles lo habitual es desplazarse a uno de esos dos núcleos: son 10 o 15 minutos en coche, y la R2 Sud conecta bien la costa. Puedes ver qué centros anuncian cada disciplina en nuestro <a href="/centros/">directorio de centros del Garraf</a>, con la fuente pública y la fecha de verificación de cada ficha, y el contexto por municipio en la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>.</p>
+<p>¿Sigues entre las dos? <a href="/contacto/">Escríbenos</a> con la edad de tu hijo, cómo es y desde qué municipio buscáis, y te damos una recomendación sin coste.</p>
+`,
+
+  'blog/beneficios-artes-marciales-ninos': `
+<h2>Lo que se nota de verdad, y en cuánto tiempo</h2>
+<p>Las webs de escuela llevan veinte años prometiendo lo mismo: disciplina, valores, respeto, seguridad en uno mismo. Nada de eso es mentira, pero está contado de una forma que no le sirve a nadie para decidir. Un padre no necesita una lista de virtudes, necesita saber qué va a ver en su hijo dentro de seis meses y qué no.</p>
+<p>Hay una parte que el formato de una clase infantil aporta casi siempre, y es bastante concreta. Y hay otra que se vende como beneficio pero depende del niño, de lo que se apoye en casa y de la suerte que se tenga con el grupo. Conviene no confundirlas antes de pagar el primer trimestre.</p>
+
+<h2>Coordinación y control del cuerpo</h2>
+<p>Es el beneficio menos discutible y el que antes se ve. Una clase infantil de <a href="/karate/">karate</a>, <a href="/judo/">judo</a> o <a href="/taekwondo/">taekwondo</a> es, a efectos prácticos, una hora semanal de trabajo de equilibrio, lateralidad, orientación en el espacio y control del propio peso, envuelta en algo que al niño le apetece hacer.</p>
+<p>Hacia el tercer mes la mayoría de familias nota lo mismo: el niño se mueve con más soltura, se cae menos y cuando se cae sabe qué hacer. En judo eso es explícito, porque aprender a caer es literalmente la primera lección. En las disciplinas de golpeo aparece por otra vía, la de tener que colocar los pies antes de mover las manos.</p>
+
+<h2>Aprender a esperar el turno</h2>
+<p>Aquí está, en nuestra opinión, el aporte más subestimado. La clase de artes marciales funciona por turnos: se trabaja, se para, se escucha una corrección, se vuelve a trabajar. Un niño de seis años pasa la hora alternando actividad intensa y espera atenta, con una norma explícita y un adulto que la sostiene.</p>
+<p>Eso no convierte a nadie en un monje, pero es un entrenamiento de autorregulación bastante fino y muy difícil de conseguir en otros formatos. En un deporte de equipo el niño puede pasarse media hora en movimiento sin que nadie le pida que se detenga y escuche.</p>
+
+<h2>Tolerancia a la frustración, con condiciones</h2>
+<p>El sistema de cinturones hace algo que a esa edad no es fácil: pone un objetivo a medio plazo que no se consigue por asistir, sino por hacerlo bien delante de alguien que evalúa. Un niño que suspende un examen de grado y lo vuelve a intentar tres meses después ha aprendido algo que no se enseña con palabras.</p>
+<p>La condición es que el club se lo tome en serio. En un centro donde el cinturón cae cada trimestre para que nadie se dé de baja, el mecanismo se invierte: el niño aprende que basta con estar apuntado. Si ves progresión de color cada pocos meses, no estás viendo exigencia, estás viendo política comercial.</p>
+
+<h2>La palabra "disciplina" y lo que suele esconder</h2>
+<p>Muchas familias llegan con esta idea: apunto al niño a artes marciales para que aprenda disciplina. Conviene aclarar qué significa eso realmente. Lo que el niño aprende es a comportarse dentro de un marco muy concreto, el del tatami, donde las normas son claras, inmediatas y las aplica siempre la misma persona.</p>
+<p>Que eso se traslade a la mesa de la cena o a los deberes es otra historia. A veces pasa, sobre todo cuando en casa se apoya lo mismo. Pero <strong>una clase semanal no reordena la conducta de un niño por sí sola</strong>, y cualquier centro que lo prometa te está vendiendo algo que no puede entregar. Si el problema de fondo es de conducta o de aprendizaje, el sitio donde se aborda es la consulta del profesional que corresponda, no el dojo.</p>
+
+<h2>Confianza: sí, pero no la que anuncian</h2>
+<p>Las artes marciales dan un tipo de confianza muy específico y bastante valioso: la que viene de saber que tu cuerpo responde, que sabes caer, que no te da pánico el contacto físico y que has hecho delante de gente cosas que al principio no te salían.</p>
+<p>Lo que no dan es inmunidad frente al acoso escolar. Es el argumento comercial más repetido y el más frágil. Un niño con dos años de judo no va a resolver una situación de acoso con una proyección, y plantearlo así puede meterle en un lío mayor. Lo que sí cambia, y no es poco, es cómo se planta y cómo se le ve desde fuera. Si hay una situación de acoso, se aborda con el colegio y con la familia; el club es un apoyo, no la solución.</p>
+
+<h2>Lo que no hay que esperar</h2>
+<ul>
+<li><strong>Un cambio visible en el primer mes.</strong> Las primeras semanas el éxito consiste en que el niño quiera volver. Nada más.</li>
+<li><strong>Que canalice a un niño muy movido en un trimestre.</strong> Ayuda, y bastante, pero el efecto se mide en temporadas, no en semanas.</li>
+<li><strong>Que le guste desde el primer día.</strong> Es habitual que el primer mes sea raro, sobre todo si es el más nuevo del grupo.</li>
+<li><strong>Beneficios terapéuticos.</strong> La actividad física estructurada le viene bien a casi cualquier niño, pero eso no la convierte en tratamiento de nada. Ante cualquier duda de salud, del tipo que sea, el criterio lo marca el profesional sanitario.</li>
+</ul>
+
+<h2>Cómo saber si le está aportando algo</h2>
+<p>Nuestra recomendación es dejar de mirar los cinturones y mirar cuatro señales, que son mucho más informativas:</p>
+<ol>
+<li><strong>Cuenta cosas de la clase en el coche.</strong> Aunque sea una tontería. El niño que no cuenta nada durante meses no está enganchado.</li>
+<li><strong>Se sabe los nombres de sus compañeros.</strong> El grupo es la mitad del asunto a esta edad.</li>
+<li><strong>Acepta que le corrijan.</strong> Que le digan que lo ha hecho mal y no se derrumbe es exactamente el objetivo.</li>
+<li><strong>Se queja del cansancio pero quiere ir.</strong> Esa combinación es la buena.</li>
+</ol>
+<p>Si a los tres meses no aparece ninguna de las cuatro, habla con el instructor antes de tomar ninguna decisión. Muchas veces no es la disciplina, es que el niño está en el grupo equivocado, y eso tiene arreglo con un cambio de horario.</p>
+
+<h2>Empezar en el Garraf</h2>
+<p>Si todavía no tienes claro qué disciplina encaja, la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a> compara las tres opciones infantiles clásicas, y en <a href="/blog/a-que-edad-empezar-artes-marciales/">a qué edad empezar</a> están los tramos de edad uno por uno. Para ver qué centros de la comarca anuncian grupo infantil, con la fuente pública de cada dato, tienes el <a href="/centros/">directorio de centros del Garraf</a> y la guía general de <a href="/clases-para-ninos/">artes marciales para niños</a>.</p>
+<p>¿Quieres una orientación para tu caso? <a href="/contacto/">Cuéntanos</a> la edad de tu hijo, cómo es y en qué municipio estáis, y te respondemos sin coste.</p>
+`,
+
+  'blog/artes-marciales-o-futbol-extraescolar': `
+<h2>La pregunta que hay detrás casi nunca es la literal</h2>
+<p>Casi nadie que se plantea esto quiere saber qué deporte es mejor. Lo que quiere saber es otra cosa: si su hijo va a encajar, si va a durar más de un trimestre y si la familia va a poder sostener el compromiso semanal sin que la logística se coma los martes y los jueves.</p>
+<p>Así que la comparación útil no es fútbol contra artes marciales por sus virtudes. Es deporte de equipo contra deporte individual practicado en grupo, que es una diferencia de formato con consecuencias muy concretas para un niño de seis a diez años.</p>
+
+<h2>Lo que da el fútbol y el tatami no da</h2>
+<p>El fútbol tiene dos cosas difíciles de replicar. La primera es la pertenencia: un equipo con nombre, un grupo que se ve varias veces por semana y un rival común. Para muchos niños ese sentimiento de "los míos" es la mitad de la motivación, y no aparece igual en una clase donde cada uno avanza a su ritmo.</p>
+<p>La segunda es social y conviene decirla sin rodeos: en la mayoría de patios se habla de fútbol. Un niño que juega tiene un tema de conversación garantizado con medio colegio. No es un argumento deportivo, pero pesa en la vida de un crío de ocho años más que cualquier consideración pedagógica.</p>
+
+<h2>Lo que da el tatami y el campo no da</h2>
+<p>La diferencia que más cambia la experiencia de un niño concreto es esta: <strong>en artes marciales no hay banquillo</strong>. Todos los alumnos hacen todos los ejercicios, toda la hora, cada semana. El niño que no destaca no se queda mirando desde la banda, y para un crío poco dotado o simplemente más lento madurando, eso es la diferencia entre seguir haciendo deporte o dejarlo a los diez años.</p>
+<p>La segunda es que la progresión es propia. En un equipo, el progreso individual queda diluido en el resultado del sábado. En un tatami hay una técnica que antes no salía y ahora sale, y un sistema de grados que lo hace visible sin depender de nadie más.</p>
+<p>Y hay una tercera que las familias descubren después: el trabajo con el cuerpo del otro. Agarrar, empujar, caer, medir la fuerza. Es una alfabetización física que el fútbol, con su prohibición del contacto, no cubre.</p>
+
+<h2>El calendario, que es donde se decide casi todo</h2>
+<p>Aquí conviene ser prosaico. El fútbol base habitual implica entrenamientos entre semana más partido el fin de semana, muchas veces fuera del municipio. En una comarca como el Garraf eso significa sábados en <a href="/vilanova-i-la-geltru/">Vilanova</a>, en <a href="/sitges/">Sitges</a> o en el Penedès, con desplazamiento y espera. Es un compromiso familiar, no solo del niño.</p>
+<p>Las artes marciales suelen quedarse en dos sesiones entre semana y devuelven el fin de semana entero. Hay exámenes de grado un par de veces al año y competiciones si el niño quiere, que en la mayoría de clubs son voluntarias. Para una familia con dos hijos en actividades distintas o con turnos de trabajo, esa diferencia decide más que cualquier ventaja pedagógica.</p>
+
+<h2>Qué perfil de niño suele encajar en cada uno</h2>
+<ul>
+<li><strong>Le motiva el grupo y el resultado colectivo.</strong> Fútbol, con bastante claridad.</li>
+<li><strong>Le agobia que le miren o que dependan de él.</strong> Tatami. Se avanza sin público y sin marcador.</li>
+<li><strong>Es de los más pequeños o menos coordinados de su clase.</strong> Artes marciales, al menos para empezar. Un año de trabajo de coordinación puede devolverle al fútbol con otra soltura, si le sigue apeteciendo.</li>
+<li><strong>Tiene mucha energía y poca paciencia.</strong> Los dos funcionan. Aquí la decisión es de horario y de con quién quiere ir.</li>
+<li><strong>Está en un equipo y no juega nunca.</strong> Cambio, sin darle más vueltas. Un niño que pasa la temporada en el banquillo no está haciendo deporte.</li>
+</ul>
+
+<h2>¿Y hacer las dos cosas?</h2>
+<p>Se puede, y muchas familias lo hacen un año. Nuestra opinión es que a partir de tres tardes ocupadas la cosa se tensa: aparecen los deberes sin hacer, las cenas tarde y el niño que llega arrastrando los pies el jueves. Si vais a combinar, que una de las dos sea la principal y la otra tenga permiso explícito para caerse el día que no dé tiempo.</p>
+<p>Un detalle que evita disgustos: las artes marciales cobran cuota mensual y el fútbol base suele funcionar con inscripción por temporada más equipación. Pregunta cómo es la baja en cada caso antes de firmar nada, porque no se parecen. En la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro</a> tienes las siete preguntas económicas que conviene hacer por escrito.</p>
+
+<h2>El error de decidirlo por el padre</h2>
+<p>El sesgo más común es apuntar al niño a lo que uno hacía o a lo que le habría gustado hacer. Es comprensible y sale mal a menudo. A partir de los siete u ocho años, el mejor predictor de que el niño siga en la actividad dentro de dos temporadas es si la decisión fue suya.</p>
+<p>La forma barata de resolverlo es probar. La mayoría de clubs de artes marciales de la comarca permite una clase de prueba, y en septiembre es lo normal. Una clase de cada cosa en semanas consecutivas y la reacción del niño al salir zanjan el debate mejor que este artículo.</p>
+
+<h2>Elegir en el Garraf</h2>
+<p>Si os decantáis por el tatami, el paso siguiente es qué disciplina: la comparativa de <a href="/blog/karate-o-judo-para-ninos/">karate o judo para niños</a> y la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a> lo desmenuzan por edad y por carácter. Para saber qué se ofrece cerca, el <a href="/centros/">directorio de centros del Garraf</a> indica qué disciplinas anuncia cada club, con su fuente pública y la fecha de verificación, y la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a> ordena la oferta por municipio.</p>
+<p>¿Dudáis con un caso concreto? <a href="/contacto/">Escribidnos</a> contando la edad, el carácter del niño y vuestro municipio, y os orientamos sin coste.</p>
+`,
+
+  'blog/extraescolar-artes-marciales-vuelta-al-cole': `
+<h2>Por qué septiembre no es un mes cualquiera</h2>
+<p>La mayoría de clubs de artes marciales organiza sus grupos infantiles a la vez que arranca el curso escolar, y lo que se decide esas dos primeras semanas condiciona el resto del año: en qué franja horaria queda el grupo de la edad de tu hijo, con qué compañeros y con qué instructor. Llegar en noviembre no impide entrar, pero sí suele significar incorporarse a un grupo que ya lleva dos meses rodando.</p>
+<p>Dicho lo cual, no hay que precipitarse. Firmar el primer día en el primer sitio que contesta al teléfono es como se acaba en el horario que no cuadra y en la permanencia que no se leyó.</p>
+
+<h2>Dos decisiones que dependen de vosotros, no del club</h2>
+<p>Antes de llamar a nadie, conviene tener cerradas dos cosas. La primera es cuántos días a la semana vais a poder sostener de verdad, contando el trayecto y la cena. Dos es el estándar en infantil y es suficiente para progresar; tres solo tiene sentido si al niño le sobra energía y a la familia le sobra logística.</p>
+<p>La segunda es la franja horaria realista. No la ideal, la que aguanta un martes de noviembre con lluvia, con el hermano pequeño en el coche y con vosotros saliendo de trabajar. Ese es el filtro que más abandonos evita, y se aplica antes de mirar disciplinas.</p>
+
+<h2>Cuadrar la extraescolar con el curso</h2>
+<p>Los grupos infantiles suelen colocarse a media tarde, después del horario escolar, y los de adultos más tarde. En la comarca eso choca con dos cosas concretas: las actividades del propio colegio, que muchas veces ocupan la primera franja, y los desplazamientos entre municipios.</p>
+<p>Si vivís en Sant Pere de Ribes, Cubelles o Canyelles y el club está en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> o en <a href="/sitges/">Sitges</a>, contad 10 o 15 minutos de coche por trayecto en condiciones normales, más el aparcamiento. Suena a detalle menor en septiembre y es exactamente lo que hace que en enero se deje la actividad. La R2 Sud conecta bien la costa, pero con niños de siete años el tren rara vez es la opción de diario.</p>
+
+<h2>Qué preguntar en la primera llamada</h2>
+<p>Cinco minutos de teléfono bien aprovechados ahorran un trimestre malo:</p>
+<ol>
+<li><strong>Cómo están repartidos los grupos por edad.</strong> Un niño de seis y uno de once no deberían compartir clase. En municipios pequeños a veces es inevitable; entonces pregunta cómo adapta el instructor dentro de la misma sesión.</li>
+<li><strong>Quién da esa clase concreta</strong> y qué experiencia tiene con niños de esa edad. No el director técnico que sale en la web: el que va a estar delante de tu hijo.</li>
+<li><strong>Si se puede probar o ver una clase</strong> antes de pagar. Prácticamente todos los centros serios lo permiten en septiembre.</li>
+<li><strong>Qué incluye la cuota y qué se paga aparte:</strong> matrícula, licencia federativa, seguro deportivo, exámenes de grado, meses de verano.</li>
+<li><strong>Cómo se da uno de baja</strong> y con cuánta antelación. Es la pregunta que nadie hace y la que más disgustos evita.</li>
+<li><strong>Si hay grupo con plazas</strong> en la franja que os encaja. A veces la respuesta cambia todo el plan.</li>
+</ol>
+<p>Todo lo económico debería poder dároslo por escrito antes de pagar nada. La versión larga de esta conversación está en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>La clase de prueba: qué mirar mientras estáis allí</h2>
+<p>Es la mejor información que vais a conseguir y casi nadie la aprovecha bien, porque se mira la técnica. Fijaos en otra cosa:</p>
+<ul>
+<li>Si el instructor <strong>corrige por el nombre</strong> a niños concretos o solo dirige desde delante.</li>
+<li>Cómo trata al que peor lo hace. Es el mejor retrato de la cultura del club.</li>
+<li>Si los niños del grupo son de la edad del vuestro de verdad, no "más o menos".</li>
+<li>Cómo salen al acabar: cansados y hablando entre ellos es buena señal.</li>
+</ul>
+<p>Y una regla que no falla: si un centro se niega a que veáis una clase antes de pagar, ya tenéis la respuesta a todas las demás preguntas.</p>
+
+<h2>El error clásico de septiembre</h2>
+<p>Apuntar al niño a tres actividades porque en septiembre todo parece posible. En octubre la agenda funciona, en noviembre empieza a chirriar y en enero se cae la que menos le gustaba, que muchas veces no es la que sobraba. Nuestra recomendación es empezar con una actividad deportiva y una tarde libre de verdad, y añadir en enero si sobra energía.</p>
+<p>El otro error es comprar material el primer día. Para las primeras clases basta con ropa deportiva cómoda, agua y, si el club lo pide, calcetines o pies descalzos según la sala. El uniforme se compra cuando esté claro que la cosa va en serio, y en las disciplinas de agarre conviene esperar al consejo del club sobre la talla, porque los niños dan estirones.</p>
+
+<h2>Si llegáis tarde, tampoco pasa nada</h2>
+<p>Octubre y noviembre siguen siendo buenos meses para entrar. El niño se incorpora a un grupo ya formado, que es lo único incómodo, y en una disciplina con progresión individual eso se resuelve en pocas semanas. Peor es apuntarle en septiembre a lo primero que aparece y estar buscando alternativa en Navidad.</p>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>Si aún no tenéis clara la disciplina, la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a> compara las opciones infantiles habituales y la de <a href="/blog/karate-o-judo-para-ninos/">karate o judo</a> entra en el detalle de las dos más frecuentes. Si dudáis entre el tatami y el campo de fútbol, está la comparativa de <a href="/blog/artes-marciales-o-futbol-extraescolar/">artes marciales o fútbol como extraescolar</a>.</p>
+<p>Para ver qué clubs hay en cada municipio y qué anuncia cada uno, con la fuente pública y la fecha en que lo comprobamos, tenéis el <a href="/centros/">directorio de centros del Garraf</a>, la guía de <a href="/clases-para-ninos/">artes marciales para niños</a> y el contexto local de <a href="/sitges/">Sitges</a> y <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>.</p>
+<p>¿Queréis que os ayudemos a acotar? <a href="/contacto/">Escribidnos</a> con la edad, el municipio y la franja horaria que os encaja, y os decimos por dónde mirar, sin coste.</p>
+`,
+
   'blog/a-que-edad-empezar-artes-marciales': `
 <h2>La respuesta corta, y por qué la larga importa más</h2>
 <p>La mayoría de clubs de la comarca abren grupo infantil a partir de los <strong>4 o 5 años</strong>, y para un adulto la edad de empezar es literalmente cualquiera: en los grupos de iniciación del Garraf hay gente que se ha puesto un kimono por primera vez a los 52. Esa es la respuesta corta y no le sirve a casi nadie, porque la pregunta real que hay detrás casi nunca es "¿a qué edad se puede?", sino una de estas tres:</p>
@@ -402,18 +582,26 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'boxeo': ['blog/donde-aprender-boxeo-en-el-garraf'],
   'kickboxing': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
   'muay-thai': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
-  'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
-  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
-  'judo': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
+  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/beneficios-artes-marciales-ninos'],
+  'judo': ['blog/karate-o-judo-para-ninos', 'blog/mejor-arte-marcial-para-ninos-garraf'],
   'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
   'jiu-jitsu-brasileno': ['blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/beneficios-artes-marciales-ninos'],
   'clases-para-mujeres': ['blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
   'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
+  // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
+  'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'karate-infantil-en-sitges': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
+  'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
+  'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'vilanova-i-la-geltru': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
 };
 
 /** Artículos relacionados con una página, sin repetir la propia página. */
