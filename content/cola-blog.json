@@ -20,7 +20,11 @@
     "blog/karate-o-judo-para-ninos",
     "blog/beneficios-artes-marciales-ninos",
     "blog/artes-marciales-o-futbol-extraescolar",
-    "blog/extraescolar-artes-marciales-vuelta-al-cole"
+    "blog/extraescolar-artes-marciales-vuelta-al-cole",
+    "blog/primer-dia-clase-artes-marciales-nino",
+    "blog/judo-o-jiu-jitsu-brasileno",
+    "blog/boxeo-o-kickboxing",
+    "blog/muay-thai-o-kickboxing"
   ],
   "cola": [
     {
@@ -42,8 +46,8 @@
         "/centros/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-23"
     },
     {
       "id": 2,
@@ -62,8 +66,8 @@
         "/kickboxing/",
         "/blog/donde-aprender-boxeo-en-el-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-23"
     },
     {
       "id": 3,
@@ -82,8 +86,8 @@
         "/kickboxing/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-23"
     },
     {
       "id": 4,
@@ -324,8 +328,8 @@
         "/centros/",
         "/blog/como-elegir-centro-artes-marciales-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-23",
       "estacionalidad": "septiembre"
     },
     {

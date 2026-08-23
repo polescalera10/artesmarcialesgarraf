@@ -256,6 +256,10 @@ const BLOG = [
   ['beneficios-artes-marciales-ninos', 'Beneficios reales', 'personas', 'Lo que aporta a un niño y lo que es marketing'],
   ['artes-marciales-o-futbol-extraescolar', 'Artes marciales o fútbol', 'balanza', 'Qué extraescolar encaja con cada niño'],
   ['extraescolar-artes-marciales-vuelta-al-cole', 'Vuelta al cole', 'brujula', 'Cuadrar la extraescolar con el curso escolar'],
+  ['primer-dia-clase-artes-marciales-nino', 'El primer día', 'check-circulo', 'Qué llevar, qué pasa y qué no comprar todavía'],
+  ['judo-o-jiu-jitsu-brasileno', 'Judo o jiu-jitsu', 'balanza', 'De pie o en el suelo: en qué se diferencian'],
+  ['boxeo-o-kickboxing', 'Boxeo o kickboxing', 'balanza', 'Solo puños o puños y piernas: qué cambia'],
+  ['muay-thai-o-kickboxing', 'Muay thai o kickboxing', 'balanza', 'Codos, rodillas y clinch: qué añade el muay thai'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

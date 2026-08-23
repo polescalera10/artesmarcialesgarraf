@@ -583,6 +583,58 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/primer-dia-clase-artes-marciales-nino',
+    type: 'blog',
+    meta: {
+      title: 'El Primer Día de Clase: Qué Llevar y Qué Pasa',
+      description: 'Primera clase de artes marciales de tu hijo: qué llevar, qué no comprar todavía, cómo son los primeros veinte minutos y qué hacer si no quiere entrar.',
+    },
+    h1: 'El Primer Día de Clase: Qué Llevar y Qué Va a Pasar',
+    intro: 'La primera clase pone nerviosos a los dos, y casi todo lo que la complica se evita con quince minutos de margen y una mochila bien hecha. Esto es lo que hay que llevar, lo que conviene no comprar todavía y lo que va a pasar dentro de la sala.',
+    body: BLOG_BODIES['blog/primer-dia-clase-artes-marciales-nino'],
+    fecha: '2026-08-23',
+    phase: 2,
+  },
+  {
+    slug: 'blog/judo-o-jiu-jitsu-brasileno',
+    type: 'blog',
+    meta: {
+      title: 'Judo o Jiu-Jitsu Brasileño: Diferencias Reales',
+      description: 'Judo o jiu-jitsu brasileño: de pie o en el suelo, reglamento, cinturones, qué le pide cada uno al cuerpo y qué perfil encaja en cada disciplina.',
+    },
+    h1: 'Judo o Jiu-Jitsu Brasileño: en Qué se Diferencian de Verdad',
+    intro: 'Las dos son disciplinas de agarre, las dos entrenan con kimono y las dos salen de la misma raíz japonesa, así que se confunden constantemente. Pero una empieza de pie y busca la proyección, y la otra vive en el suelo y busca la sumisión. Comparamos lo que de verdad cambia en una clase de martes.',
+    body: BLOG_BODIES['blog/judo-o-jiu-jitsu-brasileno'],
+    fecha: '2026-08-23',
+    phase: 2,
+  },
+  {
+    slug: 'blog/boxeo-o-kickboxing',
+    type: 'blog',
+    meta: {
+      title: 'Boxeo o Kickboxing: Cuál Elegir si Empiezas',
+      description: 'Boxeo o kickboxing empezando de cero: qué cambia en la clase, la curva de aprendizaje, qué le pide cada uno al cuerpo y qué material comprar primero.',
+    },
+    h1: 'Boxeo o Kickboxing: Cuál Elegir si Empiezas de Cero',
+    intro: 'Solo puños contra puños y piernas. Suena a matiz y condiciona los tres primeros meses: lo que aprendes antes, lo que te duele, lo que acabas comprando y lo que puedes hacer un martes cansado. Aquí está la comparativa, con una recomendación clara de por dónde empezar si estás empatado.',
+    body: BLOG_BODIES['blog/boxeo-o-kickboxing'],
+    fecha: '2026-08-23',
+    phase: 2,
+  },
+  {
+    slug: 'blog/muay-thai-o-kickboxing',
+    type: 'blog',
+    meta: {
+      title: 'Muay Thai o Kickboxing: Qué Cambia Realmente',
+      description: 'Muay thai o kickboxing: codos, rodillas y clinch, cómo cambia el ritmo del combate, qué se siente en el cuerpo y qué perfil encaja en cada uno.',
+    },
+    h1: 'Muay Thai o Kickboxing: Qué Cambia Realmente',
+    intro: 'Ocho extremidades contra cuatro es la respuesta rápida, y se queda corta: un principiante tardará meses en tocar un codo. Lo que separa las dos disciplinas en una clase cualquiera son el clinch, el ritmo del combate y lo que cada una le hace a tus tibias el primer mes.',
+    body: BLOG_BODIES['blog/muay-thai-o-kickboxing'],
+    fecha: '2026-08-23',
+    phase: 2,
+  },
+  {
     slug: 'blog/karate-o-judo-para-ninos',
     type: 'blog',
     meta: {

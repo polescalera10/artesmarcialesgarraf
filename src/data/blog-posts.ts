@@ -9,6 +9,201 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/judo-o-jiu-jitsu-brasileno': `
+<h2>La diferencia se cuenta en una frase, y luego hay que matizarla</h2>
+<p>El judo empieza de pie y busca acabar ahí mismo: una proyección limpia, con control y con el otro cayendo de espalda, termina el combate en el acto. El <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> da por hecho que aquello va a terminar en el suelo y dedica casi todo su tiempo a lo que pasa después de la caída: colocarse encima, ir ganando posición y forzar el abandono con una estrangulación o una palanca.</p>
+<p>Las dos son disciplinas de agarre, las dos entrenan con kimono y las dos salen de la misma raíz. Por eso se confunden tanto. Pero un martes cualquiera en una sala y en la otra se parecen poco, y eso es lo que conviene saber antes de pagar el primer trimestre.</p>
+
+<h2>Vienen del mismo sitio, y eso explica casi todo</h2>
+<p>Jigoro Kano sistematizó el <a href="/judo/">judo</a> en Japón a finales del siglo XIX a partir de las escuelas antiguas de jiu-jitsu japonés. Uno de sus alumnos, Mitsuyo Maeda, acabó en Brasil a principios del XX y enseñó allí a la familia Gracie, que fue desplazando el trabajo hacia el suelo hasta convertirlo en una disciplina con reglamento propio.</p>
+<p>No son estilos rivales: son dos ramas que se especializaron en mitades distintas del mismo problema. Un judoca sabe qué hacer cuando la cosa cae al tatami, y un practicante veterano de jiu-jitsu sabe derribar. Lo que cambia es dónde ha invertido cada uno sus horas.</p>
+
+<h2>Cómo es una clase de judo</h2>
+<p>La sesión tiene una forma reconocible que se repite en cualquier club: saludo, calentamiento con desplazamientos, ukemi (las caídas), uchi-komi (la entrada a una proyección repetida decenas de veces sin llegar a tirar) y, al final, randori, que es el combate libre a la intensidad que se pacte. Casi todo se hace de pie, agarrado por la solapa y la manga del compañero.</p>
+<p>Se cae mucho. Esa es la parte que sorprende a quien llega de fuera: la primera temporada de judo consiste en buena medida en aprender a estrellarse contra el tatami sin hacerse daño, y esa es la habilidad que más se usa fuera del gimnasio. Hay trabajo de suelo, el ne-waza, pero está acotado en el tiempo: si en unos segundos no avanza nada, en competición el árbitro levanta a los dos y se vuelve a empezar de pie.</p>
+
+<h2>Cómo es una clase de jiu-jitsu brasileño</h2>
+<p>Aquí el reparto es el contrario. Se arranca casi siempre desde el suelo o desde una posición concreta, se trabaja una secuencia técnica (pasar la guardia, salir de debajo del montado, entrar a un estrangulamiento desde la espalda) y se cierra con rondas de sparring, que en la sala todo el mundo llama rolls.</p>
+<p>El ritmo es más lento y bastante más ajedrecístico. Hay mucho rato con el compañero encima, mucha resolución de problemas con poco aire, muy poco impacto y ninguna caída violenta. Y hay una cosa que a los recién llegados les cuesta más de lo que imaginan: se pierde constantemente. Los primeros meses consisten en que gente más pequeña que tú te someta una vez tras otra mientras intentas acordarte de dónde iba la mano.</p>
+
+<h2>Reglamento y cinturones: aquí se separan del todo</h2>
+<p>En judo lo que puntúa es la proyección. El ippon termina el combate, el waza-ari suma, y el suelo cuenta pero con reloj. En jiu-jitsu tirar al otro vale dos puntos y poco más; lo que puntúa es el progreso posicional (pasar la guardia, montarse, tomar la espalda) y lo que zanja el asunto es la sumisión, sin límite de tiempo en el suelo.</p>
+<p>Los grados avanzan a velocidades distintas, y conviene saberlo antes de comparar a dos personas por el color de su cintura. En judo la progresión es más rápida y está muy pautada por la federación, con exámenes técnicos y, según el grado, puntuación de competición. En jiu-jitsu el adulto pasa por blanca, azul, morada y marrón antes de la negra, y el ritmo es notablemente más lento: la referencia de alrededor de una década hasta el cinturón negro no es una exageración de gimnasio.</p>
+<p>Hay una diferencia más que pesa en lo práctico. El judo tiene estructura federativa fuerte, con licencia, seguro deportivo y circuito por edades y pesos. El jiu-jitsu en España se organiza más por asociaciones y circuitos privados, lo que no lo hace peor, pero sí obliga a preguntar con más atención quién tramita el seguro y qué cubre. Está desglosado en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Qué le pide cada una al cuerpo</h2>
+<p>El judo es más explosivo y más exigente con las articulaciones: impacto contra el suelo en cada repetición, tirones fuertes de hombro y de espalda, y un componente de fuerza que se nota desde el primer mes. Un adulto que llega sin base física suele sentir el judo en la espalda antes que en ningún otro sitio.</p>
+<p>El jiu-jitsu tiene menos impacto y un desgaste de otro tipo: cuello, dedos de las manos, rodillas en las posiciones de guardia y una fatiga isométrica muy particular, la de sostener a alguien que empuja. La intensidad se puede regular con bastante precisión, y esa es la razón de que aguante tan bien los cuarenta.</p>
+<p>Si arrastras una lesión antigua, las dos se pueden adaptar, pero eso se habla con el instructor el primer día y con el profesional sanitario antes: quien dice qué puede hacer tu rodilla es él, no un artículo ni un cinturón negro.</p>
+
+<h2>Y para un niño, ¿cuál de las dos?</h2>
+<p>El judo tiene la entrada infantil más rodada: grupos por edad bien establecidos en la mayoría de clubs y una progresión de colores pensada para críos. El jiu-jitsu infantil existe y funciona, pero hay menos grupos y en algunos sitios el rango de edad dentro de la misma clase es más amplio de lo deseable.</p>
+<p>A los seis o siete años la elección se parece bastante a la que planteamos en <a href="/blog/karate-o-judo-para-ninos/">karate o judo para niños</a>: pesa más el grupo y el instructor que el nombre de la disciplina. Si en tu municipio solo una de las dos tiene grupo de la edad de tu hijo, la decisión ya está tomada. El contexto por edades está en la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>.</p>
+
+<h2>Qué perfil encaja en cada una</h2>
+<ul>
+<li><strong>Te atrae la potencia y el momento explosivo.</strong> Judo. La proyección que sale bien engancha de una forma que el suelo no reproduce.</li>
+<li><strong>Prefieres resolver un problema antes que ganar un duelo físico.</strong> Jiu-jitsu. La técnica compensa la diferencia de fuerza mucho antes.</li>
+<li><strong>Quieres competir con calendario y estructura clara.</strong> Judo, sin discusión.</li>
+<li><strong>Llegas con la espalda o las rodillas delicadas.</strong> Jiu-jitsu, avisando al instructor el primer día.</li>
+<li><strong>Vas de camino a las <a href="/mma/">artes marciales mixtas</a>.</strong> Jiu-jitsu como base de suelo y judo para el derribo. Las dos suman, y en MMA se nota quién viene de tatami.</li>
+</ul>
+<p>Si la duda persiste, hay una salida barata: probar las dos. La mayoría de clubs de la comarca permite una clase de prueba, y dos horas de tatami dicen más que cualquier comparativa escrita.</p>
+
+<h2>Judo y jiu-jitsu en el Garraf</h2>
+<p>La oferta de las dos se concentra en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>. Desde Sant Pere de Ribes, Cubelles o Canyelles lo habitual es desplazarse a uno de esos dos núcleos: entre Sitges y Vilanova son 10 o 15 minutos en coche en condiciones normales, y la R2 Sud une bien la costa si el horario deja margen. Qué clubs anuncian judo y cuáles jiu-jitsu está en nuestro <a href="/centros/">directorio de centros del Garraf</a>, con la fuente pública y la fecha de verificación de cada ficha.</p>
+<p>Si vienes de cero y todavía estás decidiendo entre familias enteras de disciplinas, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez que se practican en la comarca, y la de <a href="/clases-para-adultos/">clases para adultos</a> ordena la oferta por perfil. ¿Prefieres que te orientemos? <a href="/contacto/">Escríbenos</a> con tu edad, tu punto de partida y tu municipio, y te contestamos sin coste.</p>
+`,
+
+  'blog/boxeo-o-kickboxing': `
+<h2>La respuesta corta, y las dos razones para ignorarla</h2>
+<p>Si dudas y no tienes una preferencia formada, empieza por el <a href="/boxeo/">boxeo</a>. No porque sea mejor: porque tiene menos herramientas, y eso hace que aprendas antes lo único que de verdad importa al principio, que es moverte, medir la distancia y no comer golpes. Casi todo lo que construyas ahí te sirve luego en <a href="/kickboxing/">kickboxing</a>. El camino inverso funciona peor.</p>
+<p>Hay dos razones razonables para hacer justo lo contrario. Una, que las piernas te motiven mucho más que las manos y sepas que sin eso no vas a volver la segunda semana. Dos, que en tu municipio el grupo de kickboxing esté en un horario que puedes cumplir y el de boxeo no. La segunda pesa más de lo que parece.</p>
+
+<h2>Qué hace cada una, sin folleto de gimnasio</h2>
+<p>El boxeo usa solo los puños y solo por encima de la cintura. Cuatro golpes básicos (el directo, el cruzado, el gancho y el uppercut), un juego de piernas muy trabajado y una defensa que se construye con la guardia, el bloqueo, el esquive y la cintura. Esa aparente pobreza de recursos es lo que lo hace profundo: con cuatro golpes, todo se decide en el timing y en la distancia.</p>
+<p>El kickboxing suma las piernas y, según la modalidad, las rodillas. Ahí aparece la primera confusión, porque bajo esa palabra conviven reglamentos distintos: semi contacto y light contact (puntuación, contacto controlado), full contact (golpes por encima de la cintura), low kick (se permite patear el muslo) y las reglas tipo K-1 (low kicks y rodillas, con clinch muy limitado). No es un detalle académico: cambia qué vas a hacer cada tarde.</p>
+<p><strong>Pregunta en la primera llamada bajo qué reglamento entrena el grupo.</strong> Un club puede anunciar kickboxing y trabajar casi solo puntuación a la cabeza, y otro puede darte low kicks desde el segundo mes. Los dos son legítimos y buscan cosas distintas.</p>
+
+<h2>La curva de aprendizaje: menos piezas, antes se juega</h2>
+<p>En boxeo el repertorio se aprende rápido y luego se pasan años puliéndolo. A las pocas semanas ya puedes hacer trabajo con manoplas que se parece a boxear, y eso engancha.</p>
+<p>En kickboxing hay más que aprender antes de que las piezas encajen: la patada exige equilibrio sobre una pierna, rotación de cadera y una movilidad que mucha gente adulta no tiene el primer día. Los tres primeros meses suelen ser más frustrantes, y a cambio el techo de variedad es más alto.</p>
+<p>Ninguna de las dos es difícil de empezar. Lo difícil, en las dos, es el mes tres, cuando la novedad se ha pasado y el progreso ya no es visible cada semana.</p>
+
+<h2>Lo que le pide cada una al cuerpo</h2>
+<p>El boxeo carga hombros, antebrazos y zona media, y el cansancio típico es respiratorio: la sensación de no poder mantener las manos arriba en el último asalto. Es una disciplina amable con las rodillas y bastante regulable en intensidad, que es la razón de que funcione tan bien como reentrada al deporte después de años parado.</p>
+<p>El kickboxing añade caderas, aductores y tibias. La patada baja repetida contra los paos deja las espinillas doloridas las primeras semanas, y la falta de movilidad de cadera se paga en forma de patadas altas que no salen y de tirones en el aductor. Si vienes de estar sentado ocho horas al día, cuenta con dedicarle diez minutos de movilidad antes de cada clase.</p>
+<p>Lo de siempre con las lesiones antiguas: se cuentan al instructor el primer día, y la pauta la marca el profesional sanitario, no el entrenador ni esta guía.</p>
+
+<h2>El material, y en qué orden se compra</h2>
+<p>La compra inicial es prácticamente la misma y no hay que hacerla el primer día. Casi todos los clubs prestan guantes las primeras clases, y esa es la señal de que puedes ir con ropa deportiva y agua sin más.</p>
+<ol>
+<li><strong>Vendas.</strong> Lo primero y lo más barato. Protegen la muñeca y los nudillos, y son personales desde el minuto uno.</li>
+<li><strong>Guantes.</strong> Cuando tengas claro que sigues. El club te dirá el peso según tu tamaño y el uso.</li>
+<li><strong>Protector bucal.</strong> Antes de tu primera sesión de contacto, sin excepción.</li>
+<li><strong>Espinilleras.</strong> Solo en kickboxing, y solo cuando empiece el trabajo de patada con compañero.</li>
+<li><strong>Coquilla y casco.</strong> Cuando el club lo pida para el sparring, y muchas veces lo presta.</li>
+</ol>
+<p>Un centro que te presione para comprar un lote caro el primer día te está enseñando cómo trabaja. Es uno de los ocho puntos de nuestra <a href="/blog/como-elegir-centro-artes-marciales-garraf/">guía para elegir centro</a>.</p>
+
+<h2>Ojo con las clases que no son ni una cosa ni la otra</h2>
+<p>Bajo etiquetas como cardio boxing, fitboxing o boxeo fitness hay clases de acondicionamiento físico con guantes, casi siempre contra saco o al aire, sin compañero y sin técnica corregida individualmente. Como entrenamiento cardiovascular pueden estar muy bien. Como boxeo, no lo son, y quien se apunta pensando que va a aprender a boxear sale del trimestre en forma y sin saber boxear.</p>
+<p>La forma de distinguirlas en treinta segundos: pregunta si en esa clase se trabaja alguna vez con manoplas y con un compañero delante. Si la respuesta es que no, sabes lo que estás comprando.</p>
+
+<h2>El sparring, que es donde se ve quién es serio</h2>
+<p>En las dos disciplinas el contacto tiene que ser progresivo, opcional y supervisado. Nadie intercambia golpes de verdad en sus primeras semanas, y cuando llega el momento se hace suave, con protecciones y con el entrenador encima.</p>
+<p>Si en tu clase de prueba te ponen a pelear con alguien con experiencia para ver de qué pasta estás hecho, vete. No es una prueba de carácter, es negligencia, y es la vía rápida a una lesión que te aparta seis meses. Esto vale igual para boxeo y para kickboxing, y es la señal más fiable de la cultura de un gimnasio.</p>
+
+<h2>Qué perfil encaja mejor en cada una</h2>
+<ul>
+<li><strong>Quieres resultados visibles pronto y poca frustración inicial.</strong> Boxeo.</li>
+<li><strong>Vienes de un deporte con piernas (fútbol, atletismo, danza) o te aburre la idea de solo puños.</strong> Kickboxing.</li>
+<li><strong>Buscas sobre todo descargar y ponerte en forma dos días por semana.</strong> Las dos sirven. Decide por horario y por quién da la clase.</li>
+<li><strong>Tienes poca movilidad de cadera y ninguna gana de trabajarla.</strong> Boxeo, y sin sentirte mal por ello.</li>
+<li><strong>Te interesa acabar en <a href="/muay-thai/">muay thai</a> o en <a href="/mma/">MMA</a>.</strong> Kickboxing, que es el puente natural. Aunque una base de manos de boxeo se agradece toda la vida.</li>
+</ul>
+
+<h2>Boxeo y kickboxing en el Garraf</h2>
+<p>Las dos son de las disciplinas con más presencia en la comarca, concentradas sobre todo en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>, y es habitual que un mismo club ofrezca las dos con grupos separados. Eso juega a tu favor: puedes probar una y cambiarte sin cambiar de gimnasio ni de horario.</p>
+<p>Qué centro anuncia cada cosa, en qué municipio y con qué fuente pública lo hemos comprobado, está en el <a href="/centros/">directorio de centros del Garraf</a>. Si quieres el recorrido específico del boxeo en la comarca, lo tienes en <a href="/blog/donde-aprender-boxeo-en-el-garraf/">dónde aprender boxeo en el Garraf</a>, y si aún estás en la casilla de salida, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez disciplinas y la de <a href="/clases-para-adultos/">clases para adultos</a> ordena la oferta por perfil.</p>
+<p>¿Sigues entre las dos? <a href="/contacto/">Escríbenos</a> contando tu edad, qué buscas y desde qué municipio te mueves, y te damos una recomendación sin coste.</p>
+`,
+
+  'blog/muay-thai-o-kickboxing': `
+<h2>Ocho armas contra cuatro, y eso es lo de menos</h2>
+<p>Al <a href="/muay-thai/">muay thai</a> se le llama el arte de las ocho extremidades porque usa puños, codos, rodillas y tibias. El <a href="/kickboxing/">kickboxing</a>, según el reglamento, se queda en puños y piernas, con las rodillas permitidas de forma limitada en algunas modalidades y los codos prohibidos en todas.</p>
+<p>Esa es la respuesta que sale en cualquier buscador y se queda corta. Lo que de verdad separa las dos disciplinas en una clase de martes no son los codos, que un principiante tardará meses en tocar. Son el clinch, el ritmo y lo que cada una hace con tu cuerpo el primer mes.</p>
+
+<h2>Lo que el muay thai añade</h2>
+<p>Además de codos y rodillas, el muay thai permite tres cosas que cambian por completo cómo se pelea: agarrar la pierna del rival cuando patea, barrer para desequilibrar y trabajar agarrado en el clinch. El resultado es un combate con más pausas, más forcejeo y menos intercambio limpio a media distancia.</p>
+<p>También cambia el reparto del cuerpo. En muay thai la patada de tibia al muslo y al costado es una herramienta central, no un recurso; en kickboxing bajo reglas de light o full contact ni siquiera está permitida por debajo de la cintura, y bajo reglas de low kick o K-1 sí, con lo que la frontera se difumina bastante. Antes de comparar nada, pregunta bajo qué reglamento entrena el grupo concreto al que te vas a apuntar.</p>
+
+<h2>El clinch: aquí se separan de verdad</h2>
+<p>El clinch del muay thai es un trabajo agarrado de cuello y brazos, buscando control de la cabeza y postura para meter rodillas o desequilibrar. Es medio arte marcial dentro del arte marcial, y es agotador de una forma distinta a todo lo demás: no es cardio de correr, es cansancio de forcejear con alguien que no se deja.</p>
+<p>En kickboxing el clinch está muy limitado o directamente cortado por el árbitro. Eso hace que el combate sea más continuo y más rápido, y que el trabajo de clase se parezca más a series de combinaciones y desplazamientos.</p>
+<p>La consecuencia práctica: si el contacto físico prolongado te incomoda, el kickboxing te va a resultar más cómodo. Si lo que te aburre es golpear al aire, el clinch es lo que te va a enganchar.</p>
+
+<h2>Cómo cambia el ritmo</h2>
+<p>El muay thai tradicional puntúa el combate como un todo, valorando el daño, el equilibrio y quién domina, y por eso los asaltos suelen ir de menos a más: los primeros son de medir y los últimos son los que deciden. Esa lógica se cuela en el entrenamiento, que tiende a ser largo, repetitivo y muy exigente en resistencia.</p>
+<p>El kickboxing puntúa más por acción y volumen, así que se entrena con más énfasis en la velocidad de manos, las combinaciones encadenadas y el juego de piernas. Ninguno es más duro que el otro en abstracto. Lo que cambia es qué tipo de esfuerzo te va a pedir la clase.</p>
+
+<h2>Qué se siente en el cuerpo las primeras semanas</h2>
+<p>Las tibias. Esa es la respuesta honesta para el muay thai. La patada de tibia contra los paos deja las espinillas sensibles durante las primeras semanas hasta que el cuerpo se adapta al trabajo, y hay días en que duele apoyar la pierna en el sofá. Se pasa, pero conviene saberlo antes.</p>
+<p>Después vienen las caderas y los aductores en las dos disciplinas, y el cuello y los hombros en el muay thai por el clinch. Nada de esto es una lesión: son las molestias normales de empezar. La diferencia entre molestia normal y señal de alarma la marca el profesional sanitario, y si algo duele de forma aguda o persiste, ahí es donde se va.</p>
+<p>Sobre el volumen: dos sesiones semanales bien hechas construyen más que cinco durante tres semanas y ninguna después. Es el error clásico del principiante entusiasta, en las dos.</p>
+
+<h2>Material y protecciones</h2>
+<p>La lista es casi idéntica: vendas, guantes, bucal y espinilleras. En muay thai las espinilleras entran antes en juego, porque la tibia se usa desde el principio, y muchos clubs piden coquilla para el trabajo con compañero. Nada de esto se compra el primer día: se va con ropa deportiva y agua, y el club presta lo básico durante las primeras clases.</p>
+<p>El orden razonable de compra y el resto de la logística de material están en la comparativa de <a href="/blog/boxeo-o-kickboxing/">boxeo o kickboxing</a>, que aplica igual aquí.</p>
+
+<h2>La parte cultural, que no es decoración</h2>
+<p>El muay thai llega con un envoltorio propio: el wai kru ram muay que se baila antes del combate, el mongkol en la cabeza, el respeto al ring, la música sarama. Muchos gimnasios españoles lo mantienen y otros lo dejan casi todo fuera, y las dos posturas son defendibles.</p>
+<p>Merece la pena preguntarlo antes de apuntarse, porque para algunas personas esa capa es la mitad del atractivo y para otras es un incordio. El kickboxing, que nació como deporte de competición mezclando karate y boxeo, no tiene equivalente: es un deporte de ring y punto.</p>
+
+<h2>Qué perfil encaja en cada una</h2>
+<ul>
+<li><strong>Te gusta el cuerpo a cuerpo y el forcejeo.</strong> Muay thai, por el clinch.</li>
+<li><strong>Prefieres velocidad, combinaciones y desplazamiento.</strong> Kickboxing.</li>
+<li><strong>Vas a competir en cuanto puedas.</strong> Mira qué circuito tiene el club: el kickboxing federado tiene modalidades para entrar con contacto ligero, lo que permite competir antes y con menos riesgo.</li>
+<li><strong>Buscas el camino a las <a href="/mma/">artes marciales mixtas</a>.</strong> Muay thai, porque el clinch y las rodillas se transfieren directamente.</li>
+<li><strong>Empiezas de cero, sin base de deporte de contacto.</strong> Las dos valen. Aquí decide el horario, el grupo y quién da la clase, no la disciplina.</li>
+</ul>
+<p>Nuestra recomendación, si estás realmente empatado: prueba una clase de cada una en semanas consecutivas y fíjate menos en la técnica que en cómo sales. La sensación al terminar es mejor indicador que cualquier tabla comparativa.</p>
+
+<h2>Dónde entrenar en el Garraf</h2>
+<p>Las dos disciplinas tienen presencia en la comarca, concentradas en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>, y en muchos clubs conviven bajo el mismo techo con grupos y horarios distintos. Desde Sant Pere de Ribes, Cubelles o Canyelles lo habitual es desplazarse a uno de los dos núcleos: 10 o 15 minutos en coche entre Sitges y Vilanova, con la R2 Sud como alternativa si el horario de clase lo permite.</p>
+<p>Qué centros anuncian cada una está en el <a href="/centros/">directorio de centros del Garraf</a>, con la fuente pública y la fecha en que lo comprobamos. Antes de firmar nada, pasa por la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro</a>: cómo se introduce el contacto es el punto que más importa en las disciplinas de golpeo. Y si vas más atrás en la decisión, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez y la de <a href="/clases-para-adultos/">clases para adultos</a> ordena la oferta por perfil.</p>
+<p>¿Quieres una orientación para tu caso? <a href="/contacto/">Escríbenos</a> con tu punto de partida y tu municipio, y te respondemos sin coste.</p>
+`,
+
+  'blog/primer-dia-clase-artes-marciales-nino': `
+<h2>Lo que hay que llevar cabe en una mochila pequeña</h2>
+<p>Ropa deportiva cómoda, sin cremalleras ni botones: camiseta y pantalón de chándal o mallas. Una botella de agua con su nombre. Chanclas para ir del vestuario a la sala: en tatami se entra descalzo, y ese trayecto no se hace con los pies desnudos. Y poco más.</p>
+<p>Dos detalles que casi nadie anticipa y que un instructor agradece: <strong>uñas de manos y pies cortas, y el pelo largo recogido</strong>. En las disciplinas de agarre una uña larga hace un arañazo en el primer minuto, y una coleta suelta acaba tirando de la cabeza de su dueña. Los pendientes, relojes y pulseras se quedan en casa o en la mochila.</p>
+<p>Si el club ya os ha dicho que hace falta kimono, es que lo hace falta. Si no ha dicho nada, no lo compréis todavía.</p>
+
+<h2>Lo que no hay que comprar todavía</h2>
+<p>Nada. Ese es el consejo entero. La primera clase, y normalmente las tres o cuatro primeras, se hacen con ropa de deporte, y prácticamente todos los centros lo plantean así porque saben que un porcentaje de los niños no vuelve.</p>
+<p>El uniforme se compra cuando esté claro que la cosa va en serio, y conviene esperar a que el club diga la talla: los judogis y los karategis encogen con los lavados y los niños dan estirones, así que la talla que parece lógica en la tienda suele no serlo. Las protecciones llegan más tarde todavía, cuando aparezca el trabajo de contacto.</p>
+<p>Y una señal que conviene leer: un centro que os empuje a comprar un lote de material antes de la primera clase os está enseñando cómo trabaja. Es uno de los puntos de la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Llegad quince minutos antes</h2>
+<p>No diez. Quince. El niño necesita cambiarse sin prisa, ver la sala vacía antes de que se llene y decidir por su cuenta que aquello no da miedo. Entrar corriendo con la clase ya empezada y treinta críos mirando es la peor manera posible de empezar, y es evitable.</p>
+<p>Ese margen os sirve también a vosotros para hablar treinta segundos con quien va a dar la clase, que es la conversación más útil de todo el día.</p>
+
+<h2>Qué conviene decirle al instructor antes de empezar</h2>
+<ul>
+<li><strong>Si es la primera vez que hace cualquier deporte en grupo.</strong> No es lo mismo un niño que viene de dos años de fútbol que uno que no ha estado nunca en un vestuario.</li>
+<li><strong>Si le cuesta el contacto físico</strong> o si es muy reservado con desconocidos. Un buen técnico lo tiene en cuenta al emparejarlo.</li>
+<li><strong>Alergias, asma, una lesión reciente o cualquier condición de salud.</strong> Esto se dice siempre y sin filtrar, y si hay una pauta médica de por medio, la marca el pediatra y se le traslada al club tal cual.</li>
+<li><strong>Cómo se llama y cómo prefiere que le llamen.</strong> Suena a tontería y no lo es: que le llamen por su nombre el primer día cambia la clase entera.</li>
+</ul>
+
+<h2>Los primeros veinte minutos, por dentro</h2>
+<p>La estructura varía poco entre disciplinas y saberla de antemano tranquiliza a todo el mundo. Suele empezar con un saludo colectivo, que en <a href="/karate/">karate</a> o <a href="/judo/">judo</a> se hace de rodillas o de pie según el club, y que a los nuevos les explican en el momento. Nadie espera que un niño de seis años se sepa el protocolo.</p>
+<p>Después viene el calentamiento, que en infantil es casi siempre en forma de juego: carreras, relevos, desplazamientos raros por el tatami. Es la parte donde el nuevo se relaja, porque correr sabe todo el mundo. Luego llega el bloque técnico, y ahí es donde el niño va a hacer cosas que no le salen delante de gente que lleva dos años. Es normal y es incómodo, y dura poco.</p>
+<p>Lo habitual es que el instructor le ponga con un alumno veterano o con otro principiante, y que baje la exigencia de lo que le pide. Al final suele haber un juego, un estiramiento y el saludo de despedida.</p>
+
+<h2>El niño que se agarra a tu pierna y no quiere entrar</h2>
+<p>Pasa, y más de lo que las familias creen. La respuesta que mejor funciona es poco intuitiva: no negociar en la puerta. Cuanto más rato se pasa convenciendo, más grande se hace el asunto. Lo que suele desatascarlo es que el instructor se acerque él y se lo lleve, porque un desconocido con autoridad amable rompe el bucle mejor que un padre.</p>
+<p>Si aun así no entra, se puede quedar mirando la clase entera desde el borde. Es una opción legítima y muchos clubs la ofrecen. Un niño que ve una clase completa desde fuera casi siempre entra a la siguiente.</p>
+<p>Lo que no recomendamos es irse del edificio el primer día, ni prometerle nada a cambio de que entre. La recompensa por entrar convierte la clase en un peaje.</p>
+
+<h2>Dónde os ponéis vosotros</h2>
+<p>Donde diga el club, y en silencio. Hay centros con zona de padres y otros que prefieren que no haya público las primeras semanas porque los niños se giran cada treinta segundos a buscar aprobación. Las dos políticas tienen sentido.</p>
+<p>Si podéis quedaros, aprovechad para mirar cuatro cosas que dicen más del club que su web: si el instructor corrige a los niños por su nombre o solo dirige desde delante, cómo trata al que peor lo hace, si los del grupo son de la edad del vuestro de verdad y cómo salen al acabar. Cansados y hablando entre ellos es buena señal.</p>
+<p>Lo que no hay que hacer, y se ve en todas las salas: corregir a tu hijo desde la banda. Le pone en la posición imposible de atender a dos adultos a la vez.</p>
+
+<h2>El viaje de vuelta</h2>
+<p>La pregunta que no funciona es "¿te ha gustado?". Un niño de seis años cansado responde lo que cree que quieres oír. Funcionan mejor las concretas: qué juego habéis hecho, cómo se llama el profesor, con quién te ha tocado, qué es lo más raro que has hecho hoy.</p>
+<p>Y una advertencia sobre las expectativas del primer día: la mayoría de niños sale diciendo que ha estado bien y no quiere volver a hablar del tema. El indicador que importa no es el entusiasmo del primer día, es si el jueves siguiente se pone las zapatillas sin discutir. Si a las tres o cuatro semanas sigue sin querer ir, ahí sí hay algo que mirar, y casi siempre es el grupo o el horario, no la disciplina.</p>
+
+<h2>Empezar en el Garraf</h2>
+<p>Si todavía estáis eligiendo disciplina, la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a> compara las opciones infantiles habituales y la de <a href="/blog/karate-o-judo-para-ninos/">karate o judo para niños</a> entra al detalle de las dos más frecuentes. Si estáis en plena vuelta al cole, la pieza de <a href="/blog/extraescolar-artes-marciales-vuelta-al-cole/">cómo elegir extraescolar en septiembre</a> ordena los plazos y las preguntas de la primera llamada.</p>
+<p>Para saber qué clubs hay cerca y qué anuncia cada uno, con la fuente pública y la fecha en que lo comprobamos, tenéis el <a href="/centros/">directorio de centros del Garraf</a> y la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>, con el contexto de <a href="/sitges/">Sitges</a> y <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, que es donde se concentra la oferta infantil de la comarca.</p>
+<p>¿Primera clase la semana que viene y os quedan dudas? <a href="/contacto/">Escribidnos</a> con la edad, la disciplina y el municipio, y os contestamos sin coste.</p>
+`,
+
   'blog/karate-o-judo-para-ninos': `
 <h2>La respuesta en una frase, y por qué no decide nada</h2>
 <p>El karate es golpeo a distancia, controlado y sin contacto real en las etapas infantiles. El judo es agarre: coger al otro, desequilibrarlo, proyectarlo y seguir trabajando en el suelo. La diferencia técnica se explica en diez segundos y no le resuelve nada a un padre que tiene que decidir en septiembre dónde apunta a su hijo de siete años.</p>
@@ -579,25 +774,25 @@ export const BLOG_BODIES: Record<string, string> = {
 // ────────────────────────────────────────────────────────────────────────────
 export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Disciplinas
-  'boxeo': ['blog/donde-aprender-boxeo-en-el-garraf'],
-  'kickboxing': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
-  'muay-thai': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'boxeo': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/boxeo-o-kickboxing'],
+  'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
+  'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
   'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/beneficios-artes-marciales-ninos'],
-  'judo': ['blog/karate-o-judo-para-ninos', 'blog/mejor-arte-marcial-para-ninos-garraf'],
+  'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
   'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
-  'jiu-jitsu-brasileno': ['blog/artes-marciales-adultos-principiantes-garraf'],
+  'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/beneficios-artes-marciales-ninos'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/primer-dia-clase-artes-marciales-nino'],
   'clases-para-mujeres': ['blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
   'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
-  'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
-  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
+  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
   'karate-infantil-en-sitges': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
