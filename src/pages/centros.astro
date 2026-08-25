@@ -9,7 +9,10 @@ import { LOCATIONS } from '../data/locations';
 import { SITE, SCHEMA_IDS } from '../data/site';
 import LineIcon from '../components/LineIcon.astro';
 
-const title = 'Centros de Artes Marciales del Garraf | Directorio';
+// El recuento va en el título a propósito: es lo que diferencia este resultado
+// de cualquier otro en la SERP y sale del propio array, así que no puede
+// quedarse desfasado cuando entre o salga un centro.
+const title = `Centros de Artes Marciales del Garraf: ${CENTROS.length} verificados`;
 const description =
   'Directorio de centros reales de artes marciales del Garraf, con la fuente pública de cada ficha y su fecha de verificación. Sin valoraciones.';
 
