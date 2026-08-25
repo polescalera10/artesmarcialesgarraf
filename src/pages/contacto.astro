@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE, SCHEMA_IDS } from '../data/site';
+import { SITE, SCHEMA_IDS, whatsappActivo } from '../data/site';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
 import { DISCIPLINES } from '../data/disciplines';
 import { LOCATIONS } from '../data/locations';
 
@@ -183,6 +184,19 @@ const inputClass =
 
         <!-- Contact info -->
         <div class="space-y-8">
+          {whatsappActivo && (
+            <div>
+              <h2 class="text-lg font-bold text-white mb-4">O por WhatsApp, si lo prefieres</h2>
+              <div class="bg-brand-gray border border-brand-border rounded-xl p-6">
+                <p class="text-sm text-brand-muted mb-4">
+                  Es la vía más rápida y no hace falta que rellenes nada: el mensaje se abre ya
+                  redactado y solo tienes que enviarlo. {SITE.whatsapp.horario}
+                </p>
+                <WhatsAppButton variante="primario" class="w-full" />
+              </div>
+            </div>
+          )}
+
           <div>
             <h2 class="text-lg font-bold text-white mb-4">O escríbenos por email</h2>
             <a href={`mailto:${SITE.email}`}

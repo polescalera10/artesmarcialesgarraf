@@ -16,6 +16,23 @@ export const SITE = {
   // y los CTA dejan de prometer orientación. Se usó entre el 14 y el 15 de
   // agosto de 2026, mientras el buzón no existía.
   contactoActivo: true,
+  // WhatsApp. En Rank2Rent el lead es el producto y el `mailto:` es fricción
+  // alta en móvil: quien busca extraescolar para su hijo desde el sofá no abre
+  // un cliente de correo. Este canal está implementado y apagado a la espera
+  // del número: en cuanto `numero` tenga un valor aparece el botón en la
+  // cabecera, en los CTA y en /contacto/, sin tocar nada más.
+  //
+  // Formato: internacional, solo dígitos, sin '+' ni espacios ('34600112233').
+  // Debe ser una cuenta de WhatsApp Business real y atendida. Si no se va a
+  // responder, es mejor dejarlo vacío: un canal muerto es peor que ninguno.
+  //
+  // Ojo legal: al activarlo hay que descomentar el punto de WhatsApp en la
+  // sección 4 de /politica-privacidad/ (los mensajes pasan por Meta Platforms
+  // Ireland, que es un destinatario más de los datos del visitante).
+  whatsapp: {
+    numero: '',
+    horario: 'Respondemos de lunes a viernes, normalmente el mismo día.',
+  },
   region: {
     comarca: 'Comarca del Garraf',
     province: 'Barcelona',
@@ -45,6 +62,19 @@ export const SITE = {
       'Guía de artes marciales en la comarca del Garraf: boxeo, karate, MMA, muay thai, BJJ, judo, taekwondo y defensa personal en Sitges, Vilanova i la Geltrú, Sant Pere de Ribes, Cubelles y Canyelles.',
   },
 };
+
+/** ¿Hay canal de WhatsApp configurado y activo? */
+export const whatsappActivo = SITE.contactoActivo && SITE.whatsapp.numero.length > 0;
+
+/**
+ * Enlace wa.me con el mensaje ya redactado. El texto prerrellenado sube mucho
+ * la tasa de respuesta y, sobre todo, hace que el lead llegue calificado: con
+ * disciplina y municipio desde el primer mensaje, que es justo lo que un centro
+ * comprador quiere recibir.
+ */
+export function whatsappLink(mensaje: string): string {
+  return `https://wa.me/${SITE.whatsapp.numero}?text=${encodeURIComponent(mensaje)}`;
+}
 
 // ────────────────────────────────────────────────────────────────────────────
 // Entidades base del grafo de datos estructurados.

@@ -24,6 +24,16 @@ Estas reglas están por encima de cualquier objetivo de tráfico. Si cumplirlas 
 4. **Nada de consejo médico, legal ni terapéutico.** En temas de salud, lesiones, embarazo, TDAH o similares: describir el formato de la práctica y remitir explícitamente al profesional correspondiente.
 5. **Neutralidad comercial.** Ningún centro recibe trato preferente. Si algún día alguno paga por aparecer, se declarará en su ficha y su enlace llevará `rel="sponsored"` — pero eso no lo decide este agente.
 6. **Todo en español de España**, con la terminología marcial en su forma habitual (kata, randori, sparring, clinch, gi).
+7. **Ancla local obligatoria. Sin ella, el artículo no se escribe.** El informe del 25-08-2026 encontró que 8 de los 12 artículos que había publicado esta rutina no llevaban el Garraf ni en el título ni en la intención: comparativas nacionales genéricas que compiten en España entera contra dominios de diez años. Resultado medido: impresiones subiendo y **cero clics**. Y aunque llegaran a rankear, no servirían al negocio, porque un gimnasio de Vilanova no paga por un lector de Sevilla. Este sitio es Rank2Rent: el KPI no es tráfico, es lead con código postal del Garraf.
+
+   Un artículo cumple el ancla local si reúne las cuatro cosas:
+
+   - el Garraf o uno de sus municipios aparece en el título o, como mínimo, en las primeras 100 palabras **y** en el H2 principal;
+   - usa al menos un dato propio del directorio: cuántos centros constan, qué disciplina hay en qué municipio, o qué **no** existe en la comarca (que muay thai y krav maga no tengan ni un centro verificado es un dato tan bueno como cualquier otro);
+   - enlaza como mínimo a una money page o a un hub de municipio, no solo a otros artículos del blog;
+   - el campo `ancla_local` de su entrada en la cola dice cuál es ese ángulo. Si la entrada no lo trae, es que no se revisó: aplica el criterio y anótalo.
+
+   Si un tema no admite ángulo local honesto, **no se fuerza**: se marca `"estado": "descartado"` con su `motivo_descarte` y se coge la siguiente.
 
 ---
 
@@ -187,28 +197,29 @@ Después, ejecutar `npm run images`. Regenera todo y actualiza `src/data/imagene
 ## 5. Procedimiento de cada tanda
 
 1. `npm install` si hace falta.
-2. Leer `content/cola-blog.json`. Coger las **4 primeras entradas con `"estado": "pendiente"`**, ordenando por `prioridad` (1 antes que 2 antes que 3) y, dentro de la misma prioridad, por el orden del archivo.
+2. Leer `content/cola-blog.json`. Coger las **2 primeras entradas con `"estado": "pendiente"`** (bajado de 4 a 2 el 25-08-2026: cuatro artículos cada cuatro días sobre un dominio de junio sin un solo backlink es el perfil que Google describe como *scaled content abuse*). Ordenar por **`intencion_comercial`** (`alta` antes que `media`), luego por `prioridad` (1 antes que 2 antes que 3) y, dentro del mismo nivel, por el orden del archivo.
    - **Estacionalidad:** si estamos en agosto o septiembre, adelantar las entradas con `"estacionalidad": "septiembre"`. En diciembre y enero, las de `"enero"`.
    - **Entradas con `requiere_datos`:** leer ese campo y cumplirlo. Si el dato no existe, **saltar la entrada, dejarla pendiente** y coger la siguiente. No inventar nunca para desbloquearla.
-3. Escribir los 4 artículos siguiendo las secciones 2, 3 y 4.
+3. Escribir los 2 artículos siguiendo las secciones 2, 3 y 4. **Comprobar la regla 7 (ancla local) antes de dar por bueno cada uno.**
 3-bis. **Pasar cada artículo por la humanización de la sección 3-bis y por las puertas de calidad de la 3-ter** antes de guardarlo. Incluye la comprobación mecánica: `grep -c '—' ` sobre el texto nuevo tiene que dar 0, y el score de `analyze_blog.py` tiene que llegar a 90.
 4. `npm run images` y `npm run build`. **El build tiene que quedar en verde.**
 5. Verificar sobre `dist/`, y no dar por bueno nada que falle:
-   - las 4 páginas nuevas existen en `dist/blog/<slug>/index.html`;
-   - `<title>` ≤ 60 caracteres y `meta description` ≤ 160 en las 4;
+   - las 2 páginas nuevas existen en `dist/blog/<slug>/index.html`;
+   - `<title>` ≤ 60 caracteres y `meta description` ≤ 160 en las 2;
+   - **cada artículo enlaza al menos a una money page o hub de municipio** (regla 7);
    - exactamente un `<h1>` por página;
    - el `og:image` de cada una apunta a `/og/blog-<slug>.png` y ese archivo existe;
    - todos los enlaces internos del cuerpo resuelven a una página que existe en `dist/`;
-   - `sitemap.xml` incluye las 4 URLs nuevas;
-   - **cero guiones largos o medios** en el cuerpo de los 4 artículos nuevos (`grep -c '—\|–'` sobre las claves nuevas de `BLOG_BODIES` debe dar 0).
+   - `sitemap.xml` incluye las 2 URLs nuevas;
+   - **cero guiones largos o medios** en el cuerpo de los 2 artículos nuevos (`grep -c '—\|–'` sobre las claves nuevas de `BLOG_BODIES` debe dar 0).
 6. Marcar en `content/cola-blog.json` cada entrada publicada: `"estado": "publicado"` y `"publicado_en": "YYYY-MM-DD"`. Añadir su slug al array `publicados`.
 7. Actualizar `SITE.ultimaRevision` en `src/data/site.ts` a la fecha de hoy.
-8. Un solo commit con los 4 artículos y `git push origin main`. Vercel despliega solo.
+8. Un solo commit con los 2 artículos y `git push origin main`. Vercel despliega solo.
 
 **Mensaje de commit:**
 
 ```
-Blog: <título 1>, <título 2>, <título 3> y <título 4>
+Blog: <título 1> y <título 2>
 
 Tanda programada de la cola editorial (content/cola-blog.json).
 <Una línea por artículo: a qué búsqueda responde.>
@@ -216,7 +227,7 @@ Tanda programada de la cola editorial (content/cola-blog.json).
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
-**Si algo falla** (build en rojo, verificación que no pasa, una entrada que no se puede escribir sin inventar datos): **no publicar esa entrada**. Publicar las que sí estén bien, dejar la otra pendiente y decirlo con claridad en el resumen final. Es preferible una tanda de tres que un artículo con datos inventados.
+**Si algo falla** (build en rojo, verificación que no pasa, una entrada que no se puede escribir sin inventar datos): **no publicar esa entrada**. Publicar las que sí estén bien, dejar la otra pendiente y decirlo con claridad en el resumen final. Es preferible una tanda de uno que un artículo con datos inventados o sin ancla local.
 
 ---
 
@@ -227,9 +238,11 @@ Objetivo: que la cola no se agote y que no se repita lo ya publicado.
 1. Leer `content/cola-blog.json` entero y listar `src/data/pages.ts` para ver qué hay publicado de verdad.
 2. Revisar también las 62 páginas de disciplina, municipio y perfil (`ALL_PAGES` en `src/data/pages.ts`): una entrada de blog **no puede duplicar la intención** de una money page.
 3. Proponer **20 entradas nuevas** y añadirlas al final de `cola`, con `"estado": "pendiente"` y el mismo esquema de campos que las existentes (`id` correlativo, `slug`, `h1`, `keyword_principal`, `keywords_secundarias`, `cluster`, `prioridad`, `angulo`, `enlaces_internos`; `estacionalidad` y `requiere_datos` si aplican).
-   - Criterio: intención **informacional**, cola larga, con ángulo local del Garraf, y que no canibalice ni un artículo publicado ni una money page.
+   - Criterio: intención **informacional**, cola larga, con **ancla local que cumpla la regla 7** (no vale "con ángulo local" en abstracto: hay que poder escribir el campo `ancla_local` de forma concreta), y que no canibalice ni un artículo publicado ni una money page.
+   - Campos obligatorios añadidos el 25-08-2026: **`ancla_local`** (qué dato propio del Garraf sostiene el artículo) e **`intencion_comercial`** (`alta` si quien busca eso está a un paso de apuntarse a algo, `media` si es objeción o comparación previa a la decisión). **No se admiten entradas de intención `baja`:** si la búsqueda no lleva a ningún centro, es tráfico que no se puede vender.
+   - **Prohibido reponer comparativas nacionales genéricas** del tipo "boxeo o kickboxing", "diferencia judo y jiu jitsu": son el error que se corrigió el 25-08-2026 y ya hay doce publicadas.
    - Fuentes de ideas: preguntas que aparecen en los `faq` de `src/data/disciplines.ts` y en los `localFaq` de `src/data/local-content.ts` que aún no tengan artículo; huecos de cobertura conocidos (fitboxing, kung fu, aikido, grappling); estacionalidad del calendario; y variantes de las entradas que mejor encajen con lo ya publicado.
-4. Marcar como `"estado": "descartada"` (con `"motivo"`) cualquier entrada pendiente que haya quedado obsoleta o que se solape con algo publicado desde entonces. No borrarlas: el histórico importa.
+4. Marcar como `"estado": "descartado"` (con `"motivo_descarte"`) cualquier entrada pendiente que haya quedado obsoleta o que se solape con algo publicado desde entonces. No borrarlas: el histórico importa.
 5. Commit y push solo de `content/cola-blog.json`, con un resumen de qué se ha añadido y por qué.
 
 Esta rutina **no escribe artículos**. Solo mantiene la cola.

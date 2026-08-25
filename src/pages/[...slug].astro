@@ -152,9 +152,22 @@ const relatedByMunicipio = discipline && location
       6,
     )
   : [];
+// Ojo con el filtro: hay money pages de la misma disciplina en el MISMO
+// municipio (karate-infantil-en-sitges es disciplina karate y municipio
+// sitges). Sin excluir el municipio actual se colaban bajo un H2 que dice
+// "en otros municipios", y con el ancla generada a partir de disciplina +
+// municipio dos páginas distintas recibían la misma ancla ("Karate en
+// Sitges" apuntando a la general y a la infantil). El ancla sale ahora del
+// H1 real de la página destino, igual que en el módulo de al lado.
 const relatedByDisciplina = discipline && location
   ? ventanaRotada(
-      ALL_PAGES.filter(p => p.disciplina === discipline.slug && p.slug !== page.slug && p.type === 'money-page'),
+      ALL_PAGES.filter(
+        p =>
+          p.disciplina === discipline.slug &&
+          p.municipio !== location.slug &&
+          p.slug !== page.slug &&
+          p.type === 'money-page',
+      ),
       indicePagina,
       4,
     )
@@ -688,17 +701,14 @@ const variantesDePerfil =
           {discipline?.nameEs} en otros municipios del Garraf
         </h2>
         <div class="flex flex-wrap gap-3">
-          {relatedByDisciplina.map(p => {
-            const l = getLocationBySlug(p.municipio!);
-            return (
-              <a
-                href={`/${p.slug}/`}
-                class="bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
-              >
-                {discipline?.nameEs} en {l?.name ?? p.municipio}
-              </a>
-            );
-          })}
+          {relatedByDisciplina.map(p => (
+            <a
+              href={`/${p.slug}/`}
+              class="bg-brand-gray border border-brand-border hover:border-brand-red/40 rounded-lg px-4 py-2 text-sm text-brand-muted hover:text-white transition-all"
+            >
+              {p.h1.replace('Clases de ', '')}
+            </a>
+          ))}
         </div>
       </div>
     </section>

@@ -1,13 +1,13 @@
 {
   "_nota": "Cola editorial del blog. La mantiene el agente programado; ver PLAYBOOK-BLOG.md antes de escribir nada.",
   "generado": "2026-08-15",
-  "ultima_revision_cola": "2026-08-15",
+  "ultima_revision_cola": "2026-08-25",
   "_revision_cada_dias": 20,
   "metodologia": "Keyword research informacional. El research previo (keyword-research-artesmarcialesgarraf.xlsx, 85 keywords) es casi todo transaccional/local y ya está cubierto por las 62 money pages y hubs. Sin ficha de Google Business no se puede entrar en el Map Pack, así que las head terms transaccionales tienen techo: el tráfico realista de este activo es informacional de cola larga con intención de conversión (padre buscando dónde apuntar al hijo, adulto que quiere empezar). Estas 50 entradas atacan esa capa sin canibalizar ninguna página existente.",
   "cadencia": {
-    "posts_por_tanda": 4,
+    "posts_por_tanda": 2,
     "cada_dias": 4,
-    "nota": "A este ritmo la cola de 50 se agota en unos 50 días. La rutina de revisión (cada 20 días) repone 20."
+    "nota": "Bajado de 4 a 2 el 25-08-2026. Cuatro artículos cada cuatro días sobre un dominio de junio sin un solo backlink es el perfil que Google describe como scaled content abuse. A dos por tanda el ritmo sigue siendo alto para el tamaño del activo y deja margen para que cada artículo lleve dato local propio."
   },
   "publicados": [
     "blog/donde-aprender-boxeo-en-el-garraf",
@@ -117,8 +117,9 @@
       "id": 5,
       "slug": "mma-o-artes-marciales-tradicionales",
       "h1": "MMA o Arte Marcial Tradicional: Qué Buscas Realmente",
-      "keyword_principal": "mma o artes marciales tradicionales",
+      "keyword_principal": "mma o artes marciales tradicionales garraf",
       "keywords_secundarias": [
+        "mma o artes marciales tradicionales",
         "diferencia mma karate",
         "mma vs artes marciales tradicionales"
       ],
@@ -132,7 +133,9 @@
         "/iniciacion/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Cuáles de las dos se pueden entrenar de verdad en la comarca, con el recuento del directorio.",
+      "intencion_comercial": "media"
     },
     {
       "id": 6,
@@ -160,8 +163,9 @@
       "id": 7,
       "slug": "taekwondo-o-kickboxing-patadas",
       "h1": "Taekwondo o Kickboxing: Dos Formas Distintas de Patear",
-      "keyword_principal": "diferencia taekwondo kickboxing",
+      "keyword_principal": "diferencia taekwondo kickboxing garraf",
       "keywords_secundarias": [
+        "diferencia taekwondo kickboxing",
         "taekwondo o kickboxing",
         "taekwondo vs kickboxing"
       ],
@@ -174,7 +178,9 @@
         "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Dónde consta cada una en el Garraf: taekwondo llega a Cubelles y Sant Pere, kickboxing se concentra en Sitges y Vilanova.",
+      "intencion_comercial": "media"
     },
     {
       "id": 8,
@@ -192,8 +198,9 @@
         "/jiu-jitsu-brasileno/",
         "/mma/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Nicho técnico nacional (gi/no gi) sin intención de conversión local. Quien busca esto ya entrena."
     },
     {
       "id": 9,
@@ -281,8 +288,9 @@
       "id": 13,
       "slug": "artes-marciales-ninos-tdah",
       "h1": "Artes Marciales y TDAH: Qué se Puede Esperar y Qué No",
-      "keyword_principal": "artes marciales tdah niños",
+      "keyword_principal": "artes marciales tdah niños garraf",
       "keywords_secundarias": [
+        "artes marciales tdah niños",
         "deporte para niños con tdah",
         "karate tdah"
       ],
@@ -291,17 +299,21 @@
       "angulo": "Tema con mucha desinformación. Nada de afirmaciones terapéuticas: qué aporta el formato (rutina, turnos, objetivos cortos) y la advertencia de que no sustituye tratamiento.",
       "enlaces_internos": [
         "/clases-para-ninos/",
-        "/blog/mejor-arte-marcial-para-ninos-garraf/"
+        "/blog/mejor-arte-marcial-para-ninos-garraf/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Qué preguntar a un centro del Garraf sobre ratio, grupos y adaptación. Sin afirmaciones terapéuticas.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 14,
       "slug": "cuantos-dias-semana-entrena-un-nino",
       "h1": "Cuántos Días a la Semana Debería Entrenar un Niño",
-      "keyword_principal": "cuántos días a la semana artes marciales niños",
+      "keyword_principal": "cuántos días a la semana artes marciales niños garraf",
       "keywords_secundarias": [
+        "cuántos días a la semana artes marciales niños",
         "frecuencia entrenamiento infantil",
         "cuántas clases semana karate niño"
       ],
@@ -310,10 +322,13 @@
       "angulo": "Pregunta logística y económica a la vez. Dos días como estándar, cuándo tiene sentido subir y la señal de alarma de saturación de extraescolares.",
       "enlaces_internos": [
         "/clases-para-ninos/",
-        "/blog/a-que-edad-empezar-artes-marciales/"
+        "/blog/a-que-edad-empezar-artes-marciales/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Frecuencias que ofrecen de verdad los centros del directorio y cómo cuadran con las extraescolares de la comarca.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 15,
@@ -354,8 +369,9 @@
         "/judo/",
         "/blog/como-elegir-centro-artes-marciales-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Informacional puro. Se solapa con la entrada 46 y no lleva a ningún centro."
     },
     {
       "id": 17,
@@ -392,10 +408,14 @@
       "enlaces_internos": [
         "/clases-para-ninos/",
         "/blog/como-elegir-centro-artes-marciales-garraf/",
-        "/contacto/"
+        "/contacto/",
+        "/centros/",
+        "/iniciacion/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Antes de darle de baja, cambiar de centro o de disciplina dentro del Garraf: qué opciones reales tiene según el municipio.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 19,
@@ -412,10 +432,13 @@
       "enlaces_internos": [
         "/clases-para-ninos/",
         "/blog/como-elegir-centro-artes-marciales-garraf/",
-        "/judo/"
+        "/judo/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Objeción típica del padre antes de apuntar. Qué preguntar en la visita a un centro del Garraf.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 20,
@@ -443,8 +466,9 @@
       "id": 21,
       "slug": "empezar-artes-marciales-siendo-mujer",
       "h1": "Empezar Artes Marciales Siendo Mujer: Qué Esperar de Verdad",
-      "keyword_principal": "empezar artes marciales mujer",
+      "keyword_principal": "empezar artes marciales mujer garraf",
       "keywords_secundarias": [
+        "empezar artes marciales mujer",
         "artes marciales para mujeres principiantes",
         "primera clase mujer gimnasio combate"
       ],
@@ -457,14 +481,17 @@
         "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Qué disciplinas del directorio tienen grupo femenino o mixto declarado en fuente pública.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 22,
       "slug": "clases-mixtas-o-solo-mujeres",
       "h1": "¿Grupo Mixto o Solo Mujeres? Ventajas de Cada Uno",
-      "keyword_principal": "clases artes marciales solo mujeres",
+      "keyword_principal": "clases artes marciales solo mujeres garraf",
       "keywords_secundarias": [
+        "clases artes marciales solo mujeres",
         "grupo mixto o femenino defensa personal",
         "clases femeninas artes marciales"
       ],
@@ -474,17 +501,21 @@
       "enlaces_internos": [
         "/clases-para-mujeres/",
         "/defensa-personal/",
-        "/centros/"
+        "/centros/",
+        "/contacto/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Alta intención: quien busca esto quiere apuntarse. Decir con exactitud qué consta en la comarca y qué no.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 23,
       "slug": "cursos-defensa-personal-fin-de-semana",
       "h1": "Cursos de Defensa Personal de un Fin de Semana: Qué Dan y Qué No",
-      "keyword_principal": "curso defensa personal fin de semana",
+      "keyword_principal": "curso defensa personal fin de semana garraf",
       "keywords_secundarias": [
+        "curso defensa personal fin de semana",
         "seminario defensa personal sirve",
         "cursos intensivos defensa personal"
       ],
@@ -494,10 +525,13 @@
       "enlaces_internos": [
         "/blog/defensa-personal-para-mujeres-garraf/",
         "/defensa-personal/",
-        "/krav-maga/"
+        "/krav-maga/",
+        "/clases-para-mujeres/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Formato puntual contra clase continuada, y qué se puede hacer de verdad en el Garraf.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 24,
@@ -514,17 +548,21 @@
       "enlaces_internos": [
         "/clases-para-mujeres/",
         "/jiu-jitsu-brasileno/",
-        "/blog/como-elegir-centro-artes-marciales-garraf/"
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/clases-para-adultos/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Qué preguntar al centro y al profesional sanitario. Grupos y horarios compatibles en la comarca.",
+      "intencion_comercial": "media"
     },
     {
       "id": 25,
       "slug": "empezar-artes-marciales-a-los-40",
       "h1": "Empezar Artes Marciales a los 40",
-      "keyword_principal": "empezar artes marciales a los 40",
+      "keyword_principal": "empezar artes marciales a los 40 garraf",
       "keywords_secundarias": [
+        "empezar artes marciales a los 40",
         "es tarde para empezar artes marciales",
         "artes marciales cuarenta años"
       ],
@@ -534,18 +572,22 @@
       "enlaces_internos": [
         "/clases-para-adultos/",
         "/blog/artes-marciales-adultos-principiantes-garraf/",
-        "/blog/a-que-edad-empezar-artes-marciales/"
+        "/blog/a-que-edad-empezar-artes-marciales/",
+        "/centros/"
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "estacionalidad": "enero"
+      "estacionalidad": "enero",
+      "ancla_local": "Qué disciplinas del Garraf perdonan más al cuerpo de 40 y en qué municipios están.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 26,
       "slug": "empezar-artes-marciales-a-los-50",
       "h1": "Empezar a los 50 o Más: Sí, con el Grupo Adecuado",
-      "keyword_principal": "artes marciales a los 50 años",
+      "keyword_principal": "artes marciales a los 50 años garraf",
       "keywords_secundarias": [
+        "artes marciales a los 50 años",
         "deporte de contacto mayores 50",
         "empezar artes marciales tarde"
       ],
@@ -558,14 +600,17 @@
         "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Tramo con poca oferta específica. Decir qué hay realmente en la comarca y qué preguntar.",
+      "intencion_comercial": "media"
     },
     {
       "id": 27,
       "slug": "artes-marciales-con-sobrepeso",
       "h1": "Empezar con Sobrepeso: Qué Disciplina y Cómo Plantearlo",
-      "keyword_principal": "artes marciales con sobrepeso",
+      "keyword_principal": "artes marciales con sobrepeso garraf",
       "keywords_secundarias": [
+        "artes marciales con sobrepeso",
         "deporte de combate sobrepeso",
         "empezar a entrenar con kilos de más"
       ],
@@ -575,11 +620,14 @@
       "enlaces_internos": [
         "/clases-para-adultos/",
         "/boxeo/",
-        "/jiu-jitsu-brasileno/"
+        "/jiu-jitsu-brasileno/",
+        "/iniciacion/"
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "estacionalidad": "enero"
+      "estacionalidad": "enero",
+      "ancla_local": "Qué disciplinas del directorio permiten empezar sin nivel previo y sin impacto alto.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 28,
@@ -599,7 +647,9 @@
         "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Reincorporación: grado antiguo, grupos de nivel y qué centros del Garraf separan por nivel.",
+      "intencion_comercial": "media"
     },
     {
       "id": 29,
@@ -618,9 +668,10 @@
         "/blog/artes-marciales-adultos-principiantes-garraf/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
+      "estado": "descartado",
       "publicado_en": null,
-      "estacionalidad": "enero"
+      "estacionalidad": "enero",
+      "motivo_descarte": "Head term nacional sin ángulo local posible y sin siguiente paso comercial."
     },
     {
       "id": 30,
@@ -640,15 +691,17 @@
         "/sitges/",
         "/vilanova-i-la-geltru/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Fuera de tema: no es artes marciales, es productividad. No aporta relevancia temática."
     },
     {
       "id": 31,
       "slug": "entrenar-sin-querer-competir",
       "h1": "Entrenar sin Querer Competir Nunca: Es lo Normal",
-      "keyword_principal": "artes marciales sin competir",
+      "keyword_principal": "artes marciales sin competir garraf",
       "keywords_secundarias": [
+        "artes marciales sin competir",
         "se puede practicar sin competir",
         "hay que competir en artes marciales"
       ],
@@ -658,10 +711,13 @@
       "enlaces_internos": [
         "/iniciacion/",
         "/clases-para-adultos/",
-        "/blog/como-elegir-centro-artes-marciales-garraf/"
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Muy alta intención en adultos. Qué centros del directorio no exigen competición.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 32,
@@ -682,7 +738,9 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente."
+      "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente.",
+      "intencion_comercial": "alta",
+      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local."
     },
     {
       "id": 33,
@@ -703,7 +761,9 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "requiere_datos": "Solo con horarios publicados en fuentes públicas de los centros del directorio. Nada de franjas inventadas. Si no hay fuentes suficientes, escribir en clave de 'qué preguntar' y no de 'estos son los horarios'."
+      "requiere_datos": "Solo con horarios publicados en fuentes públicas de los centros del directorio. Nada de franjas inventadas. Si no hay fuentes suficientes, escribir en clave de 'qué preguntar' y no de 'estos son los horarios'.",
+      "intencion_comercial": "alta",
+      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local."
     },
     {
       "id": 34,
@@ -724,7 +784,10 @@
         "/karate/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "intencion_comercial": "media",
+      "ancla_local": "Qué material pide cada centro del directorio, no un listado genérico.",
+      "requiere_datos": "Necesita el sondeo a los centros: qué equipación exige cada uno y cuándo. Sin ese dato el artículo es un listado nacional más y no se escribe."
     },
     {
       "id": 35,
@@ -743,15 +806,17 @@
         "/jiu-jitsu-brasileno/",
         "/karate/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Mantenimiento de material. Cero intención de apuntarse a nada."
     },
     {
       "id": 36,
       "slug": "licencia-federativa-y-seguro-deportivo",
       "h1": "Licencia Federativa y Seguro Deportivo: Qué Cubren",
-      "keyword_principal": "licencia federativa artes marciales",
+      "keyword_principal": "licencia federativa artes marciales cataluña",
       "keywords_secundarias": [
+        "licencia federativa artes marciales",
         "seguro deportivo obligatorio karate",
         "para qué sirve la licencia federativa"
       ],
@@ -760,17 +825,21 @@
       "angulo": "Pregunta de treinta segundos que casi nadie hace y que puede salir cara. Qué es cada cosa, quién la tramita y qué cubre en el Garraf.",
       "enlaces_internos": [
         "/blog/como-elegir-centro-artes-marciales-garraf/",
-        "/centros/"
+        "/centros/",
+        "/iniciacion/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Trámite real y catalán: qué federación, cuándo la piden los centros del Garraf y qué cubre.",
+      "intencion_comercial": "media"
     },
     {
       "id": 37,
       "slug": "clase-de-prueba-que-preguntar",
       "h1": "La Clase de Prueba: Qué Mirar y Qué Preguntar",
-      "keyword_principal": "clase de prueba artes marciales",
+      "keyword_principal": "clase de prueba artes marciales garraf",
       "keywords_secundarias": [
+        "clase de prueba artes marciales",
         "qué preguntar en un gimnasio de artes marciales",
         "primera visita dojo"
       ],
@@ -780,10 +849,13 @@
       "enlaces_internos": [
         "/blog/como-elegir-centro-artes-marciales-garraf/",
         "/centros/",
-        "/iniciacion/"
+        "/iniciacion/",
+        "/contacto/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "La intención más comercial de todo el cluster. Guion de la visita a un centro del directorio.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 38,
@@ -801,8 +873,9 @@
         "/clases-para-adultos/",
         "/blog/artes-marciales-adultos-principiantes-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Duplica la entrada 14 con el mismo ángulo. Riesgo de canibalización."
     },
     {
       "id": 39,
@@ -821,9 +894,10 @@
         "/clases-para-adultos/",
         "/blog/como-elegir-centro-artes-marciales-garraf/"
       ],
-      "estado": "pendiente",
+      "estado": "descartado",
       "publicado_en": null,
-      "estacionalidad": "enero"
+      "estacionalidad": "enero",
+      "motivo_descarte": "Genérico de gimnasio, no de artes marciales. Sin ángulo local."
     },
     {
       "id": 40,
@@ -841,10 +915,14 @@
         "/boxeo/",
         "/jiu-jitsu-brasileno/",
         "/judo/",
-        "/blog/como-elegir-centro-artes-marciales-garraf/"
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/iniciacion/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Objeción previa a apuntarse. Qué preguntar sobre material y supervisión en un centro del Garraf.",
+      "intencion_comercial": "media"
     },
     {
       "id": 41,
@@ -862,15 +940,17 @@
         "/clases-para-adultos/",
         "/blog/artes-marciales-adultos-principiantes-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Fisiología general. Compite contra medios de salud nacionales y no lleva a un centro."
     },
     {
       "id": 42,
       "slug": "artes-marciales-y-estres",
       "h1": "Artes Marciales y Estrés: por Qué Funciona Tan Bien",
-      "keyword_principal": "artes marciales para el estrés",
+      "keyword_principal": "artes marciales para el estrés garraf",
       "keywords_secundarias": [
+        "artes marciales para el estrés",
         "deporte para la ansiedad",
         "boxeo para descargar estrés"
       ],
@@ -880,10 +960,13 @@
       "enlaces_internos": [
         "/boxeo/",
         "/clases-para-adultos/",
-        "/iniciacion/"
+        "/iniciacion/",
+        "/centros/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Motivo de entrada declarado por muchos adultos. Qué disciplinas de la comarca encajan y en qué horarios.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 43,
@@ -900,17 +983,22 @@
       "enlaces_internos": [
         "/boxeo/",
         "/muay-thai/",
-        "/blog/como-elegir-centro-artes-marciales-garraf/"
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/iniciacion/",
+        "/kickboxing/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Objeción concreta del adulto principiante. Cómo se gradúa el contacto y qué preguntar en el Garraf.",
+      "intencion_comercial": "media"
     },
     {
       "id": 44,
       "slug": "artes-marciales-para-perder-peso",
       "h1": "Artes Marciales para Perder Peso: Qué Esperar",
-      "keyword_principal": "artes marciales para adelgazar",
+      "keyword_principal": "artes marciales para adelgazar garraf",
       "keywords_secundarias": [
+        "artes marciales para adelgazar",
         "boxeo para perder peso",
         "qué deporte quema más calorías combate"
       ],
@@ -920,11 +1008,14 @@
       "enlaces_internos": [
         "/boxeo/",
         "/kickboxing/",
-        "/clases-para-adultos/"
+        "/clases-para-adultos/",
+        "/centros/"
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "estacionalidad": "enero"
+      "estacionalidad": "enero",
+      "ancla_local": "Alta intención de alta. Sin promesas de resultados: gasto real por disciplina y qué hay en la comarca.",
+      "intencion_comercial": "alta"
     },
     {
       "id": 45,
@@ -942,8 +1033,9 @@
         "/clases-para-adultos/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Contenido de entrenamiento nacional, altísima competencia y cero conversión."
     },
     {
       "id": 46,
@@ -963,8 +1055,9 @@
         "/taekwondo/",
         "/jiu-jitsu-brasileno/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Enciclopédico. Wikipedia y las federaciones lo tienen resuelto."
     },
     {
       "id": 47,
@@ -983,8 +1076,9 @@
         "/centros/",
         "/blog/como-elegir-centro-artes-marciales-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Enciclopédico y transversal, sin municipio ni siguiente paso."
     },
     {
       "id": 48,
@@ -1005,8 +1099,9 @@
         "/muay-thai/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Glosario. Cero intención comercial."
     },
     {
       "id": 49,
@@ -1026,8 +1121,9 @@
         "/boxeo/",
         "/karate/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "descartado",
+      "publicado_en": null,
+      "motivo_descarte": "Deporte olímpico, tema nacional/global. Nada que ver con captar un alumno del Garraf."
     },
     {
       "id": 50,
@@ -1044,10 +1140,24 @@
       "enlaces_internos": [
         "/centros/",
         "/blog/como-elegir-centro-artes-marciales-garraf/",
-        "/taekwondo/"
+        "/taekwondo/",
+        "/karate/"
       ],
       "estado": "pendiente",
-      "publicado_en": null
+      "publicado_en": null,
+      "ancla_local": "Tema catalán con autoridad temática. Qué clubs del Garraf constan federados según fuente pública.",
+      "intencion_comercial": "media"
     }
-  ]
+  ],
+  "regla_local": {
+    "obligatoria": true,
+    "texto": "Ninguna entrada se escribe sin ancla local. El informe del 25-08-2026 encontró que 8 de los 12 artículos publicados por la rutina no llevaban el Garraf ni en el título ni en la intención: compiten en España entera contra dominios de diez años, generan impresiones sin clics y, aunque rankearan, un gimnasio de Vilanova no paga por un lector de Sevilla. En Rank2Rent el KPI no es tráfico, es lead con código postal del Garraf.",
+    "requisitos": [
+      "El Garraf o uno de sus municipios aparece en el título o, como mínimo, en las primeras 100 palabras y en el H2 principal.",
+      "El artículo usa al menos un dato propio del directorio (recuento de centros, qué disciplina consta en qué municipio, qué NO existe en la comarca).",
+      "Enlaza como mínimo a una money page o a un hub de municipio, no solo a otros artículos del blog.",
+      "Si un tema no admite ángulo local honesto, no se escribe: se marca descartado con motivo."
+    ]
+  },
+  "orden_de_escritura": "Primero intencion_comercial alta, luego media. Dentro del mismo nivel, por prioridad y después por estacionalidad del mes en curso."
 }

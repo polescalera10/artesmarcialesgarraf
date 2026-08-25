@@ -1,5 +1,7 @@
 import { DISCIPLINES, getDisciplineBySlug } from './disciplines';
 import { LOCATIONS, getLocationBySlug } from './locations';
+import { getCentros, getCentrosByDisciplina, getCentrosByMunicipio } from './centros';
+import { SITE } from './site';
 import { BLOG_BODIES } from './blog-posts';
 import {
   MUNICIPIO_BODIES,
@@ -80,6 +82,24 @@ function titleWithSuffix(base: string, suffixes: string[]): string {
     if (candidate.length <= MAX_TITLE) return candidate;
   }
   return clamp(base, MAX_TITLE);
+}
+
+// ── Títulos que prometen lo que la página trae ───────────────────────────────
+// El informe del 25-08-2026 encontró cuarenta money pages con el mismo título
+// informacional ("Guía para Empezar a Entrenar") respondiendo a búsquedas
+// transaccionales: quien busca "karate en Sitges" quiere dónde, cuándo y
+// cuánto, no una guía. El título ahora declara cuántos centros verificados
+// trae la página, que es lo que la diferencia de cualquier otro resultado.
+//
+// El número sale del directorio, nunca de una plantilla: si un municipio no
+// tiene ni un centro para esa disciplina el título NO puede prometer ninguno,
+// así que cambia de promesa y ofrece alternativas cerca. Prometer centros que
+// no existen es la vía rápida a un CTR alto y un rebote inmediato, además de
+// faltar a la verdad.
+const ANIO_REVISION = SITE.ultimaRevision.slice(0, 4);
+
+function contarCentros(n: number): string {
+  return n === 1 ? '1 centro' : `${n} centros`;
 }
 
 // ── Generates all money page slugs: [disciplina]-en-[municipio] ────────────
@@ -471,19 +491,30 @@ function generateMoneyPage(combo: typeof MONEY_COMBOS[0]): PageDef {
         ]
       : undefined;
 
+  const nCentros = getCentros(mSlug, dSlug).length;
+
   return {
     slug: `${dSlug}-en-${mSlug}`,
     type: 'money-page',
     municipio: mSlug,
     disciplina: dSlug,
     meta: {
-      title: titleWithSuffix(`${dTitle} en ${mTitle}`, [
-        'Guía para Empezar a Entrenar',
-        'Guía para Empezar',
-        'Guía del Garraf',
-        'Garraf',
-      ]),
-      description: `Clases de ${dName.toLowerCase()} en ${mName}: cómo es la iniciación, con qué criterios elegir centro y dónde se practica. Guía del Garraf.`,
+      title: nCentros > 0
+        ? titleWithSuffix(`${dTitle} en ${mTitle}: ${contarCentros(nCentros)}`, [
+            `Horarios y Qué Preguntar`,
+            `Guía ${ANIO_REVISION}`,
+            'Guía',
+            'Garraf',
+          ])
+        : titleWithSuffix(`${dTitle} en ${mTitle}`, [
+            'Dónde Entrenar y Qué Hay Cerca',
+            'Dónde Entrenar Cerca',
+            'Guía del Garraf',
+            'Garraf',
+          ]),
+      description: nCentros > 0
+        ? `${contarCentros(nCentros)} de ${dName.toLowerCase()} en ${mName} verificados con fuente pública: dónde están, qué preguntar antes de apuntarte y cómo es la primera clase.`
+        : `Ningún centro de ${mName} anuncia ${dName.toLowerCase()} hoy. Te decimos qué hay cerca, qué disciplina se le parece y con qué criterios elegir en el Garraf.`,
     },
     h1: `Clases de ${dTitle} en ${mName}`,
     intro,
@@ -499,12 +530,20 @@ const HUB_MUNICIPIO_PAGES: PageDef[] = LOCATIONS.map(loc => ({
   type: 'hub-municipio' as PageType,
   municipio: loc.slug,
   meta: {
-    title: titleWithSuffix(`Artes Marciales en ${loc.name}`, [
-      'Guía Local del Garraf',
-      'Guía del Garraf',
-      'Garraf',
-    ]),
-    description: `Artes marciales en ${loc.name}: qué disciplinas constan de verdad en el municipio, dónde entrenar cerca y cómo elegir centro. Guía del Garraf.`,
+    title: getCentrosByMunicipio(loc.slug).length > 0
+      ? titleWithSuffix(
+          `Artes Marciales en ${loc.name}: ${contarCentros(getCentrosByMunicipio(loc.slug).length)}`,
+          ['Directorio Verificado', 'Directorio', `Guía ${ANIO_REVISION}`, 'Garraf'],
+        )
+      : titleWithSuffix(`Artes Marciales en ${loc.name}`, [
+          'Dónde Entrenar Cerca del Municipio',
+          'Dónde Entrenar Cerca',
+          'Guía del Garraf',
+          'Garraf',
+        ]),
+    description: getCentrosByMunicipio(loc.slug).length > 0
+      ? `${contarCentros(getCentrosByMunicipio(loc.slug).length)} de artes marciales en ${loc.name} verificados con fuente pública: qué disciplinas imparte cada uno y cómo elegir.`
+      : `Ningún centro de artes marciales de ${loc.name} consta con fuente pública verificable. Te decimos dónde entrenar cerca y qué disciplinas hay en cada municipio.`,
   },
   h1: `Clases de Artes Marciales en ${loc.name}`,
   intro: loc.desc,
@@ -521,12 +560,19 @@ const HUB_DISCIPLINA_PAGES: PageDef[] = DISCIPLINES.map(d => ({
   type: 'hub-disciplina' as PageType,
   disciplina: d.slug,
   meta: {
-    title: titleWithSuffix(`${d.nameEs} en el Garraf`, [
-      'Guía para Empezar a Entrenar',
-      'Guía para Empezar',
-      'Guía Local',
-    ]),
-    description: `${d.nameEs} en la comarca del Garraf: qué es, para quién encaja y en qué municipios se practica según nuestro directorio verificado.`,
+    title: getCentrosByDisciplina(d.slug).length > 0
+      ? titleWithSuffix(
+          `${d.nameEs} en el Garraf: ${contarCentros(getCentrosByDisciplina(d.slug).length)}`,
+          ['Dónde Entrenar', `Guía ${ANIO_REVISION}`, 'Guía', 'Garraf'],
+        )
+      : titleWithSuffix(`${d.nameEs} en el Garraf`, [
+          'Qué Hay y Qué Alternativas Tienes',
+          'Qué Alternativas Tienes',
+          'Guía Local',
+        ]),
+    description: getCentrosByDisciplina(d.slug).length > 0
+      ? `${contarCentros(getCentrosByDisciplina(d.slug).length)} de ${d.nameEs.toLowerCase()} en la comarca del Garraf verificados con fuente pública: en qué municipio está cada uno y para quién encaja.`
+      : `Ningún centro del Garraf anuncia ${d.nameEs.toLowerCase()} con fuente pública verificable. Qué es, para quién encaja y qué disciplinas de la comarca se le parecen.`,
   },
   h1: `${d.nameEs} en el Garraf`,
   intro: `${d.shortDesc} En esta guía te explicamos qué aporta ${d.nameEs.toLowerCase() === 'artes marciales mixtas' ? 'el MMA' : `el ${d.nameEs.toLowerCase()}`}, para quién es adecuado, cómo son las clases de iniciación y con qué criterios elegir centro en Sitges, Vilanova i la Geltrú o el resto de la comarca del Garraf. Si tienes dudas sobre por dónde empezar, escríbenos y te orientamos sin coste.`,
