@@ -60,7 +60,9 @@ El estándar es el de los artículos ya publicados. Antes de escribir, **abre `s
 
 Un texto que huele a IA le cuesta credibilidad a una guía que se vende como editorial independiente. Todo artículo pasa por esta revisión **antes** de escribirlo en `blog-posts.ts`.
 
-**Primero, intenta usar la skill.** Invoca la skill `humanizer` sobre el borrador completo. Si el entorno la tiene disponible, es la versión canónica y manda sobre el resumen de abajo. Si no está disponible, no pasa nada: aplica esta lista, que es su destilado.
+**Primero, intenta usar la skill.** Invoca la skill `blog` (claude-blog) sobre el borrador completo y aplica su referencia de revisión editorial, `references/ai-slop-detection.md`, con su método de dos niveles: el reflejo de primer orden (vocabulario y muletillas) y el de segundo orden (estructura repetida, ritmo plano, relleno que sobrevive a una limpieza de palabras). Si el entorno la tiene disponible, es la versión canónica y manda sobre el resumen de abajo. Si no está disponible, no pasa nada: aplica esta lista, que es su destilado.
+
+Sustituye a la antigua skill `humanizer`, que ya no se usa en este proyecto. La lista de abajo sigue siendo válida y es específica de esta web: la skill cubre el patrón general en inglés, y esta lista añade lo que aplica al castellano y al Garraf.
 
 **El método:** escribe el borrador, luego pregúntate en frío *"¿qué delata que esto lo ha escrito una máquina?"*, y reescribe atacando lo que encuentres. Una sola pasada de revisión no basta si el borrador salió plano.
 
@@ -94,6 +96,33 @@ Un texto que huele a IA le cuesta credibilidad a una guía que se vende como edi
 - **Alguna aparte o autocorrección.** Un inciso entre paréntesis, un "aunque aquí conviene matizar". La prosa perfectamente ordenada se lee como generada.
 
 **No te pases.** Humanizar no es meter coloquialismos ni chistes. El objetivo es que suene a la persona que escribió los artículos de referencia: alguien con criterio, con prisa y sin ganas de vender nada.
+
+---
+
+## 3-ter. Puertas de calidad (skill `blog`, antes de guardar)
+
+Si la skill `blog` está disponible, cada artículo pasa además por dos comprobaciones automáticas. No sustituyen al criterio de las secciones 2, 3 y 3-bis: son la red de seguridad.
+
+**Cómo se ejecutan.** El cuerpo del artículo vive dentro de una plantilla de string en `blog-posts.ts`, así que primero se vuelca el borrador a un archivo temporal y se analiza ahí:
+
+```bash
+# El borrador, tal cual, en un temporal fuera del repo
+cat > /tmp/borrador-<slug>.html <<'EOF'
+<h2>…</h2>
+EOF
+
+python3 ~/.claude/scripts/analyze_blog.py /tmp/borrador-<slug>.html
+```
+
+**Puerta 1, calidad (`blog-analyze`).** Score sobre 100 en cinco categorías: contenido, SEO, E-E-A-T, elementos técnicos y preparación para citas en buscadores de IA. **Mínimo para guardar: 90.** Por debajo, se lee la lista de recomendaciones (vienen priorizadas como Critical / High / Medium / Low), se corrige lo Critical y High, y se vuelve a puntuar. Si tras dos iteraciones sigue por debajo de 90, se deja la entrada pendiente y se dice en el resumen. No se baja el listón para cerrar la tanda.
+
+Ojo con dos cosas al leer el score: las categorías técnicas y de schema puntúan sobre el artículo aislado, sin la plantilla del sitio, así que penalizaciones por falta de JSON-LD, canonical u Open Graph son falsos positivos aquí (los pone la plantilla, y la verificación sobre `dist/` del paso 5 ya los cubre). Lo que sí manda es la parte de contenido, E-E-A-T y citabilidad.
+
+**Puerta 2, SEO on-page (`blog-seo-check`).** Checklist de pass/fail sobre título, meta descripción, jerarquía de encabezados, enlaces internos y externos con su anchor, y texto alternativo de imágenes. Todo lo que salga en fail se corrige antes de guardar, salvo lo que dependa de la plantilla.
+
+**Puerta 3, la de siempre.** `grep -c '—\|–'` sobre el cuerpo nuevo tiene que dar 0. Esta no la delega la skill: es regla dura del proyecto y se comprueba a mano.
+
+**Si la skill no está disponible**, no se aborta la tanda: se aplica el destilado de la sección 3-bis, se cumple la puerta 3 igualmente, y el resumen final dice que se trabajó sin skill.
 
 ---
 
@@ -162,7 +191,7 @@ Después, ejecutar `npm run images`. Regenera todo y actualiza `src/data/imagene
    - **Estacionalidad:** si estamos en agosto o septiembre, adelantar las entradas con `"estacionalidad": "septiembre"`. En diciembre y enero, las de `"enero"`.
    - **Entradas con `requiere_datos`:** leer ese campo y cumplirlo. Si el dato no existe, **saltar la entrada, dejarla pendiente** y coger la siguiente. No inventar nunca para desbloquearla.
 3. Escribir los 4 artículos siguiendo las secciones 2, 3 y 4.
-3-bis. **Pasar cada artículo por la humanización de la sección 3-bis** antes de guardarlo. Incluye la comprobación mecánica: `grep -c '—' ` sobre el texto nuevo tiene que dar 0.
+3-bis. **Pasar cada artículo por la humanización de la sección 3-bis y por las puertas de calidad de la 3-ter** antes de guardarlo. Incluye la comprobación mecánica: `grep -c '—' ` sobre el texto nuevo tiene que dar 0, y el score de `analyze_blog.py` tiene que llegar a 90.
 4. `npm run images` y `npm run build`. **El build tiene que quedar en verde.**
 5. Verificar sobre `dist/`, y no dar por bueno nada que falle:
    - las 4 páginas nuevas existen en `dist/blog/<slug>/index.html`;
