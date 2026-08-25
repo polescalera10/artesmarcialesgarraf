@@ -9,6 +9,200 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/krav-maga-o-defensa-personal': `
+<h2>La duda de verdad no es cuál es mejor</h2>
+<p>Quien busca esto casi nunca quiere una comparativa de sistemas. Quiere saber si al apuntarse a una cosa se está perdiendo la otra, y si el cartel que ha visto en el escaparate de un gimnasio dice lo que él cree que dice. La respuesta corta: <strong>el krav maga es un sistema concreto, con currículo y certificación propios; la defensa personal es una categoría, no un estilo</strong>. Todo krav maga es defensa personal. No toda defensa personal es krav maga, ni se le parece.</p>
+<p>Suena a matiz de manual y tiene una consecuencia muy práctica. Cuando lees "krav maga" sabes bastante de lo que vas a encontrarte dentro. Cuando lees "defensa personal" no sabes casi nada hasta que preguntas.</p>
+
+<h2>Qué es el krav maga y qué implica esa etiqueta</h2>
+<p>El krav maga nació como método de instrucción militar israelí y se adaptó después al ámbito civil. Su lógica se reconoce enseguida: pocas técnicas y muy repetidas, defensa y ataque en el mismo movimiento, trabajo con fatiga acumulada y una preferencia sistemática por lo simple sobre lo elegante. No hay katas, no hay competición y no hay podio. La progresión son niveles internos, y quien los otorga es la organización a la que pertenece el instructor.</p>
+<p>Ahí está la mitad de las confusiones. El krav maga no tiene una federación única en el mundo: conviven varias organizaciones con su propio programa, sus grados y sus cursos de formación de instructor. Eso no lo hace peor, pero sí significa que la palabra en el cartel no garantiza por sí sola nada. Lo que hay que preguntar es de qué organización viene la certificación de quien da <em>tu</em> clase, no la del director técnico que sale en la web. Tienes la versión larga de esa conversación en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+<p>Un aviso sobre el vocabulario. El krav maga se vende con frecuencia con un lenguaje muy duro (neutralizar, amenaza, mundo real) que funciona mejor como marketing que como descripción de un martes cualquiera de clase. La práctica real es bastante más aburrida y bastante más repetitiva de lo que sugiere el vídeo promocional.</p>
+
+<h2>Qué quiere decir "defensa personal" en el cartel de un gimnasio</h2>
+<p>Aquí no hay currículo común, así que detrás de esas dos palabras puede haber cosas que no se parecen entre sí:</p>
+<ul>
+<li>Un programa propio del club, construido por el instructor con lo que sabe de su disciplina de origen.</li>
+<li>Un curso corto y cerrado, de unas semanas o de un fin de semana, con temario de prevención y respuesta básica.</li>
+<li>Un grupo específico para mujeres, con contenido enfocado a las agresiones más frecuentes en ese contexto.</li>
+<li>Una versión adaptada de un arte marcial existente, normalmente <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a>, <a href="/boxeo/">boxeo</a> o <a href="/judo/">judo</a>, presentada bajo esa etiqueta porque es lo que la gente busca.</li>
+</ul>
+<p>La última es más común de lo que parece, y no tiene nada de malo si te lo cuentan. Lo que sí es un problema es enterarte en la tercera clase.</p>
+<p>Lo bueno de la etiqueta abierta es que un buen programa de <a href="/defensa-personal/">defensa personal</a> puede dedicar tiempo a lo que de verdad resuelve la mayoría de situaciones y que ningún sistema de combate entrena por sí solo: distancia, lectura del entorno, voz, salida. Lo malo es que también puede ser un refrito de técnicas sin nadie que sepa cómo se aplican bajo presión.</p>
+
+<h2>Dónde se nota la diferencia en una clase normal</h2>
+<p>Si entras a mirar dos clases, esto es lo que vas a ver distinto. En krav maga hay más volumen físico, más ejercicios con el pulso alto y más simulaciones con presión, y el contacto medio es superior. El vestuario técnico es escaso: se entrena con ropa resistente, y en las simulaciones aparecen bucal y coquilla.</p>
+<p>En un grupo de defensa personal el ritmo suele ser más bajo, hay más trabajo por parejas con roles alternos y más parte hablada. En muchos programas la parte de prevención ocupa un espacio real, no dos frases al principio. Y el contacto acostumbra a ser bajo, lo que para bastante gente es exactamente la razón por la que entra por esa puerta.</p>
+<p>Ninguna de las dos cosas es mejor. Son dos maneras distintas de repartir el tiempo de una hora.</p>
+
+<h2>Cuál encaja con lo que buscas</h2>
+<p>Nos mojamos, que para eso está esta guía.</p>
+<p><strong>Si buscas una práctica continuada</strong>, con progresión, exigencia física y un grupo con el que entrenar durante años, el krav maga tiene más recorrido: hay currículo, hay niveles y hay a dónde ir después del primer trimestre.</p>
+<p><strong>Si lo que quieres es reducir un riesgo concreto</strong>, y no necesariamente convertirte en practicante, un programa de defensa personal bien planteado te da antes lo que has ido a buscar, sobre todo la parte de prevención y distancia, que es la que más veces evita el problema.</p>
+<p>Hay un tercer caso que no encaja en ninguno de los dos anteriores: el de quien viene con poca base física o con alguna lesión antigua. La defensa personal permite regular la intensidad con más facilidad, mientras que el krav maga se puede adaptar pero su formato empuja hacia arriba. Aunque aquí conviene matizar que eso depende bastante del instructor, y que lo sensato es contárselo en la primera conversación en lugar de decidirlo tú por la etiqueta.</p>
+<p>Y si dudas entre esto y otras opciones de agarre o de golpeo, en la guía de <a href="/defensa-personal/">defensa personal</a> está la comparativa con boxeo y jiu-jitsu, y la de <a href="/blog/defensa-personal-para-mujeres-garraf/">defensa personal para mujeres en el Garraf</a> entra en el detalle de qué debe incluir un programa serio.</p>
+
+<h2>Lo que ninguno de los dos va a darte</h2>
+<p>El matiz incómodo, porque el sector no suele decirlo. Ni el krav maga ni la defensa personal te dan garantías de nada. Una agresión real es caótica, rápida y normalmente no se parece al ejercicio de clase. Lo que un buen programa mejora es la probabilidad de reaccionar en lugar de bloquearte, y la de haber leído la situación antes de que llegue a ese punto.</p>
+<p>Por eso hay una frase que debería hacerte salir del despacho: cualquier promesa de resultado. "Defensa personal garantizada en un fin de semana" o "aprende a neutralizar a cualquier agresor" son afirmaciones que nadie serio firma. Un instructor solvente te dirá justo lo contrario, que esto requiere repetición y que la mejor técnica es la que evita el contacto.</p>
+<p>Tampoco esperes que un curso intensivo sustituya a la práctica regular. Retienes lo que has repetido muchas veces, no lo que viste un sábado por la mañana.</p>
+
+<h2>Qué preguntar antes de pagar, sea cual sea la etiqueta</h2>
+<p>Cinco preguntas que valen para los dos casos y se responden en una llamada:</p>
+<ul>
+<li>Quién imparte el grupo, qué formación tiene y de qué organización o federación viene.</li>
+<li>Qué porcentaje de la clase es técnica, qué parte es acondicionamiento físico y si hay parte de prevención.</li>
+<li>Cómo se introduce la presión: cuándo empiezan las simulaciones y con qué protecciones.</li>
+<li>Si hay licencia federativa o seguro deportivo, quién lo tramita y qué cubre.</li>
+<li>Si puedes ver o probar una clase antes de comprometerte con una cuota.</li>
+</ul>
+<p>La quinta es la que más informa. Un centro que no te deja mirar una clase ya te ha contestado a las otras cuatro.</p>
+
+<h2>Y en el Garraf, ¿dónde miro?</h2>
+<p>Las dos cosas existen en la comarca, con la oferta concentrada en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>. Desde Sant Pere de Ribes, Cubelles o Canyelles lo normal es desplazarse a uno de esos dos núcleos: son diez o quince minutos en coche, y la R2 Sud conecta bien los principales. Merece la pena tenerlo en cuenta al elegir horario, porque un grupo que empieza a las 20:30 en el municipio de al lado se aguanta en octubre y se cae en noviembre.</p>
+<p>Qué centros anuncian cada disciplina, con la fuente pública y la fecha en que lo comprobamos, está en el <a href="/centros/">directorio de centros del Garraf</a>. Si vas más atrás en la decisión, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez disciplinas y la de <a href="/krav-maga/">krav maga</a> detalla cómo es una primera clase.</p>
+<p>¿Tienes un caso concreto y no sabes por cuál de las dos puertas entrar? <a href="/contacto/">Escríbenos</a> con lo que buscas y en qué municipio, y te orientamos sin coste.</p>
+`,
+
+  'blog/golpeo-o-agarre-por-donde-empezar': `
+<h2>Antes de elegir estilo, elige familia</h2>
+<p>La mayoría de gente empieza la búsqueda por el nombre de la disciplina: karate, boxeo, judo, jiu-jitsu. Es el orden equivocado, y produce esa sensación de estar comparando diez cosas a la vez sin criterio para ninguna.</p>
+<p>Hay un corte anterior que ordena las diez de golpe. Las artes marciales se dividen en las que resuelven a distancia, golpeando, y las que resuelven en contacto, agarrando. <strong>Elegida la familia, la comparación entre estilos concretos deja de dar vértigo, porque las diferencias que quedan son de reglamento y de cultura de club, no de qué vas a hacer con el cuerpo.</strong></p>
+<p>En la familia del golpeo están el <a href="/boxeo/">boxeo</a>, el kickboxing, el muay thai, el karate y el taekwondo. En la del agarre, el <a href="/judo/">judo</a> y el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a>. Las <a href="/mma/">artes marciales mixtas</a> son las dos cosas a la vez, y la defensa personal y el krav maga juegan en otro tablero, porque su objetivo no es el combate deportivo.</p>
+
+<h2>Qué se siente golpeando</h2>
+<p>Una clase de golpeo se organiza alrededor de la distancia. Casi todo lo que aprendes el primer mes tiene que ver con estar a la distancia correcta: cómo te mueves, cómo entras, cómo sales. La técnica es visible desde fuera y se puede repetir en solitario, delante de un espejo o de un saco, lo que hace que la sensación de progreso llegue pronto.</p>
+<p>Lo que cansa es distinto a lo que uno espera. No es el brazo, es el tren inferior y el sistema cardiovascular. Los primeros días de boxeo la gente termina con los hombros ardiendo y con la sensación de haber corrido, y quien viene de gimnasio de pesas descubre que su forma física no era la que hacía falta.</p>
+<p>Y hay una barrera concreta que conviene nombrar. En golpeo, tarde o temprano, alguien te va a tocar la cara. Suave, con protecciones y con el instructor encima si el club es serio, pero va a pasar. A mucha gente le da igual y a otra mucha le condiciona la elección, y las dos reacciones son razonables.</p>
+
+<h2>Qué se siente agarrando</h2>
+<p>El agarre empieza donde el golpeo termina, pegado. Lo primero que sorprende a quien viene de fuera es la cantidad de contacto físico continuado: manos en el cuello de la chaqueta, peso encima, sudor ajeno. Si esa idea te resulta incómoda, es información útil, no una debilidad.</p>
+<p>La curva de aprendizaje es más lenta al principio y más agradecida después. Durante las primeras semanas vas a sentir que no entiendes nada y que cualquiera con seis meses te controla sin despeinarse, y eso es normal. A cambio, en el agarre se puede practicar a intensidad casi real desde bastante pronto, porque el randori o el rolar no te dejan secuelas cada semana. Esa es una ventaja real y poco comentada: acumulas horas de práctica bajo resistencia, no de práctica en el aire.</p>
+<p>El desgaste tampoco es donde lo esperas. Son dedos, cuello, hombros y una fatiga rara que llega de sostener el peso de otro. En judo hay que sumar el suelo: aprender a caer es la primera lección y ocupa semanas, con razón.</p>
+
+<h2>Cuatro preguntas que resuelven la bifurcación</h2>
+<p>Respóndelas rápido, sin pensarlo mucho, que la primera reacción suele acertar:</p>
+<ol>
+<li><strong>¿Te incomoda que te golpeen la cara, aunque sea suave?</strong> Si la respuesta es un sí claro, mira agarre.</li>
+<li><strong>¿Te incomoda el contacto corporal prolongado con desconocidos?</strong> Si es que sí, mira golpeo.</li>
+<li><strong>¿Qué te apetece hacer un martes a las nueve de la noche después de un día largo?</strong> Golpear un saco descarga de una forma muy distinta a resolver un problema de posición en el suelo. Ninguna es mejor: son estados de ánimo diferentes.</li>
+<li><strong>¿Tienes lesiones antiguas?</strong> Aquí no hay regla general, y por eso conviene decírselo al instructor el primer día en lugar de deducirlo tú de una lista de internet. Si hay lesión reciente o algo que arrastras, la pauta la marca tu médico o tu fisioterapeuta, no el club ni esta guía.</li>
+</ol>
+<p>Si te salen respuestas contradictorias, hay una salida honesta: prueba una clase de cada. Casi todos los centros lo permiten, y veinte minutos dentro informan más que un mes leyendo comparativas.</p>
+
+<h2>Dos cosas que se dicen y no se sostienen</h2>
+<p>La primera: que el agarre es más seguro porque no hay golpes. Es verdad a medias. Hay menos impacto en la cabeza, y eso pesa. Pero las articulaciones se llevan mucho más trabajo, y las lesiones de dedos, rodilla y hombro son parte del paisaje de cualquier gimnasio de agarre. Menos impacto no es lo mismo que sin riesgo.</p>
+<p>La segunda: que para defenderte necesitas obligatoriamente saber pelear en el suelo. Es un argumento que circula desde los años noventa y tiene una parte cierta, la de que muchas situaciones acaban pegadas. La parte que se calla es que en un contexto real (con suelo duro, con más de una persona alrededor) irse al suelo voluntariamente rara vez es el plan. Si tu objetivo concreto es la autodefensa, la comparación relevante es otra, y la tienes en la guía de <a href="/defensa-personal/">defensa personal</a>.</p>
+
+<h2>Y si quieres las dos cosas</h2>
+<p>Es una opción legítima y hay dos caminos.</p>
+<p>Uno es empezar directamente por MMA, que integra golpeo, agarre y la transición entre ambos. El coste es que la curva es más larga: hay más que aprender antes de que nada te salga.</p>
+<p>El otro, que es el que solemos recomendar a quien empieza de cero, es hacer una familia bien durante un año y añadir la otra después. Un año de una sola cosa da una base que se nota, y a los doce meses ya sabes lo suficiente sobre ti mismo para elegir la segunda con criterio. Repartirte entre dos disciplinas desde la primera semana suele acabar en avanzar poco en las dos y en abandonar por agenda, que es el motivo real de la mayoría de bajas. Está desarrollado en la guía de <a href="/blog/artes-marciales-adultos-principiantes-garraf/">artes marciales para adultos principiantes</a>.</p>
+
+<h2>Cómo se traduce esto en el Garraf</h2>
+<p>Aquí entra un factor poco romántico que decide más que la teoría: qué tienes cerca y a qué hora. La oferta de la comarca se concentra en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>, y desde Sant Pere de Ribes, Cubelles o Canyelles lo habitual es desplazarse, con trayectos de diez o quince minutos en coche y la R2 Sud conectando los núcleos principales.</p>
+<p>Nuestra recomendación práctica, después de haber visto abandonar a mucha gente por el motivo equivocado: si tienes la familia que has elegido a veinte minutos y la otra a cinco, prueba las dos antes de decidir por convicción. La constancia gana a la preferencia teórica casi siempre.</p>
+<p>Para ver qué anuncia cada club de la comarca, con la fuente pública y la fecha de verificación de cada ficha, tienes el <a href="/centros/">directorio de centros del Garraf</a>. Y si quieres afinar dentro de una familia, están las comparativas de <a href="/blog/boxeo-o-kickboxing/">boxeo o kickboxing</a> en golpeo y de <a href="/blog/judo-o-jiu-jitsu-brasileno/">judo o jiu-jitsu brasileño</a> en agarre, además de la guía general de <a href="/iniciacion/">iniciación a las artes marciales</a>.</p>
+<p>¿Prefieres que te lo acotemos para tu caso? <a href="/contacto/">Cuéntanos</a> qué buscas, tu municipio y la franja horaria que te encaja, y te decimos por dónde mirar, sin coste.</p>
+`,
+
+  'blog/arte-marcial-para-nino-timido': `
+<h2>Lo que se pregunta de verdad un padre cuando pregunta esto</h2>
+<p>La búsqueda literal es qué arte marcial le va bien a un niño tímido. Debajo casi siempre hay otra cosa, y es más incómoda: el miedo a que lo pase mal, a que se quede en un rincón mientras los demás se lo pasan bien, a apuntarle a algo que confirme lo que ya le preocupa de sí mismo.</p>
+<p>Así que empecemos por ahí. <strong>Para un niño reservado, la disciplina importa bastante menos que el grupo, el instructor y el tamaño de la clase.</strong> Un buen grupo de karate y un buen grupo de judo le van a servir parecido; un grupo de veinticinco niños con un monitor que dirige desde delante le va a servir poco, se llame como se llame.</p>
+<p>Dicho eso, hay diferencias de formato que sí juegan a favor, y merece la pena conocerlas antes de la clase de prueba.</p>
+
+<h2>Qué del formato marcial le viene bien a un niño reservado</h2>
+<p>Tres cosas, y ninguna tiene que ver con aprender a pelear.</p>
+<p>La primera es que <strong>no hay que hablar para participar</strong>. En un deporte de equipo un niño callado se queda fuera del juego, porque el juego pasa por pedir la pelota. En un tatami la participación es física y el silencio está bien visto. Para un crío que se agota socialmente, eso es un descanso.</p>
+<p>La segunda es la previsibilidad. La estructura de una clase marcial se repite: saludo, calentamiento, técnica, práctica, saludo. A las tres semanas el niño sabe exactamente qué va a pasar y en qué orden, y esa certeza baja mucho la ansiedad de entrar por la puerta.</p>
+<p>La tercera es que el progreso es individual y medible. No depende de que le pasen la pelota ni de caerle bien a nadie: depende de repetir. Los cinturones, con todas sus trampas comerciales, funcionan bien aquí, porque le dan una prueba objetiva de que está mejorando que no necesita la validación del grupo.</p>
+
+<h2>Qué formatos protegen más, disciplina por disciplina</h2>
+<p>Con la advertencia de siempre: esto describe cómo suelen plantearse las clases, y cualquier club concreto puede hacerlo distinto.</p>
+<p>El <a href="/karate/">karate</a> y el <a href="/taekwondo/">taekwondo</a> tienen a favor que buena parte del trabajo infantil es individual y en formación: el niño practica su técnica en su sitio, mirando al frente, sin tener que negociar con nadie. Cuando llega el trabajo por parejas, ya lleva semanas de rodaje. Para un crío al que le cuesta el contacto con desconocidos, esa entrada gradual es la más amable.</p>
+<p>El <a href="/judo/">judo</a> funciona al revés: el contacto físico llega el primer día, porque sin agarrar a alguien no hay judo. Eso descoloca a algunos niños reservados y a otros los desbloquea, y no siempre se puede predecir cuál será el caso. Lo que sí tiene a favor es que obliga a una relación de cooperación muy concreta con el compañero, que es una manera de socializar sin conversación.</p>
+<p>El <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> comparte esa característica y añade un ritmo más lento y una cultura de club en la que hablar poco es normal. En los grupos infantiles suele haber menos formalidad y más juego.</p>
+<p>Si quieres el mapa completo de las opciones infantiles, está en la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a>, y los tramos de edad uno por uno en <a href="/blog/a-que-edad-empezar-artes-marciales/">a qué edad empezar</a>.</p>
+
+<h2>Las señales que hay que mirar en la clase de prueba</h2>
+<p>Esta parte vale más que toda la comparativa anterior. Ve a ver una clase, mejor sin tu hijo la primera vez, y fíjate en esto:</p>
+<ul>
+<li><strong>Cuántos niños hay por adulto.</strong> Es el dato que más condiciona si alguien va a notar que tu hijo se ha quedado atrás. Si hay un solo adulto para un grupo grande, ese adulto no puede corregir por el nombre.</li>
+<li><strong>Cómo se forman las parejas.</strong> Si el instructor dice "buscad pareja", el niño tímido siempre acaba último, y esa escena se le queda. Si las asigna él o rota por orden, el problema desaparece.</li>
+<li><strong>Qué pasa con el que se queda parado.</strong> Mira específicamente al niño que peor lo está haciendo. Cómo lo trata el instructor es cómo va a tratar al tuyo el día que le toque.</li>
+<li><strong>Si se expone a alguien delante de todos.</strong> Salir al centro a demostrar una técnica es motivador para muchos críos y demoledor para uno reservado. Pregunta si eso es voluntario.</li>
+<li><strong>Cómo salen los niños.</strong> Cansados y hablando entre ellos es buena señal. En silencio y con prisa, no.</li>
+</ul>
+<p>Los ocho puntos completos, para cualquier disciplina y cualquier edad, están en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>La conversación que casi nadie tiene con el instructor</h2>
+<p>Cuéntale antes de empezar que tu hijo es reservado. Parece obvio y casi nadie lo hace, por pudor o por no etiquetarlo delante de él.</p>
+<p>Merece la pena por dos motivos. El primero es que un técnico con experiencia en infantil ya tiene recursos para esto y los va a aplicar desde el primer día en lugar de descubrirlo en la quinta clase. El segundo es que su reacción te dice muchísimo: si te contesta con detalle y con ejemplos, has encontrado a alguien que se fija en los niños de uno en uno.</p>
+
+<h2>El primer mes en casa: qué ayuda y qué no</h2>
+<p>El matiz incómodo de todo esto es que las primeras semanas pueden ser regulares aunque hayas elegido bien. Un niño reservado necesita más tiempo para instalarse en un grupo nuevo, y eso no es señal de que el sitio no funcione.</p>
+<p>Lo que suele ayudar: llegar diez minutos antes para que entre a una sala medio vacía en lugar de a un vestuario lleno, y sostener la asistencia durante un trimestre antes de valorar nada. Lo que suele estorbar: preguntarle cada tarde si le ha gustado, quedarse mirando a través del cristal si eso lo pone tenso, y comentar delante de él lo callado que es. La timidez no se corrige señalándola.</p>
+<p>Si al cabo de un par de meses sigue sin querer entrar, eso ya es información distinta y hay que mirarla en serio, no aguantar por inercia. Lo desarrollamos en la guía de <a href="/clases-para-ninos/">artes marciales para niños</a>.</p>
+
+<h2>Cuándo esto se sale de lo que puede hacer un club</h2>
+<p>Una precisión necesaria. Ser reservado es un rasgo de carácter perfectamente normal y no necesita arreglo. Otra cosa distinta es un malestar que interfiere en su vida diaria: llanto sostenido ante cualquier situación social, negativa a ir al colegio, retroceso claro respecto a cómo estaba antes.</p>
+<p>Eso no lo resuelve una extraescolar, ni existe una disciplina que lo trate. Si es el caso, la conversación es con vuestro pediatra o con un psicólogo infantil, y una actividad deportiva puede acompañar lo que os indiquen, pero no sustituirlo. Nadie en un gimnasio debería decirte lo contrario.</p>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>La oferta infantil de la comarca se concentra en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>, y desde los municipios más pequeños lo habitual es desplazarse, con trayectos de diez o quince minutos en coche. Para un niño que ya está haciendo un esfuerzo social, un trayecto corto y un horario cómodo no son un detalle menor: la fatiga acumulada del día se nota mucho más en un crío reservado que en uno lanzado.</p>
+<p>Qué clubs constan en cada municipio y qué anuncia cada uno, con la fuente pública y la fecha en que lo comprobamos, está en el <a href="/centros/">directorio de centros del Garraf</a>. Si vais a estrenaros, la guía del <a href="/blog/primer-dia-clase-artes-marciales-nino/">primer día de clase</a> resuelve la logística de la mochila y de los nervios.</p>
+<p>¿Queréis que os ayudemos a acotar? <a href="/contacto/">Escribidnos</a> con la edad, el municipio y lo que os preocupa, y os decimos por dónde mirar, sin coste.</p>
+`,
+
+  'blog/arte-marcial-para-nino-muy-nervioso': `
+<h2>Canalizar no es agotar</h2>
+<p>La frase que más repiten los padres en la primera llamada es que quieren algo donde el niño "queme energía". Es comprensible y es la premisa equivocada, porque un crío que no para no tiene un problema de exceso de combustible: tiene un problema de regulación. Agotarlo funciona una tarde. Enseñarle a arrancar y a frenar funciona durante años.</p>
+<p>De ahí la respuesta corta: <strong>en un niño muy activo, lo que hace el trabajo no es el gasto físico de la clase, es la estructura de la clase</strong>. Y como la estructura depende del club mucho más que de la disciplina, la elección importante no es karate contra taekwondo, sino qué grupo y qué instructor.</p>
+
+<h2>Por qué la estructura importa más que el desgaste</h2>
+<p>Una clase marcial infantil está llena de microparadas. Se saluda al entrar, se espera el turno, se ejecuta cuando toca, se para cuando el instructor levanta la mano, se vuelve a la fila. Un niño impulsivo se pasa la hora practicando exactamente lo que le cuesta, pero en un contexto donde parar tiene sentido y tiene recompensa inmediata.</p>
+<p>Eso es lo que un partido de fútbol no le da con la misma densidad, y no porque el fútbol sea peor: es que su lógica es de flujo continuo. Si estás dudando entre las dos cosas, la comparación completa está en <a href="/blog/artes-marciales-o-futbol-extraescolar/">artes marciales o fútbol como extraescolar</a>.</p>
+<p>Un efecto secundario que a los padres les sorprende: en casa lo que suele notarse antes no es que esté más cansado, sino que aguanta un poco mejor las esperas. Tampoco es magia ni llega en tres semanas.</p>
+
+<h2>Qué disciplinas tienen más de eso</h2>
+<p>Ordenadas por cuánta estructura de turnos suele haber en un grupo infantil, con la advertencia de que cada club lo hace a su manera.</p>
+<p>El <a href="/karate/">karate</a> es el extremo formal: formación, ejecución a la orden, kata, corrección individual. Para un niño que necesita límites muy claros, ese marco funciona bien, aunque a algunos les resulta seco al principio.</p>
+<p>El <a href="/taekwondo/">taekwondo</a> mantiene la formalidad y añade un componente físico y acrobático más llamativo, con más patadas, más saltos y más juego. Suele ser la entrada más fácil para un crío que necesita que las cosas se muevan rápido.</p>
+<p>El <a href="/judo/">judo</a> tiene menos formación estática y más contacto continuo, y a cambio ofrece algo muy útil: un canal físico legítimo para empujar, agarrar y tirar a alguien. Para el niño que llega a casa con partes por empujar en el patio, encontrar un sitio donde eso está permitido y reglado suele ser un alivio.</p>
+<p>El <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> es el que más pide concentración sostenida, porque es un juego de posiciones. A un niño muy disperso puede costarle más entrar, y cuando entra suele engancharse fuerte.</p>
+<p>La comparativa por carácter, con más detalle, está en la guía de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a>.</p>
+
+<h2>El mito de la clase que lo deja agotado</h2>
+<p>Conviene desmontarlo porque orienta mal la búsqueda. Hay clubs que venden precisamente eso, sesiones muy físicas de principio a fin, y a corto plazo parece que funciona: el niño llega reventado y cena sin dar guerra.</p>
+<p>El problema es doble. Una clase que es solo desgaste enseña poco, y un niño que solo va a cansarse se aburre en cuanto la novedad se acaba, normalmente hacia el tercer mes. Y en algunos críos la sobreactivación tiene el efecto contrario del que se busca, y llegan a casa más acelerados que al salir del colegio.</p>
+<p>Nuestra recomendación es mirar la proporción. Una clase infantil equilibrada tiene calentamiento con juego, un bloque técnico donde se para y se corrige, y práctica. Si en cuarenta y cinco minutos no hay ni un momento de silencio, eso no es una clase estructurada, es una hora de gimnasio con kimono.</p>
+
+<h2>Qué mirar cuando vayáis a probar</h2>
+<p>Una visita informa más que diez opiniones. Con un niño de este perfil, mirad esto en concreto:</p>
+<ul>
+<li><strong>Cuánto tiempo pasa parado en la fila.</strong> Si de una hora se pasa cuarenta minutos esperando turno, se va a desconectar y va a acabar molestando. Los grupos que funcionan bien con niños activos tienen poca cola y mucha rotación.</li>
+<li><strong>Cómo reacciona el instructor con el que se despista.</strong> Que le llame por su nombre y lo reconduzca es lo que buscáis. Que lo mande al banquillo veinte minutos o que lo ignore, no.</li>
+<li><strong>Si hay una norma clara de arranque y parada.</strong> Una palabra, un gesto, un golpe de mano. Que exista y que se respete vale más que el contenido técnico de la sesión.</li>
+<li><strong>Cuántos adultos hay en la sala.</strong> Con un grupo grande y un único monitor, la atención individual no es posible por mucha voluntad que le ponga.</li>
+</ul>
+<p>Los criterios generales, para cualquier edad y disciplina, están en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Cuántos días, y por qué dos suele bastar</h2>
+<p>La tentación con un niño así es apuntarle a tres o cuatro días para llenarle la semana. Suele salir mal por el motivo menos deportivo de todos: la saturación de extraescolares produce más irritabilidad, no menos, y el niño acaba asociando la actividad al agobio de las tardes.</p>
+<p>Dos sesiones semanales es el estándar en la comarca y es suficiente para que la rutina se instale. Si a los seis meses pide más, entonces sí, y con criterio. Los tramos por edad están en <a href="/blog/a-que-edad-empezar-artes-marciales/">a qué edad empezar artes marciales</a>.</p>
+
+<h2>Lo que no se puede prometer</h2>
+<p>Aquí va la parte que no sale en los folletos. Las artes marciales no van a convertir a un niño movido en un niño tranquilo, y cualquier club que os lo insinúe está vendiendo. Lo que suele aportar el formato es un espacio donde practicar la espera y el freno, unas normas que no negocia él, y una relación con un adulto que no es ni su padre ni su maestro. No es poco, y no es una transformación.</p>
+<p>También hay que decir que a algunos niños muy activos les cuesta encajar en un grupo formal y les va mejor un deporte de flujo continuo. Se sabe probando, no leyendo.</p>
+<p>Y una precisión importante: si lo que hay detrás es una sospecha de TDAH o un diagnóstico ya hecho, la conversación es con vuestro pediatra o con el profesional que lleve el caso. Una actividad deportiva puede acompañar lo que os indiquen, y no sustituye ningún tratamiento ni lo hace innecesario. Ningún instructor está en posición de valorar eso, por muchos años que lleve dando clase.</p>
+
+<h2>Empezar en el Garraf</h2>
+<p>La oferta infantil de la comarca se concentra en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>, y desde Sant Pere de Ribes, Cubelles o Canyelles lo normal es desplazarse: diez o quince minutos en coche entre los núcleos principales. Con un niño de este perfil, el horario pesa más de lo que parece. Una clase a última hora de la tarde, después de una jornada larga y de un trayecto, tiene bastantes papeletas de acabar mal para todos.</p>
+<p>Qué clubs constan en cada municipio y qué disciplinas anuncia cada uno, con la fuente pública y la fecha de verificación, está en el <a href="/centros/">directorio de centros del Garraf</a>, junto a la guía de <a href="/clases-para-ninos/">artes marciales para niños</a>. Y para la logística del estreno, la del <a href="/blog/primer-dia-clase-artes-marciales-nino/">primer día de clase</a>.</p>
+<p>¿Queréis que os ayudemos a acotar? <a href="/contacto/">Escribidnos</a> con la edad, el municipio y la franja horaria que os cuadra, y os orientamos sin coste.</p>
+`,
+
   'blog/judo-o-jiu-jitsu-brasileno': `
 <h2>La diferencia se cuenta en una frase, y luego hay que matizarla</h2>
 <p>El judo empieza de pie y busca acabar ahí mismo: una proyección limpia, con control y con el otro cayendo de espalda, termina el combate en el acto. El <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> da por hecho que aquello va a terminar en el suelo y dedica casi todo su tiempo a lo que pasa después de la caída: colocarse encima, ir ganando posición y forzar el abandono con una estrangulación o una palanca.</p>
@@ -778,17 +972,17 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
-  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/beneficios-artes-marciales-ninos'],
+  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/arte-marcial-para-nino-muy-nervioso'],
   'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
-  'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf'],
-  'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
+  'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
-  'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/primer-dia-clase-artes-marciales-nino'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/arte-marcial-para-nino-timido'],
   'clases-para-mujeres': ['blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
-  'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
+  'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
   'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],

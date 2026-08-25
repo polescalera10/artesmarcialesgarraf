@@ -260,6 +260,10 @@ const BLOG = [
   ['judo-o-jiu-jitsu-brasileno', 'Judo o jiu-jitsu', 'balanza', 'De pie o en el suelo: en qué se diferencian'],
   ['boxeo-o-kickboxing', 'Boxeo o kickboxing', 'balanza', 'Solo puños o puños y piernas: qué cambia'],
   ['muay-thai-o-kickboxing', 'Muay thai o kickboxing', 'balanza', 'Codos, rodillas y clinch: qué añade el muay thai'],
+  ['krav-maga-o-defensa-personal', 'Krav maga o defensa personal', 'balanza', 'Un sistema concreto frente a una categoría entera'],
+  ['golpeo-o-agarre-por-donde-empezar', 'Golpeo o agarre', 'brujula', 'La bifurcación que ordena las diez disciplinas'],
+  ['arte-marcial-para-nino-timido', 'Mi hijo es tímido', 'personas', 'Qué formato protege a un niño reservado'],
+  ['arte-marcial-para-nino-muy-nervioso', 'Mi hijo no para quieto', 'personas', 'Estructura antes que desgaste: qué canaliza'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

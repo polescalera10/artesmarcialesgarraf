@@ -583,6 +583,58 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/krav-maga-o-defensa-personal',
+    type: 'blog',
+    meta: {
+      title: 'Krav Maga o Defensa Personal: No Son lo Mismo',
+      description: 'Krav maga o defensa personal: qué es cada cosa, en qué se diferencian dentro de una clase, cuál encaja con lo que buscas y qué preguntar antes de pagar.',
+    },
+    h1: 'Krav Maga o Defensa Personal: No Son lo Mismo',
+    intro: 'La confusión es constante y tiene consecuencias: hay gente que acaba apuntada a lo que no buscaba. Uno es un sistema concreto, con currículo, niveles y certificación propia; la otra es una categoría que puede contener cosas muy distintas entre sí. Aquí está dónde se nota la diferencia dentro de una sala.',
+    body: BLOG_BODIES['blog/krav-maga-o-defensa-personal'],
+    fecha: '2026-08-25',
+    phase: 2,
+  },
+  {
+    slug: 'blog/golpeo-o-agarre-por-donde-empezar',
+    type: 'blog',
+    meta: {
+      title: 'Golpeo o Agarre: la Primera Decisión al Empezar',
+      description: 'Golpeo o agarre: la bifurcación que ordena las diez disciplinas. Qué se siente en cada una, cuatro preguntas para decidir y cómo se aplica en el Garraf.',
+    },
+    h1: '¿Golpeo o Agarre? La Primera Bifurcación de las Artes Marciales',
+    intro: 'La mayoría empieza comparando karate contra boxeo contra judo y acaba mareada a los diez minutos. Hay un corte anterior que ordena las diez disciplinas de golpe: resolver a distancia o resolver pegado. Elegida la familia, el resto de la decisión se vuelve manejable.',
+    body: BLOG_BODIES['blog/golpeo-o-agarre-por-donde-empezar'],
+    fecha: '2026-08-25',
+    phase: 2,
+  },
+  {
+    slug: 'blog/arte-marcial-para-nino-timido',
+    type: 'blog',
+    meta: {
+      title: 'Mi Hijo es Tímido: Qué Arte Marcial le Encaja',
+      description: 'Tu hijo es tímido y dudas si apuntarle: qué formato de clase protege a un niño reservado, qué mirar en la prueba y qué ayuda en casa el primer mes.',
+    },
+    h1: 'Mi Hijo es Tímido: Qué Arte Marcial le Encaja',
+    intro: 'La duda de fondo no suele ser qué disciplina, sino si lo va a pasar mal. Para un niño reservado pesan mucho más el tamaño del grupo, cómo se forman las parejas y cómo trata el instructor al que peor lo hace. Esto es lo que conviene mirar antes de apuntarle.',
+    body: BLOG_BODIES['blog/arte-marcial-para-nino-timido'],
+    fecha: '2026-08-25',
+    phase: 2,
+  },
+  {
+    slug: 'blog/arte-marcial-para-nino-muy-nervioso',
+    type: 'blog',
+    meta: {
+      title: 'Mi Hijo No Para Quieto: Qué Disciplina Encaja',
+      description: 'Niño que no para quieto: por qué la estructura de la clase canaliza más que el desgaste, qué disciplinas la tienen y qué mirar en la clase de prueba.',
+    },
+    h1: 'Mi Hijo No Para Quieto: Qué Disciplina Canaliza Mejor',
+    intro: 'Casi todos los padres llegan pidiendo algo donde queme energía, y esa es la premisa equivocada. Lo que hace el trabajo en un niño movido no es el gasto físico de la clase, sino su estructura: los turnos, las paradas y unas normas que no negocia él.',
+    body: BLOG_BODIES['blog/arte-marcial-para-nino-muy-nervioso'],
+    fecha: '2026-08-25',
+    phase: 2,
+  },
+  {
     slug: 'blog/primer-dia-clase-artes-marciales-nino',
     type: 'blog',
     meta: {

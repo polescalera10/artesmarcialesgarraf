@@ -24,7 +24,11 @@
     "blog/primer-dia-clase-artes-marciales-nino",
     "blog/judo-o-jiu-jitsu-brasileno",
     "blog/boxeo-o-kickboxing",
-    "blog/muay-thai-o-kickboxing"
+    "blog/muay-thai-o-kickboxing",
+    "blog/krav-maga-o-defensa-personal",
+    "blog/golpeo-o-agarre-por-donde-empezar",
+    "blog/arte-marcial-para-nino-timido",
+    "blog/arte-marcial-para-nino-muy-nervioso"
   ],
   "cola": [
     {
@@ -106,8 +110,8 @@
         "/defensa-personal/",
         "/blog/defensa-personal-para-mujeres-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-25"
     },
     {
       "id": 5,
@@ -209,8 +213,8 @@
         "/judo/",
         "/jiu-jitsu-brasileno/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-25"
     },
     {
       "id": 10,
@@ -250,8 +254,8 @@
         "/karate/",
         "/blog/como-elegir-centro-artes-marciales-garraf/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-25"
     },
     {
       "id": 12,
@@ -270,8 +274,8 @@
         "/taekwondo/",
         "/judo/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null
+      "estado": "publicado",
+      "publicado_en": "2026-08-25"
     },
     {
       "id": 13,
