@@ -28,7 +28,9 @@
     "blog/krav-maga-o-defensa-personal",
     "blog/golpeo-o-agarre-por-donde-empezar",
     "blog/arte-marcial-para-nino-timido",
-    "blog/arte-marcial-para-nino-muy-nervioso"
+    "blog/arte-marcial-para-nino-muy-nervioso",
+    "blog/se-hacen-dano-los-ninos-artes-marciales",
+    "blog/empezar-artes-marciales-siendo-mujer"
   ],
   "cola": [
     {
@@ -435,8 +437,8 @@
         "/judo/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-29",
       "ancla_local": "Objeción típica del padre antes de apuntar. Qué preguntar en la visita a un centro del Garraf.",
       "intencion_comercial": "alta"
     },
@@ -480,8 +482,8 @@
         "/blog/defensa-personal-para-mujeres-garraf/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-08-29",
       "ancla_local": "Qué disciplinas del directorio tienen grupo femenino o mixto declarado en fuente pública.",
       "intencion_comercial": "alta"
     },

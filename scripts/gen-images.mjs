@@ -264,6 +264,8 @@ const BLOG = [
   ['golpeo-o-agarre-por-donde-empezar', 'Golpeo o agarre', 'brujula', 'La bifurcación que ordena las diez disciplinas'],
   ['arte-marcial-para-nino-timido', 'Mi hijo es tímido', 'personas', 'Qué formato protege a un niño reservado'],
   ['arte-marcial-para-nino-muy-nervioso', 'Mi hijo no para quieto', 'personas', 'Estructura antes que desgaste: qué canaliza'],
+  ['se-hacen-dano-los-ninos-artes-marciales', '¿Se hacen daño?', 'check-circulo', 'Cómo se gradúa el contacto en cada disciplina'],
+  ['empezar-artes-marciales-siendo-mujer', 'Empezar siendo mujer', 'personas', 'Cómo son los grupos y qué preguntar antes de ir'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

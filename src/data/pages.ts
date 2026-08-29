@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/se-hacen-dano-los-ninos-artes-marciales',
+    type: 'blog',
+    meta: {
+      title: 'Niños y Artes Marciales en el Garraf: ¿Se Hacen Daño?',
+      description: 'Qué se lesiona de verdad un niño en artes marciales, cómo se gradúa el contacto en cada disciplina y qué preguntar en un centro del Garraf.',
+    },
+    h1: '¿Se Hacen Daño los Niños en Artes Marciales?',
+    intro: 'Es la objeción número uno de las familias y casi nunca se responde con datos, sino con marketing de escuela. Aquí va lo que se hace un niño de verdad en una clase, cómo se introduce el contacto en cada disciplina y qué se puede comprobar en una visita de veinte minutos.',
+    body: BLOG_BODIES['blog/se-hacen-dano-los-ninos-artes-marciales'],
+    fecha: '2026-08-29',
+    phase: 2,
+  },
+  {
+    slug: 'blog/empezar-artes-marciales-siendo-mujer',
+    type: 'blog',
+    meta: {
+      title: 'Empezar Artes Marciales Siendo Mujer en el Garraf',
+      description: 'Cómo son de verdad los grupos, qué pasa en el trabajo por parejas y qué grupos femeninos constan en el Garraf. Con cinco preguntas para la primera llamada.',
+    },
+    h1: 'Empezar Artes Marciales Siendo Mujer: Qué Esperar de Verdad',
+    intro: 'La duda real no suele ser si puedes, sino si vas a ser la única, si te van a tratar distinto y con quién vas a entrenar el primer día. Con el dato de cuántos centros de la comarca declaran grupo femenino, que es menos alentador de lo que te gustaría.',
+    body: BLOG_BODIES['blog/empezar-artes-marciales-siendo-mujer'],
+    fecha: '2026-08-29',
+    phase: 2,
+  },
+  {
     slug: 'blog/krav-maga-o-defensa-personal',
     type: 'blog',
     meta: {

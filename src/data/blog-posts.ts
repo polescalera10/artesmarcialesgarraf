@@ -9,6 +9,128 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/se-hacen-dano-los-ninos-artes-marciales': `
+<h2>La respuesta corta, y lo que de verdad decide el riesgo</h2>
+<p>Sí, algún día volverá con un moratón. No, no se parece a lo que te imaginas cuando oyes "deporte de contacto". En un grupo infantil bien llevado, de los que constan en nuestro <a href="/centros/">directorio de centros del Garraf</a>, lo que se hace un niño de siete años se parece bastante a lo que se hace jugando al fútbol o cayéndose de un patinete.</p>
+<p>El matiz que importa es otro, y conviene decirlo pronto: <strong>el riesgo no lo pone la disciplina, lo pone el club</strong>. Dos clases de karate para la misma edad, en dos salas del mismo municipio, pueden tener perfiles de seguridad que no se parecen en nada. Distinguirlas se hace en una visita de veinte minutos. De eso va el resto de esta guía.</p>
+
+<h2>¿Qué se hacen los niños de verdad?</h2>
+<p>Lo habitual a estas edades, en cualquier disciplina: dedos doblados, alguna torcedura de tobillo, roces en la planta del pie, moratones de espinilla y algún golpe en la nariz que sangra cinco minutos y asusta mucho más al padre que al niño. Es un catálogo aburrido, y es el que se lleva casi todo el volumen.</p>
+<p>Lo que preocupa de verdad a las familias son los golpes fuertes en la cabeza. Eso no pertenece al entrenamiento infantil bien planteado, sino al combate de contacto pleno, que es otra cosa. No tiene por qué aparecer en la vida de un niño de ocho años en ningún club sensato. Si en la clase infantil ves intercambios a la cabeza sin control, el problema no es el arte marcial: es esa clase concreta.</p>
+<p>Hay algo que no suele estar en el radar de los padres. Las molestias más frecuentes del entrenamiento infantil no vienen del contacto, vienen de la repetición y del calentamiento que se salta. Las rodillas y los tobillos de un niño con tres extraescolares deportivas a la semana aguantan lo que aguantan, y eso no lo arregla ninguna protección.</p>
+
+<h2>Por disciplina: dónde está el contacto y cómo se gradúa</h2>
+<p>Cada una plantea un problema distinto, y ayuda saber cuál es el suyo antes de la primera clase. Dos términos que oirás en cualquier sala: el <em>ukemi</em> es el trabajo de caída, aprender a llegar al suelo sin hacerse daño; el <em>sparring</em> es el combate de entrenamiento, con protecciones y con intensidad pactada.</p>
+<table>
+<thead>
+<tr><th>Disciplina</th><th>Dónde está el contacto</th><th>Qué preguntar al club</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="/judo/">Judo</a></td><td>Agarre y proyección desde el primer día, siempre sobre tatami</td><td>Cuántas semanas de caídas antes de proyectar</td></tr>
+<tr><td>Karate y <a href="/taekwondo/">taekwondo</a></td><td>Forma y desplazamiento; contacto limitado o nulo en infantil</td><td>A qué edad entra el combate y con qué protecciones</td></tr>
+<tr><td><a href="/jiu-jitsu-brasileno/">Jiu-jitsu brasileño</a></td><td>Sin golpes; el riesgo está en las articulaciones</td><td>Qué llaves están excluidas en el programa infantil</td></tr>
+<tr><td><a href="/boxeo/">Boxeo</a> y kickboxing</td><td>Saco, manoplas y técnica; el sparring llega mucho después</td><td>Quién decide que un niño está preparado para el sparring</td></tr>
+</tbody>
+</table>
+<p>El judo merece un apunte aparte, porque desconcierta a muchos padres. Tiene contacto constante y aun así es de los formatos más controlados que existen para un niño, porque lo primero que se enseña no es proyectar: es caer.</p>
+
+<h2>Qué hay de verdad para niños en el Garraf</h2>
+<p>Aquí la teoría se vuelve práctica, porque la oferta de la comarca condiciona la elección más que cualquier comparativa. A fecha de la última verificación de nuestro directorio constan <strong>trece centros de artes marciales en el Garraf</strong>: siete en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, tres en <a href="/sitges/">Sitges</a>, dos en Sant Pere de Ribes, uno en Cubelles y ninguno en Canyelles.</p>
+<p>De esos trece, cinco anuncian grupo infantil en la fuente pública que comprobamos. Que los otros ocho no lo anuncien no significa que no lo tengan: significa que no lo publican y que hay que preguntarlo por teléfono. Es una distinción que hacemos siempre. El directorio recoge lo que cada centro dice de sí mismo en su web, en el registro de su federación o en el directorio municipal, con la fecha en que lo miramos.</p>
+<p>Dos datos más cambian bastante la conversación sobre seguridad infantil en la comarca:</p>
+<ul>
+<li>El judo, que es la disciplina con la entrada infantil más rodada, consta en <strong>un solo centro de todo el Garraf</strong>, y está en Vilanova. Si te habían recomendado empezar por ahí, la logística pesa tanto como el criterio.</li>
+<li>El <a href="/taekwondo/">taekwondo</a> es la única disciplina que llega a Sant Pere de Ribes y a Cubelles. Fuera de Vilanova y de Sitges, en la práctica es la opción.</li>
+<li>El muay thai y el krav maga, las dos que más suelen inquietar a un padre por el nivel de contacto que se les asocia, no tienen ni un solo centro verificado en la comarca. Esa preocupación, aquí, es teórica.</li>
+</ul>
+
+<h2>Cinco señales de que un grupo infantil está bien llevado</h2>
+<ul>
+<li><strong>Separan por edad de verdad.</strong> Un niño de cinco y uno de once en la misma clase no es aprovechar la mezcla, es no tener alumnos suficientes para dividir. Y en contacto, esa diferencia de tamaño es justo el problema.</li>
+<li><strong>Hay progresión antes del contacto.</strong> Caídas antes que proyecciones, técnica antes que combate, y parejas asignadas por el instructor en lugar de elegidas a dedo por los niños.</li>
+<li><strong>El material está en condiciones.</strong> Tatami sin huecos entre piezas, protecciones que no bailan, sala sin obstáculos duros a un metro del área de trabajo.</li>
+<li><strong>El instructor corrige por el nombre.</strong> Un adulto que dirige desde delante sin bajar a la esterilla no ve lo que pasa en la última fila, y en infantil la última fila es donde ocurren los sustos.</li>
+<li><strong>Saben qué hacer cuando algo pasa.</strong> Quién atiende un golpe, si hay botiquín, si el centro tiene seguro y si te avisan siempre o solo cuando parece grave. En un club que lo tiene pensado, la respuesta llega rápida.</li>
+</ul>
+
+<h2>¿Y cuándo hay que buscar otro sitio?</h2>
+<ul>
+<li>Combate libre a la cabeza en el grupo infantil, con casco o sin él.</li>
+<li>Un niño nuevo puesto a hacer sparring "para ver de qué va" en su primera o segunda clase. Eso no es una prueba de carácter, es negligencia.</li>
+<li>Grupos en los que nadie sabe cuántos niños hay ni quién ha venido hoy.</li>
+<li>La frase "aquí no se lesiona nadie". Ningún deporte de contacto tiene riesgo cero, y quien te lo vende así te está diciendo que no lleva la cuenta.</li>
+</ul>
+
+<h2>Qué preguntar en la clase de prueba, con estas palabras</h2>
+<p>Cuatro frases que se dicen en un minuto y ahorran meses de duda:</p>
+<ul>
+<li>"¿Con qué edades entrena exactamente este grupo?"</li>
+<li>"¿Cuándo empieza el contacto y cómo decidís que un niño está preparado?"</li>
+<li>"¿Puedo quedarme a ver una clase entera antes de apuntarle?"</li>
+<li>"Si se hace daño, ¿quién me llama y en qué momento?"</li>
+</ul>
+<p>Un centro con las cosas claras contesta las cuatro sin ponerse a la defensiva. Si alguna respuesta se va por las ramas, ya sabes por dónde seguir preguntando. El guion largo está en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Lo que no te podemos decir</h2>
+<p>No te vamos a dar una cifra de riesgo, porque no la tenemos y porque no nos corresponde. Si tu hijo arrastra una lesión, tiene una condición previa o está en pleno estirón, la conversación que importa no es con nosotros ni con el instructor. Es con su pediatra, y conviene tenerla antes de la primera clase y no después del primer susto.</p>
+<p>Y va el matiz que no aparece en la web de ningún gimnasio: ningún deporte con contacto tiene riesgo cero, ni las artes marciales, ni el fútbol, ni el baloncesto. Lo que sí puedes elegir es dónde está ese riesgo, quién lo supervisa y a qué ritmo se introduce. Eso se decide el día que eliges el club, no después.</p>
+
+<h2>Por dónde mirar en la comarca</h2>
+<p>Si ya tienes claro el municipio, las guías de <a href="/clases-infantiles-en-vilanova/">clases infantiles en Vilanova i la Geltrú</a> y de <a href="/clases-infantiles-en-sitges/">clases infantiles en Sitges</a> ordenan la oferta de cada zona. El <a href="/centros/">directorio de centros</a> te dice qué anuncia cada club, con su fuente y su fecha. Si todavía estás en la fase anterior, la de qué disciplina, empieza por <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a> o por la comparativa de <a href="/blog/mejor-arte-marcial-para-ninos-garraf/">qué arte marcial elegir para un niño</a>.</p>
+<p>¿Tienes un caso concreto: una edad, una lesión antigua, un niño al que le da miedo el contacto? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+`,
+
+  'blog/empezar-artes-marciales-siendo-mujer': `
+<h2>La pregunta que hay detrás casi nunca es la que se escribe</h2>
+<p>Quien busca esto no suele estar preguntando si una mujer puede hacer artes marciales. Está preguntando otra cosa, más incómoda de teclear: si va a ser la única, si la van a tratar distinto, y si el primer día va a acabar frente a un tío de noventa kilos que se lo toma muy en serio. Vamos con esas tres, y con lo que se puede saber de verdad sobre los centros del Garraf.</p>
+<p>La respuesta corta es que el primer día casi nunca se parece a lo que uno teme. La larga importa más, porque <strong>lo que decide si te quedas no es la disciplina, es cómo el centro organiza el trabajo por parejas</strong>. Ahí es donde hay que mirar.</p>
+
+<h2>Qué dice el directorio del Garraf sobre los grupos femeninos</h2>
+<p>Empecemos por el dato propio, porque es el que nadie más te va a dar. En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan trece centros de artes marciales: siete en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, tres en <a href="/sitges/">Sitges</a>, dos en Sant Pere de Ribes y uno en Cubelles. De esos trece, <strong>uno solo declara un grupo exclusivamente femenino</strong> en su fuente pública. Es de jiu-jitsu brasileño y está en Vilanova.</p>
+<p>Ese uno de trece es la respuesta honesta a la pregunta que probablemente traías. En esta comarca, empezar siendo mujer significa casi siempre <strong>entrar en un grupo mixto</strong>. No es una mala noticia en sí misma, pero conviene saberlo antes y no el primer día.</p>
+<p>Un apunte sobre cómo lo sabemos: recogemos lo que cada centro publica de sí mismo, en su web, en el registro de su federación o en el directorio municipal, con la fecha en que lo comprobamos. Que un centro no anuncie grupo femenino no prueba que no lo tenga. Prueba que no lo publica. Es una llamada de dos minutos y merece la pena hacerla antes de descartarlo.</p>
+
+<h2>¿Qué pasa realmente el primer día?</h2>
+<p>Lo que pasa, en la inmensa mayoría de salas, es que no pasa nada. Te enseñan dónde dejar las cosas, te ponen en la fila y empieza el calentamiento. La gente que te rodea está ocupada en no quedar mal ella misma, que es a lo que se dedica cualquiera en su primera semana.</p>
+<p>Lo que sí vas a notar, y conviene anticiparlo para que no te descoloque: durante las primeras clases no vas a entender la mitad de lo que se dice, vas a ir medio paso por detrás en cada ejercicio y vas a terminar más cansada de lo que esperabas. Eso le pasa a todo el mundo y no tiene nada que ver con el género. Dura dos o tres semanas.</p>
+
+<h2>El trabajo por parejas, que es lo que de verdad importa</h2>
+<p>Aquí está el punto que decide si sigues yendo en marzo. En un grupo bien llevado, las parejas las asigna el instructor, y las asigna por nivel y por peso. No por quién se ha puesto al lado de quién. Eso no es una deferencia hacia ti: es como se entrena bien con cualquier alumno nuevo.</p>
+<p>Lo que cambia de un club a otro es qué ocurre cuando el reparto no cuadra. Pregúntalo con estas palabras: "si soy la única mujer del grupo ese día, ¿con quién trabajo?". La respuesta te dirá más del centro que cualquier otra cosa que veas en veinte minutos.</p>
+<p>Y una señal de alarma, por si aparece: el compañero que afloja contigo de forma sistemática y además te lo hace notar no te está cuidando, te está sacando del entrenamiento. Un instructor competente lo corta a la primera. Si nadie lo corta, ya sabes qué clase de sala es.</p>
+
+<h2>Qué disciplina encaja con lo que buscas</h2>
+<p>Antes de elegir centro conviene tener claro el objetivo, porque cambia bastante la respuesta:</p>
+<ul>
+<li><strong>Si lo que quieres es autodefensa</strong>, la <a href="/defensa-personal/">defensa personal</a> es la vía directa, y es además la más disponible: siete de los trece centros del directorio la anuncian. Tienes el detalle de qué debe incluir un programa serio en la guía de <a href="/blog/defensa-personal-para-mujeres-garraf/">defensa personal para mujeres en el Garraf</a>.</li>
+<li><strong>Si buscas descargar la cabeza y ponerte en forma</strong>, el <a href="/boxeo/">boxeo</a> y el kickboxing permiten regular la intensidad desde el primer día. Trabajas contra saco y manoplas mucho antes de trabajar contra una persona.</li>
+<li><strong>Si te preocupa el impacto</strong>, el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> no tiene golpes y el ritmo lo marcas tú con tu pareja de trabajo. Es también la disciplina del único grupo femenino declarado en la comarca.</li>
+<li><strong>Si vienes con hijos y quieres cuadrar horarios</strong>, mira primero qué centros tienen grupo infantil y grupo de adultos el mismo día. Es un criterio poco romántico y es el que más gente mantiene entrenando en noviembre.</li>
+</ul>
+
+<h2>El primer mes, sin adornos</h2>
+<p>La semana uno duele en músculos que no sabías que existían, sobre todo en el costado y en los antebrazos. En la semana dos o tres la clase deja de ser un caos y empiezas a reconocer la estructura: calentamiento, técnica, aplicación. Al mes ya sabes el nombre de cuatro personas, y ese es el momento en que esto engancha o no engancha.</p>
+<p>El abandono, cuando llega, casi nunca es por la dificultad. Es por el horario que no aguanta un martes de noviembre con lluvia, o por un grupo en el que nunca acabaste de encajar. Si vives en Sant Pere de Ribes, en Cubelles o en Canyelles y vas a desplazarte a Vilanova o a Sitges, cuenta esos diez o quince minutos de coche en tu decisión, porque en enero cuentan doble.</p>
+
+<h2>Cinco preguntas para la llamada, antes de ir</h2>
+<ul>
+<li>"¿Cuánta gente hay en el grupo de iniciación y cómo se reparten las parejas?"</li>
+<li>"¿Cuántas mujeres entrenan ahora mismo en ese horario?"</li>
+<li>"¿Puedo ir a ver una clase entera sin participar?"</li>
+<li>"¿Hay vestuario separado y taquillas?"</li>
+<li>"¿Qué pasa si me apunto y a las tres semanas veo que ese grupo no es para mí?"</li>
+</ul>
+<p>La segunda pregunta incomoda a algunos centros y por eso vale la pena hacerla. Un club con grupos mixtos sanos contesta con un número aproximado y sin ponerse nervioso. El resto de comprobaciones, para cualquier disciplina, están en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Lo que no vas a leer en la web de ningún centro</h2>
+<p>Puede que durante un tiempo seas la única mujer de tu grupo. Pasa, sobre todo en horarios de tarde noche y en las disciplinas de golpeo, y no significa que el sitio sea hostil: significa que la composición de un grupo de veinte personas cambia cada trimestre. Ninguna web publica esa cifra porque cambia sola.</p>
+<p>El otro detalle que nadie menciona y que decide más de lo que parece: el vestuario. Mira si existe, si está separado y si puedes ducharte. Suena a tontería hasta que sales de entrenar a las diez de la noche en enero.</p>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>Si ya tienes municipio, las guías de <a href="/clases-para-mujeres-en-vilanova/">artes marciales para mujeres en Vilanova i la Geltrú</a> y de <a href="/clases-para-mujeres-en-sitges/">artes marciales para mujeres en Sitges</a> ordenan la oferta de cada zona con lo que consta verificado. Si te da igual desplazarte, la guía comarcal de <a href="/clases-para-mujeres/">artes marciales para mujeres en el Garraf</a> compara las disciplinas por objetivo, y el <a href="/centros/">directorio de centros</a> te dice qué anuncia cada club con su fuente y su fecha.</p>
+<p>¿Prefieres que te lo concretemos para tu caso: tu municipio, tu horario y lo que buscas? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+`,
+
   'blog/krav-maga-o-defensa-personal': `
 <h2>La duda de verdad no es cuál es mejor</h2>
 <p>Quien busca esto casi nunca quiere una comparativa de sistemas. Quiere saber si al apuntarse a una cosa se está perdiendo la otra, y si el cartel que ha visto en el escaparate de un gimnasio dice lo que él cree que dice. La respuesta corta: <strong>el krav maga es un sistema concreto, con currículo y certificación propios; la defensa personal es una categoría, no un estilo</strong>. Todo krav maga es defensa personal. No toda defensa personal es krav maga, ni se le parece.</p>
@@ -979,16 +1101,18 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/arte-marcial-para-nino-timido'],
-  'clases-para-mujeres': ['blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
+  'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
   'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
   'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
-  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
+  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
   'karate-infantil-en-sitges': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
+  'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
   'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
   'vilanova-i-la-geltru': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
 };
