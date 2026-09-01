@@ -30,7 +30,9 @@
     "blog/arte-marcial-para-nino-timido",
     "blog/arte-marcial-para-nino-muy-nervioso",
     "blog/se-hacen-dano-los-ninos-artes-marciales",
-    "blog/empezar-artes-marciales-siendo-mujer"
+    "blog/empezar-artes-marciales-siendo-mujer",
+    "blog/empezar-artes-marciales-a-los-40",
+    "blog/entrenar-sin-querer-competir"
   ],
   "cola": [
     {
@@ -577,8 +579,8 @@
         "/blog/a-que-edad-empezar-artes-marciales/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-01",
       "estacionalidad": "enero",
       "ancla_local": "Qué disciplinas del Garraf perdonan más al cuerpo de 40 y en qué municipios están.",
       "intencion_comercial": "alta"
@@ -716,8 +718,8 @@
         "/blog/como-elegir-centro-artes-marciales-garraf/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-01",
       "ancla_local": "Muy alta intención en adultos. Qué centros del directorio no exigen competición.",
       "intencion_comercial": "alta"
     },

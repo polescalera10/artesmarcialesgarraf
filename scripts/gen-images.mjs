@@ -266,6 +266,8 @@ const BLOG = [
   ['arte-marcial-para-nino-muy-nervioso', 'Mi hijo no para quieto', 'personas', 'Estructura antes que desgaste: qué canaliza'],
   ['se-hacen-dano-los-ninos-artes-marciales', '¿Se hacen daño?', 'check-circulo', 'Cómo se gradúa el contacto en cada disciplina'],
   ['empezar-artes-marciales-siendo-mujer', 'Empezar siendo mujer', 'personas', 'Cómo son los grupos y qué preguntar antes de ir'],
+  ['empezar-artes-marciales-a-los-40', 'Empezar a los 40', 'brujula', 'Qué cambia, qué perdona el cuerpo y qué hay cerca'],
+  ['entrenar-sin-querer-competir', 'Entrenar sin competir', 'personas', 'La mayoría no compite nunca, y no pasa nada'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

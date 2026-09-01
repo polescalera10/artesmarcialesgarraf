@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/empezar-artes-marciales-a-los-40',
+    type: 'blog',
+    meta: {
+      title: 'Empezar Artes Marciales a los 40 en el Garraf',
+      description: 'A los 40 no empiezas tarde, empiezas distinto. Qué disciplinas perdonan más al cuerpo, cuáles hay de verdad en el Garraf y qué decir el primer día.',
+    },
+    h1: 'Empezar Artes Marciales a los 40 en el Garraf',
+    intro: 'El miedo no suele ser la edad, sino la rodilla vieja y el ridículo. Aquí va qué cambia de verdad respecto a los veinticinco, qué disciplinas aguantan mejor un cuerpo de cuarenta y cuáles constan en los trece centros de la comarca.',
+    body: BLOG_BODIES['blog/empezar-artes-marciales-a-los-40'],
+    fecha: '2026-09-01',
+    phase: 2,
+  },
+  {
+    slug: 'blog/entrenar-sin-querer-competir',
+    type: 'blog',
+    meta: {
+      title: 'Entrenar Artes Marciales sin Competir en el Garraf',
+      description: 'La mayoría de quien entrena en el Garraf no compite nunca. Cómo detectar un club donde competir es opcional de verdad, con dos preguntas de un minuto.',
+    },
+    h1: 'Entrenar sin Querer Competir Nunca: Es lo Normal',
+    intro: 'Es el miedo silencioso que impide apuntarse a mucha gente que ya está convencida. Aquí va qué disciplinas de la comarca empujan más hacia el circuito, qué preguntar en la primera llamada y qué se pierde de verdad si nunca subes a un tatami de competición.',
+    body: BLOG_BODIES['blog/entrenar-sin-querer-competir'],
+    fecha: '2026-09-01',
+    phase: 2,
+  },
+  {
     slug: 'blog/se-hacen-dano-los-ninos-artes-marciales',
     type: 'blog',
     meta: {

@@ -9,6 +9,131 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/empezar-artes-marciales-a-los-40': `
+<h2>La respuesta corta: a los 40 no empiezas tarde, empiezas distinto</h2>
+<p>A los 40 no llegas tarde a nada. Llegas distinto, que no es lo mismo. En los grupos de iniciación de adultos del Garraf, el tramo de 35 a 50 pesa mucho. Y no por caridad del club: es gente que aparece con regularidad, escucha las correcciones y no se pica en el trabajo por parejas. Los instructores lo saben y lo agradecen.</p>
+<p>La pregunta que traes, sin embargo, casi nunca es "¿puedo?". Suele ser una de estas cuatro:</p>
+<ul>
+<li>Si la rodilla vieja va a aguantar dos clases por semana.</li>
+<li>Si vas a hacer el ridículo delante de gente de veinticinco.</li>
+<li>Si dos días sirven de algo o es perder el tiempo.</li>
+<li>Si vas a acabar peleando con alguien sin quererlo.</li>
+</ul>
+<p>Las cuatro tienen respuesta. Ninguna es la que promete la web de un gimnasio.</p>
+
+<h2>Qué cambia de verdad respecto a los veinticinco</h2>
+<p>Menos de lo que temes, y en sitios distintos de los que crees. La capacidad de aprender una técnica nueva no se cae a los 40. Lo que cambia es el tiempo que necesitas entre dos sesiones duras.</p>
+<p>A los veinte entrenabas el martes hecho polvo del lunes y no pasaba nada. A los cuarenta ese martes lo pagas el jueves. La consecuencia es simple: <strong>el error caro a esta edad no es entrenar poco, es entrenar mucho demasiado pronto</strong>. Cinco sesiones semanales en enero llevan a una lesión en febrero y a dejarlo en marzo.</p>
+<p>Lo segundo que cambia son las lesiones antiguas. El hombro de aquella caída. La lumbar de los años de oficina. El tobillo que se tuerce solo. No te impiden entrenar. Te obligan a decirlo en voz alta el primer día, y eso casi nadie lo hace por vergüenza.</p>
+<p>Lo tercero juega a favor y nadie lo cuenta. A partir de cierta edad distingues molestia de dolor, y cansancio de agotamiento. Esa lectura del propio cuerpo es justo lo que evita las lesiones tontas, y a los veinte no se tiene.</p>
+<p>Conviene añadir algo que las artes marciales resuelven de paso. Las <a href="https://www.who.int/publications/i/item/9789240015128">directrices de actividad física de la Organización Mundial de la Salud</a> piden a los adultos trabajo de fuerza dos días por semana como mínimo. A partir de los 65 añaden equilibrio, tres días. En una sala de agarre las dos cosas caen solas.</p>
+
+<h2>Qué disciplinas perdonan más al cuerpo de 40, y cuáles hay de verdad en el Garraf</h2>
+<p>Aquí la teoría se estrella contra la comarca. Puedes leer que el aikido es ideal a partir de los cuarenta. Si no hay ninguna sala a menos de cuarenta minutos, el consejo no vale nada.</p>
+<p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan <strong>trece centros</strong> a fecha de la última verificación. Siete en Vilanova i la Geltrú, tres en Sitges, dos en Sant Pere de Ribes, uno en Cubelles y ninguno en Canyelles. Esa distribución manda más que cualquier comparativa.</p>
+<table>
+<thead>
+<tr><th>Disciplina</th><th>Qué le pide a un cuerpo de 40</th><th>Presencia en la comarca</th></tr>
+</thead>
+<tbody>
+<tr><td>Jiu-jitsu brasileño</td><td>Sin golpes. El ritmo lo marcas tú y se puede rodar suave toda la vida. Cuidado con las articulaciones y con el orgullo.</td><td>Cinco centros, todos en Vilanova y Sitges</td></tr>
+<tr><td><a href="/boxeo/">Boxeo</a> y kickboxing</td><td>Intensidad regulable desde el primer día. Mucho saco y manoplas antes de tocar a nadie.</td><td>Las dos más repartidas del directorio</td></tr>
+<tr><td><a href="/judo/">Judo</a></td><td>Exige caer bien, y caer se aprende. Es el que más pide a espalda y rodillas si vienes de años parado.</td><td>Un solo centro en todo el Garraf</td></tr>
+<tr><td>Defensa personal</td><td>El formato menos exigente para volver a moverse. Poco impacto y nada de competición.</td><td>Siete centros la anuncian</td></tr>
+</tbody>
+</table>
+<p>Dos apuntes que ninguna guía nacional te va a dar. El judo es de lo mejor que hay para aprender a caer sin hacerse daño, y consta en <strong>un único centro de la comarca</strong>, en Vilanova. Si vives en Cubelles, eso son veinte minutos de coche cada martes de noviembre con lluvia.</p>
+<p>El segundo apunte es una ausencia. El muay thai y el krav maga aparecen en todos los listados de "artes marciales para adultos" y no tienen ni un centro verificado en el Garraf. Aquí esa opción, sencillamente, no existe.</p>
+<p>Si buscas por zona, tienes la oferta ordenada en <a href="/clases-para-adultos-en-vilanova/">clases para adultos en Vilanova i la Geltrú</a>, y el mapa de toda la comarca en <a href="/clases-para-adultos/">artes marciales para adultos en el Garraf</a>.</p>
+
+<h2>La conversación de dos minutos que casi nadie tiene</h2>
+<p>El primer día, antes de calzarte nada, dile al instructor lo que arrastras. Con nombres y fechas: "hombro derecho, luxación en 2011", "hernia lumbar diagnosticada", "prótesis de rodilla". No hace falta un historial médico. Basta el titular.</p>
+<p>Lo que buscas no es un diagnóstico, porque no le corresponde darlo. Buscas ver cómo reacciona. Un técnico solvente te propone en el acto una alternativa al ejercicio que te va a doler. Cambia la caída por una rodada, te saca del salto, te empareja con quien controla. Uno que responde "tú ve probando y ya me dirás" te acaba de dar toda la información que necesitabas.</p>
+<p>Y el aviso obligado. Si la lesión es reciente, si estás en tratamiento o si tienes cualquier condición cardiovascular, la conversación previa no es con el instructor. Es con tu médico, y conviene tenerla antes de la primera clase.</p>
+
+<h2>Cuántos días a la semana, sin engañarse</h2>
+<p>Dos. Casi siempre dos, durante los primeros seis meses.</p>
+<p>Dos sesiones semanales bastan para que la técnica progrese. Y para que el hábito se instale, que es lo difícil. La tercera se añade cuando llevas medio año yendo sin discutir contigo mismo. No antes.</p>
+<p>Sirve de referencia lo que recomienda la <a href="https://www.who.int/es/news-room/fact-sheets/detail/physical-activity">Organización Mundial de la Salud para adultos de 18 a 64 años</a>: entre 150 y 300 minutos semanales de actividad aeróbica moderada. Dos clases de hora y media cubren buena parte de esa cifra. El resto lo pone caminar, que es gratis.</p>
+
+<h2>Lo que no te va a pasar</h2>
+<p>Nadie te va a poner a pelear el primer día. En un centro serio el contacto es progresivo, opcional y supervisado. Si en tu clase de prueba te emparejan con alguien con experiencia "para ver qué tal", la respuesta correcta es irse. No es una prueba de carácter, es negligencia.</p>
+<p>Tampoco vas a ser el mayor de la sala. En los grupos de adultos de la comarca lo raro es el veinteañero, no el de cuarenta y cinco.</p>
+<p>Y no vas a competir salvo que quieras. La competición es una rama voluntaria y minoritaria en casi todas las disciplinas. Si te preocupa acabar arrastrado a un torneo, pregúntalo en la primera llamada: la respuesta se nota enseguida.</p>
+<p>Lo que sí te va a pasar conviene saberlo. Las primeras tres o cuatro semanas vas a estar torpe, y con agujetas en músculos que no sabías que tenías. Es normal y se pasa. No significa que hayas elegido mal.</p>
+
+<h2>El matiz incómodo</h2>
+<p>Somos una guía editorial independiente y no vendemos clases, así que podemos decirlo. Empezar a los 40 sale bien casi siempre, pero no porque las artes marciales tengan nada mágico. Sale bien cuando el grupo encaja. Un club excelente con un solo grupo donde compiten todos te servirá menos que un club normal con un grupo de adultos. Ese es todo el secreto.</p>
+<p>Y no, no vas a defenderte en la calle en tres meses. Ni en seis. Quien te lo prometa te está diciendo cómo trabaja.</p>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>El directorio recoge qué anuncia cada club de la comarca, en qué municipio está y con qué fuente pública lo comprobamos, con su fecha. Sin ranking y sin valoraciones. Si ya sabes que quieres suelo y nada de golpes, el punto de entrada más directo es la guía de <a href="/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/">jiu-jitsu brasileño en Vilanova i la Geltrú</a>.</p>
+<p>Antes de firmar nada, pasa por la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>: ocho comprobaciones de cinco minutos. El recorrido del primer mes está contado en <a href="/blog/artes-marciales-adultos-principiantes-garraf/">artes marciales para adultos principiantes</a>, y los tramos de edad uno a uno en <a href="/blog/a-que-edad-empezar-artes-marciales/">a qué edad empezar</a>.</p>
+<p>¿Tienes un caso concreto, una lesión antigua o dudas entre dos municipios? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+`,
+
+  'blog/entrenar-sin-querer-competir': `
+<h2>La respuesta corta: en el Garraf casi nadie compite</h2>
+<p>No hace falta competir. Nunca. Ni para entrenar. Ni para graduarse, en la mayoría de disciplinas. Ni para que el instructor te tome en serio.</p>
+<p>Es la duda que más gente se traga sin preguntar. Y por eso mucha gente no llega a apuntarse. En los trece centros que constan en nuestro <a href="/centros/">directorio de centros del Garraf</a> entrena mucha gente un martes por la tarde. La enorme mayoría no ha competido jamás y no piensa hacerlo. Van a moverse. A desconectar del trabajo. A aprender algo con las manos.</p>
+<p>Dicho eso, el miedo no es absurdo. Hay clubs donde la competición marca el ritmo de todo. Ahí, un adulto que solo quiere entrenar acaba sobrando. Distinguirlos se hace con dos preguntas, y están más abajo.</p>
+
+<h2>De dónde viene el miedo, y por qué es razonable</h2>
+<p>Viene de lo que se ve. Lo que llega al móvil de un arte marcial es un combate, un podio o un vídeo de gimnasio con música. La clase real no se graba nunca. Es una hora de repetir un movimiento hasta que sale.</p>
+<p>Viene también de la palabra. "Artes marciales" suena a pelear. Lo que se hace en la sala se parece más a un idioma que se aprende despacio.</p>
+<p>Y viene de una experiencia previa. Mucha gente que llega a los treinta o cuarenta arrastra un mal recuerdo del deporte de club de su infancia. El entrenador que solo miraba a los cinco buenos. El banquillo. La sensación de estorbar. Ese recuerdo es el que hay que desmontar. No con un eslogan: viendo cómo funciona el grupo.</p>
+<p>Ayuda además cambiar de vara de medir. Las <a href="https://www.who.int/publications/i/item/9789240015128">directrices de la Organización Mundial de la Salud sobre actividad física y conducta sedentaria</a> no distinguen entre quien compite y quien no. Cuentan los minutos, no los trofeos.</p>
+
+<h2>Qué disciplinas del Garraf empujan más hacia la competición</h2>
+<p>No todas tiran igual, y la oferta de la comarca lo deja bastante claro. Dos datos del directorio que ayudan a leer el mapa.</p>
+<p>El primero: de los trece centros, <strong>siete anuncian defensa personal</strong>. Es el formato sin circuito competitivo de ningún tipo. No hay torneos de defensa personal. No existe la categoría.</p>
+<p>El segundo: de los trece, cuatro constan a través del registro de una federación o del directorio municipal. Los cuatro son de <a href="/taekwondo/">taekwondo</a> o judo. Son las dos disciplinas con estructura federativa más fuerte de la comarca. Eso no las hace peores. Sí explica por qué su cultura de club está más cerca del circuito.</p>
+<table>
+<thead>
+<tr><th>Disciplina</th><th>Peso de la competición</th><th>Qué esperar en el Garraf</th></tr>
+</thead>
+<tbody>
+<tr><td>Defensa personal</td><td>Ninguno. No hay circuito.</td><td>Siete centros la anuncian, es la vía más directa si no quieres competir</td></tr>
+<tr><td><a href="/jiu-jitsu-brasileno/">Jiu-jitsu brasileño</a></td><td>Alto si lo buscas, invisible si no. El grado no depende del torneo.</td><td>Cinco centros, todos en Vilanova y Sitges</td></tr>
+<tr><td>Boxeo y kickboxing</td><td>Separado: hay grupo de competición y grupo que no compite.</td><td>Las dos más repartidas del directorio</td></tr>
+<tr><td>Taekwondo y judo</td><td>Estructura federativa fuerte; el calendario pesa más.</td><td>Únicas opciones fuera de Vilanova y Sitges</td></tr>
+</tbody>
+</table>
+<p>Hay un detalle geográfico que conviene tener presente. El taekwondo es la única disciplina que llega a Sant Pere de Ribes y a Cubelles. Si vives allí y no quieres competir, la opción no es mala. Solo hay que hacer la pregunta el primer día, en vez de darla por hecha.</p>
+
+<h2>Las dos preguntas que lo aclaran en una llamada</h2>
+<p>Se hacen por teléfono. Tardan un minuto y ahorran meses.</p>
+<ul>
+<li>"¿Cuánta gente del grupo de adultos compite?" La respuesta útil es un número aproximado, dicho sin tensión. Si el club no lo sabe, tampoco lleva la cuenta de quién viene a clase.</li>
+<li>"¿Se entrena distinto según si compites o no?" Aquí buscas una cosa: que exista un plan para ti. Un club que responde "todos hacemos lo mismo", en una sala con equipo de competición, ya te dice qué ritmo vas a seguir.</li>
+</ul>
+<p>Una tercera pregunta, si aún dudas: "¿Puedo quedarme a ver una clase entera?" El guion completo está en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Cuatro señales de que ahí sí te van a empujar</h2>
+<ul>
+<li><strong>El calendario de torneos manda en la programación.</strong> Si las semanas previas a una competición cambian la clase de todos, incluido el grupo que no va, ya sabes quién es el cliente principal.</li>
+<li><strong>Los grados dependen del palmarés.</strong> En la mayoría de sistemas el grado se examina. No se gana en un podio. Si te dicen que sin competir no subes, pregunta con qué programa trabajan.</li>
+<li><strong>El discurso es de rendimiento.</strong> Fotos de medallas en la pared y ninguna de una clase normal. No es un delito, pero dice a quién se dirige la sala.</li>
+<li><strong>Te presionan en la primera semana.</strong> "Tienes condiciones, deberías apuntarte al de marzo" suena a halago. Funciona como venta.</li>
+</ul>
+<p>Nuestra recomendación es simple. Si en la primera conversación ya notas que la respuesta correcta era decir que sí, ese no es tu club. Hay doce más en la comarca.</p>
+
+<h2>Qué pierdes si no compites, y qué no</h2>
+<p>Primero lo que sí pierdes, porque nadie lo dice. La competición acelera. Te obliga a resolver bajo presión, y con alguien que de verdad quiere ganarte. Eso enseña cosas que el entrenamiento cooperativo tarda mucho más en dar. Quien compite dos años progresa más rápido que quien no. Es así.</p>
+<p>Ahora lo que no pierdes. Que es casi todo lo demás. La técnica se aprende igual. La forma física se gana igual. La cabeza más despejada al salir de la sala funciona igual. Y el grupo no distingue entre quien compite y quien no. Ese grupo suele ser la razón de fondo por la que alguien sigue yendo tres años después.</p>
+<p>Como referencia externa: la <a href="https://www.who.int/es/news-room/fact-sheets/detail/physical-activity">Organización Mundial de la Salud recomienda a un adulto entre 150 y 300 minutos semanales de actividad moderada</a>. Dos clases por semana cubren buena parte de eso, se compita o no. El beneficio no está en el podio, está en la asistencia.</p>
+
+<h2>La licencia federativa no es un contrato para competir</h2>
+<p>Aquí se genera bastante confusión. En muchas disciplinas el club tramita una licencia federativa que incluye el seguro deportivo. A veces la pide a todo el mundo por ese motivo, no porque vaya a inscribirte en nada.</p>
+<p>Sacarse la licencia no obliga a subir a ninguna competición. Antes de firmar conviene preguntar tres cosas. Si es obligatoria en ese club, qué cubre el seguro y quién la tramita. Es una conversación de treinta segundos que casi nadie tiene.</p>
+<p>Y va el matiz que nos toca decir. Somos una guía editorial independiente, no un club ni una federación. Las condiciones de cada licencia las fija cada federación y cambian. El dato bueno es siempre el que te dé por escrito el centro donde te apuntes.</p>
+
+<h2>Dónde mirar en la comarca</h2>
+<p>Si lo que quieres es entrenar sin más, mira primero los formatos que ni siquiera tienen circuito. La guía de <a href="/defensa-personal-en-vilanova-i-la-geltru/">defensa personal en Vilanova i la Geltrú</a> es el punto de entrada más directo. La guía de <a href="/clases-para-adultos/">clases para adultos en el Garraf</a> ordena el resto de la oferta por perfil.</p>
+<p>Si todavía estás decidiendo disciplina, empieza por la guía de <a href="/iniciacion/">iniciación a las artes marciales</a>, que compara las diez. O por el recorrido del primer mes en <a href="/blog/artes-marciales-adultos-principiantes-garraf/">artes marciales para adultos principiantes</a>. El directorio te dice qué anuncia cada club y en qué municipio. Con la fuente pública y la fecha en que lo comprobamos.</p>
+<p>¿Quieres que te digamos qué preguntar en tu caso concreto? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
+`,
+
   'blog/se-hacen-dano-los-ninos-artes-marciales': `
 <h2>La respuesta corta, y lo que de verdad decide el riesgo</h2>
 <p>Sí, algún día volverá con un moratón. No, no se parece a lo que te imaginas cuando oyes "deporte de contacto". En un grupo infantil bien llevado, de los que constan en nuestro <a href="/centros/">directorio de centros del Garraf</a>, lo que se hace un niño de siete años se parece bastante a lo que se hace jugando al fútbol o cayéndose de un patinete.</p>
@@ -1103,8 +1228,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Perfiles y páginas de entrada
   'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
   'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
-  'clases-para-adultos': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/a-que-edad-empezar-artes-marciales'],
-  'iniciacion': ['blog/como-elegir-centro-artes-marciales-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
+  'clases-para-adultos': ['blog/empezar-artes-marciales-a-los-40', 'blog/artes-marciales-adultos-principiantes-garraf'],
+  'iniciacion': ['blog/entrenar-sin-querer-competir', 'blog/como-elegir-centro-artes-marciales-garraf'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
   'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
@@ -1113,6 +1238,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-adultos-en-sitges': ['blog/empezar-artes-marciales-a-los-40', 'blog/entrenar-sin-querer-competir'],
+  'clases-para-adultos-en-vilanova': ['blog/empezar-artes-marciales-a-los-40', 'blog/entrenar-sin-querer-competir'],
   'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
   'vilanova-i-la-geltru': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
 };
