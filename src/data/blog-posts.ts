@@ -9,6 +9,129 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/clase-de-prueba-que-preguntar': `
+<h2>En una clase de prueba del Garraf, el que evalúa eres tú</h2>
+<p>Casi todo el mundo llega a la primera clase con la sensación de que va a un examen: si estoy en forma, si voy a hacer el ridículo, si me van a mirar. Y es justo al revés. La clase de prueba es la única hora en la que puedes ver un club por dentro sin haber pagado nada. En los <a href="/centros/">trece centros que constan en nuestro directorio del Garraf</a> se ofrece prácticamente en todas partes.</p>
+<p>Así que conviértela en lo que es: una visita de inspección con ropa de deporte. Esto es el guion de esa visita, desde la llamada previa hasta los cinco minutos de después, que suelen ser los que más información dan. Si lo que buscas es la lista larga para comparar centros entre sí, está en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>La llamada previa resuelve más de lo que parece</h2>
+<p>Antes de ir hay que llamar o escribir. Tres preguntas:</p>
+<ul>
+<li><strong>¿A qué grupo voy exactamente?</strong> No vale "al de las siete". Quieres saber si te meten en el grupo de iniciación, en el general o en el de los que llevan años. Si acabas un martes cualquiera en el grupo abierto, la prueba no te va a servir para decidir nada.</li>
+<li><strong>¿Qué llevo?</strong> La respuesta correcta es ropa deportiva y agua. Si te piden comprar kimono, guantes o vendas para una clase de prueba, ya tienes información sobre ese centro.</li>
+<li><strong>¿Puedo quedarme a mirar si al final no entro?</strong> Quien dice que sí sin pensarlo tiene poco que esconder.</li>
+</ul>
+<p>Un matiz sobre la última. Hay clubs que no dejan observar la clase infantil, y no siempre es mala señal: con menores hay protocolos de acceso que tienen todo el sentido del mundo. Lo que sí debe existir es alguna vía, aunque sea una jornada de puertas abiertas o los últimos diez minutos. Si no hay ninguna y nadie te explica por qué, eso ya es una respuesta.</p>
+
+<h2>Los diez minutos de antes: mira mientras te cambias</h2>
+<p>Llega con margen. Lo que ocurre antes de que empiece nada dice casi tanto como la clase.</p>
+<ul>
+<li>Si alguien te recibe, te pregunta el nombre y se lo pasa al instructor, o si entras y nadie sabe quién eres.</li>
+<li>El estado del vestuario y de la colchoneta. No hace falta un local nuevo, hace falta que esté limpio.</li>
+<li>Si los alumnos de la clase anterior se quedan hablando en la puerta o salen disparados sin mirar atrás.</li>
+<li>Si el instructor ya está en la sala o aparece cinco minutos tarde con el móvil en la mano.</li>
+</ul>
+<p>Nada de esto es concluyente por separado. Los cuatro juntos, sí.</p>
+
+<h2>Cuatro cosas que se ven durante la clase sin saber nada</h2>
+<p>Durante la hora vas a estar ocupado intentando no perder el paso, así que no intentes juzgar la técnica. Fíjate en otras cosas:</p>
+<ul>
+<li><strong>Si te adaptan el ejercicio o te dejan copiando.</strong> Un buen técnico te da una versión más simple del movimiento y vuelve a mirarte a los dos minutos. Que te pongan al fondo a imitar al de delante durante una hora es la señal más clara de que allí un principiante es un número.</li>
+<li><strong>Si corrige por el nombre.</strong> El instructor que dirige desde delante sin bajar al tatami no te va a enseñar gran cosa. El que se acerca, te toca el codo y te dice dónde va, sí.</li>
+<li><strong>Cómo tratan al que peor lo hace.</strong> Siempre hay alguien que va perdido. Mira qué pasa con esa persona: es el mejor indicador de la cultura del club, y hoy esa persona vas a ser tú.</li>
+<li><strong>Con quién te emparejan.</strong> Lo normal es que te pongan con alguien veterano y tranquilo, que te va a llevar. Si te emparejan con otro principiante y os dejan solos, no aprende ninguno de los dos.</li>
+</ul>
+
+<h2>La señal que justifica levantarse e irse a mitad</h2>
+<p>Solo hay una, y conviene decirla sin rodeos. <strong>Si en tu primera clase te ponen a intercambiar golpes de verdad con alguien con experiencia, para ver de qué vas, te levantas y te vas.</strong> No es una prueba de carácter ni una novatada del ambiente. Es negligencia, y es la vía rápida a una lesión que te aparte medio año antes de haber aprendido nada.</p>
+<p>El contacto en cualquier disciplina de golpeo se introduce progresivo, con protecciones y con el instructor encima. En las de agarre pasa lo mismo con las caídas y las sumisiones. Si tienes dudas sobre cómo debería graduarse eso, sobre todo si estás mirando para un hijo, lo desarrollamos en <a href="/blog/se-hacen-dano-los-ninos-artes-marciales/">si se hacen daño los niños en artes marciales</a>.</p>
+
+<h2>Los cinco minutos de después: la conversación que decide</h2>
+<p>Aquí es donde mucha gente firma sin preguntar porque viene con endorfinas y con ganas de caer bien. Resístete un poco. Lo que necesitas saber antes de pagar cabe en una hoja: cuota y qué incluye, si hay matrícula, y cuántos meses de permanencia. Luego, qué pasa si te lesionas o te mudas, si la licencia federativa es obligatoria y quién la tramita, si los exámenes de grado se pagan aparte y cómo se da uno de baja.</p>
+<p>Todo eso te lo tienen que poder dar por escrito. Y una técnica de venta que conviene reconocer: el descuento que caduca esta misma noche. Un centro con alumnos no necesita cerrarte hoy.</p>
+<p>Si te sirve un resumen para llevar en el móvil, esto es toda la visita en cinco filas:</p>
+<table>
+<thead>
+<tr><th>Momento</th><th>Buena señal</th><th>Mala señal</th></tr>
+</thead>
+<tbody>
+<tr><td>La llamada</td><td>Te dicen a qué grupo concreto vas y que lleves ropa deportiva</td><td>Te piden comprar material antes de probar</td></tr>
+<tr><td>Al llegar</td><td>Alguien te espera y pasa tu nombre al instructor</td><td>Entras y nadie sabe quién eres</td></tr>
+<tr><td>Durante</td><td>Te adaptan el ejercicio y te corrigen por el nombre</td><td>Te dejan al fondo copiando al de delante</td></tr>
+<tr><td>El contacto</td><td>Progresivo, con protecciones y supervisado</td><td>Te ponen a pelear con un veterano el primer día</td></tr>
+<tr><td>Al salir</td><td>Te dan las condiciones por escrito</td><td>Descuento que caduca esta noche</td></tr>
+</tbody>
+</table>
+
+<h2>Qué no significa que la prueba te haya salido mal</h2>
+<p>Vas a terminar reventado, vas a ir medio paso por detrás de todos y vas a hacer cosas raras con los pies. Eso no es un mal augurio, es el primer día de cualquiera. La gente que lleva dos años en esa sala empezó exactamente igual, y si has ido a un grupo de iniciación, la mitad de la clase sigue haciendo cosas raras con los pies.</p>
+<p>Lo que sí es un mal augurio: salir sin que nadie te haya dicho una palabra, no tener claro qué has hecho ni por qué, o haberte sentido observado en vez de acompañado. Si pasa eso, prueba en otro sitio antes de concluir que las artes marciales no son para ti. Casi nunca es la disciplina, es el grupo. Y si vienes de años sin hacer deporte, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> te ordena las diez opciones antes de que elijas dónde probar.</p>
+
+<h2>Si vives fuera de Vilanova o Sitges, prueba en dos sitios</h2>
+<p>La oferta de la comarca está muy concentrada y eso cambia la estrategia. De los trece centros del directorio, siete están en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y tres en <a href="/sitges/">Sitges</a>; en <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> constan dos, en <a href="/cubelles/">Cubelles</a> uno y en Canyelles, de momento, ninguno. Si vives en los tres últimos, lo probable es que acabes desplazándote. Entonces la clase de prueba responde a una pregunta más: si ese trayecto lo vas a hacer dos veces por semana en enero. Diez o quince minutos en coche entre Sitges y Vilanova parecen nada un domingo por la mañana y son otra cosa un martes a las ocho.</p>
+<p>Por eso, si te toca desplazarte, prueba en dos centros antes de decidir. No cuesta dinero y es la única forma de tener con qué comparar.</p>
+<p>Comprueba también que la disciplina que buscas existe aquí antes de organizar nada. En el directorio hay siete centros que anuncian kickboxing y otros siete defensa personal, seis con boxeo y cinco con jiu-jitsu brasileño. En cambio el <a href="/judo/">judo</a> consta en uno solo, y el <a href="/taekwondo/">taekwondo</a> es la única disciplina que llega a Cubelles y a Sant Pere de Ribes. Y hay dos que no tienen ni un centro verificado en toda la comarca: <a href="/muay-thai/">muay thai</a> y <a href="/krav-maga/">krav maga</a>. Si vienes buscando una de esas dos, la clase de prueba más cercana está fuera del Garraf, y más vale saberlo antes que después.</p>
+
+<h2>Dónde probar, en la comarca</h2>
+<p>En el <a href="/centros/">directorio de centros del Garraf</a> tienes qué club consta en cada municipio y qué disciplinas anuncia cada uno. Cada ficha lleva su fuente pública y la fecha en que verificamos el dato. Sin ranking y sin valoraciones, porque no cobramos de ninguno.</p>
+<p>Si vas a probar para un hijo, la guía de <a href="/clases-para-ninos/">clases para niños en el Garraf</a> te dice qué mirar por edades. Si es para ti, la de <a href="/clases-para-adultos/">clases para adultos</a> cubre el grupo de iniciación.</p>
+<p>Y si prefieres no empezar de cero con la búsqueda, <a href="/contacto/">escríbenos</a> con tu municipio, tu horario posible y para quién es, y te decimos por dónde mirar. No cobramos por eso ni te vamos a mandar a ningún sitio a cambio de nada.</p>
+`,
+
+  'blog/artes-marciales-y-estres': `
+<h2>El motivo real por el que muchos adultos del Garraf se apuntan</h2>
+<p>Cuando un adulto pregunta por dónde empezar en artes marciales, la razón que da suele ser ponerse en forma o aprender a defenderse. La razón que aparece dos frases después, si hay confianza, casi siempre es otra: llegar a casa con la cabeza más callada de lo que la tenía a las seis de la tarde. No es un motivo menor ni un motivo de segunda. Es probablemente el que más gente mantiene entrenando pasado el primer trimestre.</p>
+<p>Esta guía explica qué tiene el formato de una clase de combate que funciona tan bien para eso y qué no se puede prometer. Y qué disciplinas de las que constan de verdad en el Garraf encajan mejor con quien viene por esta razón. Aviso de entrada: aquí no hay consejo clínico. Si lo que tienes es ansiedad que te limita la vida, eso lo valora un profesional sanitario, y ninguna clase sustituye eso.</p>
+
+<h2>Qué tiene una clase de combate que no tiene una cinta de correr</h2>
+<p>En una cinta puedes darle vueltas a la reunión de mañana durante cuarenta minutos. En una clase de artes marciales no puedes, y ahí está casi todo.</p>
+<p>El motivo es prosaico: hay alguien delante de ti moviéndose, hay una secuencia que memorizar, hay una corrección que atender y hay un compañero al que no quieres pegar de más. La atención no es opcional. La sueltas dos segundos y pierdes el paso o te comes un guante. Ese secuestro de la atención durante una hora es lo que la gente describe después como haber desconectado, y es un mecanismo bastante distinto del de cansarse mucho.</p>
+<p>Se le suman dos cosas más. La primera, el esfuerzo físico intenso y con final claro: la clase acaba, se saluda, se acabó. La segunda, que es un sitio al que vas y donde hay gente que te conoce por el nombre, lo cual no es poco para un adulto que trabaja y llega a casa tarde.</p>
+
+<h2>Golpear un saco no es lo mismo que descargar</h2>
+<p>Aquí conviene desmontar la versión de película. La idea de que pegarle a algo te saca la rabia del cuerpo es intuitiva y bastante floja. Si fuera así, bastaría con un saco en el trastero, y quien lo ha probado sabe que a las tres semanas está colgado de un gancho criando polvo.</p>
+<p>Lo que sostiene el efecto no es el impacto, es la estructura. Un horario fijo, una hora de atención obligada, una progresión que se nota y un grupo que te espera. Por eso funciona igual de bien el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a>, donde no se golpea nada, que el <a href="/boxeo/">boxeo</a>. Y por eso a mucha gente le funciona peor entrenar sola en el gimnasio del barrio aunque haga los mismos ejercicios.</p>
+
+<h2>Lo que no te vamos a decir</h2>
+<p>No te vamos a decir que las artes marciales curen la ansiedad, que sustituyan una terapia o que arreglen un problema de sueño. No tenemos ninguna base para afirmarlo y quien te lo afirme desde la web de un gimnasio te está vendiendo algo.</p>
+<p>Lo que sí se puede describir sin inventar nada es el formato, que es lo que hemos hecho arriba: ejercicio intenso, atención sostenida, rutina semanal y contacto social, cuatro cosas que casi cualquiera agradece. Si además estás en tratamiento o arrastras algo que te preocupa, coméntalo con tu médico antes de apuntarte a un deporte de contacto, y coméntalo también con el instructor el primer día. Un técnico solvente adapta sin dramatizar.</p>
+
+<h2>Qué disciplinas del Garraf encajan mejor con este motivo</h2>
+<p>De los trece centros que constan en <a href="/centros/">nuestro directorio de la comarca</a>, la oferta está muy desequilibrada, y eso condiciona lo que puedes elegir de verdad.</p>
+<p>Lo que más hay es golpeo y defensa personal: siete centros anuncian <a href="/kickboxing/">kickboxing</a>, siete <a href="/defensa-personal/">defensa personal</a> y seis <a href="/boxeo/">boxeo</a>, todos ellos entre <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y <a href="/sitges/">Sitges</a>. Son opciones cómodas para este perfil porque la intensidad la regulas tú desde el primer día y porque el trabajo con saco y manoplas absorbe la cabeza sin pedirte coordinación fina.</p>
+<p>El agarre es la otra vía, y a bastante gente le va mejor. El jiu-jitsu brasileño consta en cinco centros de la comarca y tiene una particularidad útil aquí: es imposible pensar en otra cosa mientras alguien intenta pasarte la guardia. No hay golpes y el ritmo lo marcas tú. El inconveniente es que la curva inicial frustra más, porque las primeras semanas pierdes contra todo el mundo.</p>
+<p>Dos avisos con los datos en la mano. El <a href="/judo/">judo</a> consta en un solo centro, en Vilanova, así que si te atrae esa vía tienes una opción y no cinco. Y si has leído que el <a href="/muay-thai/">muay thai</a> o el <a href="/krav-maga/">krav maga</a> son lo suyo para esto, en el Garraf no hay ni un centro verificado que los ofrezca: tendrías que salir de la comarca.</p>
+<table>
+<thead>
+<tr><th>Disciplina</th><th>Qué ofrece a quien viene por esto</th><th>Presencia en el directorio</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="/kickboxing/">Kickboxing</a></td><td>Intensidad regulable y mucho saco antes de tocar a nadie</td><td>Siete centros, entre Vilanova y Sitges</td></tr>
+<tr><td><a href="/defensa-personal/">Defensa personal</a></td><td>Sesiones cortas y variadas, poca exigencia técnica al entrar</td><td>Siete centros, entre Vilanova y Sitges</td></tr>
+<tr><td><a href="/boxeo/">Boxeo</a></td><td>Repetición y ritmo. Absorbe la cabeza sin pedir coordinación fina</td><td>Seis centros, entre Vilanova y Sitges</td></tr>
+<tr><td><a href="/jiu-jitsu-brasileno/">Jiu-jitsu brasileño</a></td><td>Sin golpes. Imposible pensar en otra cosa, pero frustra más al principio</td><td>Cinco centros, entre Vilanova y Sitges</td></tr>
+<tr><td><a href="/judo/">Judo</a></td><td>Exige caer bien, y caer se aprende. Estructura muy marcada</td><td>Un centro, en Vilanova</td></tr>
+<tr><td><a href="/muay-thai/">Muay thai</a> y <a href="/krav-maga/">krav maga</a></td><td>Fuera del alcance sin salir de la comarca</td><td>Ningún centro verificado</td></tr>
+</tbody>
+</table>
+
+<h2>El grupo pesa más que la disciplina</h2>
+<p>Si vienes buscando bajar revoluciones, el error más caro no es elegir la disciplina equivocada. Es acabar en un grupo donde se compite todos los días, aunque nadie lo llame competir.</p>
+<p>Hay salas donde el nivel medio es alto y los ejercicios por parejas se convierten en un pulso constante. Puede ser un ambiente estupendo si buscas eso. Si vienes de una jornada de nueve horas y lo que quieres es dejar de rendir un rato, es exactamente lo contrario de lo que necesitas, y vas a durar seis semanas. Pregunta directamente si hay grupo de iniciación separado y si la competición es opcional; lo desarrollamos en <a href="/blog/entrenar-sin-querer-competir/">entrenar sin querer competir nunca</a>.</p>
+
+<h2>Elige el horario que aguante un martes de lluvia</h2>
+<p>La parte aburrida y la que de verdad determina si sigues en marzo. Elige el horario que puedas cumplir un martes de noviembre con lluvia, no el que te gustaría cumplir en tu mejor semana.</p>
+<p>En el Garraf esto tiene una traducción concreta. Si trabajas en Barcelona y vuelves en la R2 Sud, mira a qué hora entras por la puerta de casa de verdad, no a qué hora sales de la oficina. Si vives en Sant Pere de Ribes, Cubelles o Canyelles, cuenta los diez o quince minutos de coche hasta Vilanova o Sitges en los dos sentidos. Y si la única franja que te cuadra es la última de la noche, pregunta si ese grupo existe todo el año o si en verano se reduce. Las franjas concretas cambian de un centro a otro y no las publicamos: se preguntan en la primera llamada.</p>
+
+<h2>Las primeras semanas van a ir peor de lo que esperas</h2>
+<p>El matiz incómodo, para que no te pille de nuevas: las tres o cuatro primeras clases no relajan. Estresan. Vas a estar pendiente de si lo haces mal, de si molestas, de dónde se ponen las manos y de si el compañero se ha dado cuenta de que no tienes ni idea. Es normal y se pasa, más o menos cuando dejas de pensar en cómo te ven y empiezas a pensar en el ejercicio.</p>
+<p>Por eso conviene ir con la expectativa correcta y darle un mes antes de juzgar. Si a las seis semanas sigues saliendo peor de como entraste, no insistas por orgullo: cambia de grupo, de horario o de disciplina. Si estás en el tramo de los cuarenta y te preocupa cómo va a responder el cuerpo, tienes el detalle en <a href="/blog/empezar-artes-marciales-a-los-40/">empezar artes marciales a los 40</a>.</p>
+
+<h2>Por dónde empezar en la comarca</h2>
+<p>Si no tienes claro qué disciplina encaja contigo, empieza por la guía de <a href="/iniciacion/">iniciación a las artes marciales</a>, que compara las diez. Sigue por la de <a href="/clases-para-adultos/">clases para adultos en el Garraf</a>, que es donde está el grupo que te corresponde. Y cuando tengas dos candidatas, el <a href="/centros/">directorio de centros</a> te dice cuáles constan en tu municipio, con la fuente pública y la fecha de verificación de cada ficha.</p>
+<p>Y después ve a probar antes de pagar nada: en una hora de clase se ve si ese grupo te va a servir para lo que has venido. Si prefieres que te orientemos con tu caso, tu municipio y tu horario, <a href="/contacto/">cuéntanoslo</a> y te respondemos sin coste.</p>
+`,
+
   'blog/empezar-artes-marciales-a-los-40': `
 <h2>La respuesta corta: a los 40 no empiezas tarde, empiezas distinto</h2>
 <p>A los 40 no llegas tarde a nada. Llegas distinto, que no es lo mismo. En los grupos de iniciación de adultos del Garraf, el tramo de 35 a 50 pesa mucho. Y no por caridad del club: es gente que aparece con regularidad, escucha las correcciones y no se pica en el trabajo por parejas. Los instructores lo saben y lo agradecen.</p>
@@ -1215,7 +1338,7 @@ export const BLOG_BODIES: Record<string, string> = {
 // ────────────────────────────────────────────────────────────────────────────
 export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Disciplinas
-  'boxeo': ['blog/donde-aprender-boxeo-en-el-garraf', 'blog/boxeo-o-kickboxing'],
+  'boxeo': ['blog/artes-marciales-y-estres', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
@@ -1228,8 +1351,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Perfiles y páginas de entrada
   'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
   'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
-  'clases-para-adultos': ['blog/empezar-artes-marciales-a-los-40', 'blog/artes-marciales-adultos-principiantes-garraf'],
-  'iniciacion': ['blog/entrenar-sin-querer-competir', 'blog/como-elegir-centro-artes-marciales-garraf'],
+  'clases-para-adultos': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
+  'iniciacion': ['blog/clase-de-prueba-que-preguntar', 'blog/entrenar-sin-querer-competir'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
   'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
@@ -1238,8 +1361,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
-  'clases-para-adultos-en-sitges': ['blog/empezar-artes-marciales-a-los-40', 'blog/entrenar-sin-querer-competir'],
-  'clases-para-adultos-en-vilanova': ['blog/empezar-artes-marciales-a-los-40', 'blog/entrenar-sin-querer-competir'],
+  'clases-para-adultos-en-sitges': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
+  'clases-para-adultos-en-vilanova': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
   'vilanova-i-la-geltru': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
 };

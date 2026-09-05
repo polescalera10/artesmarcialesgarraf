@@ -268,6 +268,8 @@ const BLOG = [
   ['empezar-artes-marciales-siendo-mujer', 'Empezar siendo mujer', 'personas', 'Cómo son los grupos y qué preguntar antes de ir'],
   ['empezar-artes-marciales-a-los-40', 'Empezar a los 40', 'brujula', 'Qué cambia, qué perdona el cuerpo y qué hay cerca'],
   ['entrenar-sin-querer-competir', 'Entrenar sin competir', 'personas', 'La mayoría no compite nunca, y no pasa nada'],
+  ['clase-de-prueba-que-preguntar', 'La clase de prueba', 'check-circulo', 'Qué mirar y qué preguntar el día que vas'],
+  ['artes-marciales-y-estres', 'Entrenar y estrés', 'brujula', 'Por qué desconecta más que una cinta de correr'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/clase-de-prueba-que-preguntar',
+    type: 'blog',
+    meta: {
+      title: 'La Clase de Prueba en el Garraf: Qué Mirar y Preguntar',
+      description: 'Una clase de prueba es una hora para inspeccionar el club sin pagar nada. El guion de la visita en el Garraf: qué preguntar antes, qué mirar dentro y qué firmar.',
+    },
+    h1: 'La Clase de Prueba en el Garraf: Qué Mirar y Qué Preguntar',
+    intro: 'Vas convencido de que te examinan a ti, y es al revés. Aquí tienes el guion de la visita, desde las tres preguntas de la llamada previa hasta los cinco minutos de después, con la señal que justifica levantarse e irse a mitad.',
+    body: BLOG_BODIES['blog/clase-de-prueba-que-preguntar'],
+    fecha: '2026-09-05',
+    phase: 2,
+  },
+  {
+    slug: 'blog/artes-marciales-y-estres',
+    type: 'blog',
+    meta: {
+      title: 'Artes Marciales para el Estrés en el Garraf',
+      description: 'Por qué una clase de combate desconecta la cabeza mejor que una cinta de correr, qué no se puede prometer y qué disciplinas constan de verdad en la comarca.',
+    },
+    h1: 'Artes Marciales y Estrés: por Qué Funciona, y Qué Hay en el Garraf',
+    intro: 'Es el motivo que más gente mantiene entrenando pasado el primer trimestre, y casi nunca es el que se dice en voz alta. Qué tiene el formato que funciona tan bien, qué no se puede prometer y qué disciplinas de los trece centros de la comarca encajan mejor.',
+    body: BLOG_BODIES['blog/artes-marciales-y-estres'],
+    fecha: '2026-09-05',
+    phase: 2,
+  },
+  {
     slug: 'blog/empezar-artes-marciales-a-los-40',
     type: 'blog',
     meta: {

@@ -32,7 +32,9 @@
     "blog/se-hacen-dano-los-ninos-artes-marciales",
     "blog/empezar-artes-marciales-siendo-mujer",
     "blog/empezar-artes-marciales-a-los-40",
-    "blog/entrenar-sin-querer-competir"
+    "blog/entrenar-sin-querer-competir",
+    "blog/clase-de-prueba-que-preguntar",
+    "blog/artes-marciales-y-estres"
   ],
   "cola": [
     {
@@ -856,8 +858,8 @@
         "/iniciacion/",
         "/contacto/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-05",
       "ancla_local": "La intención más comercial de todo el cluster. Guion de la visita a un centro del directorio.",
       "intencion_comercial": "alta"
     },
@@ -967,8 +969,8 @@
         "/iniciacion/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-05",
       "ancla_local": "Motivo de entrada declarado por muchos adultos. Qué disciplinas de la comarca encajan y en qué horarios.",
       "intencion_comercial": "alta"
     },
