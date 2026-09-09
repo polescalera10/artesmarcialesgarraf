@@ -996,6 +996,141 @@ export const BLOG_BODIES: Record<string, string> = {
 <p>¿Dudas con un caso concreto: una edad, una lesión antigua, un niño al que no le gusta competir? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste.</p>
 `,
 
+  'blog/artes-marciales-ninos-tdah': `
+<h2>Antes de nada: esto no es un tratamiento</h2>
+<p>Si has llegado buscando si el karate le irá bien a tu hijo con TDAH, lo primero es lo aburrido y hay que decirlo igual: <strong>ningún centro de artes marciales del Garraf, ni de ninguna otra parte, sustituye la pauta de un profesional sanitario</strong>. El diagnóstico, el seguimiento y cualquier decisión sobre tratamiento las lleva quien corresponde. Esta guía no habla de eso y no va a opinar sobre eso.</p>
+<p>Habla de lo que sí podemos contarte. Cómo está montada una clase infantil de artes marciales. Por qué ese formato le encaja a bastantes niños que en otras actividades no aguantan un trimestre. Y qué preguntar en un club de la comarca para no acabar en el grupo equivocado.</p>
+
+<h2>Qué tiene el formato de la clase</h2>
+<p>Cuando nos escriben por este tema, la frase suele ser la misma: "ha probado fútbol y no ha durado dos meses". La comparación es útil porque señala dónde está la diferencia. Un entrenamiento de deporte de equipo tiene bastante tiempo muerto: esperas la pelota, esperas tu turno, esperas a que el entrenador acabe de hablar con otro. Una clase de artes marciales bien llevada deja menos hueco donde despistarse.</p>
+<p>Cinco cosas del formato ayudan más de lo que parece:</p>
+<ul>
+<li><strong>Ritual de entrada y de salida.</strong> Saludar al entrar al tatami, descalzarse, ponerse en fila. Suena a folclore y funciona como señal de cambio de contexto, repetida igual cada día.</li>
+<li><strong>Objetivos de treinta segundos.</strong> No "aprende a defenderte", sino "diez repeticiones de esta caída y paras". La atención se pide en trozos que caben.</li>
+<li><strong>Turnos físicos, no verbales.</strong> Trabajar por parejas obliga a alternar, y el compañero lo recuerda sin que tenga que hacerlo el adulto.</li>
+<li><strong>Gasto real y luego calma.</strong> Muchas clases infantiles cierran con estiramiento y un minuto sentados en silencio. Ese minuto es parte del entrenamiento.</li>
+<li><strong>Progresión visible.</strong> El sistema de grados da una referencia de avance que no depende de ganarle a nadie.</li>
+</ul>
+
+<h2>Qué no se puede prometer</h2>
+<p>Aquí es donde muchas escuelas se pasan de frenada. Vas a leer, en webs de gimnasios de toda España, que las artes marciales "mejoran la concentración" y "enseñan disciplina". Como frase de folleto no dice nada. Como promesa para un niño concreto con un diagnóstico concreto, no se sostiene.</p>
+<p>Lo honesto es más modesto y más útil. Una actividad que al niño le gusta, con rutina estable, un adulto que le corrige por su nombre y un grupo donde no se siente el raro, es una buena noticia. Vale para cualquier niño y vale también para el tuyo. Si esperas que en un trimestre cambie el comportamiento en clase de matemáticas, os llevaréis un disgusto los dos, y él además cargará con la culpa.</p>
+<p>El terreno firme es el del movimiento a secas. La <a href="https://www.who.int/es/news-room/fact-sheets/detail/physical-activity">Organización Mundial de la Salud recomienda a los niños de 5 a 17 años una hora diaria de actividad física de intensidad moderada o alta</a>. Añade trabajo de fuerza al menos tres días por semana. Dos clases de artes marciales no cubren esa hora diaria, pero ponen dos tardes fijas donde antes había pantalla. Eso es cuantificable y no necesita adorno.</p>
+<p>Una advertencia concreta antes de seguir. Desconfía del centro que use el TDAH como argumento comercial. Si en la web pone que su método "trata" o "corrige" el déficit de atención, eso no lo escribe una escuela con formación clínica.</p>
+
+<h2>Qué se puede entrenar de verdad en el Garraf, municipio a municipio</h2>
+<p>Nuestro <a href="/centros/">directorio de centros del Garraf</a> reúne trece clubs con presencia pública verificable. El reparto pesa más de lo que parece cuando lo que buscas es rutina. Siete están en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, tres en <a href="/sitges/">Sitges</a>, dos en <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> y uno en <a href="/cubelles/">Cubelles</a>. En <a href="/canyelles/">Canyelles</a> no consta ninguno, así que desde allí siempre hay que desplazarse.</p>
+<p>De los trece, cinco declaran grupo infantil en su propia fuente pública. Los otros ocho no lo dicen, y eso no significa que no lo tengan: significa que hay que preguntarlo. Nosotros no publicamos lo que no podemos verificar, y las fichas de origen federativo suelen listar el club y su disciplina y poco más.</p>
+<p>Por disciplinas, el <a href="/taekwondo/">taekwondo</a> es el que más se reparte por la comarca: es el único con club en Sant Pere de Ribes y en Cubelles, además de Vilanova. El <a href="/judo/">judo</a> aparece en un solo centro, en Vilanova. El <a href="/karate/">karate</a> consta en Vilanova y en Sitges. Y hay dos disciplinas muy buscadas que no tienen ni un centro verificado en todo el Garraf: muay thai y krav maga.</p>
+<p>Esto tiene una consecuencia práctica. Si vivís en Cubelles y os habéis encaprichado del judo, el plan no es una clase: es un trayecto de quince minutos dos veces por semana durante un curso entero. Para un niño que necesita que las cosas pasen siempre igual, la logística no es un detalle menor. Es el primer filtro.</p>
+
+<h2>Karate, judo o taekwondo para un niño que se dispersa</h2>
+<p>Ninguna de las tres es "la del TDAH". Lo que cambia es el tipo de exigencia, y con eso sí se puede afinar.</p>
+<table>
+<thead>
+<tr><th>Disciplina</th><th>Qué pide</th><th>Con quién suele funcionar</th><th>Dónde consta en el Garraf</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="/karate/">Karate</a></td><td>Repetición de la forma, trabajo individual dentro del grupo, silencio</td><td>Con el niño que necesita bajar revoluciones. Al que no soporta repetir se le hace largo</td><td>Vilanova i la Geltrú y Sitges</td></tr>
+<tr><td><a href="/judo/">Judo</a></td><td>Contacto desde el primer día, caídas, agarre</td><td>Con quien necesita tocar para entender. La respuesta es inmediata: o el compañero cae o no cae</td><td>Un solo centro, en Vilanova i la Geltrú</td></tr>
+<tr><td><a href="/taekwondo/">Taekwondo</a></td><td>Movimiento amplio y circuitos, con parte de forma</td><td>Con quien gasta mejor en movimiento grande que en detalle fino</td><td>Vilanova, Sant Pere de Ribes y Cubelles</td></tr>
+</tbody>
+</table>
+<p>Si dudas entre las dos primeras, la comparativa larga está en <a href="/blog/karate-o-judo-para-ninos/">karate o judo para niños</a>. Y si lo que describes es un niño que no para quieto más que uno distraído, el enfoque cambia bastante. Lo tratamos en <a href="/blog/arte-marcial-para-nino-muy-nervioso/">qué disciplina canaliza mejor la energía</a>.</p>
+
+<h2>Las cinco preguntas de la primera llamada</h2>
+<p>Da igual la disciplina. Estas cinco decantan la decisión y se responden en cinco minutos por teléfono.</p>
+<ol>
+<li><strong>¿Cuántos niños hay en el grupo y cuántos adultos en el tatami?</strong> Es el dato que más pesa. Doce niños con dos técnicos no se parece en nada a veinticinco con uno.</li>
+<li><strong>¿Cómo separan por edad?</strong> Un grupo de 5 a 11 años no está separado, está juntado por falta de alumnos.</li>
+<li><strong>¿Qué hacen cuando un niño se descoloca a mitad de clase?</strong> La más reveladora de las cinco. Escucha si la respuesta contempla algo más que sentarlo a un lado.</li>
+<li><strong>¿Han tenido antes alumnos con TDAH?</strong> No busques una credencial. Busca que la conversación no le incomode.</li>
+<li><strong>¿Podemos ver una clase entera antes de decidir?</strong> Si la respuesta es no, ya no hacen falta las otras cuatro.</li>
+</ol>
+<p>Contar el diagnóstico o no es cosa vuestra. Contarlo suele ahorrar dos meses de malentendidos, porque el técnico que sabe lo que tiene delante adapta, y el que no lo sabe, interpreta.</p>
+
+<h2>Cómo se ve desde fuera que ese grupo no es</h2>
+<p>Id a la clase de prueba y mirad estas cuatro cosas, que no exigen saber nada de artes marciales:</p>
+<ul>
+<li>El instructor dirige desde delante todo el rato y no se acerca a corregir a nadie por su nombre.</li>
+<li>Los niños pasan más tiempo en fila esperando que haciendo algo.</li>
+<li>Al que peor lo hace se le deja atrás, o se le pone de ejemplo en tono de broma.</li>
+<li>La clase se corta de golpe, sin bajada de intensidad ni cierre.</li>
+</ul>
+<p>El guion completo de esa visita, desde la llamada previa hasta los cinco minutos de después, está en <a href="/blog/clase-de-prueba-que-preguntar/">la clase de prueba: qué mirar y qué preguntar</a>.</p>
+<p>Y el punto incómodo, por si nadie os lo dice: puede que el primer club no funcione. No siempre es el niño ni la disciplina. A veces es ese grupo, a esa hora, con esos compañeros. Cambiar de centro después de un trimestre no es fracasar, es información que antes no teníais.</p>
+
+<h2>Por dónde empezar en la comarca</h2>
+<p>Empieza por la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a>, que ordena las opciones por edad y por carácter. Sigue por el <a href="/centros/">directorio de centros</a> filtrando por tu municipio: cada ficha dice qué disciplinas anuncia el club, de qué fuente pública sale el dato y cuándo lo comprobamos. Si os movéis por la capital o por Sitges, tenéis las páginas de <a href="/clases-infantiles-en-vilanova/">clases infantiles en Vilanova</a> y <a href="/clases-infantiles-en-sitges/">clases infantiles en Sitges</a>.</p>
+<p>Si prefieres que te orientemos con el caso concreto, la edad y el municipio, <a href="/contacto/">escríbenos</a>. No cobramos por eso ni cobramos de ningún centro. Lo que no vamos a hacer es decirte qué le conviene a tu hijo desde el punto de vista sanitario: eso se habla con su pediatra o con el profesional que lleve el seguimiento.</p>
+`,
+  'blog/cuantos-dias-semana-entrena-un-nino': `
+<h2>La respuesta corta, y lo que la complica</h2>
+<p>Dos días a la semana. Es lo habitual en los grupos infantiles de artes marciales y es un buen punto de partida para casi cualquier niño que empieza. Si buscabas un número, ya lo tienes.</p>
+<p>Lo que sigue es por qué ese número aguanta bien y cuándo tiene sentido moverlo. Y por qué en el Garraf la pregunta útil no es cuántos días entrena el niño, sino cuántos trayectos hacéis vosotros. No es lo mismo, y es lo que decide si en febrero seguís yendo.</p>
+
+<h2>Por qué un día se queda corto</h2>
+<p>Con una sesión semanal pasan siete días entre clase y clase. A los siete años, siete días es tiempo de sobra para que la caída que se aprendió el martes se haya evaporado. El niño llega, se reengancha, se le acaba la hora y vuelve a empezar la semana siguiente. Se lo pasa bien y aprende despacio.</p>
+<p>Eso no lo convierte en mala idea. Un día funciona en dos casos concretos. El primero, el niño de 4 o 5 años: la clase es psicomotricidad con kimono y el objetivo es el hábito antes que la técnica. El segundo, el trimestre de prueba, cuando todavía no sabéis si le va a gustar y no queréis comprometer dos tardes. Los tramos por edad, uno a uno, están en <a href="/blog/a-que-edad-empezar-artes-marciales/">a qué edad empezar artes marciales</a>.</p>
+
+<h2>Por qué cuatro casi nunca es la respuesta</h2>
+<p>Este error viene del entusiasmo de los dos primeros meses, y a veces del propio club, que tiene tarifa plana y no le viene mal que la uséis. Un niño de ocho años entrenando cuatro tardes tiene menos tiempo de calle, de deberes y de aburrirse, que también hace falta. Y la parte técnica no mejora al doble: mejora un poco y se cansa mucho.</p>
+<p>Conviene además situar la cifra en su contexto. La <a href="https://www.who.int/es/news-room/fact-sheets/detail/physical-activity">Organización Mundial de la Salud recomienda a los niños de 5 a 17 años una hora diaria de actividad física moderada o vigorosa</a>. Ninguna extraescolar cubre eso por sí sola, ni dos días ni cuatro. El patio, la bici y el fin de semana ponen la mayor parte, y por eso llenar las tardes de actividades dirigidas puede acabar restando movimiento en vez de sumarlo.</p>
+<p>Nuestra recomendación es poco sofisticada. Dos días durante el primer curso completo, sin excepciones por talento ni por ganas. Si al año siguiente sigue pidiendo más, entonces se habla.</p>
+
+<h2>Lo que el mapa del Garraf le hace a esa cifra</h2>
+<p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan trece clubs con fuente pública verificable, repartidos de forma muy desigual: siete en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a>, tres en <a href="/sitges/">Sitges</a>, dos en <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a>, uno en <a href="/cubelles/">Cubelles</a> y ninguno en <a href="/canyelles/">Canyelles</a>.</p>
+<p>Traducido a tardes reales: si vivís en Vilanova y el club está a diez minutos andando, dos días son dos días. Si vivís en Canyelles, dos días son cuatro trayectos en coche, y de noviembre a marzo los cuatro se hacen de noche. La frecuencia deja de ser una decisión pedagógica y pasa a ser una decisión de agenda familiar. Conviene tratarla como tal en septiembre y no descubrirlo en noviembre.</p>
+<p>Una forma rápida de verlo, contando ida y vuelta:</p>
+<table>
+<thead>
+<tr><th>Municipio</th><th>Clubs en el directorio</th><th>Lo que cuestan dos sesiones semanales</th></tr>
+</thead>
+<tbody>
+<tr><td>Vilanova i la Geltrú</td><td>7</td><td>Casi siempre se resuelve dentro del municipio</td></tr>
+<tr><td>Sitges</td><td>3</td><td>Dentro del municipio, con menos opciones para elegir horario</td></tr>
+<tr><td>Sant Pere de Ribes</td><td>2</td><td>Dentro del municipio solo si os sirve el taekwondo</td></tr>
+<tr><td>Cubelles</td><td>1</td><td>Una opción local; cualquier otra disciplina son cuatro trayectos</td></tr>
+<tr><td>Canyelles</td><td>0</td><td>Cuatro trayectos semanales, siempre</td></tr>
+</tbody>
+</table>
+<p>El reparto por disciplinas aprieta todavía más. El <a href="/taekwondo/">taekwondo</a> es el único que consta en Sant Pere de Ribes y en Cubelles, además de Vilanova. El <a href="/judo/">judo</a> aparece en un solo centro de toda la comarca, en Vilanova. El <a href="/karate/">karate</a> está en Vilanova y en Sitges. Ni el muay thai ni el krav maga tienen un solo club verificado en el Garraf. Así que la conversación sobre frecuencia se resuelve muchas veces antes de empezarla: hay una disciplina que podéis hacer dos veces por semana sin cruzar la comarca y otra que no.</p>
+<p>Entre Sitges y Vilanova son 10-15 minutos en coche y la R2 Sud conecta bien los dos núcleos, pero un niño de ocho años no coge el tren solo. Contad el trayecto con un adulto dentro.</p>
+
+<h2>Cuándo sí tiene sentido subir a tres</h2>
+<p>Hay cuatro situaciones en las que la tercera sesión se justifica:</p>
+<ul>
+<li><strong>La pide él y lleva más de un curso.</strong> No el entusiasmo de octubre, sino la insistencia de abril.</li>
+<li><strong>Se acerca un examen de grado.</strong> Algunos clubs abren una sesión extra las semanas previas. Es temporal y tiene sentido.</li>
+<li><strong>Ha entrado en el grupo de competición y quiere estar ahí.</strong> Con la salvedad de que competir sea decisión suya y no del club.</li>
+<li><strong>La tercera sesión sustituye a otra actividad en lugar de sumarse.</strong> Si entra encima de inglés, natación y un instrumento, no.</li>
+</ul>
+<p>Fuera de esos cuatro casos, tres días es casi siempre una respuesta a la ansiedad del adulto, no a la necesidad del niño.</p>
+
+<h2>La cuenta que casi nadie hace antes de apuntarse</h2>
+<p>Antes de decidir, sumad las horas de la semana del niño y no solo las de artes marciales. Colegio, comedor, deberes, la otra extraescolar, el fin de semana. La saturación no se nota en la actividad nueva: se nota en el sueño, en el humor de los domingos por la tarde y en que a los tres meses no quiere ir a ninguna.</p>
+<p>Hay también una cuenta económica que conviene hacer antes que después. Nosotros no publicamos precios, porque cada club fija los suyos y cambian con el tiempo, pero sí sabemos qué hay que preguntar. Si la cuota va por número de sesiones o es plana. Si los meses de verano se cobran. Si hay permanencia, y qué pasa si a mitad de curso queréis bajar de tres días a dos. Esa última es la que más disgustos ahorra. La lista completa está en la <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Las señales de que hay que bajar</h2>
+<p>Cuatro avisos que aparecen antes de que el niño diga que lo deja:</p>
+<ul>
+<li>Inventa excusas los días de clase, y solo esos días.</li>
+<li>Va, entrena y sale sin contar nada, cuando antes contaba.</li>
+<li>Se duerme haciendo los deberes las noches de entreno.</li>
+<li>Dice que quiere dejarlo justo al salir, y al día siguiente ya no.</li>
+</ul>
+<p>Bajar de tres a dos, o de dos a uno durante un trimestre, es una salida perfectamente digna y casi nadie la usa: se tiende a elegir entre seguir igual o dejarlo del todo. Si lo que sospecháis es que la actividad no encaja con él, la comparación con otras extraescolares está en <a href="/blog/artes-marciales-o-futbol-extraescolar/">artes marciales o fútbol</a>.</p>
+
+<h2>Qué preguntar al club, y dónde mirar en el Garraf</h2>
+<p>El directorio recoge qué disciplinas anuncia cada club y en qué municipio está, con la fuente pública de cada dato y la fecha de comprobación. Lo que no publica son frecuencias ni horarios. No los hemos verificado centro a centro y no los vamos a estimar. Eso se pregunta, y son tres preguntas:</p>
+<ol>
+<li>¿Cuántas sesiones semanales tiene el grupo de su edad y en qué días caen?</li>
+<li>¿Puede ir solo a una de las dos si una semana no llegamos?</li>
+<li>¿La cuota cambia según vaya uno, dos o tres días?</li>
+</ol>
+<p>Con esas tres respuestas ya se cuadra un curso. Para el resto, la guía de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a> ordena las disciplinas por edad y carácter. Las páginas de <a href="/clases-infantiles-en-vilanova/">clases infantiles en Vilanova</a> y <a href="/clases-infantiles-en-sitges/">clases infantiles en Sitges</a> dan el contexto de cada zona.</p>
+<p>Si no acabáis de decidiros, <a href="/contacto/">contadnos</a> la edad, el municipio y las tardes que tenéis libres, y os orientamos sin coste. No cobramos de ningún centro, así que la respuesta no depende de quién nos pague.</p>
+`,
   'blog/como-elegir-centro-artes-marciales-garraf': `
 <h2>Por qué esta decisión importa más que la disciplina</h2>
 <p>Lo hemos repetido en casi todas nuestras guías y aquí va con todas las letras: <strong>un buen instructor de la disciplina "equivocada" te aportará más que un mal instructor de la disciplina perfecta</strong>. La gente abandona las artes marciales casi siempre por el mismo motivo, y no es que eligiera mal el estilo: es que acabó en un grupo que no le correspondía, con un profesor que no le corregía, atado a una permanencia que no entendía.</p>
@@ -1342,21 +1477,21 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
-  'taekwondo': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/arte-marcial-para-nino-muy-nervioso'],
+  'taekwondo': ['blog/artes-marciales-ninos-tdah', 'blog/arte-marcial-para-nino-muy-nervioso'],
   'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
   'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/cuantos-dias-semana-entrena-un-nino'],
   'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
   'clases-para-adultos': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'iniciacion': ['blog/clase-de-prueba-que-preguntar', 'blog/entrenar-sin-querer-competir'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
-  'clases-infantiles-en-sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/primer-dia-clase-artes-marciales-nino'],
-  'clases-infantiles-en-vilanova': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
+  'clases-infantiles-en-sitges': ['blog/cuantos-dias-semana-entrena-un-nino', 'blog/primer-dia-clase-artes-marciales-nino'],
+  'clases-infantiles-en-vilanova': ['blog/artes-marciales-ninos-tdah', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
   'karate-infantil-en-sitges': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],

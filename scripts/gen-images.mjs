@@ -270,6 +270,8 @@ const BLOG = [
   ['entrenar-sin-querer-competir', 'Entrenar sin competir', 'personas', 'La mayoría no compite nunca, y no pasa nada'],
   ['clase-de-prueba-que-preguntar', 'La clase de prueba', 'check-circulo', 'Qué mirar y qué preguntar el día que vas'],
   ['artes-marciales-y-estres', 'Entrenar y estrés', 'brujula', 'Por qué desconecta más que una cinta de correr'],
+  ['artes-marciales-ninos-tdah', 'Artes marciales y TDAH', 'personas', 'Qué aporta el formato y qué no se puede prometer'],
+  ['cuantos-dias-semana-entrena-un-nino', 'Cuántos días entrenar', 'brujula', 'Dos a la semana, y la cuenta de los trayectos'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

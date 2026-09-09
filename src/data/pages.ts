@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/artes-marciales-ninos-tdah',
+    type: 'blog',
+    meta: {
+      title: 'Artes Marciales y TDAH en el Garraf: Qué Esperar',
+      description: 'Qué aporta de verdad el formato de una clase infantil, qué no se puede prometer y qué preguntar en un centro del Garraf antes de apuntar al niño.',
+    },
+    h1: 'Artes Marciales y TDAH: Qué Esperar de un Centro del Garraf',
+    intro: 'Ningún club sustituye a un profesional sanitario, y ninguna escuela seria vende su método como tratamiento. Dicho eso, el formato de una clase infantil tiene cosas que encajan bien con un niño que se dispersa. Aquí va cuáles son, qué no esperar y qué preguntar en los centros que constan en la comarca.',
+    body: BLOG_BODIES['blog/artes-marciales-ninos-tdah'],
+    fecha: '2026-09-09',
+    phase: 2,
+  },
+  {
+    slug: 'blog/cuantos-dias-semana-entrena-un-nino',
+    type: 'blog',
+    meta: {
+      title: 'Cuántos Días a la Semana Entrena un Niño en el Garraf',
+      description: 'Dos días es lo habitual, pero en el Garraf la cuenta que importa es la de trayectos. Cuándo subir a tres, cuándo bajar y qué preguntar al club.',
+    },
+    h1: 'Cuántos Días a la Semana Debería Entrenar un Niño en el Garraf',
+    intro: 'Dos días a la semana es la respuesta, y sirve para casi cualquier niño que empieza. Lo que casi nadie calcula es la otra cifra: en una comarca donde siete de los trece centros verificados están en Vilanova, dos sesiones pueden significar cuatro trayectos en coche.',
+    body: BLOG_BODIES['blog/cuantos-dias-semana-entrena-un-nino'],
+    fecha: '2026-09-09',
+    phase: 2,
+  },
+  {
     slug: 'blog/clase-de-prueba-que-preguntar',
     type: 'blog',
     meta: {

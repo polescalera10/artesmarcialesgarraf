@@ -34,7 +34,9 @@
     "blog/empezar-artes-marciales-a-los-40",
     "blog/entrenar-sin-querer-competir",
     "blog/clase-de-prueba-que-preguntar",
-    "blog/artes-marciales-y-estres"
+    "blog/artes-marciales-y-estres",
+    "blog/artes-marciales-ninos-tdah",
+    "blog/cuantos-dias-semana-entrena-un-nino"
   ],
   "cola": [
     {
@@ -308,8 +310,8 @@
         "/blog/mejor-arte-marcial-para-ninos-garraf/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-09",
       "ancla_local": "Qué preguntar a un centro del Garraf sobre ratio, grupos y adaptación. Sin afirmaciones terapéuticas.",
       "intencion_comercial": "alta"
     },
@@ -331,8 +333,8 @@
         "/blog/a-que-edad-empezar-artes-marciales/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-09",
       "ancla_local": "Frecuencias que ofrecen de verdad los centros del directorio y cómo cuadran con las extraescolares de la comarca.",
       "intencion_comercial": "alta"
     },
