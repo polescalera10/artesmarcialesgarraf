@@ -36,7 +36,9 @@
     "blog/clase-de-prueba-que-preguntar",
     "blog/artes-marciales-y-estres",
     "blog/artes-marciales-ninos-tdah",
-    "blog/cuantos-dias-semana-entrena-un-nino"
+    "blog/cuantos-dias-semana-entrena-un-nino",
+    "blog/mi-hijo-quiere-dejar-las-clases",
+    "blog/clases-mixtas-o-solo-mujeres"
   ],
   "cola": [
     {
@@ -420,8 +422,8 @@
         "/centros/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-13",
       "ancla_local": "Antes de darle de baja, cambiar de centro o de disciplina dentro del Garraf: qué opciones reales tiene según el municipio.",
       "intencion_comercial": "alta"
     },
@@ -512,8 +514,8 @@
         "/centros/",
         "/contacto/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-13",
       "ancla_local": "Alta intención: quien busca esto quiere apuntarse. Decir con exactitud qué consta en la comarca y qué no.",
       "intencion_comercial": "alta"
     },
@@ -748,7 +750,7 @@
       "publicado_en": null,
       "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente.",
       "intencion_comercial": "alta",
-      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local."
+      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local. Saltada el 2026-09-13: requiere_datos sin cumplir, no hay sondeo de tarifas publicas de 5 centros."
     },
     {
       "id": 33,

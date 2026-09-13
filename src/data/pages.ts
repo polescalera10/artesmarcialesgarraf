@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/mi-hijo-quiere-dejar-las-clases',
+    type: 'blog',
+    meta: {
+      title: 'Mi Hijo Quiere Dejar las Clases: Qué Hacer en el Garraf',
+      description: 'Distinguir el bajón normal del problema real, qué preguntar al niño y al centro, y qué se puede cambiar de grupo, disciplina o club en el Garraf.',
+    },
+    h1: 'Mi Hijo Quiere Dejar las Clases: Qué Hacer Antes de Darle de Baja',
+    intro: 'Que lo diga una vez un martes de lluvia no significa nada. Que lo repita cada semana desde hace mes y medio sí, y entonces entre seguir y darle de baja hay tres movimientos intermedios que casi nadie se plantea. Cuáles tienes disponibles depende bastante del municipio del Garraf en el que viváis.',
+    body: BLOG_BODIES['blog/mi-hijo-quiere-dejar-las-clases'],
+    fecha: '2026-09-13',
+    phase: 2,
+  },
+  {
+    slug: 'blog/clases-mixtas-o-solo-mujeres',
+    type: 'blog',
+    meta: {
+      title: '¿Grupo Mixto o Solo Mujeres? La Oferta del Garraf',
+      description: 'Qué aporta cada formato, por qué muchas acaban combinando los dos y qué grupos femeninos constan de verdad en los centros del Garraf.',
+    },
+    h1: '¿Grupo Mixto o Solo Mujeres? Ventajas de Cada Uno en el Garraf',
+    intro: 'De los trece centros que constan en la comarca, uno solo anuncia un grupo femenino. Ese dato condiciona la decisión más de lo que nos gustaría, así que aquí va qué aporta cada formato, qué preguntar por teléfono y qué hacer si donde vives no hay ninguna de las dos cosas.',
+    body: BLOG_BODIES['blog/clases-mixtas-o-solo-mujeres'],
+    fecha: '2026-09-13',
+    phase: 2,
+  },
+  {
     slug: 'blog/artes-marciales-ninos-tdah',
     type: 'blog',
     meta: {

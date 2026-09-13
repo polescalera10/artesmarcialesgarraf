@@ -9,6 +9,120 @@
 
 export const BLOG_BODIES: Record<string, string> = {
 
+  'blog/mi-hijo-quiere-dejar-las-clases': `
+<h2>Primero, cuántas veces lo ha dicho</h2>
+<p>La frase llega casi siempre en el mismo sitio: en el coche, camino de clase, un martes. Y lo que conviene hacer cambia del todo según una variable que no tiene nada que ver con las artes marciales, y es cuántas veces la has oído ya. Si es la primera y además hoy llueve, no ha pasado nada. Si la escuchas cada semana desde hace mes y medio, deja de ser un mal día y empieza a ser información.</p>
+<p>Esta guía va del segundo caso. Y va también de algo que en el <strong>Garraf</strong> se pasa por alto: entre seguir y darle de baja hay tres movimientos intermedios, y cuál de ellos tienes disponible depende bastante del municipio en el que vivas.</p>
+
+<h2>El bajón del tercer mes existe y es aburridamente normal</h2>
+<p>Hay un punto, más o menos entre la semana ocho y la catorce, en el que a muchos niños se les cae el entusiasmo de golpe. La explicación es poco romántica: se acabó la novedad. Ya no emociona ponerse el kimono, ya sabe cómo huele el tatami, y todavía no ha llegado ningún avance que se note desde fuera. Es un valle, y la mayoría de niños lo cruza en tres o cuatro semanas si no se le da demasiada importancia.</p>
+<p>Lo que suele funcionar aquí no es hablar mucho del tema, sino <strong>no abrir la negociación</strong>: ir, entrar, y comentarlo el fin de semana con calma. Si cada trayecto se convierte en una conversación sobre si va a seguir, le estás enseñando que los martes hay votación.</p>
+
+<h2>Cuándo no es un bajón: cuatro señales que sí importan</h2>
+<p>Separar el valle del problema real es la parte difícil, y hay cuatro cosas que lo hacen bastante bien:</p>
+<ul>
+<li><strong>Dice que no quiere ir, pero sale contento.</strong> Es un valle. La resistencia está en el trayecto, no en la clase.</li>
+<li><strong>Entra bien y sale callado.</strong> Esto ya no es pereza. Pasa algo dentro y hay que preguntar.</li>
+<li><strong>Le cuesta un compañero concreto, no la actividad.</strong> Un roce con otro niño, o un grupo en el que es el más pequeño por dos años. Se arregla cambiando de grupo, no de deporte.</li>
+<li><strong>Se queja del cuerpo.</strong> Molestias que se repiten siempre en la misma zona, o miedo a un ejercicio determinado. Aquí se para, se habla con el instructor y, si la molestia sigue, con el pediatra. Esto no lo resuelve ni un blog ni un club.</li>
+</ul>
+<p>La cuarta es la única que justifica parar sin más trámite. Las otras tres tienen arreglo dentro de la propia actividad.</p>
+
+<h2>Las preguntas que hay que hacerle, y las que no</h2>
+<p>"¿Por qué no quieres ir?" no funciona con un niño de ocho años. Devuelve un resumen ("porque es aburrido") y cierra la conversación. Funcionan mejor las preguntas laterales y concretas:</p>
+<ul>
+<li>Qué parte de la clase le gusta más y qué parte menos.</li>
+<li>Con quién se pone cuando toca ejercicio por parejas.</li>
+<li>Qué pasa cuando hace algo mal.</li>
+<li>Si hay algo que le da vergüenza delante de los demás.</li>
+</ul>
+<p>Esas cuatro localizan el problema mucho mejor que el "por qué". Y conviene hacerlas en otro momento, no en el coche de camino, cuando lo que está en juego es precisamente si va.</p>
+
+<h2>Qué preguntar en el centro antes de mover nada</h2>
+<p>Una conversación de cinco minutos con el instructor resuelve una cantidad sorprendente de estos casos, y casi nadie la tiene. Tres preguntas:</p>
+<ul>
+<li><strong>Cómo lo ve él en clase.</strong> Muchas veces la versión del instructor no se parece a la de casa: el niño que en el coche dice que lo odia participa con total normalidad.</li>
+<li><strong>Si hay otro grupo al que pueda pasar.</strong> Por edad, por nivel, o simplemente otro día de la semana con otros compañeros.</li>
+<li><strong>Si puede probar otra disciplina del mismo centro</strong> sin volver a pagar matrícula. En los centros que anuncian cuatro o cinco disciplinas bajo el mismo techo, y en la comarca hay unos cuantos, ese cambio es administrativamente trivial.</li>
+</ul>
+<p>Si las tres respuestas son evasivas, ya sabes algo del club que antes no sabías. El resto de la conversación está en nuestra <a href="/blog/como-elegir-centro-artes-marciales-garraf/">checklist para elegir centro de artes marciales</a>.</p>
+
+<h2>Cambiar de grupo, de disciplina o de centro: qué se puede mover en el Garraf</h2>
+<p>Aquí es donde pesa el municipio, y donde conviene saber qué hay antes de decidir. En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan trece clubs con fuente pública verificable, repartidos de forma muy desigual:</p>
+<ul>
+<li><strong>Vilanova i la Geltrú concentra siete de los trece.</strong> Es el único municipio donde cambiar de centro sin cambiar de disciplina es una opción real en casi cualquier estilo. Tienes el reparto en la guía de <a href="/vilanova-i-la-geltru/">artes marciales en Vilanova i la Geltrú</a> y, para grupos infantiles, en <a href="/clases-infantiles-en-vilanova/">clases infantiles en Vilanova</a>.</li>
+<li><strong>Sitges tiene tres</strong>, y dos de ellos anuncian cinco disciplinas cada uno, así que cambiar de estilo sin cambiar de sala suele ser posible. Está en la guía de <a href="/sitges/">artes marciales en Sitges</a>.</li>
+<li><strong>En Sant Pere de Ribes constan dos centros y los dos son de taekwondo.</strong> Si tu hijo quiere dejar el taekwondo y vivís en Ribes o en Les Roquetes, dentro del municipio no hay alternativa: el movimiento es a Sitges o a Vilanova, 10-15 minutos en coche. La guía es <a href="/taekwondo-en-sant-pere-de-ribes/">taekwondo en Sant Pere de Ribes</a>.</li>
+<li><strong>En Cubelles consta uno, también de taekwondo, y en Canyelles no consta ninguno</strong> a fecha de la última verificación. Desde ahí, cualquier cambio es un cambio de municipio.</li>
+</ul>
+<p>Dos datos más que ahorran tiempo. El <a href="/judo/">judo</a> aparece en un solo centro de toda la comarca, en Vilanova, así que "nos pasamos a judo" es una decisión con una única dirección posible. Y ni el muay thai ni el <a href="/krav-maga/">krav maga</a> constan en ningún centro verificado del Garraf: si aparecen en la conversación, hablamos de salir de la comarca. La R2 Sud conecta bien los núcleos principales, pero un tren a otra comarca dos tardes por semana no lo aguanta un niño de nueve años en noviembre.</p>
+
+<h2>Qué cambiar primero, y en qué orden</h2>
+<p>Cuando hay margen, nuestra recomendación es esta: <strong>primero el grupo, después la disciplina, y solo al final el centro</strong>. El cambio de grupo cuesta una conversación y arregla la mayoría de los casos, que son de encaje social y no de deporte. El cambio de disciplina dentro del mismo club conserva lo único que de verdad cuesta construir, que es la costumbre de ir. Y el cambio de centro es el más caro: matrícula nueva, compañeros nuevos, horarios nuevos y, en esta comarca, muchas veces un coche más al día.</p>
+<p>Si lo que no encaja es la disciplina en sí, <a href="/blog/golpeo-o-agarre-por-donde-empezar/">golpeo o agarre</a> explica la bifurcación que más cambia la experiencia de un niño, y suele ser el salto que mejor funciona: un niño que se ha cansado de golpear rara vez se cansa de agarrar.</p>
+
+<h2>Si al final lo deja, que lo deje bien</h2>
+<p>A veces la respuesta correcta es que lo deje, y no pasa nada. Un niño no tiene que sostener una actividad tres años para que haya valido la pena. Dos cosas que sí conviene cuidar.</p>
+<p>Que acabe el trimestre o el ciclo en curso si se puede, para que la salida no sea una huida. Y que la baja se comunique al club como se comunica una baja, con antelación y por el canal que corresponda: mira las condiciones que firmaste, porque la antelación y qué pasa con los meses de verano suelen estar en el mismo párrafo. El sector aquí es pequeño y volver dentro de dos años es más habitual de lo que parece.</p>
+<p>Y si se va con la sensación de que aquello no era para él, no le cierres la puerta. Buena parte de los adultos que hoy empiezan de cero en los grupos de iniciación lo dejaron a los diez y volvieron veinte años después.</p>
+
+<h2>Dónde mirar en la comarca</h2>
+<p>En el <a href="/centros/">directorio de centros del Garraf</a> tienes la ficha de cada club con su fuente y su fecha de verificación, sin valoraciones y en orden alfabético. Y si el replanteamiento es más de fondo, la página de <a href="/clases-para-ninos/">artes marciales para niños en el Garraf</a> ordena lo que aplica a grupos infantiles.</p>
+<p>¿Quieres que le echemos un ojo a tu caso? <a href="/contacto/">Cuéntanos</a> la edad, el municipio y qué está pasando, y te decimos qué opciones tiene cerca sin coste.</p>
+`,
+  'blog/clases-mixtas-o-solo-mujeres': `
+<h2>La respuesta corta, y el dato que la complica</h2>
+<p>Los dos formatos funcionan y sirven para cosas distintas, así que la respuesta honesta a la pregunta en abstracto es que depende de para qué entrenas. Si la pregunta es "¿y en el Garraf?", cambia de naturaleza, porque aquí la decisión está en parte tomada: de los trece centros que constan en nuestro <a href="/centros/">directorio de la comarca</a> con fuente pública verificable, <strong>uno solo anuncia un grupo femenino</strong>. Está en Vilanova i la Geltrú y es de jiu-jitsu.</p>
+<p>Eso no quiere decir que no haya más. Quiere decir que no están publicados, que es un problema distinto y con una solución concreta. Antes de llegar ahí conviene saber qué se gana con cada formato, porque muchas mujeres piden grupo femenino por un motivo que el grupo mixto también resuelve.</p>
+
+<h2>Qué aporta de verdad un grupo solo de mujeres</h2>
+<p>Tres cosas, y la primera pesa más que las otras dos juntas:</p>
+<ul>
+<li><strong>Baja el coste de entrada.</strong> El primer día en una sala con veinte desconocidos es incómodo para casi todo el mundo, y si además vas a ser la única mujer, o una de dos, pesa más. Un grupo femenino borra esa fricción, y la fricción del primer día es lo que decide si hay un segundo.</li>
+<li><strong>El contacto físico se negocia distinto.</strong> En cualquier disciplina de agarre se entrena muy cerca del compañero. Hay mujeres a las que eso les da igual desde el minuto uno y hay mujeres a las que no, y en un grupo femenino no hace falta explicar en qué caso estás.</li>
+<li><strong>Los supuestos que se trabajan son los propios.</strong> En un grupo femenino de defensa personal, los escenarios que se entrenan son los que preocupan a quien está en la sala, sin tener que reconducir la clase.</li>
+</ul>
+<p>Lo que no aporta, y a veces se insinúa: no es un formato más blando. Un grupo femenino bien llevado entrena igual de duro, y el que lo venda como una versión suave de lo mismo está vendiendo otra cosa.</p>
+
+<h2>Qué aporta el grupo mixto</h2>
+<p>Tiene una ventaja logística enorme, que es que existe. Hay muchos más, en más municipios y en más franjas horarias. En una comarca con trece centros repartidos de forma desigual, eso decide más de lo que parece.</p>
+<p>Y tiene una ventaja de contenido que conviene decir aunque incomode: si entrenas pensando en defensa personal, en algún momento tienes que entrenar con cuerpos más grandes y más fuertes que el tuyo, porque es el escenario que estás preparando. Una técnica que solo has practicado con gente de tu peso es una técnica a medio comprobar. Los grupos femeninos serios lo saben y lo compensan con trabajo por parejas desigual; en un grupo mixto eso viene de serie.</p>
+
+<h2>Por qué muchas acaban combinando los dos</h2>
+<p>El recorrido más habitual no es elegir, es encadenar: se empieza en femenino y se acaba en mixto. Se entra en el grupo de mujeres, se pierde el respeto a la sala, se aprende a caer y a tocar y a ser tocada, y a los pocos meses el grupo mixto ya no impone, solo ofrece más horarios. También pasa al revés, con mujeres que llevan años entrenando en mixto y se apuntan a un grupo femenino cuando quieren trabajar autodefensa en concreto.</p>
+<p>Si estás en la casilla de salida, ese es el orden que recomendamos: femenino si existe y te quita el freno, mixto en cuanto el freno desaparezca. El recorrido completo está en <a href="/blog/empezar-artes-marciales-siendo-mujer/">empezar artes marciales siendo mujer</a>.</p>
+
+<h2>Lo que consta en el Garraf, y lo que no</h2>
+<p>Esto es lo que sabemos del directorio, sin nombrar a nadie, porque el directorio no ordena por preferencias:</p>
+<ul>
+<li><strong>Un único grupo femenino anunciado en toda la comarca</strong>, en Vilanova i la Geltrú, y es de <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a>. Ninguna de las otras doce fichas menciona un grupo exclusivamente de mujeres.</li>
+<li><strong>Ninguna ficha anuncia un grupo femenino de defensa personal.</strong> La <a href="/defensa-personal/">defensa personal</a> aparece en siete de los trece centros, cinco en Vilanova y dos en Sitges, pero ninguno de los siete menciona un grupo solo de mujeres en su fuente pública.</li>
+<li><strong>El krav maga no consta en ningún centro verificado del Garraf.</strong> Si lo que buscabas era un grupo femenino de <a href="/krav-maga/">krav maga</a> en la comarca, hoy eso significa salir de ella.</li>
+<li><strong>En Sant Pere de Ribes, Cubelles y Canyelles no consta ninguna oferta de defensa personal</strong>, ni mixta ni femenina. Desde ahí el movimiento es a Sitges o a Vilanova, 10-15 minutos en coche, con la R2 Sud conectando los núcleos principales.</li>
+</ul>
+<p>Lo que hay por zona está reunido en <a href="/clases-para-mujeres-en-vilanova/">artes marciales para mujeres en Vilanova i la Geltrú</a> y en <a href="/clases-para-mujeres-en-sitges/">artes marciales para mujeres en Sitges</a>.</p>
+
+<h2>Cómo se resuelve esto en una llamada de tres minutos</h2>
+<p>Que un club no anuncie grupo femenino no significa que no lo tenga: hay webs del sector que no se tocan desde hace dos años, y el directorio recoge lo que está publicado, no lo que se cuece dentro. Cuatro preguntas por teléfono y lo sabes:</p>
+<ul>
+<li>Si hay grupo solo de mujeres, qué día y a qué hora.</li>
+<li>Cuántas mujeres hay habitualmente en el grupo mixto al que irías. La respuesta útil es un número, no un adjetivo.</li>
+<li>Si el trabajo por parejas se puede hacer con quien elijas las primeras semanas.</li>
+<li>Si quien da esa clase concreta es la misma persona que sale en la web.</li>
+</ul>
+<p>La segunda es la que más información da. Un grupo mixto con cinco o seis mujeres funciona, en la práctica, bastante parecido a lo que estabas buscando. Uno en el que serías la única es otra cosa, y conviene saberlo antes de firmar una permanencia. El guion completo de la visita está en <a href="/blog/clase-de-prueba-que-preguntar/">la clase de prueba: qué mirar y qué preguntar</a>.</p>
+
+<h2>Si donde vives no hay ninguna de las dos cosas</h2>
+<p>Pasa, y sobre todo en los municipios pequeños. Tres salidas, en el orden en que las recomendamos. La primera es aceptar el grupo mixto del municipio propio, porque un grupo a diez minutos de casa al que vas dos veces por semana le gana a un grupo perfecto al que vas cuando puedes. La segunda es desplazarse a Vilanova o a Sitges, que entre las dos concentran diez de los trece centros. La tercera, si lo que te frena es específicamente el primer día, es preguntar si puedes ir acompañada las dos primeras sesiones: casi ningún club lo anuncia y casi todos lo permiten.</p>
+<p>Lo que no recomendamos es esperar a que abra el grupo ideal. Se pasan cursos enteros así.</p>
+
+<h2>Y el curso de un fin de semana, ¿cuenta?</h2>
+<p>Cuando no hay grupo femenino continuado, suele aparecer la alternativa del curso intensivo de fin de semana, que en la comarca se anuncia de forma puntual. Sirve, y sirve para algo concreto: perder el miedo a la sala y llevarse tres o cuatro respuestas básicas a casa. No sustituye a entrenar. Lo que se aprende en ocho horas seguidas y no se vuelve a practicar tiene fecha de caducidad corta, y quien te diga lo contrario te está vendiendo algo.</p>
+
+<h2>Empezar en el Garraf</h2>
+<p>La página de <a href="/clases-para-mujeres/">artes marciales para mujeres en el Garraf</a> reúne las disciplinas y los criterios de toda la comarca, y el <a href="/centros/">directorio de centros</a> dice qué anuncia cada club, en qué municipio está y con qué fuente pública, con la fecha en que lo comprobamos. Si tu objetivo concreto es la autodefensa, la guía larga es <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal para mujeres</a>.</p>
+<p>¿Prefieres que te digamos qué hay cerca de tu casa y si tiene grupo femenino? <a href="/contacto/">Escríbenos</a> con el municipio y qué buscas, y lo miramos sin coste.</p>
+`,
   'blog/clase-de-prueba-que-preguntar': `
 <h2>En una clase de prueba del Garraf, el que evalúa eres tú</h2>
 <p>Casi todo el mundo llega a la primera clase con la sensación de que va a un examen: si estoy en forma, si voy a hacer el ridículo, si me van a mirar. Y es justo al revés. La clase de prueba es la única hora en la que puedes ver un club por dentro sin haber pagado nada. En los <a href="/centros/">trece centros que constan en nuestro directorio del Garraf</a> se ofrece prácticamente en todas partes.</p>
@@ -1477,15 +1591,15 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
-  'taekwondo': ['blog/artes-marciales-ninos-tdah', 'blog/arte-marcial-para-nino-muy-nervioso'],
+  'taekwondo': ['blog/arte-marcial-para-nino-muy-nervioso', 'blog/mi-hijo-quiere-dejar-las-clases'],
   'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
   'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
-  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/cuantos-dias-semana-entrena-un-nino'],
-  'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/mi-hijo-quiere-dejar-las-clases'],
+  'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],
   'clases-para-adultos': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'iniciacion': ['blog/clase-de-prueba-que-preguntar', 'blog/entrenar-sin-querer-competir'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
@@ -1494,8 +1608,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'clases-infantiles-en-vilanova': ['blog/artes-marciales-ninos-tdah', 'blog/se-hacen-dano-los-ninos-artes-marciales'],
   'karate-infantil-en-sitges': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
   'karate-infantil-en-vilanova': ['blog/karate-o-judo-para-ninos', 'blog/extraescolar-artes-marciales-vuelta-al-cole'],
-  'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
-  'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/defensa-personal-para-mujeres-garraf'],
+  'clases-para-mujeres-en-sitges': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],
+  'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],
   'clases-para-adultos-en-sitges': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'clases-para-adultos-en-vilanova': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
