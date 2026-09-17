@@ -38,7 +38,9 @@
     "blog/artes-marciales-ninos-tdah",
     "blog/cuantos-dias-semana-entrena-un-nino",
     "blog/mi-hijo-quiere-dejar-las-clases",
-    "blog/clases-mixtas-o-solo-mujeres"
+    "blog/clases-mixtas-o-solo-mujeres",
+    "cursos-defensa-personal-fin-de-semana",
+    "artes-marciales-con-sobrepeso"
   ],
   "cola": [
     {
@@ -538,8 +540,8 @@
         "/krav-maga/",
         "/clases-para-mujeres/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-17",
       "ancla_local": "Formato puntual contra clase continuada, y qué se puede hacer de verdad en el Garraf.",
       "intencion_comercial": "alta"
     },
@@ -633,8 +635,8 @@
         "/jiu-jitsu-brasileno/",
         "/iniciacion/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-17",
       "estacionalidad": "enero",
       "ancla_local": "Qué disciplinas del directorio permiten empezar sin nivel previo y sin impacto alto.",
       "intencion_comercial": "alta"
@@ -750,7 +752,7 @@
       "publicado_en": null,
       "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente.",
       "intencion_comercial": "alta",
-      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local. Saltada el 2026-09-13: requiere_datos sin cumplir, no hay sondeo de tarifas publicas de 5 centros."
+      "ancla_local": "Comarcal por definicion: la entrada existe para capturar la busqueda con modificador local. Saltada el 2026-09-13 y de nuevo el 2026-09-17: requiere_datos sin cumplir, sigue sin haber sondeo de tarifas publicas de 5 centros del directorio."
     },
     {
       "id": 33,

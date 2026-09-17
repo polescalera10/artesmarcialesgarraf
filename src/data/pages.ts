@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/cursos-defensa-personal-fin-de-semana',
+    type: 'blog',
+    meta: {
+      title: 'Curso de Defensa Personal de Fin de Semana en el Garraf',
+      description: 'Qué da y qué no da un curso de defensa personal de fin de semana, qué se retiene de verdad y qué formatos hay en los centros del Garraf.',
+    },
+    h1: 'Cursos de Defensa Personal de un Fin de Semana: Qué Dan y Qué No',
+    intro: 'Dos tardes dan para más de lo que mucha gente supone, y para bastante menos de lo que promete el cartel. La diferencia entre una cosa y otra se explica en cinco minutos, y explica también por qué en el Garraf este formato es la excepción y no la puerta de entrada habitual.',
+    body: BLOG_BODIES['blog/cursos-defensa-personal-fin-de-semana'],
+    fecha: '2026-09-17',
+    phase: 2,
+  },
+  {
+    slug: 'blog/artes-marciales-con-sobrepeso',
+    type: 'blog',
+    meta: {
+      title: 'Empezar Artes Marciales con Sobrepeso en el Garraf',
+      description: 'Empezar artes marciales con sobrepeso: qué formatos permiten regular la intensidad, qué preguntar al centro y qué disciplinas hay en el Garraf.',
+    },
+    h1: 'Empezar con Sobrepeso: Qué Disciplina y Cómo Plantearlo',
+    intro: 'La duda casi nunca es karate o boxeo. Es si vas a poder seguir el ritmo de la clase y si vas a sentirte observado. El criterio que más ordena la elección es el impacto articular, y con ese criterio en la mano los números del directorio dicen bastante sobre qué se puede entrenar en la comarca del Garraf.',
+    body: BLOG_BODIES['blog/artes-marciales-con-sobrepeso'],
+    fecha: '2026-09-17',
+    phase: 2,
+  },
+  {
     slug: 'blog/mi-hijo-quiere-dejar-las-clases',
     type: 'blog',
     meta: {

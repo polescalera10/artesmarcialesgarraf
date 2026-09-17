@@ -274,6 +274,8 @@ const BLOG = [
   ['artes-marciales-y-estres', 'Entrenar y estrés', 'brujula', 'Por qué desconecta más que una cinta de correr'],
   ['artes-marciales-ninos-tdah', 'Artes marciales y TDAH', 'personas', 'Qué aporta el formato y qué no se puede prometer'],
   ['cuantos-dias-semana-entrena-un-nino', 'Cuántos días entrenar', 'brujula', 'Dos a la semana, y la cuenta de los trayectos'],
+  ['cursos-defensa-personal-fin-de-semana', 'Curso de fin de semana', 'defensa-personal', 'Qué se aprende en dos días y qué exige continuidad'],
+  ['artes-marciales-con-sobrepeso', 'Empezar con sobrepeso', 'brujula', 'Impacto, ritmo propio y qué preguntar antes de ir'],
 ];
 
 for (const [i, [slug, titulo, icon, sub]] of BLOG.entries()) {

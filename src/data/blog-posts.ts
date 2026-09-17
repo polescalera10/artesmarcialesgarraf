@@ -8,6 +8,115 @@
 // ────────────────────────────────────────────────────────────────────────────
 
 export const BLOG_BODIES: Record<string, string> = {
+  'blog/cursos-defensa-personal-fin-de-semana': `
+<h2>Lo que en realidad se pregunta quien busca un curso de dos días</h2>
+<p>Nadie busca un curso de defensa personal de fin de semana un martes cualquiera sin motivo. Detrás casi siempre hay algo concreto y reciente: un susto en un aparcamiento de Vilanova, un cambio de turno que obliga a volver de noche por el paseo, una hija que se va a vivir sola. La búsqueda dice "curso". Lo que se está preguntando es otra cosa: <strong>si dos tardes pueden cambiar cómo reaccionarías si pasara algo</strong>.</p>
+<p>La respuesta honesta tiene dos mitades, y la segunda decide si el dinero está bien gastado. Un fin de semana bien planteado cambia cosas, más de las que la gente supone. Otras no las cambia por bueno que sea el instructor, y eso no es un defecto del formato: es cómo funciona aprender a mover el cuerpo cuando se tiene miedo.</p>
+
+<h2>Qué cabe de verdad en ocho o diez horas</h2>
+<p>Cabe bastante, siempre que el programa sepa dónde ponerlas. Un intensivo de dos días da para trabajar con solvencia cuatro bloques:</p>
+<ul>
+<li><strong>La parte que no es física.</strong> Reconocer una situación que se está torciendo antes de que se tuerza, cambiar de acera, salir de un local, usar la voz. Es lo que más devuelve por hora invertida y casi siempre lo que menos horas recibe.</li>
+<li><strong>Dos o tres respuestas motoras muy simples.</strong> Soltarse de un agarre de muñeca, proteger la cabeza mientras se gana distancia, empujar y correr. Simples de verdad, no una secuencia de seis movimientos con nombre japonés.</li>
+<li><strong>Qué pasa después.</strong> A quién se llama, qué se anota, cómo funciona una denuncia. Aquí el curso informa y poco más: para tu caso, quien orienta es un abogado o los Mossos, no el instructor.</li>
+<li><strong>Perder el susto al contacto.</strong> Para mucha gente, que otra persona le agarre el brazo en un entorno controlado es la primera vez en su vida adulta. Ese cambio ocurre de verdad en dos días y no es pequeño.</li>
+</ul>
+<p>Si un curso dedica la mañana del sábado entera a este primer bloque, buena señal. Si empieza directamente golpeando un escudo, mala.</p>
+
+<h2>Lo que no cabe, y conviene saberlo antes de pagar</h2>
+<p>Lo que no se puede comprimir es la automatización. Una técnica que has repetido veinte veces un domingo por la tarde no está disponible seis meses después en un portal a oscuras, y quien te diga lo contrario te está vendiendo algo. Bajo estrés, el cuerpo recurre a lo que ha repetido cientos de veces, no a lo que entendió una vez.</p>
+<p>Tampoco cabe la resistencia. En un intensivo el compañero colabora, porque con desconocidos y sin base común no se puede hacer otra cosa con seguridad. Está bien planteado, pero significa que nadie ha comprobado si tu respuesta funciona contra alguien que no quiere que funcione. Es la diferencia entre saber la respuesta y tenerla.</p>
+<p>Y hay un efecto secundario del que se habla poco: <strong>salir de un fin de semana sintiéndose más capaz de lo que uno es</strong>. Una confianza que no se corresponde con la habilidad real empeora las decisiones, porque lleva a quedarse donde antes uno se habría ido. Un instructor serio lo dice en voz alta el domingo por la tarde. Si el cierre del curso es motivacional y nadie menciona los límites, ya sabes con quién has tratado.</p>
+
+<h2>Qué hay y qué no hay en el Garraf: los números del directorio</h2>
+<p>El dato que ordena la decisión en esta comarca está en el directorio. En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan <strong>13 centros con fuente pública verificable</strong>, y <strong>7 de ellos anuncian defensa personal</strong> en su oferta. Ninguno la anuncia como curso intensivo de fin de semana: todos la ofrecen como clase semanal continuada, dentro de su programación normal.</p>
+<p>El segundo dato es igual de útil: <strong>ningún centro de la comarca anuncia krav maga con fuente pública verificable</strong>, pese a ser la etiqueta que más aparece asociada a los seminarios intensivos. Si buscas específicamente eso, o te desplazas fuera del Garraf, o trabajas con lo que sí hay aquí. Explicamos en qué se parecen y en qué no en la comparativa de <a href="/blog/krav-maga-o-defensa-personal/">krav maga o defensa personal</a>.</p>
+<p>La lectura práctica: en el Garraf los cursos de fin de semana existen como actividad puntual (un seminario que organiza un club, una charla con parte práctica en un centro cívico), pero no son la vía de entrada habitual. La vía habitual es apuntarse a un grupo. Conviene saberlo antes de pasarse tres semanas buscando un formato que aquí es la excepción.</p>
+
+<h2>Cuándo el formato intensivo es la decisión correcta</h2>
+<p>No siempre es el plan B. Hay tres situaciones en las que un fin de semana es exactamente lo que toca:</p>
+<ul>
+<li><strong>Cuando la agenda no da para más.</strong> Un turno rotativo o un trabajo con viajes hacen inviable comprometerse a dos días fijos por semana. Un intensivo hecho es mejor que un curso continuado que nunca empiezas.</li>
+<li><strong>Cuando lo que falta es información, no habilidad.</strong> Si quieres entender cómo se evita un problema y qué hacer si ocurre, un buen seminario te sirve tal cual.</li>
+<li><strong>Como prueba antes de decidir.</strong> Dos días te dicen si el contacto físico te resulta llevadero y si el ambiente te encaja, con menos compromiso que una matrícula.</li>
+</ul>
+<p>Nuestra recomendación, si te reconoces en la tercera: trátalo como lo que es, una puerta. Y busca el grupo continuado la semana siguiente, mientras todavía te acuerdas de por qué te apuntaste.</p>
+
+<h2>Cómo distinguir un seminario serio antes de pagarlo</h2>
+<p>Cuatro comprobaciones que se hacen por teléfono o por correo, sin saber nada de artes marciales:</p>
+<ul>
+<li><strong>Quién lo imparte y qué formación tiene.</strong> Nombre, titulación, años enseñando a este perfil. Un técnico solvente lo cuenta sin que se lo saquen con pinzas.</li>
+<li><strong>Cuántas personas y cuántos instructores.</strong> Treinta personas con un solo instructor es una charla con ejercicios, no un curso: nadie te va a corregir.</li>
+<li><strong>Si el programa está escrito.</strong> Qué se ve el sábado, qué el domingo y cuánto tiempo se dedica a cada bloque. Si no hay programa, es que se improvisa.</li>
+<li><strong>Qué dicen que vas a conseguir.</strong> "Aprenderás a reconocer y evitar situaciones de riesgo y dos o tres respuestas básicas" es una promesa razonable. "Sabrás defenderte" no lo es.</li>
+</ul>
+<p>Y una señal de alarma que vale por todas: el material de promoción que usa el miedo como argumento de venta. Estadísticas sueltas sin fuente, fotos de callejones, lenguaje de urgencia. Quien necesita asustarte para venderte no tiene mucho más.</p>
+
+<h2>El día después, que es donde se decide todo</h2>
+<p>Lo aprendido un domingo se evapora en semanas si no se toca. Si el curso te ha servido, lo que toca después es <strong>una clase semanal continuada</strong>, aunque sea una sola y aunque empiece en enero.</p>
+<p>Qué buscar según lo que te haya movido el curso. Si lo que quieres es seguir con el enfoque de situaciones reales, la guía de <a href="/defensa-personal/">defensa personal en el Garraf</a> explica cómo son esas clases y dónde constan. Si prefieres entrenar el trabajo cuerpo a cuerpo con resistencia real, el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> consta en 5 centros de la comarca y es de las opciones más agradecidas para empezar de cero. Y si lo tuyo es la distancia y el golpeo, el boxeo consta en 6.</p>
+<p>Muchas de las personas que llegan a un intensivo por este motivo son mujeres. Si es tu caso, la guía larga de <a href="/blog/defensa-personal-para-mujeres-garraf/">qué funciona de verdad en defensa personal para mujeres</a> entra en el detalle de qué técnicas aguantan y cuáles no. Y la página de <a href="/defensa-personal-femenina-en-vilanova/">defensa personal femenina en Vilanova</a> recoge lo que hay en el municipio con más oferta de la comarca.</p>
+
+<h2>Por dónde empezar en la comarca</h2>
+<p>La oferta del Garraf está concentrada: de los 13 centros del directorio, 7 están en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y 3 en <a href="/sitges/">Sitges</a>. En Sant Pere de Ribes y Cubelles solo consta taekwondo, y en Canyelles no consta ningún centro. Si vives en uno de esos tres municipios, cuenta con desplazarte: entre Sitges y Vilanova hay 10-15 minutos en coche y la R2 Sud conecta los núcleos principales.</p>
+<p>Antes de comprometerte con nada, ve a mirar. La <a href="/blog/clase-de-prueba-que-preguntar/">guía de la clase de prueba</a> te dice qué observar y qué preguntar el día que vas, y sirve igual para un seminario que para un grupo semanal.</p>
+<p>¿No tienes claro si en tu caso conviene el intensivo o la clase continuada? <a href="/contacto/">Escríbenos</a> y te orientamos sin coste: cuéntanos qué te ha llevado a buscar esto, en qué municipio estás y qué horarios puedes cumplir de verdad.</p>
+`,
+
+  'blog/artes-marciales-con-sobrepeso': `
+<h2>La pregunta real no es qué disciplina, es cómo será el primer día</h2>
+<p>Quien busca empezar artes marciales con sobrepeso en el Garraf casi nunca está dudando entre karate y boxeo. Está dudando otra cosa, y casi siempre es la misma: <strong>si va a poder seguir el ritmo de la clase y si va a sentirse observado</strong>. La disciplina importa, y luego la vemos, pero decide menos que el grupo al que te apuntes y que la primera conversación con el centro.</p>
+<p>Esta guía va de eso: qué formatos permiten regular la intensidad desde el día uno, qué preguntar por teléfono antes de presentarte y qué hay realmente en el Garraf para hacerlo. No hay aquí promesas de resultados ni tablas de calorías. No es nuestro terreno, y tampoco es lo que resuelve el problema.</p>
+<p>Un aviso previo que va en serio. Si tienes una lesión, una condición cardiovascular, articular o metabólica diagnosticada, o simplemente llevas años sin actividad física, la conversación previa es con tu médico o con un fisioterapeuta, no con un instructor y no con esta web. Lo que sigue describe cómo son las clases, no qué te conviene a ti.</p>
+
+<h2>Qué cambia de verdad al empezar, y qué no cambia nada</h2>
+<p>Lo que cambia: aguantar una hora de esfuerzo intermitente, que sube rápido las primeras semanas y sorprende a casi todo el mundo. La coordinación, que mejora antes que la forma física. Y tener dos horas semanales reservadas en el calendario, que es lo que más pesa en si sigues entrenando dentro de un año.</p>
+<p>Lo que no cambia: el peso no es el criterio de nadie en una clase de iniciación de adultos. Es una preocupación enorme antes de entrar y deja de serlo en la tercera sesión, porque en un grupo de principiantes todo el mundo está ocupado en no equivocarse de pie. Esto no es un consuelo, es cómo funcionan esas clases.</p>
+<p>Lo que tampoco cambia, y conviene decirlo: entrenar dos días por semana no es un plan de pérdida de peso. Es una actividad física sostenida que mucha gente mantiene durante años porque le gusta, y ahí está su valor. Cualquier centro que te venda un resultado en kilos y semanas te está vendiendo algo que no puede garantizar.</p>
+
+<h2>El impacto articular es el criterio que más ordena la elección</h2>
+<p>Si hay un factor técnico que conviene mirar antes que ningún otro, es cuánto impacto acumula la clase sobre rodillas, tobillos y espalda. Las diez disciplinas no se comportan igual:</p>
+<ul>
+<li><strong>Trabajo de suelo y agarre.</strong> El <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> es de las opciones más agradecidas para empezar de cero: no hay golpes, no hay saltos y el ritmo lo marca en buena medida cada pareja. A cambio pide estar cómodo con el contacto físico cercano desde el primer día, que a mucha gente le cuesta más que el esfuerzo.</li>
+<li><strong>Golpeo con los pies en el suelo.</strong> El <a href="/boxeo/">boxeo</a> se trabaja mucho en saco y manoplas, y la intensidad se regula sola: pegas más fuerte o más flojo, descansas o no. El desgaste está en el cardio, no en la articulación.</li>
+<li><strong>Golpeo con pierna.</strong> El <a href="/kickboxing/">kickboxing</a> añade patada baja y media. Es asumible en un grupo de iniciación, pero pide algo más de movilidad de cadera y hay días en que se nota.</li>
+<li><strong>Disciplinas con caída o salto.</strong> El judo y el taekwondo son excelentes y tienen grupos de adultos, pero la caída repetida y el trabajo de pierna alta son exigentes desde el principio. No están descartados: simplemente hay que hablarlo con el instructor antes, no el primer día sobre el tatami.</li>
+</ul>
+<p>Nuestra recomendación práctica, si tuviéramos que dar una sola: empieza por algo donde puedas bajar el pistón sin salirte de la clase. Boxeo y jiu-jitsu son los dos que mejor cumplen eso en la comarca.</p>
+
+<h2>Qué se puede entrenar de verdad con este criterio en el Garraf</h2>
+<p>Aquí es donde los números del directorio ayudan a decidir. En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan <strong>13 centros con fuente pública verificable</strong>, y este es el reparto de las disciplinas que más encajan con lo anterior: el kickboxing aparece en 7, el boxeo en 6 y el jiu-jitsu brasileño en 5. El karate consta en 3 y el judo solo en 1, así que si te interesaba el trabajo de agarre, en esta comarca la vía practicable es el jiu-jitsu, no el judo.</p>
+<p>Dos datos más que evitan búsquedas inútiles. <strong>Ni el muay thai ni el krav maga constan en ningún centro del Garraf</strong> con fuente pública verificable, aunque aparezcan en muchos listados genéricos. Y la oferta está muy concentrada: 7 de los 13 centros están en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y 3 en <a href="/sitges/">Sitges</a>. En Sant Pere de Ribes y en Cubelles solo consta taekwondo, y en Canyelles no consta ningún centro.</p>
+<p>La consecuencia es práctica y conviene asumirla antes de apuntarse: si vives en Ribes, Cubelles o Canyelles y quieres boxeo o jiu-jitsu, vas a desplazarte. Entre Sitges y Vilanova hay 10-15 minutos en coche y la R2 Sud conecta los núcleos principales. Cuenta el trayecto de vuelta, que es el que hace abandonar a la gente en noviembre.</p>
+
+<h2>La llamada previa, y qué respuesta estás buscando</h2>
+<p>Esta es la parte que más ahorra. Antes de presentarte en ningún sitio, llama o escribe y pregunta tres cosas concretas:</p>
+<ol>
+<li><strong>Si hay grupo de iniciación de adultos separado</strong> del grupo general. No "si los principiantes son bienvenidos", que lo dirán todos. Si hay grupo aparte, y cuánta gente va.</li>
+<li><strong>Cómo adaptan el calentamiento.</strong> La respuesta útil suena a esto: "el calentamiento es el mismo pero cada uno lleva su ritmo, y si algo te molesta se cambia por otra cosa". La respuesta que no sirve es "no te preocupes, ya verás como puedes".</li>
+<li><strong>Si puedes ver una clase antes de apuntarte.</strong> Ir a mirar sentado, sin entrenar. Casi todos lo permiten y es la mejor información que vas a conseguir.</li>
+</ol>
+<p>Y una cosa más, que no es obligatoria pero funciona: si tienes una limitación concreta, dilo por teléfono y no en el vestuario. Un instructor con oficio ya ha tenido diez alumnos como tú y te lo va a resolver en treinta segundos. Si la respuesta es incómoda o vaga, has ahorrado una matrícula.</p>
+
+<h2>Las primeras seis semanas, sin épica</h2>
+<p>Conviene saber cómo va a ir para no interpretarlo mal. Las dos primeras semanas se sale de clase con la sensación de no haberse enterado de nada y con agujetas en sitios raros. Le pasa a todo el mundo, entre en la talla que entre.</p>
+<p>A partir de la tercera o cuarta, algo encaja: el calentamiento deja de ser el momento duro de la sesión y empieza a entenderse lo que se practica. Sobre la sexta suele aparecer el primer bajón de motivación, casi siempre un día que se falta por trabajo y la semana siguiente cuesta volver. Ese es el momento crítico, no el primer día.</p>
+<p>Dos reglas que valen más que cualquier plan: dos sesiones por semana, no cuatro, porque el entusiasmo inicial es la vía rápida a una lesión o al abandono. Y no faltar dos semanas seguidas. El resto se arregla solo.</p>
+
+<h2>Lo que ningún centro debería prometerte</h2>
+<p>Tres frases que deberían hacerte desconfiar, y no tienen que ver con las artes marciales sino con cómo se vende:</p>
+<ul>
+<li>Cualquier cifra de kilos asociada a un plazo.</li>
+<li>Un plan nutricional incluido en la cuota. Eso lo hace un dietista o nutricionista colegiado, no un instructor de kickboxing, y mezclarlo es una señal de alarma.</li>
+<li>Presión para contratar entrenamiento personal el primer día, antes de que hayas pisado una clase de grupo.</li>
+</ul>
+<p>Lo razonable es que te digan que en unos meses aguantarás la clase entera, que aprenderás una técnica concreta y que acabarás conociendo a gente. Eso sí lo cumplen los centros serios.</p>
+
+<h2>Por dónde empezar en la comarca</h2>
+<p>Si todavía no tienes claro qué disciplina, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez con una lógica simple de objetivo y contacto. Si lo que te frena es empezar de adulto y sin base, el recorrido está en <a href="/clases-para-adultos/">artes marciales para adultos en el Garraf</a>. Y el primer mes, contado en detalle, en la guía de <a href="/blog/artes-marciales-adultos-principiantes-garraf/">artes marciales para adultos principiantes</a>.</p>
+<p>¿Prefieres que te lo concretemos para tu caso? <a href="/contacto/">Escríbenos</a> contando en qué municipio estás, qué horarios puedes cumplir de verdad y si hay algo que quieras evitar por una lesión o una indicación médica. Te orientamos sin coste y sin apuntarte a nada.</p>
+`,
+
 
   'blog/mi-hijo-quiere-dejar-las-clases': `
 <h2>Primero, cuántas veces lo ha dicho</h2>
@@ -1593,14 +1702,14 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
   'taekwondo': ['blog/arte-marcial-para-nino-muy-nervioso', 'blog/mi-hijo-quiere-dejar-las-clases'],
   'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
-  'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
+  'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/cursos-defensa-personal-fin-de-semana'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
   'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
   'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
   'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/mi-hijo-quiere-dejar-las-clases'],
   'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],
-  'clases-para-adultos': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
+  'clases-para-adultos': ['blog/empezar-artes-marciales-a-los-40', 'blog/artes-marciales-con-sobrepeso'],
   'iniciacion': ['blog/clase-de-prueba-que-preguntar', 'blog/entrenar-sin-querer-competir'],
   // Páginas infantiles por municipio: la tanda de septiembre (extraescolares)
   // entra por aquí, que es donde llega el padre que busca en la vuelta al cole.
