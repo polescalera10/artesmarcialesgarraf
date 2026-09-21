@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/horarios-tipicos-de-las-clases',
+    type: 'blog',
+    meta: {
+      title: 'Horarios de las Clases de Artes Marciales en el Garraf',
+      description: 'Cómo se reparten las franjas infantil y de adultos, cuántas opciones tienes según tu municipio del Garraf y las seis preguntas que lo resuelven.',
+    },
+    h1: 'Horarios de las Clases en el Garraf: Qué Preguntar Antes de Apuntarte',
+    intro: 'Los grupos infantiles ocupan la media tarde y los de adultos arrancan a partir de las ocho. Con eso no has resuelto nada, porque lo que decide si encuentras un horario que te sirva no es la disciplina: es el municipio del Garraf en el que vivas y cuántos centros constan allí.',
+    body: BLOG_BODIES['blog/horarios-tipicos-de-las-clases'],
+    fecha: '2026-09-21',
+    phase: 2,
+  },
+  {
+    slug: 'blog/artes-marciales-para-perder-peso',
+    type: 'blog',
+    meta: {
+      title: 'Artes Marciales para Perder Peso en el Garraf',
+      description: 'Qué esperar de verdad, por qué las calorías son el dato menos útil y qué disciplinas constan en cada municipio del Garraf para sostener el hábito.',
+    },
+    h1: 'Artes Marciales para Perder Peso: Qué Esperar de Verdad',
+    intro: 'La tabla de calorías por hora es el dato menos útil de esta decisión. Lo que de verdad la ordena es cuánto te cuesta llegar a la sala un martes de enero, y eso en esta comarca depende de dónde vivas: las disciplinas de más cardio continuo solo constan en dos de los cinco municipios.',
+    body: BLOG_BODIES['blog/artes-marciales-para-perder-peso'],
+    fecha: '2026-09-21',
+    phase: 2,
+  },
+  {
     slug: 'blog/cursos-defensa-personal-fin-de-semana',
     type: 'blog',
     meta: {

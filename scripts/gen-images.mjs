@@ -245,6 +245,8 @@ for (const [i, [slug, titulo, icon, sub]] of PERFILES.entries()) {
 }
 
 const BLOG = [
+  ['horarios-tipicos-de-las-clases', 'Horarios de clase', 'brujula', 'Qué franjas hay y cuántas opciones según tu municipio'],
+  ['artes-marciales-para-perder-peso', 'Entrenar y perder peso', 'boxeo', 'Adherencia, trayecto y qué esperar de verdad'],
   ['mi-hijo-quiere-dejar-las-clases', 'Quiere dejarlo', 'personas', 'El bajón normal, el problema real y qué mover primero'],
   ['clases-mixtas-o-solo-mujeres', 'Mixto o femenino', 'personas', 'Qué aporta cada formato y qué consta en la comarca'],
   ['donde-aprender-boxeo-en-el-garraf', 'Dónde aprender boxeo', 'boxeo', 'Opciones reales en la comarca, con criterio para elegir'],

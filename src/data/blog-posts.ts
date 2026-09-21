@@ -8,6 +8,114 @@
 // ────────────────────────────────────────────────────────────────────────────
 
 export const BLOG_BODIES: Record<string, string> = {
+  'blog/horarios-tipicos-de-las-clases': `
+<h2>La respuesta corta, y por qué en el Garraf se queda corta</h2>
+<p>El reparto habitual en el deporte de club es el que ya te imaginas. <strong>Los grupos infantiles ocupan la media tarde, entre la salida del colegio y la hora de cenar, y los de adultos arrancan a partir de las ocho.</strong> Esa es la respuesta que buscabas y no te va a servir de mucho, porque la pregunta real que hay detrás casi nunca es a qué hora son las clases. Es si va a haber alguna que te encaje.</p>
+<p>Y eso, en esta comarca, depende menos de la disciplina que del municipio en el que vivas.</p>
+
+<h2>Por qué esta guía no publica una tabla de horarios</h2>
+<p>Podríamos rellenar esta página con una parrilla bonita de lunes a viernes. No lo vamos a hacer, y conviene que sepas por qué antes de seguir leyendo.</p>
+<p>Los horarios de un club cambian cada septiembre, y a veces en enero. Se mueven cuando un entrenador cambia de turno en su otro trabajo, cuando un grupo infantil se queda en cuatro niños o cuando el ayuntamiento reasigna las horas de un pabellón municipal. Una tabla publicada hoy estaría mintiendo en noviembre.</p>
+<p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> solo entra lo que consta en una fuente pública verificable, con el enlace a esa fuente y la fecha en que lo miramos: qué disciplinas anuncia cada club y en qué municipio está. Horarios, precios y reseñas quedan fuera a propósito. Así que lo que sigue no son los horarios de nadie. Es la forma que tiene esto normalmente y las preguntas que te lo resuelven en tres minutos.</p>
+
+<h2>Cuántas opciones tienes de verdad según el municipio del Garraf</h2>
+<p>Aquí está el dato que ordena toda la decisión. En el directorio constan <strong>trece centros en toda la comarca, y siete de ellos están en Vilanova i la Geltrú</strong>. Sitges suma tres. <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> tiene dos, <a href="/cubelles/">Cubelles</a> uno y <a href="/canyelles/">Canyelles</a> ninguno con presencia pública que hayamos podido verificar.</p>
+<p>Lo que eso significa para tu horario es bastante directo:</p>
+<ul>
+<li><strong>En Vilanova i la Geltrú puedes elegir.</strong> Con siete centros hay solapamiento real de franjas, y si el grupo de las 20:00 no te va, es probable que otro club tenga algo a las 21:00.</li>
+<li><strong>En Sitges eliges menos, pero eliges.</strong> Tres centros dan para comparar dos o tres opciones por disciplina, no más.</li>
+<li><strong>En Sant Pere de Ribes y en Cubelles no eliges horario: eliges si te va o no te va.</strong> Los tres centros que constan entre los dos municipios son de <a href="/taekwondo/">taekwondo</a>, así que la conversación es con un club concreto y poco más.</li>
+<li><strong>En Canyelles el horario incluye el trayecto.</strong> Sin centro verificado en el municipio, la pregunta deja de ser a qué hora empieza la clase y pasa a ser a qué hora sales de casa.</li>
+</ul>
+<p>El caso extremo lo tiene el <a href="/judo/">judo</a>: consta un solo club en toda la comarca, en Vilanova. Si quieres judo, el horario del judo en el Garraf es el que tenga ese club. No hay segunda opción que comparar, y saberlo antes de llamar te ahorra la decepción.</p>
+
+<h2>El grupo infantil y la franja de después del colegio</h2>
+<p>Lo normal es que las clases de niños se concentren entre las cinco y las ocho de la tarde, dos días por semana, en días alternos. Por debajo de los siete u ocho años las sesiones suelen ser de una hora o algo menos. Más tiempo no lo aguanta la atención de un niño de esa edad, por mucho que el club quiera venderte hora y media.</p>
+<p>La pregunta que más se olvida no es a qué hora empieza, sino <strong>si los días son alternos o seguidos</strong>. Martes y jueves funcionan. Lunes y martes convierten el resto de la semana en un desierto y hacen que el niño llegue cansado al segundo día. Si el club te ofrece dos días pegados, pregunta si hay otro grupo del mismo nivel repartido de otra forma.</p>
+<p>Si estás en esta fase, la guía de <a href="/clases-infantiles-en-sitges/">clases infantiles en Sitges</a> recoge qué consta en ese municipio y sirve de modelo para mirar el tuyo.</p>
+
+<h2>El grupo de adultos y la hora a la que sales de trabajar</h2>
+<p>En adultos la franja fuerte empieza sobre las 20:00 y se alarga hasta las 21:30 o las 22:00. Algunos centros con sala propia abren además un grupo de mañana o de mediodía. Es minoritario, pero existe, y suele estar mucho menos lleno.</p>
+<p>El error clásico ya lo contamos en la guía de <a href="/blog/como-elegir-centro-artes-marciales-garraf/">cómo elegir centro</a>, y lo repetimos porque es el que más bajas provoca. Consiste en apuntarse al grupo de las 20:30 cuando sales de trabajar a las 20:00 en el municipio de al lado. Entre <a href="/sitges/">Sitges</a> y <a href="/vilanova-i-la-geltru/">Vilanova</a> hay diez o quince minutos en coche y la R2 Sud conecta bien los núcleos principales, pero eso solo funciona si la hora de entrada te deja margen para aparcar y cambiarte.</p>
+<p>Nuestra recomendación es poco heroica: elige el horario que puedas cumplir un martes de noviembre con lluvia, no el que cumplirías en tu mejor semana del año. Si te apuntas a las <a href="/clases-para-adultos-en-vilanova/">clases para adultos en Vilanova</a> pensando en tu mejor semana, lo dejas en febrero.</p>
+
+<h2>Las preguntas que te resuelven el horario en una llamada</h2>
+<p>Con estas seis tienes suficiente, y ninguna necesita que sepas nada de artes marciales:</p>
+<ol>
+<li><strong>¿Cuántos grupos hay de mi nivel y a qué horas?</strong> Si la respuesta es uno solo, ya sabes que no hay margen de maniobra.</li>
+<li><strong>¿El horario de septiembre es el definitivo del curso?</strong> Muchos clubs ajustan en octubre, cuando ven cuánta gente ha entrado en cada grupo.</li>
+<li><strong>¿Qué pasa en Navidad, Semana Santa y agosto?</strong> Hay clubs que paran, otros que reducen y otros que siguen igual. También conviene saber si esos meses se cobran.</li>
+<li><strong>¿Puedo cambiar de grupo a mitad de curso si me cambian el turno de trabajo?</strong></li>
+<li><strong>¿Se puede recuperar una clase perdida en otro grupo?</strong> En clubs con varios grupos del mismo nivel suele poder hacerse. En clubs de un solo grupo, no.</li>
+<li><strong>¿Cuánto margen hay para llegar tarde?</strong> Algunos centros no dejan entrar al tatami una vez empezado el calentamiento, y con un trayecto entre municipios eso importa más de lo que parece.</li>
+</ol>
+
+<h2>Qué hacer cuando el único horario disponible no te encaja</h2>
+<p>Esta es la parte que casi nadie escribe, así que va con todas las letras: a veces la respuesta honesta es que no puedes entrenar eso ahí. Y forzarlo sale caro, porque acabas pagando una cuota que usas tres veces al mes.</p>
+<p>Antes de rendirte quedan cuatro movimientos:</p>
+<ul>
+<li><strong>Cambiar de municipio, no de disciplina.</strong> Si el trayecto son quince minutos y el horario del club de al lado sí te sirve, esa es la opción menos mala.</li>
+<li><strong>Cambiar de disciplina, no de municipio.</strong> Si lo que te importa es entrenar cerca y con regularidad, otra disciplina en tu pueblo te va a dar más que la ideal a treinta minutos.</li>
+<li><strong>Aceptar un día por semana.</strong> Es poco para progresar rápido, pero es infinitamente más que cero, y muchos clubs tienen cuota reducida para un día.</li>
+<li><strong>Esperar a septiembre.</strong> Si estás en marzo y nada encaja, apuntarse a la fuerza a mitad de curso rara vez sale bien.</li>
+</ul>
+
+<h2>Dónde mirar los horarios reales del Garraf</h2>
+<p>El camino corto es este. Mira en el directorio qué clubs hay de la disciplina que te interesa y en qué municipio. Entra en su web o en su perfil público. Y llama con las seis preguntas de arriba en la mano. Nosotros no ordenamos por quién nos paga, porque nadie nos paga.</p>
+<p>¿Prefieres que te digamos por dónde empezar a llamar? <a href="/contacto/">Cuéntanos</a> qué disciplina buscas, para quién y en qué franja puedes entrenar, y te orientamos sin coste.</p>
+`,
+  'blog/artes-marciales-para-perder-peso': `
+<h2>La respuesta corta, y por qué el motivo importa</h2>
+<p>Sí, entrenar una disciplina de combate ayuda a perder peso. También ayuda nadar, remar o subir cuestas en bici. <strong>Lo que distingue a las artes marciales no es cuánto queman. Es que traen puesta una estructura que en una sala de máquinas no existe: un grupo que va a la misma hora, una progresión con nombre y alguien que nota si faltas.</strong></p>
+<p>Esa diferencia, la de seguir yendo, es la que decide el resultado a doce meses vista. Y en el Garraf tiene una traducción muy concreta que casi nadie te cuenta: depende bastante de a cuántos minutos de tu casa está la sala.</p>
+
+<h2>Las calorías son el dato menos útil de esta decisión</h2>
+<p>En cuanto buscas esto aparecen tablas con cifras por hora para cada deporte. No vamos a darte una, por dos razones.</p>
+<p>La primera es que ese número depende de tu peso, de tu condición física y de lo que haga el entrenador ese día. Una clase de <a href="/boxeo/">boxeo</a> con mucho saco y poca cola de espera no se parece en nada a otra con veinte personas esperando turno en tres sacos. La segunda es que el gasto de una hora de clase, sea cual sea la cifra, es pequeño comparado con lo que pasa en las otras veintitrés.</p>
+<p>Aquí conviene ser claros y salirnos de nuestro terreno: <strong>el peso se gestiona sobre todo en la mesa, y eso lo lleva un médico o un dietista-nutricionista, no un entrenador de artes marciales.</strong> Si tienes una condición de salud de por medio, esa consulta va antes que la matrícula. Nosotros hablamos de la parte de entrenar.</p>
+
+<h2>La adherencia se decide en el trayecto, y ahí el Garraf manda</h2>
+<p>Si lo que importa es seguir yendo en marzo, el factor que más pesa no es la disciplina. Es cuánto te cuesta llegar un martes a las ocho de la tarde.</p>
+<p>En nuestro <a href="/centros/">directorio de centros del Garraf</a> constan trece clubs con presencia pública verificable, y no están repartidos de forma uniforme:</p>
+<ul>
+<li><strong>Kickboxing y boxeo, que son las dos opciones más continuas de cardio, solo constan en Vilanova i la Geltrú y en Sitges.</strong> Siete centros anuncian <a href="/kickboxing/">kickboxing</a> y seis anuncian boxeo, todos en esos dos municipios.</li>
+<li><strong>En Sant Pere de Ribes y en Cubelles la única disciplina verificada es el <a href="/taekwondo/">taekwondo</a>.</strong> No es mala noticia para este objetivo, pero es la que hay.</li>
+<li><strong>En Canyelles no consta ningún centro.</strong> Entrenar desde <a href="/canyelles/">Canyelles</a> significa contar el desplazamiento dentro del plan, no como un extra.</li>
+</ul>
+<p>La conclusión práctica es incómoda pero útil. Si vives en Vilanova, puedes permitirte elegir la disciplina que más te apetezca y cambiar si no encaja. Si vives en Cubelles y te empeñas en hacer boxeo, tu plan de perder peso incluye veinte minutos de coche por trayecto, dos veces por semana, en enero y con lluvia. Mucha gente lo sostiene. Bastante gente no. Conviene decidirlo con los ojos abiertos.</p>
+
+<h2>Qué disciplinas encajan mejor con este objetivo</h2>
+<p>Con el objetivo de perder peso por delante, la diferencia que importa es cuánto tiempo de la clase estás en movimiento continuo.</p>
+<ul>
+<li><strong>Golpeo con trabajo de saco y manoplas</strong> (boxeo, kickboxing, y el taekwondo en su parte de preparación). Son las clases con el ritmo más sostenido: calentamiento largo, rondas, poco tiempo parado. Es lo que más se parece a lo que la gente imagina cuando piensa en entrenar para bajar peso.</li>
+<li><strong>Agarre y suelo</strong> (<a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a>, judo). El esfuerzo es más intermitente, con rondas duras y pausas reales entre ellas. Resulta menos evidente en el momento y es de lo más exigente que hay, sobre todo en la parte de fuerza.</li>
+</ul>
+<p>Nuestra recomendación, si nos la pides: no elijas por la tabla de calorías, elige por cuál de las dos te apetece hacer el jueves que no te apetece nada. Esa es la que vas a seguir haciendo en junio. Un buen artículo para decidir esto es el de <a href="/blog/empezar-artes-marciales-a-los-40/">empezar artes marciales a los 40</a>, que entra en cómo encaja cada formato cuando el cuerpo ya no perdona igual.</p>
+
+<h2>El primer mes no va de perder peso</h2>
+<p>Este es el matiz que hace que la gente lo deje, así que va por delante. <strong>Las primeras cuatro o seis semanas no vas a entrenar duro: vas a aprender a moverte.</strong> Se te va a ir la energía en coordinar, en no chocarte con nadie y en recordar la guardia, y la intensidad va a ser bastante más baja de lo que esperabas.</p>
+<p>Es normal y es como tiene que ser. Un club que te mete en el grupo avanzado la primera semana para que sudes no te está cuidando, te está gestionando mal. La intensidad de verdad llega cuando la técnica ya no ocupa toda tu cabeza.</p>
+<p>Si vienes de años parado o cargas peso de más, el artículo de <a href="/blog/artes-marciales-con-sobrepeso/">empezar artes marciales con sobrepeso</a> desarrolla cómo plantear ese primer mes y qué preguntar para no acabar en un grupo que no te corresponde.</p>
+
+<h2>Cuántos días a la semana, y por qué cuatro suele salir mal</h2>
+<p>Dos días por semana es el punto de entrada razonable, y tres es donde la mayoría se estabiliza cuando el hábito ya está hecho. La tentación, con un objetivo de peso por delante, es firmar cinco desde el primer día.</p>
+<p>Es el camino corto al abandono. El riesgo de lesión cuenta, pero pesa más otra cosa: cinco días obligan a reorganizar la vida entera de golpe. Cualquier semana rara, una guardia, un niño con fiebre o una obra en la carretera, tira el plan abajo y luego cuesta volver.</p>
+<p>Si quieres mover más volumen, la salida sensata no es un cuarto día de clase. Es añadir algo que no dependa de horarios ni de trayecto: caminar rápido, bici, lo que sea que puedas hacer sin que nadie te abra una puerta. La clase la reservas para los dos o tres días que sabes que vas a cumplir.</p>
+
+<h2>Las promesas que deberían hacerte desconfiar</h2>
+<p>Ningún centro serio de la comarca hace esto, pero el formato existe y conviene reconocerlo:</p>
+<ul>
+<li><strong>Cifras de pérdida con plazo.</strong> "Diez kilos en tres meses" no lo puede garantizar nadie que no controle lo que comes ni tu historia clínica.</li>
+<li><strong>Básculas de bioimpedancia en recepción con un suplemento al lado.</strong> Esa combinación no es asesoramiento deportivo.</li>
+<li><strong>Planes de alimentación repartidos por el entrenador.</strong> Salvo que además sea dietista-nutricionista, se está metiendo donde no debe.</li>
+<li><strong>Bonos largos con descuento agresivo y permanencia.</strong> Si el modelo del centro es que pagues doce meses y vayas tres, el descuento no te está haciendo ningún favor.</li>
+</ul>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>El orden que recomendamos es el aburrido, y funciona. Primero mira qué hay a menos de quince minutos de tu casa en el <a href="/centros/">directorio</a>. Después ve a una clase de prueba de lo que más te llame de entre eso. Y decide con las piernas, no con la tabla.</p>
+<p>Para el contexto de cada perfil están las guías de <a href="/clases-para-adultos/">clases para adultos</a> en la comarca y, si vives en la capital, la de <a href="/clases-para-adultos-en-vilanova/">clases para adultos en Vilanova</a>. Si estás en la punta oeste, la de <a href="/taekwondo-en-cubelles/">taekwondo en Cubelles</a> es la oferta verificada de ese municipio.</p>
+<p>¿Quieres que te ayudemos a acotar? <a href="/contacto/">Cuéntanos</a> en qué municipio estás, cuántos días puedes entrenar y si arrastras alguna lesión, y te orientamos sin coste.</p>
+`,
   'blog/cursos-defensa-personal-fin-de-semana': `
 <h2>Lo que en realidad se pregunta quien busca un curso de dos días</h2>
 <p>Nadie busca un curso de defensa personal de fin de semana un martes cualquiera sin motivo. Detrás casi siempre hay algo concreto y reciente: un susto en un aparcamiento de Vilanova, un cambio de turno que obliga a volver de noche por el paseo, una hija que se va a vivir sola. La búsqueda dice "curso". Lo que se está preguntando es otra cosa: <strong>si dos tardes pueden cambiar cómo reaccionarías si pasara algo</strong>.</p>
@@ -1696,8 +1804,8 @@ export const BLOG_BODIES: Record<string, string> = {
 // ────────────────────────────────────────────────────────────────────────────
 export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Disciplinas
-  'boxeo': ['blog/artes-marciales-y-estres', 'blog/donde-aprender-boxeo-en-el-garraf'],
-  'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/muay-thai-o-kickboxing'],
+  'boxeo': ['blog/artes-marciales-para-perder-peso', 'blog/donde-aprender-boxeo-en-el-garraf'],
+  'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/artes-marciales-para-perder-peso'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
   'taekwondo': ['blog/arte-marcial-para-nino-muy-nervioso', 'blog/mi-hijo-quiere-dejar-las-clases'],
@@ -1721,8 +1829,8 @@ export const BLOG_POR_TEMA: Record<string, string[]> = {
   'clases-para-mujeres-en-vilanova': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],
   'clases-para-adultos-en-sitges': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
   'clases-para-adultos-en-vilanova': ['blog/artes-marciales-y-estres', 'blog/empezar-artes-marciales-a-los-40'],
-  'sitges': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
-  'vilanova-i-la-geltru': ['blog/extraescolar-artes-marciales-vuelta-al-cole', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'sitges': ['blog/horarios-tipicos-de-las-clases', 'blog/artes-marciales-o-futbol-extraescolar'],
+  'vilanova-i-la-geltru': ['blog/horarios-tipicos-de-las-clases', 'blog/artes-marciales-o-futbol-extraescolar'],
 };
 
 /** Artículos relacionados con una página, sin repetir la propia página. */

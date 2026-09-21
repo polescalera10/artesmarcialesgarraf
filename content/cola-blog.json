@@ -40,7 +40,9 @@
     "blog/mi-hijo-quiere-dejar-las-clases",
     "blog/clases-mixtas-o-solo-mujeres",
     "cursos-defensa-personal-fin-de-semana",
-    "artes-marciales-con-sobrepeso"
+    "artes-marciales-con-sobrepeso",
+    "horarios-tipicos-de-las-clases",
+    "artes-marciales-para-perder-peso"
   ],
   "cola": [
     {
@@ -752,7 +754,7 @@
       "publicado_en": null,
       "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente.",
       "intencion_comercial": "alta",
-      "ancla_local": "Comarcal por definicion: la entrada existe para capturar la busqueda con modificador local. Saltada el 2026-09-13 y de nuevo el 2026-09-17: requiere_datos sin cumplir, sigue sin haber sondeo de tarifas publicas de 5 centros del directorio."
+      "ancla_local": "Comarcal por definicion: la entrada existe para capturar la busqueda con modificador local. Saltada el 2026-09-13 y de nuevo el 2026-09-17: requiere_datos sin cumplir, sigue sin haber sondeo de tarifas publicas de 5 centros del directorio. Saltada de nuevo el 2026-09-21 por el mismo motivo: el directorio no publica precios por diseño y sigue sin haber sondeo de tarifas publicas de 5 centros."
     },
     {
       "id": 33,
@@ -771,11 +773,11 @@
         "/sitges/",
         "/vilanova-i-la-geltru/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-21",
       "requiere_datos": "Solo con horarios publicados en fuentes públicas de los centros del directorio. Nada de franjas inventadas. Si no hay fuentes suficientes, escribir en clave de 'qué preguntar' y no de 'estos son los horarios'.",
       "intencion_comercial": "alta",
-      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local."
+      "ancla_local": "Comarcal por definición: la entrada existe para capturar la búsqueda con modificador local. Angulo usado: reparto de los 13 centros del directorio (7 Vilanova, 3 Sitges, 2 Sant Pere de Ribes, 1 Cubelles, 0 Canyelles) para explicar cuanta eleccion de horario hay en cada municipio; judo con un solo club en toda la comarca. Enlaza a /clases-infantiles-en-sitges/ y /clases-para-adultos-en-vilanova/."
     },
     {
       "id": 34,
@@ -1023,10 +1025,10 @@
         "/clases-para-adultos/",
         "/centros/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-21",
       "estacionalidad": "enero",
-      "ancla_local": "Alta intención de alta. Sin promesas de resultados: gasto real por disciplina y qué hay en la comarca.",
+      "ancla_local": "Alta intención de alta. Sin promesas de resultados: gasto real por disciplina y qué hay en la comarca. Angulo usado: kickboxing (7 centros) y boxeo (6) solo constan en Vilanova y Sitges; en Sant Pere de Ribes y Cubelles la unica disciplina verificada es taekwondo y en Canyelles no consta ninguna, asi que la adherencia depende del trayecto. Enlaza a /clases-para-adultos/, /clases-para-adultos-en-vilanova/ y /taekwondo-en-cubelles/.",
       "intencion_comercial": "alta"
     },
     {
