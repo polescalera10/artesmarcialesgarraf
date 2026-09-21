@@ -1,7 +1,7 @@
 {
   "_nota": "Cola editorial del blog. La mantiene el agente programado; ver PLAYBOOK-BLOG.md antes de escribir nada.",
   "generado": "2026-08-15",
-  "ultima_revision_cola": "2026-08-25",
+  "ultima_revision_cola": "2026-09-21",
   "_revision_cada_dias": 20,
   "metodologia": "Keyword research informacional. El research previo (keyword-research-artesmarcialesgarraf.xlsx, 85 keywords) es casi todo transaccional/local y ya está cubierto por las 62 money pages y hubs. Sin ficha de Google Business no se puede entrar en el Map Pack, así que las head terms transaccionales tienen techo: el tráfico realista de este activo es informacional de cola larga con intención de conversión (padre buscando dónde apuntar al hijo, adulto que quiere empezar). Estas 50 entradas atacan esa capa sin canibalizar ninguna página existente.",
   "cadencia": {
@@ -39,10 +39,10 @@
     "blog/cuantos-dias-semana-entrena-un-nino",
     "blog/mi-hijo-quiere-dejar-las-clases",
     "blog/clases-mixtas-o-solo-mujeres",
-    "cursos-defensa-personal-fin-de-semana",
-    "artes-marciales-con-sobrepeso",
-    "horarios-tipicos-de-las-clases",
-    "artes-marciales-para-perder-peso"
+    "blog/cursos-defensa-personal-fin-de-semana",
+    "blog/artes-marciales-con-sobrepeso",
+    "blog/horarios-tipicos-de-las-clases",
+    "blog/artes-marciales-para-perder-peso"
   ],
   "cola": [
     {
@@ -567,7 +567,7 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "ancla_local": "Qué preguntar al centro y al profesional sanitario. Grupos y horarios compatibles en la comarca.",
+      "ancla_local": "El único grupo femenino que consta en el directorio es de jiu-jitsu, en un centro de Vilanova; en el resto de la comarca la reincorporación se hace en grupo mixto, y eso cambia lo que hay que preguntar. La pauta la marca siempre el profesional sanitario.",
       "intencion_comercial": "media"
     },
     {
@@ -613,10 +613,11 @@
         "/blog/a-que-edad-empezar-artes-marciales/",
         "/centros/"
       ],
-      "estado": "pendiente",
+      "estado": "descartado",
       "publicado_en": null,
       "ancla_local": "Tramo con poca oferta específica. Decir qué hay realmente en la comarca y qué preguntar.",
-      "intencion_comercial": "media"
+      "intencion_comercial": "media",
+      "motivo_descarte": "Canibaliza 'empezar-artes-marciales-a-los-40' (publicado el 2026-09-01), que ya cubre explícitamente el tramo de 35 a 50 y la misma conversación previa con el centro. Además su ancla_local era abstracta: el directorio no permite decir nada concreto sobre oferta por tramos de edad adulta."
     },
     {
       "id": 27,
@@ -662,7 +663,7 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "ancla_local": "Reincorporación: grado antiguo, grupos de nivel y qué centros del Garraf separan por nivel.",
+      "ancla_local": "Ningún centro del directorio explicita en su fuente pública si separa grupos por nivel. Con seis de los trece anunciando tres o más disciplinas bajo el mismo techo, la pregunta concreta en el Garraf es si el grupo de iniciación y el avanzado comparten hora.",
       "intencion_comercial": "media"
     },
     {
@@ -935,7 +936,7 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "ancla_local": "Objeción previa a apuntarse. Qué preguntar sobre material y supervisión en un centro del Garraf.",
+      "ancla_local": "Reparto real del directorio por tipo de riesgo: siete centros con kickboxing y seis con boxeo (golpeo), cinco con jiu-jitsu brasileño y uno solo con judo (caída y agarre). Qué preguntar sobre material y supervisión en cada caso.",
       "intencion_comercial": "media"
     },
     {
@@ -1003,7 +1004,7 @@
       ],
       "estado": "pendiente",
       "publicado_en": null,
-      "ancla_local": "Objeción concreta del adulto principiante. Cómo se gradúa el contacto y qué preguntar en el Garraf.",
+      "ancla_local": "El sparring vive en las disciplinas de golpeo, que son justo las que más constan en la comarca: siete centros con kickboxing, seis con boxeo y dos que además citan K-1. De muay thai, ninguno. Cómo se gradúa el contacto y qué preguntar en el Garraf.",
       "intencion_comercial": "media"
     },
     {
@@ -1157,9 +1158,271 @@
         "/taekwondo/",
         "/karate/"
       ],
-      "estado": "pendiente",
+      "estado": "descartado",
       "publicado_en": null,
       "ancla_local": "Tema catalán con autoridad temática. Qué clubs del Garraf constan federados según fuente pública.",
+      "intencion_comercial": "media",
+      "motivo_descarte": "Se solapa con la entrada 36 (licencia federativa y seguro deportivo), que cubre lo mismo con intención más cercana a la decisión. El dato local que aportaría (qué clubs constan federados) ya lo da el directorio: dos de los trece centros se verificaron vía federación."
+    },
+    {
+      "id": 51,
+      "slug": "que-es-el-grappling-y-donde-se-practica",
+      "h1": "Grappling en el Garraf: Qué Es y Dónde Consta",
+      "keyword_principal": "grappling garraf",
+      "keywords_secundarias": [
+        "grappling vilanova i la geltrú",
+        "qué es el grappling",
+        "grappling sin kimono sitges"
+      ],
+      "cluster": "disciplinas",
+      "prioridad": 1,
+      "angulo": "La palabra aparece en la oferta de varios centros de la comarca y no tiene página de disciplina en la guía. Qué es la lucha de agarre sin kimono, en qué se diferencia del jiu-jitsu brasileño con gi y del judo, y para quién tiene sentido. No es la entrada 8 descartada (gi o no gi era un nicho técnico para quien ya entrena): aquí el lector ha visto la palabra en un centro del Garraf y no sabe qué es.",
+      "enlaces_internos": [
+        "/jiu-jitsu-brasileno/",
+        "/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/",
+        "/mma/",
+        "/centros/",
+        "/vilanova-i-la-geltru/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Tres de los trece centros del directorio citan grappling como actividad propia (uno en Vilanova, dos en Sitges) y ninguna página de disciplina lo cubre; el jiu-jitsu brasileño con kimono, en cambio, consta en cinco.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 52,
+      "slug": "fitboxing-o-boxeo-en-el-garraf",
+      "h1": "Fitboxing en el Garraf: Qué Vas a Encontrar de Verdad",
+      "keyword_principal": "fitboxing vilanova i la geltrú",
+      "keywords_secundarias": [
+        "fitboxing garraf",
+        "fitboxing o boxeo",
+        "fitboxing sitges"
+      ],
+      "cluster": "disciplinas",
+      "prioridad": 1,
+      "angulo": "Quien busca fitboxing quiere el gasto físico del boxeo sin que le peguen. Explicar el formato (golpeo al aire o al saco con música, sin oponente), por qué en la comarca lo que consta es boxeo con grupos de iniciación sin contacto obligatorio, y cómo preguntar para no acabar en una clase que no esperaba.",
+      "enlaces_internos": [
+        "/boxeo/",
+        "/boxeo-en-vilanova-i-la-geltru/",
+        "/kickboxing/",
+        "/centros/",
+        "/iniciacion/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Ningún centro del directorio anuncia fitboxing con ese nombre. Lo que consta son seis centros con boxeo y siete con kickboxing, y dos de ellos citan además área fitness: el artículo es exactamente el dato de lo que NO existe en la comarca y qué hay en su lugar.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 53,
+      "slug": "aikido-y-kung-fu-en-el-garraf",
+      "h1": "Aikido y Kung Fu en el Garraf: Lo Que Consta y lo Que No",
+      "keyword_principal": "aikido garraf",
+      "keywords_secundarias": [
+        "kung fu vilanova i la geltrú",
+        "aikido sitges",
+        "wushu garraf"
+      ],
+      "cluster": "disciplinas",
+      "prioridad": 2,
+      "angulo": "Dos búsquedas recurrentes que la comarca no puede responder con un club propio. Decirlo claro, explicar qué son y en qué se parecen a lo que sí hay cerca (judo para el trabajo de agarre y caída, karate para la forma y el grado), sin vender un sustituto que no lo es.",
+      "enlaces_internos": [
+        "/judo/",
+        "/judo-en-vilanova-i-la-geltru/",
+        "/karate/",
+        "/centros/",
+        "/vilanova-i-la-geltru/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Ni aikido ni kung fu tienen centro propio en el Garraf: aikido, wu shu y taijitsu constan solo como actividades citadas por una escuela de judo de Vilanova, que además es la única escuela de judo de toda la comarca.",
+      "intencion_comercial": "media"
+    },
+    {
+      "id": 54,
+      "slug": "karate-kyokushin-le-conviene-a-un-nino",
+      "h1": "Karate Kyokushin: Qué Es y si le Conviene a un Niño",
+      "keyword_principal": "karate kyokushin niños",
+      "keywords_secundarias": [
+        "qué es el karate kyokushin",
+        "kyokushin vilanova",
+        "estilos de karate para niños"
+      ],
+      "cluster": "ninos",
+      "prioridad": 2,
+      "angulo": "La pregunta aparece cuando un padre mira la web de un centro y se encuentra una palabra que no esperaba. Qué distingue al kyokushin (contacto pleno al cuerpo, sin golpeo a la cara) del karate deportivo de puntuación, y qué preguntar sobre el grupo infantil antes de apuntar a nadie.",
+      "enlaces_internos": [
+        "/karate/",
+        "/karate-infantil-en-vilanova/",
+        "/clases-para-ninos/",
+        "/centros/",
+        "/blog/karate-o-judo-para-ninos/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Es el único estilo de karate que un centro del Garraf nombra de forma explícita en su fuente pública, en Vilanova, de los tres centros con karate que constan en el directorio. La búsqueda no es genérica: nace de leer la web de un centro concreto de la comarca.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 55,
+      "slug": "apuntar-al-nino-a-mitad-de-curso",
+      "h1": "Apuntar al Niño a Mitad de Curso: Se Puede, con Matices",
+      "keyword_principal": "apuntar niño artes marciales a mitad de curso",
+      "keywords_secundarias": [
+        "empezar extraescolar en enero",
+        "apuntarse a karate a mitad de curso",
+        "artes marciales enero niños"
+      ],
+      "cluster": "ninos",
+      "prioridad": 1,
+      "angulo": "Enero y la vuelta de Semana Santa. Qué se pierde al entrar con el grupo ya formado (el bloque de grados, no la técnica básica), cómo se recupera, y por qué el trimestre que arranca en enero suele ser buen momento para probar sin comprometer el curso entero.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/clases-infantiles-en-vilanova/",
+        "/centros/",
+        "/blog/primer-dia-clase-artes-marciales-nino/",
+        "/blog/extraescolar-artes-marciales-vuelta-al-cole/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Cinco de los trece centros del directorio citan clases infantiles (dos en Vilanova, tres en Sitges) y ninguno de los clubs de Sant Pere de Ribes ni el de Cubelles lo explicita en su fuente pública: a mitad de curso eso cambia a quién hay que preguntar y dónde.",
+      "intencion_comercial": "alta",
+      "estacionalidad": "enero"
+    },
+    {
+      "id": 56,
+      "slug": "artes-marciales-para-adolescentes-garraf",
+      "h1": "Artes Marciales para Adolescentes en el Garraf",
+      "keyword_principal": "artes marciales para adolescentes garraf",
+      "keywords_secundarias": [
+        "artes marciales 14 años vilanova",
+        "deporte para adolescentes sitges",
+        "clases juveniles artes marciales garraf"
+      ],
+      "cluster": "adolescentes",
+      "prioridad": 1,
+      "angulo": "El hueco entre el grupo infantil, que se le queda pequeño a los 13, y el de adultos, donde entra con gente de treinta y cinco. Qué disciplinas absorben mejor a un adolescente que empieza, qué preguntar sobre el grupo, y por qué la respuesta cambia de municipio a municipio.",
+      "enlaces_internos": [
+        "/clases-para-ninos/",
+        "/clases-para-adultos/",
+        "/centros/",
+        "/vilanova-i-la-geltru/",
+        "/jiu-jitsu-brasileno/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "De los trece centros del directorio, solo uno (en Vilanova) cita un grupo juvenil además del infantil. En el resto, el adolescente cae en infantil o en adultos, y esa es la pregunta concreta que hay que hacer en el Garraf antes de apuntarle.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 57,
+      "slug": "entrenar-dos-disciplinas-a-la-vez",
+      "h1": "Entrenar Dos Disciplinas a la Vez: Cuándo Suma",
+      "keyword_principal": "entrenar dos artes marciales a la vez",
+      "keywords_secundarias": [
+        "combinar boxeo y jiu jitsu",
+        "dos disciplinas mismo centro vilanova",
+        "compaginar dos artes marciales"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "La combinación que sí tiene sentido para alguien que empieza (una de golpeo y una de agarre) frente a la que solo parte el mismo tiempo en dos. Y el detalle práctico: en el Garraf casi nunca hace falta cambiar de club para hacerlo.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/centros/",
+        "/jiu-jitsu-brasileno/",
+        "/kickboxing/",
+        "/blog/golpeo-o-agarre-por-donde-empezar/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Seis de los trece centros del directorio anuncian tres o más disciplinas bajo el mismo techo y cinco combinan golpeo y agarre. En la comarca la pregunta no es si se puede, sino en qué centro cabe sin cambiar de club.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 58,
+      "slug": "desplazarse-a-otro-municipio-para-entrenar",
+      "h1": "Si Te Toca Desplazarte para Entrenar: Cómo No Abandonar",
+      "keyword_principal": "desplazarse para entrenar artes marciales",
+      "keywords_secundarias": [
+        "de canyelles a vilanova para entrenar",
+        "artes marciales lejos de casa",
+        "cuánto se tarda de sitges a vilanova"
+      ],
+      "cluster": "logistica",
+      "prioridad": 1,
+      "angulo": "En una comarca con la oferta concentrada en dos municipios, lo que hace abandonar no suele ser la disciplina, es el trayecto. Qué distancia aguanta una rutina de dos días por semana, cómo encaja la R2 Sud, y qué hacer cuando en el municipio propio no hay nada.",
+      "enlaces_internos": [
+        "/centros/",
+        "/canyelles/",
+        "/cubelles/",
+        "/vilanova-i-la-geltru/",
+        "/blog/como-elegir-centro-artes-marciales-garraf/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "El reparto real del directorio: siete centros en Vilanova, tres en Sitges, dos en Sant Pere de Ribes, uno en Cubelles y ninguno en Canyelles. Con los tiempos del eje C-31 y de la R2 Sud, no con distancias en abstracto.",
+      "intencion_comercial": "alta"
+    },
+    {
+      "id": 59,
+      "slug": "entrenar-en-sitges-por-temporadas",
+      "h1": "Entrenar en Sitges Solo Unos Meses al Año",
+      "keyword_principal": "artes marciales sitges temporada",
+      "keywords_secundarias": [
+        "apuntarse unos meses sitges",
+        "artes marciales sitges verano",
+        "clases sueltas artes marciales sitges"
+      ],
+      "cluster": "adultos",
+      "prioridad": 2,
+      "angulo": "Residencia de temporada, segunda vivienda y estancias de trabajo. Qué se puede preguntar (alta por meses, clases sueltas, si el grupo para en agosto) y qué no se puede prometer desde la guía, porque el directorio no publica tarifas ni calendarios.",
+      "enlaces_internos": [
+        "/sitges/",
+        "/centros/",
+        "/clases-para-adultos-en-sitges/",
+        "/iniciacion/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "Sitges concentra tres de los trece centros del directorio y Vilanova siete, a 10-15 minutos. Para una estancia corta ese reparto decide si compensa preguntar en el municipio o directamente en la capital de comarca.",
+      "intencion_comercial": "media",
+      "estacionalidad": "verano"
+    },
+    {
+      "id": 60,
+      "slug": "empezar-con-una-lesion-antigua",
+      "h1": "Empezar con una Lesión Antigua: Qué Contar en el Centro",
+      "keyword_principal": "empezar artes marciales con lesión de rodilla",
+      "keywords_secundarias": [
+        "artes marciales con problemas de espalda",
+        "entrenar con lesión antigua",
+        "qué disciplina si tengo lesiones"
+      ],
+      "cluster": "salud",
+      "prioridad": 2,
+      "angulo": "No es la entrada 40 (lesiones típicas y prevención): esta es la conversación previa. Qué información necesita el instructor para poder adaptar, qué disciplinas permiten regular la intensidad sin salirse de la clase, y la remisión explícita al profesional sanitario, que es quien decide si se puede o no.",
+      "enlaces_internos": [
+        "/iniciacion/",
+        "/clases-para-adultos/",
+        "/karate/",
+        "/jiu-jitsu-brasileno/",
+        "/centros/",
+        "/contacto/"
+      ],
+      "estado": "pendiente",
+      "publicado_en": null,
+      "ancla_local": "El margen real en la comarca según el directorio: el kickboxing consta en siete centros y el jiu-jitsu brasileño en cinco, pero el judo, la disciplina con más caída al suelo, en uno solo. Con una lesión antigua ese reparto reduce mucho el mapa de opciones del Garraf.",
       "intencion_comercial": "media"
     }
   ],
