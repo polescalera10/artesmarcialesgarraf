@@ -8,6 +8,96 @@
 // ────────────────────────────────────────────────────────────────────────────
 
 export const BLOG_BODIES: Record<string, string> = {
+  'blog/que-es-el-grappling-y-donde-se-practica': `
+<h2>Qué es el grappling y por qué lo has visto escrito en el Garraf</h2>
+<p>Grappling es lucha de agarre sin kimono. No hay golpes: se trata de controlar al otro, llevarlo al suelo y trabajar posiciones y sumisiones agarrando el cuerpo, no la ropa. Si has llegado hasta aquí es porque viste la palabra en el horario de un centro de la comarca y no supiste si era una disciplina aparte, una clase suelta o el nombre moderno de algo que ya conocías.</p>
+<p>Las tres cosas son un poco ciertas, y ahí está el lío. En nuestro <a href="/centros/">directorio de centros del Garraf</a>, grappling aparece como actividad en <strong>tres de los trece centros que constan</strong> con fuente pública verificable: uno en Vilanova i la Geltrú y dos en Sitges. En ninguno de los tres es la disciplina principal, sino una clase dentro de una oferta más amplia. Eso condiciona bastante lo que te vas a encontrar al entrar por la puerta.</p>
+
+<h2>La diferencia con el jiu-jitsu brasileño no está en el suelo</h2>
+<p>Es el malentendido más repetido. Mucha gente cree que el <a href="/jiu-jitsu-brasileno/">jiu-jitsu brasileño</a> es el suelo y que el grappling es de pie, o alguna variante de esa idea. No funciona así. Los dos viven casi todo el tiempo en el suelo y comparten el repertorio de control, guardias y sumisiones. Lo que cambia es de dónde agarras.</p>
+<p>Con kimono, la tela es una herramienta: puedes sujetar una solapa, frenar con una manga, estrangular con el propio cuello del gi. Sin kimono desaparece todo eso y solo te quedan el cuello, las muñecas, los codos, las rodillas y la presión del cuerpo. El efecto práctico es que el trabajo sin gi va más rápido, resbala más y perdona menos los errores de posición, porque nadie puede sujetarte quieto por la ropa. A cambio, con kimono el ritmo es más lento y suele enseñar mejor los detalles.</p>
+<p>Ninguno de los dos es la versión avanzada del otro. Son dos maneras de practicar la misma lucha, y hay gente que entrena las dos en la misma semana sin que le suponga un conflicto.</p>
+
+<h2>Con el judo, el corte está en la fase de pie</h2>
+<p>El <a href="/judo/">judo</a> también es agarre, también usa kimono y también acaba en el suelo, pero ordena sus prioridades al revés: la proyección desde de pie es el centro del deporte y el trabajo de suelo tiene el tiempo contado en competición. En grappling, el derribo es el peaje para llegar a donde pasa lo interesante.</p>
+<p>Hay otra diferencia que se nota desde el primer día y que casi nunca sale en las comparativas: en judo aprendes a caerte antes que ninguna otra cosa. Las caídas ocupan la primera semana entera. En una clase de grappling es habitual empezar ya en el suelo, de rodillas, sin que haya volado nadie. Si el impacto es lo que te frena, ese detalle pesa más que cualquier comparación técnica. Lo desarrollamos en la guía de <a href="/blog/judo-o-jiu-jitsu-brasileno/">judo o jiu-jitsu brasileño</a>.</p>
+
+<h2>Para quién encaja, y para quién no</h2>
+<p>Encaja bien si quieres una disciplina de contacto en la que nadie te golpee la cabeza, si te atrae el lado de resolver problemas (el tópico del ajedrez humano es tópico porque se ajusta bastante) o si vienes de las <a href="/mma/">artes marciales mixtas</a> y necesitas la parte de lucha por separado. También es de las entradas más amables pasados los cuarenta, porque el ritmo lo negocia cada pareja y no hay una campana que lo imponga.</p>
+<p>Encaja mal si lo que buscas es desahogarte pegando. Encaja mal, también, si el contacto físico continuo con desconocidos te incomoda: aquí es constante y a corta distancia, mucho más que en cualquier disciplina de golpeo, y conviene saberlo antes de pagar una cuota. Y si arrastras una lesión cervical, de hombro o de rodilla sin resolver, esa conversación la tienes que tener con tu médico antes que con el instructor, porque las palancas y los estrangulamientos trabajan exactamente ahí.</p>
+
+<h2>El matiz incómodo: la palabra no siempre significa lo mismo</h2>
+<p>Grappling no es una marca registrada ni un título federativo, así que en un horario puede querer decir cosas bastante distintas:</p>
+<ul>
+<li>Una clase de jiu-jitsu brasileño sin kimono, con el mismo profesor y el mismo temario que la de gi. Es lo más frecuente.</li>
+<li>Una sesión de lucha dentro de un programa de MMA, con más peso en los derribos y en saber levantarse que en las sumisiones.</li>
+<li>Un bloque de lucha libre, casi todo de pie, orientado al control y la proyección.</li>
+<li>Un entrenamiento abierto sin temario, rondas seguidas, pensado para quien ya tiene base.</li>
+</ul>
+<p>La última es la que peor le sienta a un principiante, porque no es una clase: es práctica libre. No tiene nada de malo en sí, pero si llegas sin saber dónde poner las manos vas a pasar una hora incómoda y a aprender poco.</p>
+
+<h2>Qué preguntar antes de apuntarte</h2>
+<p>Cuatro preguntas por teléfono resuelven casi todo:</p>
+<ul>
+<li><strong>¿Hay grupo de iniciación separado?</strong> Si te responden que entrenan todos juntos y que ya te irás adaptando, ya tienes la información que buscabas.</li>
+<li><strong>¿La clase tiene temario o son rondas?</strong> Para empezar quieres lo primero.</li>
+<li><strong>¿Se puede ir sin kimono desde el primer día?</strong> En el trabajo sin gi lo normal es que sí, con camiseta ajustada y pantalón corto o mallas sin bolsillos ni cremalleras. Es de las disciplinas más baratas de arrancar.</li>
+<li><strong>¿Cómo se introduce la resistencia del compañero?</strong> Igual que el sparring en golpeo, debe ser progresiva y opcional al principio.</li>
+</ul>
+<p>Si vas a ver una clase antes de decidir, la guía de <a href="/blog/clase-de-prueba-que-preguntar/">qué preguntar en una clase de prueba</a> te sirve entera.</p>
+
+<h2>Dónde consta en la comarca, y qué hacer si te pilla lejos</h2>
+<p>Los tres centros donde la palabra aparece están en <a href="/vilanova-i-la-geltru/">Vilanova i la Geltrú</a> y en <a href="/sitges/">Sitges</a>. Si lo que quieres es lucha de agarre y la etiqueta te da igual, el margen es mayor de lo que parece: el jiu-jitsu brasileño consta en cinco centros de la comarca, tres en Vilanova y dos en Sitges, y es habitual que alguna sesión semanal se haga sin kimono. Tienes el detalle en la guía de <a href="/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/">jiu-jitsu brasileño en Vilanova i la Geltrú</a>.</p>
+<p>Desde Sant Pere de Ribes, Cubelles o Canyelles la respuesta es la de siempre en esta comarca: toca moverse. Los dos clubs que constan en Sant Pere de Ribes y el que consta en Cubelles son de taekwondo, y en Canyelles no consta ninguno. Sitges y Vilanova están a 10-15 minutos en coche entre sí y la R2 Sud conecta los núcleos principales, así que dos desplazamientos por semana son asumibles. Lo que no lo es: apuntarse al grupo de las 21:00 en el municipio de al lado cuando sales de trabajar a las 20:45.</p>
+
+<h2>Empezar importa más que acertar con la palabra</h2>
+<p>Nuestra recomendación para alguien que parte de cero es que no se obsesione con si el cartel dice grappling, no gi o jiu-jitsu. Busca un grupo de iniciación con temario y un profesor que corrija por el nombre, y tendrás resuelto casi todo lo que decide si sigues entrenando dentro de seis meses. La diferencia entre etiquetas la vas a entender solo, al tercer mes, sin que nadie te la explique.</p>
+<p>Puedes ver qué anuncia cada club en el <a href="/centros/">directorio de centros del Garraf</a>, con la fuente pública y la fecha en que comprobamos cada ficha, o empezar por la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> si todavía dudas entre golpeo y agarre. Y si prefieres que te lo concretemos, <a href="/contacto/">escríbenos</a> con tu municipio, tu edad y qué buscas, y te orientamos sin coste.</p>
+`,
+
+  'blog/fitboxing-o-boxeo-en-el-garraf': `
+<h2>Fitboxing en el Garraf: la búsqueda existe, el cartel no</h2>
+<p><strong>Ningún centro del Garraf anuncia fitboxing con ese nombre.</strong> Ninguno de los trece que constan en nuestro <a href="/centros/">directorio de centros de la comarca</a> con fuente pública verificable. Lo que sí consta es <a href="/boxeo/">boxeo</a> en seis de ellos y <a href="/kickboxing/">kickboxing</a> en siete, todos repartidos entre Vilanova i la Geltrú y Sitges. Ese dato te ahorra dos tardes de llamadas.</p>
+<p>Eso no significa que en el Garraf no puedas hacer lo que buscas. Significa que vas a tener que buscarlo con otra palabra, y que la clase a la que acabes yendo se parecerá al fitboxing en algunas cosas y en otras no. Vale la pena saber cuáles antes de presentarte un lunes a las ocho.</p>
+
+<h2>Qué es exactamente una clase de fitboxing</h2>
+<p>Fitboxing es golpeo sin oponente. Puñetazos, y según el formato también patadas, contra el aire o contra un saco, en grupo, con música y a ritmo marcado por quien dirige. Nadie te pega. No hay pareja que responda, no hay casco, y la técnica importa lo justo para que el gesto sea seguro y el trabajo cardiovascular funcione.</p>
+<p>Es una clase dirigida de gimnasio que toma prestado el movimiento del boxeo. Ese es su mérito y también su límite: te da una hora intensa y previsible, sin la incertidumbre de tener a alguien delante decidiendo cosas.</p>
+
+<h2>Lo que hay en la comarca en su lugar</h2>
+<p>Lo que sí vas a encontrar en el Garraf son grupos de iniciación de boxeo y de kickboxing. Y aquí conviene deshacer un miedo bastante extendido: <strong>una clase de iniciación de boxeo no es dos personas pegándose</strong>. Las primeras semanas son desplazamiento, guardia, técnica al aire, saco y manoplas con el instructor. El contacto, cuando llega, es progresivo, opcional y supervisado, y en muchos grupos de adultos hay gente que lleva años entrenando sin haber hecho sparring nunca.</p>
+<p>Dicho de otro modo: la distancia entre el fitboxing que imaginas y el boxeo de iniciación que hay en Vilanova o en Sitges es bastante más corta de lo que la palabra boxeo sugiere. Si el tema te preocupa, lo tratamos a fondo en la guía sobre <a href="/blog/entrenar-sin-querer-competir/">entrenar sin querer competir</a>.</p>
+
+<h2>Qué ganas y qué pierdes al cambiar de etiqueta</h2>
+<p>Ganas corrección individual. En una clase dirigida de golpeo al aire, con veinte personas y música alta, nadie te va a decir que estás dejando caer la mano al retirar el directo. En un grupo de boxeo, sí, y eso cambia cómo te sientes a los tres meses. Ganas también progresión: hay algo que aprender después de la primera semana.</p>
+<p>Pierdes previsibilidad. La clase dirigida siempre dura lo mismo, empieza igual y no te obliga a interactuar con nadie. Un grupo de boxeo tiene ejercicios por parejas desde bastante pronto, aunque sean suaves, y eso a determinada gente le pesa. Pierdes, quizá, algo de intensidad cardiovascular continua: en boxeo hay pausas técnicas, explicaciones, correcciones.</p>
+<p>Si tu objetivo es pasar una hora sudando sin tener que hablar con nadie, la clase dirigida gana. Si te interesa aprender a golpear bien, no hay color.</p>
+
+<h2>El matiz incómodo: ni tan inofensivo ni tan peligroso</h2>
+<p>El fitboxing se vende como la versión segura, y no es exactamente así. Golpear al aire mil veces con la técnica mal hecha y sin nadie que corrija es una vía razonablemente directa a una molestia de codo o de hombro, porque el brazo frena en el vacío. En el saco pasa lo contrario: si la muñeca no va alineada, lo nota la muñeca.</p>
+<p>Y al revés, el boxeo de iniciación arrastra una fama que no le corresponde. El riesgo real de un grupo de adultos que no compite está más en los esguinces de tobillo y las molestias de hombro que en cualquier cosa que suene a película. Si vienes con una lesión antigua, dilo el primer día y consúltalo con tu médico o tu fisioterapeuta antes de empezar: aquí no vamos a decirte qué te conviene, porque no lo sabemos.</p>
+
+<h2>Cómo preguntar para no acabar en la clase equivocada</h2>
+<p>Cuando llames a un centro de la comarca, evita la palabra fitboxing, que no le dice nada a casi nadie aquí. Pregunta esto:</p>
+<ul>
+<li><strong>"¿Tenéis grupo de iniciación de boxeo, separado de la gente que ya lleva tiempo?"</strong> Es la pregunta que más información devuelve de todas.</li>
+<li><strong>"¿Cuándo se empieza a hacer contacto, y es obligatorio?"</strong> La respuesta correcta incluye la palabra progresivo y la palabra opcional.</li>
+<li><strong>"¿Qué parte de la clase es acondicionamiento y qué parte es técnica?"</strong> Si buscas gasto físico, te interesa saberlo antes.</li>
+<li><strong>"¿Puedo ir a ver una clase?"</strong> Un centro serio dice que sí sin pensarlo.</li>
+<li><strong>"¿Qué necesito el primer día?"</strong> Lo habitual es ropa deportiva y poco más; las vendas y los guantes llegan después, y nadie debería presionarte para comprarlos antes de la primera sesión.</li>
+</ul>
+<p>Tienes la lista completa en la <a href="/blog/clase-de-prueba-que-preguntar/">guía de la clase de prueba</a> y los criterios generales en <a href="/blog/como-elegir-centro-artes-marciales-garraf/">cómo elegir centro de artes marciales en el Garraf</a>.</p>
+
+<h2>Si lo que quieres es acondicionamiento y ya está</h2>
+<p>Es una respuesta legítima y no hace falta disfrazarla de vocación marcial. En ese caso, un par de apuntes del directorio: de los trece centros, uno cita además área fitness y otro, entrenamiento cruzado, junto a sus disciplinas. Y algunos gimnasios de la comarca que no son centros de artes marciales, y que por tanto no entran en nuestro directorio, programan clases dirigidas de golpeo. Si tu criterio es el horario y el gasto físico, ese es el camino corto.</p>
+<p>Lo que no vamos a decirte es cuánto peso vas a perder con una cosa o con la otra, porque eso no depende de la clase. Sobre lo que sí se puede decir con algo de fundamento, hablamos en el artículo sobre <a href="/blog/artes-marciales-para-perder-peso/">artes marciales para perder peso</a>.</p>
+
+<h2>Por dónde empezar en el Garraf</h2>
+<p>Si te has quedado con que quieres golpear pero sin que te devuelvan el golpe, el punto de entrada más directo de la comarca es un grupo de iniciación de <a href="/boxeo-en-vilanova-i-la-geltru/">boxeo en Vilanova i la Geltrú</a>, que es donde más centros constan. Desde <a href="/sant-pere-de-ribes/">Sant Pere de Ribes</a> o Cubelles, Vilanova y Sitges quedan a 10-15 minutos en coche, con la R2 Sud como alternativa para los núcleos con estación.</p>
+<p>Si además te tienta añadir patadas, el kickboxing consta en más centros que el boxeo y la diferencia entre ambos la desmenuzamos en <a href="/blog/boxeo-o-kickboxing/">boxeo o kickboxing</a>. Y si sigues sin tenerlo claro, la guía de <a href="/iniciacion/">iniciación a las artes marciales</a> compara las diez disciplinas por objetivo.</p>
+<p>¿Prefieres que te lo acotemos nosotros? <a href="/contacto/">Cuéntanos</a> en qué municipio estás y qué buscas, y te orientamos sin coste.</p>
+`,
+
   'blog/horarios-tipicos-de-las-clases': `
 <h2>La respuesta corta, y por qué en el Garraf se queda corta</h2>
 <p>El reparto habitual en el deporte de club es el que ya te imaginas. <strong>Los grupos infantiles ocupan la media tarde, entre la salida del colegio y la hora de cenar, y los de adultos arrancan a partir de las ocho.</strong> Esa es la respuesta que buscabas y no te va a servir de mucho, porque la pregunta real que hay detrás casi nunca es a qué hora son las clases. Es si va a haber alguna que te encaje.</p>
@@ -1804,16 +1894,16 @@ export const BLOG_BODIES: Record<string, string> = {
 // ────────────────────────────────────────────────────────────────────────────
 export const BLOG_POR_TEMA: Record<string, string[]> = {
   // Disciplinas
-  'boxeo': ['blog/artes-marciales-para-perder-peso', 'blog/donde-aprender-boxeo-en-el-garraf'],
-  'kickboxing': ['blog/boxeo-o-kickboxing', 'blog/artes-marciales-para-perder-peso'],
+  'boxeo': ['blog/fitboxing-o-boxeo-en-el-garraf', 'blog/donde-aprender-boxeo-en-el-garraf'],
+  'kickboxing': ['blog/fitboxing-o-boxeo-en-el-garraf', 'blog/boxeo-o-kickboxing'],
   'muay-thai': ['blog/muay-thai-o-kickboxing', 'blog/donde-aprender-boxeo-en-el-garraf'],
   'karate': ['blog/karate-vs-taekwondo-ninos-garraf', 'blog/karate-o-judo-para-ninos'],
   'taekwondo': ['blog/arte-marcial-para-nino-muy-nervioso', 'blog/mi-hijo-quiere-dejar-las-clases'],
   'judo': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/karate-o-judo-para-ninos'],
   'defensa-personal': ['blog/defensa-personal-para-mujeres-garraf', 'blog/cursos-defensa-personal-fin-de-semana'],
   'krav-maga': ['blog/defensa-personal-para-mujeres-garraf', 'blog/krav-maga-o-defensa-personal'],
-  'jiu-jitsu-brasileno': ['blog/judo-o-jiu-jitsu-brasileno', 'blog/artes-marciales-adultos-principiantes-garraf'],
-  'mma': ['blog/artes-marciales-adultos-principiantes-garraf', 'blog/golpeo-o-agarre-por-donde-empezar'],
+  'jiu-jitsu-brasileno': ['blog/que-es-el-grappling-y-donde-se-practica', 'blog/judo-o-jiu-jitsu-brasileno'],
+  'mma': ['blog/que-es-el-grappling-y-donde-se-practica', 'blog/golpeo-o-agarre-por-donde-empezar'],
   // Perfiles y páginas de entrada
   'clases-para-ninos': ['blog/mejor-arte-marcial-para-ninos-garraf', 'blog/mi-hijo-quiere-dejar-las-clases'],
   'clases-para-mujeres': ['blog/empezar-artes-marciales-siendo-mujer', 'blog/clases-mixtas-o-solo-mujeres'],

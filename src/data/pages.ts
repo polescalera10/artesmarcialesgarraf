@@ -629,6 +629,32 @@ const HUB_PERFIL_PAGES: PageDef[] = [
 // ── Blog pages ─────────────────────────────────────────────────────────────────
 const BLOG_PAGES: PageDef[] = [
   {
+    slug: 'blog/que-es-el-grappling-y-donde-se-practica',
+    type: 'blog',
+    meta: {
+      title: 'Grappling en el Garraf: Qué Es y Dónde Consta',
+      description: 'Qué es el grappling, en qué se diferencia del jiu-jitsu con kimono y del judo, y en cuántos centros del Garraf consta la palabra hoy.',
+    },
+    h1: 'Grappling en el Garraf: Qué Es y Dónde Consta',
+    intro: 'Lucha de agarre sin kimono: ni golpes ni tela de la que tirar. La palabra aparece en el horario de tres de los trece centros que constan en la comarca, y en ninguno como disciplina principal. Aquí va qué significa en cada caso y qué preguntar antes de apuntarte.',
+    body: BLOG_BODIES['blog/que-es-el-grappling-y-donde-se-practica'],
+    fecha: '2026-09-25',
+    phase: 2,
+  },
+  {
+    slug: 'blog/fitboxing-o-boxeo-en-el-garraf',
+    type: 'blog',
+    meta: {
+      title: 'Fitboxing en el Garraf: Qué Vas a Encontrar de Verdad',
+      description: 'Ningún centro del Garraf anuncia fitboxing. Qué hay en su lugar, en qué se parece a lo que buscas y cómo preguntar para no equivocarte de clase.',
+    },
+    h1: 'Fitboxing en el Garraf: Qué Vas a Encontrar de Verdad',
+    intro: 'Golpeo sin oponente, música y ritmo marcado: eso promete la palabra. Lo que consta en la comarca es otra cosa, seis centros con boxeo y siete con kickboxing, y ni una sola clase anunciada con ese nombre. La distancia entre ambas cosas es más corta de lo que parece.',
+    body: BLOG_BODIES['blog/fitboxing-o-boxeo-en-el-garraf'],
+    fecha: '2026-09-25',
+    phase: 2,
+  },
+  {
     slug: 'blog/horarios-tipicos-de-las-clases',
     type: 'blog',
     meta: {

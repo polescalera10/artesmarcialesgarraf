@@ -42,7 +42,9 @@
     "blog/cursos-defensa-personal-fin-de-semana",
     "blog/artes-marciales-con-sobrepeso",
     "blog/horarios-tipicos-de-las-clases",
-    "blog/artes-marciales-para-perder-peso"
+    "blog/artes-marciales-para-perder-peso",
+    "blog/que-es-el-grappling-y-donde-se-practica",
+    "blog/fitboxing-o-boxeo-en-el-garraf"
   ],
   "cola": [
     {
@@ -755,7 +757,7 @@
       "publicado_en": null,
       "requiere_datos": "BLOQUEADO hasta tener un sondeo real de tarifas públicas de al menos 5 centros del directorio. Con una sola fuente no hay rango publicable: no inventar cifras ni estimar. Si al llegar el turno no hay datos, saltar esta entrada y dejarla pendiente.",
       "intencion_comercial": "alta",
-      "ancla_local": "Comarcal por definicion: la entrada existe para capturar la busqueda con modificador local. Saltada el 2026-09-13 y de nuevo el 2026-09-17: requiere_datos sin cumplir, sigue sin haber sondeo de tarifas publicas de 5 centros del directorio. Saltada de nuevo el 2026-09-21 por el mismo motivo: el directorio no publica precios por diseño y sigue sin haber sondeo de tarifas publicas de 5 centros."
+      "ancla_local": "Comarcal por definicion: la entrada existe para capturar la busqueda con modificador local. Saltada el 2026-09-13 y de nuevo el 2026-09-17: requiere_datos sin cumplir, sigue sin haber sondeo de tarifas publicas de 5 centros del directorio. Saltada de nuevo el 2026-09-21 por el mismo motivo: el directorio no publica precios por diseño y sigue sin haber sondeo de tarifas publicas de 5 centros. Saltada de nuevo el 2026-09-25 por el mismo motivo: sigue sin haber sondeo de tarifas públicas de 5 centros del directorio y el directorio no publica precios por diseño."
     },
     {
       "id": 33,
@@ -1185,8 +1187,8 @@
         "/vilanova-i-la-geltru/",
         "/contacto/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
+      "estado": "publicado",
+      "publicado_en": "2026-09-25",
       "ancla_local": "Tres de los trece centros del directorio citan grappling como actividad propia (uno en Vilanova, dos en Sitges) y ninguna página de disciplina lo cubre; el jiu-jitsu brasileño con kimono, en cambio, consta en cinco.",
       "intencion_comercial": "alta"
     },
@@ -1211,9 +1213,9 @@
         "/iniciacion/",
         "/contacto/"
       ],
-      "estado": "pendiente",
-      "publicado_en": null,
-      "ancla_local": "Ningún centro del directorio anuncia fitboxing con ese nombre. Lo que consta son seis centros con boxeo y siete con kickboxing, y dos de ellos citan además área fitness: el artículo es exactamente el dato de lo que NO existe en la comarca y qué hay en su lugar.",
+      "estado": "publicado",
+      "publicado_en": "2026-09-25",
+      "ancla_local": "Ningún centro del directorio anuncia fitboxing con ese nombre. Lo que consta son seis centros con boxeo y siete con kickboxing, todos en Vilanova i la Geltrú y Sitges; de los trece, uno cita además área fitness y otro entrenamiento cruzado (corregido el 2026-09-25: la nota anterior decía dos con área fitness y solo consta uno). El artículo es exactamente el dato de lo que NO existe en la comarca y qué hay en su lugar.",
       "intencion_comercial": "alta"
     },
     {

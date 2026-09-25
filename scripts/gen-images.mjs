@@ -245,6 +245,8 @@ for (const [i, [slug, titulo, icon, sub]] of PERFILES.entries()) {
 }
 
 const BLOG = [
+  ['que-es-el-grappling-y-donde-se-practica', 'Qué es el grappling', 'jiu-jitsu-brasileno', 'Lucha de agarre sin kimono: dónde consta en la comarca'],
+  ['fitboxing-o-boxeo-en-el-garraf', 'Fitboxing en el Garraf', 'boxeo', 'Nadie lo anuncia aquí: qué hay en su lugar'],
   ['horarios-tipicos-de-las-clases', 'Horarios de clase', 'brujula', 'Qué franjas hay y cuántas opciones según tu municipio'],
   ['artes-marciales-para-perder-peso', 'Entrenar y perder peso', 'boxeo', 'Adherencia, trayecto y qué esperar de verdad'],
   ['mi-hijo-quiere-dejar-las-clases', 'Quiere dejarlo', 'personas', 'El bajón normal, el problema real y qué mover primero'],
