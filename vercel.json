@@ -3,58 +3,1165 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": null,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
-    },
-    {
-      "source": "/(.*)\\.(js|css|svg|png|jpg|webp|woff2)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "artesmarcialesgarraf.vercel.app" }],
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
-    }
-  ],
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
     {
-      "source": "/artes-marciales-cerca-de-sant-pere-de-ribes",
-      "destination": "/sant-pere-de-ribes/",
+      "source": "/",
+      "destination": "https://artesmarciales.cat/",
       "permanent": true
     },
     {
-      "source": "/artes-marciales-cerca-de-cubelles",
-      "destination": "/cubelles/",
+      "source": "/centros/",
+      "destination": "https://artesmarciales.cat/centros/",
       "permanent": true
     },
     {
-      "source": "/artes-marciales-cerca-de-canyelles",
-      "destination": "/canyelles/",
+      "source": "/centros",
+      "destination": "https://artesmarciales.cat/centros/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "https://artesmarciales.cat/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://artesmarciales.cat/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/contacto/",
+      "destination": "https://artesmarciales.cat/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/contacto",
+      "destination": "https://artesmarciales.cat/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nosotros/",
+      "destination": "https://artesmarciales.cat/sobre-nosotros/",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nosotros",
+      "destination": "https://artesmarciales.cat/sobre-nosotros/",
+      "permanent": true
+    },
+    {
+      "source": "/aviso-legal/",
+      "destination": "https://artesmarciales.cat/aviso-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/aviso-legal",
+      "destination": "https://artesmarciales.cat/aviso-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/politica-privacidad/",
+      "destination": "https://artesmarciales.cat/politica-privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/politica-privacidad",
+      "destination": "https://artesmarciales.cat/politica-privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/",
+      "destination": "https://artesmarciales.cat/ca/centres/",
+      "permanent": true
+    },
+    {
+      "source": "/ca",
+      "destination": "https://artesmarciales.cat/ca/centres/",
+      "permanent": true
+    },
+    {
+      "source": "/otras-artes-marciales/",
+      "destination": "https://artesmarciales.cat/disciplinas/",
+      "permanent": true
+    },
+    {
+      "source": "/otras-artes-marciales",
+      "destination": "https://artesmarciales.cat/disciplinas/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-sitges/",
+      "destination": "https://artesmarciales.cat/ca/garraf/sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-sitges",
+      "destination": "https://artesmarciales.cat/ca/garraf/sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/ca/garraf/vilanova-i-la-geltru/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/ca/garraf/vilanova-i-la-geltru/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/ca/garraf/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/ca/garraf/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-cubelles/",
+      "destination": "https://artesmarciales.cat/ca/garraf/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-cubelles",
+      "destination": "https://artesmarciales.cat/ca/garraf/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-canyelles/",
+      "destination": "https://artesmarciales.cat/ca/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-canyelles",
+      "destination": "https://artesmarciales.cat/ca/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-olivella/",
+      "destination": "https://artesmarciales.cat/ca/garraf/olivella/",
+      "permanent": true
+    },
+    {
+      "source": "/ca/arts-marcials-olivella",
+      "destination": "https://artesmarciales.cat/ca/garraf/olivella/",
       "permanent": true
     },
     {
       "source": "/artes-marciales-cerca-de-sant-pere-de-ribes/",
-      "destination": "/sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/",
       "permanent": true
     },
     {
       "source": "/artes-marciales-cerca-de-cubelles/",
-      "destination": "/cubelles/",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-cubelles",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/",
       "permanent": true
     },
     {
       "source": "/artes-marciales-cerca-de-canyelles/",
-      "destination": "/canyelles/",
+      "destination": "https://artesmarciales.cat/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/artes-marciales-cerca-de-canyelles",
+      "destination": "https://artesmarciales.cat/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/mma-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/mma-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/judo-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/judo-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga-en-sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga-en-sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/mma-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/mma-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/judo-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/judo-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga-en-vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga-en-vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-en-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai-en-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-cubelles/",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-en-cubelles",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-cubelles/",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo-en-cubelles",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-cubelles/",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo-en-cubelles",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-infantiles-en-sitges/",
+      "destination": "https://artesmarciales.cat/blog/clases-infantiles-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-infantiles-en-sitges",
+      "destination": "https://artesmarciales.cat/blog/clases-infantiles-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres-en-sitges/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres-en-sitges",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-femenina-en-sitges/",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-femenina-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-femenina-en-sitges",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-femenina-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos-en-sitges/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos-en-sitges",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-infantiles-en-vilanova/",
+      "destination": "https://artesmarciales.cat/blog/clases-infantiles-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-infantiles-en-vilanova",
+      "destination": "https://artesmarciales.cat/blog/clases-infantiles-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres-en-vilanova/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres-en-vilanova",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-femenina-en-vilanova/",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-femenina-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal-femenina-en-vilanova",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-femenina-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos-en-vilanova/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos-en-vilanova",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-infantil-en-sitges/",
+      "destination": "https://artesmarciales.cat/blog/karate-infantil-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-infantil-en-sitges",
+      "destination": "https://artesmarciales.cat/blog/karate-infantil-en-sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-infantil-en-vilanova/",
+      "destination": "https://artesmarciales.cat/blog/karate-infantil-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/karate-infantil-en-vilanova",
+      "destination": "https://artesmarciales.cat/blog/karate-infantil-en-vilanova/",
+      "permanent": true
+    },
+    {
+      "source": "/sitges/",
+      "destination": "https://artesmarciales.cat/garraf/sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/sitges",
+      "destination": "https://artesmarciales.cat/garraf/sitges/",
+      "permanent": true
+    },
+    {
+      "source": "/vilanova-i-la-geltru/",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/",
+      "permanent": true
+    },
+    {
+      "source": "/vilanova-i-la-geltru",
+      "destination": "https://artesmarciales.cat/garraf/vilanova-i-la-geltru/",
+      "permanent": true
+    },
+    {
+      "source": "/sant-pere-de-ribes/",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/sant-pere-de-ribes",
+      "destination": "https://artesmarciales.cat/garraf/sant-pere-de-ribes/",
+      "permanent": true
+    },
+    {
+      "source": "/cubelles/",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/cubelles",
+      "destination": "https://artesmarciales.cat/garraf/cubelles/",
+      "permanent": true
+    },
+    {
+      "source": "/canyelles/",
+      "destination": "https://artesmarciales.cat/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/canyelles",
+      "destination": "https://artesmarciales.cat/garraf/canyelles/",
+      "permanent": true
+    },
+    {
+      "source": "/olivella/",
+      "destination": "https://artesmarciales.cat/garraf/olivella/",
+      "permanent": true
+    },
+    {
+      "source": "/olivella",
+      "destination": "https://artesmarciales.cat/garraf/olivella/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo/",
+      "destination": "https://artesmarciales.cat/disciplinas/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/boxeo",
+      "destination": "https://artesmarciales.cat/disciplinas/boxeo/",
+      "permanent": true
+    },
+    {
+      "source": "/karate/",
+      "destination": "https://artesmarciales.cat/disciplinas/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/karate",
+      "destination": "https://artesmarciales.cat/disciplinas/karate/",
+      "permanent": true
+    },
+    {
+      "source": "/mma/",
+      "destination": "https://artesmarciales.cat/disciplinas/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/mma",
+      "destination": "https://artesmarciales.cat/disciplinas/mma/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing/",
+      "destination": "https://artesmarciales.cat/disciplinas/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/kickboxing",
+      "destination": "https://artesmarciales.cat/disciplinas/kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai/",
+      "destination": "https://artesmarciales.cat/disciplinas/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/muay-thai",
+      "destination": "https://artesmarciales.cat/disciplinas/muay-thai/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno/",
+      "destination": "https://artesmarciales.cat/disciplinas/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/jiu-jitsu-brasileno",
+      "destination": "https://artesmarciales.cat/disciplinas/jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/judo/",
+      "destination": "https://artesmarciales.cat/disciplinas/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/judo",
+      "destination": "https://artesmarciales.cat/disciplinas/judo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo/",
+      "destination": "https://artesmarciales.cat/disciplinas/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/taekwondo",
+      "destination": "https://artesmarciales.cat/disciplinas/taekwondo/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal/",
+      "destination": "https://artesmarciales.cat/disciplinas/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/defensa-personal",
+      "destination": "https://artesmarciales.cat/disciplinas/defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga/",
+      "destination": "https://artesmarciales.cat/disciplinas/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/krav-maga",
+      "destination": "https://artesmarciales.cat/disciplinas/krav-maga/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-ninos/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-ninos",
+      "destination": "https://artesmarciales.cat/blog/clases-para-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-mujeres",
+      "destination": "https://artesmarciales.cat/blog/clases-para-mujeres/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos/",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos/",
+      "permanent": true
+    },
+    {
+      "source": "/clases-para-adultos",
+      "destination": "https://artesmarciales.cat/blog/clases-para-adultos/",
+      "permanent": true
+    },
+    {
+      "source": "/iniciacion/",
+      "destination": "https://artesmarciales.cat/blog/iniciacion/",
+      "permanent": true
+    },
+    {
+      "source": "/iniciacion",
+      "destination": "https://artesmarciales.cat/blog/iniciacion/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/que-es-el-grappling-y-donde-se-practica/",
+      "destination": "https://artesmarciales.cat/blog/que-es-el-grappling-y-donde-se-practica/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/que-es-el-grappling-y-donde-se-practica",
+      "destination": "https://artesmarciales.cat/blog/que-es-el-grappling-y-donde-se-practica/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fitboxing-o-boxeo-en-el-garraf/",
+      "destination": "https://artesmarciales.cat/blog/fitboxing-o-boxeo-en-el-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fitboxing-o-boxeo-en-el-garraf",
+      "destination": "https://artesmarciales.cat/blog/fitboxing-o-boxeo-en-el-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/horarios-tipicos-de-las-clases/",
+      "destination": "https://artesmarciales.cat/blog/horarios-tipicos-de-las-clases/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/horarios-tipicos-de-las-clases",
+      "destination": "https://artesmarciales.cat/blog/horarios-tipicos-de-las-clases/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-para-perder-peso/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-para-perder-peso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-para-perder-peso",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-para-perder-peso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cursos-defensa-personal-fin-de-semana/",
+      "destination": "https://artesmarciales.cat/blog/cursos-defensa-personal-fin-de-semana/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cursos-defensa-personal-fin-de-semana",
+      "destination": "https://artesmarciales.cat/blog/cursos-defensa-personal-fin-de-semana/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-con-sobrepeso/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-con-sobrepeso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-con-sobrepeso",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-con-sobrepeso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mi-hijo-quiere-dejar-las-clases/",
+      "destination": "https://artesmarciales.cat/blog/mi-hijo-quiere-dejar-las-clases/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mi-hijo-quiere-dejar-las-clases",
+      "destination": "https://artesmarciales.cat/blog/mi-hijo-quiere-dejar-las-clases/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/clases-mixtas-o-solo-mujeres/",
+      "destination": "https://artesmarciales.cat/blog/clases-mixtas-o-solo-mujeres/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/clases-mixtas-o-solo-mujeres",
+      "destination": "https://artesmarciales.cat/blog/clases-mixtas-o-solo-mujeres/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-ninos-tdah/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-ninos-tdah/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-ninos-tdah",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-ninos-tdah/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cuantos-dias-semana-entrena-un-nino/",
+      "destination": "https://artesmarciales.cat/blog/cuantos-dias-semana-entrena-un-nino/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cuantos-dias-semana-entrena-un-nino",
+      "destination": "https://artesmarciales.cat/blog/cuantos-dias-semana-entrena-un-nino/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/clase-de-prueba-que-preguntar/",
+      "destination": "https://artesmarciales.cat/blog/clase-de-prueba-que-preguntar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/clase-de-prueba-que-preguntar",
+      "destination": "https://artesmarciales.cat/blog/clase-de-prueba-que-preguntar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-y-estres/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-y-estres/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-y-estres",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-y-estres/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/empezar-artes-marciales-a-los-40/",
+      "destination": "https://artesmarciales.cat/blog/empezar-artes-marciales-a-los-40/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/empezar-artes-marciales-a-los-40",
+      "destination": "https://artesmarciales.cat/blog/empezar-artes-marciales-a-los-40/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrenar-sin-querer-competir/",
+      "destination": "https://artesmarciales.cat/blog/entrenar-sin-querer-competir/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrenar-sin-querer-competir",
+      "destination": "https://artesmarciales.cat/blog/entrenar-sin-querer-competir/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/se-hacen-dano-los-ninos-artes-marciales/",
+      "destination": "https://artesmarciales.cat/blog/se-hacen-dano-los-ninos-artes-marciales/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/se-hacen-dano-los-ninos-artes-marciales",
+      "destination": "https://artesmarciales.cat/blog/se-hacen-dano-los-ninos-artes-marciales/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/empezar-artes-marciales-siendo-mujer/",
+      "destination": "https://artesmarciales.cat/blog/empezar-artes-marciales-siendo-mujer/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/empezar-artes-marciales-siendo-mujer",
+      "destination": "https://artesmarciales.cat/blog/empezar-artes-marciales-siendo-mujer/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/krav-maga-o-defensa-personal/",
+      "destination": "https://artesmarciales.cat/blog/krav-maga-o-defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/krav-maga-o-defensa-personal",
+      "destination": "https://artesmarciales.cat/blog/krav-maga-o-defensa-personal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/golpeo-o-agarre-por-donde-empezar/",
+      "destination": "https://artesmarciales.cat/blog/golpeo-o-agarre-por-donde-empezar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/golpeo-o-agarre-por-donde-empezar",
+      "destination": "https://artesmarciales.cat/blog/golpeo-o-agarre-por-donde-empezar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arte-marcial-para-nino-timido/",
+      "destination": "https://artesmarciales.cat/blog/arte-marcial-para-nino-timido/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arte-marcial-para-nino-timido",
+      "destination": "https://artesmarciales.cat/blog/arte-marcial-para-nino-timido/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arte-marcial-para-nino-muy-nervioso/",
+      "destination": "https://artesmarciales.cat/blog/arte-marcial-para-nino-muy-nervioso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arte-marcial-para-nino-muy-nervioso",
+      "destination": "https://artesmarciales.cat/blog/arte-marcial-para-nino-muy-nervioso/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/primer-dia-clase-artes-marciales-nino/",
+      "destination": "https://artesmarciales.cat/blog/primer-dia-clase-artes-marciales-nino/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/primer-dia-clase-artes-marciales-nino",
+      "destination": "https://artesmarciales.cat/blog/primer-dia-clase-artes-marciales-nino/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/judo-o-jiu-jitsu-brasileno/",
+      "destination": "https://artesmarciales.cat/blog/judo-o-jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/judo-o-jiu-jitsu-brasileno",
+      "destination": "https://artesmarciales.cat/blog/judo-o-jiu-jitsu-brasileno/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boxeo-o-kickboxing/",
+      "destination": "https://artesmarciales.cat/blog/boxeo-o-kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boxeo-o-kickboxing",
+      "destination": "https://artesmarciales.cat/blog/boxeo-o-kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/muay-thai-o-kickboxing/",
+      "destination": "https://artesmarciales.cat/blog/muay-thai-o-kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/muay-thai-o-kickboxing",
+      "destination": "https://artesmarciales.cat/blog/muay-thai-o-kickboxing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/karate-o-judo-para-ninos/",
+      "destination": "https://artesmarciales.cat/blog/karate-o-judo-para-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/karate-o-judo-para-ninos",
+      "destination": "https://artesmarciales.cat/blog/karate-o-judo-para-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beneficios-artes-marciales-ninos/",
+      "destination": "https://artesmarciales.cat/blog/beneficios-artes-marciales-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beneficios-artes-marciales-ninos",
+      "destination": "https://artesmarciales.cat/blog/beneficios-artes-marciales-ninos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-o-futbol-extraescolar/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-o-futbol-extraescolar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-o-futbol-extraescolar",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-o-futbol-extraescolar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extraescolar-artes-marciales-vuelta-al-cole/",
+      "destination": "https://artesmarciales.cat/blog/extraescolar-artes-marciales-vuelta-al-cole/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extraescolar-artes-marciales-vuelta-al-cole",
+      "destination": "https://artesmarciales.cat/blog/extraescolar-artes-marciales-vuelta-al-cole/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/a-que-edad-empezar-artes-marciales/",
+      "destination": "https://artesmarciales.cat/blog/a-que-edad-empezar-artes-marciales/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/a-que-edad-empezar-artes-marciales",
+      "destination": "https://artesmarciales.cat/blog/a-que-edad-empezar-artes-marciales/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/como-elegir-centro-artes-marciales-garraf/",
+      "destination": "https://artesmarciales.cat/blog/como-elegir-centro-artes-marciales-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/como-elegir-centro-artes-marciales-garraf",
+      "destination": "https://artesmarciales.cat/blog/como-elegir-centro-artes-marciales-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/donde-aprender-boxeo-en-el-garraf/",
+      "destination": "https://artesmarciales.cat/blog/donde-aprender-boxeo-en-el-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/donde-aprender-boxeo-en-el-garraf",
+      "destination": "https://artesmarciales.cat/blog/donde-aprender-boxeo-en-el-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mejor-arte-marcial-para-ninos-garraf/",
+      "destination": "https://artesmarciales.cat/blog/mejor-arte-marcial-para-ninos-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mejor-arte-marcial-para-ninos-garraf",
+      "destination": "https://artesmarciales.cat/blog/mejor-arte-marcial-para-ninos-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/defensa-personal-para-mujeres-garraf/",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-para-mujeres-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/defensa-personal-para-mujeres-garraf",
+      "destination": "https://artesmarciales.cat/blog/defensa-personal-para-mujeres-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-adultos-principiantes-garraf/",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-adultos-principiantes-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/artes-marciales-adultos-principiantes-garraf",
+      "destination": "https://artesmarciales.cat/blog/artes-marciales-adultos-principiantes-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/karate-vs-taekwondo-ninos-garraf/",
+      "destination": "https://artesmarciales.cat/blog/karate-vs-taekwondo-ninos-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/karate-vs-taekwondo-ninos-garraf",
+      "destination": "https://artesmarciales.cat/blog/karate-vs-taekwondo-ninos-garraf/",
+      "permanent": true
+    },
+    {
+      "source": "/img/:path*",
+      "destination": "https://artesmarciales.cat/img/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/og/:path*",
+      "destination": "https://artesmarciales.cat/og/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fonts/:path*",
+      "destination": "https://artesmarciales.cat/fonts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://artesmarciales.cat/_astro/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "https://artesmarciales.cat/favicon.svg",
+      "permanent": true
+    },
+    {
+      "source": "/logo.png",
+      "destination": "https://artesmarciales.cat/logo.png",
+      "permanent": true
+    },
+    {
+      "source": "/og-default.png",
+      "destination": "https://artesmarciales.cat/og-default.png",
+      "permanent": true
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "https://artesmarciales.cat/robots.txt",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://artesmarciales.cat/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "https://artesmarciales.cat/llms.txt",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://artesmarciales.cat/",
       "permanent": true
     }
   ]
